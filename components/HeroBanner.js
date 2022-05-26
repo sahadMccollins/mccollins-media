@@ -18,7 +18,7 @@ const HeroBanner = () => {
       marginTop="-110px"
     >
       <Image
-        src="/assets/image/banner/home-banner.png"
+        src="/assets/image/banner/home-banner.jpg"
         layout="responsive"
         width="1440px"
         height="810px"
