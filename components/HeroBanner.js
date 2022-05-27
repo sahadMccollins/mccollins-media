@@ -4,69 +4,68 @@ import {
   ButtonGroup,
   Container,
   Heading,
+  Image,
+  Stack,
   Text,
+  useMediaQuery,
 } from "@chakra-ui/react";
-import Image from "next/image";
 
 const HeroBanner = () => {
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+
   return (
-    <Box
-      position="relative"
-      className="hello"
-      maxHeight="100vh"
-      overflow="hidden"
-      marginTop="-110px"
-    >
-      <Image
-        src="/assets/image/banner/home-banner.jpg"
-        layout="responsive"
-        width="1440px"
-        height="810px"
-        style={{ position: "absolute" }}
-        alt="Mccollins media"
-      />
-      <Box position="absolute" bottom="8%" left="6%">
-        <Heading fontSize="60px" color="#fff">
-          digital brand
-          <br /> activation agency
-        </Heading>
-        <Text fontSize="30px" color="#fff">
-          result driven agency with mobile
-          <br /> first technology
-        </Text>
-        <ButtonGroup gap="4" marginTop="20px" position="relative">
-          <Button
-            background="#FFDE11"
-            colorScheme="yellow"
-            borderRadius="20px"
-            fontWeight="bold"
-            fontSize="20px"
-          >
-            <Image
-              src="/assets/image/navbar/call.png"
-              width="25px"
-              height="25px"
-            />
-            &nbsp;&nbsp;contact us
-          </Button>
-          <Button
-            background="#707070"
-            colorScheme="blackAlpha"
-            borderRadius="20px"
-            color="#fff"
-            fontWeight="bold"
-            fontSize="20px"
-          >
-            <Image
-              src="/assets/image/banner/play.png"
-              width="25px"
-              height="25px"
-            />
-            &nbsp;&nbsp;watch now
-          </Button>
-        </ButtonGroup>
+    <Stack marginTop={"-80px"} position="relative">
+      <Box>
+        <Image
+          src="/assets/image/banner/home-banner.jpg"
+          width="100vw"
+          height={isLargerThan780 ? "100vh" : "60vh"}
+          minHeight={isLargerThan780 ? "600px" : "450px"}
+          objectFit="cover"
+        />
       </Box>
-    </Box>
+      <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
+        <Container maxWidth={"7xl"}>
+          <Box width={isLargerThan780 ? "50%" : "100%"}>
+            <Heading fontSize={isLargerThan780 ? "60px" : "40px"}>
+              digital brand activation agency
+            </Heading>
+            <Text
+              mt={"15px"}
+              fontSize={isLargerThan780 ? "25px" : "30px"}
+              width={isLargerThan780 ? "60%" : "100%"}
+            >
+              result driven agency with mobile first technology
+            </Text>
+            <ButtonGroup gap="4" zIndex="99" mt={"15px"}>
+              <Button
+                colorScheme="yellow"
+                background={"#FFDE11"}
+                borderRadius="20px"
+                color="#000"
+              >
+                <Image
+                  src="/assets/image/icons/call.png"
+                  width="25px"
+                  height="25px"
+                  marginRight="10px"
+                />
+                contact us
+              </Button>
+              <Button colorScheme="whiteAlpha" borderRadius="20px" color="#fff">
+                <Image
+                  src="/assets/image/icons/play.png"
+                  width="25px"
+                  height="25px"
+                  marginRight="10px"
+                />
+                watch now
+              </Button>
+            </ButtonGroup>
+          </Box>
+        </Container>
+      </Box>
+    </Stack>
   );
 };
 
