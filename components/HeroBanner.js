@@ -17,11 +17,10 @@ const HeroBanner = () => {
     <Stack marginTop={"-80px"} position="relative">
       <Box>
         <Image
-          src="/assets/image/banner/home-banner.jpg"
+          src="/assets/image/banner/home-banner.webp"
           width="100vw"
-          // height={isLargerThan780 ? "100vh" : "60vh"}
-          // minHeight={isLargerThan780 ? "600px" : "450px"}
-          height="100vh"
+          height={isLargerThan780 ? "100vh" : "60vh"}
+          minHeight={isLargerThan780 ? "600px" : "450px"}
           objectFit="cover"
         />
       </Box>
