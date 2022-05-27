@@ -20,8 +20,9 @@ const HeroBanner = () => {
           src="/assets/image/banner/home-banner.webp"
           width="100vw"
           height={isLargerThan780 ? "100vh" : "60vh"}
-          minHeight={isLargerThan780 ? "600px" : "450px"}
+          minHeight={isLargerThan780 ? "600px" : "500px"}
           objectFit="cover"
+          priority={true}
         />
       </Box>
       <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
