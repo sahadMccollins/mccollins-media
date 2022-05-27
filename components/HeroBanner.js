@@ -19,8 +19,9 @@ const HeroBanner = () => {
         <Image
           src="/assets/image/banner/home-banner.jpg"
           width="100vw"
-          height={isLargerThan780 ? "100vh" : "60vh"}
-          minHeight={isLargerThan780 ? "600px" : "450px"}
+          // height={isLargerThan780 ? "100vh" : "60vh"}
+          // minHeight={isLargerThan780 ? "600px" : "450px"}
+          height="100vh"
           objectFit="cover"
         />
       </Box>
