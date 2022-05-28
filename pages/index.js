@@ -1,4 +1,6 @@
 import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import CaseStudy from "../components/CaseStudy";
+import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
 import ServiceTabs from "../components/ServiceTabs";
 import TextBox from "../components/TextBox";
@@ -22,6 +24,10 @@ export default function Home() {
       <ServiceTabs />
 
       <TextBox />
+
+      <CaseStudy />
+
+      <ClientsLogo />
     </>
   );
 }
