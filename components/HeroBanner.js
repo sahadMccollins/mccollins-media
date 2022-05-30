@@ -4,25 +4,25 @@ import {
   ButtonGroup,
   Container,
   Heading,
-  Image,
+  Image as Chakraimage,
   Stack,
   Text,
   useMediaQuery,
 } from "@chakra-ui/react";
+import Image from "next/image";
 
 const HeroBanner = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
   return (
-    <Stack marginTop={"-80px"} position="relative">
+    <Stack marginTop={"-85px"} position="relative">
       <Box>
-        <Image
+        <Chakraimage
           src="/assets/image/banner/home-banner.webp"
           width="100vw"
           height={isLargerThan780 ? "100vh" : "60vh"}
           minHeight={isLargerThan780 ? "600px" : "500px"}
           objectFit="cover"
-          priority={true}
         />
       </Box>
       <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
@@ -49,18 +49,16 @@ const HeroBanner = () => {
                   src="/assets/image/icons/call.png"
                   width="25px"
                   height="25px"
-                  marginRight="10px"
                 />
-                contact us
+                &nbsp;contact us
               </Button>
               <Button colorScheme="whiteAlpha" borderRadius="20px" color="#fff">
                 <Image
                   src="/assets/image/icons/play.png"
                   width="25px"
                   height="25px"
-                  marginRight="10px"
                 />
-                watch now
+                &nbsp;watch now
               </Button>
             </ButtonGroup>
           </Box>

@@ -1,22 +1,15 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import Image from "next/image";
 
 const ServiceTabsDetails = () => {
   return (
     <Flex direction={{ base: "column", md: "row" }}>
       <Box width={"100%"}>
         <Image
-          src="/assets/image/ServiceTabs/IphoneReels.png"
-          width="100%"
-          height="100%"
+          src="/assets/image/serviceTabs/IphoneReels.png"
+          width="610px"
+          height="905px"
         />
       </Box>
       <Box width={"100%"} alignSelf="center">

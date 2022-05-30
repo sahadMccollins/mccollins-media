@@ -16,6 +16,7 @@ a {
 }
 
 
+/* Navbar Hamburger Start */
 
 nav .ham-burger {
   width: 20px;
@@ -67,4 +68,47 @@ nav .ham-burger.active span:nth-child(2) {
     display: flex;
   }
 
+}
+
+
+/* Navbar Hamburger Stop */
+
+
+/* Service Accordian Start */
+
+
+.serviceAcc .chakra-accordion__item {
+  border-top-width: 0px;
+}
+
+.serviceAcc .chakra-accordion__item:last-of-type{
+    border-bottom-width: 0px;
+}
+
+.serviceAcc .chakra-accordion__button {
+  font-size: 35px;
+  font-weight: bolder;
+  justify-content: space-between;
+}
+
+.serviceAcc .chakra-accordion__button div {
+  width: fit-content;
+  flex: unset;
+}
+
+.serviceAcc .chakra-accordion__button[aria-expanded="true"] div {
+  background: linear-gradient(to bottom,#ffffff 49%,#ffde11 50%,#ffde11 70%,#ffffff 71%,#ffffff 100%);
+}
+
+.serviceAcc .chakra-accordion__button:hover {
+  background: none;
+}
+
+.serviceAcc .chakra-accordion__button:focus {
+  box-shadow: none;
+}
+
+.serviceAcc .chakra-accordion__icon {
+  background-color: #FFDE11;
+  border-radius: 50%;
 }

@@ -20,12 +20,12 @@ const CaseStudy = () => {
   const swiperRef = useRef(null);
   return (
     <Stack>
-      <Container maxWidth={"7xl"} py="20">
+      <Container maxWidth={"7xl"} pb="20">
         <Flex direction={{ base: "column", md: "row" }}>
           <Box width="50%"></Box>
           <Box width="100%" mb={"20px"}>
             <Text fontSize={"40px"}>
-              we make
+              we make &nbsp;
               <b>
                 brands, websites <br /> apps{" "}
                 <span style={{ color: "#FFDE11" }}> &#38; </span>
@@ -69,7 +69,7 @@ const CaseStudy = () => {
             <Image
               position={"absolute"}
               src="/assets/image/caseStudy/caseStudyAlp.svg"
-              height={"130%"}
+              height={"128%"}
               bottom={0}
             />
           </Box>

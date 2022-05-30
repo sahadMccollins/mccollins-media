@@ -5,7 +5,6 @@ import {
   ButtonGroup,
   Container,
   Flex,
-  Image,
   Stack,
   useMediaQuery,
   Drawer,
@@ -17,6 +16,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import styles from "../styles/Navbar.module.css";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
@@ -49,9 +49,8 @@ const Navbar = () => {
                       src="/assets/image/icons/call.png"
                       width="25px"
                       height="25px"
-                      marginRight="10px"
                     />
-                    Call
+                    &nbsp;Call
                   </Button>
                   <Button
                     colorScheme="whiteAlpha"
@@ -64,7 +63,7 @@ const Navbar = () => {
                       height="25px"
                       marginRight="10px"
                     />
-                    Lets talk
+                    &nbsp;Lets talk
                   </Button>
                 </ButtonGroup>
                 <Box
@@ -120,9 +119,8 @@ const Navbar = () => {
                     src="/assets/image/icons/call.png"
                     width="25px"
                     height="25px"
-                    marginRight="10px"
                   />
-                  Call
+                  &nbsp;Call
                 </Button>
                 <Button
                   colorScheme="yellow"
@@ -134,9 +132,8 @@ const Navbar = () => {
                     src="/assets/image/icons/chat.png"
                     width="25px"
                     height="25px"
-                    marginRight="10px"
                   />
-                  Lets talk
+                  &nbsp;Lets talk
                 </Button>
               </ButtonGroup>
             </DrawerHeader>

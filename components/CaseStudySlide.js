@@ -1,5 +1,6 @@
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import Image from "next/image";
 
 const CaseStudySlide = (props) => {
   return (
