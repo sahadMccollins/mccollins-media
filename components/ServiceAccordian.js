@@ -125,7 +125,7 @@ const ServiceAccordian = () => {
           </Box>
           <Box width={{ base: "100%", md: "50%" }}>
             <Image
-              src="/assets/image/serviceTabs/webDev.jpg"
+              src="/assets/image/ServiceTabs/webDev.jpg"
               width="860px"
               height="698px"
             />

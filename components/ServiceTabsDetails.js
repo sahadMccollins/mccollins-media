@@ -7,7 +7,7 @@ const ServiceTabsDetails = () => {
     <Flex direction={{ base: "column", md: "row" }}>
       <Box width={"100%"}>
         <Image
-          src="/assets/image/serviceTabs/IphoneReels.png"
+          src="/assets/image/ServiceTabs/IphoneReels.png"
           width="610px"
           height="905px"
         />
