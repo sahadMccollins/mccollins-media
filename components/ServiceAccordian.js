@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const ServiceAccordian = () => {
   return (
-    <Stack className="serviceAcc">
+    <Stack className="serviceAcc" bg={"#F7F7F7"}>
       <Container maxWidth={"7xl"} pb="20">
         <Flex direction={{ base: "column", lg: "row" }}>
           <Box width={{ base: "100%", lg: "50%" }}>
@@ -125,7 +125,7 @@ const ServiceAccordian = () => {
           </Box>
           <Box width={{ base: "100%", md: "50%" }}>
             <Image
-              src="/assets/image/ServiceTabs/webDev.jpg"
+              src="/assets/image/ServiceTabs/webDev.png"
               width="860px"
               height="698px"
             />

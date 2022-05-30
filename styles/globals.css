@@ -73,6 +73,23 @@ nav .ham-burger.active span:nth-child(2) {
 
 /* Navbar Hamburger Stop */
 
+/* Footer Start */
+
+
+.footer .chakra-tabs .chakra-tabs__tab[aria-selected=true] {
+  color:#fff;
+}
+.footer .chakra-tabs .chakra-tabs__tab[aria-selected=false] {
+  color:#FFDE11;
+}
+.footer .chakra-tabs .chakra-tabs__tab:focus {
+  box-shadow: none;
+}
+
+.footer .chakra-tabs__tablist {
+  border-bottom: none;
+}
+
 
 /* Service Accordian Start */
 
@@ -97,7 +114,7 @@ nav .ham-burger.active span:nth-child(2) {
 }
 
 .serviceAcc .chakra-accordion__button[aria-expanded="true"] div {
-  background: linear-gradient(to bottom,#ffffff 49%,#ffde11 50%,#ffde11 70%,#ffffff 71%,#ffffff 100%);
+  background: linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%);
 }
 
 .serviceAcc .chakra-accordion__button:hover {

@@ -6,9 +6,9 @@ import {
   Heading,
   SimpleGrid,
   Stack,
-  Image,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import Image from "next/image";
 
 const ClientsLogo = () => {
   return (

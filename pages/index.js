@@ -1,9 +1,11 @@
 import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import Awards from "../components/Awards";
 import CaseStudy from "../components/CaseStudy";
 import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
 import ServiceAccordian from "../components/ServiceAccordian";
 import ServiceTabs from "../components/ServiceTabs";
+import TechIcon from "../components/TechIcon";
 import TextBox from "../components/TextBox";
 import styles from "../styles/Home.module.css";
 
@@ -33,6 +35,12 @@ export default function Home() {
       <TextBox />
 
       <ServiceAccordian />
+
+      <TextBox />
+
+      <TechIcon />
+
+      <Awards />
     </>
   );
 }
