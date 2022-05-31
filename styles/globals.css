@@ -90,6 +90,19 @@ nav .ham-burger.active span:nth-child(2) {
   border-bottom: none;
 }
 
+/* Footer End */
+
+/* Service Tab Start */
+
+.serviceTab .chakra-tabs__tab[aria-selected=true] {
+  color: #000;
+  font-weight: bold;
+}
+
+.serviceTab .chakra-tabs__tab[aria-selected=true]:focus {
+  box-shadow: none;
+}
+
 
 /* Service Accordian Start */
 

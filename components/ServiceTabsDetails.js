@@ -55,7 +55,7 @@ const ServiceTabsDetails = () => {
           mt={7}
           fontWeight="bold"
         >
-          view more <ChevronRightIcon mt={3} width="1.3em" height="1.3em" />
+          view more <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
         </Button>
       </Box>
     </Flex>

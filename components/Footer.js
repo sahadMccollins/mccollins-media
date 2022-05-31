@@ -64,42 +64,46 @@ const Footer = () => {
             <Flex mt={5}>
               <Box p={3} pl={0}>
                 <Image
-                  src="/assets/image/icons/tiktok.svg"
+                  src="/assets/image/icons/tiktok.png"
                   width={"18px"}
                   height="21px"
                 />
               </Box>
               <Box p={3}>
                 <Image
-                  src="/assets/image/icons/insta.svg"
+                  src="/assets/image/icons/insta.png"
                   width={"21px"}
                   height="21px"
                 />
               </Box>
               <Box p={3}>
                 <Image
-                  src="/assets/image/icons/fb.svg"
+                  src="/assets/image/icons/fb.png"
                   width={"9px"}
                   height="21px"
                 />
               </Box>
               <Box p={3}>
                 <Image
-                  src="/assets/image/icons/linkedin.svg"
+                  src="/assets/image/icons/linkedin.png"
                   width={"22px"}
                   height="21px"
                 />
               </Box>
               <Box p={3}>
                 <Image
-                  src="/assets/image/icons/twiter.svg"
+                  src="/assets/image/icons/twiter.png"
                   width={"27px"}
                   height="20px"
                 />
               </Box>
             </Flex>
           </Box>
-          <Box width={{ base: "100%", md: "50%" }} color="#fff">
+          <Box
+            width={{ base: "100%", md: "50%" }}
+            mt={{ base: "50px", md: "0" }}
+            color="#fff"
+          >
             <form>
               <FormControl isRequired>
                 <FormLabel htmlFor="first-name">First name</FormLabel>
@@ -138,8 +142,13 @@ const Footer = () => {
           </Box>
         </Flex>
         <hr />
-        <Flex mt={"50px"} justifyContent="space-between" alignItems={"center"}>
-          <Box>
+        <Flex
+          mt={"20px"}
+          justifyContent="space-between"
+          alignItems={"center"}
+          direction={{ base: "column", md: "row" }}
+        >
+          <Box mt={"30px"}>
             <Image
               src="/assets/image/navbar/logo-yellow.png"
               alt="Mccolins Media logo"
@@ -147,7 +156,7 @@ const Footer = () => {
               height="46"
             />
           </Box>
-          <Box>
+          <Box mt={"30px"}>
             <Text color={"#fff"} fontSize="12px">
               © 2021 All Rights Reserved{" "}
               <span style={{ color: "#FFDE11", cursor: "pointer" }}>
@@ -155,7 +164,7 @@ const Footer = () => {
               </span>
             </Text>
           </Box>
-          <Box>
+          <Box mt={"30px"}>
             <Text color={"#fff"} fontSize="12px" cursor={"pointer"}>
               Privacy Policy &nbsp;&nbsp; I &nbsp;&nbsp; Terms & Conditions
             </Text>

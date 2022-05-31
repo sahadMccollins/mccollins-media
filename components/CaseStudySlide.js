@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CaseStudySlide = (props) => {
   return (
-    <Box position={"relative"}>
+    <Box position={"relative"} bottom={"-5px"}>
       <Image src={props.img} width="270px" height="400px" />
       <Box
         position={"absolute"}
@@ -25,7 +25,7 @@ const CaseStudySlide = (props) => {
       <Box
         position={"absolute"}
         width={{ base: "270px", md: "100%" }}
-        bottom={2}
+        bottom={4}
         textAlign="right"
         paddingRight={"20px"}
         cursor="pointer"

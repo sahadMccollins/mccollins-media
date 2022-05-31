@@ -1,8 +1,8 @@
-import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 
-const TextBox = () => {
+const TextBox = (props) => {
   return (
-    <>
+    <Stack bg={props.bg ? props.bg : "#fff"}>
       <Container maxWidth={"7xl"} py="50" zIndex={2} position="relative">
         <Flex direction={{ base: "column", md: "row" }}>
           <Box width={{ base: "100%", md: "30%" }} alignSelf="center">
@@ -12,26 +12,22 @@ const TextBox = () => {
               fontWeight={"black"}
               pl="6"
             >
-              Our Core Services
+              {props.heading}
             </Heading>
           </Box>
-          <Box width={{ base: "100%", md: "80%" }} alignSelf="center">
+          <Box width={{ base: "100%", md: "70%" }} alignSelf="center" pl={5}>
             <Heading
               fontSize={{ base: "1xl", md: "3xl" }}
               mb="2"
               mt={{ base: "5", md: "0" }}
             >
-              what we are passionate about
+              {props.subHeading}
             </Heading>
-            <Text>
-              13 Years in the making, pioneers to UAE’s digital scene, we are
-              McCollins Media ! We enjoy working with earned media, where we get
-              others to talk about your brand.
-            </Text>
+            <Text>{props.content}</Text>
           </Box>
         </Flex>
       </Container>
-    </>
+    </Stack>
   );
 };
 

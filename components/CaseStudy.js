@@ -68,9 +68,9 @@ const CaseStudy = () => {
             ></Box>
             <Image
               position={"absolute"}
-              src="/assets/image/caseStudy/caseStudyAlp.svg"
+              src="/assets/image/caseStudy/caseStudyAlp.png"
               height={"128%"}
-              bottom={0}
+              bottom={{ base: "45px", md: "0" }}
             />
           </Box>
           <Box width={"80%"}>

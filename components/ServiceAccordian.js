@@ -123,7 +123,7 @@ const ServiceAccordian = () => {
               </AccordionItem>
             </Accordion>
           </Box>
-          <Box width={{ base: "100%", md: "50%" }}>
+          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
             <Image
               src="/assets/image/ServiceTabs/webDev.png"
               width="860px"
