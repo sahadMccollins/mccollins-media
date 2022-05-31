@@ -49,6 +49,7 @@ const HeroBanner = () => {
                   src="/assets/image/icons/call.png"
                   width="25px"
                   height="25px"
+                  priority={true}
                 />
                 &nbsp;contact us
               </Button>
@@ -57,6 +58,7 @@ const HeroBanner = () => {
                   src="/assets/image/icons/play.png"
                   width="25px"
                   height="25px"
+                  priority={true}
                 />
                 &nbsp;watch now
               </Button>

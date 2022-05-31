@@ -36,6 +36,7 @@ const Navbar = () => {
               alt="Mccolins Media logo"
               width="223"
               height="50"
+              priority={true}
             />
           </Box>
           <Box alignSelf={"center"}>
@@ -65,6 +66,7 @@ const Navbar = () => {
                         width="25px"
                         height="25px"
                         marginRight="10px"
+                        priority={true}
                       />
                       &nbsp;Lets talk
                     </Button>
@@ -92,6 +94,7 @@ const Navbar = () => {
                       src="/assets/image/icons/tiktok.png"
                       width={"18px"}
                       height="21px"
+                      priority={true}
                     />
                   </Box>
                   <Box>
@@ -99,6 +102,7 @@ const Navbar = () => {
                       src="/assets/image/icons/insta.png"
                       width={"21px"}
                       height="21px"
+                      priority={true}
                     />
                   </Box>
                   <Box>
@@ -106,6 +110,7 @@ const Navbar = () => {
                       src="/assets/image/icons/fb.png"
                       width={"9px"}
                       height="21px"
+                      priority={true}
                     />
                   </Box>
                   <Box>
@@ -113,6 +118,7 @@ const Navbar = () => {
                       src="/assets/image/icons/linkedin.png"
                       width={"22px"}
                       height="21px"
+                      priority={true}
                     />
                   </Box>
                   <Box>
@@ -120,6 +126,7 @@ const Navbar = () => {
                       src="/assets/image/icons/twiter.png"
                       width={"27px"}
                       height="20px"
+                      priority={true}
                     />
                   </Box>
                   <Box
@@ -132,6 +139,7 @@ const Navbar = () => {
                       src="/assets/image/icons/whatsapp.png"
                       width={"27px"}
                       height={"27px"}
+                      priority={true}
                     />
                   </Box>
                   <Box textAlign={"center"} style={{ marginTop: "60px" }}>
@@ -148,6 +156,7 @@ const Navbar = () => {
                       src="/assets/image/icons/scroll.png"
                       width={"9px"}
                       height="58px"
+                      priority={true}
                     />
                   </Box>
                 </VStack>
@@ -193,6 +202,7 @@ const Navbar = () => {
                     src="/assets/image/icons/call.png"
                     width="25px"
                     height="25px"
+                    priority={true}
                   />
                   &nbsp;Call
                 </Button>
@@ -206,6 +216,7 @@ const Navbar = () => {
                     src="/assets/image/icons/chat.png"
                     width="25px"
                     height="25px"
+                    priority={true}
                   />
                   &nbsp;Lets talk
                 </Button>
@@ -222,6 +233,7 @@ const Navbar = () => {
                           src="/assets/image/icons/tiktok.png"
                           width={"18px"}
                           height="21px"
+                          priority={true}
                         />
                       </Box>
                       <Box mb={3}>
@@ -229,6 +241,7 @@ const Navbar = () => {
                           src="/assets/image/icons/insta.png"
                           width={"21px"}
                           height="21px"
+                          priority={true}
                         />
                       </Box>
                       <Box mb={3}>
@@ -236,6 +249,7 @@ const Navbar = () => {
                           src="/assets/image/icons/fb.png"
                           width={"9px"}
                           height="21px"
+                          priority={true}
                         />
                       </Box>
                       <Box mb={3}>
@@ -243,6 +257,7 @@ const Navbar = () => {
                           src="/assets/image/icons/linkedin.png"
                           width={"22px"}
                           height="21px"
+                          priority={true}
                         />
                       </Box>
                       <Box mb={3}>
@@ -250,6 +265,7 @@ const Navbar = () => {
                           src="/assets/image/icons/twiter.png"
                           width={"27px"}
                           height="20px"
+                          priority={true}
                         />
                       </Box>
                     </Box>
@@ -264,6 +280,7 @@ const Navbar = () => {
                         src="/assets/image/icons/whatsapp.png"
                         width={"27px"}
                         height={"27px"}
+                        priority={true}
                       />
                     </Box>
                     <Box textAlign={"center"} style={{ marginTop: "60px" }}>
@@ -280,6 +297,7 @@ const Navbar = () => {
                         src="/assets/image/icons/scroll.png"
                         width={"9px"}
                         height="58px"
+                        priority={true}
                       />
                     </Box>
                   </VStack>
