@@ -3,13 +3,13 @@ import {
   Container,
   Flex,
   HStack,
-  Image,
   Stack,
   Text,
   useMediaQuery,
 } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import Image from "next/image";
 
 import "swiper/css";
 import CaseStudySlide from "./CaseStudySlide";
@@ -69,7 +69,8 @@ const CaseStudy = () => {
             <Image
               position={"absolute"}
               src="/assets/image/caseStudy/caseStudyAlp.png"
-              height={"128%"}
+              width="80px"
+              height="400px"
               bottom={{ base: "45px", md: "0" }}
             />
           </Box>

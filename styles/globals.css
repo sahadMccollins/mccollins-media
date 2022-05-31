@@ -70,6 +70,12 @@ nav .ham-burger.active span:nth-child(2) {
 
 }
 
+.drawerSocialIcon img {
+  filter: brightness(0%) contrast(185%);
+  -webkit-filter: brightness(0%) contrast(185%);
+  -moz-filter: brightness(0%) contrast(185%);
+}
+
 
 /* Navbar Hamburger Stop */
 
