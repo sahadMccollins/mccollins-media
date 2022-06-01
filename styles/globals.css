@@ -50,6 +50,16 @@ a {
 
 /* Footer End */
 
+/* Hero Banner Start */
+
+
+  @media (max-width: 780px) {
+    .herobanner {
+      height: 60vh !important; 
+    }
+  }
+
+
 /* Service Tab Start */
 
 .serviceTab .chakra-tabs__tab[aria-selected=true] {
