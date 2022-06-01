@@ -46,7 +46,7 @@ const HeroBanner = () => {
                 color="#000"
               >
                 <Image
-                  src="/assets/image/icons/call.png"
+                  src="/assets/image/icons/call.svg"
                   width="25px"
                   height="25px"
                   priority={true}
@@ -55,7 +55,7 @@ const HeroBanner = () => {
               </Button>
               <Button colorScheme="whiteAlpha" borderRadius="20px" color="#fff">
                 <Image
-                  src="/assets/image/icons/play.png"
+                  src="/assets/image/icons/play.svg"
                   width="25px"
                   height="25px"
                   priority={true}

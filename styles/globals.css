@@ -18,63 +18,15 @@ a {
 
 /* Navbar Hamburger Start */
 
-nav .ham-burger {
-  width: 20px;
-  height: 16px;
-  cursor: pointer;
-  display: none;
-  align-items: right;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  margin: 20px;
-}
-
-nav .ham-burger span {
-  width: 100%;
-  height: 2px;
-  border-radius: 99px;
-  background: #fff;
-  transition: 0.3s ease;
-  transform-origin: left;
-}
-
-nav .ham-burger span:nth-child(2) {
-  width: 50%;
-}
-
-nav .ham-burger.active span {
-  background: dodgerblue;
-}
-
-nav .ham-burger.active span:nth-child(1) {
-  transform: rotate(40deg);
-}
-
-nav .ham-burger span:nth-child(3) {
-  transform-origin: left;
-}
-
-nav .ham-burger.active span:nth-child(3) {
-  transform: rotate(-40deg);
-}
-
-nav .ham-burger.active span:nth-child(2) {
-  transform: scale(0);
-}
-
-@media (max-width: 910px) {
-  nav .ham-burger {
-    display: flex;
-  }
-
-}
 
 .drawerSocialIcon img {
   filter: brightness(0%) contrast(185%);
   -webkit-filter: brightness(0%) contrast(185%);
   -moz-filter: brightness(0%) contrast(185%);
 }
+
+
+
 
 
 /* Navbar Hamburger Stop */
@@ -103,6 +55,7 @@ nav .ham-burger.active span:nth-child(2) {
 .serviceTab .chakra-tabs__tab[aria-selected=true] {
   color: #000;
   font-weight: bold;
+  border-bottom: 2px solid #ffde11;
 }
 
 .serviceTab .chakra-tabs__tab[aria-selected=true]:focus {

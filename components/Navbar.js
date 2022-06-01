@@ -19,6 +19,8 @@ import {
 } from "@chakra-ui/react";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
@@ -26,13 +28,15 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
+  const router = useRouter();
+
   return (
     <Stack zIndex={"99"}>
       <Container maxWidth={"7xl"} mt="7" position="relative">
         <Flex>
           <Box flexGrow={1} zIndex="99">
             <Image
-              src="/assets/image/navbar/logo.png"
+              src="/assets/image/navbar/logo.svg"
               alt="Mccolins Media logo"
               width="223"
               height="50"
@@ -50,7 +54,7 @@ const Navbar = () => {
                       color="#000"
                     >
                       <Image
-                        src="/assets/image/icons/call.png"
+                        src="/assets/image/icons/call.svg"
                         width="25px"
                         height="25px"
                       />
@@ -62,7 +66,7 @@ const Navbar = () => {
                       color="#000"
                     >
                       <Image
-                        src="/assets/image/icons/chat.png"
+                        src="/assets/image/icons/chat.svg"
                         width="25px"
                         height="25px"
                         marginRight="10px"
@@ -89,41 +93,41 @@ const Navbar = () => {
                   right={0}
                   marginTop="6%"
                 >
-                  <Box>
+                  <Box mb={3}>
                     <Image
-                      src="/assets/image/icons/tiktok.png"
+                      src="/assets/image/icons/tiktok.svg"
                       width={"18px"}
                       height="21px"
                       priority={true}
                     />
                   </Box>
-                  <Box>
+                  <Box mb={3}>
                     <Image
-                      src="/assets/image/icons/insta.png"
+                      src="/assets/image/icons/insta.svg"
                       width={"21px"}
                       height="21px"
                       priority={true}
                     />
                   </Box>
-                  <Box>
+                  <Box mb={3}>
                     <Image
-                      src="/assets/image/icons/fb.png"
+                      src="/assets/image/icons/fb.svg"
                       width={"9px"}
                       height="21px"
                       priority={true}
                     />
                   </Box>
-                  <Box>
+                  <Box mb={3}>
                     <Image
-                      src="/assets/image/icons/linkedin.png"
+                      src="/assets/image/icons/linkedin.svg"
                       width={"22px"}
                       height="21px"
                       priority={true}
                     />
                   </Box>
-                  <Box>
+                  <Box mb={3}>
                     <Image
-                      src="/assets/image/icons/twiter.png"
+                      src="/assets/image/icons/twiter.svg"
                       width={"27px"}
                       height="20px"
                       priority={true}
@@ -133,10 +137,13 @@ const Navbar = () => {
                     bg={"#fff"}
                     p="8px 11px 6px 11px"
                     borderRadius="30px"
-                    style={{ marginTop: "75px" }}
+                    style={{
+                      marginTop: "75px",
+                      boxShadow: "-4px 10px 30px 7px rgba(0,0,0,0.09)",
+                    }}
                   >
                     <Image
-                      src="/assets/image/icons/whatsapp.png"
+                      src="/assets/image/icons/whatsapp.svg"
                       width={"27px"}
                       height={"27px"}
                       priority={true}
@@ -153,7 +160,7 @@ const Navbar = () => {
                       Scroll
                     </Text>
                     <Image
-                      src="/assets/image/icons/scroll.png"
+                      src="/assets/image/icons/scroll.svg"
                       width={"9px"}
                       height="58px"
                       priority={true}
@@ -199,7 +206,7 @@ const Navbar = () => {
                   color="#000"
                 >
                   <Image
-                    src="/assets/image/icons/call.png"
+                    src="/assets/image/icons/call.svg"
                     width="25px"
                     height="25px"
                     priority={true}
@@ -213,7 +220,7 @@ const Navbar = () => {
                   color="#000"
                 >
                   <Image
-                    src="/assets/image/icons/chat.png"
+                    src="/assets/image/icons/chat.svg"
                     width="25px"
                     height="25px"
                     priority={true}
@@ -222,15 +229,68 @@ const Navbar = () => {
                 </Button>
               </ButtonGroup>
             </DrawerHeader>
-            <DrawerBody mt={"80px"} textAlign="right">
+            <DrawerBody mt={"70px"} textAlign="right">
               <Flex direction={"row"}>
-                <Box width={"90%"}>1</Box>
-                <Box width={"10%"}>
+                <Box width={"90%"} className={styles.sidebarUl}>
+                  <ul>
+                    <li
+                      className={
+                        router.pathname == "/" ? styles.sidebarActiveLi : ""
+                      }
+                    >
+                      <Link href="/">
+                        <a>home</a>
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        router.pathname == "/about"
+                          ? styles.sidebarActiveLi
+                          : ""
+                      }
+                    >
+                      <Link href="/about">
+                        <a>about us</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about">
+                        <a>services</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about">
+                        <a>work</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about">
+                        <a>industry</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about">
+                        <a>career</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about">
+                        <a>blog</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about">
+                        <a>contact</a>
+                      </Link>
+                    </li>
+                  </ul>
+                </Box>
+                <Box width={"10%"} mt="6">
                   <VStack zIndex="99" right={0} marginTop="6%">
                     <Box className="drawerSocialIcon">
                       <Box mb={3}>
                         <Image
-                          src="/assets/image/icons/tiktok.png"
+                          src="/assets/image/icons/tiktok.svg"
                           width={"18px"}
                           height="21px"
                           priority={true}
@@ -238,7 +298,7 @@ const Navbar = () => {
                       </Box>
                       <Box mb={3}>
                         <Image
-                          src="/assets/image/icons/insta.png"
+                          src="/assets/image/icons/insta.svg"
                           width={"21px"}
                           height="21px"
                           priority={true}
@@ -246,7 +306,7 @@ const Navbar = () => {
                       </Box>
                       <Box mb={3}>
                         <Image
-                          src="/assets/image/icons/fb.png"
+                          src="/assets/image/icons/fb.svg"
                           width={"9px"}
                           height="21px"
                           priority={true}
@@ -254,7 +314,7 @@ const Navbar = () => {
                       </Box>
                       <Box mb={3}>
                         <Image
-                          src="/assets/image/icons/linkedin.png"
+                          src="/assets/image/icons/linkedin.svg"
                           width={"22px"}
                           height="21px"
                           priority={true}
@@ -262,7 +322,7 @@ const Navbar = () => {
                       </Box>
                       <Box mb={3}>
                         <Image
-                          src="/assets/image/icons/twiter.png"
+                          src="/assets/image/icons/twiter.svg"
                           width={"27px"}
                           height="20px"
                           priority={true}
@@ -274,10 +334,13 @@ const Navbar = () => {
                       bg={"#fff"}
                       p="8px 11px 6px 11px"
                       borderRadius="30px"
-                      style={{ marginTop: "75px" }}
+                      style={{
+                        marginTop: "75px",
+                        boxShadow: "-4px 10px 30px 7px rgba(0,0,0,0.09)",
+                      }}
                     >
                       <Image
-                        src="/assets/image/icons/whatsapp.png"
+                        src="/assets/image/icons/whatsapp.svg"
                         width={"27px"}
                         height={"27px"}
                         priority={true}
@@ -294,7 +357,7 @@ const Navbar = () => {
                         Scroll
                       </Text>
                       <Image
-                        src="/assets/image/icons/scroll.png"
+                        src="/assets/image/icons/scroll.svg"
                         width={"9px"}
                         height="58px"
                         priority={true}

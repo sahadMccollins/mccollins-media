@@ -35,7 +35,31 @@
     margin-top: 12px;
 }
 
+.sidebarCloseBtn:focus {
+    box-shadow: none !important;
+}
+
 .sidebarCloseBtn svg {
     width: 2em;
     height: 2em;
+}
+
+.sidebarUl {
+    margin-right: 20px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sidebarUl ul {
+    list-style-type: none;
+}
+
+.sidebarActiveLi {
+    background: linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%);
+    width: fit-content;
+    margin-left: auto;
+}
+
+.sidebarUl li a {
+    padding: 0 10px;
 }
