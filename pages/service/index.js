@@ -13,7 +13,7 @@ import Image from "next/image";
 import ServicePageAccordian from "../../components/ServicePageAccordian";
 
 const index = () => {
-  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+  //   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
