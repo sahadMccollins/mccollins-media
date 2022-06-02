@@ -1,10 +1,13 @@
-import { Box, Container, Flex, Heading, Slide, Stack } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, HStack, Stack } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AwardSlide from "./AwardSlide";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { useRef } from "react";
 
 const Awards = () => {
+  const swiperRef = useRef(null);
   return (
     <Stack mt={"100px"}>
       <Container maxWidth={"7xl"} pb="20" position={"relative"}>
@@ -29,7 +32,12 @@ const Awards = () => {
             />
           </Box>
           <Box width={{ base: "100%", md: "90%" }} alignSelf="end">
-            <Swiper spaceBetween={20} slidesPerView={1} loop={true}>
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={1}
+              loop={true}
+              ref={swiperRef}
+            >
               <SwiperSlide>
                 <AwardSlide />
               </SwiperSlide>
@@ -39,6 +47,36 @@ const Awards = () => {
             </Swiper>
           </Box>
         </Flex>
+        <Box
+          position={"relative"}
+          width="45%"
+          float={"right"}
+          display={{ base: "none", md: "block" }}
+        >
+          <HStack
+            position={"absolute"}
+            bottom="0"
+            left={"245px"}
+            spacing="0"
+            cursor={"pointer"}
+            zIndex="2"
+          >
+            <Box
+              background={"#000"}
+              p="8px 15px 10px 15px"
+              onClick={() => swiperRef.current.swiper.slidePrev()}
+            >
+              <ChevronLeftIcon color={"#fff"} />
+            </Box>
+            <Box
+              background={"#6F6F6F"}
+              p="8px 15px 10px 15px"
+              onClick={() => swiperRef.current.swiper.slideNext()}
+            >
+              <ChevronRightIcon color={"#fff"} />
+            </Box>
+          </HStack>
+        </Box>
       </Container>
     </Stack>
   );

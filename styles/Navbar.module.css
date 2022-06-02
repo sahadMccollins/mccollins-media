@@ -12,7 +12,6 @@
 .hamBurger span {
     width: 100%;
     height: 2px;
-    background-color: #FFDE11;
     z-index: 99;
 }
 

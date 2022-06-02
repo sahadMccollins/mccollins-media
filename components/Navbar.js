@@ -22,7 +22,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -36,7 +36,9 @@ const Navbar = () => {
         <Flex>
           <Box flexGrow={1} zIndex="99">
             <Image
-              src="/assets/image/navbar/logo.svg"
+              src={`/assets/image/navbar/${
+                props.color ? "logo-black" : "logo"
+              }.svg`}
               alt="Mccolins Media logo"
               width="223"
               height="50"
@@ -58,7 +60,7 @@ const Navbar = () => {
                         width="25px"
                         height="25px"
                       />
-                      &nbsp;Call
+                      &nbsp;&nbsp;Call
                     </Button>
                     <Button
                       colorScheme="whiteAlpha"
@@ -72,7 +74,7 @@ const Navbar = () => {
                         marginRight="10px"
                         priority={true}
                       />
-                      &nbsp;Lets talk
+                      &nbsp;&nbsp;Lets talk
                     </Button>
                   </ButtonGroup>
                   <Box
@@ -82,9 +84,15 @@ const Navbar = () => {
                     onClick={onOpen}
                     zIndex="99"
                   >
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span
+                      style={{ background: props.color ? "#000" : "#FFDE11" }}
+                    ></span>
+                    <span
+                      style={{ background: props.color ? "#000" : "#FFDE11" }}
+                    ></span>
+                    <span
+                      style={{ background: props.color ? "#000" : "#FFDE11" }}
+                    ></span>
                   </Box>
                 </Flex>
                 <VStack
@@ -92,6 +100,7 @@ const Navbar = () => {
                   zIndex="99"
                   right={0}
                   marginTop="6%"
+                  className={props.color ? "drawerSocialIcon" : ""}
                 >
                   <Box mb={3}>
                     <Image
@@ -154,7 +163,7 @@ const Navbar = () => {
                       fontSize={"18px"}
                       fontWeight="bold"
                       style={{ transform: "rotate(-90deg)" }}
-                      color="#FFDE11"
+                      color={props.color ? "#000" : "#FFDE11"}
                       mb={5}
                     >
                       Scroll
@@ -351,7 +360,7 @@ const Navbar = () => {
                         fontSize={"18px"}
                         fontWeight="bold"
                         style={{ transform: "rotate(-90deg)" }}
-                        color="#FFDE11"
+                        color={props.color ? "#000" : "#FFDE11"}
                         mb={5}
                       >
                         Scroll

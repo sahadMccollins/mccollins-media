@@ -12,10 +12,10 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 
 import "swiper/css";
-import CaseStudySlide from "./CaseStudySlide";
 import { useRef } from "react";
+import TeamMemberSlide from "./TeamMemberSlide";
 
-const CaseStudy = () => {
+const OurTeam = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const swiperRef = useRef(null);
   return (
@@ -36,13 +36,10 @@ const CaseStudy = () => {
               top={-10}
             />
           </Box>
-          <Box width="100%" mb={"20px"} alignSelf="end">
-            <Text fontSize={"40px"}>
-              we make &nbsp;
+          <Box width="100%" mb={"20px"} alignSelf="end" zIndex={2}>
+            <Text fontSize={"35px"}>
               <b>
-                brands, websites <br /> apps{" "}
-                <span style={{ color: "#FFDE11" }}> &#38; </span>
-                social media
+                we grow brands, <br /> create experiences and solve problems.
               </b>
             </Text>
           </Box>
@@ -81,7 +78,7 @@ const CaseStudy = () => {
             ></Box>
             <Image
               position={"absolute"}
-              src="/assets/image/caseStudy/caseStudyAlp.png"
+              src="/assets/image/team/ourTeamAlp.png"
               width="80px"
               height="400px"
               bottom={{ base: "45px", md: "0" }}
@@ -91,28 +88,71 @@ const CaseStudy = () => {
             <Swiper
               spaceBetween={20}
               slidesPerView={isLargerThan780 ? 3.5 : 1}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
               loop={true}
               ref={swiperRef}
             >
               <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy1.jpg" />
+                <TeamMemberSlide
+                  img="/assets/image/team/meghna.jpg"
+                  name="Meghna Kothari"
+                  designation="Director"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy2.jpg" />
+                <TeamMemberSlide
+                  img="/assets/image/team/ricky.jpg"
+                  name="Ricky Khatwani"
+                  designation="Head of performance"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy3.jpg" />
+                <TeamMemberSlide
+                  img="/assets/image/team/Mahmoud.jpg"
+                  name="Mahmoud"
+                  designation="Account Manager"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy1.jpg" />
+                <TeamMemberSlide
+                  img="/assets/image/team/meghna.jpg"
+                  name="Meghna Kothari"
+                  designation="Director"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy2.jpg" />
+                <TeamMemberSlide
+                  img="/assets/image/team/ricky.jpg"
+                  name="Ricky Khatwani"
+                  designation="Head of performance"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy3.jpg" />
+                <TeamMemberSlide
+                  img="/assets/image/team/Mahmoud.jpg"
+                  name="Mahmoud"
+                  designation="Account Manager"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <TeamMemberSlide
+                  img="/assets/image/team/meghna.jpg"
+                  name="Meghna Kothari"
+                  designation="Director"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <TeamMemberSlide
+                  img="/assets/image/team/ricky.jpg"
+                  name="Ricky Khatwani"
+                  designation="Head of performance"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <TeamMemberSlide
+                  img="/assets/image/team/Mahmoud.jpg"
+                  name="Mahmoud"
+                  designation="Account Manager"
+                />
               </SwiperSlide>
             </Swiper>
           </Box>
@@ -122,4 +162,4 @@ const CaseStudy = () => {
   );
 };
 
-export default CaseStudy;
+export default OurTeam;

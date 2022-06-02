@@ -12,7 +12,11 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      <HeroBanner />
+      <HeroBanner
+        img="/assets/image/banner/home-banner.webp"
+        h2="digital brand activation agency"
+        content="result driven agency with mobile first technology"
+      />
 
       <Stack
         position={"absolute"}

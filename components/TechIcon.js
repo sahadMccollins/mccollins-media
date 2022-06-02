@@ -15,7 +15,7 @@ const TechIcon = () => {
         >
           <Box>
             <Image
-              src="/assets/image/techLogo/angular.png"
+              src="/assets/image/techLogo/angular.svg"
               width="97px"
               height="97px"
             />
@@ -25,7 +25,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/flutter.png"
+              src="/assets/image/techLogo/flutter.svg"
               width="97px"
               height="97px"
             />
@@ -35,7 +35,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/codeIgniter.png"
+              src="/assets/image/techLogo/codeigniter.svg"
               width="97px"
               height="97px"
             />
@@ -45,7 +45,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/magento.png"
+              src="/assets/image/techLogo/magento.svg"
               width="97px"
               height="97px"
             />
@@ -55,7 +55,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/shopify.png"
+              src="/assets/image/techLogo/shopify.svg"
               width="97px"
               height="97px"
             />
@@ -65,7 +65,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/vue.png"
+              src="/assets/image/techLogo/vue.svg"
               width="97px"
               height="97px"
             />
@@ -75,7 +75,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/prestashop.png"
+              src="/assets/image/techLogo/prestashop.svg"
               width="97px"
               height="97px"
             />
@@ -85,7 +85,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/android.png"
+              src="/assets/image/techLogo/android.svg"
               width="97px"
               height="97px"
             />
@@ -95,7 +95,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/wordpress.png"
+              src="/assets/image/techLogo/wordpress.svg"
               width="97px"
               height="97px"
             />
@@ -105,7 +105,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/swift.png"
+              src="/assets/image/techLogo/swift.svg"
               width="97px"
               height="97px"
             />

@@ -7,7 +7,7 @@ const AwardSlide = () => {
     <Flex direction={{ base: "column-reverse", md: "row" }}>
       <Box
         width={{ base: "100%", md: "50%" }}
-        p="50px 100px 50px 100px"
+        p={{ base: "50px 20px 50px 20px", md: "50px 100px 50px 100px" }}
         height={"fit-content"}
         alignSelf="end"
         bg={"#F7F7F7"}
@@ -25,6 +25,7 @@ const AwardSlide = () => {
         position="relative"
         pt={"22px"}
         textAlign={{ base: "center", md: "left" }}
+        mb="37px"
       >
         <Box
           position={"absolute"}
@@ -39,6 +40,15 @@ const AwardSlide = () => {
           width="316px"
           height="376px"
         />
+        <Box
+          display={{ base: "none", md: "block" }}
+          position={"absolute"}
+          bg="#F7F7F7"
+          width="316px"
+          bottom={-10}
+          left="-10px"
+          height="45px"
+        ></Box>
       </Box>
     </Flex>
   );
