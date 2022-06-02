@@ -4,7 +4,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const getLayout =
-    Component.getLayout || ((page) => <MainLayout children={page} />);
+    Component.getLayout || ((page) => <MainLayout>{page}</MainLayout>);
   return (
     <ChakraProvider>{getLayout(<Component {...pageProps} />)}</ChakraProvider>
   );
