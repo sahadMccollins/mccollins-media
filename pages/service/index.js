@@ -92,4 +92,4 @@ Index.getLayout = function getLayout(Index) {
   return <InnerLayout>{Index}</InnerLayout>;
 };
 
-export default index;
+export default Index;
