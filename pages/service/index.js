@@ -12,8 +12,8 @@ import InnerLayout from "../../components/InnerLayout";
 import Image from "next/image";
 import ServicePageAccordian from "../../components/ServicePageAccordian";
 
-const index = () => {
-  //   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+const Index = () => {
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
@@ -39,8 +39,7 @@ const index = () => {
               our services
             </Heading>
             <Heading fontSize={{ base: "60px", md: "70px" }} fontWeight="bold">
-              what we do and
-              {/* {isLargerThan780 ? <br /> : ""} */}
+              what we do and {isLargerThan780 ? <br /> : ""}
               how we do it.
             </Heading>
             <Button
@@ -79,7 +78,6 @@ const index = () => {
               src="/assets/image/servicePage/ourServicesAlp.svg"
               height={"750px"}
               width={"122px"}
-              priority={true}
             />
           </Box>
         </Box>
@@ -90,8 +88,8 @@ const index = () => {
   );
 };
 
-index.getLayout = function getLayout(index) {
-  return <InnerLayout>{index}</InnerLayout>;
+Index.getLayout = function getLayout(Index) {
+  return <InnerLayout>{Index}</InnerLayout>;
 };
 
 export default index;
