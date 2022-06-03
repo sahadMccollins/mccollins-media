@@ -82,7 +82,6 @@ const Navbar = (props) => {
                     ref={btnRef}
                     colorScheme="teal"
                     onClick={onOpen}
-                    zIndex="99"
                   >
                     <span
                       style={{ background: props.color ? "#000" : "#FFDE11" }}

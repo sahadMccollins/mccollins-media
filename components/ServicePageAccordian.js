@@ -14,8 +14,21 @@ import Image from "next/image";
 
 const ServicePageAccordian = () => {
   return (
-    <Stack className="serviceAcc" bg={"#F7F7F7"}>
+    <Stack className="serviceAcc" bg={"#F7F7F7"} position="relative">
       <Container maxWidth={"7xl"} pb="20">
+        <Box
+          position={"absolute"}
+          right="30%"
+          top={"30px"}
+          zIndex="2"
+          display={{ base: "none", md: "block" }}
+        >
+          <Image
+            src="/assets/image/design/1.svg"
+            width="150px"
+            height="172px"
+          />
+        </Box>
         <Flex
           direction={{ base: "column", lg: "row" }}
           justifyContent="space-between"
@@ -248,7 +261,7 @@ const ServicePageAccordian = () => {
             position={"relative"}
           >
             <Image
-              src="/assets/image/ServicePage/serviceAccordian.jpg"
+              src="/assets/image/servicePage/serviceAccordian.jpg"
               width="317px"
               height="354px"
               style={{ zIndex: "2" }}

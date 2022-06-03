@@ -11,6 +11,7 @@ import React from "react";
 import InnerLayout from "../../components/InnerLayout";
 import Image from "next/image";
 import ServicePageAccordian from "../../components/ServicePageAccordian";
+import TextBox2 from "../../components/TextBox2";
 
 const Index = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
@@ -73,6 +74,7 @@ const Index = () => {
             top="130px"
             right={"20%"}
             display={{ base: "none", md: "block" }}
+            zIndex="2"
           >
             <Image
               src="/assets/image/servicePage/ourServicesAlp.svg"
@@ -84,6 +86,7 @@ const Index = () => {
       </Container>
 
       <ServicePageAccordian />
+      <TextBox2 />
     </Stack>
   );
 };
