@@ -14,6 +14,17 @@ const TextBox = (props) => {
             >
               {props.heading}
             </Heading>
+            <Heading
+              borderLeft="20px solid #FFE962"
+              fontSize={{ base: "18px", md: "18px" }}
+              fontWeight={"black"}
+              pl="6"
+              mr={"50%"}
+              pt="10px"
+              color={"#6F6F6F"}
+            >
+              {props.smallHeading}
+            </Heading>
           </Box>
           <Box width={{ base: "100%", md: "70%" }} alignSelf="center" pl={5}>
             <Heading

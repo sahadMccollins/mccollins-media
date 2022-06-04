@@ -35,7 +35,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
-              src="/assets/image/techLogo/codeigniter.svg"
+              src="/assets/image/techLogo/codeigniterlogo.svg"
               width="97px"
               height="97px"
             />

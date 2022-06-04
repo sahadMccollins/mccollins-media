@@ -183,9 +183,15 @@ const Navbar = (props) => {
                 colorScheme="teal"
                 onClick={onOpen}
               >
-                <span></span>
-                <span></span>
-                <span></span>
+                <span
+                  style={{ background: props.color ? "#000" : "#FFDE11" }}
+                ></span>
+                <span
+                  style={{ background: props.color ? "#000" : "#FFDE11" }}
+                ></span>
+                <span
+                  style={{ background: props.color ? "#000" : "#FFDE11" }}
+                ></span>
               </Box>
             )}
           </Box>

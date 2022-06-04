@@ -111,3 +111,12 @@ a {
   background-color: #FFDE11;
   border-radius: 50%;
 }
+
+
+
+
+
+/* Global Start */
+.webStrok {
+-webkit-text-stroke: 2px black;
+}

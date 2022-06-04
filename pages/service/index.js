@@ -39,7 +39,7 @@ const Index = () => {
             <Heading fontSize={"50px"} color="#FFDE11">
               our services
             </Heading>
-            <Heading fontSize={{ base: "60px", md: "70px" }} fontWeight="bold">
+            <Heading fontSize={{ base: "60px", md: "70px" }} fontWeight="black">
               what we do and {isLargerThan780 ? <br /> : ""}
               how we do it.
             </Heading>
