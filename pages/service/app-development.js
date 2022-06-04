@@ -3,11 +3,10 @@ import React from "react";
 import InnerBanner from "../../components/InnerBanner";
 import InnerLayout from "../../components/InnerLayout";
 import Image from "next/image";
-import TextBox2 from "../../components/TextBox2";
 import TextBox from "../../components/TextBox";
-import FavWork from "../../components/favWork";
 import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
+import FavWork from "../../components/favWork";
 
 const AppDevelopment = () => {
   return (
