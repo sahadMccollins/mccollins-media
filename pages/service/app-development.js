@@ -6,7 +6,7 @@ import Image from "next/image";
 import TextBox from "../../components/TextBox";
 import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
-import FavWork from "../../components/favWork";
+import FavWork from "../../components/FavWork";
 
 const AppDevelopment = () => {
   return (

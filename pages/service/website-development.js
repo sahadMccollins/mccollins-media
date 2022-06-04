@@ -6,7 +6,7 @@ import Image from "next/image";
 import InnerBanner from "../../components/InnerBanner";
 import TextBox2 from "../../components/TextBox2";
 import TextBox from "../../components/TextBox";
-import FavWork from "../../components/favWork";
+import FavWork from "../../components/FavWork";
 import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
 
