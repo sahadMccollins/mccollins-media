@@ -1,24 +1,12 @@
-import { Suspense } from "react";
-import dynamic from "next/dynamic";
 import { Stack } from "@chakra-ui/react";
+import Awards from "../components/Awards";
+import CaseStudy from "../components/CaseStudy";
+import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
-// import Awards from "../components/Awards";
-// import CaseStudy from "../components/CaseStudy";
-// import ClientsLogo from "../components/ClientsLogo";
-// import ServiceAccordian from "../components/ServiceAccordian";
-// import ServiceTabs from "../components/ServiceTabs";
-// import TechIcon from "../components/TechIcon";
-// import TextBox from "../components/TextBox";
-
-const Awards = dynamic(() => import("../components/Awards"));
-const CaseStudy = dynamic(() => import("../components/CaseStudy"));
-const ClientsLogo = dynamic(() => import("../components/ClientsLogo"));
-const ServiceAccordian = dynamic(() =>
-  import("../components/ServiceAccordian")
-);
-const ServiceTabs = dynamic(() => import("../components/ServiceTabs"));
-const TechIcon = dynamic(() => import("../components/TechIcon"));
-const TextBox = dynamic(() => import("../components/TextBox"));
+import ServiceAccordian from "../components/ServiceAccordian";
+import ServiceTabs from "../components/ServiceTabs";
+import TechIcon from "../components/TechIcon";
+import TextBox from "../components/TextBox";
 
 export default function Home() {
   return (
@@ -37,35 +25,41 @@ export default function Home() {
         zIndex="0"
       ></Stack>
 
-      <Suspense fallback={<div>LOADING...</div>}>
-        <TextBox
-          heading="Our Core Services"
-          subHeading="what we are passionate about"
-          content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
-        />
+      <TextBox
+        heading="Our Core Services"
+        subHeading="what we are passionate about"
+        content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
+      />
 
-        <ServiceTabs />
-        <TextBox
-          heading="Case study"
-          subHeading="learn how we executed campaigns to get results"
-          content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
-        />
-        <CaseStudy />
-        <ClientsLogo />
-        <TextBox
-          bg="#F7F7F7"
-          heading="WHAT WE DO"
-          subHeading="in today’s market, work with a performance driven approach"
-          content="Our team prides in daring to experiment with evolving digital trends, providing a personalized approach to our clients, and ensuring we create a result driven plan to achieve our brands objectives. We are a young and passionate full service in-house team based in Dubai Media City. Follow us on instagram to take a sneak peak into our daily lives @mccollinsmedia"
-        />
-        <ServiceAccordian />
-        <TextBox
-          heading="Technologies We work with"
-          content="Transform your brand journey today. We grow brands, create experiences and solve problems."
-        />
-        <TechIcon />
-        <Awards />
-      </Suspense>
+      <ServiceTabs />
+
+      <TextBox
+        heading="Case study"
+        subHeading="learn how we executed campaigns to get results"
+        content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
+      />
+
+      <CaseStudy />
+
+      <ClientsLogo />
+
+      <TextBox
+        bg="#F7F7F7"
+        heading="WHAT WE DO"
+        subHeading="in today’s market, work with a performance driven approach"
+        content="Our team prides in daring to experiment with evolving digital trends, providing a personalized approach to our clients, and ensuring we create a result driven plan to achieve our brands objectives. We are a young and passionate full service in-house team based in Dubai Media City. Follow us on instagram to take a sneak peak into our daily lives @mccollinsmedia"
+      />
+
+      <ServiceAccordian />
+
+      <TextBox
+        heading="Technologies We work with"
+        content="Transform your brand journey today. We grow brands, create experiences and solve problems."
+      />
+
+      <TechIcon />
+
+      <Awards />
     </>
   );
 }
