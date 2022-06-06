@@ -28,7 +28,7 @@ const InnerBanner = (props) => {
           fontWeight="black"
         >
           {props.heading.split("\n").map((str) => (
-            <div>{str}</div>
+            <div key={str}>{str}</div>
           ))}
         </Heading>
         <Button
