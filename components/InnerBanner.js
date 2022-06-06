@@ -27,8 +27,9 @@ const InnerBanner = (props) => {
           color="#000"
           fontWeight="black"
         >
-          {props.heading1} <br />
-          {props.heading2}
+          {props.heading.split("\n").map((str) => (
+            <div>{str}</div>
+          ))}
         </Heading>
         <Button
           colorScheme="yellow"

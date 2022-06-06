@@ -15,8 +15,7 @@ const WebsiteDevelopment = () => {
     <Stack>
       <Container maxWidth={"7xl"}>
         <InnerBanner
-          heading1="web"
-          heading2="development"
+          heading={`web \n development`}
           img="/assets/image/servicePage/serviceAccordian.jpg"
           content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
         />

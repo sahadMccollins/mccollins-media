@@ -104,7 +104,7 @@ const ServicePageAccordian = () => {
                     mt={4}
                     fontWeight="bold"
                   >
-                    view more{" "}
+                    view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
                   </Button>
                 </AccordionPanel>
@@ -140,7 +140,7 @@ const ServicePageAccordian = () => {
                     mt={4}
                     fontWeight="bold"
                   >
-                    view more{" "}
+                    view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
                   </Button>
                 </AccordionPanel>
@@ -176,7 +176,7 @@ const ServicePageAccordian = () => {
                     mt={4}
                     fontWeight="bold"
                   >
-                    view more{" "}
+                    view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
                   </Button>
                 </AccordionPanel>
@@ -212,7 +212,7 @@ const ServicePageAccordian = () => {
                     mt={4}
                     fontWeight="bold"
                   >
-                    view more{" "}
+                    view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
                   </Button>
                 </AccordionPanel>
@@ -248,7 +248,7 @@ const ServicePageAccordian = () => {
                     mt={4}
                     fontWeight="bold"
                   >
-                    view more{" "}
+                    view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
                   </Button>
                 </AccordionPanel>

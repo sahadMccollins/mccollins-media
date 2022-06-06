@@ -1,4 +1,12 @@
-import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import React from "react";
 import InnerBanner from "../../components/InnerBanner";
 import InnerLayout from "../../components/InnerLayout";
@@ -9,23 +17,25 @@ import ClientsLogo from "../../components/ClientsLogo";
 import FavWork from "../../components/FavWork";
 
 const AppDevelopment = () => {
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
         <InnerBanner
-          heading1="app"
-          heading2="development"
+          heading={`app \n development`}
           img="/assets/image/servicePage/appDevelopment.jpg"
           content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
         />
       </Container>
       <Box
         style={{
-          background: "linear-gradient(to bottom,#ffde11 52%,#fff 40%)",
+          background: isLargerThan780
+            ? "linear-gradient(to bottom,#ffde11 52%,#fff 40%)"
+            : "linear-gradient(to bottom,#ffde11 30%,#fff 40%)",
         }}
       >
         <Container maxWidth={"7xl"}>
-          <Flex>
+          <Flex direction={{ base: "column", md: "row" }}>
             <Box width={{ base: "100%", md: "50%" }} mt="14">
               <Heading color={"#000"} fontSize="4xl">
                 LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING

@@ -19,7 +19,7 @@ const TextBox = (props) => {
               fontSize={{ base: "18px", md: "18px" }}
               fontWeight={"black"}
               pl="6"
-              mr={"50%"}
+              mr={{ base: "0", md: "50%" }}
               pt="10px"
               color={"#6F6F6F"}
             >
