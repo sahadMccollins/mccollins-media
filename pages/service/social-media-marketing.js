@@ -16,6 +16,7 @@ import ServicePoint from "../../components/ServicePoint";
 import FavWork from "../../components/FavWork";
 import TextBox from "../../components/TextBox";
 import SocialBox from "../../components/SocialBox";
+import ClientsLogo from "../../components/ClientsLogo";
 
 const SocialMediaMarketing = () => {
   return (
@@ -197,6 +198,7 @@ const SocialMediaMarketing = () => {
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       />
       <SocialBox />
+      <ClientsLogo />
     </Stack>
   );
 };

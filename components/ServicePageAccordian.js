@@ -14,7 +14,12 @@ import Image from "next/image";
 
 const ServicePageAccordian = () => {
   return (
-    <Stack className="serviceAcc" bg={"#F7F7F7"} position="relative">
+    <Stack
+      className="serviceAcc"
+      bg={"#F7F7F7"}
+      position="relative"
+      style={{ marginTop: "0" }}
+    >
       <Container maxWidth={"7xl"} pb="20">
         <Box
           position={"absolute"}
