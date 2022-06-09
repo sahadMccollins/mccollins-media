@@ -106,7 +106,7 @@ const Footer = () => {
           >
             <form>
               <FormControl isRequired>
-                <FormLabel htmlFor="first-name">First name</FormLabel>
+                <FormLabel htmlFor="first-name">First Name</FormLabel>
                 <Input id="first-name" borderRadius={"50px"} />
               </FormControl>
               <FormControl isRequired mt={5}>
