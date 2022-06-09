@@ -20,7 +20,7 @@ import HeroBanner from "../components/HeroBanner";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 
-const contact = () => {
+const Contact = () => {
   const swiperRef = useRef(null);
   return (
     <Stack>
@@ -246,4 +246,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
