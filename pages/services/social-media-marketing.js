@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import InnerBanner from "../../components/InnerBanner";
-import InnerLayout from "../../components/InnerLayout";
+import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import ServicePoint from "../../components/ServicePoint";

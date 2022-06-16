@@ -12,8 +12,20 @@ import Image from "next/image";
 
 const ClientsLogo = () => {
   return (
-    <Stack background={"#FFDE11"}>
+    <Stack background={"#FFDE11"} position="relative">
       <Container maxWidth={"7xl"} py="20">
+        <Box
+          position={"absolute"}
+          right="0"
+          top={{ base: "45", md: "100" }}
+          width={{ base: "25%", md: "unset" }}
+        >
+          <Image
+            src="/assets/image/design/5.svg"
+            height={"56px"}
+            width="302px"
+          />
+        </Box>
         <Flex
           display={"flex"}
           alignItems="self-end"
@@ -30,7 +42,7 @@ const ClientsLogo = () => {
             SOME OF OUR RECENT CLIENTS WE WORK FOR{" "}
             <span style={{ color: "#fff", fontSize: "20px" }}>■</span>
           </Heading>
-          <Button borderRadius={20} mt="20px">
+          <Button borderRadius={20} mt="20px" background={"#fff"}>
             view all <ChevronRightIcon w={"1.3em"} h={"1.3em"} />
           </Button>
         </Flex>

@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import InnerBanner from "../../components/InnerBanner";
-import InnerLayout from "../../components/InnerLayout";
+import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });

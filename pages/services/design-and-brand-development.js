@@ -3,7 +3,7 @@ import React from "react";
 import ClientsLogo from "../../components/ClientsLogo";
 import FavWork from "../../components/FavWork";
 import InnerBanner from "../../components/InnerBanner";
-import InnerLayout from "../../components/InnerLayout";
+import InnerLayout from "../../components/Layout/InnerLayout";
 import ServicePoint from "../../components/ServicePoint";
 import SocialBox from "../../components/SocialBox";
 import TextBox from "../../components/TextBox";

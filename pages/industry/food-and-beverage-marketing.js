@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import InnerLayout from "../../components/InnerLayout";
+import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import ClientsLogo from "../../components/ClientsLogo";
 

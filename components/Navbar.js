@@ -35,15 +35,18 @@ const Navbar = (props) => {
       <Container maxWidth={"7xl"} mt="7" position="relative">
         <Flex>
           <Box flexGrow={1} zIndex="99">
-            <Image
-              src={`/assets/image/navbar/${
-                props.color ? "logo-black" : "logo"
-              }.svg`}
-              alt="Mccolins Media logo"
-              width="223"
-              height="50"
-              priority={true}
-            />
+            <Link href="/">
+              <Image
+                src={`/assets/image/navbar/${
+                  props.color ? "logo-black" : "logo"
+                }.svg`}
+                alt="Mccolins Media logo"
+                width="223"
+                height="50"
+                priority={true}
+                style={{ cursor: "pointer" }}
+              />
+            </Link>
           </Box>
           <Box alignSelf={"center"}>
             {isLargerThan780 ? (
@@ -249,7 +252,7 @@ const Navbar = (props) => {
                   <ul>
                     <li
                       className={
-                        router.pathname == "/" ? styles.sidebarActiveLi : ""
+                        router.pathname == "/" ? styles.sidebarActiveLi : null
                       }
                     >
                       <Link href="/">
@@ -260,40 +263,64 @@ const Navbar = (props) => {
                       className={
                         router.pathname == "/about"
                           ? styles.sidebarActiveLi
-                          : ""
+                          : null
                       }
                     >
                       <Link href="/about">
                         <a>about us</a>
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/about">
+                    <li
+                      className={
+                        router.pathname == "/services"
+                          ? styles.sidebarActiveLi
+                          : null
+                      }
+                    >
+                      <Link href="/services">
                         <a>services</a>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/about">
                         <a>work</a>
                       </Link>
-                    </li>
-                    <li>
-                      <Link href="/about">
+                    </li> */}
+                    <li
+                      className={
+                        router.pathname == "/industry"
+                          ? styles.sidebarActiveLi
+                          : null
+                      }
+                    >
+                      <Link href="/industry">
                         <a>industry</a>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/about">
                         <a>career</a>
                       </Link>
-                    </li>
-                    <li>
-                      <Link href="/about">
+                    </li> */}
+                    <li
+                      className={
+                        router.pathname == "/blog"
+                          ? styles.sidebarActiveLi
+                          : null
+                      }
+                    >
+                      <Link href="/blog">
                         <a>blog</a>
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/about">
+                    <li
+                      className={
+                        router.pathname == "/conatct"
+                          ? styles.sidebarActiveLi
+                          : null
+                      }
+                    >
+                      <Link href="/contact">
                         <a>contact</a>
                       </Link>
                     </li>

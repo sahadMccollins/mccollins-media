@@ -1,6 +1,6 @@
 import { Box, Container, Heading, Stack } from "@chakra-ui/react";
 import React from "react";
-import InnerLayout from "../../components/InnerLayout";
+import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 
 import InnerBanner from "../../components/InnerBanner";
