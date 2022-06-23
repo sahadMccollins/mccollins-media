@@ -1,4 +1,14 @@
-import { Box, Container, Heading, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  Stack,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+} from "@chakra-ui/react";
 import React from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
@@ -9,6 +19,7 @@ import TextBox from "../../components/TextBox";
 import FavWork from "../../components/FavWork";
 import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
+import ServiceTabsDetails from "../../components/ServiceTabsDetails";
 
 const WebsiteDevelopment = () => {
   return (
@@ -19,6 +30,42 @@ const WebsiteDevelopment = () => {
           img="/assets/image/servicePage/serviceAccordian.jpg"
           content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
         />
+        {/* start */}
+        <Stack position={"relative"} zIndex="2" className="serviceTab">
+          <Container maxWidth={"7xl"} py="30">
+            <Tabs>
+              <TabList
+                justifyContent={"space-between"}
+                overflow={{ base: "scroll", md: "visible" }}
+                height={"75px"}
+                overflowY={"hidden"}
+              >
+                <Tab>Wordpress Development</Tab>
+                <Tab>Php Website Development</Tab>
+                <Tab>Magento Development</Tab>
+                <Tab>Drupal Development</Tab>
+                <Tab>Shopify Development</Tab>
+                <Tab>E-commerce Development</Tab>
+                <Tab>Hosting Services</Tab>
+                <Tab>Landing Page Development</Tab>
+              </TabList>
+
+              <TabPanels>
+                <TabPanel>
+                  <ServiceTabsDetails />
+                </TabPanel>
+                <TabPanel>
+                  <p>two!</p>
+                </TabPanel>
+                <TabPanel>
+                  <p>three!</p>
+                </TabPanel>
+              </TabPanels>
+            </Tabs>
+          </Container>
+          <hr />
+        </Stack>
+        {/* end */}
       </Container>
       <Box
         style={{
