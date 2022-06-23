@@ -11,6 +11,8 @@ import {
 } from "@chakra-ui/react";
 import { FiMenu, FiHome, FiFileText } from "react-icons/fi";
 import { BiCategory } from "react-icons/bi";
+import { VscFeedback } from "react-icons/vsc";
+import { GrGallery } from "react-icons/gr";
 import NavItem from "../AdminPanel/NavItem";
 import { useRouter } from "next/router";
 
@@ -80,6 +82,20 @@ export default function Sidebar() {
           title="Blogs"
           page="/admin/blogs"
           active={router.pathname == "/admin/blogs"}
+        />
+        <NavItem
+          navSize={navSize}
+          icon={GrGallery}
+          title="Portfolio"
+          page="/admin/portfolio"
+          active={router.pathname == "/admin/portfolio"}
+        />
+        <NavItem
+          navSize={navSize}
+          icon={VscFeedback}
+          title="Testimonials"
+          page="/admin/testimonials"
+          active={router.pathname == "/admin/testimonials"}
         />
       </Flex>
 

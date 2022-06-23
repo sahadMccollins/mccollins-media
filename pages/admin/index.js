@@ -10,7 +10,7 @@ const AdminLayout = dynamic(
 );
 
 const Index = ({ users }) => {
-  return <div>{users[0].test}</div>;
+  return <div>hi</div>;
 };
 
 export async function getServerSideProps() {

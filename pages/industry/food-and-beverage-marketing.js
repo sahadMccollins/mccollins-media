@@ -16,6 +16,16 @@ const foodAndBeverageMarketing = () => {
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
+        <Box
+          style={{ position: "absolute", top: "9%", left: "60%" }}
+          zIndex="9"
+        >
+          <Image
+            src={"/assets/image/design/1.svg"}
+            width="118px"
+            height={"165px"}
+          />
+        </Box>
         <Flex
           mt="-85px"
           height={{ base: "100%", md: "100vh" }}
@@ -138,7 +148,17 @@ const foodAndBeverageMarketing = () => {
           </Flex>
         </Container>
       </Box>
-      <Box>
+      <Box position={"relative"}>
+        <Box
+          style={{ position: "absolute", top: "5%", left: "10%" }}
+          zIndex="9"
+        >
+          <Image
+            src={"/assets/image/design/7.svg"}
+            width="89px"
+            height={"103px"}
+          />
+        </Box>
         <Container maxWidth={"7xl"}>
           <Heading
             color={"#ffde11"}
@@ -344,6 +364,16 @@ const foodAndBeverageMarketing = () => {
                   right="135px"
                   zIndex={0}
                 ></Box>
+                <Box
+                  style={{ position: "absolute", bottom: "0%", right: "0%" }}
+                  zIndex="9"
+                >
+                  <Image
+                    src={"/assets/image/design/13.svg"}
+                    width="89px"
+                    height={"103px"}
+                  />
+                </Box>
               </Box>
             </Box>
           </Flex>

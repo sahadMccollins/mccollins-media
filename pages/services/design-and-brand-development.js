@@ -1,4 +1,5 @@
 import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import Image from "next/image";
 import React from "react";
 import ClientsLogo from "../../components/ClientsLogo";
 import FavWork from "../../components/FavWork";
@@ -17,6 +18,13 @@ const DesignAndBrandDevelopment = () => {
           img="/assets/image/servicePage/designAndBrand.jpg"
           content="Creating a brand from the inception - logo to the entire adaptation of various deliverables are conceptualized in-house by our team of designers and copywriters"
         />
+        <Box style={{ position: "absolute", top: "14%", right: "0%" }}>
+          <Image
+            src={"/assets/image/design/9.svg"}
+            width="118px"
+            height={"165px"}
+          />
+        </Box>
       </Container>
       <Box bg={"#F7F7F7"}>
         <Container maxWidth={"7xl"}>
@@ -79,7 +87,14 @@ const DesignAndBrandDevelopment = () => {
           </Flex>
         </Container>
         <ServicePoint />
-        <Box>
+        <Box position={"relative"}>
+          <Box style={{ position: "absolute", top: "50%", right: "5%" }}>
+            <Image
+              src={"/assets/image/design/1.svg"}
+              width="118px"
+              height={"165px"}
+            />
+          </Box>
           <Container maxWidth={"7xl"} pb={10}>
             <Heading>Copywriting</Heading>
             <Text my={15}>
@@ -89,6 +104,13 @@ const DesignAndBrandDevelopment = () => {
             </Text>
           </Container>
         </Box>
+      </Box>
+      <Box style={{ position: "absolute", top: "58%", left: "-4%" }}>
+        <Image
+          src={"/assets/image/design/12.svg"}
+          width="130px"
+          height={"130px"}
+        />
       </Box>
       <TextBox
         heading="CASE STUDY"

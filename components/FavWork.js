@@ -36,7 +36,7 @@ const FavWork = () => {
               top={-10}
             />
           </Box>
-          <Box width="100%" mb={"20px"} alignSelf="end">
+          <Box width="100%" mb={"20px"} alignSelf="end" position={"relative"}>
             <Text fontSize={"40px"}>
               <b>
                 some of our favorites
@@ -44,6 +44,16 @@ const FavWork = () => {
                 works
               </b>
             </Text>
+            <Box
+              style={{ position: "absolute", top: "-20px" }}
+              right={{ base: "0", md: "100px" }}
+            >
+              <Image
+                src={"/assets/image/design/9.svg"}
+                width="140px"
+                height={"140px"}
+              />
+            </Box>
           </Box>
         </Flex>
         <Flex>

@@ -24,7 +24,44 @@ const WebsiteDevelopment = () => {
         style={{
           background: "linear-gradient(to bottom,#ffde11 50%,#fff 50%)",
         }}
+        position={"relative"}
       >
+        <Box style={{ position: "absolute", top: "-50px", left: "10%" }}>
+          <Image
+            src={"/assets/image/design/6.svg"}
+            width="68px"
+            height={"130px"}
+          />
+        </Box>
+        <Box style={{ position: "absolute", top: "10%", right: "0px" }}>
+          <Image
+            src={"/assets/image/design/8.svg"}
+            width="161px"
+            height={"138px"}
+          />
+        </Box>
+        <Box style={{ position: "absolute", top: "35%", left: "18%" }}>
+          <Image
+            src={"/assets/image/design/7.svg"}
+            width="43px"
+            height={"43px"}
+          />
+        </Box>
+        <Box style={{ position: "absolute", top: "54%", left: "10%" }}>
+          <Image
+            src={"/assets/image/design/1.svg"}
+            width="158px"
+            height={"215px"}
+          />
+        </Box>
+        <Box style={{ position: "absolute", top: "55%", right: "10%" }}>
+          <Image
+            src={"/assets/image/design/3.svg"}
+            width="89px"
+            height={"103px"}
+          />
+        </Box>
+
         <Container maxWidth={"7xl"}>
           <Box>
             <Image
@@ -32,6 +69,7 @@ const WebsiteDevelopment = () => {
               width={"1358px"}
               height={"1131px"}
             />
+
             <Box
               textAlign={"center"}
               mt={{ base: "0", md: "-300px" }}

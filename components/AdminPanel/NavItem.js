@@ -24,7 +24,7 @@ export default function NavItem({ icon, title, active, navSize, page }) {
                 <Icon
                   as={icon}
                   fontSize="xl"
-                  color={active ? "#82AAAD" : "gray.500"}
+                  // color={active ? "#82AAAD" : "gray.500"}
                 />
                 <Text ml={5} display={navSize == "small" ? "none" : "flex"}>
                   {title}

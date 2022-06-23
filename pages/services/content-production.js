@@ -21,18 +21,39 @@ import ClientsLogo from "../../components/ClientsLogo";
 const ContentProduction = () => {
   return (
     <Stack>
-      <Container maxWidth={"7xl"}>
+      <Container maxWidth={"7xl"} position="relative">
         <InnerBanner
           heading={`content \n production `}
           img="/assets/image/servicePage/contentProduction.jpg"
           content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
         />
+        <Box style={{ position: "absolute", bottom: "-80px", left: "-6%" }}>
+          <Image
+            src={"/assets/image/design/1.svg"}
+            width="118px"
+            height={"165px"}
+          />
+        </Box>
       </Container>
       <Box
         style={{
           background: "linear-gradient(to bottom,#fff 53%,#ffde11 50%)",
         }}
+        position="relative"
       >
+        <Box
+          style={{
+            position: "absolute",
+            bottom: "-60px",
+            right: "0px",
+          }}
+        >
+          <Image
+            src={"/assets/image/design/10.svg"}
+            width="480px"
+            height={"228px"}
+          />
+        </Box>
         <Container maxWidth={"7xl"}>
           <Flex
             direction={{ base: "column", md: "row" }}

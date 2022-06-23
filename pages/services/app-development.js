@@ -20,12 +20,22 @@ const AppDevelopment = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   return (
     <Stack>
-      <Container maxWidth={"7xl"}>
+      <Container maxWidth={"7xl"} position="relative">
         <InnerBanner
           heading={`app \n development`}
           img="/assets/image/servicePage/appDevelopment.jpg"
           content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
         />
+        <Box
+          style={{ position: "absolute", bottom: "-70px", right: "-100px" }}
+          display={{ base: "none", md: "block" }}
+        >
+          <Image
+            src={"/assets/image/design/1.svg"}
+            width="158px"
+            height={"215px"}
+          />
+        </Box>
       </Container>
       <Box
         style={{

@@ -27,13 +27,27 @@ const SocialMediaMarketing = () => {
         }}
         pb={12}
       >
-        <Container maxWidth={"7xl"}>
+        <Container maxWidth={"7xl"} position="relative">
           <InnerBanner
             heading={`social \n media \n marketing`}
             img="/assets/image/servicePage/socialMediaMarketing.jpg"
             content="Mobile First, Content Driven, Result Oriented extended marketing arm for your brand!"
           />
-          <Flex direction={{ base: "column", md: "row" }}>
+          <Box style={{ position: "absolute", top: "45%", left: "25%" }}>
+            <Image
+              src={"/assets/image/design/1.svg"}
+              width="158px"
+              height={"215px"}
+            />
+          </Box>
+          <Flex direction={{ base: "column", md: "row" }} position="relative">
+            <Box style={{ position: "absolute", top: "10%", left: "-20%" }}>
+              <Image
+                src={"/assets/image/design/11.svg"}
+                width="247px"
+                height={"284px"}
+              />
+            </Box>
             <Box width={{ base: "100%", md: "35%" }}>
               <Image
                 src="/assets/image/ServiceTabs/IphoneReels.png"
@@ -55,7 +69,7 @@ const SocialMediaMarketing = () => {
               alignItems="center"
               textAlign={"center"}
             >
-              <Heading>#1 SOCIAL MEDIA AGENCY IN UAE</Heading>
+              <Heading mt={10}>#1 SOCIAL MEDIA AGENCY IN UAE</Heading>
               <Box
                 width={"80px"}
                 my={10}
@@ -197,6 +211,13 @@ const SocialMediaMarketing = () => {
         heading="Social media Platform"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       />
+      <Box style={{ position: "absolute", top: "50%", left: "-4%" }}>
+        <Image
+          src={"/assets/image/design/12.svg"}
+          width="130px"
+          height={"130px"}
+        />
+      </Box>
       <SocialBox />
       <ClientsLogo />
     </Stack>
