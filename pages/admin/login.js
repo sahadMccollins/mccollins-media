@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 //...
 
-const login = () => {
+const Login = () => {
   const router = useRouter();
   const { data: session } = useSession();
   const [email, setEmail] = useState("");
@@ -61,4 +61,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
