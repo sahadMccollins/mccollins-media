@@ -1,16 +1,24 @@
 import clientPromise from "../../lib/mongodb";
 import { ObjectId } from "mongodb";
+import { unstable_getServerSession } from "next-auth/next";
 
 export default async (req, res) => {
-  switch (req.method) {
-    case "POST":
-      return testimonialPost();
-    case "PUT":
-      return testimonialUpdate();
-    case "DELETE":
-      return testimonialDelete();
-    default:
-      return res.status(405).end(`Method ${req.method} Not Allowed`);
+  const session = await unstable_getServerSession(req, res, authOptions);
+  if (session) {
+    switch (req.method) {
+      case "POST":
+        return testimonialPost();
+      case "PUT":
+        return testimonialUpdate();
+      case "DELETE":
+        return testimonialDelete();
+      default:
+        return res.status(405).end(`Method ${req.method} Not Allowed`);
+    }
+  } else {
+    res.send({
+      error: "You must be sign in to view the protected content on this page.",
+    });
   }
 
   async function testimonialPost() {
