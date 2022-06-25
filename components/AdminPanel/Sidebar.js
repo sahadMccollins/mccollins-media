@@ -5,10 +5,16 @@ import {
   IconButton,
   Divider,
   Avatar,
-  Heading,
   Box,
   Image,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Button,
 } from "@chakra-ui/react";
+import { ChevronUpIcon } from "@chakra-ui/icons";
+import { signOut, useSession } from "next-auth/react";
 import { FiMenu, FiHome, FiFileText } from "react-icons/fi";
 import { BiCategory } from "react-icons/bi";
 import { VscFeedback } from "react-icons/vsc";
@@ -17,6 +23,7 @@ import NavItem from "../AdminPanel/NavItem";
 import { useRouter } from "next/router";
 
 export default function Sidebar() {
+  const { data: session } = useSession();
   const router = useRouter();
   const [navSize, changeNavSize] = useState("large");
   return (
@@ -114,10 +121,22 @@ export default function Sidebar() {
             ml={4}
             display={navSize == "small" ? "none" : "flex"}
           >
-            <Heading as="h3" size="sm">
-              Sylwia Weller
-            </Heading>
-            <Text color="gray">Admin</Text>
+            <Menu>
+              <MenuButton
+                as={Button}
+                rightIcon={<ChevronUpIcon />}
+                textAlign="left"
+              >
+                {session ? (
+                  <Text color="gray">{session.user.name}</Text>
+                ) : (
+                  <Text>User</Text>
+                )}
+              </MenuButton>
+              <MenuList>
+                <MenuItem onClick={() => signOut()}>Sign out</MenuItem>
+              </MenuList>
+            </Menu>
           </Flex>
         </Flex>
       </Flex>

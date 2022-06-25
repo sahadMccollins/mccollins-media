@@ -35,6 +35,7 @@ import {
 import { ChevronRightIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import clientPromise from "../../lib/mongodb";
+import { useSession } from "next-auth/react";
 
 const AdminLayout = dynamic(
   () => import("../../components/Layout/AdminLayout"),
@@ -43,6 +44,7 @@ const AdminLayout = dynamic(
 
 const Testimonials = ({ data }) => {
   const router = useRouter();
+  const { data: session } = useSession();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {
     isOpen: isEditOpen,
@@ -111,6 +113,10 @@ const Testimonials = ({ data }) => {
       onEditClose();
     }
   };
+  if (!session) {
+    router.push("/admin/login");
+    return <p>Loading...</p>;
+  }
   return (
     <Stack width={"100%"}>
       <Flex direction={"column"}>

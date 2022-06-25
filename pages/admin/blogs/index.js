@@ -6,6 +6,7 @@ import {
   Button,
   Flex,
   Heading,
+  Text,
   Stack,
   Table,
   TableCaption,
@@ -16,16 +17,59 @@ import {
   Th,
   Thead,
   Tr,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AdminLayout from "../../../components/Layout/AdminLayout";
 import NextLink from "next/link";
 import clientPromise from "../../../lib/mongodb";
 import { ChevronRightIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
-import Router from "next/router";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 const Blogs = ({ blogs }) => {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+  const {
+    isOpen: isDeleteOpen,
+    onOpen: onDeleteOpen,
+    onClose: onDeleteClose,
+  } = useDisclosure();
   const [blog, setBlog] = useState([]);
+  const [blogId, setBlogId] = useState([]);
+
+  const blogDelete = () => {
+    if (blogId) {
+      const requestOptions = {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: blogId }),
+      };
+      fetch("/api/blogs/blog/delete", requestOptions).then((response) =>
+        response.json()
+      );
+      router.replace(router.asPath);
+      onDeleteClose();
+    }
+  };
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/admin/login");
+    }
+  });
+
+  if (status === "unauthenticated") {
+    return <p>Loading...</p>;
+  }
+
   return (
     <Stack width={"100%"}>
       <Flex direction={"column"}>
@@ -56,7 +100,7 @@ const Blogs = ({ blogs }) => {
               <Button
                 colorScheme="yellow"
                 bg={"#FFE962"}
-                onClick={() => Router.replace("/admin/blogs/create-blog")}
+                onClick={() => router.push("/admin/blogs/create-blog")}
               >
                 Add New Blog
               </Button>
@@ -100,8 +144,9 @@ const Blogs = ({ blogs }) => {
                         <DeleteIcon
                           cursor={"pointer"}
                           onClick={() => {
-                            setBlog(blog);
-                            // onDeleteOpen();
+                            setBlogId(blog._id);
+                            setBlog(blog.title);
+                            onDeleteOpen();
                           }}
                         />
                       </Td>
@@ -125,6 +170,30 @@ const Blogs = ({ blogs }) => {
           </Box>
         </Box>
       </Flex>
+      <Modal isOpen={isDeleteOpen} onClose={onDeleteClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Delete Category</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>
+              Are You Sure, You Want to Delete <b>{blog}</b>
+            </Text>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button
+              colorScheme="red"
+              onClick={() => {
+                blogDelete();
+              }}
+              mr={3}
+            >
+              Delete
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </Stack>
   );
 };

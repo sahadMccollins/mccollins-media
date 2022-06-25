@@ -23,11 +23,23 @@ import AdminLayout from "../../../components/Layout/AdminLayout";
 import NextLink from "next/link";
 import clientPromise from "../../../lib/mongodb";
 import { ChevronRightIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
+import { useSession } from "next-auth/react";
 
 const BlogEditor = ({ blogs }) => {
+  const { data: session } = useSession();
   const router = useRouter();
   const { id } = router.query;
   const [blog, setBlog] = useState([]);
+
+  useEffect(() => {
+    if (!session) {
+      router.push("/admin/login");
+    }
+  });
+
+  if (!session) {
+    return <p>Loading...</p>;
+  }
   return (
     <Stack width={"100%"}>
       <Flex direction={"column"}>

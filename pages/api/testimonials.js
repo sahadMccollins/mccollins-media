@@ -1,5 +1,6 @@
 import clientPromise from "../../lib/mongodb";
 import { ObjectId } from "mongodb";
+import { authOptions } from "../../pages/api/auth/[...nextauth]";
 import { unstable_getServerSession } from "next-auth/next";
 
 export default async (req, res) => {

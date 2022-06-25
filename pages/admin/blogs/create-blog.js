@@ -12,7 +12,7 @@ import {
   Input,
   Stack,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NextLink from "next/link";
 import AdminLayout from "../../../components/Layout/AdminLayout";
 import { useRouter } from "next/router";
@@ -20,6 +20,7 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import { EditorState } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import { useSession } from "next-auth/react";
 
 const Editor = dynamic(
   () => import("react-draft-wysiwyg").then((mod) => mod.Editor),
@@ -43,6 +44,7 @@ const CreateBlog = () => {
     EditorState.createEmpty()
   );
 
+  const { data: session } = useSession();
   const router = useRouter();
 
   const imgUpload = (event) => {
@@ -89,6 +91,16 @@ const CreateBlog = () => {
     );
     router.replace("/admin/blogs");
   };
+
+  useEffect(() => {
+    if (!session) {
+      router.push("/admin/login");
+    }
+  });
+
+  if (!session) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <Stack width={"100%"}>

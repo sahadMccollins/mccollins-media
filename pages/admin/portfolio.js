@@ -36,6 +36,7 @@ import {
 import { ChevronRightIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import clientPromise from "../../lib/mongodb";
+import { useSession } from "next-auth/react";
 
 const AdminLayout = dynamic(
   () => import("../../components/Layout/AdminLayout"),
@@ -44,6 +45,7 @@ const AdminLayout = dynamic(
 
 const Portfolio = ({ data }) => {
   const router = useRouter();
+  const { data: session } = useSession();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {
     isOpen: isEditOpen,
@@ -131,6 +133,11 @@ const Portfolio = ({ data }) => {
       onEditClose();
     }
   };
+
+  if (!session) {
+    router.push("/admin/login");
+    return <p>Loading...</p>;
+  }
   return (
     <Stack width={"100%"}>
       <Flex direction={"column"}>
@@ -194,7 +201,7 @@ const Portfolio = ({ data }) => {
                               mr={3}
                               onClick={() => {
                                 onEditOpen();
-                                setImage(image.title);
+                                setTitle(image.title);
                                 setImageId(image._id);
                               }}
                             />
@@ -291,7 +298,7 @@ const Portfolio = ({ data }) => {
           <ModalCloseButton />
           <ModalBody>
             <FormControl>
-              <FormLabel htmlFor="image">Image</FormLabel>
+              <FormLabel htmlFor="image">{title}</FormLabel>
               <Input
                 id="image"
                 type="file"

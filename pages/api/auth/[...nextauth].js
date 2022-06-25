@@ -42,8 +42,9 @@ export const authOptions = {
         if (!checkPassword) {
           throw new Error("Password doesnt match");
         }
+        console.log(result);
         //Else send success response
-        return { email: result.email };
+        return { email: result.email, name: result.name };
       },
     }),
   ],
