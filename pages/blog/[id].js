@@ -130,7 +130,7 @@ const Blog = ({ blog, recentPost }) => {
               <hr />
               <Box mt={5}>
                 {recentPost.map((rp) => (
-                  <Flex alignItems={"center"} mt="10">
+                  <Flex key={rp._id} alignItems={"center"} mt="10">
                     <Image
                       src={rp.photo}
                       width="170px"
