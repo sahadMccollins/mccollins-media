@@ -3,17 +3,14 @@ import clientPromise from "../../../../lib/mongodb";
 
 export default async (req, res) => {
   if (req.method !== "PUT") return;
-  if (req.body.name && req.body.id) {
+  if (req.body.id) {
     try {
       const client = await clientPromise;
       const db = client.db("MccollinsMedia");
 
       const result = await db
         .collection("blogs")
-        .updateOne(
-          { _id: ObjectId(req.body.id) },
-          { $set: { name: req.body.name } }
-        );
+        .update({ _id: ObjectId(req.body.id) }, { $set: req.body });
       console.log(result);
 
       return res.status(200).json({

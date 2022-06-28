@@ -14,8 +14,9 @@ import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import BlogList from "../../components/BlogList";
+import clientPromise from "../../lib/mongodb";
 
-const Index = () => {
+const Index = ({ blogs }) => {
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
@@ -45,16 +46,14 @@ const Index = () => {
               mb={"5"}
             >
               <Image
-                src="/assets/image/blogPage/blog1.jpg"
+                src={blogs[0].photo}
+                objectFit="cover"
                 width="615px"
                 height={"521px"}
               />
             </Box>
             <Box width={{ base: "100%", md: "50%" }} ml={{ base: "0", md: 20 }}>
-              <Heading fontSize={"5xl"}>
-                5 tips to find the best web development company for your
-                business.
-              </Heading>
+              <Heading fontSize={"5xl"}>{blogs[0].title}</Heading>
               <Box my={5} display="flex">
                 <Text
                   fontSize={"2xl"}
@@ -63,7 +62,7 @@ const Index = () => {
                   color="#fff"
                   p={"5px 30px 5px 20px"}
                 >
-                  31 Mar, 2022
+                  {blogs[0].date}
                 </Text>
                 <Box
                   as="span"
@@ -76,12 +75,7 @@ const Index = () => {
                 ></Box>
               </Box>
 
-              <Text fontWeight={"bold"}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Text>
+              <Text fontWeight={"bold"}>{blogs[0].smallContent}</Text>
               <Button
                 colorScheme="yellow"
                 background={"#FFDE11"}
@@ -143,6 +137,19 @@ const Index = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let blogs = await db.collection("blogs").find().sort({ _id: -1 }).toArray();
+  blogs = JSON.parse(JSON.stringify(blogs));
+
+  return {
+    props: { blogs },
+  };
+}
 
 Index.getLayout = function getLayout(Index) {
   return <InnerLayout>{Index}</InnerLayout>;

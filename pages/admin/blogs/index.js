@@ -52,10 +52,11 @@ const Blogs = ({ blogs }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: blogId }),
       };
-      fetch("/api/blogs/blog/delete", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/blogs/blog/delete", requestOptions).then(
+        (response) => response.json(),
+        router.replace(router.asPath)
       );
-      router.replace(router.asPath);
+
       onDeleteClose();
     }
   };
@@ -106,7 +107,7 @@ const Blogs = ({ blogs }) => {
               </Button>
             </Box>
           </Flex>
-          <Box>
+          <Box maxWidth={"79vw"}>
             <TableContainer mt="10">
               <Table variant="striped" colorScheme="blackAlpha">
                 <TableCaption>Blogs Category Table</TableCaption>
@@ -137,8 +138,7 @@ const Blogs = ({ blogs }) => {
                           cursor={"pointer"}
                           mr={3}
                           onClick={() => {
-                            // onEditOpen();
-                            setBlog(blog);
+                            router.push(`/admin/blogs/${blog._id}`);
                           }}
                         />
                         <DeleteIcon

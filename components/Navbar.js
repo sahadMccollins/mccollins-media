@@ -16,6 +16,8 @@ import {
   useDisclosure,
   VStack,
   Text,
+  Link as chakraLink,
+  color,
 } from "@chakra-ui/react";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
@@ -26,7 +28,6 @@ const Navbar = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
 
   const router = useRouter();
 
@@ -54,9 +55,12 @@ const Navbar = (props) => {
                 <Flex>
                   <ButtonGroup gap="4" zIndex="99">
                     <Button
-                      colorScheme="whiteAlpha"
+                      colorScheme={props.color ? "yellow" : "whiteAlpha"}
+                      background={props.color ? "#FFDE11" : null}
                       borderRadius="20px"
                       color="#000"
+                      as={chakraLink}
+                      href="tel:+971 4 445 6848"
                     >
                       <Image
                         src="/assets/image/icons/call.svg"
@@ -66,9 +70,12 @@ const Navbar = (props) => {
                       &nbsp;&nbsp;Call
                     </Button>
                     <Button
-                      colorScheme="whiteAlpha"
+                      colorScheme={props.color ? "yellow" : "whiteAlpha"}
+                      background={props.color ? "#FFDE11" : null}
                       borderRadius="20px"
                       color="#000"
+                      as={chakraLink}
+                      href="mailto:info@mccollinsmedia.com"
                     >
                       <Image
                         src="/assets/image/icons/chat.svg"
@@ -82,7 +89,6 @@ const Navbar = (props) => {
                   </ButtonGroup>
                   <Box
                     className={styles.hamBurger}
-                    ref={btnRef}
                     colorScheme="teal"
                     onClick={onOpen}
                   >
@@ -104,7 +110,12 @@ const Navbar = (props) => {
                   marginTop="6%"
                   className={props.color ? "drawerSocialIcon" : ""}
                 >
-                  <Box mb={3}>
+                  <Box
+                    mb={3}
+                    as={chakraLink}
+                    href="https://vm.tiktok.com/ZSJShjmYH/"
+                    target="_blank"
+                  >
                     <Image
                       src="/assets/image/icons/tiktok.svg"
                       width={"18px"}
@@ -112,7 +123,12 @@ const Navbar = (props) => {
                       priority={true}
                     />
                   </Box>
-                  <Box mb={3}>
+                  <Box
+                    mb={3}
+                    as={chakraLink}
+                    href="https://www.instagram.com/mccollinsmedia/?hl=en"
+                    target="_blank"
+                  >
                     <Image
                       src="/assets/image/icons/insta.svg"
                       width={"21px"}
@@ -120,7 +136,12 @@ const Navbar = (props) => {
                       priority={true}
                     />
                   </Box>
-                  <Box mb={3}>
+                  <Box
+                    mb={3}
+                    as={chakraLink}
+                    href="https://www.facebook.com/mccollinsmedia/"
+                    target="_blank"
+                  >
                     <Image
                       src="/assets/image/icons/fb.svg"
                       width={"9px"}
@@ -128,7 +149,12 @@ const Navbar = (props) => {
                       priority={true}
                     />
                   </Box>
-                  <Box mb={3}>
+                  <Box
+                    mb={3}
+                    as={chakraLink}
+                    href="https://www.linkedin.com/company/mccollins-media/"
+                    target="_blank"
+                  >
                     <Image
                       src="/assets/image/icons/linkedin.svg"
                       width={"22px"}
@@ -136,7 +162,12 @@ const Navbar = (props) => {
                       priority={true}
                     />
                   </Box>
-                  <Box mb={3}>
+                  <Box
+                    mb={3}
+                    as={chakraLink}
+                    href="https://twitter.com/mccollinsmedia?lang=en"
+                    target="_blank"
+                  >
                     <Image
                       src="/assets/image/icons/twiter.svg"
                       width={"27px"}
@@ -148,6 +179,9 @@ const Navbar = (props) => {
                     bg={"#fff"}
                     p="8px 11px 6px 11px"
                     borderRadius="30px"
+                    as={chakraLink}
+                    href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                    target="_blank"
                     style={{
                       marginTop: "75px",
                       boxShadow: "-4px 10px 30px 7px rgba(0,0,0,0.09)",
@@ -182,7 +216,6 @@ const Navbar = (props) => {
             ) : (
               <Box
                 className={styles.hamBurger}
-                ref={btnRef}
                 colorScheme="teal"
                 onClick={onOpen}
               >
@@ -203,8 +236,7 @@ const Navbar = (props) => {
       <Drawer
         isOpen={isOpen}
         placement="right"
-        onClose={onClose}
-        finalFocusRef={btnRef}
+        onClose={() => onClose()}
         size={"lg"}
       >
         <DrawerOverlay />
@@ -254,6 +286,7 @@ const Navbar = (props) => {
                       className={
                         router.pathname == "/" ? styles.sidebarActiveLi : null
                       }
+                      onClick={() => onClose()}
                     >
                       <Link href="/">
                         <a>home</a>
@@ -265,6 +298,7 @@ const Navbar = (props) => {
                           ? styles.sidebarActiveLi
                           : null
                       }
+                      onClick={() => onClose()}
                     >
                       <Link href="/about">
                         <a>about us</a>
@@ -276,6 +310,7 @@ const Navbar = (props) => {
                           ? styles.sidebarActiveLi
                           : null
                       }
+                      onClick={() => onClose()}
                     >
                       <Link href="/services">
                         <a>services</a>
@@ -292,6 +327,7 @@ const Navbar = (props) => {
                           ? styles.sidebarActiveLi
                           : null
                       }
+                      onClick={() => onClose()}
                     >
                       <Link href="/industry">
                         <a>industry</a>
@@ -308,6 +344,7 @@ const Navbar = (props) => {
                           ? styles.sidebarActiveLi
                           : null
                       }
+                      onClick={() => onClose()}
                     >
                       <Link href="/blog">
                         <a>blog</a>
@@ -319,6 +356,7 @@ const Navbar = (props) => {
                           ? styles.sidebarActiveLi
                           : null
                       }
+                      onClick={() => onClose()}
                     >
                       <Link href="/contact">
                         <a>contact</a>
@@ -328,8 +366,13 @@ const Navbar = (props) => {
                 </Box>
                 <Box width={"10%"} mt="6">
                   <VStack zIndex="99" right={0} marginTop="6%">
-                    <Box className="drawerSocialIcon">
-                      <Box mb={3}>
+                    <Flex className="drawerSocialIcon" direction={"column"}>
+                      <Box
+                        mb={3}
+                        as={chakraLink}
+                        href="https://vm.tiktok.com/ZSJShjmYH/"
+                        target="_blank"
+                      >
                         <Image
                           src="/assets/image/icons/tiktok.svg"
                           width={"18px"}
@@ -337,7 +380,12 @@ const Navbar = (props) => {
                           priority={true}
                         />
                       </Box>
-                      <Box mb={3}>
+                      <Box
+                        mb={3}
+                        as={chakraLink}
+                        href="https://www.instagram.com/mccollinsmedia/?hl=en"
+                        target="_blank"
+                      >
                         <Image
                           src="/assets/image/icons/insta.svg"
                           width={"21px"}
@@ -345,7 +393,12 @@ const Navbar = (props) => {
                           priority={true}
                         />
                       </Box>
-                      <Box mb={3}>
+                      <Box
+                        mb={3}
+                        as={chakraLink}
+                        href="https://www.facebook.com/mccollinsmedia/"
+                        target="_blank"
+                      >
                         <Image
                           src="/assets/image/icons/fb.svg"
                           width={"9px"}
@@ -353,7 +406,12 @@ const Navbar = (props) => {
                           priority={true}
                         />
                       </Box>
-                      <Box mb={3}>
+                      <Box
+                        mb={3}
+                        as={chakraLink}
+                        href="https://www.linkedin.com/company/mccollins-media/"
+                        target="_blank"
+                      >
                         <Image
                           src="/assets/image/icons/linkedin.svg"
                           width={"22px"}
@@ -361,7 +419,12 @@ const Navbar = (props) => {
                           priority={true}
                         />
                       </Box>
-                      <Box mb={3}>
+                      <Box
+                        mb={3}
+                        as={chakraLink}
+                        href="https://twitter.com/mccollinsmedia?lang=en"
+                        target="_blank"
+                      >
                         <Image
                           src="/assets/image/icons/twiter.svg"
                           width={"27px"}
@@ -369,12 +432,15 @@ const Navbar = (props) => {
                           priority={true}
                         />
                       </Box>
-                    </Box>
+                    </Flex>
 
                     <Box
                       bg={"#fff"}
                       p="8px 11px 6px 11px"
                       borderRadius="30px"
+                      as={chakraLink}
+                      href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                      target="_blank"
                       style={{
                         marginTop: "75px",
                         boxShadow: "-4px 10px 30px 7px rgba(0,0,0,0.09)",
@@ -387,11 +453,15 @@ const Navbar = (props) => {
                         priority={true}
                       />
                     </Box>
-                    <Box textAlign={"center"} style={{ marginTop: "60px" }}>
+                    <Box
+                      textAlign={"center"}
+                      style={{ marginTop: "60px" }}
+                      className="drawerSocialIcon"
+                    >
                       <Text
                         fontSize={"18px"}
                         fontWeight="bold"
-                        style={{ transform: "rotate(-90deg)" }}
+                        style={{ transform: "rotate(-90deg)", color: "#000" }}
                         color={props.color ? "#000" : "#FFDE11"}
                         mb={5}
                       >

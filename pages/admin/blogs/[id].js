@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   Box,
   Breadcrumb,
@@ -6,40 +6,116 @@ import {
   BreadcrumbLink,
   Button,
   Flex,
+  FormControl,
+  FormLabel,
   Heading,
+  Input,
   Stack,
-  Table,
-  TableCaption,
-  TableContainer,
-  Tbody,
-  Td,
-  Tfoot,
-  Th,
-  Thead,
-  Tr,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
-import AdminLayout from "../../../components/Layout/AdminLayout";
+import React, { useState, useEffect } from "react";
 import NextLink from "next/link";
-import clientPromise from "../../../lib/mongodb";
-import { ChevronRightIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
-import { useSession } from "next-auth/react";
+import AdminLayout from "../../../components/Layout/AdminLayout";
+import { useRouter } from "next/router";
 
-const BlogEditor = ({ blogs }) => {
-  const { data: session } = useSession();
-  const router = useRouter();
-  const { id } = router.query;
-  const [blog, setBlog] = useState([]);
+import dynamic from "next/dynamic";
+import { convertFromRaw, convertToRaw, EditorState } from "draft-js";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import { useSession } from "next-auth/react";
+import clientPromise from "../../../lib/mongodb";
+import { ObjectId } from "mongodb";
+
+const Editor = dynamic(
+  () => import("react-draft-wysiwyg").then((mod) => mod.Editor),
+  { ssr: false }
+);
+
+const EditBlog = ({ blog }) => {
+  const [title, setTitle] = useState(blog.title);
+  const [date, setDate] = useState(blog.date);
+  const [blogUrl, setBlogUrl] = useState(blog.blogUrl);
+  const [category, setCategory] = useState(blog.category);
+  const [author, setAuthor] = useState(blog.author);
+  const [photo, setPhoto] = useState(blog.photo);
+  const [tags, setTags] = useState(blog.tags);
+  const [keywords, setkeywords] = useState(blog.keywords);
+  const [description, setDescription] = useState(blog.description);
+  const [arabicTitle, setArabicTitle] = useState(blog.arabicTitle);
+  const [arabicDescription, setArabicDescription] = useState(
+    blog.arabicDescription
+  );
+
+  const [loading, setLoading] = useState(false);
+
+  const [editorState, setEditorState] = useState(() =>
+    EditorState.createWithContent(convertFromRaw(JSON.parse(blog.content)))
+  );
 
   useEffect(() => {
-    if (!session) {
+    if (status === "unauthenticated") {
       router.push("/admin/login");
     }
   });
 
-  if (!session) {
+  const { status } = useSession();
+  const router = useRouter();
+
+  const imgUpload = (event) => {
+    setLoading(true);
+
+    const formData = new FormData();
+    formData.append("file", event.target.files[0]);
+    formData.append("upload_preset", "blog-img");
+
+    const requestOptions = {
+      method: "POST",
+      body: formData,
+    };
+    fetch(
+      "https://api.cloudinary.com/v1_1/mccollins-media/image/upload",
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setPhoto(data.secure_url);
+        setLoading(false);
+      });
+  };
+
+  const submitFormHandler = () => {
+    const rowContent = JSON.stringify(
+      convertToRaw(editorState.getCurrentContent())
+    );
+    console.log(rowContent);
+    const requestOptions = {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        id: blog._id,
+        title: title,
+        date: date,
+        blogUrl: blogUrl,
+        category: category,
+        author: author,
+        photo: photo,
+        tags: tags,
+        keywords: keywords,
+        description: description,
+        content: rowContent,
+        arabicTitle: arabicTitle,
+        arabicDescription: arabicDescription,
+      }),
+    };
+    fetch("/api/blogs/blog/update", requestOptions).then((response) =>
+      response.json()
+    );
+    router.replace("/admin/blogs");
+  };
+
+  if (status === "loading") {
     return <p>Loading...</p>;
   }
+
   return (
     <Stack width={"100%"}>
       <Flex direction={"column"}>
@@ -55,8 +131,13 @@ const BlogEditor = ({ blogs }) => {
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-              <NextLink href="/admin/blogs-category">
+              <NextLink href="/admin/blogs">
                 <BreadcrumbLink>Blogs</BreadcrumbLink>
+              </NextLink>
+            </BreadcrumbItem>
+            <BreadcrumbItem isCurrentPage>
+              <NextLink href="/admin/blogs/create-blog">
+                <BreadcrumbLink>Create Blog</BreadcrumbLink>
               </NextLink>
             </BreadcrumbItem>
           </Breadcrumb>
@@ -64,69 +145,153 @@ const BlogEditor = ({ blogs }) => {
         <Box w="100%" p={4} bg="gray.100" borderRadius={"10px"} mt={10}>
           <Flex justifyContent={"space-between"}>
             <Box>
-              <Heading fontSize={"2xl"}>Blogs Category</Heading>
+              <Heading fontSize={"2xl"}>Create Blog</Heading>
             </Box>
           </Flex>
-          <Box>
-            <TableContainer mt="10">
-              <Table variant="striped" colorScheme="blackAlpha">
-                <TableCaption>Blogs Category Table</TableCaption>
-                <Thead>
-                  <Tr>
-                    <Th>SI.No</Th>
-                    <Th>Title</Th>
-                    <Th>Date</Th>
-                    <Th>Category</Th>
-                    <Th>Author Name</Th>
-                    <Th>Tags</Th>
-                    <Th>Photo</Th>
-                    <Th>Actions</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>
-                  {blogs.map((blog, i) => (
-                    <Tr key={blog._id}>
-                      <Td>{i + 1}</Td>
-                      <Td>{blog.title}</Td>
-                      <Td>{blog.date}</Td>
-                      <Td>{blog.category}</Td>
-                      <Td>{blog.author}</Td>
-                      <Td>{blog.tags}</Td>
-                      <Td>{blog.photo}</Td>
-                      <Td>
-                        <EditIcon
-                          cursor={"pointer"}
-                          mr={3}
-                          onClick={() => {
-                            // onEditOpen();
-                            router.push(`/admin/blogs/${blog._id}`);
-                          }}
-                        />
-                        <DeleteIcon
-                          cursor={"pointer"}
-                          onClick={() => {
-                            setBlog(blog);
-                            // onDeleteOpen();
-                          }}
-                        />
-                      </Td>
-                    </Tr>
-                  ))}
-                </Tbody>
-                <Tfoot>
-                  <Tr>
-                    <Th>SI.No</Th>
-                    <Th>Title</Th>
-                    <Th>Date</Th>
-                    <Th>Category</Th>
-                    <Th>Author Name</Th>
-                    <Th>Tags</Th>
-                    <Th>Photo</Th>
-                    <Th>Actions</Th>
-                  </Tr>
-                </Tfoot>
-              </Table>
-            </TableContainer>
+          <Box my={10}>
+            <form onSubmit={submitFormHandler}>
+              <Box display={{ base: "block", md: "flex" }}>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Title</FormLabel>
+                  <Input
+                    id="tilte"
+                    type="text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    required
+                  />
+                </FormControl>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Date</FormLabel>
+                  <Input
+                    id="date"
+                    type="date"
+                    value={date}
+                    onChange={(e) => setDate(e.target.value)}
+                    required
+                  />
+                </FormControl>
+              </Box>
+              <Box display={{ base: "block", md: "flex" }}>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Blog URL</FormLabel>
+                  <Input
+                    id="url"
+                    type="text"
+                    value={blogUrl}
+                    onChange={(e) => setBlogUrl(e.target.value)}
+                    required
+                  />
+                </FormControl>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Category</FormLabel>
+                  <Input
+                    id="category"
+                    type="text"
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                    required
+                  />
+                </FormControl>
+              </Box>
+              <Box display={{ base: "block", md: "flex" }}>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Author</FormLabel>
+                  <Input
+                    id="author"
+                    type="text"
+                    value={author}
+                    onChange={(e) => setAuthor(e.target.value)}
+                    required
+                  />
+                </FormControl>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Photo</FormLabel>
+                  <Input
+                    id="photo"
+                    type="file"
+                    onChange={(e) => imgUpload(e)}
+                  />
+                </FormControl>
+              </Box>
+              <Box display={{ base: "block", md: "flex" }}>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Tags</FormLabel>
+                  <Input
+                    id="tags"
+                    type="text"
+                    value={tags}
+                    onChange={(e) => setTags(e.target.value)}
+                    required
+                  />
+                </FormControl>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Meta keywords</FormLabel>
+                  <Input
+                    id="keywords"
+                    type="text"
+                    value={keywords}
+                    onChange={(e) => setkeywords(e.target.value)}
+                    required
+                  />
+                </FormControl>
+              </Box>
+              <Box display={{ base: "block", md: "flex" }}>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Meta Description</FormLabel>
+                  <Input
+                    id="description"
+                    type="text"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    required
+                  />
+                </FormControl>
+              </Box>
+              <Box>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Content</FormLabel>
+                  <Editor
+                    editorState={editorState}
+                    onEditorStateChange={setEditorState}
+                    wrapperClassName="wrapper-class"
+                    editorClassName="editor-class"
+                    toolbarClassName="toolbar-class"
+                  />
+                </FormControl>
+              </Box>
+              <Box display={{ base: "block", md: "flex" }}>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Arabic Title</FormLabel>
+                  <Input
+                    id="arabicTitle"
+                    type="text"
+                    value={arabicTitle}
+                    onChange={(e) => setArabicTitle(e.target.value)}
+                    required
+                  />
+                </FormControl>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Arabic Description</FormLabel>
+                  <Input
+                    id="arabicDescription"
+                    type="text"
+                    value={arabicDescription}
+                    onChange={(e) => setArabicDescription(e.target.value)}
+                    required
+                  />
+                </FormControl>
+              </Box>
+              <Button
+                float={"right"}
+                isLoading={loading}
+                colorScheme="blue"
+                type="submit"
+                mr={3}
+              >
+                Submit
+              </Button>
+            </form>
           </Box>
         </Box>
       </Flex>
@@ -134,21 +299,23 @@ const BlogEditor = ({ blogs }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   const client = await clientPromise;
 
   const db = client.db("MccollinsMedia");
 
-  let blogs = await db.collection("blogs").find({}).toArray();
-  blogs = JSON.parse(JSON.stringify(blogs));
+  let blog = await db
+    .collection("blogs")
+    .findOne({ _id: ObjectId(context.params.id) });
+  blog = JSON.parse(JSON.stringify(blog));
 
   return {
-    props: { blogs },
+    props: { blog },
   };
 }
 
-BlogEditor.getLayout = function getLayout(BlogEditor) {
-  return <AdminLayout>{BlogEditor}</AdminLayout>;
+EditBlog.getLayout = function getLayout(EditBlog) {
+  return <AdminLayout>{EditBlog}</AdminLayout>;
 };
 
-export default BlogEditor;
+export default EditBlog;

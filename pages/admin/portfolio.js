@@ -60,7 +60,6 @@ const Portfolio = ({ data }) => {
   const [image, setImage] = useState("");
   const [imageId, setImageId] = useState("");
   const [title, setTitle] = useState("");
-
   const [loading, setLoading] = useState(false);
 
   const refreshData = () => {
@@ -85,8 +84,8 @@ const Portfolio = ({ data }) => {
       .then((imageData) => {
         console.log(imageData);
         setImage(imageData.secure_url);
+        setLoading(false);
       });
-    setLoading(false);
   };
 
   const formHandler = () => {
@@ -96,10 +95,10 @@ const Portfolio = ({ data }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title: title, image: image }),
       };
-      fetch("/api/portfolio", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/portfolio", requestOptions).then(
+        (response) => response.json(),
+        refreshData()
       );
-      refreshData();
       onClose();
     }
   };

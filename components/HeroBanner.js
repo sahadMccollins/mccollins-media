@@ -10,9 +10,16 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+import { useState } from "react";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
+import "../node_modules/react-modal-video/css/modal-video.min.css";
 
 const HeroBanner = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+  const [isOpen, setOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <Stack marginTop={"-85px"} position="relative">
@@ -60,6 +67,7 @@ const HeroBanner = (props) => {
                 background={"#FFDE11"}
                 borderRadius="20px"
                 color="#000"
+                onClick={() => router.push("/contact")}
               >
                 <Image
                   src="/assets/image/icons/call.svg"
@@ -69,7 +77,12 @@ const HeroBanner = (props) => {
                 />
                 &nbsp;&nbsp;contact us
               </Button>
-              <Button colorScheme="whiteAlpha" borderRadius="20px" color="#fff">
+              <Button
+                colorScheme="whiteAlpha"
+                onClick={() => setOpen(true)}
+                borderRadius="20px"
+                color="#fff"
+              >
                 <Image
                   src="/assets/image/icons/play.svg"
                   width="25px"
@@ -81,6 +94,13 @@ const HeroBanner = (props) => {
             </ButtonGroup>
           </Box>
         </Container>
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen}
+          videoId="eK6SzU776KY"
+          onClose={() => setOpen(false)}
+        />
       </Box>
     </Stack>
   );

@@ -70,10 +70,10 @@ const BlogsCategory = ({ category }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: cat }),
       };
-      fetch("/api/blogs/category", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/blogs/category", requestOptions).then(
+        (response) => response.json(),
+        refreshData()
       );
-      refreshData();
       onClose();
     }
   };
@@ -85,10 +85,10 @@ const BlogsCategory = ({ category }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: id }),
       };
-      fetch("/api/blogs/category/delete", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/blogs/category/delete", requestOptions).then(
+        (response) => response.json(),
+        refreshData()
       );
-      refreshData();
       onDeleteClose();
     }
   };
@@ -100,10 +100,10 @@ const BlogsCategory = ({ category }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: catId, name: cat }),
       };
-      fetch("/api/blogs/category/update", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/blogs/category/update", requestOptions).then(
+        (response) => response.json(),
+        refreshData()
       );
-      refreshData();
       onEditClose();
     }
   };

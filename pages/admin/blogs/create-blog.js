@@ -18,7 +18,7 @@ import AdminLayout from "../../../components/Layout/AdminLayout";
 import { useRouter } from "next/router";
 
 import dynamic from "next/dynamic";
-import { EditorState } from "draft-js";
+import { convertToRaw, EditorState } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { useSession } from "next-auth/react";
 
@@ -40,6 +40,8 @@ const CreateBlog = () => {
   const [arabicTitle, setArabicTitle] = useState("");
   const [arabicDescription, setArabicDescription] = useState("");
 
+  const [loading, setLoading] = useState(false);
+
   const [editorState, setEditorState] = useState(() =>
     EditorState.createEmpty()
   );
@@ -48,6 +50,8 @@ const CreateBlog = () => {
   const router = useRouter();
 
   const imgUpload = (event) => {
+    setLoading(true);
+
     const formData = new FormData();
     formData.append("file", event.target.files[0]);
     formData.append("upload_preset", "blog-img");
@@ -64,10 +68,14 @@ const CreateBlog = () => {
       .then((data) => {
         console.log(data);
         setPhoto(data.secure_url);
+        setLoading(false);
       });
   };
 
   const submitFormHandler = () => {
+    const rowContent = JSON.stringify(
+      convertToRaw(editorState.getCurrentContent())
+    );
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -81,15 +89,15 @@ const CreateBlog = () => {
         tags: tags,
         keywords: keywords,
         description: description,
-        content: editorState,
+        content: rowContent,
         arabicTitle: arabicTitle,
         arabicDescription: arabicDescription,
       }),
     };
-    fetch("/api/blogs/blog", requestOptions).then((response) =>
-      response.json()
+    fetch("/api/blogs/blog", requestOptions).then(
+      (response) => response.json(),
+      router.push("/admin/blogs")
     );
-    router.replace("/admin/blogs");
   };
 
   useEffect(() => {
@@ -183,7 +191,6 @@ const CreateBlog = () => {
                     id="author"
                     type="text"
                     onChange={(e) => setAuthor(e.target.value)}
-                    required
                   />
                 </FormControl>
                 <FormControl p={5}>
@@ -212,7 +219,6 @@ const CreateBlog = () => {
                     id="keywords"
                     type="text"
                     onChange={(e) => setkeywords(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>
@@ -223,7 +229,6 @@ const CreateBlog = () => {
                     id="description"
                     type="text"
                     onChange={(e) => setDescription(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>
@@ -246,7 +251,6 @@ const CreateBlog = () => {
                     id="arabicTitle"
                     type="text"
                     onChange={(e) => setArabicTitle(e.target.value)}
-                    required
                   />
                 </FormControl>
                 <FormControl p={5}>
@@ -255,11 +259,16 @@ const CreateBlog = () => {
                     id="arabicDescription"
                     type="text"
                     onChange={(e) => setArabicDescription(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>
-              <Button float={"right"} colorScheme="blue" type="submit" mr={3}>
+              <Button
+                float={"right"}
+                isLoading={loading}
+                colorScheme="blue"
+                type="submit"
+                mr={3}
+              >
                 Submit
               </Button>
             </form>

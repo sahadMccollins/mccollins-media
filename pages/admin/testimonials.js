@@ -76,10 +76,10 @@ const Testimonials = ({ data }) => {
           content: content,
         }),
       };
-      fetch("/api/testimonials", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/testimonials", requestOptions).then(
+        (response) => response.json(),
+        refreshData()
       );
-      refreshData();
       onClose();
     }
   };
@@ -91,10 +91,10 @@ const Testimonials = ({ data }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: id }),
       };
-      fetch("/api/testimonials", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/testimonials", requestOptions).then(
+        (response) => response.json(),
+        refreshData()
       );
-      refreshData();
       onDeleteClose();
     }
   };
@@ -106,10 +106,10 @@ const Testimonials = ({ data }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: testiId, name: testi }),
       };
-      fetch("/api/testimonials", requestOptions).then((response) =>
-        response.json()
+      fetch("/api/testimonials", requestOptions).then(
+        (response) => response.json(),
+        refreshData()
       );
-      refreshData();
       onEditClose();
     }
   };

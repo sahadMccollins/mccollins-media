@@ -16,6 +16,7 @@ import {
   TabPanels,
   Tabs,
   Text,
+  Link as chakraLink,
 } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -62,37 +63,63 @@ const Footer = () => {
               </Text>
             </Box>
             <Flex mt={5}>
-              <Box p={3} pl={0}>
+              <Box
+                p={3}
+                pl={0}
+                as={chakraLink}
+                href="https://vm.tiktok.com/ZSJShjmYH/"
+                target="_blank"
+              >
                 <Image
-                  src="/assets/image/icons/tiktok.png"
+                  src="/assets/image/icons/tiktok.svg"
                   width={"18px"}
                   height="21px"
                 />
               </Box>
-              <Box p={3}>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://www.instagram.com/mccollinsmedia/?hl=en"
+                target="_blank"
+              >
                 <Image
-                  src="/assets/image/icons/insta.png"
+                  src="/assets/image/icons/insta.svg"
                   width={"21px"}
                   height="21px"
                 />
               </Box>
-              <Box p={3}>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://www.facebook.com/mccollinsmedia/"
+                target="_blank"
+              >
                 <Image
-                  src="/assets/image/icons/fb.png"
+                  src="/assets/image/icons/fb.svg"
                   width={"9px"}
                   height="21px"
                 />
               </Box>
-              <Box p={3}>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://www.linkedin.com/company/mccollins-media/"
+                target="_blank"
+              >
                 <Image
-                  src="/assets/image/icons/linkedin.png"
+                  src="/assets/image/icons/linkedin.svg"
                   width={"22px"}
                   height="21px"
                 />
               </Box>
-              <Box p={3}>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://twitter.com/mccollinsmedia?lang=en"
+                target="_blank"
+              >
                 <Image
-                  src="/assets/image/icons/twiter.png"
+                  src="/assets/image/icons/twiter.svg"
                   width={"27px"}
                   height="20px"
                 />

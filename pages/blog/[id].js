@@ -1,0 +1,198 @@
+import React, { useEffect, useState } from "react";
+import clientPromise from "../../lib/mongodb";
+import InnerLayout from "../../components/Layout/InnerLayout";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import Image from "next/image";
+import { EditorState, convertFromRaw, Editor } from "draft-js";
+import { TbFolders, TbCalendar } from "react-icons/tb";
+
+const Blog = ({ blog, recentPost }) => {
+  const [editorState, setEditorState] = useState(EditorState.createEmpty());
+
+  useEffect(() => {
+    loadContent();
+    console.log(recentPost);
+  }, []);
+
+  const loadContent = () => {
+    let content = convertFromRaw(JSON.parse(blog.content));
+    setEditorState(EditorState.createWithContent(content));
+  };
+
+  return (
+    <Stack>
+      <Container maxWidth={"7xl"}>
+        <Flex
+          mt="-50px"
+          height={{ base: "100%", md: "100vh" }}
+          minHeight="600px"
+          pt="170px"
+          direction={{ base: "column", md: "row" }}
+        >
+          <Box width={{ base: "100%", md: "40%" }} position="relative">
+            <Box
+              position={"absolute"}
+              top={{ base: "37%", md: "-10%" }}
+              left={"70%"}
+            >
+              <Image
+                src="/assets/image/design/3.svg"
+                width={"89px"}
+                height={"104px"}
+                priority={true}
+              />
+            </Box>
+            <Heading fontSize={"50px"} mt="10" color="#FFDE11">
+              Blog
+            </Heading>
+            <Heading
+              fontSize={{ base: "40px", md: "42px" }}
+              color="#000"
+              fontWeight="black"
+            >
+              {blog.title}
+            </Heading>
+            <Button
+              colorScheme="yellow"
+              background={"#FFDE11"}
+              borderRadius="20px"
+              color="#000"
+              mt={"5"}
+            >
+              <Image
+                src="/assets/image/icons/call.svg"
+                width="25px"
+                height="25px"
+                priority={true}
+              />
+              &nbsp;&nbsp;contact us
+            </Button>
+            <Flex mt={5}>
+              <Flex alignItems={"center"} mr="10">
+                <TbFolders size={"40px"} />
+                <Box ml={3}>
+                  <Text fontSize={"20px"} color="#FFDE11">
+                    Category
+                  </Text>
+                  <Text fontSize={"18px"} fontWeight="semibold">
+                    {blog.category}
+                  </Text>
+                </Box>
+              </Flex>
+              <Flex alignItems={"center"}>
+                <TbCalendar size={"40px"} />
+                <Box ml={3}>
+                  <Text fontSize={"20px"} color="#FFDE11">
+                    LAST UPDATED
+                  </Text>
+                  <Text fontSize={"18px"} fontWeight="semibold">
+                    {blog.date}
+                  </Text>
+                </Box>
+              </Flex>
+            </Flex>
+          </Box>
+          <Box width={{ base: "100%", md: "55%" }} position="relative">
+            <Image
+              src={blog.photo}
+              width="740px"
+              height={"430px"}
+              property={true}
+            />
+          </Box>
+        </Flex>
+      </Container>
+      <Stack bg="#F7F7F7" pt={"10"}>
+        <Container maxWidth={"7xl"}>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            justifyContent="space-between"
+          >
+            <Box
+              width={{ base: "100%", md: "70%" }}
+              color="#4b5280"
+              lineHeight={"1.8"}
+              bg={"#fff"}
+              p="5"
+            >
+              <Editor editorState={editorState} readOnly />
+            </Box>
+            <Box width={{ base: "100%", md: "25%" }} bg="#fff" p="5">
+              <Heading mb={3}>Recent Posts</Heading>
+              <hr />
+              <Box mt={5}>
+                {recentPost.map((rp) => (
+                  <Flex alignItems={"center"} mt="10">
+                    <Image
+                      src={rp.photo}
+                      width="170px"
+                      height={"80px"}
+                      objectFit={"cover"}
+                      layout="fixed"
+                      style={{ borderRadius: "10px" }}
+                    />
+                    <Box ml={"20px"}>
+                      <Text
+                        color={"#4b5280"}
+                        fontSize="15px"
+                        fontWeight={"semibold"}
+                      >
+                        {rp.date}
+                      </Text>
+                      <Text fontSize={"18px"} fontWeight="bold">
+                        {rp.title}
+                      </Text>
+                    </Box>
+                  </Flex>
+                ))}
+              </Box>
+            </Box>
+          </Flex>
+        </Container>
+      </Stack>
+    </Stack>
+  );
+};
+
+export async function getServerSideProps(context) {
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let blog = await db
+    .collection("blogs")
+    .findOne({ blogUrl: context.params.id });
+  blog = JSON.parse(JSON.stringify(blog));
+
+  let recentPost = await db
+    .collection("blogs")
+    .find()
+    .sort({ _id: -1 })
+    .limit(5)
+    .toArray();
+  recentPost = JSON.parse(JSON.stringify(recentPost));
+
+  if (!blog) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: { blog, recentPost },
+  };
+}
+
+Blog.getLayout = function getLayout(Blog) {
+  return <InnerLayout>{Blog}</InnerLayout>;
+};
+
+export default Blog;
