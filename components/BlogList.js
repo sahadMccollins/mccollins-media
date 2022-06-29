@@ -1,12 +1,12 @@
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Link as ChakraLink, Text } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 
 const BlogList = (props) => {
   return (
-    <Box>
-      <Image src={props.img} width="355px" height={"426px"} />
+    <Box as={ChakraLink} href={props.url} _hover={{ textDecoration: "none" }}>
+      <Image src={props.img} width="355px" height={"426px"} objectFit="cover" />
       <Heading fontSize={"2xl"} pr="60px" height={"90px"}>
         {props.heading}
       </Heading>
@@ -17,7 +17,7 @@ const BlogList = (props) => {
           width={"fit-content"}
           p={"5px 30px 5px 20px"}
         >
-          31 Mar, 2022
+          {props.date}
         </Text>
         <Box
           as="span"

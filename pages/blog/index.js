@@ -15,8 +15,10 @@ import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import BlogList from "../../components/BlogList";
 import clientPromise from "../../lib/mongodb";
+import { useRouter } from "next/router";
 
 const Index = ({ blogs }) => {
+  const router = useRouter();
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
@@ -52,7 +54,12 @@ const Index = ({ blogs }) => {
                 height={"521px"}
               />
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} ml={{ base: "0", md: 20 }}>
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              ml={{ base: "0", md: 20 }}
+              alignSelf="center"
+              mb={"5"}
+            >
               <Heading fontSize={"5xl"}>{blogs[0].title}</Heading>
               <Box my={5} display="flex">
                 <Text
@@ -75,7 +82,15 @@ const Index = ({ blogs }) => {
                 ></Box>
               </Box>
 
-              <Text fontWeight={"bold"}>{blogs[0].smallContent}</Text>
+              {/* <Text fontWeight={"bold"}>{blogs[0].smallContent}</Text> */}
+              <Text fontWeight={"bold"}>
+                When you think about marketing, the fastest man in the world is
+                not necessarily the most obvious connection to make. That said,
+                there are a few similarities between the world of high
+                performance athletics and the business of brand building. Here
+                are a few lessons that we could do well to learn from Usain
+                Bolt.
+              </Text>
               <Button
                 colorScheme="yellow"
                 background={"#FFDE11"}
@@ -83,6 +98,9 @@ const Index = ({ blogs }) => {
                 color="#000"
                 mt={7}
                 fontWeight="bold"
+                onClick={() => {
+                  router.push(`/blog/${blogs[0].blogUrl}`);
+                }}
               >
                 read more{" "}
                 <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -94,30 +112,17 @@ const Index = ({ blogs }) => {
       <Box>
         <Container maxWidth={"7xl"} py="20">
           <SimpleGrid columns={{ base: "1", sm: "2", md: "3" }} spacing={10}>
-            <BlogList
-              img="/assets/image/blogPage/blogs/blog1.jpg"
-              heading="In 2022, Here Are a Few Outstanding Web Design Trends to Try"
-            />
-            <BlogList
-              img="/assets/image/blogPage/blogs/blog2.jpg"
-              heading="5 Trends that will fuel e-commerce businesses in 2022"
-            />
-            <BlogList
-              img="/assets/image/blogPage/blogs/blog3.jpg"
-              heading="How to plan your Digital Marketing Budget for 2022"
-            />
-            <BlogList
-              img="/assets/image/blogPage/blogs/blog4.jpg"
-              heading="In 2022, Here Are a Few Outstanding Web Design Trends to Try"
-            />
-            <BlogList
-              img="/assets/image/blogPage/blogs/blog5.jpg"
-              heading="In 2022, Here Are a Few Outstanding Web Design Trends to Try"
-            />
-            <BlogList
-              img="/assets/image/blogPage/blogs/blog6.jpg"
-              heading="In 2022, Here Are a Few Outstanding Web Design Trends to Try"
-            />
+            {blogs.map((blog) => {
+              return (
+                <BlogList
+                  key={blog._id}
+                  img={blog.photo}
+                  heading={blog.title}
+                  date={blog.date}
+                  url={`/blog/${blog.blogUrl}`}
+                />
+              );
+            })}
           </SimpleGrid>
           <Box textAlign={"center"}>
             <Button

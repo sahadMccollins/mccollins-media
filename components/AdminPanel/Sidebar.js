@@ -19,6 +19,7 @@ import { FiMenu, FiHome, FiFileText } from "react-icons/fi";
 import { BiCategory } from "react-icons/bi";
 import { VscFeedback } from "react-icons/vsc";
 import { GrGallery } from "react-icons/gr";
+import { AiOutlineForm } from "react-icons/ai";
 import NavItem from "../AdminPanel/NavItem";
 import { useRouter } from "next/router";
 
@@ -34,7 +35,7 @@ export default function Sidebar() {
       marginTop="2.5vh"
       boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
       borderRadius={navSize == "small" ? "15px" : "30px"}
-      w={navSize == "small" ? "75px" : "200px"}
+      w={navSize == "small" ? "75px" : "300px"}
       flexDir="column"
       justifyContent="space-between"
     >
@@ -103,6 +104,13 @@ export default function Sidebar() {
           title="Testimonials"
           page="/admin/testimonials"
           active={router.pathname == "/admin/testimonials"}
+        />
+        <NavItem
+          navSize={navSize}
+          icon={AiOutlineForm}
+          title="Form Submit"
+          page="/admin/form-submit"
+          active={router.pathname == "/admin/form-submit"}
         />
       </Flex>
 

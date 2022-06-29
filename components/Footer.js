@@ -19,8 +19,42 @@ import {
   Link as chakraLink,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { useState } from "react";
 
 const Footer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState();
+  const [lookingFor, setLookingFor] = useState("");
+  const [project, setProject] = useState("");
+
+  const [loading, setLoading] = useState(false);
+
+  const formHandler = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        contact: contact,
+        lookingFor: lookingFor,
+        project: project,
+      }),
+    };
+    fetch("/api/form-submit", requestOptions).then(
+      (response) => response.json(),
+      setName(""),
+      setContact(null),
+      setEmail(""),
+      setLookingFor(""),
+      setProject(""),
+      setLoading(false)
+    );
+  };
   return (
     <Stack bg={"#000"} pt="70px" pb="20px" className="footer">
       <Container maxWidth={"7xl"} pb="2">
@@ -131,28 +165,53 @@ const Footer = () => {
             mt={{ base: "50px", md: "0" }}
             color="#fff"
           >
-            <form>
+            <form onSubmit={formHandler}>
               <FormControl isRequired>
                 <FormLabel htmlFor="first-name">First Name</FormLabel>
-                <Input id="first-name" borderRadius={"50px"} />
+                <Input
+                  id="first-name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                  borderRadius={"50px"}
+                />
               </FormControl>
               <FormControl isRequired mt={5}>
                 <FormLabel htmlFor="contact">Contact No</FormLabel>
-                <NumberInput max={50} min={10}>
-                  <NumberInputField id="contact" borderRadius={"50px"} />
+                <NumberInput max={50} min={10} value={contact}>
+                  <NumberInputField
+                    id="contact"
+                    onChange={(e) => setContact(e.target.value)}
+                    borderRadius={"50px"}
+                  />
                 </NumberInput>
               </FormControl>
               <FormControl isRequired mt={5}>
                 <FormLabel htmlFor="email">Email</FormLabel>
-                <Input id="email" type="email" borderRadius={"50px"} />
+                <Input
+                  id="email"
+                  type="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  borderRadius={"50px"}
+                />
               </FormControl>
               <FormControl isRequired mt={5}>
-                <FormLabel htmlFor="first-name">Looking For?</FormLabel>
-                <Input id="first-name" borderRadius={"50px"} />
+                <FormLabel htmlFor="looking-for">Looking For?</FormLabel>
+                <Input
+                  id="looking-for"
+                  onChange={(e) => setLookingFor(e.target.value)}
+                  value={lookingFor}
+                  borderRadius={"50px"}
+                />
               </FormControl>
               <FormControl isRequired mt={5}>
-                <FormLabel htmlFor="first-name">Project Details</FormLabel>
-                <Input id="first-name" borderRadius={"50px"} />
+                <FormLabel htmlFor="project">Project Details</FormLabel>
+                <Input
+                  id="project"
+                  onChange={(e) => setProject(e.target.value)}
+                  value={project}
+                  borderRadius={"50px"}
+                />
               </FormControl>
               <Button
                 mt={5}
@@ -162,6 +221,7 @@ const Footer = () => {
                 borderRadius={"50px"}
                 fontSize={"18px"}
                 fontWeight="bold"
+                isLoading={loading}
               >
                 Submit Inquiry
               </Button>

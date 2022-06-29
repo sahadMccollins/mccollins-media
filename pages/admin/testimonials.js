@@ -132,7 +132,7 @@ const Testimonials = ({ data }) => {
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-              <NextLink href="/admin/blogs-category">
+              <NextLink href="/admin/testimonials">
                 <BreadcrumbLink>Testimonials</BreadcrumbLink>
               </NextLink>
             </BreadcrumbItem>
@@ -149,7 +149,7 @@ const Testimonials = ({ data }) => {
               </Button>
             </Box>
           </Flex>
-          <Box>
+          <Box maxWidth={"73vw"}>
             <TableContainer mt="10">
               <Table variant="striped" colorScheme="blackAlpha">
                 <TableCaption>Testimonials Table</TableCaption>

@@ -107,7 +107,7 @@ const Blogs = ({ blogs }) => {
               </Button>
             </Box>
           </Flex>
-          <Box maxWidth={"79vw"}>
+          <Box maxWidth={"73vw"}>
             <TableContainer mt="10">
               <Table variant="striped" colorScheme="blackAlpha">
                 <TableCaption>Blogs Category Table</TableCaption>
