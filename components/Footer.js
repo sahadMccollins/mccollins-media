@@ -17,6 +17,7 @@ import {
   Tabs,
   Text,
   Link as chakraLink,
+  useToast,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { useState } from "react";
@@ -29,6 +30,8 @@ const Footer = () => {
   const [project, setProject] = useState("");
 
   const [loading, setLoading] = useState(false);
+
+  const toast = useToast();
 
   const formHandler = (e) => {
     e.preventDefault();
@@ -48,11 +51,18 @@ const Footer = () => {
     fetch("/api/form-submit", requestOptions).then(
       (response) => response.json(),
       setName(""),
-      setContact(null),
+      setContact(""),
       setEmail(""),
       setLookingFor(""),
       setProject(""),
-      setLoading(false)
+      setLoading(false),
+      toast({
+        title: "Form Submited",
+        description: "Thank you for getting in touch!",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      })
     );
   };
   return (
