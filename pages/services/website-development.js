@@ -34,7 +34,7 @@ const WebsiteDevelopment = () => {
         height="100vh"
         overflow={"hidden"}
       >
-        <video autoPlay={true} loop width="100%">
+        <video autoPlay playsInline loop width="100%">
           <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657107109/Mccollins%20Video/Ipad_go16sk.mp4"
             type="video/mp4"
