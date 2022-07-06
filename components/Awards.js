@@ -1,10 +1,9 @@
 import { Box, Container, Flex, Heading, HStack, Stack } from "@chakra-ui/react";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AwardSlide from "./AwardSlide";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
-import { useRef } from "react";
 import "swiper/css";
 
 const Awards = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -19,17 +19,35 @@ import {
   Link as chakraLink,
   color,
 } from "@chakra-ui/react";
-import styles from "../styles/Navbar.module.css";
+import styles from "../../styles/Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import NavItem from "../Navbar/NavItem";
 
 const Navbar = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isActive, setIsActive] = useState(false);
 
   const router = useRouter();
+
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  const isSticky = (e) => {
+    const header = document.querySelector(".header-section");
+    const scrollTop = window.scrollY;
+    scrollTop >= 200
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
 
   return (
     <Stack zIndex={"99"}>
@@ -53,7 +71,7 @@ const Navbar = (props) => {
             {isLargerThan780 ? (
               <>
                 <Flex>
-                  <ButtonGroup gap="4" zIndex="99">
+                  <ButtonGroup gap="4" zIndex="99" mr={"10"}>
                     <Button
                       colorScheme={props.color ? "yellow" : "whiteAlpha"}
                       background={props.color ? "#FFDE11" : null}
@@ -233,6 +251,96 @@ const Navbar = (props) => {
           </Box>
         </Flex>
       </Container>
+
+      {/* Sticky Header Start */}
+      <Box className="header-section">
+        <Container maxWidth={"7xl"}>
+          <Flex>
+            <Box flexGrow={1} zIndex="99">
+              <Link href="/">
+                <Image
+                  src={`/assets/image/navbar/logo-yellow.png`}
+                  alt="Mccolins Media logo"
+                  width="223"
+                  height="50"
+                  priority={true}
+                  style={{ cursor: "pointer" }}
+                />
+              </Link>
+            </Box>
+            <Box alignSelf={"center"}>
+              {isLargerThan780 ? (
+                <>
+                  <Flex>
+                    <ButtonGroup gap="4" float={"right"} mr={"50px"}>
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                      >
+                        <Image
+                          src="/assets/image/icons/call.svg"
+                          width="25px"
+                          height="25px"
+                          priority={true}
+                        />
+                        &nbsp;Call
+                      </Button>
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                      >
+                        <Image
+                          src="/assets/image/icons/chat.svg"
+                          width="25px"
+                          height="25px"
+                          priority={true}
+                        />
+                        &nbsp;Lets talk
+                      </Button>
+                    </ButtonGroup>
+                    <Box
+                      className={styles.hamBurger}
+                      colorScheme="teal"
+                      onClick={onOpen}
+                    >
+                      <span
+                        style={{ background: props.color ? "#000" : "#000" }}
+                      ></span>
+                      <span
+                        style={{ background: props.color ? "#000" : "#000" }}
+                      ></span>
+                      <span
+                        style={{ background: props.color ? "#000" : "#000" }}
+                      ></span>
+                    </Box>
+                  </Flex>
+                </>
+              ) : (
+                <Box
+                  className={styles.hamBurger}
+                  colorScheme="teal"
+                  onClick={onOpen}
+                >
+                  <span
+                    style={{ background: props.color ? "#000" : "#FFDE11" }}
+                  ></span>
+                  <span
+                    style={{ background: props.color ? "#000" : "#FFDE11" }}
+                  ></span>
+                  <span
+                    style={{ background: props.color ? "#000" : "#FFDE11" }}
+                  ></span>
+                </Box>
+              )}
+            </Box>
+          </Flex>
+        </Container>
+      </Box>
+      {/* Sticky Header End */}
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -310,12 +418,97 @@ const Navbar = (props) => {
                           ? styles.sidebarActiveLi
                           : null
                       }
-                      onClick={() => onClose()}
+                      onClick={() => {
+                        setIsActive(!isActive);
+                      }}
+                      style={{ width: "100%", cursor: "pointer" }}
                     >
-                      <Link href="/services">
-                        <a>services</a>
-                      </Link>
+                      <Flex>
+                        {isActive ? (
+                          <ChevronDownIcon bg="#fff" placeSelf={"center"} />
+                        ) : (
+                          <ChevronRightIcon bg="#fff" placeSelf={"center"} />
+                        )}
+                        <Box flexGrow={1} bg="#fff"></Box>
+                        <Link href="/services">
+                          <a
+                            onClick={() => {
+                              onClose();
+                            }}
+                          >
+                            services
+                          </a>
+                        </Link>
+                      </Flex>
                     </li>
+                    <ul
+                      className={styles.ulDropdown}
+                      style={{
+                        display: isActive ? "block" : "none",
+                      }}
+                    >
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="App Development"
+                          href="/services/app-development"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Content Production"
+                          href="/services/content-production"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Design & Brand Dev"
+                          href="/services/design-and-brand-development"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Digital Marketing & Seo"
+                          href="/services/digital-marketing-and-seo"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Social Media Marketing"
+                          href="/services/social-media-marketing"
+                        />
+                        Social Media Marketing
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Website Development"
+                          href="/services/website-development"
+                        />
+                      </li>
+                    </ul>
                     {/* <li>
                       <Link href="/about">
                         <a>work</a>

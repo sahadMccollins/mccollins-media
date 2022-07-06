@@ -11,6 +11,7 @@ import {
   Heading,
   Input,
   Stack,
+  Textarea,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import NextLink from "next/link";
@@ -39,6 +40,7 @@ const EditBlog = ({ blog }) => {
   const [tags, setTags] = useState(blog.tags);
   const [keywords, setkeywords] = useState(blog.keywords);
   const [description, setDescription] = useState(blog.description);
+  const [shortContent, setShortContent] = useState(blog.shortContent);
   const [arabicTitle, setArabicTitle] = useState(blog.arabicTitle);
   const [arabicDescription, setArabicDescription] = useState(
     blog.arabicDescription
@@ -102,6 +104,7 @@ const EditBlog = ({ blog }) => {
         keywords: keywords,
         description: description,
         content: rowContent,
+        shortContent: shortContent,
         arabicTitle: arabicTitle,
         arabicDescription: arabicDescription,
       }),
@@ -250,6 +253,18 @@ const EditBlog = ({ blog }) => {
               </Box>
               <Box>
                 <FormControl p={5}>
+                  <FormLabel htmlFor="shortContent">Short Content</FormLabel>
+                  <Textarea
+                    id="shortContent"
+                    type="textArea"
+                    value={shortContent}
+                    onChange={(e) => setShortContent(e.target.value)}
+                    required
+                  />
+                </FormControl>
+              </Box>
+              <Box>
+                <FormControl p={5}>
                   <FormLabel htmlFor="category">Content</FormLabel>
                   <Editor
                     editorState={editorState}
@@ -268,7 +283,6 @@ const EditBlog = ({ blog }) => {
                     type="text"
                     value={arabicTitle}
                     onChange={(e) => setArabicTitle(e.target.value)}
-                    required
                   />
                 </FormControl>
                 <FormControl p={5}>
@@ -278,7 +292,6 @@ const EditBlog = ({ blog }) => {
                     type="text"
                     value={arabicDescription}
                     onChange={(e) => setArabicDescription(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>

@@ -64,3 +64,19 @@
 .sidebarUl li a {
     padding: 0 10px;
 }
+
+.ulDropdown {
+    margin-right: 20px;
+}
+
+.ulDropdown li {
+    font-size: 28px;
+}
+
+@media (max-width: 780px) {
+
+    .ulDropdown li {
+    font-size: 18px;
+    }
+
+}

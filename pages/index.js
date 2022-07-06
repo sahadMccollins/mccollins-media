@@ -54,7 +54,7 @@ export default function Home() {
 
       <TextBox
         heading="Technologies We work with"
-        content="Transform your brand journey today. We grow brands, create experiences and solve problems."
+        subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."
       />
 
       <TechIcon />

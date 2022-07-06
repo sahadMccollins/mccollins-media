@@ -17,6 +17,7 @@ import TextBox from "../../components/TextBox";
 import FavWork from "../../components/FavWork";
 import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
+import Carousel from "../../components/Carousel";
 
 const ContentProduction = () => {
   return (
@@ -114,6 +115,7 @@ const ContentProduction = () => {
         </Container>
       </Box>
       <ServicePoint />
+      <Carousel />
       <TextBox
         heading="Case study"
         smallHeading="website design & development"

@@ -34,6 +34,13 @@ const TextBox = (props) => {
             >
               {props.subHeading}
             </Heading>
+            <Heading
+              fontSize={{ base: "1xl", md: "2xl" }}
+              mb="2"
+              mt={{ base: "5", md: "0" }}
+            >
+              {props.subHeadingOnly}
+            </Heading>
             <Text>{props.content}</Text>
           </Box>
         </Flex>

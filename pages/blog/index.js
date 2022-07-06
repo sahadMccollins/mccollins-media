@@ -83,14 +83,7 @@ const Index = ({ blogs }) => {
               </Box>
 
               {/* <Text fontWeight={"bold"}>{blogs[0].smallContent}</Text> */}
-              <Text fontWeight={"bold"}>
-                When you think about marketing, the fastest man in the world is
-                not necessarily the most obvious connection to make. That said,
-                there are a few similarities between the world of high
-                performance athletics and the business of brand building. Here
-                are a few lessons that we could do well to learn from Usain
-                Bolt.
-              </Text>
+              <Text fontWeight={"bold"}>{blogs[0].shortContent}</Text>
               <Button
                 colorScheme="yellow"
                 background={"#FFDE11"}
@@ -102,7 +95,7 @@ const Index = ({ blogs }) => {
                   router.push(`/blog/${blogs[0].blogUrl}`);
                 }}
               >
-                read more{" "}
+                read more
                 <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
               </Button>
             </Box>

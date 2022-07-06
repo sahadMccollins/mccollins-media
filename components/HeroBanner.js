@@ -98,7 +98,7 @@ const HeroBanner = (props) => {
           channel="youtube"
           autoplay
           isOpen={isOpen}
-          videoId="eK6SzU776KY"
+          videoId="Pj6P8kQvpZw"
           onClose={() => setOpen(false)}
         />
       </Box>

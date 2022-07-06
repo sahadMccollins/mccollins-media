@@ -6,6 +6,8 @@ import OurTeam from "../components/OurTeam";
 import TextBox from "../components/TextBox";
 import ClientsLogo from "../components/ClientsLogo";
 import Awards from "../components/Awards";
+import InstagramFeed from "react-ig-feed";
+import "react-ig-feed/dist/index.css";
 
 const about = () => {
   return (
@@ -107,6 +109,15 @@ const about = () => {
 
       <ClientsLogo />
       <Awards />
+      <Heading textAlign={"center"} mb={5}>
+        Our Instagram Feed
+      </Heading>
+      <Box>
+        <InstagramFeed
+          token="IGQVJVU3U4ZAjljbGJEVkVVdnZAJOVBsYmlDdzZAlbWw5clk2TDJKRnBIRG5jQlFYanVLTThFV042MWpwdHFNTDBfUnR0OERQZAGZANZA2IwcG9uQjJKMmFSOGxaMk1qZAmxEUzdEb3FKNEYyX3hhYXZAQMlJuRgZDZD"
+          counter="6"
+        />
+      </Box>
     </>
   );
 };

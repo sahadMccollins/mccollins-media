@@ -11,6 +11,7 @@ import {
   Heading,
   Input,
   Stack,
+  Textarea,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import NextLink from "next/link";
@@ -37,6 +38,7 @@ const CreateBlog = () => {
   const [tags, setTags] = useState("");
   const [keywords, setkeywords] = useState("");
   const [description, setDescription] = useState("");
+  const [shortContent, setShortContent] = useState("");
   const [arabicTitle, setArabicTitle] = useState("");
   const [arabicDescription, setArabicDescription] = useState("");
 
@@ -46,7 +48,7 @@ const CreateBlog = () => {
     EditorState.createEmpty()
   );
 
-  const { data: session } = useSession();
+  const { status } = useSession();
   const router = useRouter();
 
   const imgUpload = (event) => {
@@ -89,6 +91,7 @@ const CreateBlog = () => {
         tags: tags,
         keywords: keywords,
         description: description,
+        shortContent: shortContent,
         content: rowContent,
         arabicTitle: arabicTitle,
         arabicDescription: arabicDescription,
@@ -101,12 +104,12 @@ const CreateBlog = () => {
   };
 
   useEffect(() => {
-    if (!session) {
+    if (status === "unauthenticated") {
       router.push("/admin/login");
     }
   });
 
-  if (!session) {
+  if (status === "loading") {
     return <p>Loading...</p>;
   }
 
@@ -229,6 +232,17 @@ const CreateBlog = () => {
                     id="description"
                     type="text"
                     onChange={(e) => setDescription(e.target.value)}
+                  />
+                </FormControl>
+              </Box>
+              <Box>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="shortContent">Short Content</FormLabel>
+                  <Textarea
+                    id="shortContent"
+                    type="textArea"
+                    onChange={(e) => setShortContent(e.target.value)}
+                    required
                   />
                 </FormControl>
               </Box>

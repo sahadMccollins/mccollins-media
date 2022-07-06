@@ -261,24 +261,34 @@ const ServicePageAccordian = () => {
             </Accordion>
           </Box>
           <Box
-            width={{ base: "100%", md: "40%" }}
+            width={{ base: "100%", md: "50%" }}
             alignSelf="center"
             position={"relative"}
           >
-            <Image
-              src="/assets/image/servicePage/serviceAccordian.jpg"
-              width="317px"
-              height="354px"
-              style={{ zIndex: "2" }}
-            />
+            <video
+              controls
+              preload="none"
+              poster="/assets/image/servicePage/webShowcasePoster.jpeg"
+              style={{
+                borderRadius: "15px",
+                zIndex: "9",
+                position: "relative",
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
+                type="video/mp4"
+              />
+            </video>
             <Box
               position={"absolute"}
-              width="250px"
+              width="450px"
               height="300px"
               bg={"#FFDE11"}
-              top="100px"
-              right="130px"
+              top="70px"
+              right="-20px"
               zIndex={0}
+              borderRadius="15px"
             ></Box>
           </Box>
         </Flex>

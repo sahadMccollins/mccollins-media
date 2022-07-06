@@ -31,6 +31,28 @@ a {
 
 /* Navbar Hamburger Stop */
 
+
+/* Navbar isSticky Start */
+
+.header-section {
+  display: none;
+}
+
+.header-section.is-sticky {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+}
+
+/* Navbar isSticky End */
+
 /* Footer Start */
 
 
