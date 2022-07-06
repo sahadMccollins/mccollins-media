@@ -12,7 +12,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 
@@ -25,6 +25,11 @@ import ClientsLogo from "../../components/ClientsLogo";
 import ServiceTabsDetails from "../../components/ServiceTabsDetails";
 
 const WebsiteDevelopment = () => {
+  const videoRef = useRef();
+
+  useEffect(() => {
+    videoRef.current.play();
+  }, []);
   return (
     <Stack position={"relative"}>
       <Box
@@ -34,7 +39,7 @@ const WebsiteDevelopment = () => {
         height="100vh"
         overflow={"hidden"}
       >
-        <video autoPlay playsInline loop width="100%">
+        <video autoPlay muted loop width="100%" ref={videoRef}>
           <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657107109/Mccollins%20Video/Ipad_go16sk.mp4"
             type="video/mp4"
