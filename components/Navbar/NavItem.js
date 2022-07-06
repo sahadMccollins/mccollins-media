@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import styles from "../../styles/Navbar.module.css";
 import { Box } from "@chakra-ui/react";
 
-const NavItem = (props, { onClose }) => {
+const NavItem = (props) => {
   const router = useRouter();
   return (
     <Box

@@ -59,6 +59,7 @@ const Navbar = (props) => {
                 src={`/assets/image/navbar/${
                   props.color ? "logo-black" : "logo"
                 }.svg`}
+                // src={`/assets/image/navbar/logo-${props.color}.png`}
                 alt="Mccolins Media logo"
                 width="223"
                 height="50"

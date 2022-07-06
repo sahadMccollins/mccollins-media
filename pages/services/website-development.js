@@ -1,6 +1,8 @@
 import {
   Box,
+  Button,
   Container,
+  Flex,
   Heading,
   Stack,
   Tab,
@@ -8,6 +10,7 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
+  Text,
 } from "@chakra-ui/react";
 import React from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
@@ -23,13 +26,101 @@ import ServiceTabsDetails from "../../components/ServiceTabsDetails";
 
 const WebsiteDevelopment = () => {
   return (
-    <Stack>
-      <Container maxWidth={"7xl"}>
-        <InnerBanner
+    <Stack position={"relative"}>
+      <Box
+        position={"absolute"}
+        top="-85px"
+        width={"100%"}
+        height="100vh"
+        overflow={"hidden"}
+      >
+        <video autoPlay={true} loop width="100%">
+          <source
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1657107109/Mccollins%20Video/Ipad_go16sk.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </Box>
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
+        {/* <InnerBanner
           heading={`web \n development`}
           img="/assets/image/servicePage/serviceAccordian.jpg"
           content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
-        />
+        /> */}
+
+        <Flex
+          mt="-85px"
+          height={{ base: "100%", md: "100vh" }}
+          minHeight="600px"
+          pt="170px"
+          direction={{ base: "column", md: "row" }}
+        >
+          <Box width={{ base: "100%", md: "55%" }} position="relative">
+            <Box
+              position={"absolute"}
+              top={{ base: "37%", md: "6%" }}
+              left={"70%"}
+            >
+              <Image
+                src="/assets/image/design/3.svg"
+                width={"89px"}
+                height={"104px"}
+                priority={true}
+              />
+            </Box>
+            <Heading fontSize={"50px"} color="#FFDE11">
+              our services
+            </Heading>
+            <Heading
+              fontSize={{ base: "55px", md: "80px" }}
+              color="#fff"
+              fontWeight="black"
+            >
+              {/* {props.heading.split("\n").map((str) => (
+                <div key={str}>{str}</div>
+              ))} */}
+              web <br /> development
+            </Heading>
+            <Button
+              colorScheme="yellow"
+              background={"#FFDE11"}
+              borderRadius="20px"
+              color="#000"
+              mt={"5"}
+            >
+              <Image
+                src="/assets/image/icons/call.svg"
+                width="25px"
+                height="25px"
+                priority={true}
+              />
+              &nbsp;&nbsp;contact us
+            </Button>
+            <Text
+              mt="10"
+              fontSize={{ base: "18px", md: "18px" }}
+              fontWeight="bold"
+              color={"#fff"}
+              pr="5"
+            >
+              {/* {props.content} */}
+              Every brand in today’s time must have a website to showcase itself
+              to its audience. Having a mobile friendly website is even more
+              important. Our team of in-house developers specialize in various
+              backends be it Wordpress, WooCommerce, Magento, React or Shopify
+              to name a few. Our agency is Partners with several leading
+              platforms
+            </Text>
+          </Box>
+          {/* <Box width={{ base: "100%", md: "45%" }}>
+            <Image
+              src={props.img}
+              width="446px"
+              height="467px"
+              priority={true}
+            />
+          </Box> */}
+        </Flex>
         {/* start */}
         <Stack position={"relative"} zIndex="2" className="serviceTab">
           <Container maxWidth={"7xl"} py="30">
