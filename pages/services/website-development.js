@@ -28,7 +28,9 @@ const WebsiteDevelopment = () => {
   const videoRef = useRef();
 
   useEffect(() => {
-    videoRef.current.play();
+    setTimeout(() => {
+      videoRef.current.play();
+    }, 100);
   }, []);
   return (
     <Stack position={"relative"}>
@@ -39,7 +41,7 @@ const WebsiteDevelopment = () => {
         height="100vh"
         overflow={"hidden"}
       >
-        <video autoPlay muted loop width="100%" ref={videoRef}>
+        <video muted loop width="100%" ref={videoRef}>
           <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657107109/Mccollins%20Video/Ipad_go16sk.mp4"
             type="video/mp4"
