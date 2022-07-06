@@ -82,7 +82,12 @@ const about = () => {
               </Text>
             </Box>
           </Box>
-          <Box position={"absolute"} left="42%" bottom={"-20"} zIndex="2">
+          <Box
+            position={"absolute"}
+            left={{ base: "60", md: "42%" }}
+            bottom={"-28"}
+            zIndex="2"
+          >
             <Image
               src="/assets/image/design/1.svg"
               width="187px"

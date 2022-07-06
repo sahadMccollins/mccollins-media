@@ -26,9 +26,13 @@ const TextBox = (props) => {
               {props.smallHeading}
             </Heading>
           </Box>
-          <Box width={{ base: "100%", md: "70%" }} alignSelf="center" pl={5}>
+          <Box
+            width={{ base: "100%", md: "70%" }}
+            alignSelf="center"
+            pl={{ base: "0", md: "5" }}
+          >
             <Heading
-              fontSize={{ base: "1xl", md: "3xl" }}
+              fontSize={{ base: "2xl", md: "3xl" }}
               mb="2"
               mt={{ base: "5", md: "0" }}
             >

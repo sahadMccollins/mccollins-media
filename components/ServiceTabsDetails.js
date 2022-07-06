@@ -25,6 +25,7 @@ const ServiceTabsDetails = () => {
             alignSelf={{ md: "end", base: "center" }}
             marginBottom="10px"
             marginLeft={"20px"}
+            placeSelf="end"
           ></Box>
         </Box>
         <Heading fontSize={"2xl"} color="#6F6F6F" my={"15px"}>

@@ -10,27 +10,33 @@ const InnerBanner = (props) => {
       pt="170px"
       direction={{ base: "column", md: "row" }}
     >
-      <Box width={{ base: "100%", md: "55%" }} position="relative">
-        <Box position={"absolute"} top={{ base: "37%", md: "6%" }} left={"70%"}>
-          <Image
-            src="/assets/image/design/3.svg"
-            width={"89px"}
-            height={"104px"}
-            priority={true}
-          />
-        </Box>
+      <Box width={{ base: "100%", md: "55%" }}>
         <Heading fontSize={"50px"} color="#FFDE11">
           our services
         </Heading>
-        <Heading
-          fontSize={{ base: "55px", md: "80px" }}
-          color="#000"
-          fontWeight="black"
-        >
-          {props.heading.split("\n").map((str) => (
-            <div key={str}>{str}</div>
-          ))}
-        </Heading>
+        <Box position="relative">
+          <Heading
+            fontSize={{ base: "55px", md: "80px" }}
+            color="#000"
+            fontWeight="black"
+          >
+            {props.heading.split("\n").map((str) => (
+              <div key={str}>{str}</div>
+            ))}
+          </Heading>
+          <Box
+            position={"absolute"}
+            top={{ base: "unset", md: "0" }}
+            left={"70%"}
+          >
+            <Image
+              src="/assets/image/design/3.svg"
+              width={"89px"}
+              height={"104px"}
+              priority={true}
+            />
+          </Box>
+        </Box>
         <Button
           colorScheme="yellow"
           background={"#FFDE11"}
@@ -56,7 +62,7 @@ const InnerBanner = (props) => {
           {props.content}
         </Text>
       </Box>
-      <Box width={{ base: "100%", md: "45%" }}>
+      <Box width={{ base: "100%", md: "45%" }} mt={{ base: "10", md: "0" }}>
         <Image src={props.img} width="446px" height="467px" priority={true} />
       </Box>
     </Flex>

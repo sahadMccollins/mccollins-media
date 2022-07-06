@@ -25,7 +25,7 @@ const AwardSlide = () => {
         position="relative"
         pt={"22px"}
         textAlign={{ base: "center", md: "left" }}
-        mb="37px"
+        mb={{ base: "0", md: "37px" }}
       >
         <Box
           position={"absolute"}

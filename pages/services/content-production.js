@@ -50,8 +50,8 @@ const ContentProduction = () => {
           }}
         >
           <Image
-            src={"/assets/image/design/10.svg"}
-            width="480px"
+            src={"/assets/image/design/10.png"}
+            width="241px"
             height={"228px"}
           />
         </Box>

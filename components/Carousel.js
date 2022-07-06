@@ -2,11 +2,13 @@ import React, { useRef } from "react";
 import Fancybox from "./Fancybox";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import { IoPlayCircleSharp } from "react-icons/io5";
 
 const Carousel = () => {
   const swiperRef = useRef(null);
+
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   return (
     <Fancybox>
       <Container maxWidth={"7xl"} style={{ margin: "auto" }} py={"10"}>
@@ -29,7 +31,11 @@ const Carousel = () => {
           Have a look at some of the Content Production work we have done for
           our clients over these years
         </Text>
-        <Swiper spaceBetween={20} slidesPerView={3} ref={swiperRef}>
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={isLargerThan780 ? 3 : 1}
+          ref={swiperRef}
+        >
           <SwiperSlide>
             <a
               data-fancybox="gallery"

@@ -35,6 +35,7 @@ const WebsiteDevelopment = () => {
   return (
     <Stack position={"relative"}>
       <Box
+        display={{ base: "none", md: "block" }}
         position={"absolute"}
         top="-85px"
         width={"100%"}
@@ -48,14 +49,10 @@ const WebsiteDevelopment = () => {
           />
         </video>
       </Box>
-      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
-        {/* <InnerBanner
-          heading={`web \n development`}
-          img="/assets/image/servicePage/serviceAccordian.jpg"
-          content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
-        /> */}
 
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
         <Flex
+          display={{ base: "none", md: "block" }}
           mt="-85px"
           height={{ base: "100%", md: "100vh" }}
           minHeight="600px"
@@ -83,9 +80,6 @@ const WebsiteDevelopment = () => {
               color="#fff"
               fontWeight="black"
             >
-              {/* {props.heading.split("\n").map((str) => (
-                <div key={str}>{str}</div>
-              ))} */}
               web <br /> development
             </Heading>
             <Button
@@ -128,6 +122,14 @@ const WebsiteDevelopment = () => {
             />
           </Box> */}
         </Flex>
+        <Box display={{ base: "block", md: "none" }}>
+          <InnerBanner
+            heading={`web \n development`}
+            img="/assets/image/servicePage/serviceAccordian.jpg"
+            content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
+          />
+        </Box>
+
         {/* start */}
         <Stack position={"relative"} zIndex="2" className="serviceTab">
           <Container maxWidth={"7xl"} py="30">
@@ -161,7 +163,6 @@ const WebsiteDevelopment = () => {
               </TabPanels>
             </Tabs>
           </Container>
-          <hr />
         </Stack>
         {/* end */}
       </Container>

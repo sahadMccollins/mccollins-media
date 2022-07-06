@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <HeroBanner
-        img="/assets/image/banner/home-banner.webp"
+        img="https://res.cloudinary.com/mccollins-media/image/upload/v1657138383/Mccollins%20Banner/home-banner_bwes6c.webp"
         h2="digital brand activation agency"
         content="result driven agency with mobile first technology"
       />
@@ -20,7 +20,7 @@ export default function Home() {
       <Stack
         position={"absolute"}
         width="100%"
-        height={"775px"}
+        height={"755px"}
         background={"#F7F7F7"}
         zIndex="0"
       ></Stack>

@@ -12,7 +12,7 @@ import ServiceTabsDetails from "./ServiceTabsDetails";
 const ServiceTabs = () => {
   return (
     <Stack position={"relative"} zIndex="2" className="serviceTab">
-      <Container maxWidth={"7xl"} py="30">
+      <Container maxWidth={"7xl"} py="0">
         <Tabs>
           <TabList
             justifyContent={"space-between"}
