@@ -78,13 +78,23 @@ const CorporateMarketing = () => {
       </Box>
       <Box position={"relative"}>
         <Box
-          style={{ position: "absolute", top: "5%", left: "10%" }}
+          style={{ position: "absolute", top: "1%", left: "10%" }}
           zIndex="9"
         >
           <Image
             src={"/assets/image/design/7.svg"}
             width="89px"
             height={"103px"}
+          />
+        </Box>
+        <Box
+          style={{ position: "absolute", top: "4%", right: "10%" }}
+          zIndex="9"
+        >
+          <Image
+            src={"/assets/image/design/14.svg"}
+            width="60px"
+            height={"50px"}
           />
         </Box>
         <Container maxWidth={"7xl"}>
@@ -100,62 +110,72 @@ const CorporateMarketing = () => {
             marketing are
           </Heading>
           <Flex mt={10} direction={{ base: "column", md: "row" }}>
-            <Box width={{ base: "100%", md: "50%" }} pr={{ base: "0", md: 20 }}>
-              <Heading mt={4}>CONTENT MARKETING AND ENGAGEMENT</Heading>
-              <Box
-                my={4}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-              >
-                <Text>creating content that tells a story</Text>
+            <Flex
+              direction={"column"}
+              justifyContent="space-evenly"
+              width={{ base: "100%", md: "50%" }}
+              pr={{ base: "0", md: 20 }}
+            >
+              <Box>
+                <Heading mt={4}>Corporate Branding</Heading>
+                <Box
+                  my={4}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"20px"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
+                <Text>
+                  Creating a brand identity and story for your brand, creating
+                  the brand journey and positioning. Competitor analysis , SWOT
+                  Analysis to understand the market and how you can be
+                  different.
+                </Text>
               </Box>
-              <Text>
-                Are you introducing a new juice or a new food item into the
-                market? There’s no better way to create a buzz around it than
-                with content. Content that’s effective will make a potential
-                customer want to look at it. And with such wonderful brands in
-                our kitty, we know what content will work the best.
-              </Text>
-              <Heading mt={4}>Website Design and Development</Heading>
-              <Box
-                my={4}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-              >
-                <Text>creating content that tells a story</Text>
+              <Box>
+                <Heading mt={4}>Personalized Customer Experience</Heading>
+                <Box
+                  my={4}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"20px"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
+                <Text>
+                  It's important for companies to personalize their interactions
+                  with all their customers in order to drive aggressive lead
+                  conversions. We can use CRM tools to increase and modify this
+                  method. This enables employees to interact more meaningfully
+                  and enable a personalized customer journey.
+                </Text>
               </Box>
-              <Text>
-                Are you introducing a new juice or a new food item into the
-                market? There’s no better way to create a buzz around it than
-                with content. Content that’s effective will make a potential
-                customer want to look at it. And with such wonderful brands in
-                our kitty, we know what content will work the best.
-              </Text>
-              <Heading mt={4}>Branding</Heading>
-              <Box
-                my={4}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-              >
-                <Text>creating content that tells a story</Text>
+              <Box>
+                <Heading mt={4}>Social Media Marketing</Heading>
+                <Box
+                  my={4}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"20px"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
+                <Text>
+                  Business to Business social media marketing can sometimes be
+                  tricky. It is not the best practice to be on all social media
+                  channels for the sake of it, but understand how each social
+                  media channel contributes to your industry. We help you
+                  understand that and create content accordingly.
+                </Text>
               </Box>
-              <Text>
-                Are you introducing a new juice or a new food item into the
-                market? There’s no better way to create a buzz around it than
-                with content. Content that’s effective will make a potential
-                customer want to look at it. And with such wonderful brands in
-                our kitty, we know what content will work the best.
-              </Text>
-            </Box>
+            </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"}>
                 <Image
@@ -177,50 +197,53 @@ const CorporateMarketing = () => {
             </Box>
           </Flex>
           <Flex mt={20} direction={{ base: "column", md: "row-reverse" }}>
-            <Box width={{ base: "100%", md: "50%" }} pr={{ base: "0", md: 20 }}>
-              <Heading mt={4}>SOCIAL MEDIA MARKETING</Heading>
-              <Box
-                my={4}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-              >
-                <Text>creating content that tells a story</Text>
+            <Flex
+              direction={"column"}
+              justifyContent="space-evenly"
+              width={{ base: "100%", md: "50%" }}
+              pr={{ base: "0", md: 20 }}
+            >
+              <Box>
+                <Heading mt={4}>Video Marketing</Heading>
+                <Box
+                  my={4}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"20px"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
+                <Text>
+                  Video content is booming and rippling in the virtual world.
+                  Companies need to convert blogs and written content into video
+                  and rebuild it. The video should be attractive, short and
+                  relevant to appeal to the viewer. This is the best way to
+                  increase brand awareness and promote your products and
+                  services to potential customers.
+                </Text>
               </Box>
-              <Text>
-                In today’s world, there’s no brand without social media. As an
-                industry that has to cater to billions of people, your social
-                media presence has to be known. For that, the information that
-                you put up on your pages have to be well-thought out and then
-                published. As an agency that specializes in social media
-                marketing, we understand the know-hows of this strategy. Social
-                Media helps build the NEED for a customer to order in that
-                burger or dine at a restaurant for the story that you sell.
-              </Text>
-              <Heading mt={4}>PERFORMANCE MARKETING</Heading>
-              <Box
-                my={4}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-              >
-                <Text>creating content that tells a story</Text>
+              <Box>
+                <Heading mt={4}>Search Engine Marketing and Google Ads</Heading>
+                <Box
+                  my={4}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"20px"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
+                <Text>
+                  Google Ads is hands down one of the most effective ways to
+                  promote a Corporate business. Search engine optimization helps
+                  you put your business in good ranking in comparison to your
+                  competitors
+                </Text>
               </Box>
-              <Text>
-                Gone are the days where organic numbers would bring someone
-                through the door of your restaurant. Today we need Social Media
-                Ads like Snapchat, TikTok, Facebook, Instagram to drive people
-                to explore the menu of a restaurant or visit one of your
-                concepts. Google Ads help you compete with your competition and
-                take the market share. Search Engine Optimization helps you list
-                yourself as the “Best Steakhouse in Dubai” or “Best Burger in
-                Riyadh” for example.
-              </Text>
-            </Box>
+            </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"}>
                 <Image
@@ -242,31 +265,34 @@ const CorporateMarketing = () => {
             </Box>
           </Flex>
           <Flex my={20} direction={{ base: "column", md: "row" }}>
-            <Box width={{ base: "100%", md: "50%" }} pr={{ base: "0", md: 20 }}>
-              <Heading mt={4}>
-                BLOGGER COLLABORATION AND INFLUENCE MARKETING
-              </Heading>
-              <Box
-                my={4}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-              >
-                <Text>creating content that tells a story</Text>
+            <Flex
+              direction={"column"}
+              justifyContent="space-evenly"
+              width={{ base: "100%", md: "50%" }}
+              pr={{ base: "0", md: 20 }}
+            >
+              <Box>
+                <Heading mt={4}>Website Development and Chatbots</Heading>
+                <Box
+                  my={4}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"20px"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
+                <Text>
+                  Have a solid website developed for your corporate business
+                  which can work for you. Be sure to include chatbots in your
+                  marketing plan as they can target your audience in the absence
+                  of support personnel. They communicate with customers and
+                  answer the questions they have. Your customers are personally
+                  cared for and don't have to wait long for service.
+                </Text>
               </Box>
-              <Text>
-                In today’s world, there’s no brand without social media. As an
-                industry that has to cater to billions of people, your social
-                media presence has to be known. For that, the information that
-                you put up on your pages have to be well-thought out and then
-                published. As an agency that specializes in social media
-                marketing, we understand the know-hows of this strategy. Social
-                Media helps build the NEED for a customer to order in that
-                burger or dine at a restaurant for the story that you sell.
-              </Text>
-            </Box>
+            </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"}>
                 <Image

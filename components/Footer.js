@@ -247,7 +247,7 @@ const Footer = () => {
         >
           <Box mt={"30px"}>
             <Image
-              src="/assets/image/navbar/logo-yellow.png"
+              src="/assets/image/navbar/logo-yellow.svg"
               alt="Mccolins Media logo"
               width="209px"
               height="46"

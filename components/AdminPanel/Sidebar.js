@@ -48,7 +48,7 @@ export default function Sidebar() {
       >
         <Box p={2}>
           <Image
-            src="/assets/image/navbar/logo-yellow.png"
+            src="/assets/image/navbar/logo-yellow.svg"
             width="100%"
             height="47px"
             display={navSize == "small" ? "none" : "flex"}

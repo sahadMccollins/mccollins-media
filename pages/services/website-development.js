@@ -12,7 +12,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 
@@ -23,105 +23,23 @@ import FavWork from "../../components/FavWork";
 import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
 import ServiceTabsDetails from "../../components/ServiceTabsDetails";
+import VideoBanner from "../../components/VideoBanner";
 
 const WebsiteDevelopment = () => {
-  const videoRef = useRef();
-
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 100);
-  }, []);
   return (
     <Stack position={"relative"}>
-      <Box
-        display={{ base: "none", md: "block" }}
-        position={"absolute"}
-        top="-85px"
-        width={"100%"}
-        height="100vh"
-        overflow={"hidden"}
-      >
-        <video muted loop width="100%" ref={videoRef}>
-          <source
-            src="https://res.cloudinary.com/mccollins-media/video/upload/v1657107109/Mccollins%20Video/Ipad_go16sk.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </Box>
-
-      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
-        <Flex
-          display={{ base: "none", md: "block" }}
-          mt="-85px"
-          height={{ base: "100%", md: "100vh" }}
-          minHeight="600px"
-          pt="170px"
-          direction={{ base: "column", md: "row" }}
-        >
-          <Box width={{ base: "100%", md: "55%" }} position="relative">
-            <Box
-              position={"absolute"}
-              top={{ base: "37%", md: "6%" }}
-              left={"70%"}
-            >
-              <Image
-                src="/assets/image/design/3.svg"
-                width={"89px"}
-                height={"104px"}
-                priority={true}
-              />
-            </Box>
-            <Heading fontSize={"50px"} color="#FFDE11">
-              our services
-            </Heading>
-            <Heading
-              fontSize={{ base: "55px", md: "80px" }}
-              color="#fff"
-              fontWeight="black"
-            >
-              web <br /> development
-            </Heading>
-            <Button
-              colorScheme="yellow"
-              background={"#FFDE11"}
-              borderRadius="20px"
-              color="#000"
-              mt={"5"}
-            >
-              <Image
-                src="/assets/image/icons/call.svg"
-                width="25px"
-                height="25px"
-                priority={true}
-              />
-              &nbsp;&nbsp;contact us
-            </Button>
-            <Text
-              mt="10"
-              fontSize={{ base: "18px", md: "18px" }}
-              fontWeight="bold"
-              color={"#fff"}
-              pr="5"
-            >
-              {/* {props.content} */}
-              Every brand in today’s time must have a website to showcase itself
+      <VideoBanner
+        heading={"web \n development"}
+        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
+        content="Every brand in today’s time must have a website to showcase itself
               to its audience. Having a mobile friendly website is even more
               important. Our team of in-house developers specialize in various
               backends be it Wordpress, WooCommerce, Magento, React or Shopify
               to name a few. Our agency is Partners with several leading
-              platforms
-            </Text>
-          </Box>
-        </Flex>
-        <Box display={{ base: "block", md: "none" }}>
-          <InnerBanner
-            heading={`web \n development`}
-            img="/assets/image/servicePage/serviceAccordian.jpg"
-            content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
-          />
-        </Box>
+              platforms"
+      />
 
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
         {/* start */}
         <Stack position={"relative"} zIndex="2" className="serviceTab">
           <Container maxWidth={"7xl"} py="30">
@@ -247,7 +165,7 @@ const WebsiteDevelopment = () => {
 };
 
 WebsiteDevelopment.getLayout = function getLayout(WebsiteDevelopment) {
-  return <InnerLayout>{WebsiteDevelopment}</InnerLayout>;
+  return <InnerLayout color="yellow">{WebsiteDevelopment}</InnerLayout>;
 };
 
 export default WebsiteDevelopment;

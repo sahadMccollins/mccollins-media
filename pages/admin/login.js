@@ -40,7 +40,6 @@ const Login = () => {
     return router.push("/admin");
   };
 
-
   if (!session) {
     return (
       <>
@@ -52,7 +51,7 @@ const Login = () => {
                   margin={"auto"}
                   width={"209px"}
                   height="47px"
-                  src="/assets/image/navbar/logo-yellow.png"
+                  src="/assets/image/navbar/logo-yellow.svg"
                 />
                 <Flex direction={"column"}>
                   <Heading mt={5} fontSize={"30px"}>

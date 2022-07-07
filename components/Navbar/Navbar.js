@@ -17,7 +17,6 @@ import {
   VStack,
   Text,
   Link as chakraLink,
-  color,
 } from "@chakra-ui/react";
 import styles from "../../styles/Navbar.module.css";
 import Image from "next/image";
@@ -58,7 +57,7 @@ const Navbar = (props) => {
             <Link href="/">
               <Image
                 src={`/assets/image/navbar/${
-                  props.color ? "logo-black" : "logo"
+                  props.color ? `logo-${props.color}` : "logo"
                 }.svg`}
                 // src={`/assets/image/navbar/logo-${props.color}.png`}
                 alt="Mccolins Media logo"
@@ -69,7 +68,7 @@ const Navbar = (props) => {
               />
             </Link>
           </Box>
-          <Box alignSelf={"center"}>
+          <Box alignSelf={"start"}>
             {isLargerThan780 ? (
               <>
                 <Flex>
@@ -113,13 +112,22 @@ const Navbar = (props) => {
                     onClick={onOpen}
                   >
                     <span
-                      style={{ background: props.color ? "#000" : "#FFDE11" }}
+                      style={{
+                        background:
+                          props.color === "black" ? "#000" : "#FFDE11",
+                      }}
                     ></span>
                     <span
-                      style={{ background: props.color ? "#000" : "#FFDE11" }}
+                      style={{
+                        background:
+                          props.color === "black" ? "#000" : "#FFDE11",
+                      }}
                     ></span>
                     <span
-                      style={{ background: props.color ? "#000" : "#FFDE11" }}
+                      style={{
+                        background:
+                          props.color === "black" ? "#000" : "#FFDE11",
+                      }}
                     ></span>
                   </Box>
                 </Flex>
@@ -128,7 +136,7 @@ const Navbar = (props) => {
                   zIndex="99"
                   right={0}
                   marginTop="6%"
-                  className={props.color ? "drawerSocialIcon" : ""}
+                  className={props.color === "black" ? "drawerSocialIcon" : ""}
                 >
                   <Box
                     mb={3}
@@ -219,7 +227,7 @@ const Navbar = (props) => {
                       fontSize={"18px"}
                       fontWeight="bold"
                       style={{ transform: "rotate(-90deg)" }}
-                      color={props.color ? "#000" : "#FFDE11"}
+                      color={props.color === "black" ? "#000" : "#FFDE11"}
                       mb={5}
                     >
                       Scroll
@@ -240,13 +248,19 @@ const Navbar = (props) => {
                 onClick={onOpen}
               >
                 <span
-                  style={{ background: props.color ? "#000" : "#FFDE11" }}
+                  style={{
+                    background: props.color === "black" ? "#000" : "#FFDE11",
+                  }}
                 ></span>
                 <span
-                  style={{ background: props.color ? "#000" : "#FFDE11" }}
+                  style={{
+                    background: props.color === "black" ? "#000" : "#FFDE11",
+                  }}
                 ></span>
                 <span
-                  style={{ background: props.color ? "#000" : "#FFDE11" }}
+                  style={{
+                    background: props.color === "black" ? "#000" : "#FFDE11",
+                  }}
                 ></span>
               </Box>
             )}
@@ -261,7 +275,7 @@ const Navbar = (props) => {
             <Box flexGrow={1} zIndex="99">
               <Link href="/">
                 <Image
-                  src={`/assets/image/navbar/logo-yellow.png`}
+                  src={`/assets/image/navbar/logo-yellow.svg`}
                   alt="Mccolins Media logo"
                   width="223"
                   height="50"
@@ -343,6 +357,7 @@ const Navbar = (props) => {
         </Container>
       </Box>
       {/* Sticky Header End */}
+
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -350,7 +365,7 @@ const Navbar = (props) => {
         size={"lg"}
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent overflowY={"scroll"}>
           <Container>
             <DrawerCloseButton
               className={styles.sidebarCloseBtn}
@@ -571,7 +586,7 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="Healthcare Marketing Services"
+                          name="Healthcare Marketing"
                           href="/industry/healthcare-marketing-services"
                         />
                       </li>
@@ -581,7 +596,7 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="Luxury Marketing Services"
+                          name="Luxury Marketing"
                           href="/industry/luxury-marketing-services"
                         />
                       </li>
@@ -591,7 +606,7 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="Technology Marketing Services"
+                          name="Technology Marketing"
                           href="/industry/technology-marketing-services"
                         />
                       </li>

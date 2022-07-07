@@ -1,10 +1,10 @@
 import Footer from "../Footer";
 import Navbar from "../Navbar/Navbar";
 
-const InnerLayout = ({ children }) => {
+const InnerLayout = ({ children, color }) => {
   return (
     <>
-      <Navbar color="black" />
+      <Navbar color={color ? color : "black"} />
       <div>{children}</div>
       <Footer />
     </>
