@@ -31,12 +31,7 @@ const WebsiteDevelopment = () => {
       <VideoBanner
         heading={`web \n development`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
-        content="Every brand in today’s time must have a website to showcase itself
-              to its audience. Having a mobile friendly website is even more
-              important. Our team of in-house developers specialize in various
-              backends be it Wordpress, WooCommerce, Magento, React or Shopify
-              to name a few. Our agency is Partners with several leading
-              platforms"
+        content="Every brand in today&APOS;s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
       />
 
       <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
