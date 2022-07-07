@@ -7,7 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import InnerBanner from "../../components/InnerBanner";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
@@ -20,19 +20,95 @@ import ClientsLogo from "../../components/ClientsLogo";
 import Carousel from "../../components/Carousel";
 
 const ContentProduction = () => {
+  const videoRef = useRef();
+
+  useEffect(() => {
+    setTimeout(() => {
+      videoRef.current.play();
+    }, 100);
+  }, []);
   return (
-    <Stack>
-      <Container maxWidth={"7xl"} position="relative">
-        <InnerBanner
-          heading={`content \n production `}
-          img="/assets/image/servicePage/contentProduction.jpg"
-          content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
-        />
-        <Box style={{ position: "absolute", bottom: "-80px", left: "-6%" }}>
-          <Image
-            src={"/assets/image/design/1.svg"}
-            width="118px"
-            height={"165px"}
+    <Stack position={"relative"}>
+      <Box
+        display={{ base: "none", md: "block" }}
+        position={"absolute"}
+        top="-85px"
+        width={"100%"}
+        height="100vh"
+        overflow={"hidden"}
+      >
+        <video muted loop width="100%" ref={videoRef}>
+          <source
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1657194135/Mccollins%20Video/Content_Creation_ovbsaz.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </Box>
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
+        <Flex
+          display={{ base: "none", md: "block" }}
+          mt="-85px"
+          height={{ base: "100%", md: "100vh" }}
+          minHeight="600px"
+          pt="170px"
+          direction={{ base: "column", md: "row" }}
+        >
+          <Box width={{ base: "100%", md: "55%" }} position="relative">
+            <Box
+              position={"absolute"}
+              top={{ base: "37%", md: "6%" }}
+              left={"70%"}
+            >
+              <Image
+                src="/assets/image/design/3.svg"
+                width={"89px"}
+                height={"104px"}
+                priority={true}
+              />
+            </Box>
+            <Heading fontSize={"50px"} color="#FFDE11">
+              our services
+            </Heading>
+            <Heading
+              fontSize={{ base: "55px", md: "80px" }}
+              color="#fff"
+              fontWeight="black"
+            >
+              content <br /> production
+            </Heading>
+            <Button
+              colorScheme="yellow"
+              background={"#FFDE11"}
+              borderRadius="20px"
+              color="#000"
+              mt={"5"}
+            >
+              <Image
+                src="/assets/image/icons/call.svg"
+                width="25px"
+                height="25px"
+                priority={true}
+              />
+              &nbsp;&nbsp;contact us
+            </Button>
+            <Text
+              mt="10"
+              fontSize={{ base: "18px", md: "18px" }}
+              fontWeight="bold"
+              color={"#fff"}
+              pr="5"
+            >
+              Get your brand noticed at the right place at the right time. Let
+              us help you rank high on Google search and place strategic Google
+              Ads to see those leads convert.
+            </Text>
+          </Box>
+        </Flex>
+        <Box display={{ base: "block", md: "none" }}>
+          <InnerBanner
+            heading={`content \n production `}
+            img="/assets/image/servicePage/contentProduction.jpg"
+            content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
           />
         </Box>
       </Container>

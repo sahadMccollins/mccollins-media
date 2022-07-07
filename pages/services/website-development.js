@@ -113,14 +113,6 @@ const WebsiteDevelopment = () => {
               platforms
             </Text>
           </Box>
-          {/* <Box width={{ base: "100%", md: "45%" }}>
-            <Image
-              src={props.img}
-              width="446px"
-              height="467px"
-              priority={true}
-            />
-          </Box> */}
         </Flex>
         <Box display={{ base: "block", md: "none" }}>
           <InnerBanner

@@ -11,7 +11,7 @@ const NavItem = (props) => {
       className={router.pathname == props.href ? styles.sidebarActiveLi : null}
     >
       <Link href={props.href}>
-        <a>{props.name}</a>
+        <a style={{ fontSize: "20px", fontWeight: "500" }}>{props.name}</a>
       </Link>
     </Box>
   );

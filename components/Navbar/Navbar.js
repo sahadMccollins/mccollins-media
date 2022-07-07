@@ -31,6 +31,7 @@ const Navbar = (props) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isActive, setIsActive] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
 
   const router = useRouter();
 
@@ -51,7 +52,7 @@ const Navbar = (props) => {
 
   return (
     <Stack zIndex={"99"}>
-      <Container maxWidth={"7xl"} mt="7" position="relative">
+      <Container maxWidth={"8xl"} mt="7" position="relative">
         <Flex>
           <Box flexGrow={1} zIndex="99">
             <Link href="/">
@@ -255,7 +256,7 @@ const Navbar = (props) => {
 
       {/* Sticky Header Start */}
       <Box className="header-section">
-        <Container maxWidth={"7xl"}>
+        <Container maxWidth={"8xl"}>
           <Flex>
             <Box flexGrow={1} zIndex="99">
               <Link href="/">
@@ -497,7 +498,6 @@ const Navbar = (props) => {
                           name="Social Media Marketing"
                           href="/services/social-media-marketing"
                         />
-                        Social Media Marketing
                       </li>
                       <li
                         onClick={() => {
@@ -510,28 +510,92 @@ const Navbar = (props) => {
                         />
                       </li>
                     </ul>
-                    {/* <li>
-                      <Link href="/about">
-                        <a>work</a>
-                      </Link>
-                    </li> */}
                     <li
                       className={
                         router.pathname == "/industry"
                           ? styles.sidebarActiveLi
                           : null
                       }
-                      onClick={() => onClose()}
+                      onClick={() => {
+                        setIsActive2(!isActive2);
+                      }}
+                      style={{ width: "100%", cursor: "pointer" }}
                     >
-                      <Link href="/industry">
-                        <a>industry</a>
-                      </Link>
+                      <Flex>
+                        {isActive2 ? (
+                          <ChevronDownIcon bg="#fff" placeSelf={"center"} />
+                        ) : (
+                          <ChevronRightIcon bg="#fff" placeSelf={"center"} />
+                        )}
+                        <Box flexGrow={1} bg="#fff"></Box>
+                        <Link href="/industry">
+                          <a
+                            onClick={() => {
+                              onClose();
+                            }}
+                          >
+                            Industry
+                          </a>
+                        </Link>
+                      </Flex>
                     </li>
-                    {/* <li>
-                      <Link href="/about">
-                        <a>career</a>
-                      </Link>
-                    </li> */}
+                    <ul
+                      className={styles.ulDropdown}
+                      style={{
+                        display: isActive2 ? "block" : "none",
+                      }}
+                    >
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Corporate Marketing"
+                          href="/industry/corporate-marketing-services"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Food And Beverage Marketing"
+                          href="/industry/food-and-beverage-marketing"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Healthcare Marketing Services"
+                          href="/industry/healthcare-marketing-services"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Luxury Marketing Services"
+                          href="/industry/luxury-marketing-services"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Technology Marketing Services"
+                          href="/industry/technology-marketing-services"
+                        />
+                      </li>
+                    </ul>
                     <li
                       className={
                         router.pathname == "/blog"
