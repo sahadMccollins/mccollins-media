@@ -29,7 +29,7 @@ const WebsiteDevelopment = () => {
   return (
     <Stack position={"relative"}>
       <VideoBanner
-        heading={"web \n development"}
+        heading={`web \n development`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
         content="Every brand in today’s time must have a website to showcase itself
               to its audience. Having a mobile friendly website is even more

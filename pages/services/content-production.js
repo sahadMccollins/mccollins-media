@@ -23,7 +23,7 @@ const ContentProduction = () => {
   return (
     <Stack position={"relative"}>
       <VideoBanner
-        heading={"content \n production"}
+        heading={`content \n production`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219369/Mccollins%20Video/Content_Creation_m3dsap.mp4"
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
       />
