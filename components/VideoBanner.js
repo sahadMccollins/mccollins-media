@@ -35,6 +35,7 @@ const VideoBanner = (props) => {
       <Container maxWidth={"7xl"} zIndex="9" style={{ margin: "auto" }}>
         <Flex
           height={{ base: "500px", md: "100vh" }}
+          minHeight={{ base: "unset", md: "700px" }}
           alignItems="end"
           placeItems={"flex-end"}
           pb={"5%"}
