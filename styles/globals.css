@@ -134,7 +134,8 @@ a {
 .serviceTab .chakra-tabs__tab[aria-selected=true] {
   color: #000;
   font-weight: bold;
-  border-bottom: 2px solid #ffde11;
+  border-bottom: 4px solid #ffde11;
+  margin: 0;
 }
 
 .serviceTab .chakra-tabs__tab[aria-selected=true]:focus {

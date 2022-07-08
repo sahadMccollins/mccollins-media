@@ -40,8 +40,7 @@ const WebsiteDevelopment = () => {
             <Tabs>
               <TabList
                 justifyContent={"space-between"}
-                overflow={{ base: "scroll", md: "visible" }}
-                height={"75px"}
+                overflowX={"scroll"}
                 overflowY={"hidden"}
               >
                 <Tab>Wordpress Development</Tab>

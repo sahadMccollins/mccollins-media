@@ -36,6 +36,7 @@ const VideoBanner = (props) => {
         <Flex
           height={{ base: "500px", md: "100vh" }}
           alignItems="end"
+          placeItems={"flex-end"}
           pb={"5%"}
         >
           <Box width={"100%"}>
