@@ -16,7 +16,7 @@ const about = () => {
       <HeroBanner
         img="/assets/image/banner/about-banner.webp"
         breadcrumb="about us"
-        h2="result driven digital marketing partner"
+        h2="Creatively Led & Strategically Driven"
       />
 
       <Container maxWidth={"7xl"} pb="2">
@@ -27,16 +27,19 @@ const about = () => {
           position="relative"
         >
           <Box width={{ base: "100%", md: "45%" }}>
-            <Heading>LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING</Heading>
+            <Heading fontSize={"24px"}>
+              BUILT ON STRATEGIC VALUES, FUELED BY CREATIVITY AND DRIVEN BY
+              CONSUMER INSIGHTS.
+            </Heading>
             <Box
               my={8}
               background="#FFDE11"
               width={"fit-content"}
-              p={"0px 10% 0px 10px"}
+              p={"0px 8% 0px 10px"}
               fontWeight="bold"
               fontSize={"20px"}
             >
-              <Text>creating content that tells a story</Text>
+              <Text>A Voice For Your Brand</Text>
             </Box>
             <Text mb={5}>
               McCollins Media is a Digital Brand Activation agency specializing
