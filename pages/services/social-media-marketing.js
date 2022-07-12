@@ -184,7 +184,17 @@ const SocialMediaMarketing = () => {
           </Flex>
         </Container>
       </Box>
-      <ServicePoint />
+      <ServicePoint
+        heading="SEO & SEM"
+        subHeading="performance marketing"
+        contentHeading={"how can this work for your brand ?"}
+        content="With SEO and Google Ads, we set long term goals and short term
+              goals for Lead Generation or e-commerce website conversions. We
+              bring the right people to your website."
+        points={
+          "SEO Strategy \n Keyword Research \n Blog Submissions \n Backlinks \n Content Optimization \n Off Page Promotion \n On Page SEO \n  SERP Features \n Multi-Visit Buyer Journey \n Voice Search \n Display Ads"
+        }
+      />
       <Box bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
         <Container maxWidth={"7xl"} mt={"5"} mb={"12"}>
           <Heading fontSize={"5xl"}>BLOGGER OUTREACH PROGRAM</Heading>
