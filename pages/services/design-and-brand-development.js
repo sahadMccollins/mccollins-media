@@ -16,7 +16,7 @@ const DesignAndBrandDevelopment = () => {
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/BRANDING_-_z6r43b.mp4"
         content="Creating a brand from the inception - logo to the entire adaptation of various deliverables are conceptualized in-house by our team of designers and copywriters"
       />
-      <Box bg={"#F7F7F7"}>
+      <Box bg={"#F7F7F7"} style={{ marginTop: "0" }}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }} my={20}>
             <Box width={{ base: "100%", md: "50%" }} mr={"20"}>

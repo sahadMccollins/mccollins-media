@@ -29,7 +29,7 @@ const SocialMediaMarketing = () => {
       />
       <Box
         style={{
-          background: "linear-gradient(to bottom,#fff 75%,#ffde11 50%)",
+          background: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
         }}
         pb={12}
       >
