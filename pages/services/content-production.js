@@ -30,7 +30,7 @@ const ContentProduction = () => {
 
       <Box
         style={{
-          background: "linear-gradient(to bottom,#fff 53%,#ffde11 50%)",
+          background: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
         }}
         position="relative"
       >
@@ -76,20 +76,24 @@ const ContentProduction = () => {
                 ></Box>
               </Box>
               <Text mt={20}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                Bring a Digital Brand Activation Agency, the process of content
+                production is the very core of our set up. From developing
+                exclusive content for Social Media Marketing to Web Development,
+                our in-house team of content creators follow global trends,
+                consumer insights and curate content that is relatable to each
+                of our brands.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                Content without Analysis is futile. So from A/B Testing of
+                Digital Content, Marketing in the metaverse, Video Marketing,
+                Podcasts, Launch of Shoppable Links and more.
+                <br />
+                <br />
+                Leveraging Data-based insights, we work with brands to enhance
+                their digital ecosystem.
+                <br />
+                Leading with empathy and value-driven content , this is just the
+                start.
               </Text>
               <Button
                 colorScheme="black"
@@ -119,17 +123,12 @@ const ContentProduction = () => {
       />
       <Carousel />
       <TextBox
-        heading="Case study"
-        smallHeading="website design & development"
-        subHeading="learn how we executed campaigns to get results"
-        content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
+        heading="Mobile First Content "
+        // smallHeading="website design & development"
+        subHeading="Creating content for an optimized Mobile Experience is key to every brand"
+        content="Explore some of our team’s favorite work done for Mobile First Content - be it Instagram Reels, Snapchat Videos or TikTok Content, we understand the consumer insights and create relatable content"
       />
       <FavWork />
-      <TextBox
-        heading="Technologies We work with"
-        content="Transform your brand journey today. We grow brands, create experiences and solve problems."
-      />
-      <TechIcon />
       <ClientsLogo />
     </Stack>
   );

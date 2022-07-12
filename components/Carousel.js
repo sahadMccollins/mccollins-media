@@ -19,7 +19,7 @@ const Carousel = () => {
           mx={"auto"}
           maxWidth={"720px"}
         >
-          Sneak Peak into our Content Production Projects
+          Featured Projects
         </Heading>
         <Text
           fontSize={"18px"}
@@ -28,8 +28,9 @@ const Carousel = () => {
           margin={"auto"}
           maxWidth="600px"
         >
-          Have a look at some of the Content Production work we have done for
-          our clients over these years
+          Some of our favorites ! From Automobiles to Technology Brands and for
+          our love of food, here are some handpicked content pieces for you to
+          explore.
         </Text>
         <Swiper
           spaceBetween={20}
