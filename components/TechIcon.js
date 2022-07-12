@@ -115,7 +115,6 @@ const TechIcon = () => {
           </Box>
         </SimpleGrid>
       </Container>
-      <hr />
     </Stack>
   );
 };

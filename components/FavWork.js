@@ -47,6 +47,7 @@ const FavWork = () => {
             <Box
               style={{ position: "absolute", top: "-20px" }}
               right={{ base: "0", md: "100px" }}
+              marginTop={{ base: "-50px", md: "0" }}
             >
               <Image
                 src={"/assets/image/design/9.svg"}

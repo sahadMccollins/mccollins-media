@@ -58,6 +58,8 @@ export default function Home() {
 
       <TechIcon />
 
+      <hr />
+
       <Awards />
     </>
   );

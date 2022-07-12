@@ -106,7 +106,17 @@ const ContentProduction = () => {
           </Flex>
         </Container>
       </Box>
-      <ServicePoint />
+      <ServicePoint
+        heading="SEO & SEM"
+        subHeading="performance marketing"
+        contentHeading={"how can this work for your brand ?"}
+        content="With SEO and Google Ads, we set long term goals and short term
+              goals for Lead Generation or e-commerce website conversions. We
+              bring the right people to your website."
+        points={
+          "Digital Videos \n Snapchat Videos \n 360 Videos \n How To Videos \n Montage Videos \n Photoshoots \n 360 Images \n  Stop Motions \n Cinemagraphs \n Lifestyle Photography \n Product Photography \n Reels / TikTok Content"
+        }
+      />
       <Carousel />
       <TextBox
         heading="Case study"

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const ServicePoint = () => {
+const ServicePoint = (props) => {
   return (
     <Stack py={"20"} bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
       <Container maxWidth={"7xl"}>
@@ -19,18 +19,14 @@ const ServicePoint = () => {
             borderLeft="15px solid #FFE962"
             pl={"5"}
           >
-            <Heading>SEO & SEM</Heading>
-            <Text className="subHeading">performance marketing</Text>
+            <Heading>{props.heading}</Heading>
+            <Text className="subHeading">{props.subHeading}</Text>
           </Box>
           <Box width={{ base: "100%", md: "70%" }}>
             <Heading fontSize={"28px"} fontWeight={"bold"}>
-              how can this work for your brand ?
+              {props.contentHeading}
             </Heading>
-            <Text mt={"10px"}>
-              With SEO and Google Ads, we set long term goals and short term
-              goals for Lead Generation or e-commerce website conversions. We
-              bring the right people to your website.
-            </Text>
+            <Text mt={"10px"}>{props.content}</Text>
           </Box>
         </Flex>
         <SimpleGrid
@@ -39,18 +35,8 @@ const ServicePoint = () => {
           mt={20}
           className="servicePoint"
         >
-          <Box>SEO Strategy</Box>
-          <Box>Keyword Research</Box>
-          <Box>Blog Submissions</Box>
-          <Box>Backlinks</Box>
-          <Box>Content Optimization</Box>
-          <Box>Off Page Promotion</Box>
-          <Box>On Page SEO</Box>
-          <Box>SERP Features</Box>
-          <Box>Multi-Visit Buyer Journey</Box>
-          <Box>Voice Search</Box>
-          <Box>Google Ads - PPC</Box>
-          <Box>Display Ads</Box>
+          {props.points &&
+            props.points.split("\n").map((str) => <Box key={str}>{str}</Box>)}
         </SimpleGrid>
       </Container>
     </Stack>

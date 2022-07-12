@@ -212,7 +212,10 @@ const SocialMediaMarketing = () => {
         heading="Social media Platform"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       />
-      <Box style={{ position: "absolute", top: "50%", left: "-4%" }}>
+      <Box
+        style={{ position: "absolute", top: "50%", left: "-4%" }}
+        display={{ base: "none", md: "block" }}
+      >
         <Image
           src={"/assets/image/design/12.svg"}
           width="130px"

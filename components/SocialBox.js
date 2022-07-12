@@ -58,7 +58,6 @@ const SocialBox = () => {
           </Box>
         </HStack>
       </Container>
-      <ClientsLogo />
     </Box>
   );
 };
