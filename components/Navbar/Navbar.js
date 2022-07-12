@@ -470,8 +470,28 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="App Development"
-                          href="/services/app-development"
+                          name="Website Development"
+                          href="/services/website-development"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Social Media Marketing"
+                          href="/services/social-media-marketing"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Digital Marketing & Seo"
+                          href="/services/digital-marketing-and-seo"
                         />
                       </li>
                       <li
@@ -494,34 +514,15 @@ const Navbar = (props) => {
                           href="/services/design-and-brand-development"
                         />
                       </li>
+
                       <li
                         onClick={() => {
                           onClose();
                         }}
                       >
                         <NavItem
-                          name="Digital Marketing & Seo"
-                          href="/services/digital-marketing-and-seo"
-                        />
-                      </li>
-                      <li
-                        onClick={() => {
-                          onClose();
-                        }}
-                      >
-                        <NavItem
-                          name="Social Media Marketing"
-                          href="/services/social-media-marketing"
-                        />
-                      </li>
-                      <li
-                        onClick={() => {
-                          onClose();
-                        }}
-                      >
-                        <NavItem
-                          name="Website Development"
-                          href="/services/website-development"
+                          name="App Development"
+                          href="/services/app-development"
                         />
                       </li>
                     </ul>

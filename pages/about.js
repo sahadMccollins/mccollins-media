@@ -8,6 +8,7 @@ import ClientsLogo from "../components/ClientsLogo";
 import Awards from "../components/Awards";
 import InstagramFeed from "react-ig-feed";
 import "react-ig-feed/dist/index.css";
+import Testimonials from "../components/Testimonials";
 
 const about = () => {
   return (
@@ -38,17 +39,21 @@ const about = () => {
               <Text>creating content that tells a story</Text>
             </Box>
             <Text mb={5}>
-              We craft digital experiences that change the game for you and your
-              customers. Our teams combine strategy, customer insight, and
-              technology engineering to help you rapidly solve customer problems
-              and demonstrate measurable impact against your strategic goals.
+              McCollins Media is a Digital Brand Activation agency specializing
+              in Mobile-first technology and Performance-Driven Marketing
+              campaigns in the MENA region. We are Headquartered in Dubai with a
+              complete in-house team of creative professionals.
               <br />
-              <br /> We believe in earned media, and develop marketing vehicles
-              to get your brand noticed at the right time, in the right place.
-              Our multicultural team comes with a zest to create something
-              different, dare to explore the digital space and take ownership
-              for the brands we represent. Today, 10 years and counting, we are
-              just warming up.
+              <br /> We are in the pursuit of providing digital advancement to
+              all our clients to take their brand to the next level. Be it Web
+              Development, Google Ads, 360 Brand Development, or Digital
+              Marketing, we do everything in-house.
+              <br />
+              <br />
+              Our multi-cultural team is always daring to set viral trends,
+              venture into the digital realm, and take ownership of the brands
+              we represent. After 15 years of being a pioneer Digital Marketing
+              agency in the UAE, we’re just starting what we are here for!
             </Text>
           </Box>
           <Box width={{ base: "100%", md: "45%" }}>
@@ -105,12 +110,15 @@ const about = () => {
         ></Box>
       </Box>
       <TextBox
-        heading="OUR TEAM"
-        subHeading="We Help to Acheive Your Business Goal"
-        content="We create brand names that are simplistic, unique, and can travel the world, whether selling a product in a small town or an urban city."
+        heading={"MEET \n THE TEAM"}
+        subHeadingOnly={
+          "You know our story, but do you know who keeps it alive? \n Meet our team who take brands to unthinkable heights!"
+        }
       />
 
       <OurTeam />
+
+      {/* <Testimonials /> */}
 
       <ClientsLogo />
       <Awards />

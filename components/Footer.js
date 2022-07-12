@@ -79,7 +79,7 @@ const Footer = () => {
               <span style={{ color: "#FFDE11" }}>Let’s Talk.</span>
             </Heading>
             <Text color={"#fff"} fontSize={"2xl"}>
-              reach out to our team and we’ll get back to you within a day.
+              Connect with us to change your digital game.
             </Text>
             <Tabs color={"#fff"} mt="5">
               <TabList>

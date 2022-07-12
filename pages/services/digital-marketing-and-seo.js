@@ -23,19 +23,18 @@ import TextBox from "../../components/TextBox";
 import FavWork from "../../components/FavWork";
 import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
+import VideoBanner from "../../components/VideoBanner";
 
 const DigitalMarketingSEO = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const [isOpen, setOpen] = useState(false);
   return (
-    <Stack>
-      <Container maxWidth={"7xl"}>
-        <InnerBanner
-          heading={`digital \n marketing \n & seo`}
-          img="/assets/image/servicePage/DM&SEO.jpg"
-          content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
-        />
-      </Container>
+    <Stack position={"relative"}>
+      <VideoBanner
+        heading={`digital \n marketing \n & seo`}
+        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
+        content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+      />
 
       <ModalVideo
         channel="youtube"
@@ -189,6 +188,6 @@ const DigitalMarketingSEO = () => {
 };
 
 DigitalMarketingSEO.getLayout = function getLayout(DigitalMarketingSEO) {
-  return <InnerLayout>{DigitalMarketingSEO}</InnerLayout>;
+  return <InnerLayout color="yellow">{DigitalMarketingSEO}</InnerLayout>;
 };
 export default DigitalMarketingSEO;

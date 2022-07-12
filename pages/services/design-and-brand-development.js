@@ -3,29 +3,19 @@ import Image from "next/image";
 import React from "react";
 import ClientsLogo from "../../components/ClientsLogo";
 import FavWork from "../../components/FavWork";
-import InnerBanner from "../../components/InnerBanner";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import ServicePoint from "../../components/ServicePoint";
-import SocialBox from "../../components/SocialBox";
 import TextBox from "../../components/TextBox";
+import VideoBanner from "../../components/VideoBanner";
 
 const DesignAndBrandDevelopment = () => {
   return (
-    <Stack>
-      <Container maxWidth={"7xl"}>
-        <InnerBanner
-          heading={`design and \n brand \n development`}
-          img="/assets/image/servicePage/designAndBrand.jpg"
-          content="Creating a brand from the inception - logo to the entire adaptation of various deliverables are conceptualized in-house by our team of designers and copywriters"
-        />
-        <Box style={{ position: "absolute", top: "14%", right: "0%" }}>
-          <Image
-            src={"/assets/image/design/9.svg"}
-            width="118px"
-            height={"165px"}
-          />
-        </Box>
-      </Container>
+    <Stack position={"relative"}>
+      <VideoBanner
+        heading={`design and \n brand \n development`}
+        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/BRANDING_-_z6r43b.mp4"
+        content="Creating a brand from the inception - logo to the entire adaptation of various deliverables are conceptualized in-house by our team of designers and copywriters"
+      />
       <Box bg={"#F7F7F7"}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }} my={20}>
@@ -127,7 +117,7 @@ const DesignAndBrandDevelopment = () => {
 DesignAndBrandDevelopment.getLayout = function getLayout(
   DesignAndBrandDevelopment
 ) {
-  return <InnerLayout>{DesignAndBrandDevelopment}</InnerLayout>;
+  return <InnerLayout color="yellow">{DesignAndBrandDevelopment}</InnerLayout>;
 };
 
 export default DesignAndBrandDevelopment;

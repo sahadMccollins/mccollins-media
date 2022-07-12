@@ -12,7 +12,9 @@ const TextBox = (props) => {
               fontWeight={"black"}
               pl="6"
             >
-              {props.heading}
+              {props.heading.split("\n").map((str) => (
+                <div key={str}>{str}</div>
+              ))}
             </Heading>
             <Heading
               borderLeft="20px solid #FFE962"
@@ -43,7 +45,10 @@ const TextBox = (props) => {
               mb="2"
               mt={{ base: "5", md: "0" }}
             >
-              {props.subHeadingOnly}
+              {props.subHeadingOnly &&
+                props.subHeadingOnly
+                  .split("\n")
+                  .map((str) => <div key={str}>{str}</div>)}
             </Heading>
             <Text>{props.content}</Text>
           </Box>

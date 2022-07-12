@@ -17,10 +17,16 @@ import FavWork from "../../components/FavWork";
 import TextBox from "../../components/TextBox";
 import SocialBox from "../../components/SocialBox";
 import ClientsLogo from "../../components/ClientsLogo";
+import VideoBanner from "../../components/VideoBanner";
 
 const SocialMediaMarketing = () => {
   return (
     <Stack>
+      <VideoBanner
+        heading={`social \n media \n marketing`}
+        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600385/Mccollins%20Video/Social_Media-_jmavct.mp4"
+        content="Mobile First, Content Driven, Result Oriented extended marketing arm for your brand!"
+      />
       <Box
         style={{
           background: "linear-gradient(to bottom,#fff 75%,#ffde11 50%)",
@@ -28,11 +34,6 @@ const SocialMediaMarketing = () => {
         pb={12}
       >
         <Container maxWidth={"7xl"} position="relative">
-          <InnerBanner
-            heading={`social \n media \n marketing`}
-            img="/assets/image/servicePage/socialMediaMarketing.jpg"
-            content="Mobile First, Content Driven, Result Oriented extended marketing arm for your brand!"
-          />
           <Box style={{ position: "absolute", top: "45%", left: "25%" }}>
             <Image
               src={"/assets/image/design/1.svg"}
@@ -225,7 +226,7 @@ const SocialMediaMarketing = () => {
 };
 
 SocialMediaMarketing.getLayout = function getLayout(SocialMediaMarketing) {
-  return <InnerLayout>{SocialMediaMarketing}</InnerLayout>;
+  return <InnerLayout color="yellow">{SocialMediaMarketing}</InnerLayout>;
 };
 
 export default SocialMediaMarketing;

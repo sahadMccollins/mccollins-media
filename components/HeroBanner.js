@@ -50,11 +50,7 @@ const HeroBanner = (props) => {
               {props.h2}
             </Heading>
             {props.content ? (
-              <Text
-                mt={"15px"}
-                fontSize={isLargerThan780 ? "25px" : "30px"}
-                width={isLargerThan780 ? "60%" : "100%"}
-              >
+              <Text mt={"15px"} fontSize={isLargerThan780 ? "25px" : "16px"}>
                 {props.content}
               </Text>
             ) : (

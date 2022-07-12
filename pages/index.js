@@ -13,8 +13,8 @@ export default function Home() {
     <>
       <HeroBanner
         img="https://res.cloudinary.com/mccollins-media/image/upload/v1657138383/Mccollins%20Banner/home-banner_bwes6c.webp"
-        h2="digital brand activation agency"
-        content="result driven agency with mobile first technology"
+        h2="A Digital Pioneer In Changing The Game"
+        content="We architect end-to-end experiences which create a meaningful digital footprint for your future."
       />
 
       <Stack
@@ -26,15 +26,14 @@ export default function Home() {
       ></Stack>
 
       <TextBox
-        heading="Our Core Services"
-        subHeading="what we are passionate about"
-        content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
+        heading={"WHO WE ARE"}
+        content="We are McCollins Media, a story that began over 15 years ago on the principles of creativity, innovation, and result-driven thinking. We blend creative thinking and digital development with purposeful strategies to create a digital ecosystem like no other. We are passionate about being the leading digital marketing and web development services provider in the UAE and across all GCC countries."
       />
 
       <ServiceTabs />
 
       <TextBox
-        heading="Case study"
+        heading="CASE STUDY"
         subHeading="learn how we executed campaigns to get results"
         content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
       />
@@ -45,16 +44,16 @@ export default function Home() {
 
       <TextBox
         bg="#F7F7F7"
-        heading="WHAT WE DO"
-        subHeading="in today’s market, work with a performance driven approach"
-        content="Our team prides in daring to experiment with evolving digital trends, providing a personalized approach to our clients, and ensuring we create a result driven plan to achieve our brands objectives. We are a young and passionate full service in-house team based in Dubai Media City. Follow us on instagram to take a sneak peak into our daily lives @mccollinsmedia"
+        heading={"WHAT \n WE DO"}
+        subHeading="Creating game-changing campaigns"
+        content=" that help brands all across the GCC region grow and perform better. We bridge the gap between purpose-driven storytelling and data-driven improvements."
       />
 
       <ServiceAccordian />
 
       <TextBox
-        heading="Technologies We work with"
-        subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."
+        heading="WHAT WE WORK WITH"
+        subHeadingOnly="As a technology-driven company, we adapt to the latest trends and combine them with consumer insights to help brands be on top of their game. "
       />
 
       <TechIcon />

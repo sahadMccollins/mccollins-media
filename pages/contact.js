@@ -6,7 +6,6 @@ import {
   FormControl,
   FormLabel,
   Heading,
-  HStack,
   Input,
   NumberInput,
   NumberInputField,
@@ -15,11 +14,8 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import HeroBanner from "../components/HeroBanner";
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
-import Image from "next/image";
+import Testimonials from "../components/Testimonials";
 
 const Contact = () => {
   const swiperRef = useRef(null);
@@ -144,41 +140,6 @@ const Contact = () => {
                 Your email address will not be published. Required fields are
                 marked *
               </Text>
-              {/* <form className="contact-form">
-                <FormControl isRequired>
-                  <FormLabel htmlFor="first-name">First Name</FormLabel>
-                  <Input id="first-name" borderRadius={"50px"} />
-                </FormControl>
-                <FormControl isRequired mt={5}>
-                  <FormLabel htmlFor="contact">Contact No</FormLabel>
-                  <NumberInput max={50} min={10}>
-                    <NumberInputField id="contact" borderRadius={"50px"} />
-                  </NumberInput>
-                </FormControl>
-                <FormControl isRequired mt={5}>
-                  <FormLabel htmlFor="email">Email</FormLabel>
-                  <Input id="email" type="email" borderRadius={"50px"} />
-                </FormControl>
-                <FormControl isRequired mt={5}>
-                  <FormLabel htmlFor="first-name">Looking For?</FormLabel>
-                  <Input id="first-name" borderRadius={"50px"} />
-                </FormControl>
-                <FormControl isRequired mt={5}>
-                  <FormLabel htmlFor="first-name">Project Details</FormLabel>
-                  <Input id="first-name" borderRadius={"50px"} />
-                </FormControl>
-                <Button
-                  mt={5}
-                  colorScheme="yellow"
-                  background={"#FFDE11"}
-                  type="submit"
-                  borderRadius={"50px"}
-                  fontSize={"18px"}
-                  fontWeight="bold"
-                >
-                  Submit Inquiry
-                </Button>
-              </form> */}
               <form onSubmit={formHandler} className="contact-form">
                 <FormControl isRequired>
                   <FormLabel htmlFor="first-name">First Name</FormLabel>
@@ -254,98 +215,7 @@ const Contact = () => {
             </Button>
           </Container>
         </Box>
-        <Container maxWidth={"7xl"} my="20">
-          <Box position={"relative"} ml={{ base: 0, md: "10%" }}>
-            <Heading
-              borderLeft="20px solid #FFE962"
-              fontSize={{ base: "3xl", md: "4xl" }}
-              fontWeight={"bold"}
-              pl="6"
-            >
-              WHAT OUR CLIENTS
-              <br /> ARE SAYING?
-            </Heading>
-            <Box
-              display={"flex"}
-              alignItems="end"
-              flexDirection={{ base: "column", md: "row" }}
-            >
-              <Box width={{ base: "100%", md: "60%" }}>
-                <Swiper
-                  spaceBetween={20}
-                  slidesPerView={1}
-                  loop={true}
-                  ref={swiperRef}
-                >
-                  <SwiperSlide>
-                    <Box bg="#F7F7F7" p={"16"} mt="10">
-                      <Text>
-                        McCollins has helped launch cleaning Superstore from the
-                        website development to social media and ad management.
-                        We are very happy to have an extended team in McCollins.
-                        The team takes ownership and I would be more than happy
-                        to recommend them to other brands
-                      </Text>
-                      <Heading fontSize={"2xl"} mt="5">
-                        Alexa - Marketing Manager
-                      </Heading>
-                      <Text fontSize={"20px"}>Cleaning Superstore</Text>
-                    </Box>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Box bg="#F7F7F7" p={"16"} mt="10">
-                      <Text>
-                        McCollins has helped launch cleaning Superstore from the
-                        website development to social media and ad management.
-                        We are very happy to have an extended team in McCollins.
-                        The team takes ownership and I would be more than happy
-                        to recommend them to other brands
-                      </Text>
-                      <Heading fontSize={"2xl"} mt="5">
-                        Alexa - Marketing Manager1
-                      </Heading>
-                      <Text fontSize={"20px"}>Cleaning Superstore</Text>
-                    </Box>
-                  </SwiperSlide>
-                </Swiper>
-              </Box>
-              <Box>
-                <HStack spacing="0" cursor={"pointer"} zIndex="2">
-                  <Box
-                    background={"#000"}
-                    p="8px 15px 10px 15px"
-                    onClick={() => swiperRef.current.swiper.slidePrev()}
-                  >
-                    <ChevronLeftIcon color={"#fff"} />
-                  </Box>
-                  <Box
-                    background={"#6F6F6F"}
-                    p="8px 15px 10px 15px"
-                    onClick={() => swiperRef.current.swiper.slideNext()}
-                  >
-                    <ChevronRightIcon color={"#fff"} />
-                  </Box>
-                </HStack>
-              </Box>
-            </Box>
-            <Box
-              display={{ base: "none", md: "block" }}
-              bg={"#FFE962"}
-              width="350px"
-              height={"400px"}
-              position="absolute"
-              bottom={"42px"}
-              left="50%"
-              textAlign={"center"}
-            >
-              <Image
-                src={"/assets/image/design/4.png"}
-                width="176px"
-                height={"370px"}
-              />
-            </Box>
-          </Box>
-        </Container>
+        <Testimonials />
       </Box>
     </Stack>
   );
