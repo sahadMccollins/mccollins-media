@@ -2,7 +2,7 @@ import { Box, Stack } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 import HeroBanner from "../../components/HeroBanner";
-import ServicePageAccordian from "../../components/ServicePageAccordian";
+import IndustryPageAccordian from "../../components/IndustryPageAccordian";
 import TextBox2 from "../../components/TextBox2";
 
 const index = () => {
@@ -15,7 +15,7 @@ const index = () => {
       />
       <Box
         style={{ position: "absolute" }}
-        top={{ base: "65%", md: "70%" }}
+        top={{ base: "70%", md: "73%" }}
         left={{ base: "75%", md: "50%" }}
         zIndex="9"
       >
@@ -25,7 +25,7 @@ const index = () => {
           height={"103px"}
         />
       </Box>
-      <ServicePageAccordian />
+      <IndustryPageAccordian />
       <TextBox2 />
       <Box
         style={{ position: "absolute", right: "2%" }}

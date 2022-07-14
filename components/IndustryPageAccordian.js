@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 
-const ServicePageAccordian = () => {
+const IndustryPageAccordian = () => {
   return (
     <Stack
       className="serviceAcc"
@@ -56,7 +56,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      website development
+                      Corporate Marketing
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -93,7 +93,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      perfomance marketing
+                      Food And Beverage
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -130,7 +130,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      digital marketing & seo
+                      Healthcare Marketing
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -167,7 +167,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      content production
+                      Luxury Marketing
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -204,43 +204,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      branding
-                    </Box>
-                  </AccordionButton>
-                </h2>
-                <AccordionPanel pb={4}>
-                  Creating a digital outlet for your brand and driving leads via
-                  the website. Focus on Mobile Websites is key. We develop
-                  <br />
-                  <Button
-                    colorScheme="yellow"
-                    background={"#FFDE11"}
-                    borderRadius="20px"
-                    color="#000"
-                    mt={4}
-                    fontWeight="bold"
-                  >
-                    view more
-                    <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-                  </Button>
-                </AccordionPanel>
-              </AccordionItem>
-              <AccordionItem>
-                <h2>
-                  <AccordionButton>
-                    <Box
-                      textAlign="left"
-                      fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-                      display="flex"
-                    >
-                      <span
-                        style={{
-                          width: "30px",
-                          background:
-                            "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                        }}
-                      ></span>
-                      app development
+                      Technology Marketing
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -302,4 +266,4 @@ const ServicePageAccordian = () => {
   );
 };
 
-export default ServicePageAccordian;
+export default IndustryPageAccordian;

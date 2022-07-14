@@ -21,7 +21,7 @@ const AccItem = (props) => {
         <AccordionButton>
           <Box
             textAlign="left"
-            fontSize={{ base: "26px", sm: "unset", xl: "48px" }}
+            fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
           >
             {props.name}
           </Box>

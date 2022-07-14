@@ -20,7 +20,7 @@ export default function Home() {
       <Stack
         position={"absolute"}
         width="100%"
-        height={"755px"}
+        height={"730px"}
         background={"#F7F7F7"}
         zIndex="0"
       ></Stack>

@@ -15,7 +15,7 @@ import Image from "next/image";
 import "swiper/css";
 import { useRef } from "react";
 
-const TeamMemberSlide = (props) => {
+function TeamMemberSlide(props) {
   return (
     <Box position={"relative"} bottom={"-5px"}>
       <Image src={props.img} width="270px" height="400px" objectFit="cover" />
@@ -45,7 +45,7 @@ const TeamMemberSlide = (props) => {
       ></Box>
     </Box>
   );
-};
+}
 
 const OurTeam = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
