@@ -235,7 +235,6 @@ const EditBlog = ({ blog }) => {
                     type="text"
                     value={keywords}
                     onChange={(e) => setkeywords(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>
@@ -247,7 +246,6 @@ const EditBlog = ({ blog }) => {
                     type="text"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>
@@ -259,7 +257,6 @@ const EditBlog = ({ blog }) => {
                     type="textArea"
                     value={shortContent}
                     onChange={(e) => setShortContent(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>

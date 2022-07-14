@@ -12,7 +12,7 @@ const InnerBanner = (props) => {
     >
       <Box width={{ base: "100%", md: "55%" }}>
         <Heading fontSize={"50px"} color="#FFDE11">
-          our services
+          {props.name ? props.name : "our services"}
         </Heading>
         <Box position="relative">
           <Heading

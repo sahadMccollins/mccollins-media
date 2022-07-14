@@ -35,7 +35,7 @@ const HeroBanner = (props) => {
       </Box>
       <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
         <Container maxWidth={"7xl"}>
-          <Box width={isLargerThan780 ? "50%" : "100%"}>
+          <Box width={{ base: "100%", md: "50%" }}>
             {props.breadcrumb ? (
               <Heading
                 fontSize={isLargerThan780 ? "60px" : "40px"}

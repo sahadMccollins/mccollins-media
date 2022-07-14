@@ -93,7 +93,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      app development
+                      perfomance marketing
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -114,6 +114,7 @@ const ServicePageAccordian = () => {
                   </Button>
                 </AccordionPanel>
               </AccordionItem>
+
               <AccordionItem>
                 <h2>
                   <AccordionButton>
@@ -150,42 +151,7 @@ const ServicePageAccordian = () => {
                   </Button>
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem>
-                <h2>
-                  <AccordionButton>
-                    <Box
-                      textAlign="left"
-                      fontSize={{ base: "26px", sm: "unset", xl: "48px" }}
-                      display="flex"
-                    >
-                      <span
-                        style={{
-                          width: "30px",
-                          background:
-                            "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                        }}
-                      ></span>
-                      perfomance marketing
-                    </Box>
-                  </AccordionButton>
-                </h2>
-                <AccordionPanel pb={4}>
-                  Creating a digital outlet for your brand and driving leads via
-                  the website. Focus on Mobile Websites is key. We develop
-                  <br />
-                  <Button
-                    colorScheme="yellow"
-                    background={"#FFDE11"}
-                    borderRadius="20px"
-                    color="#000"
-                    mt={4}
-                    fontWeight="bold"
-                  >
-                    view more
-                    <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-                  </Button>
-                </AccordionPanel>
-              </AccordionItem>
+
               <AccordionItem>
                 <h2>
                   <AccordionButton>
@@ -222,6 +188,7 @@ const ServicePageAccordian = () => {
                   </Button>
                 </AccordionPanel>
               </AccordionItem>
+
               <AccordionItem>
                 <h2>
                   <AccordionButton>
@@ -258,10 +225,47 @@ const ServicePageAccordian = () => {
                   </Button>
                 </AccordionPanel>
               </AccordionItem>
+              <AccordionItem>
+                <h2>
+                  <AccordionButton>
+                    <Box
+                      textAlign="left"
+                      fontSize={{ base: "26px", sm: "unset", xl: "48px" }}
+                      display="flex"
+                    >
+                      <span
+                        style={{
+                          width: "30px",
+                          background:
+                            "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                        }}
+                      ></span>
+                      app development
+                    </Box>
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  Creating a digital outlet for your brand and driving leads via
+                  the website. Focus on Mobile Websites is key. We develop
+                  <br />
+                  <Button
+                    colorScheme="yellow"
+                    background={"#FFDE11"}
+                    borderRadius="20px"
+                    color="#000"
+                    mt={4}
+                    fontWeight="bold"
+                  >
+                    view more
+                    <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
+                  </Button>
+                </AccordionPanel>
+              </AccordionItem>
             </Accordion>
           </Box>
           <Box
             width={{ base: "100%", md: "50%" }}
+            mt={{ base: "10", md: "0" }}
             alignSelf="center"
             position={"relative"}
           >
@@ -282,6 +286,7 @@ const ServicePageAccordian = () => {
             </video>
             <Box
               position={"absolute"}
+              display={{ base: "none", md: "block" }}
               width="450px"
               height="300px"
               bg={"#FFDE11"}

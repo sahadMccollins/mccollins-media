@@ -23,6 +23,7 @@ const Index = ({ blogs }) => {
     <Stack>
       <Container maxWidth={"7xl"}>
         <InnerBanner
+          name="blog"
           img="/assets/image/blogPage/blogBanner.jpg"
           heading={`lorem ipsum \n consectetur \n dolor sit`}
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "

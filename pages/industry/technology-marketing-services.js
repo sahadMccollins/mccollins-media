@@ -37,7 +37,7 @@ const TechnologyMarketing = () => {
                 <Box
                   position={"absolute"}
                   width="300px"
-                  height="350px"
+                  height={{ base: "70%", md: "75%" }}
                   bg={"#FFDE11"}
                   top="140px"
                   right="200px"
@@ -107,7 +107,7 @@ const TechnologyMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -137,7 +137,7 @@ const TechnologyMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -156,7 +156,11 @@ const TechnologyMarketing = () => {
               </Box>
             </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: 10, md: 0 }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage3.jpg"
                   width="480px"
@@ -169,7 +173,7 @@ const TechnologyMarketing = () => {
                   height="300px"
                   bg={"#FFDE11"}
                   bottom="-25"
-                  right="110px"
+                  right={{ base: "135px", md: "110px" }}
                   zIndex={0}
                 ></Box>
               </Box>
@@ -190,7 +194,7 @@ const TechnologyMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -207,7 +211,11 @@ const TechnologyMarketing = () => {
               </Box>
             </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: 10, md: 0 }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage5.jpg"
                   width="451px"

@@ -37,7 +37,7 @@ const luxuryMarketing = () => {
                 <Box
                   position={"absolute"}
                   width="300px"
-                  height="350px"
+                  height={{ base: "70%", md: "75%" }}
                   bg={"#FFDE11"}
                   top="140px"
                   right="200px"
@@ -80,7 +80,8 @@ const luxuryMarketing = () => {
       </Box>
       <Box position={"relative"}>
         <Box
-          style={{ position: "absolute", top: "1%", left: "10%" }}
+          style={{ position: "absolute", left: "10%" }}
+          top={{ base: "-2%", md: "1%" }}
           zIndex="9"
         >
           <Image
@@ -90,7 +91,8 @@ const luxuryMarketing = () => {
           />
         </Box>
         <Box
-          style={{ position: "absolute", top: "4%", right: "10%" }}
+          style={{ position: "absolute", right: "10%" }}
+          top={{ base: "7%", md: "4%" }}
           zIndex="9"
         >
           <Image
@@ -125,7 +127,7 @@ const luxuryMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -158,7 +160,7 @@ const luxuryMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -174,7 +176,11 @@ const luxuryMarketing = () => {
               </Box>
             </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: 10, md: 0 }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage3.jpg"
                   width="480px"
@@ -187,7 +193,7 @@ const luxuryMarketing = () => {
                   height="300px"
                   bg={"#FFDE11"}
                   bottom="-25"
-                  right="110px"
+                  right={{ base: "135px", md: "110px" }}
                   zIndex={0}
                 ></Box>
               </Box>
@@ -208,7 +214,7 @@ const luxuryMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -223,7 +229,11 @@ const luxuryMarketing = () => {
               </Box>
             </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: 10, md: 0 }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage5.jpg"
                   width="451px"

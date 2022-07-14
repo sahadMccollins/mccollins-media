@@ -13,7 +13,11 @@ const index = () => {
         breadcrumb="industry"
         h2="result driven various industry marketing partner"
       />
-      <Box style={{ position: "absolute", top: "70%", left: "50%" }} zIndex="9">
+      <Box
+        style={{ position: "absolute", top: "70%" }}
+        left={{ base: "75%", md: "50%" }}
+        zIndex="9"
+      >
         <Image
           src={"/assets/image/design/7.svg"}
           width="89px"
@@ -23,8 +27,10 @@ const index = () => {
       <ServicePageAccordian />
       <TextBox2 />
       <Box
-        style={{ position: "absolute", bottom: "0%", right: "2%" }}
+        style={{ position: "absolute", right: "2%" }}
         zIndex="9"
+        width={{ base: "18%", md: "unset" }}
+        bottom={{ base: "-1%", md: "0" }}
       >
         <Image
           src={"/assets/image/design/1.svg"}

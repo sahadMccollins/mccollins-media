@@ -242,7 +242,6 @@ const CreateBlog = () => {
                     id="shortContent"
                     type="textArea"
                     onChange={(e) => setShortContent(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>

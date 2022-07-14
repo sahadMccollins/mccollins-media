@@ -37,7 +37,7 @@ const CorporateMarketing = () => {
                 <Box
                   position={"absolute"}
                   width="300px"
-                  height="350px"
+                  height={{ base: "65%", md: "75%" }}
                   bg={"#FFDE11"}
                   top="140px"
                   right="200px"
@@ -78,7 +78,8 @@ const CorporateMarketing = () => {
       </Box>
       <Box position={"relative"}>
         <Box
-          style={{ position: "absolute", top: "1%", left: "10%" }}
+          style={{ position: "absolute", left: "10%" }}
+          top={{ base: "-2%", md: "1%" }}
           zIndex="9"
         >
           <Image
@@ -88,8 +89,9 @@ const CorporateMarketing = () => {
           />
         </Box>
         <Box
-          style={{ position: "absolute", top: "4%", right: "10%" }}
+          style={{ position: "absolute", right: "10%" }}
           zIndex="9"
+          top={{ base: "7%", md: "4%" }}
         >
           <Image
             src={"/assets/image/design/14.svg"}
@@ -124,7 +126,7 @@ const CorporateMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -143,7 +145,7 @@ const CorporateMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -163,7 +165,7 @@ const CorporateMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -177,7 +179,11 @@ const CorporateMarketing = () => {
               </Box>
             </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: "10", md: "0" }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage3.jpg"
                   width="480px"
@@ -211,7 +217,7 @@ const CorporateMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -232,7 +238,7 @@ const CorporateMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -245,7 +251,11 @@ const CorporateMarketing = () => {
               </Box>
             </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: "10", md: "0" }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage4.jpg"
                   width="480px"
@@ -279,7 +289,7 @@ const CorporateMarketing = () => {
                   width={"fit-content"}
                   p={"0px 10% 0px 10px"}
                   fontWeight="bold"
-                  fontSize={"20px"}
+                  fontSize={"1xl"}
                 >
                   <Text>creating content that tells a story</Text>
                 </Box>
@@ -294,7 +304,11 @@ const CorporateMarketing = () => {
               </Box>
             </Flex>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: "10", md: "0" }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage5.jpg"
                   width="451px"

@@ -17,7 +17,7 @@ const foodAndBeverageMarketing = () => {
     <Stack>
       <Container maxWidth={"7xl"}>
         <Box
-          style={{ position: "absolute", top: "9%", left: "60%" }}
+          style={{ position: "absolute", top: "9.5%", left: "60%" }}
           zIndex="9"
         >
           <Image
@@ -36,7 +36,7 @@ const foodAndBeverageMarketing = () => {
           <Box width={{ base: "100%", md: "40%" }} position="relative">
             <Box
               position={"absolute"}
-              top={{ base: "37%", md: "6%" }}
+              top={{ base: "50%", md: "6%" }}
               left={"70%"}
             >
               <Image
@@ -107,7 +107,7 @@ const foodAndBeverageMarketing = () => {
                 <Box
                   position={"absolute"}
                   width="300px"
-                  height="350px"
+                  height={{ base: "70%", md: "75%" }}
                   bg={"#FFDE11"}
                   top="140px"
                   right="200px"
@@ -150,8 +150,9 @@ const foodAndBeverageMarketing = () => {
       </Box>
       <Box position={"relative"}>
         <Box
-          style={{ position: "absolute", top: "5%", left: "10%" }}
+          style={{ position: "absolute", left: "10%" }}
           zIndex="9"
+          top={{ base: "-1%", md: "5%" }}
         >
           <Image
             src={"/assets/image/design/7.svg"}
@@ -188,7 +189,7 @@ const foodAndBeverageMarketing = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
               >
                 <Text>creating content that tells a story</Text>
               </Box>
@@ -206,7 +207,7 @@ const foodAndBeverageMarketing = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
               >
                 <Text>creating content that tells a story</Text>
               </Box>
@@ -224,7 +225,7 @@ const foodAndBeverageMarketing = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
               >
                 <Text>creating content that tells a story</Text>
               </Box>
@@ -237,7 +238,11 @@ const foodAndBeverageMarketing = () => {
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: "10", md: "0" }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage3.jpg"
                   width="480px"
@@ -250,7 +255,7 @@ const foodAndBeverageMarketing = () => {
                   height="300px"
                   bg={"#FFDE11"}
                   bottom="-25"
-                  right="110px"
+                  right={{ base: "135px", md: "110px" }}
                   zIndex={0}
                 ></Box>
               </Box>
@@ -265,7 +270,7 @@ const foodAndBeverageMarketing = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
               >
                 <Text>creating content that tells a story</Text>
               </Box>
@@ -286,7 +291,7 @@ const foodAndBeverageMarketing = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
               >
                 <Text>creating content that tells a story</Text>
               </Box>
@@ -302,7 +307,11 @@ const foodAndBeverageMarketing = () => {
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: "10", md: "0" }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage4.jpg"
                   width="480px"
@@ -315,7 +324,7 @@ const foodAndBeverageMarketing = () => {
                   height="300px"
                   bg={"#FFDE11"}
                   bottom="-25"
-                  right="110px"
+                  right={{ base: "135px", md: "110px" }}
                   zIndex={0}
                 ></Box>
               </Box>
@@ -332,7 +341,7 @@ const foodAndBeverageMarketing = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
               >
                 <Text>creating content that tells a story</Text>
               </Box>
@@ -348,7 +357,11 @@ const foodAndBeverageMarketing = () => {
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Box alignSelf="center" position={"relative"}>
+              <Box
+                alignSelf="center"
+                position={"relative"}
+                mt={{ base: "10", md: "0" }}
+              >
                 <Image
                   src="/assets/image/industryPage/foodAndBeverage5.jpg"
                   width="451px"
