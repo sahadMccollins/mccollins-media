@@ -17,7 +17,7 @@ const Index = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   return (
     <Stack>
-      <Container maxWidth={"7xl"}>
+      <Container maxWidth={"7xl"} mb={{ base: "150px", md: "unset" }}>
         <Box height="100vh" minHeight={"700px"} mt="-85px">
           <Box
             width={{ base: "100%", md: "70%" }}

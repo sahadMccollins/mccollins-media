@@ -403,7 +403,7 @@ const Navbar = (props) => {
                 </Button>
               </ButtonGroup>
             </DrawerHeader>
-            <DrawerBody mt={"70px"} textAlign="right">
+            <DrawerBody mt={"70px"} pl="0" textAlign="right">
               <Flex direction={"row"}>
                 <Box width={"90%"} className={styles.sidebarUl}>
                   <ul>
@@ -577,7 +577,7 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="Food And Beverage Marketing"
+                          name="Food And Beverage"
                           href="/industry/food-and-beverage-marketing"
                         />
                       </li>
