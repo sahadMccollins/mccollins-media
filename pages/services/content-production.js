@@ -29,8 +29,9 @@ const ContentProduction = () => {
       />
 
       <Box
-        style={{
-          background: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
+        bg={{
+          base: "linear-gradient(to bottom,#fff 43%,#ffde11 43%)",
+          md: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
         }}
         position="relative"
       >
@@ -40,6 +41,7 @@ const ContentProduction = () => {
             bottom: "-60px",
             right: "0px",
           }}
+          width={{ base: "150px", md: "unset" }}
         >
           <Image
             src={"/assets/image/design/10.png"}
@@ -47,7 +49,7 @@ const ContentProduction = () => {
             height={"228px"}
           />
         </Box>
-        <Container maxWidth={"7xl"}>
+        <Container maxWidth={"7xl"} my="10">
           <Flex
             direction={{ base: "column", md: "row" }}
             alignItems="center"
@@ -70,7 +72,7 @@ const ContentProduction = () => {
                   width={"100px"}
                   height={"7px"}
                   background="#000"
-                  alignSelf={{ md: "end", base: "center" }}
+                  alignSelf={"end"}
                   marginBottom="10px"
                   marginLeft={"20px"}
                 ></Box>

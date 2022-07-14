@@ -14,7 +14,7 @@ const TextBox2 = () => {
               width={"fit-content"}
               p={"0px 10% 0px 10px"}
               fontWeight="bold"
-              fontSize={"20px"}
+              fontSize={"1xl"}
             >
               <Text>creating content that tells a story</Text>
             </Box>

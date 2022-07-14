@@ -31,10 +31,17 @@ const SocialMediaMarketing = () => {
         style={{
           background: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
         }}
+        bg={{
+          base: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
+          md: "linear-gradient(to bottom,#fff 56%,#ffde11 50%)",
+        }}
         pb={12}
       >
         <Container maxWidth={"7xl"} position="relative">
-          <Box style={{ position: "absolute", top: "45%", left: "25%" }}>
+          <Box
+            style={{ position: "absolute", top: "45%", left: "25%" }}
+            display={{ base: "none", md: "block" }}
+          >
             <Image
               src={"/assets/image/design/1.svg"}
               width="158px"
@@ -136,7 +143,7 @@ const SocialMediaMarketing = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
                 color={"#000"}
               >
                 <Text>creating content that tells a story</Text>
@@ -157,7 +164,9 @@ const SocialMediaMarketing = () => {
                       "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
                   }}
                 ></span>
-                <Heading>performance marketing</Heading>
+                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
+                  performance marketing
+                </Heading>
               </Box>
               <Text>
                 Your brand must rank high amongst competitors when your
@@ -173,7 +182,9 @@ const SocialMediaMarketing = () => {
                       "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
                   }}
                 ></span>
-                <Heading>content management</Heading>
+                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
+                  content management
+                </Heading>
               </Box>
               <Text>
                 Your brand must rank high amongst competitors when your
@@ -197,7 +208,9 @@ const SocialMediaMarketing = () => {
       />
       <Box bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
         <Container maxWidth={"7xl"} mt={"5"} mb={"12"}>
-          <Heading fontSize={"5xl"}>BLOGGER OUTREACH PROGRAM</Heading>
+          <Heading fontSize={{ base: "3xl", md: "4xl" }}>
+            BLOGGER OUTREACH PROGRAM
+          </Heading>
           <Text mt={6}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

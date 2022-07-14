@@ -18,7 +18,7 @@ const DesignAndBrandDevelopment = () => {
       />
       <Box bg={"#F7F7F7"} style={{ marginTop: "0" }}>
         <Container maxWidth={"7xl"}>
-          <Flex direction={{ base: "column", md: "row" }} my={20}>
+          <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box width={{ base: "100%", md: "50%" }} mr={"20"}>
               <Heading fontWeight={"black"}>
                 BRANDING <br />
@@ -30,7 +30,7 @@ const DesignAndBrandDevelopment = () => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
+                fontSize={"1xl"}
                 color={"#000"}
               >
                 <Text>creating content that tells a story</Text>
@@ -41,7 +41,10 @@ const DesignAndBrandDevelopment = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
               </Text>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }}>
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              mt={{ base: "10", md: "unset" }}
+            >
               <Box display={"flex"}>
                 <span
                   style={{
@@ -51,7 +54,9 @@ const DesignAndBrandDevelopment = () => {
                       "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                   }}
                 ></span>
-                <Heading>brand identity development</Heading>
+                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
+                  brand identity development
+                </Heading>
               </Box>
               <Text>
                 Logo design, Brand Elements, Brand Positioning, Color Themes to
@@ -66,7 +71,9 @@ const DesignAndBrandDevelopment = () => {
                       "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                   }}
                 ></span>
-                <Heading>design projects</Heading>
+                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
+                  design projects
+                </Heading>
               </Box>
               <Text>
                 Be it a brochure or a menu or any specific design requirements,
@@ -76,7 +83,14 @@ const DesignAndBrandDevelopment = () => {
             </Box>
           </Flex>
         </Container>
-        <ServicePoint />
+        <ServicePoint
+          heading={"DESIGN \n SERVICES"}
+          contentHeading="conceptualizing design solutions for your brand"
+          content="From conceptualizing a logo for a new brand to a comprehensive design solution for an existing brand, our in-house team provides design solutions for brands"
+          points={
+            "Logo Development \n Brand Guidelines \n Brand Collaterals \n Digital Brand Guidelines \n Copywriting \n Multilingual Translation"
+          }
+        />
         <Box position={"relative"}>
           <Box style={{ position: "absolute", top: "50%", right: "5%" }}>
             <Image
@@ -86,7 +100,7 @@ const DesignAndBrandDevelopment = () => {
             />
           </Box>
           <Container maxWidth={"7xl"} pb={10}>
-            <Heading>Copywriting</Heading>
+            <Heading>COPYWRIRING</Heading>
             <Text my={15}>
               Written content that goes along with design is key. Our
               copywriters understand the DNA of your brand and create written
@@ -95,7 +109,10 @@ const DesignAndBrandDevelopment = () => {
           </Container>
         </Box>
       </Box>
-      <Box style={{ position: "absolute", top: "58%", left: "-4%" }}>
+      <Box
+        style={{ position: "absolute", top: "58%", left: "-4%" }}
+        display={{ base: "none", md: "block" }}
+      >
         <Image
           src={"/assets/image/design/12.svg"}
           width="130px"

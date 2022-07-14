@@ -36,80 +36,6 @@ const DigitalMarketingSEO = () => {
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
       />
 
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="L61p2uyiMSo"
-        onClose={() => setOpen(false)}
-      />
-
-      <Box position={"relative"}>
-        <Chakraimage
-          src="/assets/image/servicePage/DM&SEO2.jpeg"
-          width={"100%"}
-          height={"700px"}
-          objectFit={"cover"}
-        />
-        <Box
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          <Image
-            src="/assets/image/servicePage/playBtn.svg"
-            width={"93px"}
-            height={"93px"}
-            style={{ cursor: "pointer" }}
-            onClick={() => setOpen(true)}
-          />
-        </Box>
-
-        <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
-          <Container maxWidth={"7xl"}>
-            <Box width={isLargerThan780 ? "50%" : "100%"}>
-              <Heading fontSize={isLargerThan780 ? "60px" : "40px"}>
-                result driven
-                <br /> seo & sem partner
-              </Heading>
-
-              <ButtonGroup gap="4" zIndex="99" mt={"25px"}>
-                <Button
-                  colorScheme="yellow"
-                  background={"#FFDE11"}
-                  borderRadius="20px"
-                  color="#000"
-                >
-                  <Image
-                    src="/assets/image/icons/call.svg"
-                    width="25px"
-                    height="25px"
-                    priority={true}
-                  />
-                  &nbsp;&nbsp;contact us
-                </Button>
-                <Button
-                  colorScheme="whiteAlpha"
-                  borderRadius="20px"
-                  color="#fff"
-                  onClick={() => setOpen(true)}
-                >
-                  <Image
-                    src="/assets/image/icons/play.svg"
-                    width="25px"
-                    height="25px"
-                    priority={true}
-                  />
-                  &nbsp;&nbsp;watch now
-                </Button>
-              </ButtonGroup>
-            </Box>
-          </Container>
-        </Box>
-      </Box>
       <Box py={10}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }}>
@@ -180,18 +106,82 @@ const DigitalMarketingSEO = () => {
           "SEO Strategy \n Keyword Research \n Blog Submissions \n Backlinks \n Content Optimization \n Off Page Promotion \n On Page SEO \n  SERP Features \n Multi-Visit Buyer Journey \n Voice Search \n Display Ads"
         }
       />
-      {/* <Box>SEO Strategy</Box>
-          <Box>Keyword Research</Box>
-          <Box>Blog Submissions</Box>
-          <Box>Backlinks</Box>
-          <Box>Content Optimization</Box>
-          <Box>Off Page Promotion</Box>
-          <Box>On Page SEO</Box>
-          <Box>SERP Features</Box>
-          <Box>Multi-Visit Buyer Journey</Box>
-          <Box>Voice Search</Box>
-          <Box>Google Ads - PPC</Box>
-          <Box>Display Ads</Box> */}
+
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={isOpen}
+        videoId="L61p2uyiMSo"
+        onClose={() => setOpen(false)}
+      />
+
+      <Box position={"relative"} style={{ marginTop: "0" }}>
+        <Chakraimage
+          src="/assets/image/servicePage/DM&SEO2.jpeg"
+          width={"100%"}
+          height={"700px"}
+          objectFit={"cover"}
+        />
+        <Box
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          <Image
+            src="/assets/image/servicePage/playBtn.svg"
+            width={"93px"}
+            height={"93px"}
+            style={{ cursor: "pointer" }}
+            onClick={() => setOpen(true)}
+          />
+        </Box>
+
+        <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
+          <Container maxWidth={"7xl"}>
+            <Box width={isLargerThan780 ? "50%" : "100%"}>
+              <Heading fontSize={isLargerThan780 ? "60px" : "40px"}>
+                result driven
+                <br /> seo & sem partner
+              </Heading>
+
+              <ButtonGroup gap="4" zIndex="99" mt={"25px"}>
+                <Button
+                  colorScheme="yellow"
+                  background={"#FFDE11"}
+                  borderRadius="20px"
+                  color="#000"
+                >
+                  <Image
+                    src="/assets/image/icons/call.svg"
+                    width="25px"
+                    height="25px"
+                    priority={true}
+                  />
+                  &nbsp;&nbsp;contact us
+                </Button>
+                <Button
+                  colorScheme="whiteAlpha"
+                  borderRadius="20px"
+                  color="#fff"
+                  onClick={() => setOpen(true)}
+                >
+                  <Image
+                    src="/assets/image/icons/play.svg"
+                    width="25px"
+                    height="25px"
+                    priority={true}
+                  />
+                  &nbsp;&nbsp;watch now
+                </Button>
+              </ButtonGroup>
+            </Box>
+          </Container>
+        </Box>
+      </Box>
+
       <TextBox
         heading="Case study"
         smallHeading="website design & development"

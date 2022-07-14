@@ -120,7 +120,6 @@ const OurTeam = () => {
             <Swiper
               spaceBetween={20}
               slidesPerView={isLargerThan780 ? 3.5 : 1}
-              loop={true}
               ref={swiperRef}
             >
               <SwiperSlide>

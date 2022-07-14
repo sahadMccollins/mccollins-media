@@ -19,7 +19,12 @@ const ServicePoint = (props) => {
             borderLeft="15px solid #FFE962"
             pl={"5"}
           >
-            <Heading>{props.heading}</Heading>
+            <Heading>
+              {props.heading &&
+                props.heading
+                  .split("\n")
+                  .map((str) => <Box key={str}>{str}</Box>)}
+            </Heading>
             <Text className="subHeading">{props.subHeading}</Text>
           </Box>
           <Box width={{ base: "100%", md: "70%" }}>

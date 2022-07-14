@@ -34,8 +34,12 @@ const WebsiteDevelopment = () => {
       />
 
       <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
-        {/* start */}
-        <Stack position={"relative"} zIndex="2" className="serviceTab">
+        <Stack
+          position={"relative"}
+          zIndex="2"
+          className="serviceTab"
+          mb={{ base: "10", md: "unset" }}
+        >
           <Container maxWidth={"7xl"} py="30">
             <Tabs>
               <TabList
@@ -67,11 +71,11 @@ const WebsiteDevelopment = () => {
             </Tabs>
           </Container>
         </Stack>
-        {/* end */}
       </Container>
       <Box
-        style={{
-          background: "linear-gradient(to bottom,#ffde11 50%,#fff 50%)",
+        background={{
+          base: "linear-gradient(to bottom,#ffde11 26%,#fff 26%)",
+          md: "linear-gradient(to bottom,#ffde11 50%,#fff 50%)",
         }}
         position={"relative"}
       >
@@ -89,21 +93,31 @@ const WebsiteDevelopment = () => {
             height={"138px"}
           />
         </Box>
-        <Box style={{ position: "absolute", top: "35%", left: "18%" }}>
+        <Box
+          style={{ position: "absolute" }}
+          right={{ base: "3%", md: "80%" }}
+          top={{ base: "40%", md: "30%" }}
+        >
           <Image
             src={"/assets/image/design/7.svg"}
             width="43px"
             height={"43px"}
           />
         </Box>
-        <Box style={{ position: "absolute", top: "54%", left: "10%" }}>
+        <Box
+          style={{ position: "absolute", top: "54%", left: "10%" }}
+          display={{ base: "none", md: "block" }}
+        >
           <Image
             src={"/assets/image/design/1.svg"}
             width="158px"
             height={"215px"}
           />
         </Box>
-        <Box style={{ position: "absolute", top: "55%", right: "10%" }}>
+        <Box
+          style={{ position: "absolute", top: "55%", right: "10%" }}
+          display={{ base: "none", md: "block" }}
+        >
           <Image
             src={"/assets/image/design/3.svg"}
             width="89px"
@@ -149,7 +163,7 @@ const WebsiteDevelopment = () => {
       <FavWork />
       <TextBox
         heading="Technologies We work with"
-        content="Transform your brand journey today. We grow brands, create experiences and solve problems."
+        subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."
       />
       <TechIcon />
       <ClientsLogo />

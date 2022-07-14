@@ -22,7 +22,7 @@ const ServiceTabsDetails = () => {
             width={"100px"}
             height={"7px"}
             background="#FFE962"
-            alignSelf={{ md: "end", base: "center" }}
+            alignSelf={{ md: "end", base: "end" }}
             marginBottom="10px"
             marginLeft={"20px"}
             placeSelf="end"

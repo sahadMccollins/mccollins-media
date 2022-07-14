@@ -26,68 +26,79 @@ const AppDevelopment = () => {
           img="/assets/image/servicePage/appDevelopment.jpg"
           content="Every brand in today’s time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
         />
-        <Box
-          style={{ position: "absolute", bottom: "-70px", right: "-100px" }}
-          display={{ base: "none", md: "block" }}
-        >
-          <Image
-            src={"/assets/image/design/1.svg"}
-            width="158px"
-            height={"215px"}
-          />
-        </Box>
       </Container>
+      <Box
+        style={{ position: "absolute", top: "80vh", right: "0" }}
+        display={{ base: "none", md: "block" }}
+        zIndex={99}
+      >
+        <Image
+          src={"/assets/image/design/1.svg"}
+          width="158px"
+          height={"215px"}
+        />
+      </Box>
       <Box
         style={{
           background: isLargerThan780
             ? "linear-gradient(to bottom,#ffde11 52%,#fff 40%)"
-            : "linear-gradient(to bottom,#ffde11 30%,#fff 40%)",
+            : "linear-gradient(to bottom,#ffde11 39%,#fff 35%)",
         }}
       >
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }}>
-            <Box width={{ base: "100%", md: "50%" }} mt="14">
-              <Heading color={"#000"} fontSize="4xl">
-                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING
-              </Heading>
-              <Box
-                my={8}
-                background="#fff"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-                color={"#000"}
-              >
-                <Text>creating content that tells a story</Text>
-              </Box>
+            <Flex
+              width={{ base: "100%", md: "50%" }}
+              mt="14"
+              direction={"column"}
+              justifyContent="space-between"
+            >
+              <Box>
+                <Heading color={"#000"} fontSize="4xl">
+                  LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING
+                </Heading>
+                <Box
+                  my={8}
+                  background="#fff"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"1xl"}
+                  color={"#000"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
 
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Text>
-              <br />
-              <br />
-              <Heading color={"#000"} fontSize="4xl">
-                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING
-              </Heading>
-              <Box
-                my={8}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-                color={"#000"}
-              >
-                <Text>creating content that tells a story</Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </Text>
+                <br />
+                <br />
               </Box>
-            </Box>
+              <Box>
+                <Heading color={"#000"} fontSize={{ base: "2xl", md: "3xl" }}>
+                  LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING
+                </Heading>
+                <Box
+                  my={8}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 10% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"1xl"}
+                  color={"#000"}
+                >
+                  <Text>creating content that tells a story</Text>
+                </Box>
+              </Box>
+            </Flex>
             <Box width={{ base: "100%", md: "40%" }}>
               <Image
                 src="/assets/image/servicePage/appDevelopment2.png"

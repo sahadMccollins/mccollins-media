@@ -14,7 +14,8 @@ const index = () => {
         h2="result driven various industry marketing partner"
       />
       <Box
-        style={{ position: "absolute", top: "70%" }}
+        style={{ position: "absolute" }}
+        top={{ base: "65%", md: "70%" }}
         left={{ base: "75%", md: "50%" }}
         zIndex="9"
       >
