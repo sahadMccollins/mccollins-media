@@ -16,7 +16,20 @@ import {
   useDisclosure,
   VStack,
   Text,
-  Link as chakraLink,
+  Link as ChakraLink,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  ModalFooter,
+  FormControl,
+  FormLabel,
+  Input,
+  NumberInput,
+  NumberInputField,
+  useToast,
 } from "@chakra-ui/react";
 import styles from "../../styles/Navbar.module.css";
 import Image from "next/image";
@@ -32,7 +45,56 @@ const Navbar = (props) => {
   const [isActive, setIsActive] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
 
+  const {
+    isOpen: isOpen2,
+    onOpen: onOpen2,
+    onClose: onClose2,
+  } = useDisclosure();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState();
+  const [lookingFor, setLookingFor] = useState("");
+  const [project, setProject] = useState("");
+
+  const [loading, setLoading] = useState(false);
+
   const router = useRouter();
+
+  const toast = useToast();
+
+  const formHandler = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        contact: contact,
+        lookingFor: lookingFor,
+        project: project,
+      }),
+    };
+    fetch("/api/form-submit", requestOptions).then(
+      (response) => response.json(),
+      setName(""),
+      setContact(""),
+      setEmail(""),
+      setLookingFor(""),
+      setProject(""),
+      setLoading(false),
+      toast({
+        title: "Form Submited",
+        description: "Thank you for getting in touch!",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      }),
+      onClose2()
+    );
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -78,23 +140,26 @@ const Navbar = (props) => {
                       background={props.color ? "#FFDE11" : null}
                       borderRadius="20px"
                       color="#000"
-                      as={chakraLink}
-                      href="tel:+971 4 445 6848"
                     >
-                      <Image
-                        src="/assets/image/icons/call.svg"
-                        width="25px"
-                        height="25px"
-                      />
-                      &nbsp;&nbsp;Call
+                      <ChakraLink
+                        href="tel:+971 4 445 6848"
+                        display={"flex"}
+                        alignItems="center"
+                      >
+                        <Image
+                          src="/assets/image/icons/call.svg"
+                          width="25px"
+                          height="25px"
+                        />
+                        <span>&nbsp;&nbsp;Call</span>
+                      </ChakraLink>
                     </Button>
                     <Button
                       colorScheme={props.color ? "yellow" : "whiteAlpha"}
                       background={props.color ? "#FFDE11" : null}
                       borderRadius="20px"
                       color="#000"
-                      as={chakraLink}
-                      href="mailto:info@mccollinsmedia.com"
+                      onClick={onOpen2}
                     >
                       <Image
                         src="/assets/image/icons/chat.svg"
@@ -140,7 +205,7 @@ const Navbar = (props) => {
                 >
                   <Box
                     mb={3}
-                    as={chakraLink}
+                    as={ChakraLink}
                     href="https://vm.tiktok.com/ZSJShjmYH/"
                     target="_blank"
                   >
@@ -153,7 +218,7 @@ const Navbar = (props) => {
                   </Box>
                   <Box
                     mb={3}
-                    as={chakraLink}
+                    as={ChakraLink}
                     href="https://www.instagram.com/mccollinsmedia/?hl=en"
                     target="_blank"
                   >
@@ -166,7 +231,7 @@ const Navbar = (props) => {
                   </Box>
                   <Box
                     mb={3}
-                    as={chakraLink}
+                    as={ChakraLink}
                     href="https://www.facebook.com/mccollinsmedia/"
                     target="_blank"
                   >
@@ -179,7 +244,7 @@ const Navbar = (props) => {
                   </Box>
                   <Box
                     mb={3}
-                    as={chakraLink}
+                    as={ChakraLink}
                     href="https://www.linkedin.com/company/mccollins-media/"
                     target="_blank"
                   >
@@ -192,7 +257,7 @@ const Navbar = (props) => {
                   </Box>
                   <Box
                     mb={3}
-                    as={chakraLink}
+                    as={ChakraLink}
                     href="https://twitter.com/mccollinsmedia?lang=en"
                     target="_blank"
                   >
@@ -207,7 +272,7 @@ const Navbar = (props) => {
                     bg={"#fff"}
                     p="8px 11px 6px 11px"
                     borderRadius="30px"
-                    as={chakraLink}
+                    as={ChakraLink}
                     href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                     target="_blank"
                     style={{
@@ -295,19 +360,25 @@ const Navbar = (props) => {
                         borderRadius="20px"
                         color="#000"
                       >
-                        <Image
-                          src="/assets/image/icons/call.svg"
-                          width="25px"
-                          height="25px"
-                          priority={true}
-                        />
-                        &nbsp;Call
+                        <ChakraLink
+                          href="tel:+971 4 445 6848"
+                          display={"flex"}
+                          alignItems="center"
+                        >
+                          <Image
+                            src="/assets/image/icons/call.svg"
+                            width="25px"
+                            height="25px"
+                          />
+                          <span>&nbsp;&nbsp;Call</span>
+                        </ChakraLink>
                       </Button>
                       <Button
                         colorScheme="yellow"
                         background={"#FFDE11"}
                         borderRadius="20px"
                         color="#000"
+                        onClick={onOpen2}
                       >
                         <Image
                           src="/assets/image/icons/chat.svg"
@@ -379,19 +450,25 @@ const Navbar = (props) => {
                   borderRadius="20px"
                   color="#000"
                 >
-                  <Image
-                    src="/assets/image/icons/call.svg"
-                    width="25px"
-                    height="25px"
-                    priority={true}
-                  />
-                  &nbsp;Call
+                  <ChakraLink
+                    href="tel:+971 4 445 6848"
+                    display={"flex"}
+                    alignItems="center"
+                  >
+                    <Image
+                      src="/assets/image/icons/call.svg"
+                      width="25px"
+                      height="25px"
+                    />
+                    <span>&nbsp;&nbsp;Call</span>
+                  </ChakraLink>
                 </Button>
                 <Button
                   colorScheme="yellow"
                   background={"#FFDE11"}
                   borderRadius="20px"
                   color="#000"
+                  onClick={onOpen2}
                 >
                   <Image
                     src="/assets/image/icons/chat.svg"
@@ -643,7 +720,7 @@ const Navbar = (props) => {
                     <Flex className="drawerSocialIcon" direction={"column"}>
                       <Box
                         mb={3}
-                        as={chakraLink}
+                        as={ChakraLink}
                         href="https://vm.tiktok.com/ZSJShjmYH/"
                         target="_blank"
                       >
@@ -656,7 +733,7 @@ const Navbar = (props) => {
                       </Box>
                       <Box
                         mb={3}
-                        as={chakraLink}
+                        as={ChakraLink}
                         href="https://www.instagram.com/mccollinsmedia/?hl=en"
                         target="_blank"
                       >
@@ -669,7 +746,7 @@ const Navbar = (props) => {
                       </Box>
                       <Box
                         mb={3}
-                        as={chakraLink}
+                        as={ChakraLink}
                         href="https://www.facebook.com/mccollinsmedia/"
                         target="_blank"
                       >
@@ -682,7 +759,7 @@ const Navbar = (props) => {
                       </Box>
                       <Box
                         mb={3}
-                        as={chakraLink}
+                        as={ChakraLink}
                         href="https://www.linkedin.com/company/mccollins-media/"
                         target="_blank"
                       >
@@ -695,7 +772,7 @@ const Navbar = (props) => {
                       </Box>
                       <Box
                         mb={3}
-                        as={chakraLink}
+                        as={ChakraLink}
                         href="https://twitter.com/mccollinsmedia?lang=en"
                         target="_blank"
                       >
@@ -712,7 +789,7 @@ const Navbar = (props) => {
                       bg={"#fff"}
                       p="8px 11px 6px 11px"
                       borderRadius="30px"
-                      as={chakraLink}
+                      as={ChakraLink}
                       href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                       target="_blank"
                       style={{
@@ -755,6 +832,80 @@ const Navbar = (props) => {
           </Container>
         </DrawerContent>
       </Drawer>
+      <Modal isOpen={isOpen2} onClose={onClose2}>
+        <ModalOverlay />
+        <ModalContent maxWidth={{ base: "90%", md: "60%" }}>
+          <ModalHeader>Lets talk</ModalHeader>
+          <ModalCloseButton />
+
+          <form onSubmit={formHandler}>
+            <ModalBody>
+              <FormControl isRequired>
+                <FormLabel htmlFor="first-name">First Name</FormLabel>
+                <Input
+                  id="first-name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+              <FormControl isRequired mt={5}>
+                <FormLabel htmlFor="contact">Contact No</FormLabel>
+                <NumberInput max={50} min={10} value={contact}>
+                  <NumberInputField
+                    id="contact"
+                    onChange={(e) => setContact(e.target.value)}
+                    borderRadius={"50px"}
+                  />
+                </NumberInput>
+              </FormControl>
+              <FormControl isRequired mt={5}>
+                <FormLabel htmlFor="email">Email</FormLabel>
+                <Input
+                  id="email"
+                  type="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+              <FormControl isRequired mt={5}>
+                <FormLabel htmlFor="looking-for">Looking For?</FormLabel>
+                <Input
+                  id="looking-for"
+                  onChange={(e) => setLookingFor(e.target.value)}
+                  value={lookingFor}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+              <FormControl isRequired mt={5}>
+                <FormLabel htmlFor="project">Project Details</FormLabel>
+                <Input
+                  id="project"
+                  onChange={(e) => setProject(e.target.value)}
+                  value={project}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+            </ModalBody>
+
+            <ModalFooter>
+              <Button
+                mt={5}
+                colorScheme="yellow"
+                background={"#FFDE11"}
+                type="submit"
+                borderRadius={"50px"}
+                fontSize={"18px"}
+                fontWeight="bold"
+                isLoading={loading}
+              >
+                Submit Inquiry
+              </Button>
+            </ModalFooter>
+          </form>
+        </ModalContent>
+      </Modal>
     </Stack>
   );
 };
