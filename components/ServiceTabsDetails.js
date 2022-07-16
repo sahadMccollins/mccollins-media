@@ -1,16 +1,23 @@
 import { Box, Button, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ServiceTabsDetails = () => {
   return (
     <Flex direction={{ base: "column", md: "row" }}>
       <Box width={"100%"}>
-        <Image
-          src="https://res.cloudinary.com/mccollins-media/image/upload/v1657138911/IphoneReels_d1gei3.png"
-          width="610px"
-          height="905px"
-        />
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <Image
+            src="https://res.cloudinary.com/mccollins-media/image/upload/v1657138911/IphoneReels_d1gei3.png"
+            width="610px"
+            height="905px"
+          />
+        </motion.div>
       </Box>
       <Box width={"100%"} alignSelf="center">
         <Box display={"flex"}>

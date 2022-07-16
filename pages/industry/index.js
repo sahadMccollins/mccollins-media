@@ -15,7 +15,7 @@ const index = () => {
       />
       <Box
         style={{ position: "absolute" }}
-        top={{ base: "70%", md: "73%" }}
+        top={{ base: "63%", md: "73%" }}
         left={{ base: "75%", md: "50%" }}
         zIndex="9"
       >

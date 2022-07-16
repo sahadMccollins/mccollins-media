@@ -6,12 +6,14 @@ import {
   Heading,
   Stack,
   Text,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import InnerLayout from "./Layout/InnerLayout";
 
 const VideoBanner = (props) => {
+  const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
   const videoRef = useRef();
 
   useEffect(() => {
@@ -28,7 +30,14 @@ const VideoBanner = (props) => {
         minHeight={"700px"}
         overflow={"hidden"}
       >
-        <video muted loop width="100%" className="video-banner" ref={videoRef}>
+        <video
+          muted
+          loop
+          width="100%"
+          className="video-banner"
+          ref={videoRef}
+          poster={isSmallerThan780 && props.poster}
+        >
           <source src={props.video} type="video/mp4" />
         </video>
       </Box>

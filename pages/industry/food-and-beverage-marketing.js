@@ -118,16 +118,30 @@ const foodAndBeverageMarketing = () => {
             <Box width={{ base: "100%", md: "60%" }} p={10}>
               <Box fontSize={"9xl"}>
                 <Heading>ONE OF THE MOST </Heading>
-                <Heading
-                  style={{
-                    background:
-                      "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                    width: "fit-content",
-                    padding: "0 5px",
-                  }}
-                >
-                  FAMOUS AND IN-DEMAND
-                </Heading>
+                <Flex direction={{ base: "column", lg: "row" }}>
+                  <Heading
+                    style={{
+                      background:
+                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                      width: "fit-content",
+                      padding: "0 5px",
+                    }}
+                    fontSize={{ base: "3xl", md: "4xl" }}
+                  >
+                    FAMOUS AND
+                  </Heading>
+                  <Heading
+                    style={{
+                      background:
+                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                      width: "fit-content",
+                      padding: "0 5px",
+                    }}
+                    fontSize={{ base: "3xl", md: "4xl" }}
+                  >
+                    IN-DEMAND
+                  </Heading>
+                </Flex>
                 <Heading>INDUSTRIES IN THE WORLD,</Heading>
               </Box>
               <Text mt={10}>

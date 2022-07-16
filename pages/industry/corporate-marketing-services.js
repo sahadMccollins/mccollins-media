@@ -47,17 +47,30 @@ const CorporateMarketing = () => {
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
               <Box>
-                <Heading
-                  style={{
-                    background:
-                      "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                    width: "fit-content",
-                    padding: "0 5px",
-                  }}
-                  fontSize="4xl"
-                >
-                  #1 CORPORATE MARKETING
-                </Heading>
+                <Flex direction={{ base: "column", lg: "row" }}>
+                  <Heading
+                    style={{
+                      background:
+                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                      width: "fit-content",
+                      padding: "0 5px",
+                    }}
+                    fontSize={{ base: "3xl", lg: "4xl" }}
+                  >
+                    #1 CORPORATE
+                  </Heading>
+                  <Heading
+                    style={{
+                      background:
+                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                      width: "fit-content",
+                      padding: "0 5px",
+                    }}
+                    fontSize={{ base: "3xl", lg: "4xl" }}
+                  >
+                    MARKETING
+                  </Heading>
+                </Flex>
                 <Heading fontSize="4xl">AGENCY IN UAE</Heading>
               </Box>
               <Text mt={10}>

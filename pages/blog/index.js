@@ -16,6 +16,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import BlogList from "../../components/BlogList";
 import clientPromise from "../../lib/mongodb";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 const Index = ({ blogs }) => {
   const router = useRouter();
@@ -83,7 +84,6 @@ const Index = ({ blogs }) => {
                 ></Box>
               </Box>
 
-              {/* <Text fontWeight={"bold"}>{blogs[0].smallContent}</Text> */}
               <Text fontWeight={"bold"}>{blogs[0].shortContent}</Text>
               <Button
                 colorScheme="yellow"
@@ -108,13 +108,19 @@ const Index = ({ blogs }) => {
           <SimpleGrid columns={{ base: "1", sm: "2", md: "3" }} spacing={10}>
             {blogs.map((blog) => {
               return (
-                <BlogList
-                  key={blog._id}
-                  img={blog.photo}
-                  heading={blog.title}
-                  date={blog.date}
-                  url={`/blog/${blog.blogUrl}`}
-                />
+                <motion.div
+                  whileHover={{
+                    y: -10,
+                  }}
+                >
+                  <BlogList
+                    key={blog._id}
+                    img={blog.photo}
+                    heading={blog.title}
+                    date={blog.date}
+                    url={`/blog/${blog.blogUrl}`}
+                  />
+                </motion.div>
               );
             })}
           </SimpleGrid>
