@@ -112,9 +112,9 @@ const Index = ({ blogs }) => {
                   whileHover={{
                     y: -10,
                   }}
+                  key={blog._id}
                 >
                   <BlogList
-                    key={blog._id}
                     img={blog.photo}
                     heading={blog.title}
                     date={blog.date}
