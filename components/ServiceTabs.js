@@ -21,10 +21,10 @@ const ServiceTabs = () => {
             overflowY={"hidden"}
           >
             <Tab>Web Development</Tab>
-            <Tab>App Development</Tab>
-            <Tab>Performance Marketing</Tab>
-            <Tab>Content Creation</Tab>
             <Tab>Social Media Marketing</Tab>
+            <Tab>Digital Marketing & SEO</Tab>
+            <Tab>Content Production</Tab>
+            <Tab>Design & Brand Dev</Tab>
           </TabList>
 
           <TabPanels>

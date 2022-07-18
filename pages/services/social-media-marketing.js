@@ -8,7 +8,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import InnerBanner from "../../components/InnerBanner";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -26,6 +25,7 @@ const SocialMediaMarketing = () => {
         heading={`social \n media \n marketing`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600385/Mccollins%20Video/Social_Media-_jmavct.mp4"
         content="Mobile First, Content Driven, Result Oriented extended marketing arm for your brand!"
+        poster="/assets/image/servicePage/socialMediaMarketing.jpg"
       />
       <Box
         style={{

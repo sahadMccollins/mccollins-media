@@ -10,7 +10,6 @@ import {
   Flex,
   Text,
 } from "@chakra-ui/react";
-import InnerBanner from "../../components/InnerBanner";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import dynamic from "next/dynamic";
@@ -34,6 +33,7 @@ const DigitalMarketingSEO = () => {
         heading={`digital \n marketing \n & seo`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+        poster="/assets/image/servicePage/DM&SEO.jpg"
       />
 
       <Box py={10}>

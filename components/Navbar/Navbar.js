@@ -176,24 +176,19 @@ const Navbar = (props) => {
                     colorScheme="teal"
                     onClick={onOpen}
                   >
-                    <span
-                      style={{
-                        background:
-                          props.color === "black" ? "#000" : "#FFDE11",
-                      }}
-                    ></span>
-                    <span
-                      style={{
-                        background:
-                          props.color === "black" ? "#000" : "#FFDE11",
-                      }}
-                    ></span>
-                    <span
-                      style={{
-                        background:
-                          props.color === "black" ? "#000" : "#FFDE11",
-                      }}
-                    ></span>
+                    {props.color === "black" ? (
+                      <Image
+                        src={"/assets/image/navbar/ham-burger.svg"}
+                        width="31px"
+                        height={"27px"}
+                      />
+                    ) : (
+                      <Image
+                        src={"/assets/image/navbar/ham-burger-yellow.svg"}
+                        width="31px"
+                        height={"27px"}
+                      />
+                    )}
                   </Box>
                 </Flex>
                 <VStack
@@ -312,21 +307,19 @@ const Navbar = (props) => {
                 colorScheme="teal"
                 onClick={onOpen}
               >
-                <span
-                  style={{
-                    background: props.color === "black" ? "#000" : "#FFDE11",
-                  }}
-                ></span>
-                <span
-                  style={{
-                    background: props.color === "black" ? "#000" : "#FFDE11",
-                  }}
-                ></span>
-                <span
-                  style={{
-                    background: props.color === "black" ? "#000" : "#FFDE11",
-                  }}
-                ></span>
+                {props.color === "black" ? (
+                  <Image
+                    src={"/assets/image/navbar/ham-burger.svg"}
+                    width="31px"
+                    height={"27px"}
+                  />
+                ) : (
+                  <Image
+                    src={"/assets/image/navbar/ham-burger-yellow.svg"}
+                    width="31px"
+                    height={"27px"}
+                  />
+                )}
               </Box>
             )}
           </Box>
@@ -394,15 +387,11 @@ const Navbar = (props) => {
                       colorScheme="teal"
                       onClick={onOpen}
                     >
-                      <span
-                        style={{ background: props.color ? "#000" : "#000" }}
-                      ></span>
-                      <span
-                        style={{ background: props.color ? "#000" : "#000" }}
-                      ></span>
-                      <span
-                        style={{ background: props.color ? "#000" : "#000" }}
-                      ></span>
+                      <Image
+                        src={"/assets/image/navbar/ham-burger.svg"}
+                        width="31px"
+                        height={"27px"}
+                      />
                     </Box>
                   </Flex>
                 </>

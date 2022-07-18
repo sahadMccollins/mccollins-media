@@ -19,7 +19,7 @@ const CaseStudySlide = (props) => {
           dafza
         </Heading>
         <Text color={"#fff"} mx={"15px"}>
-          app Development
+          Web Development
         </Text>
       </Box>
       <Box

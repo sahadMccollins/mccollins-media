@@ -14,7 +14,6 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import ServicePoint from "../../components/ServicePoint";
 import TextBox from "../../components/TextBox";
 import FavWork from "../../components/FavWork";
-import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
 import Carousel from "../../components/Carousel";
 import VideoBanner from "../../components/VideoBanner";
@@ -26,6 +25,7 @@ const ContentProduction = () => {
         heading={`content \n production`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219369/Mccollins%20Video/Content_Creation_m3dsap.mp4"
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+        poster="/assets/image/servicePage/contentProduction.jpg"
       />
 
       <Box
