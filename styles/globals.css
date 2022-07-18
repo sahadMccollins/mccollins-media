@@ -81,6 +81,10 @@ a:focus {
 
 /* Navbar isSticky End */
 
+.serviceTab .chakra-tabs .chakra-tabs__tab {
+  min-width: 150px;
+}
+
 /* Footer Start */
 
 
