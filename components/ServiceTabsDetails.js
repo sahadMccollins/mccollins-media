@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const ServiceTabsDetails = (props) => {
   return (
     <Flex direction={{ base: "column", md: "row" }}>
-      <Box width={"100%"}>
+      <Box width={"100%"} pr="75px">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

@@ -41,7 +41,7 @@ const ServiceTabs = () => {
               <ServiceTabsDetails img="/assets/image/ServiceTabs/IphoneReels.png" />
             </TabPanel>
             <TabPanel>
-              <ServiceTabsDetails img="/assets/image/ServiceTabs/Design&BrandDev.png" />
+              <ServiceTabsDetails img="/assets/image/ServiceTabs/Design&Brand.png" />
             </TabPanel>
           </TabPanels>
         </Tabs>
