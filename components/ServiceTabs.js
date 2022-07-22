@@ -29,13 +29,19 @@ const ServiceTabs = () => {
 
           <TabPanels>
             <TabPanel>
-              <ServiceTabsDetails />
+              <ServiceTabsDetails img="/assets/image/ServiceTabs/WebDevelopment.png" />
             </TabPanel>
             <TabPanel>
-              <p>two!</p>
+              <ServiceTabsDetails img="/assets/image/ServiceTabs/Social-Media-Marketing.gif" />
             </TabPanel>
             <TabPanel>
-              <p>three!</p>
+              <ServiceTabsDetails img="/assets/image/ServiceTabs/DigitalMarketing&SEO.png" />
+            </TabPanel>
+            <TabPanel>
+              <ServiceTabsDetails img="/assets/image/ServiceTabs/IphoneReels.png" />
+            </TabPanel>
+            <TabPanel>
+              <ServiceTabsDetails img="/assets/image/ServiceTabs/Design&BrandDev.png" />
             </TabPanel>
           </TabPanels>
         </Tabs>
