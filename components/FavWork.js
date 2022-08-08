@@ -109,7 +109,7 @@ const FavWork = (props) => {
                 ref={swiperRef}
               >
                 {props.data.map((slide) => (
-                  <SwiperSlide>
+                  <SwiperSlide key={slide.img}>
                     <a
                       data-fancybox="gallery"
                       style={{ position: "relative" }}
