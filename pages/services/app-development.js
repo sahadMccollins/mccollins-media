@@ -18,6 +18,40 @@ import FavWork from "../../components/FavWork";
 
 const AppDevelopment = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+
+  const favWorkData = [
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
+
   return (
     <Stack>
       <Container maxWidth={"7xl"} position="relative">
@@ -128,7 +162,7 @@ const AppDevelopment = () => {
         subHeading="learn how we executed campaigns to get results"
         content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
       />
-      <FavWork />
+      <FavWork data={favWorkData} />
       <TextBox
         heading="Technologies We work with"
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."

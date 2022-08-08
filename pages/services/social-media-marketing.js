@@ -19,6 +19,38 @@ import ClientsLogo from "../../components/ClientsLogo";
 import VideoBanner from "../../components/VideoBanner";
 
 const SocialMediaMarketing = () => {
+  const favWorkData = [
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
   return (
     <Stack>
       <VideoBanner
@@ -77,27 +109,24 @@ const SocialMediaMarketing = () => {
               alignItems="center"
               textAlign={"center"}
             >
-              <Heading mt={10}>#1 SOCIAL MEDIA AGENCY IN UAE</Heading>
-              <Box
-                width={"80px"}
-                my={10}
-                height={"5px"}
-                background="#000"
-              ></Box>
+              <Heading mt={10} fontSize="28px">
+                Creating a Digital Community for your brand
+              </Heading>
+              <Box width={"80px"} my={7} height={"5px"} background="#000"></Box>
               <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+                From developing digital brand strategies to content development
+                , infleuncer marketing and performance marketing, we take a
+                mobile first approach to build your brand within the digital
+                space. Our in-house team headquartered in Dubai caters to
+                diverse brands within UAE, Saudi Arabia, Kuwait, Qatar and other
+                markets.
                 <br />
-                <br /> Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
+                <br /> Working across different channels be it META, TikTok,
+                Snapchat, LinkedIn, Google and more, we curate an exclusive
+                digital roadmap for each brand. Being an award winning social
+                media agency in UAE, we focus on creating awareness,
+                consideration and conversions for your brand in the digital
+                ecosystem.
               </Text>
               <Button
                 colorScheme="black"
@@ -134,8 +163,8 @@ const SocialMediaMarketing = () => {
           <Flex direction={{ base: "column", md: "row" }}>
             <Box width={{ base: "100%", md: "50%" }}>
               <Heading>
-                SOCIAL MEDIA <br />
-                MARKETING
+                #1 Social Media Agency <br />
+                in UAE
               </Heading>
               <Box
                 my={8}
@@ -146,12 +175,13 @@ const SocialMediaMarketing = () => {
                 fontSize={"1xl"}
                 color={"#000"}
               >
-                <Text>creating content that tells a story</Text>
+                <Text>Story tellers for your brand</Text>
               </Box>
               <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                Our Key services include Social Media Marketing, Website
+                Development, Search Engine Optimization (SEO) & Search Engine
+                Marketing (SEM) Services and Content Development – Videography &
+                Photography!
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
@@ -196,14 +226,12 @@ const SocialMediaMarketing = () => {
         </Container>
       </Box>
       <ServicePoint
-        heading="SEO & SEM"
+        heading="Digital Brand Activation"
         subHeading="performance marketing"
-        contentHeading={"how can this work for your brand ?"}
-        content="With SEO and Google Ads, we set long term goals and short term
-              goals for Lead Generation or e-commerce website conversions. We
-              bring the right people to your website."
+        contentHeading={"Story tellers for your brand"}
+        content="Creating a digital ecosystem for your brand. From creating a brand story to communicating with your audience, we activate your brand on the digital space"
         points={
-          "SEO Strategy \n Keyword Research \n Blog Submissions \n Backlinks \n Content Optimization \n Off Page Promotion \n On Page SEO \n  SERP Features \n Multi-Visit Buyer Journey \n Voice Search \n Display Ads"
+          "Social Media Management \n Social Media Content Creation & Distribution \n Digital Media Buying \n Social Media Listening, Engagement and Reporting \n Social Media Campaigns Management \n Influencer Marketing Campaigns \n Cross Promotion of Online to Offline \n Social Media Chat Bot Development \n Lead Generation and Revenue Generation from Social Media"
         }
       />
       <Box bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
@@ -230,7 +258,7 @@ const SocialMediaMarketing = () => {
         subHeading="sneak peak into our social media marketing projects"
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
-      <FavWork />
+      <FavWork data={favWorkData} />
       <TextBox
         heading="Social media Platform"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "

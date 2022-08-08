@@ -14,8 +14,9 @@ import Image from "next/image";
 import "swiper/css";
 import CaseStudySlide from "./CaseStudySlide";
 import { useRef } from "react";
+import Fancybox from "./Fancybox";
 
-const FavWork = () => {
+const FavWork = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const swiperRef = useRef(null);
   return (
@@ -98,33 +99,32 @@ const FavWork = () => {
             />
           </Box>
           <Box width={"80%"}>
-            <Swiper
-              spaceBetween={20}
-              slidesPerView={isLargerThan780 ? 3.5 : 1}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
-              loop={true}
-              ref={swiperRef}
-            >
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy2.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy3.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy2.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy3.jpg" />
-              </SwiperSlide>
-            </Swiper>
+            <Fancybox>
+              <Swiper
+                spaceBetween={20}
+                slidesPerView={isLargerThan780 ? 3.5 : 1}
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+                loop={true}
+                ref={swiperRef}
+              >
+                {props.data.map((slide) => (
+                  <SwiperSlide>
+                    <a
+                      data-fancybox="gallery"
+                      style={{ position: "relative" }}
+                      href={slide.img}
+                    >
+                      <CaseStudySlide
+                        img={slide.img}
+                        name={slide.name}
+                        type={slide.type}
+                      />
+                    </a>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Fancybox>
           </Box>
         </Flex>
       </Container>

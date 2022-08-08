@@ -1,13 +1,18 @@
 import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
-const TextBox2 = () => {
+const TextBox2 = (props) => {
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
         <Flex direction={{ base: "column", md: "row" }} my="50px">
           <Box width={{ md: "50%", base: "100%" }}>
-            <Heading>LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING</Heading>
+            <Heading>
+              {props.heading &&
+                props.heading
+                  .split("\n")
+                  .map((str) => <div key={str}>{str}</div>)}
+            </Heading>
             <Box
               my={8}
               background="#FFDE11"
@@ -21,15 +26,10 @@ const TextBox2 = () => {
           </Box>
           <Box width={{ md: "50%", base: "100%" }}>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              {props.content}
               <br />
-              <br /> Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+              <br />
+              {props.content2}
             </Text>
           </Box>
         </Flex>

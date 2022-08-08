@@ -26,6 +26,38 @@ import VideoBanner from "../../components/VideoBanner";
 import { motion } from "framer-motion";
 
 const WebsiteDevelopment = () => {
+  const favWorkData = [
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
   return (
     <Stack position={"relative"}>
       <VideoBanner
@@ -61,10 +93,30 @@ const WebsiteDevelopment = () => {
 
               <TabPanels>
                 <TabPanel>
-                  <ServiceTabsDetails />
+                  <ServiceTabsDetails
+                    img="/assets/image/ServiceTabs/WebDevelopment.png"
+                    heading={"Wordpress \n Development"}
+                    subHeading={"creating content that tells a story"}
+                    desc={
+                      "Having your own website is an important piece of your ecommerce strategy. It is a great way for you to grow your brand, acquire loyal customers, gain new insights, and get creative with your marketing"
+                    }
+                    points={
+                      "Fast Launch \n  Customer Insights \n  Easy Integration \n  Integrate Content Marketing \n  Social Media Integration \n  Third Party Plug-ins"
+                    }
+                  />
                 </TabPanel>
                 <TabPanel>
-                  <p>two!</p>
+                  <ServiceTabsDetails
+                    img="/assets/image/ServiceTabs/WebDevelopment.png"
+                    heading={"Wordpress \n Development"}
+                    subHeading={"creating content that tells a story"}
+                    desc={
+                      "Creating a digital outlet for your brand and driving leads via the website. Focus on Mobile Websites is key. We develop Bilingual websites for the GCC Market."
+                    }
+                    points={
+                      "Corporate Website \n  E-commerce Website \n  Microsites \n  Annual Maintenance \n  SEO & SEM Support \n  Lead Generation Landing Pages"
+                    }
+                  />
                 </TabPanel>
                 <TabPanel>
                   <p>three!</p>
@@ -160,7 +212,14 @@ const WebsiteDevelopment = () => {
               </Heading>
             </Box>
           </Box>
-          <TextBox2 />
+          <TextBox2
+            heading={"Develop a Website that \n works for you"}
+            subHeading={"Mobile First Websites"}
+            content="In the era of mobile first technology, website is the only effective outlet to communicate with your customers."
+            content2={
+              "Build a strong Mobile-first website and be in the pocket of your customers. Be it informational or e-commerce, we develop them in-house"
+            }
+          />
           <TextBox
             heading="Case study"
             smallHeading="website design & development"
@@ -169,7 +228,7 @@ const WebsiteDevelopment = () => {
           />
         </Container>
       </Box>
-      <FavWork />
+      <FavWork data={favWorkData} />
       <TextBox
         heading="Technologies We work with"
         subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."

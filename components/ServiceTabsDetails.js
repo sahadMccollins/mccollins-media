@@ -18,8 +18,11 @@ const ServiceTabsDetails = (props) => {
       <Box width={"100%"} alignSelf="center">
         <Box display={"flex"}>
           <Heading>
-            CONTENT <br />
-            PRODUCTION
+            {props.heading
+              ? props.heading
+                  .split("\n")
+                  .map((str) => <div key={str}>{str}</div>)
+              : null}
           </Heading>
           <Box
             width={"100px"}
@@ -32,24 +35,12 @@ const ServiceTabsDetails = (props) => {
           ></Box>
         </Box>
         <Heading fontSize={"2xl"} color="#6F6F6F" my={"15px"}>
-          creating content that tells a story
+          {props.subHeading}
         </Heading>
-        <Text w={{ base: "100%", md: "75%" }}>
-          Creating exclusive brand content is a great way to communicate a story
-          about your brand. In the digital space, this is a content process of
-          CREATING
-        </Text>
+        <Text w={{ base: "100%", md: "75%" }}>{props.desc}</Text>
         <SimpleGrid columns={2} spacing={5} mt="50px" fontWeight={"bold"}>
-          <Text>photography</Text>
-          <Text>cinemagraphs</Text>
-          <Text>food photography</Text>
-          <Text>stop motion videos</Text>
-          <Text>mobile first content</Text>
-          <Text>brand montage videos</Text>
-          <Text>videography</Text>
-          <Text>corporate videos</Text>
-          <Text>360 images and videos</Text>
-          <Text>product videos</Text>
+          {props.points &&
+            props.points.split("\n").map((str) => <Text key={str}>{str}</Text>)}
         </SimpleGrid>
         <Button
           colorScheme="yellow"

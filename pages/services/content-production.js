@@ -19,6 +19,39 @@ import Carousel from "../../components/Carousel";
 import VideoBanner from "../../components/VideoBanner";
 
 const ContentProduction = () => {
+  const favWorkData = [
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
+
   return (
     <Stack position={"relative"}>
       <VideoBanner
@@ -113,14 +146,12 @@ const ContentProduction = () => {
         </Container>
       </Box>
       <ServicePoint
-        heading="SEO & SEM"
-        subHeading="performance marketing"
-        contentHeading={"how can this work for your brand ?"}
-        content="With SEO and Google Ads, we set long term goals and short term
-              goals for Lead Generation or e-commerce website conversions. We
-              bring the right people to your website."
+        heading="Content Marketing"
+        subHeading="For your Brand"
+        contentHeading={"Creating Content that tells a story"}
+        content="Creating exclusive brand content is a great way to communicate a story about your brand. In the digital space, this is a content process of CREATING"
         points={
-          "Digital Videos \n Snapchat Videos \n 360 Videos \n How To Videos \n Montage Videos \n Photoshoots \n 360 Images \n  Stop Motions \n Cinemagraphs \n Lifestyle Photography \n Product Photography \n Reels / TikTok Content"
+          "Photography \n Food Photography \n Mobile First Content \n Videography \n 360 Images and Videos \n Cinemagraphs \n Stop Motion Videos \n  Brand Montage Videos \n Corporate Videos "
         }
       />
       <Carousel />
@@ -130,7 +161,7 @@ const ContentProduction = () => {
         subHeading="Creating content for an optimized Mobile Experience is key to every brand"
         content="Explore some of our team’s favorite work done for Mobile First Content - be it Instagram Reels, Snapchat Videos or TikTok Content, we understand the consumer insights and create relatable content"
       />
-      <FavWork />
+      <FavWork data={favWorkData} />
       <ClientsLogo />
     </Stack>
   );

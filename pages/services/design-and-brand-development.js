@@ -9,6 +9,39 @@ import TextBox from "../../components/TextBox";
 import VideoBanner from "../../components/VideoBanner";
 
 const DesignAndBrandDevelopment = () => {
+  const favWorkData = [
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
+
   return (
     <Stack position={"relative"}>
       <VideoBanner
@@ -22,8 +55,7 @@ const DesignAndBrandDevelopment = () => {
           <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box width={{ base: "100%", md: "50%" }} mr={"20"}>
               <Heading fontWeight={"black"}>
-                BRANDING <br />
-                SOLUTIONS
+                Design and Brand <br /> Development
               </Heading>
               <Box
                 my={8}
@@ -37,9 +69,9 @@ const DesignAndBrandDevelopment = () => {
                 <Text>creating content that tells a story</Text>
               </Box>
               <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                Creating a brand from the inception - logo to the entire
+                adaptation of various deliverables are conceptualized in-house
+                by our team of designers and copywriters
               </Text>
             </Box>
             <Box
@@ -89,7 +121,7 @@ const DesignAndBrandDevelopment = () => {
           contentHeading="conceptualizing design solutions for your brand"
           content="From conceptualizing a logo for a new brand to a comprehensive design solution for an existing brand, our in-house team provides design solutions for brands"
           points={
-            "Logo Development \n Brand Guidelines \n Brand Collaterals \n Digital Brand Guidelines \n Copywriting \n Multilingual Translation"
+            "Logo Development \n Copywriting \n Translation \n Printing Guidelines \n Brand Asset Development \n Brand Guideline Development"
           }
         />
         <Box position={"relative"}>
@@ -126,7 +158,7 @@ const DesignAndBrandDevelopment = () => {
         subHeading="sneak peak into our social media marketing projects"
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
-      <FavWork />
+      <FavWork data={favWorkData} />
       <ClientsLogo />
     </Stack>
   );

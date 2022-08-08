@@ -86,7 +86,18 @@ const Index = () => {
       </Container>
 
       <ServicePageAccordian />
-      <TextBox2 />
+      <TextBox2
+        heading={
+          "Your extended marketing arm ! \n Be a part of the Digital Revolution"
+        }
+        subHeading={"creating content that tells a story"}
+        content={
+          "Our team prides in daring to experiment with evolving digital trends, providing a personalized approach to our clients, and ensuring we create a result driven plan to achieve our brands objectives. We are a young and passionate full service in-house team based in Dubai Media City. "
+        }
+        content2={
+          "Our Key services include Social Media Marketing, Website , Search Engine Optimization & Search Engine Marketing and Content Development – Videography & Photography!"
+        }
+      />
     </Stack>
   );
 };

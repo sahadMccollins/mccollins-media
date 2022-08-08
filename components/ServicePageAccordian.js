@@ -63,6 +63,7 @@ const ServicePageAccordian = () => {
                 <AccordionPanel pb={4} width={{ base: "100%", sm: "80%" }}>
                   Creating a digital outlet for your brand and driving leads via
                   the website. Focus on Mobile Websites is key. We develop
+                  Bilingual websites for the GCC Market.
                   <br />
                   <Button
                     colorScheme="yellow"
@@ -93,13 +94,14 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      perfomance marketing
+                      Social Media Marketing
                     </Box>
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Creating a digital outlet for your brand and driving leads via
-                  the website. Focus on Mobile Websites is key. We develop
+                  Storytellers for your brand ! Be it creating the strategy to
+                  content development or engaging with your brands audience, our
+                  team of Social Media Experts represent your brand
                   <br />
                   <Button
                     colorScheme="yellow"
@@ -135,8 +137,10 @@ const ServicePageAccordian = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Creating a digital outlet for your brand and driving leads via
-                  the website. Focus on Mobile Websites is key. We develop
+                  From driving footfall to your location, to your website or
+                  tracking conversions, our team works towards making numbers
+                  matter. Be it Digital Media Buying - Social Media Ads or PPC
+                  Campaigns, we work in alignment with your KPIs.
                   <br />
                   <Button
                     colorScheme="yellow"
@@ -172,8 +176,9 @@ const ServicePageAccordian = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Creating a digital outlet for your brand and driving leads via
-                  the website. Focus on Mobile Websites is key. We develop
+                  Creating multimedia content that works for your brand. Our
+                  team of in-house content producers work on Photography,
+                  Videography and Motion Graphics
                   <br />
                   <Button
                     colorScheme="yellow"
@@ -204,13 +209,14 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      branding
+                      Design & Brand Dev
                     </Box>
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Creating a digital outlet for your brand and driving leads via
-                  the website. Focus on Mobile Websites is key. We develop
+                  Be it creating a brand from inception or building on well
+                  established brand, our in-house team of Designers and
+                  Copywriters,
                   <br />
                   <Button
                     colorScheme="yellow"
@@ -225,7 +231,7 @@ const ServicePageAccordian = () => {
                   </Button>
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem>
+              {/* <AccordionItem>
                 <h2>
                   <AccordionButton>
                     <Box
@@ -260,7 +266,7 @@ const ServicePageAccordian = () => {
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
                   </Button>
                 </AccordionPanel>
-              </AccordionItem>
+              </AccordionItem> */}
             </Accordion>
           </Box>
           <Box

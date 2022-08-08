@@ -76,6 +76,9 @@ const Carousel = () => {
                 src="/assets/image/servicePage/contentProduction/organic-honey--min.jpg"
               />
             </a>
+            <Box bg="#f9f9f9" p={"30px 25px 25px"} borderRadius={"0 0 5px 5px"}>
+              <Heading fontSize={"3xl"}>Organic Honey </Heading>
+            </Box>
           </SwiperSlide>
           <SwiperSlide>
             <a
@@ -89,6 +92,10 @@ const Carousel = () => {
                 src="/assets/image/servicePage/contentProduction/burgerboulivard-2-min.jpg"
               />
             </a>
+
+            <Box bg="#f9f9f9" p={"30px 25px 25px"} borderRadius={"0 0 5px 5px"}>
+              <Heading fontSize={"3xl"}>Burger Boulevard </Heading>
+            </Box>
           </SwiperSlide>
           <SwiperSlide>
             <a
@@ -102,6 +109,9 @@ const Carousel = () => {
                 src="/assets/image/servicePage/contentProduction/dessertino-min.jpg"
               />
             </a>
+            <Box bg="#f9f9f9" p={"30px 25px 25px"} borderRadius={"0 0 5px 5px"}>
+              <Heading fontSize={"3xl"}>Dessertino</Heading>
+            </Box>
           </SwiperSlide>
           <SwiperSlide>
             <a
@@ -126,6 +136,9 @@ const Carousel = () => {
                 }}
               />
             </a>
+            <Box bg="#f9f9f9" p={"30px 25px 25px"} borderRadius={"0 0 5px 5px"}>
+              <Heading fontSize={"3xl"}>Toshiba Middle East </Heading>
+            </Box>
           </SwiperSlide>
         </Swiper>
       </Container>

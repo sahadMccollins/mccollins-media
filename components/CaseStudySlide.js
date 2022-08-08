@@ -16,10 +16,10 @@ const CaseStudySlide = (props) => {
         borderTopRightRadius="50px"
       >
         <Heading color={"#FFDE11"} fontSize="28px" mt={"15px"} mx={"15px"}>
-          dafza
+          {props.name}
         </Heading>
         <Text color={"#fff"} mx={"15px"}>
-          Web Development
+          {props.type}
         </Text>
       </Box>
       <Box

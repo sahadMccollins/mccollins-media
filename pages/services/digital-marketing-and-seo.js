@@ -25,6 +25,39 @@ import ClientsLogo from "../../components/ClientsLogo";
 import VideoBanner from "../../components/VideoBanner";
 
 const DigitalMarketingSEO = () => {
+  const favWorkData = [
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
+
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const [isOpen, setOpen] = useState(false);
   return (
@@ -40,7 +73,7 @@ const DigitalMarketingSEO = () => {
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }}>
             <Box width={{ base: "100%", md: "50%" }}>
-              <Heading>LOREM IPSUM DOLOR SIT AMET ADIPISCING</Heading>
+              <Heading>YOUR EXTENDED DIGITAL ARM</Heading>
               <Box
                 my={8}
                 background="#FFDE11"
@@ -53,9 +86,9 @@ const DigitalMarketingSEO = () => {
                 <Text>creating content that tells a story</Text>
               </Box>
               <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                We take ownership of your brand from the basics of community
+                management on the social media channels, to bringing the traffic
+                to your website and mapping the conversions.
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
@@ -68,12 +101,12 @@ const DigitalMarketingSEO = () => {
                       "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
                   }}
                 ></span>
-                <Heading>seo rankings</Heading>
+                <Heading>In-House Team</Heading>
               </Box>
               <Text>
-                Your brand must rank high amongst competitors when your
-                customers search for your brand on Google. With Keyword
-                Research, we understand what your customers are searching for.
+                A team of young and passionate digital enthusiasts from
+                different walks of life, taking ownership of your brands in the
+                digital space
               </Text>
               <Box display={"flex"}>
                 <span
@@ -84,26 +117,24 @@ const DigitalMarketingSEO = () => {
                       "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
                   }}
                 ></span>
-                <Heading>google ad campaigns</Heading>
+                <Heading>Dare to Create</Heading>
               </Box>
               <Text>
-                Your brand must rank high amongst competitors when your
-                customers search for your brand on Google. With Keyword
-                Research, we understand what your customers are searching for.
+                Always innovating, always creating. The digital space is full of
+                creating your own experience, working with a online community,
+                and we dare to create.
               </Text>
             </Box>
           </Flex>
         </Container>
       </Box>
       <ServicePoint
-        heading="SEO & SEM"
+        heading="Digital Brand Activation"
         subHeading="performance marketing"
-        contentHeading={"how can this work for your brand ?"}
-        content="With SEO and Google Ads, we set long term goals and short term
-              goals for Lead Generation or e-commerce website conversions. We
-              bring the right people to your website."
+        contentHeading={"Key Digital Marketing Routes for Your Brand"}
+        content="From Social Media Management to Performance Marketing, our in-house team is your extended marketing arm."
         points={
-          "SEO Strategy \n Keyword Research \n Blog Submissions \n Backlinks \n Content Optimization \n Off Page Promotion \n On Page SEO \n  SERP Features \n Multi-Visit Buyer Journey \n Voice Search \n Display Ads"
+          "Performance Marketing \n Google Ads - PPC \n Social Media Management \n Content Production \n Search Engine Optimization \n Digital Media Buying \n Email Marketing \n  Data Analysis \n AR/VR"
         }
       />
 
@@ -188,7 +219,7 @@ const DigitalMarketingSEO = () => {
         subHeading="learn how we executed campaigns to get results"
         content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
       />
-      <FavWork />
+      <FavWork data={favWorkData} />
       <TextBox
         heading="Technologies We work with"
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."

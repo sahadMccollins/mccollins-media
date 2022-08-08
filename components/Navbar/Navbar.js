@@ -581,7 +581,7 @@ const Navbar = (props) => {
                         />
                       </li>
 
-                      <li
+                      {/* <li
                         onClick={() => {
                           onClose();
                         }}
@@ -590,7 +590,7 @@ const Navbar = (props) => {
                           name="App Development"
                           href="/services/app-development"
                         />
-                      </li>
+                      </li> */}
                     </ul>
                     <li
                       className={
