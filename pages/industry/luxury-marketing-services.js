@@ -20,7 +20,7 @@ const luxuryMarketing = () => {
         <InnerBanner
           heading={`Luxury \n Marketing \n Services`}
           img="/assets/image/servicePage/contentProduction.jpg"
-          content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+          content="Premium Luxury Marketing Solutions curated for your brand"
         />
       </Container>
       <Box bg={"#F7F7F7"} py={20}>
@@ -143,7 +143,9 @@ const luxuryMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <ul>
                   <li>
@@ -176,7 +178,9 @@ const luxuryMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   Just like the brand, the website will also have to be classy,
@@ -230,7 +234,9 @@ const luxuryMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   There’s nothing like a luxury brand’s heritage and the story

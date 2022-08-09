@@ -20,7 +20,7 @@ const CorporateMarketing = () => {
         <InnerBanner
           heading={`Corporate \n Marketing \n Services`}
           img="/assets/image/servicePage/contentProduction.jpg"
-          content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+          content="Leaders in Corporate Marketing Solutions"
         />
       </Container>
       <Box bg={"#F7F7F7"} py={20}>
@@ -141,7 +141,7 @@ const CorporateMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  {/* <Text>creating content that tells a story</Text> */}
                 </Box>
                 <Text>
                   Creating a brand identity and story for your brand, creating
@@ -160,7 +160,9 @@ const CorporateMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   It's important for companies to personalize their interactions
@@ -180,7 +182,9 @@ const CorporateMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   Business to Business social media marketing can sometimes be
@@ -232,7 +236,9 @@ const CorporateMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   Video content is booming and rippling in the virtual world.
@@ -253,7 +259,9 @@ const CorporateMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   Google Ads is hands down one of the most effective ways to
@@ -304,7 +312,9 @@ const CorporateMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   Have a solid website developed for your corporate business

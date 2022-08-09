@@ -11,8 +11,10 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const IndustryPageAccordian = () => {
+  const router = useRouter();
   return (
     <Stack
       className="serviceAcc"
@@ -71,6 +73,9 @@ const IndustryPageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() =>
+                      router.push("/industry/corporate-marketing-services")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -108,6 +113,9 @@ const IndustryPageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() =>
+                      router.push("/industry/food-and-beverage-marketing")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -145,6 +153,9 @@ const IndustryPageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() =>
+                      router.push("/industry/healthcare-marketing-services")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -182,6 +193,9 @@ const IndustryPageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() =>
+                      router.push("/industry/luxury-marketing-services")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -219,6 +233,9 @@ const IndustryPageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() =>
+                      router.push("/industry/technology-marketing-services")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />

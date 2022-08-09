@@ -7,12 +7,15 @@ import {
   SimpleGrid,
   Stack,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 
 const ClientsLogo = () => {
   return (
-    <Stack background={"#FFDE11"} position="relative">
+    <Stack
+      background={"#FFDE11"}
+      position="relative"
+      style={{ marginTop: "0 !important" }}
+    >
       <Container maxWidth={"7xl"} py="20">
         <Box
           position={"absolute"}

@@ -20,7 +20,7 @@ const TechnologyMarketing = () => {
         <InnerBanner
           heading={`Technology \n Marketing \n Services`}
           img="/assets/image/servicePage/contentProduction.jpg"
-          content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+          content="Technology Marketing Solutions catering to the Middle East"
         />
       </Container>
       <Box bg={"#F7F7F7"} py={20}>
@@ -122,7 +122,9 @@ const TechnologyMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   With the help of social media, it becomes easy to increase
@@ -152,7 +154,9 @@ const TechnologyMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   As far as a tech company is involved, when it comes to content
@@ -209,7 +213,9 @@ const TechnologyMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   We develop websites with state of the art technology and

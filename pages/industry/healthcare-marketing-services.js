@@ -141,7 +141,9 @@ const HealthCareMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   The material that you post or publish should be curated while
@@ -161,7 +163,9 @@ const HealthCareMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   Your website talks about your brand. While a cluttered brand
@@ -213,7 +217,9 @@ const HealthCareMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   All businesses, including the healthcare industry, need to use
@@ -236,7 +242,9 @@ const HealthCareMarketing = () => {
                   fontWeight="bold"
                   fontSize={"1xl"}
                 >
-                  <Text>creating content that tells a story</Text>
+                  <Text>
+                    {/* <Text>creating content that tells a story</Text> */}
+                  </Text>
                 </Box>
                 <Text>
                   In a very competitive market, standing out as the top of mind

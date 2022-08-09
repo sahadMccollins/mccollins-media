@@ -7,7 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useRef } from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -52,12 +52,18 @@ const ContentProduction = () => {
     },
   ];
 
+  const cpPointRef = useRef(null);
+
+  const scrollFun = () => {
+    cpPointRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Stack position={"relative"}>
       <VideoBanner
         heading={`content \n production`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219369/Mccollins%20Video/Content_Creation_m3dsap.mp4"
-        content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+        content="From Photo & Video content creation to website redesign & development, and Social Media Branding, we engage with your audience by telling your brand's story!"
         poster="/assets/image/servicePage/contentProduction.jpg"
       />
 
@@ -137,6 +143,7 @@ const ContentProduction = () => {
                 color="#fff"
                 mt={7}
                 fontWeight="bold"
+                onClick={scrollFun}
               >
                 view more{" "}
                 <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -145,6 +152,7 @@ const ContentProduction = () => {
           </Flex>
         </Container>
       </Box>
+      <div ref={cpPointRef}></div>
       <ServicePoint
         heading="Content Marketing"
         subHeading="For your Brand"
@@ -155,13 +163,12 @@ const ContentProduction = () => {
         }
       />
       <Carousel />
-      <TextBox
+      {/* <TextBox
         heading="Mobile First Content "
-        // smallHeading="website design & development"
         subHeading="Creating content for an optimized Mobile Experience is key to every brand"
         content="Explore some of our team’s favorite work done for Mobile First Content - be it Instagram Reels, Snapchat Videos or TikTok Content, we understand the consumer insights and create relatable content"
       />
-      <FavWork data={favWorkData} />
+      <FavWork data={favWorkData} /> */}
       <ClientsLogo />
     </Stack>
   );

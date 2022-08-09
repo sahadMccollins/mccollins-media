@@ -233,9 +233,7 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
-                    onClick={() =>
-                      router.push("/services/design-and-brand-development")
-                    }
+                    onClick={() => router.push("/services/brand-development")}
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />

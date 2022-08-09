@@ -205,7 +205,9 @@ const foodAndBeverageMarketing = () => {
                 fontWeight="bold"
                 fontSize={"1xl"}
               >
-                <Text>creating content that tells a story</Text>
+                <Text>
+                  {/* <Text>creating content that tells a story</Text> */}
+                </Text>
               </Box>
               <Text>
                 Are you introducing a new juice or a new food item into the
@@ -241,7 +243,9 @@ const foodAndBeverageMarketing = () => {
                 fontWeight="bold"
                 fontSize={"1xl"}
               >
-                <Text>creating content that tells a story</Text>
+                <Text>
+                  {/* <Text>creating content that tells a story</Text> */}
+                </Text>
               </Box>
               <Text>
                 Are you introducing a new juice or a new food item into the
@@ -286,7 +290,9 @@ const foodAndBeverageMarketing = () => {
                 fontWeight="bold"
                 fontSize={"1xl"}
               >
-                <Text>creating content that tells a story</Text>
+                <Text>
+                  {/* <Text>creating content that tells a story</Text> */}
+                </Text>
               </Box>
               <Text>
                 In today’s world, there’s no brand without social media. As an
@@ -307,7 +313,9 @@ const foodAndBeverageMarketing = () => {
                 fontWeight="bold"
                 fontSize={"1xl"}
               >
-                <Text>creating content that tells a story</Text>
+                <Text>
+                  {/* <Text>creating content that tells a story</Text> */}
+                </Text>
               </Box>
               <Text>
                 Gone are the days where organic numbers would bring someone
@@ -357,7 +365,9 @@ const foodAndBeverageMarketing = () => {
                 fontWeight="bold"
                 fontSize={"1xl"}
               >
-                <Text>creating content that tells a story</Text>
+                <Text>
+                  {/* <Text>creating content that tells a story</Text> */}
+                </Text>
               </Box>
               <Text>
                 In today’s world, there’s no brand without social media. As an

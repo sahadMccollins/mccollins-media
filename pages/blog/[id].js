@@ -13,9 +13,12 @@ import {
 import Image from "next/image";
 import { EditorState, convertFromRaw, Editor } from "draft-js";
 import { TbFolders, TbCalendar } from "react-icons/tb";
+import { useRouter } from "next/router";
 
 const Blog = ({ blog, recentPost }) => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
+
+  const router = useRouter();
 
   useEffect(() => {
     loadContent();
@@ -66,6 +69,9 @@ const Blog = ({ blog, recentPost }) => {
               borderRadius="20px"
               color="#000"
               mt={"5"}
+              onClick={() => {
+                router.push(`/contact`);
+              }}
             >
               <Image
                 src="/assets/image/icons/call.svg"

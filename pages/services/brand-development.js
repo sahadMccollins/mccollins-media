@@ -1,4 +1,12 @@
-import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 import ClientsLogo from "../../components/ClientsLogo";
@@ -9,6 +17,8 @@ import TextBox from "../../components/TextBox";
 import VideoBanner from "../../components/VideoBanner";
 
 const DesignAndBrandDevelopment = () => {
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+
   const favWorkData = [
     {
       name: "Dafza",
@@ -45,17 +55,17 @@ const DesignAndBrandDevelopment = () => {
   return (
     <Stack position={"relative"}>
       <VideoBanner
-        heading={`design and \n brand \n development`}
+        heading={`brand \n development`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/BRANDING_-_z6r43b.mp4"
-        content="Creating a brand from the inception - logo to the entire adaptation of various deliverables are conceptualized in-house by our team of designers and copywriters"
+        content="Brand identity is everything, and we bring in unimaginable creativity through brand execution, logo creation, website redesign, social media content creation, and more."
         poster="/assets/image/servicePage/designAndBrand.jpg"
       />
       <Box bg={"#F7F7F7"} style={{ marginTop: "0" }}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box width={{ base: "100%", md: "50%" }} mr={"20"}>
-              <Heading fontWeight={"black"}>
-                Design and Brand <br /> Development
+              <Heading fontWeight={"bold"} fontSize={"4xl"}>
+                Brand Development
               </Heading>
               <Box
                 my={8}
@@ -66,7 +76,7 @@ const DesignAndBrandDevelopment = () => {
                 fontSize={"1xl"}
                 color={"#000"}
               >
-                <Text>creating content that tells a story</Text>
+                {/* <Text>creating content that tells a story</Text> */}
               </Box>
               <Text>
                 Creating a brand from the inception - logo to the entire
@@ -117,15 +127,21 @@ const DesignAndBrandDevelopment = () => {
           </Flex>
         </Container>
         <ServicePoint
-          heading={"DESIGN \n SERVICES"}
-          contentHeading="conceptualizing design solutions for your brand"
+          heading={"BRANDING \n SERVICES"}
+          contentHeading="Conceptualizing design solutions for your brand"
           content="From conceptualizing a logo for a new brand to a comprehensive design solution for an existing brand, our in-house team provides design solutions for brands"
           points={
             "Logo Development \n Copywriting \n Translation \n Printing Guidelines \n Brand Asset Development \n Brand Guideline Development"
           }
         />
         <Box position={"relative"}>
-          <Box style={{ position: "absolute", top: "50%", right: "5%" }}>
+          <Box
+            style={{
+              position: "absolute",
+              top: isLargerThan780 ? "10%" : "-50%",
+              right: "5%",
+            }}
+          >
             <Image
               src={"/assets/image/design/1.svg"}
               width="118px"
@@ -142,7 +158,7 @@ const DesignAndBrandDevelopment = () => {
           </Container>
         </Box>
       </Box>
-      <Box
+      {/* <Box
         style={{ position: "absolute", top: "58%", left: "-4%" }}
         display={{ base: "none", md: "block" }}
       >
@@ -151,14 +167,14 @@ const DesignAndBrandDevelopment = () => {
           width="130px"
           height={"130px"}
         />
-      </Box>
-      <TextBox
+      </Box> */}
+      {/* <TextBox
         heading="CASE STUDY"
         smallHeading="social media designs"
         subHeading="sneak peak into our social media marketing projects"
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
-      <FavWork data={favWorkData} />
+      <FavWork data={favWorkData} /> */}
       <ClientsLogo />
     </Stack>
   );
