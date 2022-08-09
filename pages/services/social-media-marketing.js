@@ -7,7 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useRef } from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -51,6 +51,12 @@ const SocialMediaMarketing = () => {
       type: "Web Devlopment",
     },
   ];
+
+  const SmmPointRef = useRef(null);
+
+  const scrollFun = () => {
+    SmmPointRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Stack>
       <VideoBanner
@@ -61,7 +67,7 @@ const SocialMediaMarketing = () => {
       />
       <Box
         style={{
-          background: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
+          background: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
         }}
         bg={{
           base: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
@@ -71,7 +77,7 @@ const SocialMediaMarketing = () => {
       >
         <Container maxWidth={"7xl"} position="relative">
           <Box
-            style={{ position: "absolute", top: "45%", left: "25%" }}
+            style={{ position: "absolute", top: "50%", left: "25%" }}
             display={{ base: "none", md: "block" }}
           >
             <Image
@@ -94,14 +100,14 @@ const SocialMediaMarketing = () => {
                 width="610px"
                 height="905px"
               />
-              <Text
+              {/* <Text
                 fontSize={"28px"}
                 fontWeight={"bold"}
                 color={"#000"}
                 textAlign={"center"}
               >
                 #REELS
-              </Text>
+              </Text> */}
             </Box>
             <Flex
               width={{ base: "100%", md: "30%" }}
@@ -135,6 +141,7 @@ const SocialMediaMarketing = () => {
                 color="#fff"
                 mt={7}
                 fontWeight="bold"
+                onClick={scrollFun}
               >
                 view more
                 <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -146,14 +153,14 @@ const SocialMediaMarketing = () => {
                 width="610px"
                 height="897px"
               />
-              <Text
+              {/* <Text
                 fontSize={"28px"}
                 fontWeight={"bold"}
                 color={"#000"}
                 textAlign={"center"}
               >
                 #TIKTOKS
-              </Text>
+              </Text> */}
             </Box>
           </Flex>
         </Container>
@@ -164,7 +171,7 @@ const SocialMediaMarketing = () => {
             <Box width={{ base: "100%", md: "50%" }}>
               <Heading>
                 #1 Social Media Agency <br />
-                in UAE
+                in the Middle East
               </Heading>
               <Box
                 my={8}
@@ -175,7 +182,7 @@ const SocialMediaMarketing = () => {
                 fontSize={"1xl"}
                 color={"#000"}
               >
-                <Text>Story tellers for your brand</Text>
+                {/* <Text>Story tellers for your brand</Text> */}
               </Box>
               <Text>
                 Our Key services include Social Media Marketing, Website
@@ -216,7 +223,7 @@ const SocialMediaMarketing = () => {
                   content management
                 </Heading>
               </Box>
-              <Text>
+              <Text ref={SmmPointRef}>
                 Your brand must rank high amongst competitors when your
                 customers search for your brand on Google. With Keyword
                 Research, we understand what your customers are searching for.
@@ -227,7 +234,7 @@ const SocialMediaMarketing = () => {
       </Box>
       <ServicePoint
         heading="Digital Brand Activation"
-        subHeading="performance marketing"
+        // subHeading="performance marketing"
         contentHeading={"Story tellers for your brand"}
         content="Creating a digital ecosystem for your brand. From creating a brand story to communicating with your audience, we activate your brand on the digital space"
         points={

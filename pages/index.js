@@ -9,6 +9,39 @@ import TechIcon from "../components/TechIcon";
 import TextBox from "../components/TextBox";
 
 export default function Home() {
+  const favWorkData = [
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Dafza",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Rica",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
+
   return (
     <>
       <HeroBanner
@@ -30,7 +63,9 @@ export default function Home() {
         content="We are McCollins Media, a story that began over 15 years ago on the principles of creativity, innovation, and result-driven thinking. We blend creative thinking and digital development with purposeful strategies to create a digital ecosystem like no other. We are passionate about being the leading digital marketing and web development services provider in the UAE and across all GCC countries."
       />
 
-      <ServiceTabs />
+      {/* <ServiceTabs /> */}
+
+      <ServiceAccordian />
 
       <TextBox
         heading="CASE STUDY"
@@ -38,18 +73,18 @@ export default function Home() {
         content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
       />
 
-      <CaseStudy />
+      <CaseStudy data={favWorkData} />
 
       <ClientsLogo />
 
-      <TextBox
+      {/* <TextBox
         bg="#F7F7F7"
         heading={"WHAT \n WE DO"}
         subHeading="Creating game-changing campaigns"
         content=" that help brands all across the GCC region grow and perform better. We bridge the gap between purpose-driven storytelling and data-driven improvements."
-      />
+      /> */}
 
-      <ServiceAccordian />
+      {/* <ServiceAccordian /> */}
 
       <TextBox
         heading="WHAT WE WORK WITH"

@@ -12,9 +12,11 @@ import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import ServicePageAccordian from "../../components/ServicePageAccordian";
 import TextBox2 from "../../components/TextBox2";
+import { useRouter } from "next/router";
 
 const Index = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+  const router = useRouter();
   return (
     <Stack>
       <Container maxWidth={"7xl"} mb={{ base: "150px", md: "unset" }}>
@@ -49,6 +51,7 @@ const Index = () => {
               borderRadius="20px"
               color="#000"
               mt={"5"}
+              onClick={() => router.push("/contact")}
             >
               <Image
                 src="/assets/image/icons/call.svg"
@@ -90,7 +93,7 @@ const Index = () => {
         heading={
           "Your extended marketing arm ! \n Be a part of the Digital Revolution"
         }
-        subHeading={"creating content that tells a story"}
+        // subHeading={"creating content that tells a story"}
         content={
           "Our team prides in daring to experiment with evolving digital trends, providing a personalized approach to our clients, and ensuring we create a result driven plan to achieve our brands objectives. We are a young and passionate full service in-house team based in Dubai Media City. "
         }

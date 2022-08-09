@@ -9,12 +9,14 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React, { useEffect, useRef } from "react";
 import InnerLayout from "./Layout/InnerLayout";
 
 const VideoBanner = (props) => {
   const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
   const videoRef = useRef();
+  const router = useRouter();
 
   useEffect(() => {
     setTimeout(() => {
@@ -68,6 +70,7 @@ const VideoBanner = (props) => {
               borderRadius="20px"
               color="#000"
               mt={"5"}
+              onClick={() => router.push("/contact")}
             >
               <Image
                 src="/assets/image/icons/call.svg"

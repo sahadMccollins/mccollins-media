@@ -15,7 +15,7 @@ import "swiper/css";
 import CaseStudySlide from "./CaseStudySlide";
 import { useRef } from "react";
 
-const CaseStudy = () => {
+const CaseStudy = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const swiperRef = useRef(null);
   return (
@@ -96,24 +96,21 @@ const CaseStudy = () => {
               loop={true}
               ref={swiperRef}
             >
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy2.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy3.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy2.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CaseStudySlide img="/assets/image/caseStudy/caseStudy3.jpg" />
-              </SwiperSlide>
+              {props.data.map((slide) => (
+                <SwiperSlide key={slide.img}>
+                  <a
+                    data-fancybox="gallery"
+                    style={{ position: "relative" }}
+                    href={slide.img}
+                  >
+                    <CaseStudySlide
+                      img={slide.img}
+                      name={slide.name}
+                      type={slide.type}
+                    />
+                  </a>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </Box>
         </Flex>

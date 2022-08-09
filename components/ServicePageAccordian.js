@@ -11,8 +11,10 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const ServicePageAccordian = () => {
+  const router = useRouter();
   return (
     <Stack
       className="serviceAcc"
@@ -72,6 +74,7 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() => router.push("/services/website-development")}
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -110,6 +113,9 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() =>
+                      router.push("/services/social-media-marketing")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -132,7 +138,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      digital marketing & seo
+                      Google Ads & SEO
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -149,6 +155,7 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() => router.push("/services/google-ads-and-seo")}
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -187,6 +194,7 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() => router.push("/services/content-production")}
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -209,7 +217,7 @@ const ServicePageAccordian = () => {
                             "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                         }}
                       ></span>
-                      Design & Brand Dev
+                      Brand Development
                     </Box>
                   </AccordionButton>
                 </h2>
@@ -225,6 +233,9 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
+                    onClick={() =>
+                      router.push("/services/design-and-brand-development")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />

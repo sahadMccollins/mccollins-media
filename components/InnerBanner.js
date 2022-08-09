@@ -1,7 +1,9 @@
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const InnerBanner = (props) => {
+  const router = useRouter();
   return (
     <Flex
       mt="-85px"
@@ -43,6 +45,7 @@ const InnerBanner = (props) => {
           borderRadius="20px"
           color="#000"
           mt={"5"}
+          onClick={() => router.push("/contact")}
         >
           <Image
             src="/assets/image/icons/call.svg"

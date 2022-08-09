@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 const AccItem = (props) => {
   return (
@@ -37,32 +38,74 @@ const AccItem = (props) => {
 
 const ServiceAccordian = () => {
   const router = useRouter();
+
+  const [AccImg, setAccImg] = useState(
+    "/assets/image/ServiceTabs/WebDevelopment.png"
+  );
   return (
     <Stack className="serviceAcc" bg={"#F7F7F7"}>
       <Container maxWidth={"7xl"} pb="20">
         <Flex direction={{ base: "column", lg: "row" }}>
-          <Box width={{ base: "100%", lg: "50%" }}>
+          <Box
+            width={{ base: "100%", lg: "50%" }}
+            alignSelf="center"
+            zIndex={99}
+          >
             <Accordion defaultIndex={[0]}>
-              <AccItem
-                name="Web Development"
-                content="Your website is your digital store, that is why we make it stand out, represent you, and most importantly, help your brand grow."
-              />
-              <AccItem
-                name="360 Brand Development"
-                content="From Photo & Video content creation to website redesign & development, and Social Media Branding, we engage with your audience by telling your brand's story!"
-              />
-              <AccItem
-                name="Digital Marketing"
-                content="We blend consumer insights and result-driven strategies for your brand through SEO, SEM, SMM, Content Creation, and more to attract your audience."
-              />
-              <AccItem
-                name="Web App Development"
-                content="We create an ideal user journey through a well-planned UI/UX experience and a unique website built on Shopify, Magento, React, Woocommerce, WordPress, and more."
-              />
-              <AccItem
-                name="Brand Experience"
-                content="Brand identity is everything, and we bring in unimaginable creativity through brand execution, logo creation, website redesign, social media content creation, and more."
-              />
+              <div
+                onClick={(e) => {
+                  setAccImg("/assets/image/ServiceTabs/WebDevelopment.png");
+                }}
+              >
+                <AccItem
+                  name="Web Development"
+                  content="Creating a digital outlet for your brand and driving leads via the website. Focus on Mobile Websites is key. We develop Bilingual websites for the GCC Market."
+                />
+              </div>
+              <div
+                onClick={(e) => {
+                  setAccImg(
+                    "/assets/image/ServiceTabs/DigitalMarketing&SEO.png"
+                  );
+                }}
+              >
+                <AccItem
+                  name="Performance Marketing"
+                  content="From driving footfall to your location, to your website or tracking conversions, our team works towards making numbers matter. Be it Digital Media Buying - Social Media Ads or PPC Campaigns, we work in alignment with your KPIs."
+                />
+              </div>
+              <div
+                onClick={(e) => {
+                  setAccImg(
+                    "/assets/image/ServiceTabs/Social-Media-Marketing.png"
+                  );
+                }}
+              >
+                <AccItem
+                  name="Social Media Marketing"
+                  content="Storytellers for your brand ! Be it creating the strategy to content development or engaging with your brands audience, our team of Social Media Experts represent your brand"
+                />
+              </div>
+              <div
+                onClick={(e) => {
+                  setAccImg("/assets/image/ServiceTabs/IphoneReels.png");
+                }}
+              >
+                <AccItem
+                  name="Content Production"
+                  content="Creating multimedia content that works for your brand. Our team of in-house content producers work on Photography, Videography and Motion Graphics"
+                />
+              </div>
+              <div
+                onClick={(e) => {
+                  setAccImg("/assets/image/ServiceTabs/Design&Brand.png");
+                }}
+              >
+                <AccItem
+                  name="Brand Experience"
+                  content="Be it creating a brand from inception or building on well established brand, our in-house team of Designers and Copywriters,"
+                />
+              </div>
             </Accordion>
             <br />
             <Button
@@ -74,7 +117,7 @@ const ServiceAccordian = () => {
               ml={"16px"}
               fontWeight="bold"
               onClick={() => {
-                router.push("/services/website-development");
+                router.push("/services");
               }}
             >
               view more
@@ -82,12 +125,8 @@ const ServiceAccordian = () => {
             </Button>
           </Box>
 
-          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
-            <Image
-              src="/assets/image/ServiceTabs/webDev.png"
-              width="860px"
-              height="698px"
-            />
+          <Box width={{ base: "100%", md: "50%" }} textAlign="center">
+            <Image src={AccImg} width="457.5px" height="678.75px" />
           </Box>
         </Flex>
       </Container>

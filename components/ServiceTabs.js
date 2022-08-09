@@ -24,7 +24,7 @@ const ServiceTabs = () => {
             <Tab>Social Media Marketing</Tab>
             <Tab>Digital Marketing & SEO</Tab>
             <Tab>Content Production</Tab>
-            <Tab>Design & Brand Dev</Tab>
+            <Tab>Brand Development</Tab>
           </TabList>
 
           <TabPanels>

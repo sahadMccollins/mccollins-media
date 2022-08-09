@@ -151,7 +151,7 @@ const Navbar = (props) => {
                           width="25px"
                           height="25px"
                         />
-                        <span>&nbsp;&nbsp;Call</span>
+                        <span>&nbsp;&nbsp;+971 4 445 6848</span>
                       </ChakraLink>
                     </Button>
                     <Button
@@ -363,7 +363,7 @@ const Navbar = (props) => {
                             width="25px"
                             height="25px"
                           />
-                          <span>&nbsp;&nbsp;Call</span>
+                          <span>&nbsp;&nbsp;+971 4 445 6848</span>
                         </ChakraLink>
                       </Button>
                       <Button
@@ -556,8 +556,8 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="Digital Marketing & Seo"
-                          href="/services/digital-marketing-and-seo"
+                          name="Google Ads & SEO"
+                          href="/services/google-ads-and-seo"
                         />
                       </li>
                       <li
@@ -576,7 +576,7 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="Design & Brand Dev"
+                          name="Brand Development"
                           href="/services/design-and-brand-development"
                         />
                       </li>

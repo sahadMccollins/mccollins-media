@@ -6,7 +6,7 @@ const TextBox2 = (props) => {
     <Stack>
       <Container maxWidth={"7xl"}>
         <Flex direction={{ base: "column", md: "row" }} my="50px">
-          <Box width={{ md: "50%", base: "100%" }}>
+          <Box width={{ md: "50%", base: "100%" }} alignSelf="center">
             <Heading>
               {props.heading &&
                 props.heading
@@ -21,7 +21,7 @@ const TextBox2 = (props) => {
               fontWeight="bold"
               fontSize={"1xl"}
             >
-              <Text>creating content that tells a story</Text>
+              <Text>{props.subHeading}</Text>
             </Box>
           </Box>
           <Box width={{ md: "50%", base: "100%" }}>

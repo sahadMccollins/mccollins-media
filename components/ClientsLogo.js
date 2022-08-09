@@ -42,9 +42,9 @@ const ClientsLogo = () => {
             SOME OF OUR RECENT CLIENTS WE WORK FOR{" "}
             <span style={{ color: "#fff", fontSize: "20px" }}>■</span>
           </Heading>
-          <Button borderRadius={20} mt="20px" background={"#fff"}>
+          {/* <Button borderRadius={20} mt="20px" background={"#fff"}>
             view all <ChevronRightIcon w={"1.3em"} h={"1.3em"} />
-          </Button>
+          </Button> */}
         </Flex>
         <SimpleGrid
           columns={{ base: 3, md: 4 }}
