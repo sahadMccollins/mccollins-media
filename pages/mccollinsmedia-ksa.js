@@ -111,6 +111,8 @@ const MccollinsmediaKsa = () => {
               fontWeight="bold"
               color={"#6F6F6F"}
               pr={locale === "en" ? "5" : "0"}
+              dir={locale === "en" ? "ltr" : "rtl"}
+              lang={locale === "en" ? "en" : "ar"}
             >
               {t.headingContent}
               <br />
@@ -171,7 +173,12 @@ const MccollinsmediaKsa = () => {
         </Container>
       </Box>
 
-      <Heading textAlign={"center"} pb="20px" dir="rtl" lang="ar">
+      <Heading
+        textAlign={"center"}
+        pb="20px"
+        dir={locale === "en" ? "ltr" : "rtl"}
+        lang={locale === "en" ? "en" : "ar"}
+      >
         {t.sec2Heading}
       </Heading>
 
@@ -199,9 +206,21 @@ const MccollinsmediaKsa = () => {
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
               <Box>
-                <Heading fontSize="4xl">{t.webHeading}</Heading>
+                <Heading
+                  fontSize="4xl"
+                  dir={locale === "en" ? "ltr" : "rtl"}
+                  lang={locale === "en" ? "en" : "ar"}
+                >
+                  {t.webHeading}
+                </Heading>
               </Box>
-              <Text mt={10}>{t.webContent}</Text>
+              <Text
+                mt={10}
+                dir={locale === "en" ? "ltr" : "rtl"}
+                lang={locale === "en" ? "en" : "ar"}
+              >
+                {t.webContent}
+              </Text>
             </Box>
           </Flex>
         </Container>
@@ -230,9 +249,21 @@ const MccollinsmediaKsa = () => {
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
               <Box>
-                <Heading fontSize="4xl">{t.socialHeading}</Heading>
+                <Heading
+                  fontSize="4xl"
+                  dir={locale === "en" ? "ltr" : "rtl"}
+                  lang={locale === "en" ? "en" : "ar"}
+                >
+                  {t.socialHeading}
+                </Heading>
               </Box>
-              <Text mt={10}>{t.socialContent}</Text>
+              <Text
+                mt={10}
+                dir={locale === "en" ? "ltr" : "rtl"}
+                lang={locale === "en" ? "en" : "ar"}
+              >
+                {t.socialContent}
+              </Text>
             </Box>
           </Flex>
         </Container>
@@ -261,9 +292,21 @@ const MccollinsmediaKsa = () => {
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
               <Box>
-                <Heading fontSize="4xl">{t.adsHeading}</Heading>
+                <Heading
+                  fontSize="4xl"
+                  dir={locale === "en" ? "ltr" : "rtl"}
+                  lang={locale === "en" ? "en" : "ar"}
+                >
+                  {t.adsHeading}
+                </Heading>
               </Box>
-              <Text mt={10}>{t.adsContent}</Text>
+              <Text
+                mt={10}
+                dir={locale === "en" ? "ltr" : "rtl"}
+                lang={locale === "en" ? "en" : "ar"}
+              >
+                {t.adsContent}
+              </Text>
             </Box>
           </Flex>
         </Container>
@@ -292,9 +335,21 @@ const MccollinsmediaKsa = () => {
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
               <Box>
-                <Heading fontSize="4xl">{t.seoHeading}</Heading>
+                <Heading
+                  fontSize="4xl"
+                  dir={locale === "en" ? "ltr" : "rtl"}
+                  lang={locale === "en" ? "en" : "ar"}
+                >
+                  {t.seoHeading}
+                </Heading>
               </Box>
-              <Text mt={10}>{t.seoContent}</Text>
+              <Text
+                mt={10}
+                dir={locale === "en" ? "ltr" : "rtl"}
+                lang={locale === "en" ? "en" : "ar"}
+              >
+                {t.seoContent}
+              </Text>
             </Box>
           </Flex>
         </Container>
@@ -318,7 +373,11 @@ const MccollinsmediaKsa = () => {
               />
             </Box>
             <Box width="100%" mb={"20px"} alignSelf="end" zIndex={2}>
-              <Text fontSize={"35px"}>
+              <Text
+                fontSize={"35px"}
+                dir={locale === "en" ? "ltr" : "rtl"}
+                lang={locale === "en" ? "en" : "ar"}
+              >
                 <b>{t.mtTeam}</b>
               </Text>
             </Box>
