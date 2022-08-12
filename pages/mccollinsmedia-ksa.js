@@ -1,0 +1,490 @@
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  HStack,
+  Stack,
+  Text,
+  useMediaQuery,
+  Image as Chakraimage,
+  ButtonGroup,
+} from "@chakra-ui/react";
+import Image from "next/image";
+import { en, ar } from "../i18n/mccollins-ksa";
+import InnerLayout from "../components/Layout/InnerLayout";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useRef } from "react";
+import dynamic from "next/dynamic";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
+import "swiper/css";
+import "../node_modules/react-modal-video/css/modal-video.min.css";
+
+function TeamMemberSlide(props) {
+  return (
+    <Box position={"relative"} bottom={"-5px"}>
+      <Image src={props.img} width="270px" height="400px" objectFit="cover" />
+      <Box
+        position={"absolute"}
+        bottom="0"
+        width={{ base: "270px", md: "100%" }}
+        height="90px"
+        background={"#000"}
+        backgroundColor={"rgba(0,0,0,0.5)"}
+        borderTopRightRadius="50px"
+      >
+        <Heading color={"#FFDE11"} fontSize="28px" mt={"15px"} mx={"15px"}>
+          {props.name}
+        </Heading>
+        <Text color={"#fff"} mx={"15px"}>
+          {props.designation}
+        </Text>
+      </Box>
+      <Box
+        position={"absolute"}
+        width={{ base: "270px", md: "100%" }}
+        bottom={4}
+        textAlign="right"
+        paddingRight={"20px"}
+        cursor="pointer"
+      ></Box>
+    </Box>
+  );
+}
+
+const MccollinsmediaKsa = () => {
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+  const swiperRef = useRef(null);
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : ar;
+  const [isOpen, setOpen] = useState(false);
+
+  return (
+    <Stack textAlign={locale === "en" ? "left" : "right"}>
+      <Container maxWidth={"7xl"}>
+        <Flex
+          mt="-85px"
+          height={{ base: "100%", md: "100vh" }}
+          minHeight="600px"
+          pt="170px"
+          direction={{ base: "column", md: "row" }}
+        >
+          <Box
+            width={{ base: "100%", md: "55%" }}
+            style={{ alignSelf: "center", paddingBottom: "10%" }}
+          >
+            <Heading fontSize={"50px"} color="#FFDE11">
+              Mccollins Media
+            </Heading>
+            <Box position="relative">
+              {/* <Heading
+              fontSize={{ base: "55px", md: "80px" }}
+              color="#000"
+              fontWeight="black"
+            >
+              {props.heading.split("\n").map((str) => (
+                <div key={str}>{str}</div>
+              ))}
+            </Heading> */}
+              {/* <Box
+              position={"absolute"}
+              top={{ base: "unset", md: "0" }}
+              left={"70%"}
+            >
+              <Image
+                src="/assets/image/design/3.svg"
+                width={"89px"}
+                height={"104px"}
+                priority={true}
+              />
+            </Box> */}
+            </Box>
+
+            <Text
+              mt="10"
+              fontSize={{ base: "18px", md: "18px" }}
+              fontWeight="bold"
+              color={"#6F6F6F"}
+              pr={locale === "en" ? "5" : "0"}
+            >
+              {t.headingContent}
+              <br />
+              <br />
+              {t.headingContent2}
+            </Text>
+
+            <Button
+              colorScheme="yellow"
+              background={"#FFDE11"}
+              borderRadius="20px"
+              color="#000"
+              mt={"5"}
+              onClick={() => router.push("/contact")}
+            >
+              <Image
+                src="/assets/image/icons/call.svg"
+                width="25px"
+                height="25px"
+                priority={true}
+              />
+              &nbsp;&nbsp;contact us
+            </Button>
+          </Box>
+          <Box width={{ base: "100%", md: "45%" }} mt={{ base: "10", md: "0" }}>
+            <Image
+              src={"/assets/image/servicePage/serviceAccordian.jpg"}
+              width="446px"
+              height="467px"
+              priority={true}
+            />
+          </Box>
+        </Flex>
+      </Container>
+
+      <Box>
+        <Container
+          maxWidth={"7xl"}
+          display="flex"
+          justifyContent={"center"}
+          paddingBottom="100px"
+        >
+          {/* <iframe
+            width="700"
+            height="394"
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe> */}
+          <video loop muted autoPlay width="700" height="394" controls>
+            <source
+              src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </Container>
+      </Box>
+
+      <Heading textAlign={"center"} pb="20px" dir="rtl" lang="ar">
+        {t.sec2Heading}
+      </Heading>
+
+      <Box bg={"#F7F7F7"} py={20}>
+        <Container maxWidth={"7xl"}>
+          <Flex direction={{ base: "column", md: "row" }}>
+            <Box width={{ base: "100%", md: "40%" }}>
+              <Box alignSelf="center" position={"relative"} textAlign="center">
+                <Image
+                  src="/assets/image/servicePage/appDevelopment.jpg"
+                  width="292px"
+                  height="318px"
+                  style={{ zIndex: "2" }}
+                />
+                <Box
+                  position={"absolute"}
+                  width="300px"
+                  height={{ base: "70%", md: "75%" }}
+                  bg={"#FFDE11"}
+                  top="120px"
+                  right="150px"
+                  zIndex={0}
+                ></Box>
+              </Box>
+            </Box>
+            <Box width={{ base: "100%", md: "60%" }} p={10}>
+              <Box>
+                <Heading fontSize="4xl">{t.webHeading}</Heading>
+              </Box>
+              <Text mt={10}>{t.webContent}</Text>
+            </Box>
+          </Flex>
+        </Container>
+      </Box>
+      <Box py={20}>
+        <Container maxWidth={"7xl"}>
+          <Flex direction={{ base: "column", md: "row-reverse" }}>
+            <Box width={{ base: "100%", md: "40%" }}>
+              <Box alignSelf="center" position={"relative"} textAlign="center">
+                <Image
+                  src="/assets/image/servicePage/socialMediaMarketing.jpg"
+                  width="292px"
+                  height="318px"
+                  style={{ zIndex: "2" }}
+                />
+                <Box
+                  position={"absolute"}
+                  width="300px"
+                  height={{ base: "70%", md: "75%" }}
+                  bg={"#FFDE11"}
+                  top="120px"
+                  right="150px"
+                  zIndex={0}
+                ></Box>
+              </Box>
+            </Box>
+            <Box width={{ base: "100%", md: "60%" }} p={10}>
+              <Box>
+                <Heading fontSize="4xl">{t.socialHeading}</Heading>
+              </Box>
+              <Text mt={10}>{t.socialContent}</Text>
+            </Box>
+          </Flex>
+        </Container>
+      </Box>
+      <Box bg={"#F7F7F7"} py={20}>
+        <Container maxWidth={"7xl"}>
+          <Flex direction={{ base: "column", md: "row" }}>
+            <Box width={{ base: "100%", md: "40%" }}>
+              <Box alignSelf="center" position={"relative"} textAlign="center">
+                <Image
+                  src="/assets/image/servicePage/DM&SEO.jpg"
+                  width="292px"
+                  height="318px"
+                  style={{ zIndex: "2" }}
+                />
+                <Box
+                  position={"absolute"}
+                  width="300px"
+                  height={{ base: "70%", md: "75%" }}
+                  bg={"#FFDE11"}
+                  top="120px"
+                  right="150px"
+                  zIndex={0}
+                ></Box>
+              </Box>
+            </Box>
+            <Box width={{ base: "100%", md: "60%" }} p={10}>
+              <Box>
+                <Heading fontSize="4xl">{t.adsHeading}</Heading>
+              </Box>
+              <Text mt={10}>{t.adsContent}</Text>
+            </Box>
+          </Flex>
+        </Container>
+      </Box>
+      <Box py={20}>
+        <Container maxWidth={"7xl"}>
+          <Flex direction={{ base: "column", md: "row-reverse" }}>
+            <Box width={{ base: "100%", md: "40%" }}>
+              <Box alignSelf="center" position={"relative"} textAlign="center">
+                <Image
+                  src="/assets/image/industryPage/foodAndBeverage2.jpg"
+                  width="292px"
+                  height="318px"
+                  style={{ zIndex: "2" }}
+                />
+                <Box
+                  position={"absolute"}
+                  width="300px"
+                  height={{ base: "70%", md: "75%" }}
+                  bg={"#FFDE11"}
+                  top="120px"
+                  right="150px"
+                  zIndex={0}
+                ></Box>
+              </Box>
+            </Box>
+            <Box width={{ base: "100%", md: "60%" }} p={10}>
+              <Box>
+                <Heading fontSize="4xl">{t.seoHeading}</Heading>
+              </Box>
+              <Text mt={10}>{t.seoContent}</Text>
+            </Box>
+          </Flex>
+        </Container>
+      </Box>
+
+      <Box>
+        <Container maxWidth={"7xl"} pb="20">
+          <Flex direction={{ base: "column", md: "row" }}>
+            <Box
+              width="50%"
+              zIndex={2}
+              textAlign="center"
+              display={{ base: "none", md: "block" }}
+            >
+              <Image
+                position={"absolute"}
+                src="/assets/image/design/2.svg"
+                width={"105px"}
+                height={"168px"}
+                top={-10}
+              />
+            </Box>
+            <Box width="100%" mb={"20px"} alignSelf="end" zIndex={2}>
+              <Text fontSize={"35px"}>
+                <b>{t.mtTeam}</b>
+              </Text>
+            </Box>
+          </Flex>
+          <Flex>
+            <Box width={"20%"} position="relative">
+              <HStack
+                position={"absolute"}
+                bottom="0"
+                right={0}
+                spacing="0"
+                cursor={"pointer"}
+              >
+                <Box
+                  background={"#000"}
+                  p="8px 15px 10px 15px"
+                  onClick={() => swiperRef.current.swiper.slidePrev()}
+                >
+                  <ChevronLeftIcon color={"#fff"} />
+                </Box>
+                <Box
+                  background={"#6F6F6F"}
+                  p="8px 15px 10px 15px"
+                  onClick={() => swiperRef.current.swiper.slideNext()}
+                >
+                  <ChevronRightIcon color={"#fff"} />
+                </Box>
+              </HStack>
+              <Box
+                position={"absolute"}
+                bottom="42px"
+                background={"#FFDE11"}
+                w="400px"
+                height={{ base: "300px", md: "475px" }}
+                right={"-150px"}
+              ></Box>
+              <Image
+                position={"absolute"}
+                src="/assets/image/team/ourTeamAlp.png"
+                width="80px"
+                height="400px"
+                bottom={{ base: "45px", md: "0" }}
+              />
+            </Box>
+            <Box width={"80%"}>
+              <Swiper
+                spaceBetween={20}
+                slidesPerView={isLargerThan780 ? 3.5 : 1}
+                ref={swiperRef}
+              >
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Mahmoud.jpg"
+                    name={t.team[0]}
+                    // designation="Account Manager"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/asher.jpg"
+                    name={t.team[8]}
+                    // designation="Digital Designer"
+                  />
+                </SwiperSlide>
+                {/* <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Nikhila.jpg"
+                    name="Nikila"
+                    designation="Account Executive"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Leanne.jpg"
+                    name="Leanne"
+                    designation="Account Executive"
+                  />
+                </SwiperSlide> */}
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Maha-Hussein.jpg"
+                    name={t.team[1]}
+                    // designation="Account Manager"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/shabeer.jpg"
+                    name="Shabeer"
+                    // designation="Content Creator"
+                  />
+                </SwiperSlide>
+                {/* <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/sahal.jpg"
+                    name="Sahal"
+                    designation="Content Creator"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Rishika.jpg"
+                    name="Rishika"
+                    designation="Account Executive"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Alia.jpg"
+                    name="Alia"
+                    designation="Account Manager"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/ashton.jpg"
+                    name="Ashton"
+                    designation="Content Producer"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/ijas.jpg"
+                    name="Ijas"
+                    designation="Web & Mobile Developer"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Alia.jpg"
+                    name="Alia"
+                    designation="Account Manager"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Moutasem.jpg"
+                    name="Moutasem"
+                    designation="Account Executive"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Maria.jpg"
+                    name="Maria"
+                    designation="Digital Designer"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Nelvin.jpg"
+                    name="Nelvin"
+                    designation="Admin"
+                  />
+                </SwiperSlide> */}
+              </Swiper>
+            </Box>
+          </Flex>
+        </Container>
+      </Box>
+    </Stack>
+  );
+};
+
+MccollinsmediaKsa.getLayout = function getLayout(MccollinsmediaKsa) {
+  return <InnerLayout color="yellow">{MccollinsmediaKsa}</InnerLayout>;
+};
+
+export default MccollinsmediaKsa;
