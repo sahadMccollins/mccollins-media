@@ -23,6 +23,7 @@ import dynamic from "next/dynamic";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 import "swiper/css";
 import "../node_modules/react-modal-video/css/modal-video.min.css";
+import VideoBanner from "../components/VideoBanner";
 
 function TeamMemberSlide(props) {
   return (
@@ -58,68 +59,64 @@ function TeamMemberSlide(props) {
 
 const MccollinsmediaKsa = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+  const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
   const swiperRef = useRef(null);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : ar;
   const [isOpen, setOpen] = useState(false);
 
+  const videoRef = useRef();
+
+  useEffect(() => {
+    setTimeout(() => {
+      videoRef.current.play();
+    }, 100);
+  }, []);
+
   return (
-    <Stack textAlign={locale === "en" ? "left" : "right"}>
-      <Container maxWidth={"7xl"}>
-        <Flex
-          mt="-85px"
-          height={{ base: "100%", md: "100vh" }}
-          minHeight="600px"
-          pt="170px"
-          direction={{ base: "column", md: "row" }}
+    <Stack
+      textAlign={locale === "en" ? "left" : "right"}
+      mt={"-84px"}
+      position="relative"
+    >
+      <Box
+        position={"absolute"}
+        width={"100%"}
+        height="100vh"
+        minHeight={"700px"}
+        overflow={"hidden"}
+      >
+        <video
+          muted
+          loop
+          width="100%"
+          className="video-banner"
+          ref={videoRef}
+          poster={
+            isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
+          }
         >
-          <Box
-            width={{ base: "100%", md: "55%" }}
-            style={{ alignSelf: "center", paddingBottom: "10%" }}
-          >
-            <Heading fontSize={"50px"} color="#FFDE11">
-              Mccollins Media
+          <source
+            src={
+              "https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
+            }
+            type="video/mp4"
+          />
+        </video>
+      </Box>
+      <Container maxWidth={"7xl"} zIndex="9" style={{ margin: "auto" }}>
+        <Flex
+          height={{ base: "500px", md: "100vh" }}
+          minHeight={{ base: "unset", md: "700px" }}
+          alignItems="end"
+          placeItems={"flex-end"}
+          pb={"5%"}
+        >
+          <Box width={"100%"}>
+            <Heading fontSize={{ base: "30px", md: "50px" }} color="#FFDE11">
+              {t.heading}
             </Heading>
-            <Box position="relative">
-              {/* <Heading
-              fontSize={{ base: "55px", md: "80px" }}
-              color="#000"
-              fontWeight="black"
-            >
-              {props.heading.split("\n").map((str) => (
-                <div key={str}>{str}</div>
-              ))}
-            </Heading> */}
-              {/* <Box
-              position={"absolute"}
-              top={{ base: "unset", md: "0" }}
-              left={"70%"}
-            >
-              <Image
-                src="/assets/image/design/3.svg"
-                width={"89px"}
-                height={"104px"}
-                priority={true}
-              />
-            </Box> */}
-            </Box>
-
-            <Text
-              mt="10"
-              fontSize={{ base: "18px", md: "18px" }}
-              fontWeight="bold"
-              color={"#6F6F6F"}
-              pr={locale === "en" ? "5" : "0"}
-              dir={locale === "en" ? "ltr" : "rtl"}
-              lang={locale === "en" ? "en" : "ar"}
-            >
-              {t.headingContent}
-              <br />
-              <br />
-              {t.headingContent2}
-            </Text>
-
             <Button
               colorScheme="yellow"
               background={"#FFDE11"}
@@ -127,6 +124,7 @@ const MccollinsmediaKsa = () => {
               color="#000"
               mt={"5"}
               onClick={() => router.push("/contact")}
+              display={{ base: "none", md: "block" }}
             >
               <Image
                 src="/assets/image/icons/call.svg"
@@ -136,46 +134,38 @@ const MccollinsmediaKsa = () => {
               />
               &nbsp;&nbsp;contact us
             </Button>
-          </Box>
-          <Box width={{ base: "100%", md: "45%" }} mt={{ base: "10", md: "0" }}>
-            <Image
-              src={"/assets/image/servicePage/serviceAccordian.jpg"}
-              width="446px"
-              height="467px"
-              priority={true}
-            />
+            <Text
+              mt="10"
+              fontSize={{ base: "15px", md: "18px" }}
+              fontWeight="bold"
+              color={"#fff"}
+              pr={locale === "ar" ? "0" : "5"}
+              maxWidth={locale === "ar" ? "unset" : "700px"}
+              // display={{ base: "none", md: "block" }}
+              marginLeft={locale === "ar" ? "40%" : "unset"}
+              margin={isSmallerThan780 && "0"}
+            >
+              {t.headingContent}
+              <br />
+              <br />
+              {t.headingContent2}
+            </Text>
           </Box>
         </Flex>
       </Container>
 
-      <Box>
-        <Container
-          maxWidth={"7xl"}
-          display="flex"
-          justifyContent={"center"}
-          paddingBottom="100px"
-        >
-          {/* <iframe
-            width="700"
-            height="394"
+      <Box paddingBottom="100px" pt={"0px "} style={{ marginTop: "0" }}>
+        <video loop muted autoPlay width="100%" controls>
+          <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe> */}
-          <video loop muted autoPlay width="700" height="394" controls>
-            <source
-              src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </Container>
+            type="video/mp4"
+          />
+        </video>
       </Box>
 
       <Heading
         textAlign={"center"}
-        pb="20px"
+        pb="50px"
         dir={locale === "en" ? "ltr" : "rtl"}
         lang={locale === "en" ? "en" : "ar"}
       >
@@ -193,7 +183,7 @@ const MccollinsmediaKsa = () => {
                   height="318px"
                   style={{ zIndex: "2" }}
                 />
-                <Box
+                {/* <Box
                   position={"absolute"}
                   width="300px"
                   height={{ base: "70%", md: "75%" }}
@@ -201,7 +191,7 @@ const MccollinsmediaKsa = () => {
                   top="120px"
                   right="150px"
                   zIndex={0}
-                ></Box>
+                ></Box> */}
               </Box>
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
@@ -236,7 +226,7 @@ const MccollinsmediaKsa = () => {
                   height="318px"
                   style={{ zIndex: "2" }}
                 />
-                <Box
+                {/* <Box
                   position={"absolute"}
                   width="300px"
                   height={{ base: "70%", md: "75%" }}
@@ -244,7 +234,7 @@ const MccollinsmediaKsa = () => {
                   top="120px"
                   right="150px"
                   zIndex={0}
-                ></Box>
+                ></Box> */}
               </Box>
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
@@ -279,7 +269,7 @@ const MccollinsmediaKsa = () => {
                   height="318px"
                   style={{ zIndex: "2" }}
                 />
-                <Box
+                {/* <Box
                   position={"absolute"}
                   width="300px"
                   height={{ base: "70%", md: "75%" }}
@@ -287,7 +277,7 @@ const MccollinsmediaKsa = () => {
                   top="120px"
                   right="150px"
                   zIndex={0}
-                ></Box>
+                ></Box> */}
               </Box>
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
@@ -322,7 +312,7 @@ const MccollinsmediaKsa = () => {
                   height="318px"
                   style={{ zIndex: "2" }}
                 />
-                <Box
+                {/* <Box
                   position={"absolute"}
                   width="300px"
                   height={{ base: "70%", md: "75%" }}
@@ -330,7 +320,7 @@ const MccollinsmediaKsa = () => {
                   top="120px"
                   right="150px"
                   zIndex={0}
-                ></Box>
+                ></Box> */}
               </Box>
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
@@ -383,7 +373,7 @@ const MccollinsmediaKsa = () => {
             </Box>
           </Flex>
           <Flex>
-            <Box width={"20%"} position="relative">
+            <Box width={"20%"} position="relative" textAlign={"left"}>
               <HStack
                 position={"absolute"}
                 bottom="0"
