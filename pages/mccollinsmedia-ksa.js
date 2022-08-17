@@ -433,7 +433,7 @@ const MccollinsmediaKsa = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <TeamMemberSlide
-                    img="/assets/image/team/Joeseph.jpg"
+                    img="/assets/image/team/Joe.jpg"
                     name={t.team[3]}
                     // designation="Account Manager"
                   />
