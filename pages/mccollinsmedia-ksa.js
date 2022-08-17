@@ -98,7 +98,6 @@ const MccollinsmediaKsa = () => {
           poster={
             isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
           }
-          style={{ position: "fixed" }}
         >
           <source
             src={
