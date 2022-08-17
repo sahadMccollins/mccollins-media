@@ -88,25 +88,19 @@ const MccollinsmediaKsa = () => {
         overflow={"hidden"}
       >
         <video
-          playsinline
-          autoPlay
-          muted
+          type="video/mp4"
+          autoplay
           loop
+          muted
+          playsinline
+          src="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
           width="100%"
           className="video-banner"
           ref={videoRef}
           poster={
             isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
           }
-          style={{ position: "absolute", top: "0", left: "0" }}
-        >
-          <source
-            src={
-              "https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
-            }
-            type="video/mp4"
-          />
-        </video>
+        ></video>
       </Box>
       <Container maxWidth={"7xl"} zIndex="9" style={{ margin: "auto" }}>
         <Flex
