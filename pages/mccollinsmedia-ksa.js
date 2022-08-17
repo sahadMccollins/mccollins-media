@@ -90,6 +90,7 @@ const MccollinsmediaKsa = () => {
         <video
           muted
           loop
+          playsinline
           width="100%"
           className="video-banner"
           ref={videoRef}
@@ -173,7 +174,12 @@ const MccollinsmediaKsa = () => {
         {t.sec2Heading}
       </Heading> */}
 
-      <Box bg={"#F7F7F7"} py={20} style={{ marginTop: "0" }}>
+      <Box
+        bg={"#F7F7F7"}
+        pt={{ base: "20", md: "20" }}
+        pb={{ base: "0", md: "20" }}
+        style={{ marginTop: "0" }}
+      >
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }}>
             <Box width={{ base: "100%", md: "50%" }}>
@@ -216,7 +222,7 @@ const MccollinsmediaKsa = () => {
           </Flex>
         </Container>
       </Box>
-      <Box py={20}>
+      <Box pt={{ base: "10", md: "20" }} pb={{ base: "0", md: "20" }}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row-reverse" }}>
             <Box width={{ base: "100%", md: "50%" }}>
@@ -250,7 +256,11 @@ const MccollinsmediaKsa = () => {
           </Flex>
         </Container>
       </Box>
-      <Box bg={"#F7F7F7"} py={20}>
+      <Box
+        bg={"#F7F7F7"}
+        pt={{ base: "10", md: "20" }}
+        pb={{ base: "0", md: "20" }}
+      >
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }}>
             <Box width={{ base: "100%", md: "50%" }}>
@@ -293,7 +303,7 @@ const MccollinsmediaKsa = () => {
           </Flex>
         </Container>
       </Box>
-      <Box py={20}>
+      <Box pt={{ base: "10", md: "20" }} pb={{ base: "0", md: "20" }}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row-reverse" }}>
             <Box width={{ base: "100%", md: "50%" }}>
