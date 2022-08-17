@@ -89,7 +89,7 @@ const MccollinsmediaKsa = () => {
       >
         <video
           type="video/mp4"
-          autoplay
+          autoPlay
           loop
           muted
           playsinline
