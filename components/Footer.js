@@ -22,7 +22,7 @@ import {
 import Image from "next/image";
 import { useState } from "react";
 
-const Footer = () => {
+const Footer = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
@@ -84,7 +84,12 @@ const Footer = () => {
             <Tabs color={"#fff"} mt="5">
               <TabList>
                 <Tab fontSize={"xl"}>Dubai Office.</Tab>
-                <Tab fontSize={"xl"}>India Office.</Tab>
+                <Tab
+                  fontSize={"xl"}
+                  display={props.hideIndia ? "none" : "block"}
+                >
+                  India Office.
+                </Tab>
               </TabList>
               <TabPanels>
                 <TabPanel pl={"0"}>

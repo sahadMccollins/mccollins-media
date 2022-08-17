@@ -124,7 +124,8 @@ const MccollinsmediaKsa = () => {
               color="#000"
               mt={"5"}
               onClick={() => router.push("/contact")}
-              display={{ base: "none", md: "block" }}
+              display={{ base: "none", md: "flex" }}
+              marginLeft={locale === "ar" ? "auto" : "unset"}
             >
               <Image
                 src="/assets/image/icons/call.svg"
@@ -154,7 +155,7 @@ const MccollinsmediaKsa = () => {
         </Flex>
       </Container>
 
-      <Box paddingBottom="100px" pt={"0px "} style={{ marginTop: "0" }}>
+      <Box py={"0px "} style={{ marginTop: "0" }}>
         <video loop muted autoPlay width="100%" controls>
           <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
@@ -163,24 +164,24 @@ const MccollinsmediaKsa = () => {
         </video>
       </Box>
 
-      <Heading
+      {/* <Heading
         textAlign={"center"}
         pb="50px"
         dir={locale === "en" ? "ltr" : "rtl"}
         lang={locale === "en" ? "en" : "ar"}
       >
         {t.sec2Heading}
-      </Heading>
+      </Heading> */}
 
-      <Box bg={"#F7F7F7"} py={20}>
+      <Box bg={"#F7F7F7"} py={20} style={{ marginTop: "0" }}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }}>
-            <Box width={{ base: "100%", md: "40%" }}>
+            <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
-                  src="/assets/image/servicePage/appDevelopment.jpg"
-                  width="292px"
-                  height="318px"
+                  src="/assets/image/servicePage/ksa/web-dev.jpg"
+                  width="500px"
+                  height="312.5px"
                   style={{ zIndex: "2" }}
                 />
                 {/* <Box
@@ -194,7 +195,7 @@ const MccollinsmediaKsa = () => {
                 ></Box> */}
               </Box>
             </Box>
-            <Box width={{ base: "100%", md: "60%" }} p={10}>
+            <Box width={{ base: "100%", md: "50%" }} p={10}>
               <Box>
                 <Heading
                   fontSize="4xl"
@@ -218,26 +219,17 @@ const MccollinsmediaKsa = () => {
       <Box py={20}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row-reverse" }}>
-            <Box width={{ base: "100%", md: "40%" }}>
+            <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
-                  src="/assets/image/servicePage/socialMediaMarketing.jpg"
-                  width="292px"
-                  height="318px"
+                  src="/assets/image/servicePage/ksa/social-media.jpg"
+                  width="500px"
+                  height="312.5px"
                   style={{ zIndex: "2" }}
                 />
-                {/* <Box
-                  position={"absolute"}
-                  width="300px"
-                  height={{ base: "70%", md: "75%" }}
-                  bg={"#FFDE11"}
-                  top="120px"
-                  right="150px"
-                  zIndex={0}
-                ></Box> */}
               </Box>
             </Box>
-            <Box width={{ base: "100%", md: "60%" }} p={10}>
+            <Box width={{ base: "100%", md: "50%" }} p={10}>
               <Box>
                 <Heading
                   fontSize="4xl"
@@ -261,12 +253,12 @@ const MccollinsmediaKsa = () => {
       <Box bg={"#F7F7F7"} py={20}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }}>
-            <Box width={{ base: "100%", md: "40%" }}>
+            <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
-                  src="/assets/image/servicePage/DM&SEO.jpg"
-                  width="292px"
-                  height="318px"
+                  src="/assets/image/servicePage/ksa/google-ads.jpg"
+                  width="500px"
+                  height="312.5px"
                   style={{ zIndex: "2" }}
                 />
                 {/* <Box
@@ -280,7 +272,7 @@ const MccollinsmediaKsa = () => {
                 ></Box> */}
               </Box>
             </Box>
-            <Box width={{ base: "100%", md: "60%" }} p={10}>
+            <Box width={{ base: "100%", md: "50%" }} p={10}>
               <Box>
                 <Heading
                   fontSize="4xl"
@@ -304,12 +296,12 @@ const MccollinsmediaKsa = () => {
       <Box py={20}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row-reverse" }}>
-            <Box width={{ base: "100%", md: "40%" }}>
+            <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage2.jpg"
-                  width="292px"
-                  height="318px"
+                  src="/assets/image/servicePage/ksa/seo.jpg"
+                  width="500px"
+                  height="312.5px"
                   style={{ zIndex: "2" }}
                 />
                 {/* <Box
@@ -323,7 +315,7 @@ const MccollinsmediaKsa = () => {
                 ></Box> */}
               </Box>
             </Box>
-            <Box width={{ base: "100%", md: "60%" }} p={10}>
+            <Box width={{ base: "100%", md: "50%" }} p={10}>
               <Box>
                 <Heading
                   fontSize="4xl"
@@ -427,102 +419,60 @@ const MccollinsmediaKsa = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <TeamMemberSlide
-                    img="/assets/image/team/asher.jpg"
-                    name={t.team[8]}
-                    // designation="Digital Designer"
-                  />
-                </SwiperSlide>
-                {/* <SwiperSlide>
-                  <TeamMemberSlide
-                    img="/assets/image/team/Nikhila.jpg"
-                    name="Nikila"
-                    designation="Account Executive"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <TeamMemberSlide
-                    img="/assets/image/team/Leanne.jpg"
-                    name="Leanne"
-                    designation="Account Executive"
-                  />
-                </SwiperSlide> */}
-                <SwiperSlide>
-                  <TeamMemberSlide
                     img="/assets/image/team/Maha-Hussein.jpg"
                     name={t.team[1]}
+                    // designation="Account Executive"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Karim.jpg"
+                    name={t.team[2]}
+                    // designation="Account Executive"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <TeamMemberSlide
+                    img="/assets/image/team/Joeseph.jpg"
+                    name={t.team[3]}
                     // designation="Account Manager"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <TeamMemberSlide
-                    img="/assets/image/team/shabeer.jpg"
-                    name="Shabeer"
+                    img="/assets/image/team/George.jpg"
+                    name={t.team[4]}
                     // designation="Content Creator"
                   />
                 </SwiperSlide>
-                {/* <SwiperSlide>
+                <SwiperSlide>
                   <TeamMemberSlide
-                    img="/assets/image/team/sahal.jpg"
-                    name="Sahal"
-                    designation="Content Creator"
+                    img="/assets/image/team/Aziz.jpg"
+                    name={t.team[5]}
+                    // designation="Content Creator"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <TeamMemberSlide
-                    img="/assets/image/team/Rishika.jpg"
-                    name="Rishika"
-                    designation="Account Executive"
+                    img="/assets/image/team/Sheril.jpg"
+                    name={t.team[6]}
+                    // designation="Account Executive"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <TeamMemberSlide
-                    img="/assets/image/team/Alia.jpg"
-                    name="Alia"
-                    designation="Account Manager"
+                    img="/assets/image/team/Fadwa.jpg"
+                    name={t.team[7]}
+                    // designation="Account Manager"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <TeamMemberSlide
-                    img="/assets/image/team/ashton.jpg"
-                    name="Ashton"
-                    designation="Content Producer"
+                    img="/assets/image/team/asher.jpg"
+                    name={t.team[8]}
+                    // designation="Digital Designer"
                   />
                 </SwiperSlide>
-                <SwiperSlide>
-                  <TeamMemberSlide
-                    img="/assets/image/team/ijas.jpg"
-                    name="Ijas"
-                    designation="Web & Mobile Developer"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <TeamMemberSlide
-                    img="/assets/image/team/Alia.jpg"
-                    name="Alia"
-                    designation="Account Manager"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <TeamMemberSlide
-                    img="/assets/image/team/Moutasem.jpg"
-                    name="Moutasem"
-                    designation="Account Executive"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <TeamMemberSlide
-                    img="/assets/image/team/Maria.jpg"
-                    name="Maria"
-                    designation="Digital Designer"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <TeamMemberSlide
-                    img="/assets/image/team/Nelvin.jpg"
-                    name="Nelvin"
-                    designation="Admin"
-                  />
-                </SwiperSlide> */}
               </Swiper>
             </Box>
           </Flex>
@@ -533,7 +483,11 @@ const MccollinsmediaKsa = () => {
 };
 
 MccollinsmediaKsa.getLayout = function getLayout(MccollinsmediaKsa) {
-  return <InnerLayout color="yellow">{MccollinsmediaKsa}</InnerLayout>;
+  return (
+    <InnerLayout color="yellow" hideIndia={true}>
+      {MccollinsmediaKsa}
+    </InnerLayout>
+  );
 };
 
 export default MccollinsmediaKsa;
