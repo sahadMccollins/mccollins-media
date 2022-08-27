@@ -68,11 +68,11 @@ const MccollinsmediaKsa = () => {
 
   const videoRef = useRef();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     videoRef.current.play();
-  //   }, 100);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      videoRef.current.play();
+    }, 100);
+  }, []);
 
   return (
     <Stack
@@ -90,13 +90,12 @@ const MccollinsmediaKsa = () => {
           playsinline
           loop
           muted
-          autoPlay
           controls
           // loop
           // muted
           // width="100%"
           className="video-banner"
-          // ref={videoRef}
+          ref={videoRef}
           // poster={
           //   isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
           // }
