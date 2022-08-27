@@ -87,8 +87,10 @@ const MccollinsmediaKsa = () => {
         overflow={"hidden"}
       >
         <video
-          muted
+          autoplay
           loop
+          muted
+          playsinline
           width="100%"
           className="video-banner"
           ref={videoRef}
