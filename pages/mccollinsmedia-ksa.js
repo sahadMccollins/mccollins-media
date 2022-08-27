@@ -110,7 +110,6 @@ const MccollinsmediaKsa = () => {
           muted
           width="100%"
           className="video-banner"
-          controls
         >
           <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
