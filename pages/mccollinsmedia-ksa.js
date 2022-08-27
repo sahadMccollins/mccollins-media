@@ -87,16 +87,15 @@ const MccollinsmediaKsa = () => {
         overflow={"hidden"}
       >
         <video
+          playsinline
           loop
           muted
           autoPlay
-          width="100%"
           controls
-          // playsinline
           // loop
           // muted
           // width="100%"
-          // className="video-banner"
+          className="video-banner"
           // ref={videoRef}
           // poster={
           //   isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
