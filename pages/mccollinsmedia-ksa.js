@@ -83,7 +83,8 @@ const MccollinsmediaKsa = () => {
       <Box
         width={"100%"}
         height={{ base: "unset", md: "100vh" }}
-        minHeight={{ base: "550px", md: "700px" }}
+        S
+        minHeight={{ base: "500px", md: "700px" }}
         overflow={"hidden"}
       >
         {/* <video
