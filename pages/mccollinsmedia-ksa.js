@@ -82,8 +82,8 @@ const MccollinsmediaKsa = () => {
     >
       <Box
         width={"100%"}
-        height="100vh"
-        minHeight={"700px"}
+        height={{ base: "unset", md: "100vh" }}
+        minHeight={{ base: "550px", md: "700px" }}
         overflow={"hidden"}
       >
         {/* <video
@@ -110,6 +110,9 @@ const MccollinsmediaKsa = () => {
           muted
           width="100%"
           className="video-banner"
+          poster={
+            isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
+          }
         >
           <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
@@ -117,55 +120,57 @@ const MccollinsmediaKsa = () => {
           />
         </video>
       </Box>
-      <Container maxWidth={"7xl"} zIndex="9" style={{ margin: "auto" }}>
-        <Flex
-          height={{ base: "500px", md: "100vh" }}
-          minHeight={{ base: "unset", md: "700px" }}
-          alignItems="end"
-          placeItems={"flex-end"}
-          pb={"5%"}
-        >
-          <Box width={"100%"}>
-            <Heading fontSize={{ base: "30px", md: "50px" }} color="#FFDE11">
-              {t.heading}
-            </Heading>
-            <Button
-              colorScheme="yellow"
-              background={"#FFDE11"}
-              borderRadius="20px"
-              color="#000"
-              mt={"5"}
-              onClick={() => router.push("/contact")}
-              display={{ base: "none", md: "flex" }}
-              marginLeft={locale === "ar" ? "auto" : "unset"}
-            >
-              <Image
-                src="/assets/image/icons/call.svg"
-                width="25px"
-                height="25px"
-                priority={true}
-              />
-              &nbsp;&nbsp;contact us
-            </Button>
-            <Text
-              mt="10"
-              fontSize={{ base: "15px", md: "18px" }}
-              fontWeight="bold"
-              color={"#fff"}
-              pr={locale === "ar" ? "0" : "5"}
-              maxWidth={locale === "ar" ? "unset" : "700px"}
-              // display={{ base: "none", md: "block" }}
-              marginLeft={locale === "ar" ? "40%" : "unset"}
-              margin={isSmallerThan780 && "0"}
-            >
-              {t.headingContent}
-              <br />
-              <br />
-              {t.headingContent2}
-            </Text>
-          </Box>
-        </Flex>
-      </Container>
+      <Stack position={"absolute"} width="100%">
+        <Container maxWidth={"7xl"} zIndex="9" style={{ margin: "auto" }}>
+          <Flex
+            height={{ base: "500px", md: "100vh" }}
+            minHeight={{ base: "unset", md: "700px" }}
+            alignItems="end"
+            placeItems={"flex-end"}
+            pb={"5%"}
+          >
+            <Box width={"100%"}>
+              <Heading fontSize={{ base: "30px", md: "50px" }} color="#FFDE11">
+                {t.heading}
+              </Heading>
+              <Button
+                colorScheme="yellow"
+                background={"#FFDE11"}
+                borderRadius="20px"
+                color="#000"
+                mt={"5"}
+                onClick={() => router.push("/contact")}
+                display={{ base: "none", md: "flex" }}
+                marginLeft={locale === "ar" ? "auto" : "unset"}
+              >
+                <Image
+                  src="/assets/image/icons/call.svg"
+                  width="25px"
+                  height="25px"
+                  priority={true}
+                />
+                &nbsp;&nbsp;contact us
+              </Button>
+              <Text
+                mt="10"
+                fontSize={{ base: "15px", md: "18px" }}
+                fontWeight="bold"
+                color={"#fff"}
+                pr={locale === "ar" ? "0" : "5"}
+                maxWidth={locale === "ar" ? "unset" : "700px"}
+                // display={{ base: "none", md: "block" }}
+                marginLeft={locale === "ar" ? "40%" : "unset"}
+                margin={isSmallerThan780 && "0"}
+              >
+                {t.headingContent}
+                <br />
+                <br />
+                {t.headingContent2}
+              </Text>
+            </Box>
+          </Flex>
+        </Container>
+      </Stack>
 
       <Box py={"0px "} style={{ marginTop: "0" }}>
         <video loop muted autoPlay width="100%" controls>
