@@ -66,13 +66,13 @@ const MccollinsmediaKsa = () => {
   const t = locale === "en" ? en : ar;
   const [isOpen, setOpen] = useState(false);
 
-  const videoRef = useRef();
+  // const videoRef = useRef();
 
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 100);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     videoRef.current.play();
+  //   }, 100);
+  // }, []);
 
   return (
     <Stack
@@ -103,7 +103,7 @@ const MccollinsmediaKsa = () => {
             type="video/mp4"
           />
         </video> */}
-        <video playsInline loop muted width="100%" controls>
+        <video playsInline autoPlay loop muted width="100%" controls>
           <source
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
             type="video/mp4"
