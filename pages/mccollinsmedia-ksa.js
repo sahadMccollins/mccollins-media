@@ -68,11 +68,11 @@ const MccollinsmediaKsa = () => {
 
   const videoRef = useRef();
 
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 100);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     videoRef.current.play();
+  //   }, 100);
+  // }, []);
 
   return (
     <Stack
