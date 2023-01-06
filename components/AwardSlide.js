@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 
-const AwardSlide = () => {
+const AwardSlide = (props) => {
   return (
     <Flex direction={{ base: "column-reverse", md: "row" }}>
       <Box
@@ -12,13 +12,10 @@ const AwardSlide = () => {
         alignSelf="end"
         bg={"#F7F7F7"}
       >
-        <Heading fontSize={"18px"} mb="20px">
-          The Marketing Award Best Social Media Campaign
+        <Heading fontSize={"20px"} mb="20px">
+          {props.h1}
         </Heading>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </Text>
+        <Text>{props.p}</Text>
       </Box>
       <Box
         width={{ base: "100%", md: "50%" }}
@@ -35,11 +32,7 @@ const AwardSlide = () => {
           top="0"
           left="22px"
         ></Box>
-        <Image
-          src="/assets/image/awards/awards1.jpg"
-          width="316px"
-          height="376px"
-        />
+        <Image src={props.img} width="316px" height="376px" />
         <Box
           display={{ base: "none", md: "block" }}
           position={"absolute"}

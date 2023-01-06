@@ -39,10 +39,22 @@ const Awards = () => {
               ref={swiperRef}
             >
               <SwiperSlide>
-                <AwardSlide />
+                <AwardSlide
+                  img="/assets/image/awards/awards1.jpg"
+                  h1="The Marketing Award Best Social Media Campaign"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <AwardSlide />
+                <AwardSlide
+                  img="/assets/image/awards/awards2.jpg"
+                  h1={`Best Social Media Campaign \n Government - RTA`}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <AwardSlide
+                  img="/assets/image/awards/awards3.jpg"
+                  h1="Young Women Entrepreneur of the Year - SME Business"
+                />
               </SwiperSlide>
             </Swiper>
           </Box>

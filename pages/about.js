@@ -128,11 +128,9 @@ const about = () => {
       <Heading textAlign={"center"} mb={5}>
         Our Instagram Feed
       </Heading>
-      <Box>
-        <InstagramFeed
-          token="IGQVJVU3U4ZAjljbGJEVkVVdnZAJOVBsYmlDdzZAlbWw5clk2TDJKRnBIRG5jQlFYanVLTThFV042MWpwdHFNTDBfUnR0OERQZAGZANZA2IwcG9uQjJKMmFSOGxaMk1qZAmxEUzdEb3FKNEYyX3hhYXZAQMlJuRgZDZD"
-          counter="6"
-        />
+      <Box style={{ marginBottom: "57px" }}>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-59a98d63-d789-41ac-ae96-2f56ea9aa4fd"></div>
       </Box>
     </>
   );

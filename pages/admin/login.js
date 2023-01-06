@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import {
   Box,
   Container,
   Flex,
   Heading,
-  Text,
   Stack,
   Image,
   Input,

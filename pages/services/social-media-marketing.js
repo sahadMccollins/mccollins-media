@@ -241,7 +241,7 @@ const SocialMediaMarketing = () => {
           "Social Media Management \n Social Media Content Creation & Distribution \n Digital Media Buying \n Social Media Listening, Engagement and Reporting \n Social Media Campaigns Management \n Influencer Marketing Campaigns \n Cross Promotion of Online to Offline \n Social Media Chat Bot Development \n Lead Generation and Revenue Generation from Social Media"
         }
       />
-      <Box bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
+      {/* <Box bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
         <Container maxWidth={"7xl"} mt={"5"} mb={"12"}>
           <Heading fontSize={{ base: "3xl", md: "4xl" }}>
             BLOGGER OUTREACH PROGRAM
@@ -258,7 +258,7 @@ const SocialMediaMarketing = () => {
             veniam, quis nostrud exercitation ullamco laboris
           </Text>
         </Container>
-      </Box>
+      </Box> */}
       <TextBox
         heading="CASE STUDY"
         smallHeading="social media designs"
@@ -266,10 +266,26 @@ const SocialMediaMarketing = () => {
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
       <FavWork data={favWorkData} />
-      <TextBox
+      {/* <TextBox
         heading="Social media Platform"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-      />
+        // content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      /> */}
+      <Stack bg={"#fff"}>
+        <Container maxWidth={"7xl"} py="50" zIndex={2} position="relative">
+          <Flex direction={{ base: "column", md: "row" }}>
+            <Box width={{ base: "100%" }} alignSelf="center">
+              <Heading
+                borderLeft="20px solid #FFE962"
+                fontSize={{ base: "3xl", md: "5xl" }}
+                fontWeight={"black"}
+                pl="6"
+              >
+                Social media Platform
+              </Heading>
+            </Box>
+          </Flex>
+        </Container>
+      </Stack>
       <Box
         style={{ position: "absolute", top: "50%", left: "-4%" }}
         display={{ base: "none", md: "block" }}

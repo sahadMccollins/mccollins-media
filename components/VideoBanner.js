@@ -16,14 +16,14 @@ import InnerLayout from "./Layout/InnerLayout";
 
 const VideoBanner = (props) => {
   const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
-  const videoRef = useRef();
+  // const videoRef = useRef();
   const router = useRouter();
 
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 100);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     videoRef.current.play();
+  //   }, 100);
+  // }, []);
   return (
     <Stack
       mt={"-84px"}
@@ -37,13 +37,27 @@ const VideoBanner = (props) => {
         minHeight={"700px"}
         overflow={"hidden"}
       >
-        <video
+        {/* <video
           muted
           loop
           width="100%"
           className="video-banner"
           ref={videoRef}
           poster={isSmallerThan780 && props.poster}
+        >
+          <source src={props.video} type="video/mp4" />
+        </video> */}
+
+        <video
+          playsInline
+          autoPlay
+          loop
+          muted
+          width="100%"
+          className="video-banner"
+          poster={
+            isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
+          }
         >
           <source src={props.video} type="video/mp4" />
         </video>
