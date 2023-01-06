@@ -130,7 +130,7 @@ const about = () => {
       </Heading>
       <Box style={{ marginBottom: "57px" }}>
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-59a98d63-d789-41ac-ae96-2f56ea9aa4fd"></div>
+        <div className="elfsight-app-59a98d63-d789-41ac-ae96-2f56ea9aa4fd"></div>
       </Box>
     </>
   );
