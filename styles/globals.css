@@ -227,3 +227,7 @@ a:focus {
 body .eapps-instagram-feed a.eapps-link {
     clip-path: polygon(100% 0, 100% 100%, 100% 100%);
 }
+
+body .eapps-instagram-feed {
+  bottom: -56px;
+}

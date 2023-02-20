@@ -125,12 +125,12 @@ const about = () => {
 
       <ClientsLogo />
       <Awards />
-      <Heading textAlign={"center"} mb={5}>
+      <Heading textAlign={"center"} mb={"-45px"}>
         Our Instagram Feed
       </Heading>
-      <Box style={{ marginBottom: "57px" }}>
+      <Box>
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div className="elfsight-app-59a98d63-d789-41ac-ae96-2f56ea9aa4fd"></div>
+        <div className="elfsight-app-739c5489-936f-40ef-b775-08920d488e3c"></div>
       </Box>
     </>
   );

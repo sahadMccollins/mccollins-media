@@ -96,7 +96,7 @@ const Footer = (props) => {
                   <Text>209, Entance C, Loft Offices 1 Dubai Media City</Text>
                 </TabPanel>
                 <TabPanel>
-                  <p>two!</p>
+                  <p>Calicut, Kerala</p>
                 </TabPanel>
               </TabPanels>
             </Tabs>
