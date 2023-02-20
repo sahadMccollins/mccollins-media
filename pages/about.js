@@ -1,5 +1,5 @@
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import HeroBanner from "../components/HeroBanner";
 import Image from "next/image";
 import OurTeam from "../components/OurTeam";
@@ -11,6 +11,18 @@ import "react-ig-feed/dist/index.css";
 import Testimonials from "../components/Testimonials";
 
 const about = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apps.elfsight.com/p/platform.js";
+    script.defer = true;
+    document.body.appendChild(script);
+
+    // Clean up the script tag on unmount
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       <HeroBanner
@@ -129,7 +141,7 @@ const about = () => {
         Our Instagram Feed
       </Heading>
       <Box>
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        {/* <script src="https://apps.elfsight.com/p/platform.js" defer></script> */}
         <div className="elfsight-app-739c5489-936f-40ef-b775-08920d488e3c"></div>
       </Box>
     </>
