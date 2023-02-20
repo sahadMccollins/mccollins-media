@@ -1,28 +1,14 @@
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 import HeroBanner from "../components/HeroBanner";
 import Image from "next/image";
 import OurTeam from "../components/OurTeam";
 import TextBox from "../components/TextBox";
 import ClientsLogo from "../components/ClientsLogo";
 import Awards from "../components/Awards";
-import InstagramFeed from "react-ig-feed";
 import "react-ig-feed/dist/index.css";
-import Testimonials from "../components/Testimonials";
 
 const about = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apps.elfsight.com/p/platform.js";
-    script.defer = true;
-    document.body.appendChild(script);
-
-    // Clean up the script tag on unmount
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
       <HeroBanner
