@@ -71,7 +71,7 @@ a:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 999;
   background-color: #fff;
   margin-top: 0;
   padding-top: 15px;
@@ -230,4 +230,29 @@ body .eapps-instagram-feed a.eapps-link {
 
 body .eapps-instagram-feed {
   bottom: -56px;
+}
+
+
+.ibt-box {
+    background-color: #fdce1a;
+    position: relative;
+    z-index: 1;
+    padding-top: 140px;
+    padding-bottom: 120px;
+}
+
+.ibt-h2 {
+  font-size: 50px !important;
+  font-weight: 800;
+  text-align: center;
+  color: #000;
+}
+
+.servicePoint2 div {
+  background-color: #fff;
+    border: 2px solid #ffe962;
+    border-left: 15px solid #FFE962;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: bold;
 }

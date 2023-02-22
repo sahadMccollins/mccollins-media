@@ -537,7 +537,7 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Website Development"
-                          href="/services/website-development"
+                          href="/services/web-design-and-development"
                         />
                       </li>
                       <li
@@ -547,7 +547,7 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Social Media Marketing"
-                          href="/services/social-media-marketing"
+                          href="/services/social-media-agency-dubai"
                         />
                       </li>
                       <li
@@ -577,7 +577,7 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Brand Development"
-                          href="/services/brand-development"
+                          href="/services/branding"
                         />
                       </li>
 
@@ -644,7 +644,7 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Food And Beverage"
-                          href="/industry/food-and-beverage-marketing"
+                          href="/industry/food-and-beverage-marketing-services"
                         />
                       </li>
                       <li

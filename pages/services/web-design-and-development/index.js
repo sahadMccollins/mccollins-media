@@ -13,16 +13,16 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import InnerLayout from "../../components/Layout/InnerLayout";
+import InnerLayout from "../../../components/Layout/InnerLayout";
 import Image from "next/image";
 
-import TextBox2 from "../../components/TextBox2";
-import TextBox from "../../components/TextBox";
-import FavWork from "../../components/FavWork";
-import TechIcon from "../../components/TechIcon";
-import ClientsLogo from "../../components/ClientsLogo";
-import ServiceTabsDetails from "../../components/ServiceTabsDetails";
-import VideoBanner from "../../components/VideoBanner";
+import TextBox2 from "../../../components/TextBox2";
+import TextBox from "../../../components/TextBox";
+import FavWork from "../../../components/FavWork";
+import TechIcon from "../../../components/TechIcon";
+import ClientsLogo from "../../../components/ClientsLogo";
+import ServiceTabsDetails from "../../../components/ServiceTabsDetails";
+import VideoBanner from "../../../components/VideoBanner";
 import { motion } from "framer-motion";
 
 const WebsiteDevelopment = () => {

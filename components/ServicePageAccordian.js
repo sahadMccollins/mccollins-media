@@ -74,7 +74,9 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
-                    onClick={() => router.push("/services/website-development")}
+                    onClick={() =>
+                      router.push("/services/web-design-and-development")
+                    }
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
@@ -114,7 +116,7 @@ const ServicePageAccordian = () => {
                     mt={4}
                     fontWeight="bold"
                     onClick={() =>
-                      router.push("/services/social-media-marketing")
+                      router.push("/services/social-media-agency-dubai")
                     }
                   >
                     view more
@@ -233,7 +235,7 @@ const ServicePageAccordian = () => {
                     color="#000"
                     mt={4}
                     fontWeight="bold"
-                    onClick={() => router.push("/services/brand-development")}
+                    onClick={() => router.push("/services/branding")}
                   >
                     view more
                     <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />

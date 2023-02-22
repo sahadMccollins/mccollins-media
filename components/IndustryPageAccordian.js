@@ -114,7 +114,9 @@ const IndustryPageAccordian = () => {
                     mt={4}
                     fontWeight="bold"
                     onClick={() =>
-                      router.push("/industry/food-and-beverage-marketing")
+                      router.push(
+                        "/industry/food-and-beverage-marketing-services"
+                      )
                     }
                   >
                     view more
