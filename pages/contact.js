@@ -52,11 +52,10 @@ const Contact = () => {
                   our address
                 </Heading>
                 <Text fontWeight={"bold"} fontSize={"20px"} mt={5} mb={10}>
-                  UAE:
-                  <br /> 209, Entance C, Loft Offices 1 <br />
+                  209, Entance C, Loft Offices 1 <br />
                   Dubai Media City, Dubai
-                  <br /> India:
-                  <br /> Calicut, Kerala
+                  {/* <br /> India:
+                  <br /> Calicut, Kerala */}
                 </Text>
               </Box>
               <Box>

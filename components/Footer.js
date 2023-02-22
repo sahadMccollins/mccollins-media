@@ -84,20 +84,20 @@ const Footer = (props) => {
             <Tabs color={"#fff"} mt="5">
               <TabList>
                 <Tab fontSize={"xl"}>Dubai Office.</Tab>
-                <Tab
+                {/* <Tab
                   fontSize={"xl"}
                   display={props.hideIndia ? "none" : "block"}
                 >
                   India Office.
-                </Tab>
+                </Tab> */}
               </TabList>
               <TabPanels>
                 <TabPanel pl={"0"}>
                   <Text>209, Entance C, Loft Offices 1 Dubai Media City</Text>
                 </TabPanel>
-                <TabPanel>
+                {/* <TabPanel>
                   <p>Calicut, Kerala</p>
-                </TabPanel>
+                </TabPanel> */}
               </TabPanels>
             </Tabs>
             <Box fontSize={"18px"} color="#fff" mt={"5"}>
