@@ -96,11 +96,14 @@ const FormSubmit = ({ data }) => {
                 <Thead>
                   <Tr>
                     <Th>SI.No</Th>
-                    <Th>Name</Th>
+                    <Th>First Name</Th>
+                    <Th>Last Name</Th>
+                    <Th>Company</Th>
+                    <Th>Job Title</Th>
                     <Th>Email</Th>
                     <Th>Contact</Th>
-                    <Th>Looking For</Th>
-                    <Th>Project Details</Th>
+                    <Th>Services</Th>
+                    <Th>How can we help you</Th>
                     <Th>Delete</Th>
                   </Tr>
                 </Thead>
@@ -109,16 +112,19 @@ const FormSubmit = ({ data }) => {
                     ? data.map((form, i) => (
                         <Tr key={form._id}>
                           <Td>{i + 1}</Td>
-                          <Td>{form.name}</Td>
+                          <Td>{form.firstName}</Td>
+                          <Td>{form.lastName}</Td>
+                          <Td>{form.company}</Td>
+                          <Td>{form.jobTitle}</Td>
                           <Td>{form.email}</Td>
                           <Td>{form.contact}</Td>
-                          <Td>{form.lookingFor}</Td>
-                          <Td>{form.project}</Td>
+                          <Td>{form.services}</Td>
+                          <Td>{form.text}</Td>
                           <Td>
                             <DeleteIcon
                               cursor={"pointer"}
                               onClick={() => {
-                                setName(form.name);
+                                setName(form.firstName);
                                 setFormId(form._id);
                                 onDeleteOpen();
                               }}
@@ -131,11 +137,15 @@ const FormSubmit = ({ data }) => {
                 <Tfoot>
                   <Tr>
                     <Th>SI.No</Th>
-                    <Th>Name</Th>
+                    <Th>First Name</Th>
+                    <Th>Last Name</Th>
+                    <Th>Company</Th>
+                    <Th>Job Title</Th>
                     <Th>Email</Th>
                     <Th>Contact</Th>
-                    <Th>Looking For</Th>
-                    <Th>Project Details</Th>
+                    <Th>Services</Th>
+                    <Th>How can we help you</Th>
+                    <Th>Delete</Th>
                   </Tr>
                 </Tfoot>
               </Table>

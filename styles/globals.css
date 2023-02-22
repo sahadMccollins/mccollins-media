@@ -256,3 +256,11 @@ body .eapps-instagram-feed {
     font-size: 18px;
     font-weight: bold;
 }
+
+.cnt-rs .chakra-checkbox__control {
+  box-shadow: none !important;
+}
+.cnt-rs .chakra-checkbox__control[data-checked] {
+      background: #FFDE11 !important;
+    border-color: #FFDE11 !important;
+}
