@@ -54,6 +54,7 @@ const VideoCaseStudy = () => {
                     points="5,0 30,15 5,30"
                     viewBox="0 0 30 15"
                   ></polygon>
+                  Ī
                   <path
                     className="path"
                     d="M5,0 L30,15 L5,30z"
