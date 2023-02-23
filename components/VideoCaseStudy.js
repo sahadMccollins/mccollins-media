@@ -44,7 +44,7 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
-            <a className="button is-play" href="#">
+            <div className="button is-play">
               <div className="button-outer-circle has-scale-animation"></div>
               <div className="button-outer-circle has-scale-animation has-delay-short"></div>
               <div className="button-icon is-play">
@@ -64,7 +64,7 @@ const VideoCaseStudy = () => {
                   ></path>
                 </svg>
               </div>
-            </a>
+            </div>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             OAK BERRY
@@ -82,7 +82,7 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
-            <a className="button is-play" href="#">
+            <div className="button is-play">
               <div className="button-outer-circle has-scale-animation"></div>
               <div className="button-outer-circle has-scale-animation has-delay-short"></div>
               <div className="button-icon is-play">
@@ -101,7 +101,7 @@ const VideoCaseStudy = () => {
                   ></path>
                 </svg>
               </div>
-            </a>
+            </div>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             Cleaning Superstore
@@ -121,7 +121,7 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
-            <a className="button is-play" href="#">
+            <div className="button is-play">
               <div className="button-outer-circle has-scale-animation"></div>
               <div className="button-outer-circle has-scale-animation has-delay-short"></div>
               <div className="button-icon is-play">
@@ -140,7 +140,7 @@ const VideoCaseStudy = () => {
                   ></path>
                 </svg>
               </div>
-            </a>
+            </div>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             Poco
@@ -154,7 +154,7 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
-            <a className="button is-play" href="#">
+            <div className="button is-play">
               <div className="button-outer-circle has-scale-animation"></div>
               <div className="button-outer-circle has-scale-animation has-delay-short"></div>
               <div className="button-icon is-play">
@@ -173,7 +173,7 @@ const VideoCaseStudy = () => {
                   ></path>
                 </svg>
               </div>
-            </a>
+            </div>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             Snaidero
