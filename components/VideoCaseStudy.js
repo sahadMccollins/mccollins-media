@@ -60,7 +60,7 @@ const VideoCaseStudy = () => {
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
-                    stroke-width="1"
+                    strokeWidth="1"
                   ></path>
                 </svg>
               </div>
@@ -97,7 +97,7 @@ const VideoCaseStudy = () => {
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
-                    stroke-width="1"
+                    strokeWidth="1"
                   ></path>
                 </svg>
               </div>
@@ -136,7 +136,7 @@ const VideoCaseStudy = () => {
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
-                    stroke-width="1"
+                    strokeWidth="1"
                   ></path>
                 </svg>
               </div>
@@ -169,7 +169,7 @@ const VideoCaseStudy = () => {
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
-                    stroke-width="1"
+                    strokeWidth="1"
                   ></path>
                 </svg>
               </div>
