@@ -3,6 +3,7 @@ import Awards from "../components/Awards";
 import CaseStudy from "../components/CaseStudy";
 import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
+import Partner from "../components/Partner";
 import ServiceAccordian from "../components/ServiceAccordian";
 import ServiceTabs from "../components/ServiceTabs";
 import TechIcon from "../components/TechIcon";
@@ -11,12 +12,12 @@ import TextBox from "../components/TextBox";
 export default function Home() {
   const favWorkData = [
     {
-      name: "Dafza",
+      name: "DAFZA",
       img: "/assets/image/caseStudy/caseStudy1.jpg",
       type: "Web Devlopment",
     },
     {
-      name: "Costa Rica",
+      name: "Costa Coffee",
       img: "/assets/image/caseStudy/caseStudy2.jpg",
       type: "Web Devlopment",
     },
@@ -26,12 +27,12 @@ export default function Home() {
       type: "Web Devlopment",
     },
     {
-      name: "Dafza",
+      name: "DAFZA",
       img: "/assets/image/caseStudy/caseStudy1.jpg",
       type: "Web Devlopment",
     },
     {
-      name: "Costa Rica",
+      name: "Costa Coffee",
       img: "/assets/image/caseStudy/caseStudy2.jpg",
       type: "Web Devlopment",
     },
@@ -87,11 +88,11 @@ export default function Home() {
       {/* <ServiceAccordian /> */}
 
       <TextBox
-        heading="WHAT WE WORK WITH"
+        heading="OUR PARTNERS"
         subHeadingOnly="As a technology-driven company, we adapt to the latest trends and combine them with consumer insights to help brands be on top of their game. "
       />
 
-      <TechIcon />
+      <Partner />
 
       <hr />
 

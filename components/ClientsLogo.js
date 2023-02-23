@@ -42,7 +42,7 @@ const ClientsLogo = () => {
             fontSize={{ base: "35px", md: "45px" }}
             fontWeight={"black"}
           >
-            SOME OF OUR RECENT CLIENTS WE WORK FOR{" "}
+            CLIENTS WE WORK WITH
             <span style={{ color: "#fff", fontSize: "20px" }}>■</span>
           </Heading>
           {/* <Button borderRadius={20} mt="20px" background={"#fff"}>

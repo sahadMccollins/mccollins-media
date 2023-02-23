@@ -29,12 +29,12 @@ import VideoCaseStudy from "../../../components/VideoCaseStudy";
 const WebsiteDevelopment = () => {
   const favWorkData = [
     {
-      name: "Dafza",
+      name: "DAFZA",
       img: "/assets/image/caseStudy/caseStudy1.jpg",
       type: "Web Devlopment",
     },
     {
-      name: "Costa Rica",
+      name: "Costa Coffee",
       img: "/assets/image/caseStudy/caseStudy2.jpg",
       type: "Web Devlopment",
     },
@@ -44,12 +44,12 @@ const WebsiteDevelopment = () => {
       type: "Web Devlopment",
     },
     {
-      name: "Dafza",
+      name: "DAFZA",
       img: "/assets/image/caseStudy/caseStudy1.jpg",
       type: "Web Devlopment",
     },
     {
-      name: "Costa Rica",
+      name: "Costa Coffee",
       img: "/assets/image/caseStudy/caseStudy2.jpg",
       type: "Web Devlopment",
     },
@@ -83,12 +83,9 @@ const WebsiteDevelopment = () => {
                 overflowY={"hidden"}
               >
                 <Tab>Wordpress Development</Tab>
-                <Tab>Php Website Development</Tab>
-                <Tab>Magento Development</Tab>
-                <Tab>Drupal Development</Tab>
                 <Tab>Shopify Development</Tab>
-                <Tab>E-commerce Development</Tab>
-                <Tab>Hosting Services</Tab>
+                <Tab>Sitecore</Tab>
+                <Tab>Website Landing Page</Tab>
                 <Tab>Landing Page Development</Tab>
               </TabList>
 

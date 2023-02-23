@@ -28,12 +28,12 @@ import { useRouter } from "next/router";
 const DigitalMarketingSEO = () => {
   const favWorkData = [
     {
-      name: "Dafza",
+      name: "DAFZA",
       img: "/assets/image/caseStudy/caseStudy1.jpg",
       type: "Web Devlopment",
     },
     {
-      name: "Costa Rica",
+      name: "Costa Coffee",
       img: "/assets/image/caseStudy/caseStudy2.jpg",
       type: "Web Devlopment",
     },
@@ -43,12 +43,12 @@ const DigitalMarketingSEO = () => {
       type: "Web Devlopment",
     },
     {
-      name: "Dafza",
+      name: "DAFZA",
       img: "/assets/image/caseStudy/caseStudy1.jpg",
       type: "Web Devlopment",
     },
     {
-      name: "Costa Rica",
+      name: "Costa Coffee",
       img: "/assets/image/caseStudy/caseStudy2.jpg",
       type: "Web Devlopment",
     },

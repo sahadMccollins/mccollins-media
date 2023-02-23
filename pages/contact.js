@@ -41,7 +41,7 @@ const Contact = () => {
                 <Text fontWeight={"bold"} fontSize={"20px"} mt={5} mb={10}>
                   Mobile: +971 4 445 6848
                   <br />
-                  E-Mail: Info@Mccollinsmedia.Com
+                  E-Mail: info@mccollinsmedia.com
                 </Text>
               </Box>
               <Box>
@@ -53,11 +53,10 @@ const Contact = () => {
                     padding: "0 15px",
                   }}
                 >
-                  our address
+                  Our Address
                 </Heading>
                 <Text fontWeight={"bold"} fontSize={"20px"} mt={5} mb={10}>
-                  209, Entance C, Loft Offices 1 <br />
-                  Dubai Media City, Dubai
+                  G04, Loft Office 2, Entrance C, <br /> Dubai Media City, Dubai
                   {/* <br /> India:
                   <br /> Calicut, Kerala */}
                 </Text>
@@ -71,10 +70,10 @@ const Contact = () => {
                     padding: "0 15px",
                   }}
                 >
-                  office hours
+                  Office Hours
                 </Heading>
                 <Text fontWeight={"bold"} fontSize={"20px"} mt={5} mb={10}>
-                  Sunday - Thursday: 09:00 - 06:00
+                  Monday - Friday: 9.00 AM to 6.00 PM
                 </Text>
               </Box>
             </Flex>
