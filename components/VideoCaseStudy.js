@@ -35,7 +35,7 @@ const VideoCaseStudy = () => {
         </Box>
         <Box>
           <Box
-            classNameName="VCSBox"
+            className="VCSBox"
             mt="10"
             onClick={() => handleClick("bOvDzPdWNEI")}
           >
@@ -72,7 +72,7 @@ const VideoCaseStudy = () => {
         </Box>
         <Box>
           <Box
-            classNameName="VCSBox"
+            className="VCSBox"
             mt="10"
             onClick={() => handleClick("Mmu2Nx3m9Zk")}
           >
@@ -114,10 +114,7 @@ const VideoCaseStudy = () => {
         mt={{ base: 10, md: 0 }}
       >
         <Box>
-          <Box
-            classNameName="VCSBox"
-            onClick={() => handleClick("qRtiBjuBbDk")}
-          >
+          <Box className="VCSBox" onClick={() => handleClick("qRtiBjuBbDk")}>
             <Image
               src={"/assets/image/caseStudy/CS-SQ2.jpg"}
               layout="fill"
@@ -150,10 +147,7 @@ const VideoCaseStudy = () => {
           <Text fontSize={"15px"}>Digital Marketing, Branding</Text>
         </Box>
         <Box mt={10}>
-          <Box
-            classNameName="VCSBox"
-            onClick={() => handleClick("kY2ICDFk-3E")}
-          >
+          <Box className="VCSBox" onClick={() => handleClick("kY2ICDFk-3E")}>
             <Image
               src={"/assets/image/caseStudy/CS-SQ4.jpg"}
               layout="fill"
