@@ -24,6 +24,7 @@ import ClientsLogo from "../../../components/ClientsLogo";
 import ServiceTabsDetails from "../../../components/ServiceTabsDetails";
 import VideoBanner from "../../../components/VideoBanner";
 import { motion } from "framer-motion";
+import VideoCaseStudy from "../../../components/VideoCaseStudy";
 
 const WebsiteDevelopment = () => {
   const favWorkData = [
@@ -127,10 +128,10 @@ const WebsiteDevelopment = () => {
         </Stack>
       </Container>
       <Box
-        background={{
-          base: "linear-gradient(to bottom,#ffde11 26%,#fff 26%)",
-          md: "linear-gradient(to bottom,#ffde11 50%,#fff 50%)",
-        }}
+        // background={{
+        //   base: "linear-gradient(to bottom,#ffde11 26%,#fff 26%)",
+        //   md: "linear-gradient(to bottom,#ffde11 50%,#fff 50%)",
+        // }}
         position={"relative"}
       >
         <Box style={{ position: "absolute", top: "-50px", left: "10%" }}>
@@ -159,7 +160,7 @@ const WebsiteDevelopment = () => {
           />
         </Box>
         <Box
-          style={{ position: "absolute", top: "54%", left: "10%" }}
+          style={{ position: "absolute", top: "48%", left: "30%" }}
           display={{ base: "none", md: "block" }}
         >
           <Image
@@ -169,7 +170,7 @@ const WebsiteDevelopment = () => {
           />
         </Box>
         <Box
-          style={{ position: "absolute", top: "55%", right: "10%" }}
+          style={{ position: "absolute", top: "60%", right: "0%" }}
           display={{ base: "none", md: "block" }}
         >
           <Image
@@ -229,6 +230,10 @@ const WebsiteDevelopment = () => {
         </Container>
       </Box>
       <FavWork data={favWorkData} />
+
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
+        <VideoCaseStudy />
+      </Container>
       <TextBox
         heading="Technologies We work with"
         subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."

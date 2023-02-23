@@ -264,3 +264,8 @@ body .eapps-instagram-feed {
       background: #FFDE11 !important;
     border-color: #FFDE11 !important;
 }
+
+.VCSBox {
+  cursor: pointer;
+  width: 100%; height: 580px; position: relative;
+}
