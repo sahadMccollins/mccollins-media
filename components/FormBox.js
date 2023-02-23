@@ -87,6 +87,7 @@ const FormBox = () => {
           width: "fit-content",
           padding: "0 15px",
         }}
+        fontSize={{ base: "20px", md: "35px" }}
       >
         Ready to get started?
       </Heading>

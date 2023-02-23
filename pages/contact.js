@@ -22,7 +22,11 @@ const Contact = () => {
       <Box>
         <Container maxWidth={"7xl"}>
           <Flex my={20} direction={"column"}>
-            <Flex width={"100%"} justifyContent="space-between">
+            <Flex
+              width={"100%"}
+              justifyContent="space-between"
+              flexDirection={{ base: "column", md: "row" }}
+            >
               <Box>
                 <Heading
                   style={{

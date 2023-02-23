@@ -16,7 +16,7 @@ const VideoCaseStudy = () => {
 
   return (
     <Flex flexDirection={{ base: "column", md: "row" }} mt="50px">
-      <Box width={"100%"} paddingRight="20px">
+      <Box width={"100%"} paddingRight={{ base: "0", md: "20px" }}>
         <Box>
           <Heading as={"h4"}>VIDEO CASE STUDY</Heading>
           <Text maxWidth={"500px"} mt="3" fontSize={"20px"}>
@@ -44,6 +44,26 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
+            <a class="button is-play" href="#">
+              <div class="button-outer-circle has-scale-animation"></div>
+              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div class="button-icon is-play">
+                <svg height="100%" width="100%" fill="#f857a6">
+                  <polygon
+                    class="triangle"
+                    points="5,0 30,15 5,30"
+                    viewBox="0 0 30 15"
+                  ></polygon>
+                  <path
+                    class="path"
+                    d="M5,0 L30,15 L5,30z"
+                    fill="none"
+                    stroke="#f857a6"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </div>
+            </a>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             OAK BERRY
@@ -61,6 +81,26 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
+            <a class="button is-play" href="#">
+              <div class="button-outer-circle has-scale-animation"></div>
+              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div class="button-icon is-play">
+                <svg height="100%" width="100%" fill="#f857a6">
+                  <polygon
+                    class="triangle"
+                    points="5,0 30,15 5,30"
+                    viewBox="0 0 30 15"
+                  ></polygon>
+                  <path
+                    class="path"
+                    d="M5,0 L30,15 L5,30z"
+                    fill="none"
+                    stroke="#f857a6"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </div>
+            </a>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             Cleaning Superstore
@@ -68,7 +108,11 @@ const VideoCaseStudy = () => {
           <Text fontSize={"15px"}>Development, Web Design</Text>
         </Box>
       </Box>
-      <Box width={"100%"} paddingLeft="20px">
+      <Box
+        width={"100%"}
+        paddingLeft={{ base: "0", md: "20px" }}
+        mt={{ base: 10, md: 0 }}
+      >
         <Box>
           <Box className="VCSBox" onClick={() => handleClick("qRtiBjuBbDk")}>
             <Image
@@ -76,6 +120,26 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
+            <a class="button is-play" href="#">
+              <div class="button-outer-circle has-scale-animation"></div>
+              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div class="button-icon is-play">
+                <svg height="100%" width="100%" fill="#f857a6">
+                  <polygon
+                    class="triangle"
+                    points="5,0 30,15 5,30"
+                    viewBox="0 0 30 15"
+                  ></polygon>
+                  <path
+                    class="path"
+                    d="M5,0 L30,15 L5,30z"
+                    fill="none"
+                    stroke="#f857a6"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </div>
+            </a>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             Poco
@@ -89,6 +153,26 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
+            <a class="button is-play" href="#">
+              <div class="button-outer-circle has-scale-animation"></div>
+              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div class="button-icon is-play">
+                <svg height="100%" width="100%" fill="#f857a6">
+                  <polygon
+                    class="triangle"
+                    points="5,0 30,15 5,30"
+                    viewBox="0 0 30 15"
+                  ></polygon>
+                  <path
+                    class="path"
+                    d="M5,0 L30,15 L5,30z"
+                    fill="none"
+                    stroke="#f857a6"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </div>
+            </a>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
             Snaidero

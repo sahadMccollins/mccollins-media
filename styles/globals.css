@@ -269,3 +269,167 @@ body .eapps-instagram-feed {
   cursor: pointer;
   width: 100%; height: 580px; position: relative;
 }
+
+  @media (max-width: 768px) {
+    .VCSBox {
+      height: 250px;
+    }
+  }
+
+
+.VCSBox  .button {
+  display: inline-block;
+  position: relative;
+      top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.VCSBox path {
+      fill: #FFDE11;
+    stroke: none;
+}
+.VCSBox .button.is-play {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.VCSBox .button.is-play .button-outer-circle {
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.VCSBox .button.is-play .button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+}
+.VCSBox .button.is-play .button-icon .triangle {
+  animation: fadeIn 7s ease;
+}
+.VCSBox .button.is-play .button-icon .path {
+  stroke-dasharray: 90;
+  stroke-dashoffset: 0;
+  animation: triangleStroke 3s;
+  animation-timing-function: ease;
+}
+.VCSBox .has-scale-animation {
+  animation: smallScale 3s infinite;
+}
+.VCSBox .has-delay-short {
+  animation-delay: 0.5s;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@-o-keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
