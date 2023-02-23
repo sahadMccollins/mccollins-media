@@ -35,7 +35,7 @@ const VideoCaseStudy = () => {
         </Box>
         <Box>
           <Box
-            className="VCSBox"
+            classNameName="VCSBox"
             mt="10"
             onClick={() => handleClick("bOvDzPdWNEI")}
           >
@@ -44,18 +44,18 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
-            <a class="button is-play" href="#">
-              <div class="button-outer-circle has-scale-animation"></div>
-              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div class="button-icon is-play">
+            <a className="button is-play" href="#">
+              <div className="button-outer-circle has-scale-animation"></div>
+              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div className="button-icon is-play">
                 <svg height="100%" width="100%" fill="#f857a6">
                   <polygon
-                    class="triangle"
+                    className="triangle"
                     points="5,0 30,15 5,30"
                     viewBox="0 0 30 15"
                   ></polygon>
                   <path
-                    class="path"
+                    className="path"
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
@@ -72,7 +72,7 @@ const VideoCaseStudy = () => {
         </Box>
         <Box>
           <Box
-            className="VCSBox"
+            classNameName="VCSBox"
             mt="10"
             onClick={() => handleClick("Mmu2Nx3m9Zk")}
           >
@@ -81,18 +81,18 @@ const VideoCaseStudy = () => {
               layout="fill"
               objectFit="cover"
             />
-            <a class="button is-play" href="#">
-              <div class="button-outer-circle has-scale-animation"></div>
-              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div class="button-icon is-play">
+            <a className="button is-play" href="#">
+              <div className="button-outer-circle has-scale-animation"></div>
+              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div className="button-icon is-play">
                 <svg height="100%" width="100%" fill="#f857a6">
                   <polygon
-                    class="triangle"
+                    className="triangle"
                     points="5,0 30,15 5,30"
                     viewBox="0 0 30 15"
                   ></polygon>
                   <path
-                    class="path"
+                    className="path"
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
@@ -114,24 +114,27 @@ const VideoCaseStudy = () => {
         mt={{ base: 10, md: 0 }}
       >
         <Box>
-          <Box className="VCSBox" onClick={() => handleClick("qRtiBjuBbDk")}>
+          <Box
+            classNameName="VCSBox"
+            onClick={() => handleClick("qRtiBjuBbDk")}
+          >
             <Image
               src={"/assets/image/caseStudy/CS-SQ2.jpg"}
               layout="fill"
               objectFit="cover"
             />
-            <a class="button is-play" href="#">
-              <div class="button-outer-circle has-scale-animation"></div>
-              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div class="button-icon is-play">
+            <a className="button is-play" href="#">
+              <div className="button-outer-circle has-scale-animation"></div>
+              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div className="button-icon is-play">
                 <svg height="100%" width="100%" fill="#f857a6">
                   <polygon
-                    class="triangle"
+                    className="triangle"
                     points="5,0 30,15 5,30"
                     viewBox="0 0 30 15"
                   ></polygon>
                   <path
-                    class="path"
+                    className="path"
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
@@ -147,24 +150,27 @@ const VideoCaseStudy = () => {
           <Text fontSize={"15px"}>Digital Marketing, Branding</Text>
         </Box>
         <Box mt={10}>
-          <Box className="VCSBox" onClick={() => handleClick("kY2ICDFk-3E")}>
+          <Box
+            classNameName="VCSBox"
+            onClick={() => handleClick("kY2ICDFk-3E")}
+          >
             <Image
               src={"/assets/image/caseStudy/CS-SQ4.jpg"}
               layout="fill"
               objectFit="cover"
             />
-            <a class="button is-play" href="#">
-              <div class="button-outer-circle has-scale-animation"></div>
-              <div class="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div class="button-icon is-play">
+            <a className="button is-play" href="#">
+              <div className="button-outer-circle has-scale-animation"></div>
+              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
+              <div className="button-icon is-play">
                 <svg height="100%" width="100%" fill="#f857a6">
                   <polygon
-                    class="triangle"
+                    className="triangle"
                     points="5,0 30,15 5,30"
                     viewBox="0 0 30 15"
                   ></polygon>
                   <path
-                    class="path"
+                    className="path"
                     d="M5,0 L30,15 L5,30z"
                     fill="none"
                     stroke="#f857a6"
