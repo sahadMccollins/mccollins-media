@@ -74,7 +74,11 @@ const ServiceIcon = () => {
             </Text>
           </Box>
           <Box
-            onClick={() => router.push("/services/web-design-and-development/")}
+            onClick={() =>
+              router.push(
+                "/services/web-design-and-development/website-landing-page"
+              )
+            }
             className="icon"
           >
             <Image

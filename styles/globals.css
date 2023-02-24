@@ -465,3 +465,9 @@ body .eapps-instagram-feed {
   margin: 0;
   padding: 100px;
 }
+
+  @media (max-width: 768px) {
+    .creative-head h3 {
+      padding: 60px 20px;
+    }
+  }

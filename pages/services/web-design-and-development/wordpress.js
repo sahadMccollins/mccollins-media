@@ -113,7 +113,7 @@ const Wordpress = () => {
       <Box className="creative-head">
         <Heading
           as={"h3"}
-          fontSize="75px"
+          fontSize={{ base: "25px", md: "75px" }}
           mt={"10"}
           textAlign="center"
           color={"#fff"}
