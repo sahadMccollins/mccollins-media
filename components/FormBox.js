@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 
-const FormBox = () => {
+const FormBox = (props) => {
   const [FirstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
   const [company, setCompany] = useState("");
@@ -80,17 +80,24 @@ const FormBox = () => {
   };
   return (
     <Box width={"100%"} mt="50px">
-      <Heading
-        style={{
-          background:
-            "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
-          width: "fit-content",
-          padding: "0 15px",
-        }}
-        fontSize={{ base: "20px", md: "35px" }}
-      >
-        Ready to get started?
-      </Heading>
+      {props.heading ? (
+        <Heading fontSize={{ base: "20px", md: "35px" }}>
+          {props.heading}
+        </Heading>
+      ) : (
+        <Heading
+          style={{
+            background:
+              "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
+            width: "fit-content",
+            padding: "0 15px",
+          }}
+          fontSize={{ base: "20px", md: "35px" }}
+        >
+          Ready to get started?
+        </Heading>
+      )}
+
       <Text
         fontWeight={"bold"}
         fontSize={"16px"}

@@ -1,7 +1,17 @@
-import { Container, Heading, OrderedList, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  OrderedList,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
+import ClientsLogo from "../../../components/ClientsLogo";
+import FormBox from "../../../components/FormBox";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
+import Testimonials from "../../../components/Testimonials";
 
 const Shopify = () => {
   return (
@@ -58,6 +68,28 @@ const Shopify = () => {
           products via Performance Marketing and Social Media Marketing.
         </Text>
       </Container>
+      <Box className="creative-head">
+        <Heading
+          as={"h3"}
+          fontSize="75px"
+          mt={"10"}
+          textAlign="center"
+          color={"#fff"}
+          textTransform="uppercase"
+        >
+          Create A Web Presence <br /> That Delivers Results
+        </Heading>
+      </Box>
+      <Container
+        maxWidth={"7xl"}
+        style={{ margin: "auto", marginBottom: "40px" }}
+      >
+        <FormBox heading={"Request a Call Back"} />
+      </Container>
+      <ClientsLogo />
+      <Box my="10">
+        <Testimonials />
+      </Box>
     </Stack>
   );
 };
