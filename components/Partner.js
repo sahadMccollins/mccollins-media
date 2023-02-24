@@ -6,7 +6,7 @@ const Partner = () => {
     <Stack>
       <Container maxWidth={"7xl"} pb="20">
         <SimpleGrid
-          columns={{ base: 2, md: 4 }}
+          columns={{ base: 2, md: 5 }}
           spacingX="40px"
           spacingY="60px"
           alignItems={"center"}
@@ -48,6 +48,7 @@ const Partner = () => {
               height="120px"
             />
           </Box>
+          <Box display={{ base: "none", md: "block" }}></Box>
           <Box>
             <Image
               src="/assets/image/partner/ (6).png"

@@ -4,7 +4,9 @@ import React from "react";
 const InnerBannerTwo = (props) => {
   return (
     <Box className="ibt-box">
-      <Heading className="ibt-h2">{props.h1}</Heading>
+      <Heading className="ibt-h2" style={{ textTransform: "uppercase" }}>
+        {props.h1}
+      </Heading>
     </Box>
   );
 };

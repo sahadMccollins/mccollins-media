@@ -25,6 +25,7 @@ import ServiceTabsDetails from "../../../components/ServiceTabsDetails";
 import VideoBanner from "../../../components/VideoBanner";
 import { motion } from "framer-motion";
 import VideoCaseStudy from "../../../components/VideoCaseStudy";
+import ServiceIcon from "../../../components/ServiceIcon";
 
 const WebsiteDevelopment = () => {
   const favWorkData = [
@@ -68,7 +69,7 @@ const WebsiteDevelopment = () => {
         poster="/assets/image/servicePage/serviceAccordian.jpg"
       />
 
-      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
+      {/* <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
         <Stack
           position={"relative"}
           zIndex="2"
@@ -123,7 +124,7 @@ const WebsiteDevelopment = () => {
             </Tabs>
           </Container>
         </Stack>
-      </Container>
+      </Container> */}
       <Box
         // background={{
         //   base: "linear-gradient(to bottom,#ffde11 26%,#fff 26%)",
@@ -131,14 +132,14 @@ const WebsiteDevelopment = () => {
         // }}
         position={"relative"}
       >
-        <Box style={{ position: "absolute", top: "-50px", left: "10%" }}>
+        {/* <Box style={{ position: "absolute", top: "-50px", left: "10%" }}>
           <Image
             src={"/assets/image/design/6.svg"}
             width="68px"
             height={"130px"}
           />
-        </Box>
-        <Box style={{ position: "absolute", top: "10%", right: "0px" }}>
+        </Box> */}
+        {/* <Box style={{ position: "absolute", top: "10%", right: "0px" }}>
           <Image
             src={"/assets/image/design/8.svg"}
             width="161px"
@@ -175,11 +176,12 @@ const WebsiteDevelopment = () => {
             width="89px"
             height={"103px"}
           />
-        </Box>
+        </Box> */}
 
         <Container maxWidth={"7xl"}>
+          <ServiceIcon />
           <Box>
-            <motion.div
+            {/* <motion.div
               initial={{ scale: 0.6, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true, amount: 0.5 }}
@@ -190,11 +192,11 @@ const WebsiteDevelopment = () => {
                 width={"1358px"}
                 height={"1131px"}
               />
-            </motion.div>
+            </motion.div> */}
 
             <Box
               textAlign={"center"}
-              mt={{ base: "0", md: "-300px" }}
+              // mt={{ base: "0", md: "-300px" }}
               zIndex={2}
               position="relative"
             >

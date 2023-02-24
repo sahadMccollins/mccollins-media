@@ -433,3 +433,26 @@ body .eapps-instagram-feed {
     opacity: 0;
   }
 }
+
+
+.serviceIcon .icon {
+  cursor: pointer;
+}
+
+.sub-service p {
+  text-align: justify;
+}
+.sub-service li p {
+  margin-top: 0px;
+}
+
+.sub-service ol li::marker {
+    color: #0e0e0e;
+    font-size: 25px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: -47px;
+}
