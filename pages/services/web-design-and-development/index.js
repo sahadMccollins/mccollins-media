@@ -272,7 +272,7 @@ const WebsiteDevelopment = () => {
         </Container>
       </Box>
 
-      <FavWork data={favWorkData} />
+      {/* <FavWork data={favWorkData} /> */}
 
       <TextBox2
         noMy={true}
