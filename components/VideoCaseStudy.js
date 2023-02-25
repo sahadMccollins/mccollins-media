@@ -15,9 +15,9 @@ const VideoCaseStudy = () => {
   };
 
   return (
-    <Flex flexDirection={{ base: "column", md: "row" }} mt="50px">
+    <Flex flexDirection={{ base: "column", md: "row" }} my="50px">
       <Box width={"100%"} paddingRight={{ base: "0", md: "20px" }}>
-        <Box>
+        {/* <Box>
           <Heading as={"h4"}>VIDEO CASE STUDY</Heading>
           <Text maxWidth={"500px"} mt="3" fontSize={"20px"}>
             We’re constantly refining our product. Adding new features. Working
@@ -32,13 +32,9 @@ const VideoCaseStudy = () => {
           >
             Learn More
           </Button>
-        </Box>
+        </Box> */}
         <Box>
-          <Box
-            className="VCSBox"
-            mt="10"
-            onClick={() => handleClick("bOvDzPdWNEI")}
-          >
+          <Box className="VCSBox" onClick={() => handleClick("bOvDzPdWNEI")}>
             <Image
               src={"/assets/image/caseStudy/CS-SQ1.jpg"}
               layout="fill"
@@ -67,7 +63,7 @@ const VideoCaseStudy = () => {
             </div>
           </Box>
           <Heading as={"h4"} fontSize="2xl" mt={"2"} fontWeight="500">
-            OAK BERRY
+            OAKBERRY
           </Heading>
           <Text fontSize={"15px"}>Digital Marketing, Branding</Text>
         </Box>

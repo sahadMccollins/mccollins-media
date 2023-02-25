@@ -4,6 +4,7 @@ import {
   Container,
   Flex,
   Heading,
+  OrderedList,
   Stack,
   Tab,
   TabList,
@@ -26,6 +27,8 @@ import VideoBanner from "../../../components/VideoBanner";
 import { motion } from "framer-motion";
 import VideoCaseStudy from "../../../components/VideoCaseStudy";
 import ServiceIcon from "../../../components/ServiceIcon";
+import FormBox from "../../../components/FormBox";
+import Testimonials from "../../../components/Testimonials";
 
 const WebsiteDevelopment = () => {
   const favWorkData = [
@@ -131,54 +134,14 @@ const WebsiteDevelopment = () => {
         //   md: "linear-gradient(to bottom,#ffde11 50%,#fff 50%)",
         // }}
         position={"relative"}
+        style={{ marginBottom: "100px" }}
       >
-        {/* <Box style={{ position: "absolute", top: "-50px", left: "10%" }}>
-          <Image
-            src={"/assets/image/design/6.svg"}
-            width="68px"
-            height={"130px"}
-          />
-        </Box> */}
-        {/* <Box style={{ position: "absolute", top: "10%", right: "0px" }}>
-          <Image
-            src={"/assets/image/design/8.svg"}
-            width="161px"
-            height={"138px"}
-          />
-        </Box>
-        <Box
-          style={{ position: "absolute" }}
-          right={{ base: "3%", md: "80%" }}
-          top={{ base: "40%", md: "30%" }}
-        >
-          <Image
-            src={"/assets/image/design/7.svg"}
-            width="43px"
-            height={"43px"}
-          />
-        </Box>
-        <Box
-          style={{ position: "absolute", top: "48%", left: "30%" }}
-          display={{ base: "none", md: "block" }}
-        >
-          <Image
-            src={"/assets/image/design/1.svg"}
-            width="158px"
-            height={"215px"}
-          />
-        </Box>
-        <Box
-          style={{ position: "absolute", top: "60%", right: "0%" }}
-          display={{ base: "none", md: "block" }}
-        >
-          <Image
-            src={"/assets/image/design/3.svg"}
-            width="89px"
-            height={"103px"}
-          />
-        </Box> */}
-
         <Container maxWidth={"7xl"}>
+          <TextBox
+            h2Fs="40px"
+            heading="Technologies We work with"
+            subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."
+          />
           <ServiceIcon />
           <Box>
             {/* <motion.div
@@ -212,32 +175,140 @@ const WebsiteDevelopment = () => {
               </Heading>
             </Box>
           </Box>
-          <TextBox2
-            heading={"Develop a Website that \n works for you"}
-            subHeading={"Mobile First Websites"}
-            content="In the era of mobile first technology, website is the only effective outlet to communicate with your customers."
-            content2={
-              "Build a strong Mobile-first website and be in the pocket of your customers. Be it informational or e-commerce, we develop them in-house"
-            }
-          />
-          <TextBox
+
+          <Container maxWidth={"7xl"} pb="2">
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              mt="8"
+              justifyContent={"space-between"}
+              position="relative"
+            >
+              <Box width={{ base: "100%", md: "45%" }}>
+                <Heading fontSize={"24px"}>
+                  Develop Websites That Drive Traffic And Conversion
+                </Heading>
+                <Box
+                  my={8}
+                  background="#FFDE11"
+                  width={"fit-content"}
+                  p={"0px 8% 0px 10px"}
+                  fontWeight="bold"
+                  fontSize={"20px"}
+                >
+                  <Text>A Voice For Your Brand</Text>
+                </Box>
+                <Text mb={5}>
+                  Creating a website is an important part of any marketing
+                  strategy, and it's no wonder that so many businesses are
+                  turning to website development partners to help them create
+                  their result driven website.
+                  <br />
+                  <br /> We have a team of in-house developers who can help you
+                  create a website on any platform, from ecommerce websites to
+                  corporate websites. With years of experience, our team will
+                  work with you to develop a website that reflects your unique
+                  brand and meets your needs. We understand that different
+                  businesses need different features and accommodations, so
+                  we'll work closely with you to develop a website that
+                  perfectly fits your needs.
+                </Text>
+              </Box>
+              <Box width={{ base: "100%", md: "45%" }} className="sub-service">
+                <OrderedList my={"6"}>
+                  <li>
+                    <Text fontSize={"20px"}>
+                      <b>Storefront Development : </b>Building and customizing
+                      visual elements of your online such - be with the layout,
+                      theme and design. Our Shopify developers work on the
+                      latest trends and customize themes using HTML, CSS and
+                      other tools
+                    </Text>
+                  </li>
+                  <li>
+                    <Text fontSize={"20px"} mt="5">
+                      <b>App Development : </b>Take your business mobile. The
+                      Shopify theme can then provide a mobile experience for
+                      your brand.
+                    </Text>
+                  </li>
+                  <li>
+                    <Text fontSize={"20px"} mt="5">
+                      <b>Shopify API Integration : </b>The APO allows us to
+                      integrate with third party services like Payment gateway
+                      providers, shipping partners and marketing tools like
+                      Klaviyo etc
+                    </Text>
+                  </li>
+                  <li>
+                    <Text fontSize={"20px"} mt="5">
+                      <b>Maintenance and support : </b>We also provide ongoing
+                      maintenance and support to ensure that the online store is
+                      running smoothly, and any issues are quickly resolved.
+                    </Text>
+                  </li>
+                </OrderedList>
+              </Box>
+              <Box
+                position={"absolute"}
+                left={{ base: "60", md: "42%" }}
+                bottom={"-28"}
+                zIndex="2"
+              >
+                <Image
+                  src="/assets/image/design/1.svg"
+                  width="187px"
+                  height="202px"
+                />
+              </Box>
+            </Flex>
+          </Container>
+
+          {/* <TextBox
             heading="Case study"
             smallHeading="website design & development"
             subHeading="learn how we executed campaigns to get results"
             content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
-          />
+          /> */}
         </Container>
       </Box>
+
       <FavWork data={favWorkData} />
+
+      <TextBox2
+        noMy={true}
+        heading={"Develop a Website \n that works for you"}
+        subHeading={"Mobile First Websites"}
+        content="In the era of mobile first technology, website is the only effective outlet to communicate with your customers."
+        content2={
+          "Build a strong Mobile-first website and be in the pocket of your customers. Be it informational or e-commerce, we develop them in-house"
+        }
+      />
 
       <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
         <VideoCaseStudy />
       </Container>
-      <TextBox
-        heading="Technologies We work with"
-        subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."
-      />
-      <TechIcon />
+      <Box className="creative-head">
+        <Heading
+          as={"h3"}
+          fontSize={{ base: "25px", md: "75px" }}
+          mt={"10"}
+          textAlign="center"
+          color={"#fff"}
+          textTransform="uppercase"
+        >
+          Create A Web Presence <br /> That Delivers Results
+        </Heading>
+      </Box>
+      <Container
+        maxWidth={"7xl"}
+        style={{ margin: "auto", marginBottom: "40px" }}
+      >
+        <FormBox heading={"Request a Call Back"} />
+      </Container>
+      <ClientsLogo />
+      <Box my="10">
+        <Testimonials />
+      </Box>
       <ClientsLogo />
     </Stack>
   );

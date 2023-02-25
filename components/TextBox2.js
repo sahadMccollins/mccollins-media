@@ -5,7 +5,10 @@ const TextBox2 = (props) => {
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
-        <Flex direction={{ base: "column", md: "row" }} my="50px">
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          my={props.noMy ? "0" : "50px"}
+        >
           <Box width={{ md: "50%", base: "100%" }} alignSelf="center">
             <Heading>
               {props.heading &&

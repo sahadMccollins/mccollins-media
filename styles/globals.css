@@ -466,8 +466,48 @@ body .eapps-instagram-feed {
   padding: 100px;
 }
 
+
+
+
+  
+.sub-service ol {
+  list-style-type: none;
+  position: relative;
+  margin-left: 30px;
+}
+
+.sub-service ol li {
+  counter-increment: step-counter;
+  margin-bottom: 20px;
+}
+
+.sub-service ol li::before {
+content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 20px;
+    background-color: #fdce1a;
+    color: white;
+    font-weight: bold;
+    padding: 0px 8px;
+    border-radius: 3px;
+    position: absolute;
+    left: -40px;
+}
+
+
   @media (max-width: 768px) {
     .creative-head h3 {
       padding: 60px 20px;
     }
+    .sub-service p {
+      text-align: left;
+    }
+    
+    .sub-service ol {
+      margin-left: 30px;
+    }
+  }
+
+  .sub-service ol li::before {
+    left: -35px;
   }

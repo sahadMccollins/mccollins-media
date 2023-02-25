@@ -8,7 +8,7 @@ const TextBox = (props) => {
           <Box width={{ base: "100%", md: "30%" }} alignSelf="center">
             <Heading
               borderLeft="20px solid #FFE962"
-              fontSize={{ base: "3xl", md: "5xl" }}
+              fontSize={{ base: "3xl", md: props.h2Fs ? props.h2Fs : "5xl" }}
               fontWeight={"black"}
               pl="6"
             >

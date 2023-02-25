@@ -40,9 +40,7 @@ const FavWork = (props) => {
           <Box width="100%" mb={"20px"} alignSelf="end" position={"relative"}>
             <Text fontSize={"40px"}>
               <b>
-                some of our favorites
-                <br />
-                works
+                some of our <br /> favorites works
               </b>
             </Text>
             <Box
