@@ -16,6 +16,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 const AccItem = (props) => {
+  const router = useRouter();
   return (
     <AccordionItem>
       <h2>
@@ -31,6 +32,21 @@ const AccItem = (props) => {
       </h2>
       <AccordionPanel pb={4} width={{ base: "100%", sm: "80%" }}>
         {props.content}
+        <br />
+        <Button
+          colorScheme="yellow"
+          background={"#FFDE11"}
+          borderRadius="20px"
+          color="#000"
+          mt={4}
+          fontWeight="bold"
+          onClick={() => {
+            router.push(`/services/${props.url}`);
+          }}
+        >
+          view more
+          <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
+        </Button>
       </AccordionPanel>
     </AccordionItem>
   );
@@ -60,6 +76,7 @@ const ServiceAccordian = () => {
                 <AccItem
                   name="Web Development"
                   content="Creating a digital outlet for your brand and driving leads via the website. Focus on Mobile Websites is key. We develop Bilingual websites for the GCC Market."
+                  url="web-design-and-development"
                 />
               </div>
               <div
@@ -72,6 +89,7 @@ const ServiceAccordian = () => {
                 <AccItem
                   name="Performance Marketing"
                   content="From driving footfall to your location, to your website or tracking conversions, our team works towards making numbers matter. Be it Digital Media Buying - Social Media Ads or PPC Campaigns, we work in alignment with your KPIs."
+                  url="google-ads-and-seo"
                 />
               </div>
               <div
@@ -84,6 +102,7 @@ const ServiceAccordian = () => {
                 <AccItem
                   name="Social Media Marketing"
                   content="Storytellers for your brand ! Be it creating the strategy to content development or engaging with your brands audience, our team of Social Media Experts represent your brand"
+                  url="social-media-agency-dubai"
                 />
               </div>
               <div
@@ -94,6 +113,7 @@ const ServiceAccordian = () => {
                 <AccItem
                   name="Content Production"
                   content="Creating multimedia content that works for your brand. Our team of in-house content producers work on Photography, Videography and Motion Graphics"
+                  url="content-production"
                 />
               </div>
               <div
@@ -104,25 +124,11 @@ const ServiceAccordian = () => {
                 <AccItem
                   name="Brand Experience"
                   content="Be it creating a brand from inception or building on well established brand, our in-house team of Designers and Copywriters,"
+                  url="brand-development"
                 />
               </div>
             </Accordion>
             <br />
-            <Button
-              colorScheme="yellow"
-              background={"#FFDE11"}
-              borderRadius="20px"
-              color="#000"
-              mt={4}
-              ml={"16px"}
-              fontWeight="bold"
-              onClick={() => {
-                router.push("/services");
-              }}
-            >
-              view more
-              <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-            </Button>
           </Box>
 
           <Box width={{ base: "100%", md: "50%" }} textAlign="center">

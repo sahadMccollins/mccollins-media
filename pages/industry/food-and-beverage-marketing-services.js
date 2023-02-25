@@ -99,7 +99,7 @@ const foodAndBeverageMarketing = () => {
             <Box width={{ base: "100%", md: "40%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage2.jpg"
+                  src="/assets/image/industryPage/new/NC (5).jpg"
                   width="417px"
                   height="454px"
                   style={{ zIndex: "2" }}
@@ -262,9 +262,10 @@ const foodAndBeverageMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage3.jpg"
+                  src="/assets/image/industryPage/new/NC (9).jpg"
                   width="480px"
                   height="768px"
+                  objectFit="cover"
                   style={{ zIndex: "2" }}
                 />
                 <Box
@@ -335,7 +336,7 @@ const foodAndBeverageMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage4.jpg"
+                  src="/assets/image/industryPage/new/NC (20).jpg"
                   width="480px"
                   height="768px"
                   style={{ zIndex: "2" }}
@@ -387,7 +388,7 @@ const foodAndBeverageMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage5.jpg"
+                  src="/assets/image/industryPage/new/NC (13).jpg"
                   width="451px"
                   height="384px"
                   style={{ zIndex: "2" }}

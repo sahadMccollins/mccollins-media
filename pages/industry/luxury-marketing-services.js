@@ -19,7 +19,7 @@ const luxuryMarketing = () => {
       <Container maxWidth={"7xl"}>
         <InnerBanner
           heading={`Luxury \n Marketing \n Services`}
-          img="/assets/image/servicePage/contentProduction.jpg"
+          img="/assets/image/industryPage/new/NC (3).jpg"
           content="Premium Luxury Marketing Solutions curated for your brand"
         />
       </Container>
@@ -29,7 +29,7 @@ const luxuryMarketing = () => {
             <Box width={{ base: "100%", md: "40%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage2.jpg"
+                  src="/assets/image/industryPage/new/NC (7).jpg"
                   width="417px"
                   height="454px"
                   style={{ zIndex: "2" }}
@@ -200,7 +200,7 @@ const luxuryMarketing = () => {
                 mt={{ base: 10, md: 0 }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage3.jpg"
+                  src="/assets/image/industryPage/new/NC (11).jpg"
                   width="480px"
                   height="768px"
                   style={{ zIndex: "2" }}
@@ -255,7 +255,7 @@ const luxuryMarketing = () => {
                 mt={{ base: 10, md: 0 }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage5.jpg"
+                  src="/assets/image/industryPage/new/NC (14).jpg"
                   width="451px"
                   height="384px"
                   style={{ zIndex: "2" }}

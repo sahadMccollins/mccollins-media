@@ -19,7 +19,7 @@ const CorporateMarketing = () => {
       <Container maxWidth={"7xl"}>
         <InnerBanner
           heading={`Corporate \n Marketing \n Services`}
-          img="/assets/image/servicePage/contentProduction.jpg"
+          img="/assets/image/industryPage/new/NC (1).jpg"
           content="Leaders in Corporate Marketing Solutions"
         />
       </Container>
@@ -29,7 +29,7 @@ const CorporateMarketing = () => {
             <Box width={{ base: "100%", md: "40%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage2.jpg"
+                  src="/assets/image/industryPage/new/NC (4).jpg"
                   width="417px"
                   height="454px"
                   style={{ zIndex: "2" }}
@@ -202,9 +202,10 @@ const CorporateMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage3.jpg"
+                  src="/assets/image/industryPage/new/NC (8).jpg"
                   width="480px"
                   height="768px"
+                  objectFit="cover"
                   style={{ zIndex: "2" }}
                 />
                 <Box
@@ -278,8 +279,9 @@ const CorporateMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage4.jpg"
+                  src="/assets/image/industryPage/new/NC (19).jpg"
                   width="480px"
+                  objectFit="cover"
                   height="768px"
                   style={{ zIndex: "2" }}
                 />
@@ -333,9 +335,10 @@ const CorporateMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
-                  src="/assets/image/industryPage/foodAndBeverage5.jpg"
+                  src="/assets/image/industryPage/new/NC (12).jpg"
                   width="451px"
                   height="384px"
+                  objectFit="cover"
                   style={{ zIndex: "2" }}
                 />
                 <Box
@@ -355,6 +358,7 @@ const CorporateMarketing = () => {
                     src={"/assets/image/design/13.svg"}
                     width="89px"
                     height={"103px"}
+                    objectFit="cover"
                   />
                 </Box>
               </Box>

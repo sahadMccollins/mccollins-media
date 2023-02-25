@@ -7,8 +7,16 @@ import TextBox from "../components/TextBox";
 import ClientsLogo from "../components/ClientsLogo";
 import Awards from "../components/Awards";
 import "react-ig-feed/dist/index.css";
+import { useEffect } from "react";
 
 const about = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apps.elfsight.com/p/platform.js";
+    script.defer = false;
+    script.async = false;
+    document.body.appendChild(script);
+  }, []);
   return (
     <>
       <HeroBanner
