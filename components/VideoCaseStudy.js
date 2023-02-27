@@ -179,9 +179,8 @@ const VideoCaseStudy = () => {
           height="450px"
           src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </Box>
 
@@ -191,9 +190,8 @@ const VideoCaseStudy = () => {
           height="450px"
           src="https://www.youtube-nocookie.com/embed/BfAQbo1u34c"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </Box>
 
@@ -203,9 +201,8 @@ const VideoCaseStudy = () => {
           height="450px"
           src="https://www.youtube.com/embed/xlwLRqFnDks"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </Box>
     </>
