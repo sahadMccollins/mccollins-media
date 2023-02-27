@@ -18,6 +18,7 @@ const ServicePoint = (props) => {
             width={{ base: "100%", md: "30%" }}
             borderLeft="15px solid #FFE962"
             pl={"5"}
+            mb={{ base: "10px", md: "0" }}
           >
             <Heading>
               {props.heading &&
