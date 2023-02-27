@@ -104,9 +104,9 @@ const Footer = (props) => {
               <Text>
                 <b>Phone: </b>+971 4 445 6848
               </Text>
-              <Text>
+              {/* <Text>
                 <b>Mobile: </b>+971 55 956 4135
-              </Text>
+              </Text> */}
               <Text>
                 <b>Email: </b>info@mccollinsmedia.com
               </Text>

@@ -24,38 +24,6 @@ import { useRouter } from "next/router";
 const WebsiteDevelopment = () => {
   const router = useRouter();
 
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
   return (
     <Stack position={"relative"}>
       <VideoBanner
@@ -64,71 +32,7 @@ const WebsiteDevelopment = () => {
         content="Every brand in today's time must have a website to showcase itself to its audience. Having a mobile friendly website is even more important. Our team of in-house developers specialize in various backends be it Wordpress, WooCommerce, Magento, React or Shopify to name a few. Our agency is Partners with several leading platforms"
         poster="/assets/image/servicePage/serviceAccordian.jpg"
       />
-
-      {/* <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
-        <Stack
-          position={"relative"}
-          zIndex="2"
-          className="serviceTab"
-          mb={{ base: "10", md: "unset" }}
-        >
-          <Container maxWidth={"7xl"} py="30">
-            <Tabs>
-              <TabList
-                justifyContent={"space-between"}
-                overflowX={"scroll"}
-                overflowY={"hidden"}
-              >
-                <Tab>Wordpress Development</Tab>
-                <Tab>Shopify Development</Tab>
-                <Tab>Sitecore</Tab>
-                <Tab>Website Landing Page</Tab>
-                <Tab>Landing Page Development</Tab>
-              </TabList>
-
-              <TabPanels>
-                <TabPanel>
-                  <ServiceTabsDetails
-                    img="/assets/image/ServiceTabs/WebDevelopment.png"
-                    heading={"Wordpress \n Development"}
-                    subHeading={"creating content that tells a story"}
-                    desc={
-                      "Having your own website is an important piece of your ecommerce strategy. It is a great way for you to grow your brand, acquire loyal customers, gain new insights, and get creative with your marketing"
-                    }
-                    points={
-                      "Fast Launch \n  Customer Insights \n  Easy Integration \n  Integrate Content Marketing \n  Social Media Integration \n  Third Party Plug-ins"
-                    }
-                  />
-                </TabPanel>
-                <TabPanel>
-                  <ServiceTabsDetails
-                    img="/assets/image/ServiceTabs/WebDevelopment.png"
-                    heading={"Wordpress \n Development"}
-                    subHeading={"creating content that tells a story"}
-                    desc={
-                      "Creating a digital outlet for your brand and driving leads via the website. Focus on Mobile Websites is key. We develop Bilingual websites for the GCC Market."
-                    }
-                    points={
-                      "Corporate Website \n  E-commerce Website \n  Microsites \n  Annual Maintenance \n  SEO & SEM Support \n  Lead Generation Landing Pages"
-                    }
-                  />
-                </TabPanel>
-                <TabPanel>
-                  <p>three!</p>
-                </TabPanel>
-              </TabPanels>
-            </Tabs>
-          </Container>
-        </Stack>
-      </Container> */}
-      <Box
-        // background={{
-        //   base: "linear-gradient(to bottom,#ffde11 26%,#fff 26%)",
-        //   md: "linear-gradient(to bottom,#ffde11 50%,#fff 50%)",
-        // }}
-        position={"relative"}
-        style={{ marginBottom: "100px" }}
-      >
+      <Box position={"relative"} style={{ marginBottom: "50px" }}>
         <Container maxWidth={"7xl"}>
           <TextBox
             h2Fs="40px"
@@ -137,14 +41,18 @@ const WebsiteDevelopment = () => {
           />
           <ServiceIcon />
 
-          <Container maxWidth={"7xl"} pb="2" pt={5}>
+          <Container maxWidth={"7xl"} pb="2">
             <Flex
               direction={{ base: "column", md: "row" }}
               mt="8"
               justifyContent={"space-between"}
               position="relative"
             >
-              <Box width={{ base: "100%", md: "45%" }}>
+              <Box
+                width={{ base: "100%", md: "50%" }}
+                display="block"
+                alignSelf="center"
+              >
                 <Heading fontSize={"24px"} maxW="400px">
                   Develop Websites That Drive Traffic And Conversion
                 </Heading>
@@ -174,7 +82,47 @@ const WebsiteDevelopment = () => {
                   perfectly fits your needs.
                 </Text>
               </Box>
-              <Box width={{ base: "100%", md: "45%" }} className="sub-service">
+              <Box width={{ base: "100%", md: "45%" }} position="relative">
+                <Image
+                  src={"/assets/image/servicePage/Woocommerce.jpg"}
+                  width="585px"
+                  height={"528px"}
+                  style={{ borderRadius: "25px" }}
+                />
+              </Box>
+
+              {/* <Box
+                position={"absolute"}
+                left={{ base: "60", md: "35%" }}
+                bottom={"-28"}
+                zIndex="2"
+              >
+                <Image
+                  src="/assets/image/design/1.svg"
+                  width="187px"
+                  height="202px"
+                />
+              </Box> */}
+            </Flex>
+            <Flex
+              direction={{ base: "column-reverse", md: "row" }}
+              mt="10"
+              justifyContent={"space-between"}
+              position="relative"
+            >
+              <Box width={{ base: "100%", md: "45%" }} position="relative">
+                <Image
+                  src={"/assets/image/servicePage/Magneto.jpg"}
+                  width="585px"
+                  height={"528px"}
+                  style={{ borderRadius: "25px" }}
+                />
+              </Box>
+              <Box
+                width={{ base: "100%", md: "50%" }}
+                className="sub-service"
+                alignSelf="center"
+              >
                 <OrderedList>
                   <li>
                     <Text fontSize={"20px"}>
@@ -208,50 +156,52 @@ const WebsiteDevelopment = () => {
                     </Text>
                   </li>
                 </OrderedList>
+              </Box>
+            </Flex>
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              mt="10"
+              justifyContent={"space-between"}
+              position="relative"
+            >
+              <Box
+                width={{ base: "100%", md: "50%" }}
+                position="relative"
+                alignSelf="center"
+              >
                 <Text>
                   Partner with us and get your Business online today. With our
                   in-house team, we develop websites on Sitecore, Wordpress,
                   React, Shopify and more. Once the website is live, we support
                   with Website Maintenance, Search Engine Optimization and
                   Search Engine Marketing.
+                  <br />
+                  <br />
+                  In the era of mobile first technology, website is the only
+                  effective outlet to communicate with your customers.
+                  <br />
+                  <br />
+                  Build a strong Mobile-first website and be in the pocket of
+                  your customers. Be it informational or e-commerce, we develop
+                  them in-house
                 </Text>
               </Box>
-
               <Box
-                position={"absolute"}
-                left={{ base: "60", md: "35%" }}
-                bottom={"-28"}
-                zIndex="2"
+                width={{ base: "100%", md: "45%" }}
+                position="relative"
+                mt={{ base: "5", md: 0 }}
               >
                 <Image
-                  src="/assets/image/design/1.svg"
-                  width="187px"
-                  height="202px"
+                  src={"/assets/image/servicePage/DM&SEO2.jpeg"}
+                  width="585px"
+                  height={"350px"}
+                  style={{ borderRadius: "25px" }}
                 />
               </Box>
             </Flex>
           </Container>
-
-          {/* <TextBox
-            heading="Case study"
-            smallHeading="website design & development"
-            subHeading="learn how we executed campaigns to get results"
-            content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
-          /> */}
         </Container>
       </Box>
-
-      {/* <FavWork data={favWorkData} /> */}
-
-      <TextBox2
-        noMy={true}
-        heading={"Develop a Website \n that works for you"}
-        subHeading={"Mobile First Websites"}
-        content="In the era of mobile first technology, website is the only effective outlet to communicate with your customers."
-        content2={
-          "Build a strong Mobile-first website and be in the pocket of your customers. Be it informational or e-commerce, we develop them in-house"
-        }
-      />
       <Box className="creative-head">
         <Heading
           as={"h3"}
@@ -273,14 +223,13 @@ const WebsiteDevelopment = () => {
       <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
         <VideoCaseStudy />
       </Container>
-
       <Box className="creative-head" pb={10}>
         <Heading
           as={"h4"}
           fontSize={{ base: "25px", md: "50px" }}
           pt="20"
           textAlign="center"
-          color={"#fff"}
+          color={"#FFDE11"}
           textTransform="uppercase"
         >
           I am also interested in
@@ -290,17 +239,17 @@ const WebsiteDevelopment = () => {
             <Heading
               onClick={() => router.push("/services/google-ads-and-seo")}
             >
-              SEO - Google Ads
+              SEM - Google Ads
             </Heading>
             <Heading
               onClick={() => router.push("/services/google-ads-and-seo")}
             >
-              Search Engine Optimization{" "}
+              Search Engine Optimization
             </Heading>
             <Heading
               onClick={() => router.push("/services/social-media-agency-dubai")}
             >
-              Social Media Marketing{" "}
+              Social Media Marketing
             </Heading>
             <Heading
               onClick={() =>
