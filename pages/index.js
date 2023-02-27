@@ -74,7 +74,7 @@ export default function Home() {
         content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
       />
 
-      <CaseStuxdy data={favWorkData} />
+      <CaseStudy data={favWorkData} />
 
       <ClientsLogo />
 
