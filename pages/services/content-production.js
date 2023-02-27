@@ -68,10 +68,10 @@ const ContentProduction = () => {
       />
 
       <Box
-        bg={{
-          base: "linear-gradient(to bottom,#fff 43%,#ffde11 43%)",
-          md: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
-        }}
+        // bg={{
+        //   base: "linear-gradient(to bottom,#fff 43%,#ffde11 43%)",
+        //   md: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
+        // }}
         position="relative"
       >
         <Box

@@ -577,7 +577,7 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Brand Development"
-                          href="/services/branding"
+                          href="/services/brand-development"
                         />
                       </li>
 
