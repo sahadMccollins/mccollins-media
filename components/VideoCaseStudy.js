@@ -1,19 +1,15 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import React, { useState } from "react";
-const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
-import "../node_modules/react-modal-video/css/modal-video.min.css";
 
 const VideoCaseStudy = () => {
-  const [isOpen, setOpen] = useState(false);
-  const [videoID, setvideoID] = useState("");
-
-  const handleClick = (videoUrl) => {
-    setvideoID(videoUrl);
-    setOpen(true);
-  };
-
+  const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
   return (
     <>
       <Heading textAlign={"center"} className="main-h2" mt={10} mb="10">
@@ -176,7 +172,7 @@ const VideoCaseStudy = () => {
       <Box mb={"10"}>
         <iframe
           width="100%"
-          height="450px"
+          height={isSmallerThan780 ? "300px" : "450px"}
           src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -187,7 +183,7 @@ const VideoCaseStudy = () => {
       <Box mb={"10"}>
         <iframe
           width="100%"
-          height="450px"
+          height={isSmallerThan780 ? "300px" : "450px"}
           src="https://www.youtube-nocookie.com/embed/BfAQbo1u34c"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -198,7 +194,7 @@ const VideoCaseStudy = () => {
       <Box mb="10">
         <iframe
           width="100%"
-          height="450px"
+          height={isSmallerThan780 ? "300px" : "450px"}
           src="https://www.youtube.com/embed/xlwLRqFnDks"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
