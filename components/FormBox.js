@@ -81,9 +81,7 @@ const FormBox = (props) => {
   return (
     <Box width={"100%"} mt="50px">
       {props.heading ? (
-        <Heading fontSize={{ base: "20px", md: "35px" }}>
-          {props.heading}
-        </Heading>
+        <Heading className="main-h2">{props.heading}</Heading>
       ) : (
         <Heading
           style={{
@@ -99,8 +97,8 @@ const FormBox = (props) => {
       )}
 
       <Text
-        fontWeight={"bold"}
-        fontSize={"16px"}
+        className="main-p"
+        fontWeight={"500"}
         color="#707070"
         mt={5}
         mb={10}
@@ -108,67 +106,72 @@ const FormBox = (props) => {
         Your email address will not be published. Required fields are marked *
       </Text>
       <form onSubmit={formHandler} className="contact-form">
-        <SimpleGrid columns={{ sm: 1, md: 2 }} spacing="20px">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} spacing="50px" mb={"50px"}>
           <FormControl isRequired>
-            <FormLabel htmlFor="first-name">First Name</FormLabel>
+            {/* <FormLabel htmlFor="first-name">First Name</FormLabel> */}
             <Input
               id="first-name"
               onChange={(e) => setFirstName(e.target.value)}
               value={FirstName}
-              borderRadius={"50px"}
+              placeholder="First Name"
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel htmlFor="last-name">Last Name</FormLabel>
+            {/* <FormLabel htmlFor="last-name">Last Name</FormLabel> */}
             <Input
               id="last-name"
               onChange={(e) => setLastName(e.target.value)}
               value={LastName}
-              borderRadius={"50px"}
+              placeholder="Last Name"
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel htmlFor="company">Company</FormLabel>
+            {/* <FormLabel htmlFor="company">Company</FormLabel> */}
             <Input
               id="company"
               onChange={(e) => setCompany(e.target.value)}
               value={company}
-              borderRadius={"50px"}
+              placeholder="Company"
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel htmlFor="jobTitle">Job Title</FormLabel>
+            {/* <FormLabel htmlFor="jobTitle">Job Title</FormLabel> */}
             <Input
               id="jobTitle"
               onChange={(e) => setJobTitle(e.target.value)}
               value={jobTitle}
-              borderRadius={"50px"}
+              placeholder="Job Title"
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel htmlFor="contact">Contact No</FormLabel>
+            {/* <FormLabel htmlFor="contact">Contact No</FormLabel> */}
             <NumberInput max={50} min={10} value={contact}>
               <NumberInputField
                 id="contact"
                 onChange={(e) => setContact(e.target.value)}
-                borderRadius={"50px"}
+                placeholder="Contact No"
               />
             </NumberInput>
           </FormControl>
           <FormControl isRequired>
-            <FormLabel htmlFor="email">Email Address</FormLabel>
+            {/* <FormLabel htmlFor="email">Email Address</FormLabel> */}
             <Input
               id="email"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
-              borderRadius={"50px"}
+              placeholder="Email Address"
             />
           </FormControl>
         </SimpleGrid>
-        <FormControl mt="5" className="cnt-rs">
-          <FormLabel htmlFor="services">Select Services</FormLabel>
-          <Input id="services" value={checkedItemsString} readOnly />
+        <FormControl mt="5" className="cnt-rs" mb={"50px"}>
+          {/* <FormLabel htmlFor="services">Select Services</FormLabel> */}
+          <Input
+            id="services"
+            value={checkedItemsString}
+            placeholder="Select Services"
+            readOnly
+          />
           <SimpleGrid columns={{ sm: 1, md: 3 }} spacing="20px" mt={5}>
             <Checkbox
               size="md"
@@ -279,15 +282,18 @@ const FormBox = (props) => {
           </SimpleGrid>
         </FormControl>
         <FormControl mt={5}>
-          <FormLabel htmlFor="email">How Can We Help You?</FormLabel>
-          <Textarea value={text} onChange={(e) => setText(e.target.value)} />
+          {/* <FormLabel htmlFor="email">How Can We Help You?</FormLabel> */}
+          <Textarea
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="How Can We Help You?"
+          />
         </FormControl>
         <Button
           mt={5}
           colorScheme="yellow"
           background={"#FFDE11"}
           type="submit"
-          borderRadius={"50px"}
           fontSize={"18px"}
           fontWeight="bold"
           isLoading={loading}

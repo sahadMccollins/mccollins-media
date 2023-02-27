@@ -1,3 +1,26 @@
+
+:root {
+  --main-p:17px;
+  --main-h2 :40px;
+
+}
+
+.main-p {
+  font-size: 17px !important;
+}
+
+.main-h2 {
+  font-size: 40px !important;
+  font-weight: 800 !important;
+}
+
+@media (max-width: 768px) {
+  .main-h2 {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+}
+}
+
 html,
 body {
   padding: 0;
@@ -192,8 +215,29 @@ a:focus {
 
 /* Contact Page */
 
-.contact-form input {
-  background: #F7F7F7;
+.contact-form {
+    background: black;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.contact-form input, .contact-form textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.contact-form input::placeholder ,.contact-form textarea::placeholder,.contact-form .chakra-checkbox__label {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-form input:focus ,.contact-form textarea:focus {
+  box-shadow: none;
+
+  border-bottom: 1px solid #fff;
 }
 
 

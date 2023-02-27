@@ -16,27 +16,11 @@ const VideoCaseStudy = () => {
 
   return (
     <>
-      <Heading as={"h4"} textAlign={"center"} mt={10}>
-        CASE STUDY
+      <Heading textAlign={"center"} className="main-h2" mt={10} mb="10">
+        Case Study
       </Heading>
-      <Flex flexDirection={{ base: "column", md: "row" }} my="50px">
+      {/* <Flex flexDirection={{ base: "column", md: "row" }} my="50px">
         <Box width={"100%"} paddingRight={{ base: "0", md: "20px" }}>
-          {/* <Box mb={10}>
-          <Heading as={"h4"}>CASE STUDY</Heading>
-          <Text maxWidth={"500px"} mt="3" fontSize={"20px"}>
-            We’re constantly refining our product. Adding new features. Working
-            to help your section business grow.
-          </Text>
-          <Button
-            colorScheme="yellow"
-            background={"#FFDE11"}
-            borderRadius={"50px"}
-            fontSize={"18px"}
-            mt="5"
-          >
-            Learn More
-          </Button> 
-          </Box>*/}
           <Box>
             <Box className="VCSBox" onClick={() => handleClick("bOvDzPdWNEI")}>
               <Image
@@ -188,7 +172,42 @@ const VideoCaseStudy = () => {
           videoId={videoID}
           onClose={() => setOpen(false)}
         />
-      </Flex>
+      </Flex> */}
+      <Box mb={"10"}>
+        <iframe
+          width="100%"
+          height="450px"
+          src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Box>
+
+      <Box mb={"10"}>
+        <iframe
+          width="100%"
+          height="450px"
+          src="https://www.youtube-nocookie.com/embed/BfAQbo1u34c"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Box>
+
+      <Box mb="10">
+        <iframe
+          width="100%"
+          height="450px"
+          src="https://www.youtube.com/embed/xlwLRqFnDks"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Box>
     </>
   );
 };

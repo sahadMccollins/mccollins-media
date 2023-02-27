@@ -53,7 +53,7 @@ const WebsiteDevelopment = () => {
                 display="block"
                 alignSelf="center"
               >
-                <Heading fontSize={"24px"} maxW="400px">
+                <Heading className="main-h2">
                   Develop Websites That Drive Traffic And Conversion
                 </Heading>
                 <Box
@@ -66,7 +66,7 @@ const WebsiteDevelopment = () => {
                 >
                   <Text>A Voice For Your Brand</Text>
                 </Box>
-                <Text mb={5}>
+                <Text mb={5} className="main-p">
                   Creating a website is an important part of any marketing
                   strategy, and it's no wonder that so many businesses are
                   turning to website development partners to help them create
@@ -125,32 +125,32 @@ const WebsiteDevelopment = () => {
               >
                 <OrderedList>
                   <li>
-                    <Text fontSize={"20px"}>
+                    <Text className="main-p">
                       Get your website designed and developed by a team of
                       experts who will ensure that your site is perfect for your
                       brand.
                     </Text>
                   </li>
                   <li>
-                    <Text fontSize={"20px"}>
+                    <Text className="main-p">
                       Choose from a wide range of customizable website features
                       that will make your site unique.
                     </Text>
                   </li>
                   <li>
-                    <Text fontSize={"20px"}>
+                    <Text className="main-p">
                       Enjoy hassle-free website maintenance that will keep your
                       site running smoothly.
                     </Text>
                   </li>
-                  <li style={{ marginBottom: "5px" }}>
-                    <Text fontSize={"20px"}>
+                  <li style={{ marginBottom: "5px" }} className="main-p">
+                    <Text className="main-p">
                       Optimize your website for better search engine ranking
                       with our cutting-edge SEO techniques.
                     </Text>
                   </li>
                   <li>
-                    <Text fontSize={"20px"}>
+                    <Text className="main-p">
                       Keep your data safe and secure with our state-of-the-art
                       security measures
                     </Text>
@@ -169,7 +169,7 @@ const WebsiteDevelopment = () => {
                 position="relative"
                 alignSelf="center"
               >
-                <Text>
+                <Text className="main-p">
                   Partner with us and get your Business online today. With our
                   in-house team, we develop websites on Sitecore, Wordpress,
                   React, Shopify and more. Once the website is live, we support
