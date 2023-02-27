@@ -131,9 +131,9 @@ const OurTeam = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
-                  img="/assets/image/team/Mahmoud.jpg"
-                  name="Mahmoud"
-                  designation="Account Manager"
+                  img="/assets/image/team/shome.jpg"
+                  name="Shome BAG"
+                  designation="Associate Business Director"
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -145,93 +145,58 @@ const OurTeam = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
-                  img="/assets/image/team/Nikhila.jpg"
-                  name="Nikila"
-                  designation="Account Executive"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Leanne.jpg"
-                  name="Leanne"
-                  designation="Account Executive"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Maha-Hussein.jpg"
-                  name="Maha Hussein"
+                  img="/assets/image/team/Fadwa.jpg"
+                  name="Fadwa"
                   designation="Account Manager"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
-                  img="/assets/image/team/shabeer.jpg"
-                  name="Shabeer"
-                  designation="Content Creator"
+                  img="/assets/image/team/Joeseph.jpg"
+                  name="Joseph"
+                  designation="Senior Copywriter"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
-                  img="/assets/image/team/sahal.jpg"
-                  name="Sahal"
-                  designation="Content Creator"
+                  img="/assets/image/team/asher.jpg"
+                  name="Azhar"
+                  designation="Studio Lead"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
-                  img="/assets/image/team/Rishika.jpg"
-                  name="Rishika"
-                  designation="Account Executive"
+                  img="/assets/image/team/youssef.jpg"
+                  name="Youssef"
+                  designation="Performance Manager"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
-                  img="/assets/image/team/Alia.jpg"
-                  name="Alia"
+                  img="/assets/image/team/George.jpg"
+                  name="George "
                   designation="Account Manager"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
-                  img="/assets/image/team/ashton.jpg"
-                  name="Ashton"
-                  designation="Content Producer"
+                  img="/assets/image/team/Kavya.jpg"
+                  name="Kavya"
+                  designation="Account Executive"
                 />
               </SwiperSlide>
+              {/* <SwiperSlide>
+                <TeamMemberSlide
+                  img="/assets/image/team/Arjun.jpg"
+                  name="Arjun"
+                  designation="SEO Lead"
+                />
+              </SwiperSlide> */}
               <SwiperSlide>
                 <TeamMemberSlide
                   img="/assets/image/team/ijas.jpg"
                   name="Ijas"
-                  designation="Web & Mobile Developer"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Alia.jpg"
-                  name="Alia"
-                  designation="Account Manager"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Moutasem.jpg"
-                  name="Moutasem"
-                  designation="Account Executive"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Maria.jpg"
-                  name="Maria"
-                  designation="Digital Designer"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Nelvin.jpg"
-                  name="Nelvin"
-                  designation="Admin"
+                  designation="Web Lead"
                 />
               </SwiperSlide>
             </Swiper>

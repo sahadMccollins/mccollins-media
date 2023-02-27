@@ -136,38 +136,6 @@ const WebsiteDevelopment = () => {
             subHeadingOnly="Transform your brand journey today. We grow brands, create experiences and solve problems."
           />
           <ServiceIcon />
-          <Box>
-            {/* <motion.div
-              initial={{ scale: 0.6, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ ease: "easeOut", duration: 0.5 }}
-            >
-              <Image
-                src="/assets/image/servicePage/webDev1.png"
-                width={"1358px"}
-                height={"1131px"}
-              />
-            </motion.div> */}
-
-            <Box
-              textAlign={"center"}
-              // mt={{ base: "0", md: "-300px" }}
-              zIndex={2}
-              position="relative"
-            >
-              <Heading fontSize={{ base: "65", md: "115px" }} color="#000">
-                WEBSITE
-              </Heading>
-              <Heading
-                fontSize={{ base: "48", md: "115px" }}
-                color="#fff"
-                className="webStrok"
-              >
-                DEVELOPMENT
-              </Heading>
-            </Box>
-          </Box>
 
           <Container maxWidth={"7xl"} pb="2" pt={5}>
             <Flex

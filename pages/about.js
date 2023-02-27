@@ -132,7 +132,7 @@ const About = () => {
       <ClientsLogo />
       <Awards />
       <Heading textAlign={"center"} mb={"-45px"}>
-        Our Instagram Feed
+        #BehindTheScenes
       </Heading>
       <Box>
         {/* <script src="https://apps.elfsight.com/p/platform.js" defer></script> */}

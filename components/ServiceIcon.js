@@ -23,7 +23,7 @@ const ServiceIcon = () => {
       <Container maxWidth={"7xl"} pb="20" mt={10}>
         <Swiper
           spaceBetween={20}
-          slidesPerView={isLargerThan780 ? 3 : 1}
+          slidesPerView={isLargerThan780 ? 5 : 1}
           loop={isLargerThan780 ? false : true}
           ref={swiperRef}
           autoplay={{
@@ -101,6 +101,52 @@ const ServiceIcon = () => {
                 textAlign="center"
               >
                 Wordpress
+              </Text>
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box
+              onClick={() =>
+                router.push("/services/web-design-and-development/react")
+              }
+              className="icon"
+            >
+              <Image
+                src="/assets/image/techLogo/react.png"
+                width="97px"
+                height="97px"
+                margin={"auto"}
+              />
+              <Text
+                mt={5}
+                fontSize={"2xl"}
+                fontWeight={"bold"}
+                textAlign="center"
+              >
+                React
+              </Text>
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box
+              onClick={() =>
+                router.push("/services/web-design-and-development/magento")
+              }
+              className="icon"
+            >
+              <Image
+                src="/assets/image/techLogo/magento.svg"
+                width="97px"
+                height="97px"
+                margin={"auto"}
+              />
+              <Text
+                mt={5}
+                fontSize={"2xl"}
+                fontWeight={"bold"}
+                textAlign="center"
+              >
+                Magento
               </Text>
             </Box>
           </SwiperSlide>
