@@ -1,16 +1,10 @@
 import {
   Box,
-  Button,
   Container,
   Flex,
   Heading,
   OrderedList,
   Stack,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -19,18 +13,17 @@ import Image from "next/image";
 
 import TextBox2 from "../../../components/TextBox2";
 import TextBox from "../../../components/TextBox";
-import FavWork from "../../../components/FavWork";
-import TechIcon from "../../../components/TechIcon";
 import ClientsLogo from "../../../components/ClientsLogo";
-import ServiceTabsDetails from "../../../components/ServiceTabsDetails";
 import VideoBanner from "../../../components/VideoBanner";
-import { motion } from "framer-motion";
 import VideoCaseStudy from "../../../components/VideoCaseStudy";
 import ServiceIcon from "../../../components/ServiceIcon";
 import FormBox from "../../../components/FormBox";
 import Testimonials from "../../../components/Testimonials";
+import { useRouter } from "next/router";
 
 const WebsiteDevelopment = () => {
+  const router = useRouter();
+
   const favWorkData = [
     {
       name: "DAFZA",
@@ -176,7 +169,7 @@ const WebsiteDevelopment = () => {
             </Box>
           </Box>
 
-          <Container maxWidth={"7xl"} pb="2">
+          <Container maxWidth={"7xl"} pb="2" pt={5}>
             <Flex
               direction={{ base: "column", md: "row" }}
               mt="8"
@@ -184,7 +177,7 @@ const WebsiteDevelopment = () => {
               position="relative"
             >
               <Box width={{ base: "100%", md: "45%" }}>
-                <Heading fontSize={"24px"}>
+                <Heading fontSize={"24px"} maxW="400px">
                   Develop Websites That Drive Traffic And Conversion
                 </Heading>
                 <Box
@@ -214,43 +207,51 @@ const WebsiteDevelopment = () => {
                 </Text>
               </Box>
               <Box width={{ base: "100%", md: "45%" }} className="sub-service">
-                <OrderedList my={"6"}>
+                <OrderedList>
                   <li>
                     <Text fontSize={"20px"}>
-                      <b>Storefront Development : </b>Building and customizing
-                      visual elements of your online such - be with the layout,
-                      theme and design. Our Shopify developers work on the
-                      latest trends and customize themes using HTML, CSS and
-                      other tools
+                      Get your website designed and developed by a team of
+                      experts who will ensure that your site is perfect for your
+                      brand.
                     </Text>
                   </li>
                   <li>
-                    <Text fontSize={"20px"} mt="5">
-                      <b>App Development : </b>Take your business mobile. The
-                      Shopify theme can then provide a mobile experience for
-                      your brand.
+                    <Text fontSize={"20px"}>
+                      Choose from a wide range of customizable website features
+                      that will make your site unique.
                     </Text>
                   </li>
                   <li>
-                    <Text fontSize={"20px"} mt="5">
-                      <b>Shopify API Integration : </b>The APO allows us to
-                      integrate with third party services like Payment gateway
-                      providers, shipping partners and marketing tools like
-                      Klaviyo etc
+                    <Text fontSize={"20px"}>
+                      Enjoy hassle-free website maintenance that will keep your
+                      site running smoothly.
+                    </Text>
+                  </li>
+                  <li style={{ marginBottom: "5px" }}>
+                    <Text fontSize={"20px"}>
+                      Optimize your website for better search engine ranking
+                      with our cutting-edge SEO techniques.
                     </Text>
                   </li>
                   <li>
-                    <Text fontSize={"20px"} mt="5">
-                      <b>Maintenance and support : </b>We also provide ongoing
-                      maintenance and support to ensure that the online store is
-                      running smoothly, and any issues are quickly resolved.
+                    <Text fontSize={"20px"}>
+                      Keep your data safe and secure with our state-of-the-art
+                      security measures
                     </Text>
                   </li>
                 </OrderedList>
+                <Text>
+                  Partner with us and get your Business online today. With our
+                  in-house team, we develop websites on Sitecore, Wordpress,
+                  React, Shopify and more. Once the website is live, we support
+                  with Website Maintenance, Search Engine Optimization and
+                  Search Engine Marketing.
+                </Text>
               </Box>
+
               <Box
                 position={"absolute"}
-                left={{ base: "60", md: "42%" }}
+                left={{ base: "60", md: "35%" }}
                 bottom={"-28"}
                 zIndex="2"
               >
@@ -283,10 +284,6 @@ const WebsiteDevelopment = () => {
           "Build a strong Mobile-first website and be in the pocket of your customers. Be it informational or e-commerce, we develop them in-house"
         }
       />
-
-      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
-        <VideoCaseStudy />
-      </Container>
       <Box className="creative-head">
         <Heading
           as={"h3"}
@@ -305,11 +302,54 @@ const WebsiteDevelopment = () => {
       >
         <FormBox heading={"Request a Call Back"} />
       </Container>
-      <ClientsLogo />
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
+        <VideoCaseStudy />
+      </Container>
+
+      <Box className="creative-head" pb={10}>
+        <Heading
+          as={"h4"}
+          fontSize={{ base: "25px", md: "50px" }}
+          pt="20"
+          textAlign="center"
+          color={"#fff"}
+          textTransform="uppercase"
+        >
+          I am also interested in
+        </Heading>
+        <Container maxWidth="4xl">
+          <Box className="intrestedH2">
+            <Heading
+              onClick={() => router.push("/services/google-ads-and-seo")}
+            >
+              SEO - Google Ads
+            </Heading>
+            <Heading
+              onClick={() => router.push("/services/google-ads-and-seo")}
+            >
+              Search Engine Optimization{" "}
+            </Heading>
+            <Heading
+              onClick={() => router.push("/services/social-media-agency-dubai")}
+            >
+              Social Media Marketing{" "}
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push("/services/web-design-and-development")
+              }
+            >
+              Website Maintenance
+            </Heading>
+          </Box>
+        </Container>
+      </Box>
+      <Box style={{ marginTop: "-0.5rem !important" }}>
+        <ClientsLogo />
+      </Box>
       <Box my="10">
         <Testimonials />
       </Box>
-      <ClientsLogo />
     </Stack>
   );
 };

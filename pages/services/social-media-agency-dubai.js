@@ -66,13 +66,13 @@ const SocialMediaMarketing = () => {
         poster="/assets/image/servicePage/socialMediaMarketing.jpg"
       />
       <Box
-        style={{
-          background: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
-        }}
-        bg={{
-          base: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
-          md: "linear-gradient(to bottom,#fff 56%,#ffde11 50%)",
-        }}
+        // style={{
+        //   background: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
+        // }}
+        // bg={{
+        //   base: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
+        //   md: "linear-gradient(to bottom,#fff 56%,#ffde11 50%)",
+        // }}
         pb={12}
       >
         <Container maxWidth={"7xl"} position="relative">
