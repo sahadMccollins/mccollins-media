@@ -261,7 +261,7 @@ const WebsiteDevelopment = () => {
           </Box>
         </Container>
       </Box>
-      <Box style={{ marginTop: "-0.5rem !important" }}>
+      <Box style={{ margin: "0" }}>
         <ClientsLogo />
       </Box>
       <Box my="10">
