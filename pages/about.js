@@ -9,7 +9,7 @@ import Awards from "../components/Awards";
 import "react-ig-feed/dist/index.css";
 import { useEffect } from "react";
 
-const about = () => {
+const About = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apps.elfsight.com/p/platform.js";
@@ -142,4 +142,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
