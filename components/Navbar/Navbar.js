@@ -610,15 +610,7 @@ const Navbar = (props) => {
                           <ChevronRightIcon bg="#fff" placeSelf={"center"} />
                         )}
                         <Box flexGrow={1} bg="#fff"></Box>
-                        <Link href="/industry">
-                          <a
-                            onClick={() => {
-                              onClose();
-                            }}
-                          >
-                            Industry
-                          </a>
-                        </Link>
+                        <div>industry</div>
                       </Flex>
                     </li>
                     <ul
