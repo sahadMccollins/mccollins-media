@@ -24,7 +24,7 @@ const HeroBanner = (props) => {
   const router = useRouter();
 
   return (
-    <Stack marginTop={"-85px"} position="relative">
+    <Stack marginTop={"-85px"} position="relative" overflow={"hidden"}>
       <Box>
         <ZoomOut>
           <Chakraimage
