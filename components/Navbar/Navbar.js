@@ -333,7 +333,7 @@ const Navbar = (props) => {
             <Box flexGrow={1} zIndex="99">
               <Link href="/">
                 <Image
-                  src={`/assets/image/navbar/logo-yellow.svg`}
+                  src={`/assets/image/navbar/logo-black.svg`}
                   alt="Mccolins Media logo"
                   width="223"
                   height="50"
