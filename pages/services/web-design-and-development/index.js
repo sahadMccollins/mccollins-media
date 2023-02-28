@@ -87,7 +87,6 @@ const WebsiteDevelopment = () => {
                   src={"/assets/image/servicePage/Woocommerce.jpg"}
                   width="585px"
                   height={"528px"}
-                  style={{ borderRadius: "25px" }}
                 />
               </Box>
 
@@ -115,7 +114,6 @@ const WebsiteDevelopment = () => {
                   src={"/assets/image/servicePage/Magneto.jpg"}
                   width="585px"
                   height={"528px"}
-                  style={{ borderRadius: "25px" }}
                 />
               </Box>
               <Box
@@ -195,7 +193,6 @@ const WebsiteDevelopment = () => {
                   src={"/assets/image/servicePage/DM&SEO2.jpeg"}
                   width="585px"
                   height={"350px"}
-                  style={{ borderRadius: "25px" }}
                 />
               </Box>
             </Flex>
