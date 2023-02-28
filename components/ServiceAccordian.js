@@ -62,7 +62,7 @@ const ServiceAccordian = () => {
   );
   return (
     <Stack className="serviceAcc" bg={"#F7F7F7"}>
-      <Container maxWidth={"7xl"} pb="20">
+      <Container maxWidth={"7xl"} pb="5">
         <Flex direction={{ base: "column", lg: "row" }}>
           <Box
             width={{ base: "100%", lg: "50%" }}
@@ -143,7 +143,11 @@ const ServiceAccordian = () => {
             <br />
           </Box>
 
-          <Box width={{ base: "100%", md: "50%" }} textAlign="center">
+          <Box
+            width={{ base: "100%", md: "50%" }}
+            textAlign="center"
+            display={{ base: "none", md: "block" }}
+          >
             <ZoomInWithBounce>
               <Image src={AccImg} width="457.5px" height="678.75px" />
             </ZoomInWithBounce>
