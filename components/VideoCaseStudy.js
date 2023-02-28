@@ -169,38 +169,51 @@ const VideoCaseStudy = () => {
           onClose={() => setOpen(false)}
         />
       </Flex> */}
-      <Box mb={"10"}>
-        <iframe
-          width="100%"
-          height={isSmallerThan780 ? "300px" : "450px"}
-          src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </Box>
+      <Flex flexDirection={{ base: "column", md: "row" }} flexWrap="wrap">
+        <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+          <iframe
+            width="100%"
+            height={isSmallerThan780 ? "300px" : "450px"}
+            src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </Box>
 
-      <Box mb={"10"}>
-        <iframe
-          width="100%"
-          height={isSmallerThan780 ? "300px" : "450px"}
-          src="https://www.youtube-nocookie.com/embed/BfAQbo1u34c"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </Box>
+        <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+          <iframe
+            width="100%"
+            height={isSmallerThan780 ? "300px" : "450px"}
+            src="https://www.youtube-nocookie.com/embed/BfAQbo1u34c"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </Box>
 
-      <Box mb="10">
-        <iframe
-          width="100%"
-          height={isSmallerThan780 ? "300px" : "450px"}
-          src="https://www.youtube.com/embed/xlwLRqFnDks"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </Box>
+        <Box mb="10" width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+          <iframe
+            width="100%"
+            height={isSmallerThan780 ? "300px" : "450px"}
+            src="https://www.youtube.com/embed/xlwLRqFnDks"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </Box>
+
+        <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+          <iframe
+            width="100%"
+            height={isSmallerThan780 ? "300px" : "450px"}
+            src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </Box>
+      </Flex>
     </>
   );
 };
