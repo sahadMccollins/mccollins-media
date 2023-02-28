@@ -14,6 +14,8 @@ import {
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import FadeUp from "./Motion/FadeUp";
+import ZoomInWithBounce from "./Motion/ZoomInWithBounce";
 
 const AccItem = (props) => {
   const router = useRouter();
@@ -73,11 +75,13 @@ const ServiceAccordian = () => {
                   setAccImg("/assets/image/ServiceTabs/WebDevelopment.png");
                 }}
               >
-                <AccItem
-                  name="Web Development"
-                  content="Creating a digital outlet for your brand and driving leads via the website. Focus on Mobile Websites is key. We develop Bilingual websites for the GCC Market."
-                  url="web-design-and-development"
-                />
+                <FadeUp>
+                  <AccItem
+                    name="Web Development"
+                    content="Creating a digital outlet for your brand and driving leads via the website. Focus on Mobile Websites is key. We develop Bilingual websites for the GCC Market."
+                    url="web-design-and-development"
+                  />
+                </FadeUp>
               </div>
               <div
                 onClick={(e) => {
@@ -86,11 +90,13 @@ const ServiceAccordian = () => {
                   );
                 }}
               >
-                <AccItem
-                  name="Performance Marketing"
-                  content="From driving footfall to your location, to your website or tracking conversions, our team works towards making numbers matter. Be it Digital Media Buying - Social Media Ads or PPC Campaigns, we work in alignment with your KPIs."
-                  url="google-ads-and-seo"
-                />
+                <FadeUp>
+                  <AccItem
+                    name="Performance Marketing"
+                    content="From driving footfall to your location, to your website or tracking conversions, our team works towards making numbers matter. Be it Digital Media Buying - Social Media Ads or PPC Campaigns, we work in alignment with your KPIs."
+                    url="google-ads-and-seo"
+                  />
+                </FadeUp>
               </div>
               <div
                 onClick={(e) => {
@@ -99,40 +105,48 @@ const ServiceAccordian = () => {
                   );
                 }}
               >
-                <AccItem
-                  name="Social Media Marketing"
-                  content="Storytellers for your brand ! Be it creating the strategy to content development or engaging with your brands audience, our team of Social Media Experts represent your brand"
-                  url="social-media-agency-dubai"
-                />
+                <FadeUp>
+                  <AccItem
+                    name="Social Media Marketing"
+                    content="Storytellers for your brand ! Be it creating the strategy to content development or engaging with your brands audience, our team of Social Media Experts represent your brand"
+                    url="social-media-agency-dubai"
+                  />
+                </FadeUp>
               </div>
               <div
                 onClick={(e) => {
                   setAccImg("/assets/image/ServiceTabs/IphoneReels.png");
                 }}
               >
-                <AccItem
-                  name="Content Production"
-                  content="Creating multimedia content that works for your brand. Our team of in-house content producers work on Photography, Videography and Motion Graphics"
-                  url="content-production"
-                />
+                <FadeUp>
+                  <AccItem
+                    name="Content Production"
+                    content="Creating multimedia content that works for your brand. Our team of in-house content producers work on Photography, Videography and Motion Graphics"
+                    url="content-production"
+                  />
+                </FadeUp>
               </div>
               <div
                 onClick={(e) => {
                   setAccImg("/assets/image/ServiceTabs/Design&Brand.png");
                 }}
               >
-                <AccItem
-                  name="Brand Experience"
-                  content="Be it creating a brand from inception or building on well established brand, our in-house team of Designers and Copywriters,"
-                  url="brand-development"
-                />
+                <FadeUp>
+                  <AccItem
+                    name="Brand Experience"
+                    content="Be it creating a brand from inception or building on well established brand, our in-house team of Designers and Copywriters,"
+                    url="brand-development"
+                  />
+                </FadeUp>
               </div>
             </Accordion>
             <br />
           </Box>
 
           <Box width={{ base: "100%", md: "50%" }} textAlign="center">
-            <Image src={AccImg} width="457.5px" height="678.75px" />
+            <ZoomInWithBounce>
+              <Image src={AccImg} width="457.5px" height="678.75px" />
+            </ZoomInWithBounce>
           </Box>
         </Flex>
       </Container>

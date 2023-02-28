@@ -16,9 +16,39 @@ import CaseStudySlide from "./CaseStudySlide";
 import { useRef } from "react";
 import Fancybox from "./Fancybox";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import FadeUp from "./Motion/FadeUp";
+
+const variants = {
+  initial: {
+    transform: "rotateY(90deg)",
+  },
+  animate: (custom) => ({
+    transform: "rotateY(0deg)",
+    transition: {
+      delay: custom * 0.2, // Calculate delay based on index
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  }),
+};
+
 const CaseStudy = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const swiperRef = useRef(null);
+
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("animate");
+    } else {
+      controls.start("initial");
+    }
+  }, [controls, inView]);
   return (
     <Stack>
       <Container maxWidth={"7xl"} pb="20">
@@ -38,14 +68,16 @@ const CaseStudy = (props) => {
             />
           </Box>
           <Box width="100%" mb={"20px"} alignSelf="end">
-            <Text fontSize={"40px"}>
-              we make &nbsp;
-              <b>
-                brands, websites <br /> apps{" "}
-                <span style={{ color: "#FFDE11" }}> &#38; </span>
-                social media
-              </b>
-            </Text>
+            <FadeUp>
+              <Text fontSize={"40px"}>
+                we make &nbsp;
+                <b>
+                  brands, websites <br /> apps{" "}
+                  <span style={{ color: "#FFDE11" }}> &#38; </span>
+                  social media
+                </b>
+              </Text>
+            </FadeUp>
           </Box>
         </Flex>
         <Flex>
@@ -88,28 +120,33 @@ const CaseStudy = (props) => {
               bottom={{ base: "45px", md: "0" }}
             />
           </Box>
-          <Box width={"80%"}>
+          <Box width={"80%"} ref={ref}>
             <Fancybox>
               <Swiper
                 spaceBetween={20}
                 slidesPerView={isLargerThan780 ? 3.5 : 1}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
-                loop={true}
+                // loop={true}
                 ref={swiperRef}
               >
-                {props.data.map((slide) => (
+                {props.data.map((slide, index) => (
                   <SwiperSlide key={slide.img}>
                     <a
                       data-fancybox="gallery"
                       style={{ position: "relative" }}
                       href={slide.img}
                     >
-                      <CaseStudySlide
-                        img={slide.img}
-                        name={slide.name}
-                        type={slide.type}
-                      />
+                      <motion.div
+                        variants={variants}
+                        initial="initial"
+                        animate={controls}
+                        custom={index}
+                      >
+                        <CaseStudySlide
+                          img={slide.img}
+                          name={slide.name}
+                          type={slide.type}
+                        />
+                      </motion.div>
                     </a>
                   </SwiperSlide>
                 ))}

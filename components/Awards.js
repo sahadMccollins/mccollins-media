@@ -5,24 +5,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import AwardSlide from "./AwardSlide";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import "swiper/css";
+import FadeUp from "./Motion/FadeUp";
 
 const Awards = () => {
   const swiperRef = useRef(null);
   return (
     <Stack mt={"100px"}>
       <Container maxWidth={"7xl"} pb="20" position={"relative"}>
-        <Heading
-          fontSize={"4xl"}
-          position={{ base: "relative", md: "absolute" }}
-          top={{ base: "0", md: 16 }}
-          mb={{ base: "50px", md: 0 }}
-          ml={{ base: "0", md: "120px" }}
-          borderLeft="20px solid #FFE962"
-          pl={6}
-        >
-          AWARDS &#38;
-          <br /> ACCREDITATIONS
-        </Heading>
+        <FadeUp>
+          <Heading
+            fontSize={"4xl"}
+            position={{ base: "relative", md: "absolute" }}
+            top={{ base: "0", md: 16 }}
+            mb={{ base: "50px", md: 0 }}
+            ml={{ base: "0", md: "120px" }}
+            borderLeft="20px solid #FFE962"
+            pl={6}
+          >
+            AWARDS &#38;
+            <br /> ACCREDITATIONS
+          </Heading>
+        </FadeUp>
         <Flex>
           <Box width="10%" style={{ base: "none", md: "block" }}>
             <Image
