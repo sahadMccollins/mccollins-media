@@ -14,6 +14,23 @@ import Image from "next/image";
 
 import "swiper/css";
 import { useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const variants = {
+  initial: {
+    transform: "rotateY(90deg)",
+  },
+  animate: (custom) => ({
+    transform: "rotateY(0deg)",
+    transition: {
+      delay: custom * 0.2, // Calculate delay based on index
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  }),
+};
 
 function TeamMemberSlide(props) {
   return (
@@ -50,6 +67,18 @@ function TeamMemberSlide(props) {
 const OurTeam = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const swiperRef = useRef(null);
+
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("animate");
+    } else {
+      controls.start("initial");
+    }
+  }, [controls, inView]);
+
   return (
     <Stack>
       <Container maxWidth={"7xl"} pb="20">
@@ -116,39 +145,67 @@ const OurTeam = () => {
               bottom={{ base: "45px", md: "0" }}
             />
           </Box>
-          <Box width={"80%"}>
+          <Box width={"80%"} ref={ref}>
             <Swiper
               spaceBetween={20}
               slidesPerView={isLargerThan780 ? 3.5 : 1}
               ref={swiperRef}
             >
               <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/meghna.jpg"
-                  name="Meghna Kothari"
-                  designation="Director"
-                />
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  animate={controls}
+                  custom={0}
+                >
+                  <TeamMemberSlide
+                    img="/assets/image/team/meghna.jpg"
+                    name="Meghna Kothari"
+                    designation="Director"
+                  />
+                </motion.div>
               </SwiperSlide>
               <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/shome.jpg"
-                  name="Shome BAG"
-                  designation="Associate Business Director"
-                />
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  animate={controls}
+                  custom={1}
+                >
+                  <TeamMemberSlide
+                    img="/assets/image/team/shome.jpg"
+                    name="Shome BAG"
+                    designation="Associate Business Director"
+                  />
+                </motion.div>
               </SwiperSlide>
               <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/asher.jpg"
-                  name="Azhar"
-                  designation="Digital Designer"
-                />
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  animate={controls}
+                  custom={2}
+                >
+                  <TeamMemberSlide
+                    img="/assets/image/team/asher.jpg"
+                    name="Azhar"
+                    designation="Digital Designer"
+                  />
+                </motion.div>
               </SwiperSlide>
               <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Fadwa.jpg"
-                  name="Fadwa"
-                  designation="Account Manager"
-                />
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  animate={controls}
+                  custom={3}
+                >
+                  <TeamMemberSlide
+                    img="/assets/image/team/Fadwa.jpg"
+                    name="Fadwa"
+                    designation="Account Manager"
+                  />
+                </motion.div>
               </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
@@ -185,13 +242,6 @@ const OurTeam = () => {
                   designation="Account Executive"
                 />
               </SwiperSlide>
-              {/* <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Arjun.jpg"
-                  name="Arjun"
-                  designation="SEO Lead"
-                />
-              </SwiperSlide> */}
               <SwiperSlide>
                 <TeamMemberSlide
                   img="/assets/image/team/ijas.jpg"

@@ -9,6 +9,7 @@ import {
   Button,
   Flex,
   Text,
+  OrderedList,
 } from "@chakra-ui/react";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
@@ -25,7 +26,7 @@ import ClientsLogo from "../../components/ClientsLogo";
 import VideoBanner from "../../components/VideoBanner";
 import { useRouter } from "next/router";
 
-const DigitalMarketingSEO = () => {
+const SEO = () => {
   const favWorkData = [
     {
       name: "DAFZA",
@@ -65,80 +66,111 @@ const DigitalMarketingSEO = () => {
   return (
     <Stack position={"relative"}>
       <VideoBanner
-        heading={`google ads \n & seo`}
+        heading={`search engine \n  optimization`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
         poster="/assets/image/servicePage/DM&SEO.jpg"
       />
 
-      <Box py={10}>
-        <Container maxWidth={"7xl"}>
-          <Flex direction={{ base: "column", md: "row" }}>
-            <Box width={{ base: "100%", md: "50%" }}>
-              <Heading>YOUR EXTENDED DIGITAL ARM</Heading>
-              <Box
-                my={8}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"20px"}
-                color={"#000"}
-              >
-                {/* <Text>creating content that tells a story</Text> */}
-              </Box>
-              <Text>
-                We take ownership of your brand from the basics of community
-                management on the social media channels, to bringing the traffic
-                to your website and mapping the conversions.
-              </Text>
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }}>
-              <Box display={"flex"}>
-                <span
-                  style={{
-                    width: "20px",
-                    marginRight: "10px",
-                    background:
-                      "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
-                  }}
-                ></span>
-                <Heading>In-House Team</Heading>
-              </Box>
-              <Text>
-                A team of young and passionate digital enthusiasts from
-                different walks of life, taking ownership of your brands in the
-                digital space
-              </Text>
-              <Box display={"flex"}>
-                <span
-                  style={{
-                    width: "20px",
-                    marginRight: "10px",
-                    background:
-                      "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
-                  }}
-                ></span>
-                <Heading>Dare to Create</Heading>
-              </Box>
-              <Text>
-                Always innovating, always creating. The digital space is full of
-                creating your own experience, working with a online community,
-                and we dare to create.
-              </Text>
-            </Box>
-          </Flex>
-        </Container>
-      </Box>
-      <ServicePoint
-        heading="Digital Brand Activation"
-        // subHeading="performance marketing"
-        contentHeading={"Key Digital Marketing Routes for Your Brand"}
-        content="From Social Media Management to Performance Marketing, our in-house team is your extended marketing arm."
-        points={
-          "Performance Marketing \n Google Ads - PPC \n Social Media Management \n Content Production \n Search Engine Optimization \n Digital Media Buying \n Email Marketing \n  Data Analysis \n AR/VR"
-        }
-      />
+      <Container
+        maxWidth={"7xl"}
+        pt={{ base: "50px", md: "100px" }}
+        style={{ margin: "auto" }}
+      >
+        <Flex direction={{ base: "column-reverse", md: "row" }}>
+          <Box
+            width={{ base: "100%", md: "50%" }}
+            paddingRight={{ base: "0", md: "50px" }}
+            alignSelf="center"
+            textAlign={{ base: "left", md: "justify" }}
+          >
+            <Text mt={5} className="main-p">
+              As a Performance driven, Search Engine Optimization agency in
+              Dubai, we specialize in providing SEO services to businesses. Our
+              primary goal is to support businesses to improve their online
+              visibility and increase organic traffic to their websites.
+            </Text>
+          </Box>
+          <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Image
+              src={"/assets/image/servicePage/DM&SEO2.jpeg"}
+              width="550px"
+              height={"300px"}
+              objectFit="cover"
+            />
+          </Box>
+        </Flex>
+
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          my={{ base: "10", md: "75px" }}
+        >
+          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
+            <Image
+              src={"/assets/image/servicePage/ksa/seo.jpg"}
+              width="500px"
+              height={"500px"}
+              objectFit="cover"
+            />
+          </Box>
+          <Box
+            width={{ base: "100%", md: "50%" }}
+            alignSelf="center"
+            mt={{ base: 5, md: 0 }}
+          >
+            <Heading as={"h5"} className="main-h5">
+              As an SEO provider, we typically provide a range of services to
+              achieve these goals, including:
+            </Heading>
+            <OrderedList
+              my={"6"}
+              textAlign={{ base: "left", md: "justify" }}
+              className="main-p"
+            >
+              <li>
+                <Text fontSize={"20px"} className="main-p">
+                  <b>On-page optimization:</b> Optimizing the content, meta
+                  tags, and other elements on the website to make it more
+                  relevant and accessible to search engines.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Off-page optimization: </b> Building high-quality backlinks
+                  from other websites to improve the website's authority and
+                  relevance.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Keyword research: </b> Identifying the most relevant and
+                  high-traffic keywords for the business and optimizing the
+                  website's content to target those keywords.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Content creation: </b> Creating high-quality, relevant, and
+                  engaging content that appeals to the target audience and helps
+                  drive traffic to the website.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Analytics and reporting:</b> Monitoring the website's
+                  performance, tracking the progress of the SEO campaign, and
+                  providing regular reports to the client.
+                </Text>
+              </li>
+            </OrderedList>
+            <Text className="main-p">
+              We also provide other related services, such as social media
+              marketing, pay-per-click (PPC) advertising, and website design and
+              development.
+            </Text>
+          </Box>
+        </Flex>
+      </Container>
 
       <ModalVideo
         channel="youtube"
@@ -233,7 +265,7 @@ const DigitalMarketingSEO = () => {
   );
 };
 
-DigitalMarketingSEO.getLayout = function getLayout(DigitalMarketingSEO) {
-  return <InnerLayout color="yellow">{DigitalMarketingSEO}</InnerLayout>;
+SEO.getLayout = function getLayout(SEO) {
+  return <InnerLayout color="yellow">{SEO}</InnerLayout>;
 };
-export default DigitalMarketingSEO;
+export default SEO;

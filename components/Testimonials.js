@@ -4,21 +4,24 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import FadeUp from "./Motion/FadeUp";
 
 const Testimonials = () => {
   const swiperRef = useRef(null);
   return (
     <Container maxWidth={"7xl"} my="20">
       <Box position={"relative"} ml={{ base: 0, md: "10%" }}>
-        <Heading
-          borderLeft="20px solid #FFE962"
-          fontSize={{ base: "3xl", md: "4xl" }}
-          fontWeight={"bold"}
-          pl="6"
-        >
-          WHAT OUR CLIENTS
-          <br /> ARE SAYING?
-        </Heading>
+        <FadeUp>
+          <Heading
+            borderLeft="20px solid #FFE962"
+            fontSize={{ base: "3xl", md: "4xl" }}
+            fontWeight={"bold"}
+            pl="6"
+          >
+            WHAT OUR CLIENTS
+            <br /> ARE SAYING?
+          </Heading>
+        </FadeUp>
         <Box
           display={"flex"}
           alignItems="end"
@@ -32,19 +35,21 @@ const Testimonials = () => {
               ref={swiperRef}
             >
               <SwiperSlide>
-                <Box bg="#F7F7F7" p={"16"} mt="10">
-                  <Text>
-                    McCollins has helped launch cleaning Superstore from the
-                    website development to social media and ad management. We
-                    are very happy to have an extended team in McCollins. The
-                    team takes ownership and I would be more than happy to
-                    recommend them to other brands
-                  </Text>
-                  <Heading fontSize={"2xl"} mt="5">
-                    Alexa - Marketing Manager
-                  </Heading>
-                  <Text fontSize={"20px"}>Cleaning Superstore</Text>
-                </Box>
+                <FadeUp>
+                  <Box bg="#F7F7F7" p={"16"} mt="10">
+                    <Text>
+                      McCollins has helped launch cleaning Superstore from the
+                      website development to social media and ad management. We
+                      are very happy to have an extended team in McCollins. The
+                      team takes ownership and I would be more than happy to
+                      recommend them to other brands
+                    </Text>
+                    <Heading fontSize={"2xl"} mt="5">
+                      Alexa - Marketing Manager
+                    </Heading>
+                    <Text fontSize={"20px"}>Cleaning Superstore</Text>
+                  </Box>
+                </FadeUp>
               </SwiperSlide>
               <SwiperSlide>
                 <Box bg="#F7F7F7" p={"16"} mt="10">

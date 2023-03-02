@@ -52,7 +52,7 @@ const Shopify = () => {
   ];
   return (
     <Stack position={"relative"} className="sub-service">
-      <InnerBannerTwo h1="SITECORE CRM" />
+      <InnerBannerTwo h1="Wordpress web development" />
       <Box>
         <Container maxWidth={"7xl"} py={"50px"}>
           <Flex direction={{ base: "column-reverse", md: "row" }}>
@@ -64,15 +64,12 @@ const Shopify = () => {
               className="main-p"
             >
               <Text mt={{ base: 5, md: 0 }} className="main-p">
-                Sitecore is a powerful enterprise-level content management
-                system (CMS) that is widely used for building complex websites,
-                e-commerce platforms, and digital marketing applications.
-                Sitecore development involves creating and customizing digital
-                experiences on the Sitecore platform, using a combination of
-                programming languages, tools, and techniques. Many businesses
-                are scaling with time and now opting for Sitecore Websites. As
-                we do Sitecore development in the UAE, share a brief for your
-                next project.
+                Wordpress is one of the most popular open source content
+                management platforms to develop websites. Many businesses feel
+                the ease to align their business requirements with a Wordpress
+                Website. Our in-house Wordpress development team in Dubai
+                specializes in creating Corporate Websites, e-commerce websites
+                or micro websites - depending upon the brand’s requirement.
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
@@ -94,43 +91,53 @@ const Shopify = () => {
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
               <Heading as={"h3"} className={"main-h3"}>
-                Some Key Features for Sitecore Development :
+                Some of the benefits of Developing a Wordpress Website :
               </Heading>
-              <OrderedList my={"6"} textAlign="justify">
+              <UnorderedList my={"6"} ml={0} className="checkmark">
                 <li>
-                  <Text fontSize={"20px"} className="main-p">
-                    <b>Sitecore architecture: </b> Sitecore is built on the
-                    Microsoft .NET framework and uses a variety of technologies,
-                    including ASP.NET, MVC, and Web API. Understanding the
-                    Sitecore architecture is essential for building scalable and
-                    secure applications.
+                  <Text className="main-p">
+                    Ease of Use - Known to all, easy to adapt and launch
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Sitecore customization: </b>Sitecore provides a variety
-                    of out-of-the-box features and modules, but customizing
-                    these features is often necessary to meet the specific
-                    requirements of a project. Our Sitecore Web Developers in
-                    Dubai strive to keep themselves updated with the latest
-                    technologies.
+                  <Text className="main-p">
+                    Search Engines Love wordpress websites
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Sitecore integration: </b>We can integrate with a wide
-                    range of external systems, including third-party databases,
-                    marketing automation platforms, and e-commerce platforms.
+                  <Text className="main-p">
+                    100% Customizable design of your website
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Maintenance and support : </b>We also provide ongoing
-                    maintenance and support to ensure that the online store is
-                    running smoothly, and any issues are quickly resolved.
+                  <Text className="main-p">
+                    Integrate plug ins to your website as per your business
+                    requirements
                   </Text>
                 </li>
-              </OrderedList>
+                <li>
+                  <Text className="main-p">Multiple User Access</Text>
+                </li>
+                <li>
+                  <Text className="main-p">
+                    Blog incorporation within your website
+                  </Text>
+                </li>
+                <li>
+                  <Text className="main-p">
+                    Multilingual Websites as per the Arab Region, our Wordpress
+                    developers in Dubai are bilingual to understand the
+                    requirements of this market.
+                  </Text>
+                </li>
+                <li>
+                  <Text className="main-p">
+                    Brands have team members who can maintain the website post
+                    launch
+                  </Text>
+                </li>
+              </UnorderedList>
+
               {/* <SimpleGrid
                 columns={{ sm: 1, md: 2 }}
                 spacing="20px"
@@ -153,51 +160,43 @@ const Shopify = () => {
               alignSelf="center"
             >
               <Heading as={"h3"} className={"main-h3"}>
-                As a business, Sitecore is beneficial for :
+                Key Aspects for Wordpress :
               </Heading>
-              <UnorderedList my={"6"} ml={0} className="checkmark">
+              <OrderedList my={"6"} textAlign="justify">
                 <li>
-                  <Text className="main-p">Better tracking and analytics </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Unlocking AI Powered - Personalization
+                  <Text fontSize={"20px"} className="main-p">
+                    <b>WordPress architecture: </b>WordPress is built on the PHP
+                    programming language and uses a MySQL database to store
+                    content. Understanding the WordPress architecture is
+                    essential for building scalable and secure applications.
                   </Text>
                 </li>
                 <li>
-                  <Text className="main-p">
-                    Comprehensive Content Optimization
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>WordPress customization: </b> WordPress provides a
+                    variety of out-of-the-box features and plugins, but
+                    customizing these features is often necessary to meet the
+                    specific requirements of a project. WordPress customization
+                    involves creating custom themes, plugins, and widgets.
                   </Text>
                 </li>
                 <li>
-                  <Text className="main-p">
-                    Gaining a single view of an individual customer
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>WordPress integration: </b>WordPress can integrate with a
+                    wide range of external systems, including third-party
+                    databases, marketing automation platforms, and e-commerce
+                    platforms.
                   </Text>
                 </li>
                 <li>
-                  <Text className="main-p">
-                    Ensuring Data Protection and Privacy
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>WordPress deployment: </b>WordPress deployments can be
+                    complex, involving multiple environments, databases, and
+                    configurations. WordPress developers need to be proficient
+                    in deployment tools, such as Git, FTP, and SSH.
                   </Text>
                 </li>
-                <li>
-                  <Text className="main-p">
-                    Building Omni-channel customer experience
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Increasing operational efficiency
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Increasing customer lifetime value
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">And finally , driving revenue!</Text>
-                </li>
-              </UnorderedList>
+              </OrderedList>
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image

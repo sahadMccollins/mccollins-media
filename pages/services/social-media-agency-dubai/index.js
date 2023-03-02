@@ -4,21 +4,24 @@ import {
   Container,
   Flex,
   Heading,
+  OrderedList,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
-import InnerLayout from "../../components/Layout/InnerLayout";
+import InnerLayout from "../../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import ServicePoint from "../../components/ServicePoint";
-import FavWork from "../../components/FavWork";
-import TextBox from "../../components/TextBox";
-import SocialBox from "../../components/SocialBox";
-import ClientsLogo from "../../components/ClientsLogo";
-import VideoBanner from "../../components/VideoBanner";
+import ServicePoint from "../../../components/ServicePoint";
+import FavWork from "../../../components/FavWork";
+import TextBox from "../../../components/TextBox";
+import SocialBox from "../../../components/SocialBox";
+import ClientsLogo from "../../../components/ClientsLogo";
+import VideoBanner from "../../../components/VideoBanner";
+import { useRouter } from "next/router";
 
 const SocialMediaMarketing = () => {
+  const router = useRouter();
   const favWorkData = [
     {
       name: "DAFZA",
@@ -76,7 +79,7 @@ const SocialMediaMarketing = () => {
         pb={12}
       >
         <Container maxWidth={"7xl"} position="relative">
-          <Box
+          {/* <Box
             style={{ position: "absolute", top: "50%", left: "25%" }}
             display={{ base: "none", md: "block" }}
           >
@@ -85,7 +88,7 @@ const SocialMediaMarketing = () => {
               width="158px"
               height={"215px"}
             />
-          </Box>
+          </Box> */}
           <Flex direction={{ base: "column", md: "row" }} position="relative">
             <Box style={{ position: "absolute", top: "10%", left: "-20%" }}>
               <Image
@@ -100,39 +103,31 @@ const SocialMediaMarketing = () => {
                 width="610px"
                 height="905px"
               />
-              {/* <Text
-                fontSize={"28px"}
-                fontWeight={"bold"}
-                color={"#000"}
-                textAlign={"center"}
-              >
-                #REELS
-              </Text> */}
             </Box>
             <Flex
               width={{ base: "100%", md: "30%" }}
               direction={"column"}
               alignItems="center"
               textAlign={"center"}
+              mt={{ base: 0, lg: "120px" }}
             >
-              <Heading mt={10} fontSize="28px">
+              {/* <Heading mt={10} fontSize="28px">
                 Creating a Digital Community for your brand
               </Heading>
-              <Box width={"80px"} my={7} height={"5px"} background="#000"></Box>
-              <Text>
-                From developing digital brand strategies to content development
-                , infleuncer marketing and performance marketing, we take a
-                mobile first approach to build your brand within the digital
-                space. Our in-house team headquartered in Dubai caters to
-                diverse brands within UAE, Saudi Arabia, Kuwait, Qatar and other
-                markets.
+              <Box width={"80px"} my={7} height={"5px"} background="#000"></Box> */}
+              <Text className="main-p" textAlign={"justify"}>
+                Get your business ahead of the curve with our Social Media
+                Management services. Develop targeted and effective social media
+                campaigns that result in brand conversions. As a Social Media
+                Marketing Agency in UAE, we stay up to date with the latest
+                digital trends and strategies to enhance your online presence.
                 <br />
-                <br /> Working across different channels be it META, TikTok,
-                Snapchat, LinkedIn, Google and more, we curate an exclusive
-                digital roadmap for each brand. Being an award winning social
-                media agency in UAE, we focus on creating awareness,
-                consideration and conversions for your brand in the digital
-                ecosystem.
+                <br />
+                Connect with a community of bloggers and content developers to
+                increase your reach and impact. Being an SMM Agency in Dubai, we
+                tap into the Arab market through our content development
+                services that are tailored to meet the needs of this vibrant
+                market.
               </Text>
               <Button
                 colorScheme="black"
@@ -147,7 +142,10 @@ const SocialMediaMarketing = () => {
                 <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
               </Button>
             </Flex>
-            <Box width={{ base: "100%", md: "35%" }}>
+            <Box
+              width={{ base: "100%", md: "35%" }}
+              display={{ base: "none", md: "block" }}
+            >
               <Image
                 src="/assets/image/ServiceTabs/IphoneTiktok.png"
                 width="610px"
@@ -165,7 +163,132 @@ const SocialMediaMarketing = () => {
           </Flex>
         </Container>
       </Box>
-      <Box>
+      <Container maxW={"7xl"} style={{ margin: "auto" }}>
+        <Flex direction={{ base: "column", md: "row" }}>
+          <Box width={{ base: "100%", md: "50%" }}>
+            <Image
+              src={"/assets/image/servicePage/socialMediaMarketing.jpg"}
+              width="550px"
+              height={"450px"}
+              objectFit="cover"
+            />
+          </Box>
+          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
+            <Heading
+              as={"h5"}
+              className="main-h5"
+              mt={"5"}
+              textAlign={{ base: "center", md: "left" }}
+            >
+              We are Partners with META, Google, Snapchat, TikTok, Yandex,
+              Baidu, WeChat and more
+            </Heading>
+            <OrderedList my={"6"}>
+              <li>
+                <Text fontSize={"20px"}>
+                  Get ahead with our result-driven approach to social media
+                  management.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="2">
+                  Create powerful social media campaigns that drive brand
+                  awareness and conversions.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="2">
+                  Manage your social media accounts in a simple, intuitive way.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="2">
+                  Collaborate with bloggers to develop content that drives
+                  conversions and enhances your brand.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="2">
+                  Expand your reach through effective digital marketing
+                  strategies that integrate across all platforms.
+                </Text>
+              </li>
+            </OrderedList>
+          </Box>
+        </Flex>
+
+        <Flex
+          direction={{ base: "column-reverse", md: "row" }}
+          alignItems="center"
+          mt="10"
+        >
+          <Box width={{ base: "100%", md: "50%" }}>
+            <Text mt={5}>
+              We aim to be the best social media agency in Dubai - also catering
+              to Saudi Arabia, Kuwait, Qatar, Oman, Bahrain and more. Apart from
+              our Social Media Services, we also provide Content Development
+              Services, Blogger Outreach Program Services and Web Development
+              Services
+            </Text>
+            <Button
+              colorScheme="black"
+              background={"#000"}
+              borderRadius="20px"
+              color="#fff"
+              mt={7}
+              fontWeight="bold"
+              onClick={scrollFun}
+            >
+              view more{" "}
+              <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
+            </Button>
+          </Box>
+          <Box width={{ base: "100%", md: "50%" }} textAlign="end">
+            <Image
+              src="/assets/image/ServicePage/ksa/social-media.jpg"
+              width="550px"
+              height={"300px"}
+            />
+          </Box>
+        </Flex>
+      </Container>
+
+      <Box className="creative-head" pb={10} style={{ marginTop: "50px" }}>
+        <Heading
+          as={"h4"}
+          fontSize={{ base: "25px", md: "50px" }}
+          pt="20"
+          textAlign="center"
+          color={"#FFDE11"}
+          textTransform="uppercase"
+        >
+          what we offer
+        </Heading>
+        <Container maxWidth="4xl">
+          <Box className="intrestedH2">
+            <Heading
+              onClick={() =>
+                router.push(
+                  "/services/social-media-agency-dubai/content-creation "
+                )
+              }
+            >
+              Content Creation
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push(
+                  "/services/social-media-agency-dubai/digital-media-buying"
+                )
+              }
+            >
+              Digital Media Buying
+            </Heading>
+          </Box>
+        </Container>
+      </Box>
+
+      {/* <Box>
         <Container maxWidth={"7xl"} my={10}>
           <Flex direction={{ base: "column", md: "row" }}>
             <Box width={{ base: "100%", md: "50%" }}>
@@ -173,17 +296,6 @@ const SocialMediaMarketing = () => {
                 #1 Social Media Agency <br />
                 in the Middle East
               </Heading>
-              <Box
-                my={8}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"1xl"}
-                color={"#000"}
-              >
-                {/* <Text>Story tellers for your brand</Text> */}
-              </Box>
               <Text>
                 Our Key services include Social Media Marketing, Website
                 Development, Search Engine Optimization (SEO) & Search Engine
@@ -231,8 +343,8 @@ const SocialMediaMarketing = () => {
             </Box>
           </Flex>
         </Container>
-      </Box>
-      <ServicePoint
+      </Box> */}
+      {/* <ServicePoint
         heading="Digital Brand Activation"
         // subHeading="performance marketing"
         contentHeading={"Story tellers for your brand"}
@@ -240,7 +352,7 @@ const SocialMediaMarketing = () => {
         points={
           "Social Media Management \n Social Media Content Creation & Distribution \n Digital Media Buying \n Social Media Listening, Engagement and Reporting \n Social Media Campaigns Management \n Influencer Marketing Campaigns \n Cross Promotion of Online to Offline \n Social Media Chat Bot Development \n Lead Generation and Revenue Generation from Social Media"
         }
-      />
+      /> */}
       {/* <Box bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
         <Container maxWidth={"7xl"} mt={"5"} mb={"12"}>
           <Heading fontSize={{ base: "3xl", md: "4xl" }}>

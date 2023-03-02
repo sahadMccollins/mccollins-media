@@ -84,7 +84,9 @@ const ServiceIcon = () => {
           <SwiperSlide>
             <Box
               onClick={() =>
-                router.push("/services/web-design-and-development/wordpress")
+                router.push(
+                  "/services/web-design-and-development/wordpress-website-development"
+                )
               }
               className="icon"
             >

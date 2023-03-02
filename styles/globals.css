@@ -1,10 +1,4 @@
 
-:root {
-  --main-p:17px;
-  --main-h2 :40px;
-
-}
-
 .main-p {
   font-size: 17px !important;
 }
@@ -14,11 +8,37 @@
   font-weight: 800 !important;
 }
 
+.main-h3 {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+
+}
+
+.main-h5 {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+
+}
+
 @media (max-width: 768px) {
   .main-h2 {
   font-size: 30px !important;
   font-weight: 800 !important;
 }
+  .main-h3 {
+  font-size: 25x !important;
+  font-weight: 700 !important;
+}
+
+
+.main-h5 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+}
+
+.sub-service ul li::marker {
+  background: #FFDE11;
 }
 
 html,
@@ -582,3 +602,37 @@ content: counter(step-counter);
         margin: 10px 0;
       }
   }
+
+
+  ul.checkmark li {
+  font-size: 16px;
+  margin-bottom: 1em;
+  list-style-type: none;
+  padding: .25em 0 0 2.5em;
+  position: relative; }
+  ul.checkmark li:before {
+    content: " ";
+    display: block;
+    border: solid .8em #FFDE11;
+    border-radius: .8em;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0.4em;
+    top: 30%;
+    margin-top: -.5em; }
+  ul.checkmark li:after {
+    content: " ";
+    display: block;
+    width: .3em;
+    height: .6em;
+    border: solid #fff;
+    border-width: 0 .2em .2em 0;
+    position: absolute;
+    left: 1em;
+    top: 40%;
+    margin-top: -.2em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }

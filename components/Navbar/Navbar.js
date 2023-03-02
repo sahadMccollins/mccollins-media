@@ -557,7 +557,17 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Google Ads & SEO"
-                          href="/services/google-ads-and-seo"
+                          href="/services/google-ads-and-sem"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Search Engine Optimization"
+                          href="/services/search-engine-optimization"
                         />
                       </li>
                       <li
