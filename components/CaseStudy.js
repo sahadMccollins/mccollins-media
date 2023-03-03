@@ -1,25 +1,13 @@
-import {
-  Box,
-  Container,
-  Flex,
-  HStack,
-  Stack,
-  Text,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
-import Image from "next/image";
+import { Pagination } from "swiper";
 
+import "swiper/css/pagination";
 import "swiper/css";
-import CaseStudySlide from "./CaseStudySlide";
-import { useRef } from "react";
-import Fancybox from "./Fancybox";
+import { Box, Text, Button, useMediaQuery, Heading } from "@chakra-ui/react";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import FadeUp from "./Motion/FadeUp";
 
 const variants = {
   initial: {
@@ -35,9 +23,8 @@ const variants = {
   }),
 };
 
-const CaseStudy = (props) => {
-  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
-  const swiperRef = useRef(null);
+const CaseStudy = ({ data }) => {
+  const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
 
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -49,113 +36,92 @@ const CaseStudy = (props) => {
       controls.start("initial");
     }
   }, [controls, inView]);
+
   return (
-    <Stack>
-      <Container maxWidth={"7xl"} pb="20">
-        <Flex direction={{ base: "column", md: "row" }}>
-          <Box
-            width="50%"
-            zIndex={2}
-            textAlign="center"
-            display={{ base: "none", md: "block" }}
-          >
-            <Image
-              position={"absolute"}
-              src="/assets/image/design/2.svg"
-              width={"105px"}
-              height={"168px"}
-              top={-10}
-            />
-          </Box>
-          <Box width="100%" mb={"20px"} alignSelf="end">
-            <FadeUp>
-              <Text fontSize={"40px"}>
-                we make &nbsp;
-                <b>
-                  brands, websites <br /> apps{" "}
-                  <span style={{ color: "#FFDE11" }}> &#38; </span>
-                  social media
-                </b>
-              </Text>
-            </FadeUp>
-          </Box>
-        </Flex>
-        <Flex>
-          <Box width={"20%"} position="relative">
-            <HStack
-              position={"absolute"}
-              bottom="0"
-              right={0}
-              spacing="0"
-              cursor={"pointer"}
+    <Box className="swiper-container caseStudySwiper" pb={"50px"} ref={ref}>
+      <Swiper
+        modules={[Pagination]}
+        slidesPerView={isLargerThan768 ? 4 : 1}
+        spaceBetween={50}
+        centeredSlides={true}
+        pagination={{ clickable: true }}
+        loop={true}
+        initialSlide={5}
+      >
+        {data.map((item, index) => (
+          <SwiperSlide>
+            <motion.div
+              variants={variants}
+              initial="initial"
+              animate={controls}
+              custom={index}
             >
               <Box
-                background={"#000"}
-                p="8px 15px 10px 15px"
-                onClick={() => swiperRef.current.swiper.slidePrev()}
+                w="320px"
+                h="450px"
+                bgImage={item.img}
+                bgRepeat="no-repeat"
+                bgPosition="center"
+                bgSize="cover"
+                borderRadius="lg"
+                position="relative"
+                transition="transform 0.3s ease-in-out"
+                // _hover={{ transform: "scale(1.05)" }}
+                _hover={{
+                  transform: "scale(1.05)",
+                  "&::before": {
+                    content: '""',
+                    display: "block",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "65%",
+                    background:
+                      "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
+                    borderRadius: "lg",
+                    opacity: 0.8,
+                  },
+                }}
               >
-                <ChevronLeftIcon color={"#fff"} />
+                <Heading
+                  position="absolute"
+                  bottom="120px"
+                  left="20px"
+                  color="white"
+                  fontSize="2xl"
+                  fontWeight="bold"
+                >
+                  {item.name}
+                </Heading>
+                <Text
+                  position="absolute"
+                  bottom="80px"
+                  left="20px"
+                  color="white"
+                  fontSize="2xl"
+                  fontWeight="medium"
+                >
+                  {item.type}
+                </Text>
+                <Button
+                  colorScheme="yellow"
+                  background={"#FFDE11"}
+                  borderRadius="20px"
+                  color="#000"
+                  position="absolute"
+                  bottom="30px"
+                  left="20px"
+                  variant="solid"
+                >
+                  Case Study
+                </Button>
               </Box>
-              <Box
-                background={"#6F6F6F"}
-                p="8px 15px 10px 15px"
-                onClick={() => swiperRef.current.swiper.slideNext()}
-              >
-                <ChevronRightIcon color={"#fff"} />
-              </Box>
-            </HStack>
-            <Box
-              position={"absolute"}
-              bottom="42px"
-              background={"#FFDE11"}
-              w="400px"
-              height={{ base: "300px", md: "475px" }}
-              right={"-150px"}
-            ></Box>
-            <Image
-              position={"absolute"}
-              src="/assets/image/caseStudy/caseStudyAlp.png"
-              width="80px"
-              height="400px"
-              bottom={{ base: "45px", md: "0" }}
-            />
-          </Box>
-          <Box width={"80%"} ref={ref}>
-            <Fancybox>
-              <Swiper
-                spaceBetween={20}
-                slidesPerView={isLargerThan780 ? 3.5 : 1}
-                // loop={true}
-                ref={swiperRef}
-              >
-                {props.data.map((slide, index) => (
-                  <SwiperSlide key={slide.img}>
-                    <a
-                      data-fancybox="gallery"
-                      style={{ position: "relative" }}
-                      href={slide.img}
-                    >
-                      <motion.div
-                        variants={variants}
-                        initial="initial"
-                        animate={controls}
-                        custom={index}
-                      >
-                        <CaseStudySlide
-                          img={slide.img}
-                          name={slide.name}
-                          type={slide.type}
-                        />
-                      </motion.div>
-                    </a>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </Fancybox>
-          </Box>
-        </Flex>
-      </Container>
-    </Stack>
+            </motion.div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </Box>
   );
 };
 

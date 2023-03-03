@@ -636,3 +636,31 @@ content: counter(step-counter);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
+
+
+.caseStudySwiper .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+
+.caseStudySwiper .swiper-pagination-bullet {
+  margin-bottom: 2px !important;
+}
+
+.caseStudySwiper .swiper-pagination-bullet-active {
+  background: transparent;
+  border: 3px solid yellow;
+  width: 13px;
+  height: 13px;
+  margin-bottom: 0 !important;
+}
+
+
+.caseStudySwiper .swiper-slide {
+  height: 500px;
+  margin-right: 50px;
+}
+
+.caseStudySwiper .swiper-slide div {
+  margin-top: 25px;
+}
