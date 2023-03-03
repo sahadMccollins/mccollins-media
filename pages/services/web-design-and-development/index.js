@@ -261,9 +261,9 @@ const WebsiteDevelopment = () => {
             </Heading>
           </Box>
         </Container>
-
-        <WebShowcase />
       </Box>
+
+      <WebShowcase />
       <Box style={{ margin: "0" }}>
         <ClientsLogo />
       </Box>
