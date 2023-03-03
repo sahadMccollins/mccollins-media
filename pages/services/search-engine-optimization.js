@@ -250,7 +250,7 @@ const SEO = () => {
 
       <TextBox
         heading="Case study"
-        smallHeading={"Google Ads and SEO"}
+        smallHeading={"Search engine optimization"}
         subHeading="Learn how we executed campaigns to get results"
         content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
       />

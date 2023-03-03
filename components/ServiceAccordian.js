@@ -92,9 +92,9 @@ const ServiceAccordian = () => {
               >
                 <FadeUp>
                   <AccItem
-                    name="Google Ads and SEM"
+                    name="Google Ads"
                     content="From driving footfall to your location, to your website or tracking conversions, our team works towards making numbers matter. Be it Digital Media Buying - Social Media Ads or PPC Campaigns, we work in alignment with your KPIs."
-                    url="google-ads-and-sem"
+                    url="google-ads"
                   />
                 </FadeUp>
               </div>

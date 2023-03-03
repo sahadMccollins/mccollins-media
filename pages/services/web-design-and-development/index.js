@@ -233,10 +233,8 @@ const WebsiteDevelopment = () => {
         </Heading>
         <Container maxWidth="4xl">
           <Box className="intrestedH2">
-            <Heading
-              onClick={() => router.push("/services/google-ads-and-sem")}
-            >
-              SEM - Google Ads
+            <Heading onClick={() => router.push("/services/google-ads")}>
+              Google Ads
             </Heading>
             <Heading
               onClick={() =>

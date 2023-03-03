@@ -145,7 +145,7 @@ const ServicePageAccordian = () => {
                               "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                           }}
                         ></span>
-                        Google Ads & SEM
+                        Google Ads
                       </Box>
                     </AccordionButton>
                   </h2>

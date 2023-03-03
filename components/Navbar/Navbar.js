@@ -556,8 +556,8 @@ const Navbar = (props) => {
                         }}
                       >
                         <NavItem
-                          name="Google Ads & SEO"
-                          href="/services/google-ads-and-sem"
+                          name="Google Ads"
+                          href="/services/google-ads"
                         />
                       </li>
                       <li
