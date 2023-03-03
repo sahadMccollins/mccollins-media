@@ -49,7 +49,7 @@ const CaseStudy = ({ data }) => {
         initialSlide={5}
       >
         {data.map((item, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={item.name}>
             <motion.div
               variants={variants}
               initial="initial"
