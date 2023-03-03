@@ -177,6 +177,7 @@ const VideoCaseStudy = () => {
             playsinline=""
             muted="muted"
             loop="loop"
+            loading="lazy"
             controls
           ></video>
         </Box>
@@ -188,6 +189,7 @@ const VideoCaseStudy = () => {
             playsinline=""
             muted="muted"
             loop="loop"
+            loading="lazy"
             controls
           ></video>
         </Box>
@@ -199,6 +201,7 @@ const VideoCaseStudy = () => {
             playsinline=""
             muted="muted"
             loop="loop"
+            loading="lazy"
             controls
           ></video>
         </Box>
@@ -210,6 +213,7 @@ const VideoCaseStudy = () => {
             playsinline=""
             muted="muted"
             loop="loop"
+            loading="lazy"
             controls
           ></video>
         </Box>
