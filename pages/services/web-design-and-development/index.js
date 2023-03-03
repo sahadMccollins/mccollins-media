@@ -42,56 +42,55 @@ const WebsiteDevelopment = () => {
           />
           <ServiceIcon />
 
-          <Container maxWidth={"7xl"} pb="2">
-            <Flex
-              direction={{ base: "column", md: "row" }}
-              mt="8"
-              justifyContent={"space-between"}
-              position="relative"
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            mt="8"
+            justifyContent={"space-between"}
+            position="relative"
+          >
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              display="block"
+              alignSelf="center"
             >
+              <Heading className="main-h2">
+                Develop Websites That Drive Traffic And Conversion
+              </Heading>
               <Box
-                width={{ base: "100%", md: "50%" }}
-                display="block"
-                alignSelf="center"
+                my={8}
+                background="#FFDE11"
+                width={"fit-content"}
+                p={"0px 8% 0px 10px"}
+                fontWeight="bold"
+                fontSize={"20px"}
               >
-                <Heading className="main-h2">
-                  Develop Websites That Drive Traffic And Conversion
-                </Heading>
-                <Box
-                  my={8}
-                  background="#FFDE11"
-                  width={"fit-content"}
-                  p={"0px 8% 0px 10px"}
-                  fontWeight="bold"
-                  fontSize={"20px"}
-                >
-                  <Text>A Voice For Your Brand</Text>
-                </Box>
-                <Text mb={5} className="main-p">
-                  Creating a website is an important part of any marketing
-                  strategy, and it's no wonder that so many businesses are
-                  turning to website development partners to help them create
-                  their result driven website.
-                  <br />
-                  <br /> We have a team of in-house developers who can help you
-                  create a website on any platform, from ecommerce websites to
-                  corporate websites. With years of experience, our team will
-                  work with you to develop a website that reflects your unique
-                  brand and meets your needs. We understand that different
-                  businesses need different features and accommodations, so
-                  we'll work closely with you to develop a website that
-                  perfectly fits your needs.
-                </Text>
+                <Text>A Voice For Your Brand</Text>
               </Box>
-              <Box width={{ base: "100%", md: "45%" }} position="relative">
-                <Image
-                  src={"/assets/image/servicePage/Woocommerce.jpg"}
-                  width="585px"
-                  height={"528px"}
-                />
-              </Box>
+              <Text mb={5} className="main-p">
+                Creating a website is an important part of any marketing
+                strategy, and it's no wonder that so many businesses are turning
+                to website development partners to help them create their result
+                driven website.
+                <br />
+                <br /> We have a team of in-house developers who can help you
+                create a website on any platform, from ecommerce websites to
+                corporate websites. With years of experience, our team will work
+                with you to develop a website that reflects your unique brand
+                and meets your needs. We understand that different businesses
+                need different features and accommodations, so we'll work
+                closely with you to develop a website that perfectly fits your
+                needs.
+              </Text>
+            </Box>
+            <Box width={{ base: "100%", md: "45%" }} position="relative">
+              <Image
+                src={"/assets/image/servicePage/Woocommerce.jpg"}
+                width="585px"
+                height={"528px"}
+              />
+            </Box>
 
-              {/* <Box
+            {/* <Box
                 position={"absolute"}
                 left={{ base: "60", md: "35%" }}
                 bottom={"-28"}
@@ -103,103 +102,102 @@ const WebsiteDevelopment = () => {
                   height="202px"
                 />
               </Box> */}
-            </Flex>
-            <Flex
-              direction={{ base: "column-reverse", md: "row" }}
-              mt="10"
-              justifyContent={"space-between"}
-              position="relative"
+          </Flex>
+          <Flex
+            direction={{ base: "column-reverse", md: "row" }}
+            mt="10"
+            justifyContent={"space-between"}
+            position="relative"
+          >
+            <Box width={{ base: "100%", md: "45%" }} position="relative">
+              <Image
+                src={"/assets/image/servicePage/Magneto.jpg"}
+                width="585px"
+                height={"528px"}
+              />
+            </Box>
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              className="sub-service"
+              alignSelf="center"
             >
-              <Box width={{ base: "100%", md: "45%" }} position="relative">
-                <Image
-                  src={"/assets/image/servicePage/Magneto.jpg"}
-                  width="585px"
-                  height={"528px"}
-                />
-              </Box>
-              <Box
-                width={{ base: "100%", md: "50%" }}
-                className="sub-service"
-                alignSelf="center"
-              >
-                <OrderedList>
-                  <li>
-                    <Text className="main-p">
-                      Get your website designed and developed by a team of
-                      experts who will ensure that your site is perfect for your
-                      brand.
-                    </Text>
-                  </li>
-                  <li>
-                    <Text className="main-p">
-                      Choose from a wide range of customizable website features
-                      that will make your site unique.
-                    </Text>
-                  </li>
-                  <li>
-                    <Text className="main-p">
-                      Enjoy hassle-free website maintenance that will keep your
-                      site running smoothly.
-                    </Text>
-                  </li>
-                  <li style={{ marginBottom: "5px" }} className="main-p">
-                    <Text className="main-p">
-                      Optimize your website for better search engine ranking
-                      with our cutting-edge SEO techniques.
-                    </Text>
-                  </li>
-                  <li>
-                    <Text className="main-p">
-                      Keep your data safe and secure with our state-of-the-art
-                      security measures
-                    </Text>
-                  </li>
-                </OrderedList>
-              </Box>
-            </Flex>
-            <Flex
-              direction={{ base: "column", md: "row" }}
-              mt="10"
-              justifyContent={"space-between"}
+              <OrderedList>
+                <li>
+                  <Text className="main-p">
+                    Get your website designed and developed by a team of experts
+                    who will ensure that your site is perfect for your brand.
+                  </Text>
+                </li>
+                <li>
+                  <Text className="main-p">
+                    Choose from a wide range of customizable website features
+                    that will make your site unique.
+                  </Text>
+                </li>
+                <li>
+                  <Text className="main-p">
+                    Enjoy hassle-free website maintenance that will keep your
+                    site running smoothly.
+                  </Text>
+                </li>
+                <li style={{ marginBottom: "5px" }} className="main-p">
+                  <Text className="main-p">
+                    Optimize your website for better search engine ranking with
+                    our cutting-edge SEO techniques.
+                  </Text>
+                </li>
+                <li>
+                  <Text className="main-p">
+                    Keep your data safe and secure with our state-of-the-art
+                    security measures
+                  </Text>
+                </li>
+              </OrderedList>
+            </Box>
+          </Flex>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            mt="10"
+            justifyContent={"space-between"}
+            position="relative"
+          >
+            <Box
+              width={{ base: "100%", md: "50%" }}
               position="relative"
+              alignSelf="center"
             >
-              <Box
-                width={{ base: "100%", md: "50%" }}
-                position="relative"
-                alignSelf="center"
-              >
-                <Text className="main-p">
-                  Partner with us and get your Business online today. With our
-                  in-house team, we develop websites on Sitecore, Wordpress,
-                  React, Shopify and more. Once the website is live, we support
-                  with Website Maintenance, Search Engine Optimization and
-                  Search Engine Marketing.
-                  <br />
-                  <br />
-                  In the era of mobile first technology, website is the only
-                  effective outlet to communicate with your customers.
-                  <br />
-                  <br />
-                  Build a strong Mobile-first website and be in the pocket of
-                  your customers. Be it informational or e-commerce, we develop
-                  them in-house
-                </Text>
-              </Box>
-              <Box
-                width={{ base: "100%", md: "45%" }}
-                position="relative"
-                mt={{ base: "5", md: 0 }}
-              >
-                <Image
-                  src={"/assets/image/servicePage/DM&SEO2.jpg"}
-                  width="585px"
-                  height={"350px"}
-                />
-              </Box>
-            </Flex>
-          </Container>
+              <Text className="main-p">
+                Partner with us and get your Business online today. With our
+                in-house team, we develop websites on Sitecore, Wordpress,
+                React, Shopify and more. Once the website is live, we support
+                with Website Maintenance, Search Engine Optimization and Search
+                Engine Marketing.
+                <br />
+                <br />
+                In the era of mobile first technology, website is the only
+                effective outlet to communicate with your customers.
+                <br />
+                <br />
+                Build a strong Mobile-first website and be in the pocket of your
+                customers. Be it informational or e-commerce, we develop them
+                in-house
+              </Text>
+            </Box>
+            <Box
+              width={{ base: "100%", md: "45%" }}
+              position="relative"
+              mt={{ base: "5", md: 0 }}
+            >
+              <Image
+                src={"/assets/image/servicePage/DM&SEO2.jpg"}
+                width="585px"
+                height={"350px"}
+              />
+            </Box>
+          </Flex>
         </Container>
       </Box>
+      <WebShowcase />
 
       <Box className="creative-head">
         <Heading
@@ -263,7 +261,6 @@ const WebsiteDevelopment = () => {
         </Container>
       </Box>
 
-      <WebShowcase />
       <Box style={{ margin: "0" }}>
         <ClientsLogo />
       </Box>
