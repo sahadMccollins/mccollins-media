@@ -201,7 +201,6 @@ const WebsiteDevelopment = () => {
         </Container>
       </Box>
 
-      <WebShowcase />
       <Box className="creative-head">
         <Heading
           as={"h3"}
@@ -262,6 +261,8 @@ const WebsiteDevelopment = () => {
             </Heading>
           </Box>
         </Container>
+
+        <WebShowcase />
       </Box>
       <Box style={{ margin: "0" }}>
         <ClientsLogo />
