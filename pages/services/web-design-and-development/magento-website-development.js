@@ -14,6 +14,7 @@ import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
 import ServicePoint from "../../../components/ServicePoint";
 import TextBox from "../../../components/TextBox";
+import WebShowcase from "../../../components/WebShowcase";
 
 const Magento = () => {
   const favWorkData = [
@@ -157,8 +158,9 @@ const Magento = () => {
             subHeading="sneak peak into our social media marketing projects"
             content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
           />
-          <FavWork data={favWorkData} />
         </Container>
+
+        <WebShowcase />
       </Box>
     </Stack>
   );

@@ -18,50 +18,16 @@ const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 import { useState } from "react";
 
 import "../../node_modules/react-modal-video/css/modal-video.min.css";
-import ServicePoint from "../../components/ServicePoint";
 import TextBox from "../../components/TextBox";
-import FavWork from "../../components/FavWork";
-import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
 import VideoBanner from "../../components/VideoBanner";
 import { useRouter } from "next/router";
+import VideoCaseStudy from "../../components/VideoCaseStudy";
+import FormBox from "../../components/FormBox";
+import WebShowcase from "../../components/WebShowcase";
+import Testimonials from "../../components/Testimonials";
 
 const DigitalMarketingSEO = () => {
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
-
-  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
-  const [isOpen, setOpen] = useState(false);
   const router = useRouter();
   return (
     <Stack position={"relative"}>
@@ -131,7 +97,7 @@ const DigitalMarketingSEO = () => {
         </Container>
       </Box> */}
 
-      <Container maxWidth={"7xl"} py={"50px"} style={{ margin: "auto" }}>
+      <Container maxWidth={"7xl"} pt={"50px"} style={{ margin: "auto" }}>
         <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
@@ -259,30 +225,61 @@ const DigitalMarketingSEO = () => {
           </Box>
         </Flex>
       </Container>
-      {/* 
-      <ServicePoint
-        // heading="Digital Brand Activation"
-        // subHeading="performance marketing"
-        contentHeading={"Key Digital Marketing Routes for Your Brand"}
-        content="From Social Media Management to Performance Marketing, our in-house team is your extended marketing arm."
-        points={
-          "Campaign Management \n A/B Testing \n Lead Generation \n Conversion Campaign  \n Competitor Analysis \n Google Data Studio \n Tracking \n  Campaign Reporting "
-        }
-      /> */}
-
-      <TextBox
-        heading="Case study"
-        smallHeading={"Google Ads and SEO"}
-        subHeading="Learn how we executed campaigns to get results"
-        content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
-      />
-      <FavWork data={favWorkData} />
-      <TextBox
-        heading="Technologies We work with"
-        content="Transform your brand journey today. We grow brands, create experiences and solve problems."
-      />
-      <TechIcon />
-      <ClientsLogo />
+      <Container
+        maxWidth={"7xl"}
+        style={{ margin: "auto", marginBottom: "40px" }}
+      >
+        <FormBox heading={"Request a Call Back"} />
+      </Container>
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
+        <VideoCaseStudy />
+      </Container>
+      <Box className="creative-head" pb={10}>
+        <Heading
+          as={"h4"}
+          fontSize={{ base: "25px", md: "50px" }}
+          pt="20"
+          textAlign="center"
+          color={"#FFDE11"}
+          textTransform="uppercase"
+        >
+          I am also interested in
+        </Heading>
+        <Container maxWidth="4xl">
+          <Box className="intrestedH2">
+            <Heading
+              onClick={() => router.push("/services/google-ads-and-sem")}
+            >
+              SEM - Google Ads
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push("/services/search-engine-optimization")
+              }
+            >
+              Search Engine Optimization
+            </Heading>
+            <Heading
+              onClick={() => router.push("/services/social-media-agency-dubai")}
+            >
+              Social Media Marketing
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push("/services/web-design-and-development")
+              }
+            >
+              Website Maintenance
+            </Heading>
+          </Box>
+        </Container>
+      </Box>
+      <Box style={{ margin: "0" }}>
+        <ClientsLogo />
+      </Box>
+      <Box my="10">
+        <Testimonials />
+      </Box>
     </Stack>
   );
 };

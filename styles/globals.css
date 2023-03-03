@@ -664,3 +664,20 @@ content: counter(step-counter);
 .caseStudySwiper .swiper-slide div {
   margin-top: 25px;
 }
+
+.webshowcase .contentBox {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 30px 25px 25px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    max-width: 350px;
+}
+
+  @media (max-width: 768px) {
+
+.webshowcase .swiper-wrapper {
+  margin-left: 12px;
+}
+
+  }

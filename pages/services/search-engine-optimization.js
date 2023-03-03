@@ -93,7 +93,7 @@ const SEO = () => {
           </Box>
           <Box width={{ base: "100%", md: "50%" }} position="relative">
             <Image
-              src={"/assets/image/servicePage/DM&SEO2.jpeg"}
+              src={"/assets/image/servicePage/DM&SEO2.jpg"}
               width="550px"
               height={"300px"}
               objectFit="cover"
@@ -182,7 +182,7 @@ const SEO = () => {
 
       <Box position={"relative"} style={{ marginTop: "0" }}>
         <Chakraimage
-          src="/assets/image/servicePage/DM&SEO2.jpeg"
+          src="/assets/image/servicePage/DM&SEO2.jpg"
           width={"100%"}
           height={"700px"}
           objectFit={"cover"}

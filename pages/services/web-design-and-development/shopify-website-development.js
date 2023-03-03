@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
+import CaseStudy from "../../../components/CaseStudy";
 import FavWork from "../../../components/FavWork";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
@@ -81,7 +82,11 @@ const Shopify = () => {
                 Interface.
               </Text>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              position="relative"
+              textAlign={"center"}
+            >
               <Image
                 src={"/assets/image/servicePage/shopify2.jpg"}
                 width="500px"
@@ -134,19 +139,6 @@ const Shopify = () => {
                   </Text>
                 </li>
               </OrderedList>
-              {/* <SimpleGrid
-                columns={{ sm: 1, md: 2 }}
-                spacing="20px"
-                mt={10}
-                className="servicePoint2"
-              >
-                <Box>Easy to Set Up</Box>
-                <Box>Track your orders in Real Time</Box>
-                <Box>Ease of Inventory Management</Box>
-                <Box>Great for Marketing Automation</Box>
-                <Box>Great for Production Management</Box>
-                <Box>Fast Payment Gateway Integration</Box>
-              </SimpleGrid> */}
             </Box>
           </Flex>
           <Flex direction={{ base: "column-reverse", md: "row" }}>
@@ -164,7 +156,11 @@ const Shopify = () => {
                 products via Performance Marketing and Social Media Marketing.
               </Text>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              position="relative"
+              textAlign={"center"}
+            >
               <Image
                 src={"/assets/image/servicePage/Woocommerce.jpg"}
                 width="500px"
@@ -173,10 +169,18 @@ const Shopify = () => {
               />
             </Box>
           </Flex>
-          <Box mt={10}>
-            <FavWork data={favWorkData} />
-          </Box>
+          <video
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677863386/Mccollins%20Video/Shopify_Video_01.03.2023_s3zes4.mp4"
+            autoPlay="autoplay"
+            playsinline=""
+            muted="muted"
+            loop="loop"
+            controls
+            style={{ marginTop: "50px" }}
+          ></video>
         </Container>
+
+        <CaseStudy data={favWorkData} />
       </Box>
     </Stack>
   );

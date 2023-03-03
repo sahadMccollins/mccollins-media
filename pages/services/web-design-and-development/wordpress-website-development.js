@@ -16,40 +16,9 @@ import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
 import ServicePoint from "../../../components/ServicePoint";
 import TextBox from "../../../components/TextBox";
+import WebShowcase from "../../../components/WebShowcase";
 
 const Shopify = () => {
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
   return (
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Wordpress web development" />
@@ -207,10 +176,9 @@ const Shopify = () => {
               />
             </Box>
           </Flex>
-          <Box mt={10}>
-            <FavWork data={favWorkData} />
-          </Box>
         </Container>
+
+        <WebShowcase />
       </Box>
     </Stack>
   );

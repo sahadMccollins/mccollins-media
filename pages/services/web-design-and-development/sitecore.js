@@ -16,6 +16,7 @@ import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
 import ServicePoint from "../../../components/ServicePoint";
 import TextBox from "../../../components/TextBox";
+import WebShowcase from "../../../components/WebShowcase";
 
 const Shopify = () => {
   const favWorkData = [
@@ -208,10 +209,9 @@ const Shopify = () => {
               />
             </Box>
           </Flex>
-          <Box mt={10}>
-            <FavWork data={favWorkData} />
-          </Box>
         </Container>
+
+        <WebShowcase />
       </Box>
     </Stack>
   );

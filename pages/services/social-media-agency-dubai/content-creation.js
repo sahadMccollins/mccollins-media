@@ -44,9 +44,13 @@ const ContentCreation = () => {
                 curve.
               </Text>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              position="relative"
+              textAlign={"center"}
+            >
               <Image
-                src={"/assets/image/servicePage/shopify2.jpg"}
+                src={"/assets/image/servicePage/contentProduction.jpg"}
                 width="500px"
                 height={"400px"}
                 objectFit="cover"
@@ -57,11 +61,15 @@ const ContentCreation = () => {
             direction={{ base: "column", md: "row" }}
             my={{ base: "10", md: "75px" }}
           >
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              position="relative"
+              textAlign={"center"}
+            >
               <Image
-                src={"/assets/image/servicePage/shopify.jpg"}
-                width="585px"
-                height={"528px"}
+                src={"/assets/image/servicePage/cp2.jpg"}
+                width="500px"
+                height={"400px"}
               />
             </Box>
             <Box
@@ -129,7 +137,11 @@ const ContentCreation = () => {
                 primarily on Mobile First Content.
               </Text>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              position="relative"
+              textAlign={"center"}
+            >
               <Image
                 src={"/assets/image/servicePage/Woocommerce.jpg"}
                 width="500px"

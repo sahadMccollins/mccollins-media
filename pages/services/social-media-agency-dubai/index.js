@@ -19,6 +19,7 @@ import SocialBox from "../../../components/SocialBox";
 import ClientsLogo from "../../../components/ClientsLogo";
 import VideoBanner from "../../../components/VideoBanner";
 import { useRouter } from "next/router";
+import CaseStudy from "../../../components/CaseStudy";
 
 const SocialMediaMarketing = () => {
   const router = useRouter();
@@ -68,27 +69,8 @@ const SocialMediaMarketing = () => {
         content="Mobile First, Content Driven, Result Oriented extended marketing arm for your brand!"
         poster="/assets/image/servicePage/socialMediaMarketing.jpg"
       />
-      <Box
-        // style={{
-        //   background: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
-        // }}
-        // bg={{
-        //   base: "linear-gradient(to bottom,#fff 59%,#ffde11 50%)",
-        //   md: "linear-gradient(to bottom,#fff 56%,#ffde11 50%)",
-        // }}
-        pb={12}
-      >
+      <Box pb={12}>
         <Container maxWidth={"7xl"} position="relative">
-          {/* <Box
-            style={{ position: "absolute", top: "50%", left: "25%" }}
-            display={{ base: "none", md: "block" }}
-          >
-            <Image
-              src={"/assets/image/design/1.svg"}
-              width="158px"
-              height={"215px"}
-            />
-          </Box> */}
           <Flex direction={{ base: "column", md: "row" }} position="relative">
             <Box style={{ position: "absolute", top: "10%", left: "-20%" }}>
               <Image
@@ -111,10 +93,6 @@ const SocialMediaMarketing = () => {
               textAlign={"center"}
               mt={{ base: 0, lg: "120px" }}
             >
-              {/* <Heading mt={10} fontSize="28px">
-                Creating a Digital Community for your brand
-              </Heading>
-              <Box width={"80px"} my={7} height={"5px"} background="#000"></Box> */}
               <Text className="main-p" textAlign={"justify"}>
                 Get your business ahead of the curve with our Social Media
                 Management services. Develop targeted and effective social media
@@ -151,14 +129,6 @@ const SocialMediaMarketing = () => {
                 width="610px"
                 height="897px"
               />
-              {/* <Text
-                fontSize={"28px"}
-                fontWeight={"bold"}
-                color={"#000"}
-                textAlign={"center"}
-              >
-                #TIKTOKS
-              </Text> */}
             </Box>
           </Flex>
         </Container>
@@ -252,7 +222,6 @@ const SocialMediaMarketing = () => {
           </Box>
         </Flex>
       </Container>
-
       <Box className="creative-head" pb={10} style={{ marginTop: "50px" }}>
         <Heading
           as={"h4"}
@@ -287,108 +256,20 @@ const SocialMediaMarketing = () => {
           </Box>
         </Container>
       </Box>
-
-      {/* <Box>
-        <Container maxWidth={"7xl"} my={10}>
-          <Flex direction={{ base: "column", md: "row" }}>
-            <Box width={{ base: "100%", md: "50%" }}>
-              <Heading>
-                #1 Social Media Agency <br />
-                in the Middle East
-              </Heading>
-              <Text>
-                Our Key services include Social Media Marketing, Website
-                Development, Search Engine Optimization (SEO) & Search Engine
-                Marketing (SEM) Services and Content Development – Videography &
-                Photography!
-              </Text>
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }}>
-              <Box display={"flex"}>
-                <span
-                  style={{
-                    width: "20px",
-                    marginRight: "10px",
-                    background:
-                      "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
-                  }}
-                ></span>
-                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
-                  performance marketing
-                </Heading>
-              </Box>
-              <Text>
-                Your brand must rank high amongst competitors when your
-                customers search for your brand on Google. With Keyword
-                Research, we understand what your customers are searching for.
-              </Text>
-              <Box display={"flex"}>
-                <span
-                  style={{
-                    width: "20px",
-                    marginRight: "10px",
-                    background:
-                      "linear-gradient(to bottom,#fff 49%,#ffde11 50%,#ffde11 70%,#fff 71%,#fff 100%)",
-                  }}
-                ></span>
-                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
-                  content management
-                </Heading>
-              </Box>
-              <Text ref={SmmPointRef}>
-                Your brand must rank high amongst competitors when your
-                customers search for your brand on Google. With Keyword
-                Research, we understand what your customers are searching for.
-              </Text>
-            </Box>
-          </Flex>
-        </Container>
-      </Box> */}
-      {/* <ServicePoint
-        heading="Digital Brand Activation"
-        // subHeading="performance marketing"
-        contentHeading={"Story tellers for your brand"}
-        content="Creating a digital ecosystem for your brand. From creating a brand story to communicating with your audience, we activate your brand on the digital space"
-        points={
-          "Social Media Management \n Social Media Content Creation & Distribution \n Digital Media Buying \n Social Media Listening, Engagement and Reporting \n Social Media Campaigns Management \n Influencer Marketing Campaigns \n Cross Promotion of Online to Offline \n Social Media Chat Bot Development \n Lead Generation and Revenue Generation from Social Media"
-        }
-      /> */}
-      {/* <Box bg={"#F7F7F7"} style={{ marginTop: "0px" }}>
-        <Container maxWidth={"7xl"} mt={"5"} mb={"12"}>
-          <Heading fontSize={{ base: "3xl", md: "4xl" }}>
-            BLOGGER OUTREACH PROGRAM
-          </Heading>
-          <Text mt={6}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris
-          </Text>
-        </Container>
-      </Box> */}
       <TextBox
         heading="CASE STUDY"
         smallHeading="social media designs"
         subHeading="sneak peak into our social media marketing projects"
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
-      <FavWork data={favWorkData} />
-      {/* <TextBox
-        heading="Social media Platform"
-        // content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-      /> */}
+      <CaseStudy data={favWorkData} />
       <Stack bg={"#fff"}>
         <Container maxWidth={"7xl"} py="50" zIndex={2} position="relative">
           <Flex direction={{ base: "column", md: "row" }}>
             <Box width={{ base: "100%" }} alignSelf="center">
               <Heading
                 borderLeft="20px solid #FFE962"
-                fontSize={{ base: "3xl", md: "5xl" }}
+                fontSize={"5xl"}
                 fontWeight={"black"}
                 pl="6"
               >
@@ -398,16 +279,6 @@ const SocialMediaMarketing = () => {
           </Flex>
         </Container>
       </Stack>
-      <Box
-        style={{ position: "absolute", top: "50%", left: "-4%" }}
-        display={{ base: "none", md: "block" }}
-      >
-        <Image
-          src={"/assets/image/design/12.svg"}
-          width="130px"
-          height={"130px"}
-        />
-      </Box>
       <SocialBox />
       <ClientsLogo />
     </Stack>

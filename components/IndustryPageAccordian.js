@@ -255,7 +255,7 @@ const IndustryPageAccordian = () => {
             <video
               controls
               preload="none"
-              poster="/assets/image/servicePage/webShowcasePoster.jpeg"
+              poster="/assets/image/servicePage/webShowcasePoster.jpg"
               style={{
                 borderRadius: "15px",
                 zIndex: "9",

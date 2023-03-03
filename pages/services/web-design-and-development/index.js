@@ -20,6 +20,7 @@ import ServiceIcon from "../../../components/ServiceIcon";
 import FormBox from "../../../components/FormBox";
 import Testimonials from "../../../components/Testimonials";
 import { useRouter } from "next/router";
+import WebShowcase from "../../../components/WebShowcase";
 
 const WebsiteDevelopment = () => {
   const router = useRouter();
@@ -190,7 +191,7 @@ const WebsiteDevelopment = () => {
                 mt={{ base: "5", md: 0 }}
               >
                 <Image
-                  src={"/assets/image/servicePage/DM&SEO2.jpeg"}
+                  src={"/assets/image/servicePage/DM&SEO2.jpg"}
                   width="585px"
                   height={"350px"}
                 />
@@ -199,6 +200,8 @@ const WebsiteDevelopment = () => {
           </Container>
         </Container>
       </Box>
+
+      <WebShowcase />
       <Box className="creative-head">
         <Heading
           as={"h3"}

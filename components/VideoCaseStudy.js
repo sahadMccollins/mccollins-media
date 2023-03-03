@@ -171,47 +171,47 @@ const VideoCaseStudy = () => {
       </Flex> */}
       <Flex flexDirection={{ base: "column", md: "row" }} flexWrap="wrap">
         <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <iframe
-            width="100%"
-            height={isSmallerThan780 ? "300px" : "450px"}
-            src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          <video
+            poster="/assets/image/videoCase/OakberryCaseStudySS.jpg"
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_kcnfgj.mp4"
+            playsinline=""
+            muted="muted"
+            loop="loop"
+            controls
+          ></video>
         </Box>
 
         <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <iframe
-            width="100%"
-            height={isSmallerThan780 ? "300px" : "450px"}
-            src="https://www.youtube-nocookie.com/embed/BfAQbo1u34c"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          <video
+            poster="/assets/image/videoCase/pocco.jpg"
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847650/Mccollins%20Video/Poco_Case_Study_yes5es.mp4"
+            playsinline=""
+            muted="muted"
+            loop="loop"
+            controls
+          ></video>
         </Box>
 
         <Box mb="10" width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <iframe
-            width="100%"
-            height={isSmallerThan780 ? "300px" : "450px"}
-            src="https://www.youtube.com/embed/xlwLRqFnDks"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          <video
+            poster="/assets/image/videoCase/cleaning-superstore.jpg"
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_2_ivf5yh.mp4"
+            playsinline=""
+            muted="muted"
+            loop="loop"
+            controls
+          ></video>
         </Box>
 
         <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <iframe
-            width="100%"
-            height={isSmallerThan780 ? "300px" : "450px"}
-            src="https://www.youtube-nocookie.com/embed/1gMPCjq9osI"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          <video
+            poster="/assets/image/videoCase/sn.jpg"
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_kcnfgj.mp4"
+            playsinline=""
+            muted="muted"
+            loop="loop"
+            controls
+          ></video>
         </Box>
       </Flex>
     </>

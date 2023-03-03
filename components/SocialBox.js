@@ -1,4 +1,4 @@
-import { Box, Container, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, HStack, Text } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 import ClientsLogo from "./ClientsLogo";
@@ -18,31 +18,27 @@ const SocialBox = () => {
             flexDir={"row"}
             justifyContent={{ base: "space-evenly", md: "space-around" }}
             width="100%"
-            mb={{ base: "10", md: "0" }}
           >
             <Box>
               <Image
-                src={"/assets/image/icons/socialFB.svg"}
-                width="82px"
-                height={"82px"}
+                src={"/assets/image/icons/socialFB.png"}
+                width="150px"
+                height={"150px"}
               />
-              {/* <Text>facebook</Text> */}
             </Box>
             <Box>
               <Image
-                src={"/assets/image/icons/socialInsta.svg"}
-                width="82px"
-                height={"82px"}
+                src={"/assets/image/icons/socialInsta.png"}
+                width="150px"
+                height={"150px"}
               />
-              {/* <Text>instagram</Text> */}
             </Box>
             <Box>
               <Image
-                src={"/assets/image/icons/socialTiktok.svg"}
-                width="82px"
-                height={"82px"}
+                src={"/assets/image/icons/socialTiktok.png"}
+                width="150px"
+                height={"150px"}
               />
-              {/* <Text>tiktok</Text> */}
             </Box>
           </Flex>
           <Flex
@@ -52,27 +48,24 @@ const SocialBox = () => {
           >
             <Box>
               <Image
-                src={"/assets/image/icons/socialSnap.svg"}
-                width="82px"
-                height={"82px"}
+                src={"/assets/image/icons/socialSnap.png"}
+                width="150px"
+                height={"150px"}
               />
-              {/* <Text>snapchat</Text> */}
             </Box>
             <Box>
               <Image
-                src={"/assets/image/icons/socialLinkedin.svg"}
-                width="82px"
-                height={"82px"}
+                src={"/assets/image/icons/socialLinkedin.png"}
+                width="150px"
+                height={"150px"}
               />
-              {/* <Text>linkedin</Text> */}
             </Box>
             <Box>
               <Image
-                src={"/assets/image/icons/socialGMBs.svg"}
-                width="82px"
-                height={"82px"}
+                src={"/assets/image/icons/socialGMBs.png"}
+                width="150px"
+                height={"150px"}
               />
-              {/* <Text>GMB</Text> */}
             </Box>
           </Flex>
         </HStack>
