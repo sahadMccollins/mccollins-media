@@ -9,7 +9,7 @@ const VideoCaseStudy = () => {
 
   function playVideo1() {
     video1Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_kcnfgj.mp4";
+      "https://res.cloudinary.com/mccollins-media/video/upload/v1677846880/Mccollins%20Video/Oakberry_Case_Study_Video_akplh6.mp4";
     video1Ref.current.play();
   }
 

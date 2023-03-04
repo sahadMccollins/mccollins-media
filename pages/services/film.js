@@ -61,19 +61,13 @@ const ContentProduction = () => {
   return (
     <Stack position={"relative"}>
       <VideoBanner
-        heading={`content \n production`}
+        heading={`film`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219369/Mccollins%20Video/Content_Creation_m3dsap.mp4"
         content="From Photo & Video content creation to website redesign & development, and Social Media Branding, we engage with your audience by telling your brand's story!"
         poster="/assets/image/servicePage/contentProduction.jpg"
       />
 
-      <Box
-        // bg={{
-        //   base: "linear-gradient(to bottom,#fff 43%,#ffde11 43%)",
-        //   md: "linear-gradient(to bottom,#fff 50%,#ffde11 50%)",
-        // }}
-        position="relative"
-      >
+      <Box position="relative">
         <Box
           style={{
             position: "absolute",

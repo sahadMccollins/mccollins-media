@@ -188,7 +188,7 @@ const ServicePageAccordian = () => {
                               "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                           }}
                         ></span>
-                        content production
+                        Film
                       </Box>
                     </AccordionButton>
                   </h2>
@@ -204,9 +204,7 @@ const ServicePageAccordian = () => {
                       color="#000"
                       mt={4}
                       fontWeight="bold"
-                      onClick={() =>
-                        router.push("/services/content-production")
-                      }
+                      onClick={() => router.push("/services/film")}
                     >
                       view more
                       <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />

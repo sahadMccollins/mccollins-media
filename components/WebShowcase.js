@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 
 import "swiper/css/pagination";
 import "swiper/css";
@@ -43,6 +44,11 @@ const WebShowcase = () => {
               <Swiper
                 slidesPerView={isLargerThan768 ? 3.5 : 1}
                 spaceBetween={30}
+                autoplay={{
+                  delay: 1000,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
               >
                 <SwiperSlide>
                   <a
