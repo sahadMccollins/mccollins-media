@@ -81,48 +81,38 @@ const ContentCreation = () => {
                 Why work with us ?
               </Heading>
               <OrderedList my={"6"} textAlign="justify">
-                <li>
+                <li style={{ marginBottom: "15px" }}>
                   <Text fontSize={"20px"} className="main-p">
                     Understand your audience and their needs to create content
                     that is relevant and engaging.
                   </Text>
                 </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                <li style={{ marginBottom: "15px" }}>
+                  <Text fontSize={"20px"} className="main-p">
                     Develop a brand positioning that sets you apart from your
                     competition.
                   </Text>
                 </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                <li style={{ marginBottom: "15px" }}>
+                  <Text fontSize={"20px"} className="main-p">
                     Analyze your competitor's content and develop a strategy to
                     beat them at their own game.
                   </Text>
                 </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                <li style={{ marginBottom: "15px" }}>
+                  <Text fontSize={"20px"} className="main-p">
                     Use multimedia to capture viewer attention and keep them
                     engaged.
                   </Text>
                 </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                <li style={{ marginBottom: "15px" }}>
+                  <Text fontSize={"20px"} className="main-p">
                     Utilize trending content to stay ahead of the curve and
                     attract new readers.
                   </Text>
                 </li>
               </OrderedList>
-            </Box>
-          </Flex>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              paddingRight={{ base: "0", md: "50px" }}
-              alignSelf="center"
-              textAlign={"justify"}
-              className="main-p"
-            >
-              <Text mt={5} textAlign="justify" className="main-p">
+              <Text textAlign="justify" className="main-p">
                 Be it Arabic or English content , we align your brand to the
                 market requirements. We engage with influencers and bloggers to
                 create User Generated Content for your brand.
@@ -136,18 +126,6 @@ const ContentCreation = () => {
                 From Reels, Stories, TikTok Videos to Snapchat content - We work
                 primarily on Mobile First Content.
               </Text>
-            </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              position="relative"
-              textAlign={"center"}
-            >
-              <Image
-                src={"/assets/image/servicePage/Woocommerce.jpg"}
-                width="500px"
-                height={"300px"}
-                objectFit="cover"
-              />
             </Box>
           </Flex>
         </Container>
