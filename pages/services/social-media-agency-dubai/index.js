@@ -12,49 +12,46 @@ import React, { useRef } from "react";
 import InnerLayout from "../../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import ServicePoint from "../../../components/ServicePoint";
-import FavWork from "../../../components/FavWork";
-import TextBox from "../../../components/TextBox";
 import SocialBox from "../../../components/SocialBox";
 import ClientsLogo from "../../../components/ClientsLogo";
 import VideoBanner from "../../../components/VideoBanner";
 import { useRouter } from "next/router";
-import CaseStudy from "../../../components/CaseStudy";
+import VideoCaseStudy from "../../../components/VideoCaseStudy";
 
 const SocialMediaMarketing = () => {
   const router = useRouter();
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
+  // const favWorkData = [
+  //   {
+  //     name: "DAFZA",
+  //     img: "/assets/image/caseStudy/caseStudy1.jpg",
+  //     type: "Web Devlopment",
+  //   },
+  //   {
+  //     name: "Costa Coffee",
+  //     img: "/assets/image/caseStudy/caseStudy2.jpg",
+  //     type: "Web Devlopment",
+  //   },
+  //   {
+  //     name: "Fujifilm",
+  //     img: "/assets/image/caseStudy/caseStudy3.jpg",
+  //     type: "Web Devlopment",
+  //   },
+  //   {
+  //     name: "DAFZA",
+  //     img: "/assets/image/caseStudy/caseStudy1.jpg",
+  //     type: "Web Devlopment",
+  //   },
+  //   {
+  //     name: "Costa Coffee",
+  //     img: "/assets/image/caseStudy/caseStudy2.jpg",
+  //     type: "Web Devlopment",
+  //   },
+  //   {
+  //     name: "Fujifilm",
+  //     img: "/assets/image/caseStudy/caseStudy3.jpg",
+  //     type: "Web Devlopment",
+  //   },
+  // ];
 
   const SmmPointRef = useRef(null);
 
@@ -256,13 +253,14 @@ const SocialMediaMarketing = () => {
           </Box>
         </Container>
       </Box>
-      <TextBox
+      {/* <TextBox
         heading="CASE STUDY"
         smallHeading="social media designs"
         subHeading="sneak peak into our social media marketing projects"
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
-      <CaseStudy data={favWorkData} />
+      <CaseStudy data={favWorkData} /> */}
+      <VideoCaseStudy />
       <Stack bg={"#fff"}>
         <Container maxWidth={"7xl"} py="50" zIndex={2} position="relative">
           <Flex direction={{ base: "column", md: "row" }}>
