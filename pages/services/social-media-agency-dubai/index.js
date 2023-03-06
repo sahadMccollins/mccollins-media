@@ -152,70 +152,42 @@ const SocialMediaMarketing = () => {
             </Heading>
             <OrderedList my={"6"}>
               <li>
-                <Text fontSize={"20px"}>
+                <Text fontSize={"20px"} className="main-p">
                   Get ahead with our result-driven approach to social media
                   management.
                 </Text>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2">
+                <Text fontSize={"20px"} mt="2" className="main-p">
                   Create powerful social media campaigns that drive brand
                   awareness and conversions.
                 </Text>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2">
+                <Text fontSize={"20px"} mt="2" className="main-p">
                   Manage your social media accounts in a simple, intuitive way.
                 </Text>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2">
+                <Text fontSize={"20px"} mt="2" className="main-p">
                   Collaborate with bloggers to develop content that drives
                   conversions and enhances your brand.
                 </Text>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2">
+                <Text fontSize={"20px"} mt="2" className="main-p">
                   Expand your reach through effective digital marketing
                   strategies that integrate across all platforms.
                 </Text>
               </li>
             </OrderedList>
-          </Box>
-        </Flex>
-
-        <Flex
-          direction={{ base: "column-reverse", md: "row" }}
-          alignItems="center"
-          mt="10"
-        >
-          <Box width={{ base: "100%", md: "50%" }}>
-            <Text mt={5}>
+            <Text className="main-p">
               We aim to be the best social media agency in Dubai - also catering
               to Saudi Arabia, Kuwait, Qatar, Oman, Bahrain and more. Apart from
               our Social Media Services, we also provide Content Development
               Services, Blogger Outreach Program Services and Web Development
               Services
             </Text>
-            <Button
-              colorScheme="black"
-              background={"#000"}
-              borderRadius="20px"
-              color="#fff"
-              mt={7}
-              fontWeight="bold"
-              onClick={scrollFun}
-            >
-              view more{" "}
-              <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-            </Button>
-          </Box>
-          <Box width={{ base: "100%", md: "50%" }} textAlign="end">
-            <Image
-              src="/assets/image/servicePage/ksa/social-media.jpg"
-              width="550px"
-              height={"300px"}
-            />
           </Box>
         </Flex>
       </Container>

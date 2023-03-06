@@ -20,26 +20,35 @@ const WebShowcase = () => {
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   return (
     <Stack className="webshowcase">
-      <Container maxW={"7xl"} mr={0} pr={0}>
+      <Container maxW={"7xl"}>
         <Box>
+          <FadeUp>
+            <Heading className="main-h2" textAlign={"center"}>
+              Web Showcase
+            </Heading>
+          </FadeUp>
           <FadeUp>
             <Box
               mt={8}
               mb={5}
               background="#FFDE11"
               width={"fit-content"}
-              p={"0px 6% 0px 10px"}
+              p={"0px 30px 0px 30px"}
               fontWeight="bold"
-              fontSize={"20px"}
+              fontSize={"18px"}
+              margin="auto"
             >
-              <Text>WEB SHOWCASE</Text>
+              <Text textAlign={"center"}>Some of our favorites</Text>
             </Box>
           </FadeUp>
           <FadeUp>
-            <Heading>Some of our favorites</Heading>
-          </FadeUp>
-          <FadeUp>
-            <Text className="main-p" maxW={"470px"} mt={5}>
+            <Text
+              className="main-p"
+              maxW={"800px"}
+              pt={5}
+              margin="auto"
+              textAlign="center"
+            >
               Over the decade we have worked on some exciting web projects from
               Dubai Airport Freezone, Costa Coffee, Roads and Transport
               Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in
@@ -50,7 +59,7 @@ const WebShowcase = () => {
             <Fancybox>
               <FadeUp>
                 <Swiper
-                  slidesPerView={isLargerThan768 ? 3.5 : 1}
+                  slidesPerView={isLargerThan768 ? 3 : 1}
                   spaceBetween={30}
                   autoplay={{
                     delay: 1000,

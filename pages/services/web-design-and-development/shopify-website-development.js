@@ -63,7 +63,7 @@ const Shopify = () => {
               textAlign={"justify"}
               className="main-p"
             >
-              <Text mt={{ base: 5, md: 0 }}>
+              <Text mt={{ base: 5, md: 0 }} className="main-p">
                 Launching an ecommerce business ? Shopify is one of the most
                 preferred platforms to build and maintain your e-commerce
                 website. As a Shopify Partner, we customize the websites as per
@@ -107,9 +107,9 @@ const Shopify = () => {
               <Heading as={"h3"} className="main-h3">
                 We can help you with
               </Heading>
-              <OrderedList my={"6"} textAlign="justify">
+              <OrderedList mt={"6"} textAlign="justify">
                 <li>
-                  <Text fontSize={"20px"}>
+                  <Text fontSize={"20px"} className="main-p">
                     <b>Storefront Development : </b>Building and customizing
                     visual elements of your online such - be with the layout,
                     theme and design. Our Shopify developers work on the latest
@@ -117,14 +117,14 @@ const Shopify = () => {
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5">
+                  <Text fontSize={"20px"} mt="5" className="main-p">
                     <b>App Development : </b>Take your business mobile. The
                     Shopify theme can then provide a mobile experience for your
                     brand.
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5">
+                  <Text fontSize={"20px"} mt="5" className="main-p">
                     <b>Shopify API Integration : </b>The APO allows us to
                     integrate with third party services like Payment gateway
                     providers, shipping partners and marketing tools like
@@ -132,43 +132,22 @@ const Shopify = () => {
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5">
+                  <Text fontSize={"20px"} mt="5" className="main-p">
                     <b>Maintenance and support : </b>We also provide ongoing
                     maintenance and support to ensure that the online store is
                     running smoothly, and any issues are quickly resolved.
                   </Text>
                 </li>
               </OrderedList>
-            </Box>
-          </Flex>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              paddingRight={{ base: "0", md: "50px" }}
-              alignSelf="center"
-              textAlign={"justify"}
-              className="main-p"
-            >
-              <Text mt={5} textAlign="justify">
+              <Text className="main-p" ml={8}>
                 Our marketing team works with our web development team, from
                 Shopify Web Development in the UAE to launch your website and
                 take your business on the next journey of promoting your
                 products via Performance Marketing and Social Media Marketing.
               </Text>
             </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              position="relative"
-              textAlign={"center"}
-            >
-              <Image
-                src={"/assets/image/servicePage/Woocommerce.jpg"}
-                width="500px"
-                height={"300px"}
-                objectFit="cover"
-              />
-            </Box>
           </Flex>
+
           <video
             src="https://res.cloudinary.com/mccollins-media/video/upload/v1677863386/Mccollins%20Video/Shopify_Video_01.03.2023_s3zes4.mp4"
             autoPlay="autoplay"
