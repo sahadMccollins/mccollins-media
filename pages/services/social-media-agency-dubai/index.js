@@ -212,7 +212,7 @@ const SocialMediaMarketing = () => {
           </Box>
           <Box width={{ base: "100%", md: "50%" }} textAlign="end">
             <Image
-              src="/assets/image/ServicePage/ksa/social-media.jpg"
+              src="/assets/image/servicePage/ksa/social-media.jpg"
               width="550px"
               height={"300px"}
             />
