@@ -260,7 +260,9 @@ const SocialMediaMarketing = () => {
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
       <CaseStudy data={favWorkData} /> */}
-      <VideoCaseStudy />
+      <Box mt={10}>
+        <VideoCaseStudy />
+      </Box>
       <Stack bg={"#fff"}>
         <Container maxWidth={"7xl"} py="50" zIndex={2} position="relative">
           <Flex direction={{ base: "column", md: "row" }}>
