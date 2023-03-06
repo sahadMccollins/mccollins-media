@@ -1,9 +1,12 @@
 import { Box, Container, Divider, Flex, Heading, Text } from "@chakra-ui/react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import CaseStudyBanner from "../../components/caseStudyBanner";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
-const test = () => {
+function Test() {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <CaseStudyBanner />
@@ -27,28 +30,29 @@ const test = () => {
           height={{ base: "250px", sm: "400px", md: "600px" }}
           position={"relative"}
           className="VCSBox"
+          onClick={() => setOpen(true)}
         >
           <Image
             src="/assets/image/caseStudy/items/portfolio-big-03.jpg"
             layout="fill"
             objectFit="cover"
           />
-          <a class="button is-play">
-            <div class="button-outer-circle has-scale-animation"></div>
-            <div class="button-outer-circle has-scale-animation has-delay-short"></div>
-            <div class="button-icon is-play">
+          <a className="button is-play">
+            <div className="button-outer-circle has-scale-animation"></div>
+            <div className="button-outer-circle has-scale-animation has-delay-short"></div>
+            <div className="button-icon is-play">
               <svg height="100%" width="100%" fill="#f857a6">
                 <polygon
-                  class="triangle"
+                  className="triangle"
                   points="5,0 30,15 5,30"
                   viewBox="0 0 30 15"
                 ></polygon>
                 <path
-                  class="path"
+                  className="path"
                   d="M5,0 L30,15 L5,30z"
                   fill="none"
                   stroke="#f857a6"
-                  stroke-width="1"
+                  strokeWidth="1"
                 ></path>
               </svg>
             </div>
@@ -127,9 +131,16 @@ const test = () => {
             </Box>
           </Flex>
         </Box>
-      </Container>
+      </Container>{" "}
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={isOpen}
+        videoId="Pj6P8kQvpZw"
+        onClose={() => setOpen(false)}
+      />
     </>
   );
-};
+}
 
-export default test;
+export default Test;
