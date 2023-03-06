@@ -47,7 +47,7 @@ const WebShowcase = () => {
               maxW={"800px"}
               pt={5}
               margin="auto"
-              textAlign="center"
+              style={{ textAlign: "center" }}
             >
               Over the decade we have worked on some exciting web projects from
               Dubai Airport Freezone, Costa Coffee, Roads and Transport
