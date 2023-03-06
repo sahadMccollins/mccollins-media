@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
+import FadeUp from "./Motion/FadeUp";
 
 const ServiceIcon = () => {
   const router = useRouter();
@@ -21,138 +22,140 @@ const ServiceIcon = () => {
   return (
     <Stack className="serviceIcon">
       <Container maxWidth={"7xl"} pb="20" mt={10}>
-        <Swiper
-          spaceBetween={20}
-          slidesPerView={isLargerThan780 ? 5 : 1}
-          loop={isLargerThan780 ? false : true}
-          ref={swiperRef}
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
-          }}
-          navigation={true}
-          modules={[Autoplay, Navigation]}
-        >
-          <SwiperSlide>
-            <Box
-              onClick={() =>
-                router.push(
-                  "/services/web-design-and-development/shopify-website-development"
-                )
-              }
-              className="icon"
-            >
-              <Image
-                src="/assets/image/techLogo/shopify.svg"
-                width="97px"
-                height="97px"
-                margin={"auto"}
-              />
-              <Text
-                mt={5}
-                fontSize={"2xl"}
-                fontWeight={"bold"}
-                textAlign="center"
+        <FadeUp>
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={isLargerThan780 ? 5 : 1}
+            loop={isLargerThan780 ? false : true}
+            ref={swiperRef}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            navigation={true}
+            modules={[Autoplay, Navigation]}
+          >
+            <SwiperSlide>
+              <Box
+                onClick={() =>
+                  router.push(
+                    "/services/web-design-and-development/shopify-website-development"
+                  )
+                }
+                className="icon"
               >
-                shopify
-              </Text>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box
-              onClick={() =>
-                router.push("/services/web-design-and-development/sitecore")
-              }
-              className="icon"
-            >
-              <Image
-                src="/assets/image/techLogo/site.png"
-                width="97px"
-                height="97px"
-                margin={"auto"}
-              />
-              <Text
-                mt={5}
-                fontSize={"2xl"}
-                fontWeight={"bold"}
-                textAlign="center"
+                <Image
+                  src="/assets/image/techLogo/shopify.svg"
+                  width="97px"
+                  height="97px"
+                  margin={"auto"}
+                />
+                <Text
+                  mt={5}
+                  fontSize={"2xl"}
+                  fontWeight={"bold"}
+                  textAlign="center"
+                >
+                  shopify
+                </Text>
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box
+                onClick={() =>
+                  router.push("/services/web-design-and-development/sitecore")
+                }
+                className="icon"
               >
-                Sitecore
-              </Text>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box
-              onClick={() =>
-                router.push(
-                  "/services/web-design-and-development/wordpress-website-development"
-                )
-              }
-              className="icon"
-            >
-              <Image
-                src="/assets/image/techLogo/wordpress.svg"
-                width="97px"
-                height="97px"
-                margin={"auto"}
-              />
-              <Text
-                mt={5}
-                fontSize={"2xl"}
-                fontWeight={"bold"}
-                textAlign="center"
+                <Image
+                  src="/assets/image/techLogo/site.png"
+                  width="97px"
+                  height="97px"
+                  margin={"auto"}
+                />
+                <Text
+                  mt={5}
+                  fontSize={"2xl"}
+                  fontWeight={"bold"}
+                  textAlign="center"
+                >
+                  Sitecore
+                </Text>
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box
+                onClick={() =>
+                  router.push(
+                    "/services/web-design-and-development/wordpress-website-development"
+                  )
+                }
+                className="icon"
               >
-                Wordpress
-              </Text>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box
-              onClick={() =>
-                router.push("/services/web-design-and-development/react")
-              }
-              className="icon"
-            >
-              <Image
-                src="/assets/image/techLogo/react.png"
-                width="97px"
-                height="97px"
-                margin={"auto"}
-              />
-              <Text
-                mt={5}
-                fontSize={"2xl"}
-                fontWeight={"bold"}
-                textAlign="center"
+                <Image
+                  src="/assets/image/techLogo/wordpress.svg"
+                  width="97px"
+                  height="97px"
+                  margin={"auto"}
+                />
+                <Text
+                  mt={5}
+                  fontSize={"2xl"}
+                  fontWeight={"bold"}
+                  textAlign="center"
+                >
+                  Wordpress
+                </Text>
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box
+                onClick={() =>
+                  router.push("/services/web-design-and-development/react")
+                }
+                className="icon"
               >
-                React
-              </Text>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box
-              onClick={() =>
-                router.push("/services/web-design-and-development/magento")
-              }
-              className="icon"
-            >
-              <Image
-                src="/assets/image/techLogo/magento.svg"
-                width="97px"
-                height="97px"
-                margin={"auto"}
-              />
-              <Text
-                mt={5}
-                fontSize={"2xl"}
-                fontWeight={"bold"}
-                textAlign="center"
+                <Image
+                  src="/assets/image/techLogo/react.png"
+                  width="97px"
+                  height="97px"
+                  margin={"auto"}
+                />
+                <Text
+                  mt={5}
+                  fontSize={"2xl"}
+                  fontWeight={"bold"}
+                  textAlign="center"
+                >
+                  React
+                </Text>
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box
+                onClick={() =>
+                  router.push("/services/web-design-and-development/magento")
+                }
+                className="icon"
               >
-                Magento
-              </Text>
-            </Box>
-          </SwiperSlide>
-        </Swiper>
+                <Image
+                  src="/assets/image/techLogo/magento.svg"
+                  width="97px"
+                  height="97px"
+                  margin={"auto"}
+                />
+                <Text
+                  mt={5}
+                  fontSize={"2xl"}
+                  fontWeight={"bold"}
+                  textAlign="center"
+                >
+                  Magento
+                </Text>
+              </Box>
+            </SwiperSlide>
+          </Swiper>
+        </FadeUp>
       </Container>
     </Stack>
   );

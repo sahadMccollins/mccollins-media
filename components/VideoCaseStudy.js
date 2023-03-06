@@ -1,5 +1,6 @@
 import { Box, Button, Flex, Heading } from "@chakra-ui/react";
 import React, { useRef } from "react";
+import FadeUp from "./Motion/FadeUp";
 
 const VideoCaseStudy = () => {
   const video1Ref = useRef(null);
@@ -32,64 +33,71 @@ const VideoCaseStudy = () => {
   }
   return (
     <>
-      <Heading textAlign={"center"} className="main-h2" mt={10} mb="10">
-        Case Study
-      </Heading>
+      <FadeUp>
+        <Heading textAlign={"center"} className="main-h2" mt={10} mb="10">
+          Case Study
+        </Heading>
+      </FadeUp>
       <Flex flexDirection={{ base: "column", md: "row" }} flexWrap="wrap">
         <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <video
-            poster="/assets/image/videoCase/OakberryCaseStudySS.jpg"
-            playsinline=""
-            muted="muted"
-            loop="loop"
-            loading="lazy"
-            controls
-            className="video1"
-            onClick={playVideo1}
-            ref={video1Ref}
-          ></video>
+          <FadeUp>
+            <video
+              poster="/assets/image/videoCase/OakberryCaseStudySS.jpg"
+              playsinline=""
+              muted="muted"
+              loop="loop"
+              loading="lazy"
+              controls
+              className="video1"
+              onClick={playVideo1}
+              ref={video1Ref}
+            ></video>
+          </FadeUp>
         </Box>
-
         <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <video
-            poster="/assets/image/videoCase/pocco.jpg"
-            playsinline=""
-            muted="muted"
-            loop="loop"
-            loading="lazy"
-            controls
-            className="video2"
-            onClick={playVideo2}
-            ref={video2Ref}
-          ></video>
+          <FadeUp>
+            <video
+              poster="/assets/image/videoCase/pocco.jpg"
+              playsinline=""
+              muted="muted"
+              loop="loop"
+              loading="lazy"
+              controls
+              className="video2"
+              onClick={playVideo2}
+              ref={video2Ref}
+            ></video>
+          </FadeUp>
         </Box>
-
         <Box mb="10" width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <video
-            poster="/assets/image/videoCase/cleaning-superstore.jpg"
-            playsinline=""
-            muted="muted"
-            loop="loop"
-            loading="lazy"
-            controls
-            className="video3"
-            onClick={playVideo3}
-            ref={video3Ref}
-          ></video>
+          <FadeUp>
+            <video
+              poster="/assets/image/videoCase/cleaning-superstore.jpg"
+              playsinline=""
+              muted="muted"
+              loop="loop"
+              loading="lazy"
+              controls
+              className="video3"
+              onClick={playVideo3}
+              ref={video3Ref}
+            ></video>
+          </FadeUp>
         </Box>
-
         <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
-          <video
-            poster="/assets/image/videoCase/sn.jpg"
-            playsinline=""
-            muted="muted"
-            loop="loop"
-            loading="lazy"
-            controls
-            className="video4"
-            onClick={playVideo4}
-            ref={video4Ref}
-          ></video>
+          <FadeUp>
+            <video
+              poster="/assets/image/videoCase/sn.jpg"
+              playsinline=""
+              muted="muted"
+              loop="loop"
+              loading="lazy"
+              controls
+              className="video4"
+              onClick={playVideo4}
+              ref={video4Ref}
+            ></video>
+          </FadeUp>
         </Box>
       </Flex>
     </>
