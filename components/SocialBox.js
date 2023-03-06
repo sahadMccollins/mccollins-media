@@ -21,7 +21,7 @@ const SocialBox = () => {
           >
             <Box>
               <Image
-                src={"/assets/image/icons/socialFB.png"}
+                src={"/assets/image/icons/SocialFB.png"}
                 width="150px"
                 height={"150px"}
               />
