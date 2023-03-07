@@ -74,15 +74,14 @@ const SEO = () => {
 
       <Container
         maxWidth={"7xl"}
-        pt={{ base: "50px", md: "100px" }}
+        pt={{ base: "50px", md: "75px" }}
         style={{ margin: "auto" }}
       >
         <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
-            paddingRight={{ base: "0", md: "50px" }}
+            mr={{ base: "0", md: "10" }}
             alignSelf="center"
-            textAlign={{ base: "left", md: "justify" }}
           >
             <Text mt={5} className="main-p">
               As a Performance driven, Search Engine Optimization agency in
@@ -94,22 +93,23 @@ const SEO = () => {
           <Box width={{ base: "100%", md: "50%" }} position="relative">
             <Image
               src={"/assets/image/servicePage/DM&SEO2.jpg"}
-              width="550px"
+              width="585px"
               height={"300px"}
               objectFit="cover"
             />
           </Box>
         </Flex>
 
-        <Flex
-          direction={{ base: "column", md: "row" }}
-          my={{ base: "10", md: "75px" }}
-        >
-          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
+        <Flex direction={{ base: "column", md: "row" }} my={10}>
+          <Box
+            width={{ base: "100%", md: "50%" }}
+            alignSelf="center"
+            mr={{ base: 0, md: 10 }}
+          >
             <Image
               src={"/assets/image/servicePage/ksa/seo.jpg"}
-              width="500px"
-              height={"500px"}
+              width="585px"
+              height={"528px"}
               objectFit="cover"
             />
           </Box>
@@ -117,16 +117,13 @@ const SEO = () => {
             width={{ base: "100%", md: "50%" }}
             alignSelf="center"
             mt={{ base: 5, md: 0 }}
+            className="sub-service"
           >
             <Heading as={"h5"} className="main-h5">
               As an SEO provider, we typically provide a range of services to
               achieve these goals, including:
             </Heading>
-            <OrderedList
-              my={"6"}
-              textAlign={{ base: "left", md: "justify" }}
-              className="main-p"
-            >
+            <OrderedList my={"6"} className="main-p">
               <li>
                 <Text fontSize={"20px"} className="main-p">
                   <b>On-page optimization:</b> Optimizing the content, meta
@@ -163,7 +160,7 @@ const SEO = () => {
                 </Text>
               </li>
             </OrderedList>
-            <Text className="main-p">
+            <Text className="main-p" ml={8}>
               We also provide other related services, such as social media
               marketing, pay-per-click (PPC) advertising, and website design and
               development.

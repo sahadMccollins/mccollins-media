@@ -58,10 +58,8 @@ const Shopify = () => {
           <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
-              paddingRight={{ base: "0", md: "50px" }}
               alignSelf="center"
-              textAlign={"justify"}
-              className="main-p"
+              mr={{ base: 0, md: 10 }}
             >
               <Text mt={{ base: 5, md: 0 }} className="main-p">
                 Launching an ecommerce business ? Shopify is one of the most
@@ -82,34 +80,35 @@ const Shopify = () => {
                 Interface.
               </Text>
             </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              position="relative"
-              textAlign={"center"}
-            >
+            <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
                 src={"/assets/image/servicePage/shopify2.jpg"}
-                width="500px"
-                height={"400px"}
+                width="585px"
+                height={"528px"}
                 objectFit="cover"
               />
             </Box>
           </Flex>
-          <Flex direction={{ base: "column", md: "row" }} my="75px">
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+          <Flex direction={{ base: "column", md: "row" }} my={10}>
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              position="relative"
+              mr={{ base: 0, md: 10 }}
+            >
               <Image
                 src={"/assets/image/servicePage/shopify.jpg"}
                 width="585px"
                 height={"528px"}
+                objectFit="cover"
               />
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
               <Heading as={"h3"} className="main-h3">
                 We can help you with
               </Heading>
-              <OrderedList mt={"6"} textAlign="justify">
+              <OrderedList mt={"6"}>
                 <li>
-                  <Text fontSize={"20px"} className="main-p">
+                  <Text className="main-p">
                     <b>Storefront Development : </b>Building and customizing
                     visual elements of your online such - be with the layout,
                     theme and design. Our Shopify developers work on the latest
@@ -117,14 +116,14 @@ const Shopify = () => {
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>App Development : </b>Take your business mobile. The
                     Shopify theme can then provide a mobile experience for your
                     brand.
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>Shopify API Integration : </b>The APO allows us to
                     integrate with third party services like Payment gateway
                     providers, shipping partners and marketing tools like
@@ -132,7 +131,7 @@ const Shopify = () => {
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>Maintenance and support : </b>We also provide ongoing
                     maintenance and support to ensure that the online store is
                     running smoothly, and any issues are quickly resolved.

@@ -101,9 +101,8 @@ const DigitalMarketingSEO = () => {
         <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
-            paddingRight={{ base: "0", md: "50px" }}
+            mr={{ base: "0", md: "10" }}
             alignSelf="center"
-            textAlign={{ base: "left", md: "justify" }}
             className="main-p"
           >
             <Text mt={5} className="main-p">
@@ -121,35 +120,32 @@ const DigitalMarketingSEO = () => {
           </Box>
           <Box width={{ base: "100%", md: "50%" }} position="relative">
             <Image
-              src={"/assets/image/servicePage/ksa/google-ads.jpg"}
-              width="550px"
-              height={"450px"}
+              src={"/assets/image/ServiceTabs/DigitalMarketing&SEO.png"}
+              width="450px"
+              height={"528px"}
               objectFit="cover"
             />
           </Box>
         </Flex>
 
-        <Flex
-          direction={{ base: "column", md: "row" }}
-          my={{ base: "10", md: "75px" }}
-        >
-          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
-            <Image
-              src={"/assets/image/servicePage/DM&SEO.jpg"}
-              width="500px"
-              height={"500px"}
-              objectFit="cover"
-            />
-          </Box>
+        <Flex direction={{ base: "column", md: "row" }} my={10}>
           <Box
             width={{ base: "100%", md: "50%" }}
             alignSelf="center"
-            mt={{ base: 5, md: 0 }}
+            mr={{ base: 0, md: 10 }}
           >
+            <Image
+              src={"/assets/image/servicePage/DM&SEO.jpg"}
+              width="585px"
+              height={"528px"}
+              objectFit="cover"
+            />
+          </Box>
+          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
             <Heading as={"h5"} className="main-h5">
               Google Ad Management involves several steps, including:
             </Heading>
-            <OrderedList my={"6"} textAlign={{ base: "left", md: "justify" }}>
+            <OrderedList my={"6"}>
               <li>
                 <Text fontSize={"20px"} className="main-p">
                   <b>Campaign planning:</b> Defining the campaign goals, target
@@ -201,9 +197,8 @@ const DigitalMarketingSEO = () => {
         <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
-            paddingRight={{ base: "0", md: "50px" }}
+            mr={{ base: "0", md: "10" }}
             alignSelf="center"
-            textAlign={{ base: "left", md: "justify" }}
             className="main-p"
           >
             <Text mt={5} className="main-p">
@@ -217,9 +212,9 @@ const DigitalMarketingSEO = () => {
           </Box>
           <Box width={{ base: "100%", md: "50%" }} textAlign="center">
             <Image
-              src={"/assets/image/ServiceTabs/DigitalMarketing&SEO.png"}
-              width="400px"
-              height={"450px"}
+              src={"/assets/image/servicePage/ksa/google-ads.jpg"}
+              width="585px"
+              height={"300px"}
               objectFit="cover"
             />
           </Box>

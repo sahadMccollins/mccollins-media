@@ -45,15 +45,15 @@ const WebsiteDevelopment = () => {
           <ServiceIcon />
 
           <Flex
-            direction={{ base: "column", md: "row" }}
-            mt="8"
-            justifyContent={"space-between"}
+            direction={{ base: "column-reverse", md: "row" }}
+            mt={{ base: 0, md: 8 }}
             position="relative"
           >
             <Box
               width={{ base: "100%", md: "50%" }}
               display="block"
               alignSelf="center"
+              mr={{ base: 0, md: 10 }}
             >
               <FadeUp>
                 <Heading className="main-h2">
@@ -90,7 +90,7 @@ const WebsiteDevelopment = () => {
                 </Text>
               </FadeUp>
             </Box>
-            <Box width={{ base: "100%", md: "45%" }} position="relative">
+            <Box width={{ base: "100%", md: "50%" }} position="relative">
               <ZoomInWithBounce>
                 <Image
                   src={"/assets/image/servicePage/Woocommerce.jpg"}
@@ -101,17 +101,20 @@ const WebsiteDevelopment = () => {
             </Box>
           </Flex>
           <Flex
-            direction={{ base: "column-reverse", md: "row" }}
+            direction={{ base: "column", md: "row" }}
             mt="10"
-            justifyContent={"space-between"}
             position="relative"
           >
-            <Box width={{ base: "100%", md: "45%" }} position="relative">
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              position="relative"
+              mr={{ base: 0, md: 10 }}
+            >
               <ZoomInWithBounce>
                 <Image
                   src={"/assets/image/servicePage/Magneto.jpg"}
                   width="585px"
-                  height={"528px"}
+                  height={"400px"}
                 />
               </ZoomInWithBounce>
             </Box>
@@ -121,7 +124,7 @@ const WebsiteDevelopment = () => {
               alignSelf="center"
             >
               <FadeUp>
-                <OrderedList>
+                <OrderedList mt={5}>
                   <li>
                     <Text className="main-p">
                       Get your website designed and developed by a team of
@@ -158,18 +161,18 @@ const WebsiteDevelopment = () => {
             </Box>
           </Flex>
           <Flex
-            direction={{ base: "column", md: "row" }}
+            direction={{ base: "column-reverse", md: "row" }}
             mt="10"
-            justifyContent={"space-between"}
             position="relative"
           >
             <Box
               width={{ base: "100%", md: "50%" }}
               position="relative"
               alignSelf="center"
+              mr={{ base: 0, md: 10 }}
             >
               <FadeUp>
-                <Text className="main-p">
+                <Text className="main-p" mt={5}>
                   Partner with us and get your Business online today. With our
                   in-house team, we develop websites on Sitecore, Wordpress,
                   React, Shopify and more. Once the website is live, we support
@@ -188,7 +191,7 @@ const WebsiteDevelopment = () => {
               </FadeUp>
             </Box>
             <Box
-              width={{ base: "100%", md: "45%" }}
+              width={{ base: "100%", md: "50%" }}
               position="relative"
               mt={{ base: "5", md: 0 }}
             >
@@ -196,7 +199,8 @@ const WebsiteDevelopment = () => {
                 <Image
                   src={"/assets/image/servicePage/DM&SEO2.jpg"}
                   width="585px"
-                  height={"350px"}
+                  height={"400px"}
+                  objectFit="cover"
                 />
               </ZoomInWithBounce>
             </Box>

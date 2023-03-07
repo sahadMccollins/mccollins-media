@@ -90,7 +90,7 @@ const SocialMediaMarketing = () => {
               textAlign={"center"}
               mt={{ base: 0, lg: "120px" }}
             >
-              <Text className="main-p" textAlign={"justify"}>
+              <Text className="main-p">
                 Get your business ahead of the curve with our Social Media
                 Management services. Develop targeted and effective social media
                 campaigns that result in brand conversions. As a Social Media
@@ -132,11 +132,11 @@ const SocialMediaMarketing = () => {
       </Box>
       <Container maxW={"7xl"} style={{ margin: "auto" }}>
         <Flex direction={{ base: "column", md: "row" }}>
-          <Box width={{ base: "100%", md: "50%" }}>
+          <Box width={{ base: "100%", md: "50%" }} mr={{ base: 0, md: 10 }}>
             <Image
               src={"/assets/image/servicePage/socialMediaMarketing.jpg"}
-              width="550px"
-              height={"450px"}
+              width="585px"
+              height={"528px"}
               objectFit="cover"
             />
           </Box>
@@ -144,7 +144,6 @@ const SocialMediaMarketing = () => {
             <Heading
               as={"h5"}
               className="main-h5"
-              mt={"5"}
               textAlign={{ base: "center", md: "left" }}
             >
               We are Partners with META, Google, Snapchat, TikTok, Yandex,
@@ -221,6 +220,51 @@ const SocialMediaMarketing = () => {
               }
             >
               Digital Media Buying
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push(
+                  "/services/social-media-agency-dubai/campaign-development"
+                )
+              }
+            >
+              Campaign Development
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push(
+                  "/services/social-media-agency-dubai/influencer-marketing"
+                )
+              }
+            >
+              Influencer Marketing
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push(
+                  "/services/social-media-agency-dubai/community-management"
+                )
+              }
+            >
+              Community Management
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push(
+                  "/services/social-media-agency-dubai/brand-reputation-management"
+                )
+              }
+            >
+              Brand Reputation Management
+            </Heading>
+            <Heading
+              onClick={() =>
+                router.push(
+                  "/services/social-media-agency-dubai/ar-experiences"
+                )
+              }
+            >
+              AR Experiences
             </Heading>
           </Box>
         </Container>

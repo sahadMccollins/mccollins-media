@@ -27,9 +27,8 @@ const Shopify = () => {
           <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
-              paddingRight={{ base: "0", md: "50px" }}
+              mr={{ base: 0, md: 10 }}
               alignSelf="center"
-              textAlign={"justify"}
               className="main-p"
             >
               <Text mt={{ base: 5, md: 0 }} className="main-p">
@@ -44,18 +43,23 @@ const Shopify = () => {
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
                 src={"/assets/image/servicePage/Magneto.jpg"}
-                width="500px"
+                width="585px"
                 height={"300px"}
                 objectFit="cover"
               />
             </Box>
           </Flex>
-          <Flex direction={{ base: "column", md: "row" }} my="75px">
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+          <Flex direction={{ base: "column", md: "row" }} my={10}>
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              mr={{ base: "0", md: "10" }}
+              position="relative"
+            >
               <Image
                 src={"/assets/image/servicePage/Magneto2.jpg"}
                 width="585px"
                 height={"528px"}
+                objectFit="cover"
               />
             </Box>
             <Box width={{ base: "100%", md: "50%" }}>
@@ -106,32 +110,18 @@ const Shopify = () => {
                   </Text>
                 </li>
               </UnorderedList>
-
-              {/* <SimpleGrid
-                columns={{ sm: 1, md: 2 }}
-                spacing="20px"
-                mt={10}
-                className="servicePoint2"
-              >
-                <Box>Easy to Set Up</Box>
-                <Box>Track your orders in Real Time</Box>
-                <Box>Ease of Inventory Management</Box>
-                <Box>Great for Marketing Automation</Box>
-                <Box>Great for Production Management</Box>
-                <Box>Fast Payment Gateway Integration</Box>
-              </SimpleGrid> */}
             </Box>
           </Flex>
           <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
-              paddingRight={{ base: "0", md: "50px" }}
+              mr={{ base: "0", md: "10" }}
               alignSelf="center"
             >
               <Heading as={"h3"} className={"main-h3"}>
                 Key Aspects for Wordpress :
               </Heading>
-              <OrderedList my={"6"} textAlign="justify">
+              <OrderedList my={"6"}>
                 <li>
                   <Text fontSize={"20px"} className="main-p">
                     <b>WordPress architecture: </b>WordPress is built on the PHP
@@ -170,8 +160,8 @@ const Shopify = () => {
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
                 src={"/assets/image/servicePage/Woocommerce.jpg"}
-                width="500px"
-                height={"500px"}
+                width="585px"
+                height={"528px"}
                 objectFit="cover"
               />
             </Box>

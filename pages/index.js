@@ -5,8 +5,6 @@ import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
 import Partner from "../components/Partner";
 import ServiceAccordian from "../components/ServiceAccordian";
-import ServiceTabs from "../components/ServiceTabs";
-import TechIcon from "../components/TechIcon";
 import TextBox from "../components/TextBox";
 
 export default function Home() {

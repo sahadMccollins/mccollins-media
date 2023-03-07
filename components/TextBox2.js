@@ -12,7 +12,7 @@ const TextBox2 = (props) => {
         >
           <Box width={{ md: "50%", base: "100%" }} alignSelf="center">
             <FadeUp>
-              <Heading>
+              <Heading className="main-h3">
                 {props.heading &&
                   props.heading
                     .split("\n")

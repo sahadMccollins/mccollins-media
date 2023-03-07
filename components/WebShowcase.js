@@ -29,14 +29,13 @@ const WebShowcase = () => {
           </FadeUp>
           <FadeUp>
             <Box
-              mt={8}
-              mb={5}
               background="#FFDE11"
               width={"fit-content"}
               p={"0px 30px 0px 30px"}
               fontWeight="bold"
               fontSize={"18px"}
               margin="auto"
+              mt={3}
             >
               <Text textAlign={"center"}>Some of our favorites</Text>
             </Box>

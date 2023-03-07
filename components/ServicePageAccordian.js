@@ -9,6 +9,7 @@ import {
   Container,
   Flex,
   Stack,
+  Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -66,24 +67,30 @@ const ServicePageAccordian = () => {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} width={{ base: "100%", sm: "80%" }}>
-                    Creating a digital outlet for your brand and driving leads
-                    via the website. Focus on Mobile Websites is key. We develop
-                    Bilingual websites for the GCC Market.
-                    <br />
-                    <Button
-                      colorScheme="yellow"
-                      background={"#FFDE11"}
-                      borderRadius="20px"
-                      color="#000"
-                      mt={4}
-                      fontWeight="bold"
-                      onClick={() =>
-                        router.push("/services/web-design-and-development")
-                      }
-                    >
-                      view more
-                      <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-                    </Button>
+                    <Text>
+                      Creating a digital outlet for your brand and driving leads
+                      via the website. Focus on Mobile Websites is key. We
+                      develop Bilingual websites for the GCC Market.
+                      <br />
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                        mt={4}
+                        fontWeight="bold"
+                        onClick={() =>
+                          router.push("/services/web-design-and-development")
+                        }
+                      >
+                        view more
+                        <ChevronRightIcon
+                          mt="2px"
+                          width="1.3em"
+                          height="1.3em"
+                        />
+                      </Button>
+                    </Text>
                   </AccordionPanel>
                 </AccordionItem>
               </FadeUp>
@@ -108,24 +115,31 @@ const ServicePageAccordian = () => {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4}>
-                    Storytellers for your brand ! Be it creating the strategy to
-                    content development or engaging with your brands audience,
-                    our team of Social Media Experts represent your brand
-                    <br />
-                    <Button
-                      colorScheme="yellow"
-                      background={"#FFDE11"}
-                      borderRadius="20px"
-                      color="#000"
-                      mt={4}
-                      fontWeight="bold"
-                      onClick={() =>
-                        router.push("/services/social-media-agency-dubai")
-                      }
-                    >
-                      view more
-                      <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-                    </Button>
+                    <Text>
+                      Storytellers for your brand ! Be it creating the strategy
+                      to content development or engaging with your brands
+                      audience, our team of Social Media Experts represent your
+                      brand
+                      <br />
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                        mt={4}
+                        fontWeight="bold"
+                        onClick={() =>
+                          router.push("/services/social-media-agency-dubai")
+                        }
+                      >
+                        view more
+                        <ChevronRightIcon
+                          mt="2px"
+                          width="1.3em"
+                          height="1.3em"
+                        />
+                      </Button>
+                    </Text>
                   </AccordionPanel>
                 </AccordionItem>
               </FadeUp>
@@ -150,25 +164,79 @@ const ServicePageAccordian = () => {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4}>
-                    From driving footfall to your location, to your website or
-                    tracking conversions, our team works towards making numbers
-                    matter. Be it Digital Media Buying - Social Media Ads or PPC
-                    Campaigns, we work in alignment with your KPIs.
-                    <br />
-                    <Button
-                      colorScheme="yellow"
-                      background={"#FFDE11"}
-                      borderRadius="20px"
-                      color="#000"
-                      mt={4}
-                      fontWeight="bold"
-                      onClick={() =>
-                        router.push("/services/google-ads-and-sem")
-                      }
-                    >
-                      view more
-                      <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-                    </Button>
+                    <Text>
+                      From driving footfall to your location, to your website or
+                      tracking conversions, our team works towards making
+                      numbers matter. Be it Digital Media Buying - Social Media
+                      Ads or PPC Campaigns, we work in alignment with your KPIs.
+                      <br />
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                        mt={4}
+                        fontWeight="bold"
+                        onClick={() => router.push("/services/google-ads")}
+                      >
+                        view more
+                        <ChevronRightIcon
+                          mt="2px"
+                          width="1.3em"
+                          height="1.3em"
+                        />
+                      </Button>
+                    </Text>
+                  </AccordionPanel>
+                </AccordionItem>
+              </FadeUp>
+              <FadeUp>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton>
+                      <Box
+                        textAlign="left"
+                        fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
+                        display="flex"
+                      >
+                        <span
+                          style={{
+                            width: "30px",
+                            background:
+                              "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                          }}
+                        ></span>
+                        search engine optimization
+                      </Box>
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4}>
+                    <Text>
+                      As a Performance driven, Search Engine Optimization agency
+                      in Dubai, we specialize in providing SEO services to
+                      businesses. Our primary goal is to support businesses to
+                      improve their online visibility and increase organic
+                      traffic to their websites.
+                      <br />
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                        mt={4}
+                        fontWeight="bold"
+                        onClick={() =>
+                          router.push("/services/search-engine-optimization")
+                        }
+                      >
+                        view more
+                        <ChevronRightIcon
+                          mt="2px"
+                          width="1.3em"
+                          height="1.3em"
+                        />
+                      </Button>
+                    </Text>
                   </AccordionPanel>
                 </AccordionItem>
               </FadeUp>
@@ -193,22 +261,28 @@ const ServicePageAccordian = () => {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4}>
-                    Creating multimedia content that works for your brand. Our
-                    team of in-house content producers work on Photography,
-                    Videography and Motion Graphics
-                    <br />
-                    <Button
-                      colorScheme="yellow"
-                      background={"#FFDE11"}
-                      borderRadius="20px"
-                      color="#000"
-                      mt={4}
-                      fontWeight="bold"
-                      onClick={() => router.push("/services/film")}
-                    >
-                      view more
-                      <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-                    </Button>
+                    <Text>
+                      Creating multimedia content that works for your brand. Our
+                      team of in-house content producers work on Photography,
+                      Videography and Motion Graphics
+                      <br />
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                        mt={4}
+                        fontWeight="bold"
+                        onClick={() => router.push("/services/film")}
+                      >
+                        view more
+                        <ChevronRightIcon
+                          mt="2px"
+                          width="1.3em"
+                          height="1.3em"
+                        />
+                      </Button>
+                    </Text>
                   </AccordionPanel>
                 </AccordionItem>
               </FadeUp>
@@ -233,22 +307,28 @@ const ServicePageAccordian = () => {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4}>
-                    Be it creating a brand from inception or building on well
-                    established brand, our in-house team of Designers and
-                    Copywriters,
-                    <br />
-                    <Button
-                      colorScheme="yellow"
-                      background={"#FFDE11"}
-                      borderRadius="20px"
-                      color="#000"
-                      mt={4}
-                      fontWeight="bold"
-                      onClick={() => router.push("/services/branding")}
-                    >
-                      view more
-                      <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-                    </Button>
+                    <Text>
+                      Be it creating a brand from inception or building on well
+                      established brand, our in-house team of Designers and
+                      Copywriters,
+                      <br />
+                      <Button
+                        colorScheme="yellow"
+                        background={"#FFDE11"}
+                        borderRadius="20px"
+                        color="#000"
+                        mt={4}
+                        fontWeight="bold"
+                        onClick={() => router.push("/services/branding")}
+                      >
+                        view more
+                        <ChevronRightIcon
+                          mt="2px"
+                          width="1.3em"
+                          height="1.3em"
+                        />
+                      </Button>
+                    </Text>
                   </AccordionPanel>
                 </AccordionItem>
               </FadeUp>

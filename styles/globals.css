@@ -1,16 +1,21 @@
 
 .main-p {
-  font-size: 17px !important;
+  font-size: 18px !important;
+  text-align: justify;
+}
+
+p {
+  font-size: 18px !important;
 }
 
 .main-h1 {
   font-size: 60px !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 
 .main-h2 {
   font-size: 40px !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 
 .main-h3 {
@@ -25,6 +30,12 @@
 
 }
 
+.main-h6 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+
+}
+
 @media (max-width: 768px) {
   .main-h1 {
   font-size: 50px !important;
@@ -35,13 +46,18 @@
   font-weight: 800 !important;
 }
   .main-h3 {
-  font-size: 25x !important;
+  font-size: 22px !important;
   font-weight: 700 !important;
 }
 
 
 .main-h5 {
   font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.main-h6 {
+  font-size: 18px !important;
   font-weight: 700 !important;
 }
 }
@@ -116,6 +132,7 @@ a:focus {
 
 .header-section {
   display: none;
+  z-index: 999;
 }
 
 .header-section.is-sticky {
@@ -406,6 +423,87 @@ body .eapps-instagram-feed {
 .VCSBox .has-delay-short {
   animation-delay: 0.5s;
 }
+
+
+
+
+.filmBox img {
+  border-radius: 3px;
+}
+
+
+.filmBox  .button {
+  display: none;
+  position: absolute;
+      top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+.filmBox:hover .button {
+  display: inline-block;
+}
+
+.filmBox .bgHover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.filmBox .bgHover:hover {
+    background: #ffdf1187;
+}
+
+.filmBox path {
+      fill: #FFDE11;
+    stroke: none;
+}
+.filmBox .button.is-play {
+  background-color: #fff;
+  border-radius: 50%;
+  width:75px;
+  height: 75px;
+}
+.filmBox .button.is-play .button-outer-circle {
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.filmBox .button.is-play .button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+}
+.filmBox .button.is-play .button-icon .triangle {
+  animation: fadeIn 7s ease;
+}
+.filmBox .button.is-play .button-icon .path {
+  stroke-dasharray: 90;
+  stroke-dashoffset: 0;
+  animation: triangleStroke 3s;
+  animation-timing-function: ease;
+}
+.filmBox .has-scale-animation {
+  animation: smallScale 3s infinite;
+}
+.filmBox .has-delay-short {
+  animation-delay: 0.5s;
+}
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
@@ -516,12 +614,6 @@ body .eapps-instagram-feed {
   cursor: pointer;
 }
 
-.sub-service p {
-  text-align: justify;
-}
-.sub-service li p {
-  margin-top: 0px;
-}
 
 .sub-service ol li::marker {
     color: #0e0e0e;
@@ -610,6 +702,12 @@ content: counter(step-counter);
         text-decoration: underline;
         margin: 10px 0;
       }
+
+      .filmBox .button.is-play {
+  width:50px;
+  height: 50px;
+}
+
   }
 
 
@@ -682,6 +780,33 @@ content: counter(step-counter);
     position: relative;
     max-width: 350px;
 }
+
+
+.filmImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    z-index: 99;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+}
+
+.filmImg h3 {
+    color: #fdce1a;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.filmImg p {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: bold;
+}
+
 
   @media (max-width: 768px) {
 

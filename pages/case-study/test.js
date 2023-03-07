@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import CaseStudyBanner from "../../components/caseStudyBanner";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
+import "../../node_modules/react-modal-video/css/modal-video.min.css";
 
 function Test() {
   const [isOpen, setOpen] = useState(false);
@@ -131,7 +132,7 @@ function Test() {
             </Box>
           </Flex>
         </Box>
-      </Container>{" "}
+      </Container>
       <ModalVideo
         channel="youtube"
         autoplay

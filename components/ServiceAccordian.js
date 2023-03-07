@@ -10,6 +10,7 @@ import {
   Container,
   Flex,
   Stack,
+  Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -33,7 +34,7 @@ const AccItem = (props) => {
         </AccordionButton>
       </h2>
       <AccordionPanel pb={4} width={{ base: "100%", sm: "80%" }}>
-        {props.content}
+        <Text>{props.content}</Text>
         <br />
         <Button
           colorScheme="yellow"

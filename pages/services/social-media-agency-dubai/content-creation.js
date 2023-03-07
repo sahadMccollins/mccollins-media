@@ -21,9 +21,8 @@ const ContentCreation = () => {
           <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
-              paddingRight={{ base: "0", md: "50px" }}
+              mr={{ base: "0", md: "10" }}
               alignSelf="center"
-              textAlign={"justify"}
               className="main-p"
             >
               <Heading as={"h5"} className="main-h5">
@@ -44,43 +43,34 @@ const ContentCreation = () => {
                 curve.
               </Text>
             </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              position="relative"
-              textAlign={"center"}
-            >
+            <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
                 src={"/assets/image/servicePage/contentProduction.jpg"}
-                width="500px"
-                height={"400px"}
+                width="585px"
+                height={"528px"}
                 objectFit="cover"
               />
             </Box>
           </Flex>
-          <Flex
-            direction={{ base: "column", md: "row" }}
-            my={{ base: "10", md: "75px" }}
-          >
+          <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box
               width={{ base: "100%", md: "50%" }}
               position="relative"
-              textAlign={"center"}
+              alignSelf={"center"}
+              mr={10}
             >
               <Image
                 src={"/assets/image/servicePage/cp2.jpg"}
-                width="500px"
-                height={"400px"}
+                width="585px"
+                height={"528px"}
+                objectFit="cover"
               />
             </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              alignSelf="center"
-              mt={{ base: 5, md: 0 }}
-            >
+            <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
               <Heading as={"h5"} className="main-h5">
                 Why work with us ?
               </Heading>
-              <OrderedList my={"6"} textAlign="justify">
+              <OrderedList my={"6"}>
                 <li style={{ marginBottom: "15px" }}>
                   <Text fontSize={"20px"} className="main-p">
                     Understand your audience and their needs to create content
@@ -112,7 +102,7 @@ const ContentCreation = () => {
                   </Text>
                 </li>
               </OrderedList>
-              <Text textAlign="justify" className="main-p">
+              <Text className="main-p">
                 Be it Arabic or English content , we align your brand to the
                 market requirements. We engage with influencers and bloggers to
                 create User Generated Content for your brand.

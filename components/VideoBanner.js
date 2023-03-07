@@ -29,6 +29,7 @@ const VideoBanner = (props) => {
     <Stack
       mt={"-84px"}
       height={{ base: "500px", md: "100vh" }}
+      minHeight={{ base: "500px", md: "700px" }}
       position="relative"
     >
       <Box
