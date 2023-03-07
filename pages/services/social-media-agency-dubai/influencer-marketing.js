@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
+import CaseStudy from "../../../components/CaseStudy";
 import FavWork from "../../../components/FavWork";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
@@ -19,6 +20,38 @@ import TextBox from "../../../components/TextBox";
 import WebShowcase from "../../../components/WebShowcase";
 
 const InfluencerMarketing = () => {
+  const favWorkData = [
+    {
+      name: "DAFZA",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Coffee",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "DAFZA",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Coffee",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
   return (
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Influencer Marketing" />
@@ -176,7 +209,7 @@ const InfluencerMarketing = () => {
           </Flex>
         </Container>
 
-        <WebShowcase />
+        <CaseStudy data={favWorkData} />
       </Box>
     </Stack>
   );

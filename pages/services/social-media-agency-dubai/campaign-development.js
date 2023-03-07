@@ -11,11 +11,44 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
+import CaseStudy from "../../../components/CaseStudy";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
 import WebShowcase from "../../../components/WebShowcase";
 
 const CampaignDevelopment = () => {
+  const favWorkData = [
+    {
+      name: "DAFZA",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Coffee",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "DAFZA",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Coffee",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
   return (
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Campaign Development" />
@@ -164,71 +197,9 @@ const CampaignDevelopment = () => {
               </Text>
             </Box>
           </Flex>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              mr={{ base: 0, md: 10 }}
-              alignSelf="center"
-            >
-              <Heading as={"h3"} className={"main-h3"}>
-                As a business, Sitecore is beneficial for :
-              </Heading>
-              <UnorderedList my={"6"} ml={0} className="checkmark">
-                <li>
-                  <Text className="main-p">Better tracking and analytics </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Unlocking AI Powered - Personalization
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Comprehensive Content Optimization
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Gaining a single view of an individual customer
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Ensuring Data Protection and Privacy
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Building Omni-channel customer experience
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Increasing operational efficiency
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">
-                    Increasing customer lifetime value
-                  </Text>
-                </li>
-                <li>
-                  <Text className="main-p">And finally , driving revenue!</Text>
-                </li>
-              </UnorderedList>
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
-                src={"/assets/image/servicePage/Woocommerce.jpg"}
-                width="585px"
-                height={"528px"}
-                objectFit="cover"
-              />
-            </Box>
-          </Flex>
         </Container>
 
-        <WebShowcase />
+        <CaseStudy data={favWorkData} />
       </Box>
     </Stack>
   );

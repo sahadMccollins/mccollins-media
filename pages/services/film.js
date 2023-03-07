@@ -101,18 +101,6 @@ const Film = () => {
                 Leading with empathy and value-driven content , this is just the
                 start.
               </Text>
-              <Button
-                colorScheme="black"
-                background={"#000"}
-                borderRadius="20px"
-                color="#fff"
-                my={7}
-                fontWeight="bold"
-                onClick={scrollFun}
-              >
-                view more
-                <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-              </Button>
             </Box>
 
             <Box width={{ base: "100%", md: "50%" }}>
@@ -147,8 +135,13 @@ const Film = () => {
           />
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
-              <Heading as={"h3"}>112</Heading>
-              <Text textAlign={"center"}>what is lorem ipsum</Text>
+              <Heading as={"h3"}>66%</Heading>
+              <Text
+                textAlign={"center"}
+                style={{ fontSize: "13px !important" }}
+              >
+                brands use short-form video
+              </Text>
             </Center>
           </Box>
         </Box>
@@ -171,8 +164,13 @@ const Film = () => {
           />
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
-              <Heading as={"h3"}>112</Heading>
-              <Text textAlign={"center"}>what is lorem ipsum</Text>
+              <Heading as={"h3"}>88%</Heading>
+              <Text
+                textAlign={"center"}
+                style={{ fontSize: "13px !important" }}
+              >
+                are satisfied with Video ROI
+              </Text>
             </Center>
           </Box>
         </Box>
@@ -195,8 +193,13 @@ const Film = () => {
           />
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
-              <Heading as={"h3"}>112</Heading>
-              <Text textAlign={"center"}>what is lorem ipsum</Text>
+              <Heading as={"h3"}>75%</Heading>
+              <Text
+                textAlign={"center"}
+                style={{ fontSize: "13px !important" }}
+              >
+                of videos are viewed on Mobile Devices
+              </Text>
             </Center>
           </Box>
         </Box>
@@ -219,8 +222,13 @@ const Film = () => {
           />
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
-              <Heading as={"h3"}>112</Heading>
-              <Text textAlign={"center"}>what is lorem ipsum</Text>
+              <Heading as={"h3"}>300%</Heading>
+              <Text
+                textAlign={"center"}
+                style={{ fontSize: "13px !important" }}
+              >
+                higher CTR with Videos
+              </Text>
             </Center>
           </Box>
         </Box>
@@ -783,18 +791,6 @@ const Film = () => {
                 Leading with empathy and value-driven content , this is just the
                 start.
               </Text>
-              <Button
-                colorScheme="black"
-                background={"#000"}
-                borderRadius="20px"
-                color="#fff"
-                my={7}
-                fontWeight="bold"
-                onClick={scrollFun}
-              >
-                view more{" "}
-                <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-              </Button>
             </Box>
 
             <Box
