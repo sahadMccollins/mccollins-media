@@ -20,6 +20,7 @@ import VideoBanner from "../../components/VideoBanner";
 import dynamic from "next/dynamic";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 import "../../node_modules/react-modal-video/css/modal-video.min.css";
+import ServicePoint from "../../components/ServicePoint";
 
 const Film = () => {
   const [isOpen, setOpen] = useState(false);
@@ -236,13 +237,26 @@ const Film = () => {
           style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
         >
           <source
-            src="https://mccollinsmediaweb.github.io/mccollins-media-landing-page-assetes/video-landing/main-banner-2.mp4"
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
             type="video/mp4"
             media="screen"
           />
           Your browser does not support HTML5 video.
         </video>
       </Box>
+      <Heading
+        textAlign={"center"}
+        bg={"#F7F7F7"}
+        style={{ marginBottom: "-35px", paddingTop: "30px", zIndex: 9 }}
+      >
+        Key Services{" "}
+      </Heading>
+      <ServicePoint
+        // heading="Key Services "
+        points={
+          "Film Production  \n Reels / TikTok  \n CGI Videos  \n Stop Motions \n Corporate Videos  \n Event Live Coverage  \n How To Videos  \n  Social Media Videos \n Product Photography \n Event Photography \n Lifestyle Photography "
+        }
+      />
       <Container maxWidth={"6xl"} style={{ margin: "auto" }}>
         <Box>
           <Heading mt={10} textAlign={"center"}>
@@ -859,7 +873,15 @@ const Film = () => {
 
       <Box>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={"10px"}>
-          <Box position={"relative"} className="filmBox">
+          <Box
+            position={"relative"}
+            className="filmBox"
+            onClick={() =>
+              videoHandler(
+                "https://mccollinsmediaweb.github.io/mccollins-media-landing-page-assetes/video-landing/main-banner-2.mp4"
+              )
+            }
+          >
             <ChakraImg
               src="/assets/image/servicePage/film/vid13.jpg"
               backgroundSize={"cover"}
@@ -952,7 +974,15 @@ const Film = () => {
             </a>
             <Box className="bgHover"></Box>
           </Box>
-          <Box position={"relative"} className="filmBox">
+          <Box
+            position={"relative"}
+            className="filmBox"
+            onClick={() =>
+              videoHandler(
+                "https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
+              )
+            }
+          >
             <ChakraImg
               src="/assets/image/servicePage/film/vid16.jpg"
               backgroundSize={"cover"}
@@ -985,41 +1015,6 @@ const Film = () => {
           </Box>
         </SimpleGrid>
       </Box>
-
-      <Container maxWidth={"6xl"} style={{ margin: "auto" }}>
-        <Box>
-          <Heading mt={10} textAlign={"center"}>
-            Creating Content that tells a story
-          </Heading>
-          <Text mt={5} mb={10} textAlign={"justify"}>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur
-          </Text>
-        </Box>
-      </Container>
-      {/* 
-      <div ref={cpPointRef}></div>
-      <ServicePoint
-        heading="Content Marketing"
-        subHeading="For your Brand"
-        contentHeading={"Creating Content that tells a story"}
-        content="Creating exclusive brand content is a great way to communicate a story about your brand. In the digital space, this is a content process of CREATING"
-        points={
-          "Photography \n Food Photography \n Mobile First Content \n Videography \n 360 Images and Videos \n Cinemagraphs \n Stop Motion Videos \n  Brand Montage Videos \n Corporate Videos "
-        }
-      /> */}
 
       <ClientsLogo />
 
