@@ -229,13 +229,64 @@ const Film = () => {
           />
           Your browser does not support HTML5 video.
         </video>
+        <video
+          title="Film Production Company Dubai"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          alt="McCollins Media Production"
+          style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
+        >
+          <source
+            src="https://res.cloudinary.com/dhhtgppki/video/upload/v1672984054/mccollins-media/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4"
+            type="video/mp4"
+            media="screen"
+          />
+          Your browser does not support HTML5 video.
+        </video>
+        <video
+          title="Film Production Company Dubai"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          alt="McCollins Media Production"
+          style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
+        >
+          <source
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_2_ivf5yh.mp4"
+            type="video/mp4"
+            media="screen"
+          />
+          Your browser does not support HTML5 video.
+        </video>
+        <video
+          title="Film Production Company Dubai"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          alt="McCollins Media Production"
+          style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
+        >
+          <source
+            src="https://res.cloudinary.com/dhhtgppki/video/upload/v1672987704/mccollins-media/Mapei-LoadingVideo_thrg6q.mp4"
+            type="video/mp4"
+            media="screen"
+          />
+          Your browser does not support HTML5 video.
+        </video>
       </Box>
       <Heading
         textAlign={"center"}
         bg={"#F7F7F7"}
         style={{ marginBottom: "-35px", paddingTop: "30px", zIndex: 9 }}
       >
-        Key Services{" "}
+        Key Services
       </Heading>
       <ServicePoint
         // heading="Key Services "

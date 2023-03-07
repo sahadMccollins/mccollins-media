@@ -807,6 +807,10 @@ content: counter(step-counter);
     font-weight: bold;
 }
 
+.video1 {
+  cursor: pointer;
+}
+
 
   @media (max-width: 768px) {
 
