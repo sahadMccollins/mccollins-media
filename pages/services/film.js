@@ -9,6 +9,7 @@ import {
   Image as ChakraImg,
   Center,
   SimpleGrid,
+  OrderedList,
 } from "@chakra-ui/react";
 import React, { useRef, useState } from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
@@ -82,24 +83,14 @@ const Film = () => {
                 ></Box>
               </Box>
               <Text mt={5}>
-                Bring a Digital Brand Activation Agency, the process of content
-                production is the very core of our set up. From developing
-                exclusive content for Social Media Marketing to Web Development,
-                our in-house team of content creators follow global trends,
-                consumer insights and curate content that is relatable to each
-                of our brands.
-                <br />
-                <br />
-                Content without Analysis is futile. So from A/B Testing of
-                Digital Content, Marketing in the metaverse, Video Marketing,
-                Podcasts, Launch of Shoppable Links and more.
-                <br />
-                <br />
-                Leveraging Data-based insights, we work with brands to enhance
-                their digital ecosystem.
-                <br />
-                Leading with empathy and value-driven content , this is just the
-                start.
+                How do you get your brand to stand out of the clutter ? Create
+                content which resonates with your audience, which is sharable
+                and which tells a story. We can help you with just that. As a
+                Content Creation Agency in Dubai, we specialize in Film
+                Production for Digital Platforms and more. We also have an
+                in-house team of content creators in Dubai for Photography and
+                Videography. At this time, CGI Videos are very much in demand ,
+                and this is something we enjoy exploring.
               </Text>
             </Box>
 
@@ -258,20 +249,24 @@ const Film = () => {
             Creating Content that tells a story
           </Heading>
           <Text mt={5} mb={10} textAlign={"justify"}>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur
+            The services offered by our video production agency in Dubai may
+            vary depending on their clients' needs, but we typically include
+            pre-production planning, production (filming), post-production
+            (editing), and distribution. Once your video is produced, we can
+            also support it with services such as social media marketing, search
+            engine optimization (SEO), and video analytics. Video Chatbots are
+            trending in 2023, and we are working on developing and launching
+            Video Chatbots in UAE and the GCC. We can created content in
+            English, Arabic, Russian, Chinese and more, depending on your target
+            audience.
+            <br />
+            <br />
+            Social media videos are short-form videos that are created
+            specifically for social media platforms such as Facebook, Instagram,
+            Twitter, and TikTok. These videos are designed to be engaging,
+            shareable, and easy to consume on mobile devices.
+            <br />
+            <br />
           </Text>
         </Box>
       </Container>
@@ -751,45 +746,76 @@ const Film = () => {
 
       <Box position="relative">
         <Container maxWidth={"7xl"} my="10">
+          <Heading
+            as={"h6"}
+            className="main-h6"
+            textAlign={"center"}
+            maxWidth="900px"
+            margin={"auto"}
+          >
+            The types of social media videos that brands may create can vary
+            widely, depending on their goals and target audience. Some of the
+            videos we work on are :
+          </Heading>
           <Flex
             direction={{ base: "column", md: "row" }}
             alignItems="center"
             mt={10}
+            className="sub-service"
           >
             <Box width={{ base: "100%", md: "50%" }} mr={{ base: 0, md: 10 }}>
-              <Box display={"flex"}>
-                <Heading>
-                  CONTENT <br />
-                  PRODUCTION
-                </Heading>
-                <Box
-                  width={"100px"}
-                  height={"7px"}
-                  background="#000"
-                  alignSelf={"end"}
-                  marginBottom="10px"
-                  marginLeft={"20px"}
-                ></Box>
-              </Box>
-              <Text mt={5}>
-                Bring a Digital Brand Activation Agency, the process of content
-                production is the very core of our set up. From developing
-                exclusive content for Social Media Marketing to Web Development,
-                our in-house team of content creators follow global trends,
-                consumer insights and curate content that is relatable to each
-                of our brands.
-                <br />
-                <br />
-                Content without Analysis is futile. So from A/B Testing of
-                Digital Content, Marketing in the metaverse, Video Marketing,
-                Podcasts, Launch of Shoppable Links and more.
-                <br />
-                <br />
-                Leveraging Data-based insights, we work with brands to enhance
-                their digital ecosystem.
-                <br />
-                Leading with empathy and value-driven content , this is just the
-                start.
+              <OrderedList my={"6"}>
+                <li>
+                  <Text fontSize={"20px"} className="main-p">
+                    <b>Explainer videos:</b> These videos are used to explain a
+                    product, service, or concept to an audience in an engaging
+                    way.
+                  </Text>
+                </li>
+                <li>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>WordPress customization: </b> WordPress provides a
+                    variety of out-of-the-box features and plugins, but
+                    customizing these features is often necessary to meet the
+                    specific requirements of a project. WordPress customization
+                    involves creating custom themes, plugins, and widgets.
+                  </Text>
+                </li>
+                <li>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Product demos:</b> These videos showcase a product or
+                    service in action, highlighting its features and benefits.
+                  </Text>
+                </li>
+                <li>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Behind-the-scenes videos:</b> These videos give viewers a
+                    behind-the-scenes look at a business or individual, giving
+                    them a glimpse into the creative process.
+                  </Text>
+                </li>
+                <li>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Customer testimonials:</b> These videos feature satisfied
+                    customers talking about their experiences with a product or
+                    service.
+                  </Text>
+                </li>
+                <li>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>How-to videos:</b> These videos provide step-by-step
+                    instructions on how to do something, such as cooking a
+                    recipe or completing a DIY project.
+                  </Text>
+                </li>
+              </OrderedList>
+              <Text className="main-p" ml={7}>
+                When creating social media videos, it's important to keep in
+                mind the platform's specific requirements and best practices,
+                such as aspect ratio, video length, and captions. It's also
+                important to create content that is visually engaging,
+                informative, and shareable, in order to attract and retain
+                viewers on social media.
               </Text>
             </Box>
 

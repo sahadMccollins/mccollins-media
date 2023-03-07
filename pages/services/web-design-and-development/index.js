@@ -93,7 +93,9 @@ const WebsiteDevelopment = () => {
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <ZoomInWithBounce>
                 <Image
-                  src={"/assets/image/servicePage/Woocommerce.jpg"}
+                  src={
+                    "/assets/image/servicePage/subPage/web development-01.jpg"
+                  }
                   width="585px"
                   height={"528px"}
                 />
@@ -112,9 +114,12 @@ const WebsiteDevelopment = () => {
             >
               <ZoomInWithBounce>
                 <Image
-                  src={"/assets/image/servicePage/Magneto.jpg"}
+                  src={
+                    "/assets/image/servicePage/subPage/web development-02.jpg"
+                  }
                   width="585px"
                   height={"400px"}
+                  objectFit="cover"
                 />
               </ZoomInWithBounce>
             </Box>
@@ -197,7 +202,9 @@ const WebsiteDevelopment = () => {
             >
               <ZoomInWithBounce>
                 <Image
-                  src={"/assets/image/servicePage/DM&SEO2.jpg"}
+                  src={
+                    "/assets/image/servicePage/subPage/web development-03.jpg"
+                  }
                   width="585px"
                   height={"400px"}
                   objectFit="cover"

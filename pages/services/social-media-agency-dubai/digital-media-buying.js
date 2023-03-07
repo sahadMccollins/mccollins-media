@@ -79,7 +79,7 @@ const DigialMediaBuying = () => {
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
-                src={"/assets/image/servicePage/Magneto2.jpg"}
+                src={"/assets/image/servicePage/subPage/DigialMedia-1.jpg"}
                 width="585px"
                 height={"350px"}
                 objectFit="cover"
@@ -89,7 +89,7 @@ const DigialMediaBuying = () => {
           <Flex direction={{ base: "column-reverse", md: "row" }} my={10}>
             <Box width={{ base: "100%", md: "50%" }}>
               <Image
-                src={"/assets/image/servicePage/Magneto2.jpg"}
+                src={"/assets/image/servicePage/subPage/DigitaAnalysis-1.jpg"}
                 width="585px"
                 height={"350px"}
                 objectFit="cover"
@@ -189,7 +189,7 @@ const DigialMediaBuying = () => {
               alignSelf={"center"}
             >
               <Image
-                src={"/assets/image/servicePage/cp2.jpg"}
+                src={"/assets/image/servicePage/subPage/plan-management.jpg"}
                 width="585px"
                 height={"750px"}
                 objectFit="cover"

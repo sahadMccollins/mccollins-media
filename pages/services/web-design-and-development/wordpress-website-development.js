@@ -42,7 +42,7 @@ const Shopify = () => {
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
-                src={"/assets/image/servicePage/Magneto.jpg"}
+                src={"/assets/image/servicePage/subPage/Wordpress-02.jpg"}
                 width="585px"
                 height={"300px"}
                 objectFit="cover"
@@ -56,7 +56,7 @@ const Shopify = () => {
               position="relative"
             >
               <Image
-                src={"/assets/image/servicePage/Magneto2.jpg"}
+                src={"/assets/image/servicePage/subPage/Wordpress-01.jpg"}
                 width="585px"
                 height={"528px"}
                 objectFit="cover"
@@ -159,7 +159,7 @@ const Shopify = () => {
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
-                src={"/assets/image/servicePage/Woocommerce.jpg"}
+                src={"/assets/image/servicePage/subPage/Wordpress-03.jpg"}
                 width="585px"
                 height={"528px"}
                 objectFit="cover"

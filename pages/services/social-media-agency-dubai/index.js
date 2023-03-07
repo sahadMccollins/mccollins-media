@@ -134,7 +134,7 @@ const SocialMediaMarketing = () => {
         <Flex direction={{ base: "column", md: "row" }}>
           <Box width={{ base: "100%", md: "50%" }} mr={{ base: 0, md: 10 }}>
             <Image
-              src={"/assets/image/servicePage/socialMediaMarketing.jpg"}
+              src={"/assets/image/servicePage/subPage/social media1.jpg"}
               width="585px"
               height={"528px"}
               objectFit="cover"
