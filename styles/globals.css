@@ -810,21 +810,21 @@ content: counter(step-counter);
 
   @media (max-width: 768px) {
 
-  .webshowcase .swiper-wrapper {
-    margin-left: 12px;
-  }
+    .webshowcase .swiper-wrapper {
+      margin-left: 12px;
+    }
 
 
-  .filmImg h3 {
-      color: #fdce1a;
-      font-size: 50px;
-      font-weight: bold;
-      line-height: 1em;
-  }
+    .filmImg h3 {
+        color: #fdce1a;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1em;
+    }
 
 
-  .filmImg p {
-    padding: 10px;
-  }
+    .filmImg p {
+      padding: 10px;
+    }
 
   }

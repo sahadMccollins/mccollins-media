@@ -10,10 +10,12 @@ import {
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
+import { useRef } from "react";
 import { useState } from "react";
 import CaseStudy from "../../../components/CaseStudy";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
+import FadeUp from "../../../components/Motion/FadeUp";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 import "../../../node_modules/react-modal-video/css/modal-video.min.css";
 
@@ -25,6 +27,35 @@ const ContentCreation = () => {
     setvideoURL(url);
     setOpen(true);
   };
+
+  const video1Ref = useRef(null);
+  const video2Ref = useRef(null);
+  const video3Ref = useRef(null);
+  const video4Ref = useRef(null);
+
+  function playVideo1() {
+    video1Ref.current.src =
+      "https://res.cloudinary.com/dhhtgppki/video/upload/v1672984054/mccollins-media/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4";
+    video1Ref.current.play();
+  }
+
+  function playVideo2() {
+    video2Ref.current.src =
+      "https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4";
+    video2Ref.current.play();
+  }
+
+  function playVideo3() {
+    video3Ref.current.src =
+      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_2_ivf5yh.mp4";
+    video3Ref.current.play();
+  }
+
+  function playVideo4() {
+    video4Ref.current.src =
+      "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987704/mccollins-media/Mapei-LoadingVideo_thrg6q.mp4";
+    video4Ref.current.play();
+  }
 
   const favWorkData = [
     {
@@ -164,158 +195,67 @@ const ContentCreation = () => {
             </Box>
           </Flex>
 
-          <Box
-            width="100%"
-            height={{ base: "250px", sm: "400px", md: "600px" }}
-            position={"relative"}
-            mt={16}
-            mb={10}
-            className="VCSBox"
-            onClick={() =>
-              videoHandler(
-                "https://res.cloudinary.com/dhhtgppki/video/upload/v1672984054/mccollins-media/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4"
-              )
-            }
-          >
-            <Image
-              src="/assets/image/servicePage/contentProduction/armoured-vid.png"
-              layout="fill"
-              objectFit="cover"
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
+          <Box mb={"5"} width={"100%"} padding={"5px 10px"}>
+            <FadeUp>
+              <video
+                poster="/assets/image/servicePage/contentProduction/thoshiba-vid.png"
+                playsinline=""
+                muted="muted"
+                loop="loop"
+                loading="lazy"
+                controls
+                className="video1"
+                onClick={playVideo2}
+                ref={video2Ref}
+              ></video>
+            </FadeUp>
           </Box>
-          <Box
-            width="100%"
-            height={{ base: "250px", sm: "400px", md: "600px" }}
-            position={"relative"}
-            my={10}
-            className="VCSBox"
-            onClick={() =>
-              videoHandler(
-                "https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
-              )
-            }
-          >
-            <Image
-              src="/assets/image/servicePage/contentProduction/thoshiba-vid.png"
-              layout="fill"
-              objectFit="cover"
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
+
+          <Box mb={"5"} width={"100%"} padding={"5px 10px"}>
+            <FadeUp>
+              <video
+                poster="/assets/image/servicePage/contentProduction/armoured-vid.png"
+                playsinline=""
+                muted="muted"
+                loop="loop"
+                loading="lazy"
+                controls
+                className="video1"
+                onClick={playVideo1}
+                ref={video1Ref}
+              ></video>
+            </FadeUp>
           </Box>
-          <Box
-            width="100%"
-            height={{ base: "250px", sm: "400px", md: "600px" }}
-            position={"relative"}
-            my={10}
-            className="VCSBox"
-            onClick={() =>
-              videoHandler(
-                "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_2_ivf5yh.mp4"
-              )
-            }
-          >
-            <Image
-              src="/assets/image/servicePage/contentProduction/cyro-vid.png"
-              layout="fill"
-              objectFit="cover"
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
+
+          <Box mb={"5"} width={"100%"} padding={"5px 10px"}>
+            <FadeUp>
+              <video
+                poster="/assets/image/servicePage/contentProduction/cyro-vid.png"
+                playsinline=""
+                muted="muted"
+                loop="loop"
+                loading="lazy"
+                controls
+                className="video1"
+                onClick={playVideo3}
+                ref={video3Ref}
+              ></video>
+            </FadeUp>
           </Box>
-          <Box
-            width="100%"
-            height={{ base: "250px", sm: "400px", md: "600px" }}
-            position={"relative"}
-            mt={10}
-            className="VCSBox"
-            onClick={() =>
-              videoHandler(
-                "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987704/mccollins-media/Mapei-LoadingVideo_thrg6q.mp4"
-              )
-            }
-          >
-            <Image
-              src="/assets/image/servicePage/contentProduction/mapei-vid.png"
-              layout="fill"
-              objectFit="cover"
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
+          <Box mb={"5"} width={"100%"} padding={"5px 10px"}>
+            <FadeUp>
+              <video
+                poster="/assets/image/servicePage/contentProduction/mapei-vid.png"
+                playsinline=""
+                muted="muted"
+                loop="loop"
+                loading="lazy"
+                controls
+                className="video1"
+                onClick={playVideo4}
+                ref={video4Ref}
+              ></video>
+            </FadeUp>
           </Box>
         </Container>
       </Box>
