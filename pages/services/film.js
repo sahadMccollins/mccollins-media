@@ -136,7 +136,7 @@ const Film = () => {
         >
           <ChakraImg
             src="/assets/image/servicePage/film/11.jpg"
-            backgroundSize={"cover"}
+            objectFit={"cover"}
             backgroundRepeat="no-repeat"
             bgPosition={"center"}
             transition="transform 0.5s ease-in"
@@ -148,7 +148,7 @@ const Film = () => {
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>112</Heading>
-              <Text>what is lorem ipsum</Text>
+              <Text textAlign={"center"}>what is lorem ipsum</Text>
             </Center>
           </Box>
         </Box>
@@ -160,7 +160,7 @@ const Film = () => {
         >
           <ChakraImg
             src="/assets/image/servicePage/film/12.jpg"
-            backgroundSize={"cover"}
+            objectFit={"cover"}
             backgroundRepeat="no-repeat"
             bgPosition={"center"}
             transition="transform 0.5s ease-in"
@@ -172,7 +172,7 @@ const Film = () => {
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>112</Heading>
-              <Text>what is lorem ipsum</Text>
+              <Text textAlign={"center"}>what is lorem ipsum</Text>
             </Center>
           </Box>
         </Box>
@@ -184,7 +184,7 @@ const Film = () => {
         >
           <ChakraImg
             src="/assets/image/servicePage/film/13.jpg"
-            backgroundSize={"cover"}
+            objectFit={"cover"}
             backgroundRepeat="no-repeat"
             bgPosition={"center"}
             transition="transform 0.5s ease-in"
@@ -196,7 +196,7 @@ const Film = () => {
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>112</Heading>
-              <Text>what is lorem ipsum</Text>
+              <Text textAlign={"center"}>what is lorem ipsum</Text>
             </Center>
           </Box>
         </Box>
@@ -208,7 +208,7 @@ const Film = () => {
         >
           <ChakraImg
             src="/assets/image/servicePage/film/14.jpg"
-            backgroundSize={"cover"}
+            objectFit={"cover"}
             backgroundRepeat="no-repeat"
             bgPosition={"center"}
             transition="transform 0.5s ease-in"
@@ -220,7 +220,7 @@ const Film = () => {
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>112</Heading>
-              <Text>what is lorem ipsum</Text>
+              <Text textAlign={"center"}>what is lorem ipsum</Text>
             </Center>
           </Box>
         </Box>
