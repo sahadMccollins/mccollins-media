@@ -39,7 +39,12 @@ const VideoCaseStudy = () => {
         </Heading>
       </FadeUp>
       <Flex flexDirection={{ base: "column", md: "row" }} flexWrap="wrap">
-        <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+        <Box
+          mb={"10"}
+          width={{ base: "100%", md: "50%" }}
+          padding={"5px 10px"}
+          cursor="pointer"
+        >
           <FadeUp>
             <video
               poster="/assets/image/videoCase/OakberryCaseStudySS.jpg"
@@ -54,7 +59,12 @@ const VideoCaseStudy = () => {
             ></video>
           </FadeUp>
         </Box>
-        <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+        <Box
+          mb={"10"}
+          width={{ base: "100%", md: "50%" }}
+          padding={"5px 10px"}
+          cursor="pointer"
+        >
           <FadeUp>
             <video
               poster="/assets/image/videoCase/pocco.jpg"
@@ -69,7 +79,12 @@ const VideoCaseStudy = () => {
             ></video>
           </FadeUp>
         </Box>
-        <Box mb="10" width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+        <Box
+          mb="10"
+          width={{ base: "100%", md: "50%" }}
+          padding={"5px 10px"}
+          cursor="pointer"
+        >
           <FadeUp>
             <video
               poster="/assets/image/videoCase/cleaning-superstore.jpg"
@@ -84,7 +99,12 @@ const VideoCaseStudy = () => {
             ></video>
           </FadeUp>
         </Box>
-        <Box mb={"10"} width={{ base: "100%", md: "50%" }} padding={"5px 10px"}>
+        <Box
+          mb={"10"}
+          width={{ base: "100%", md: "50%" }}
+          padding={"5px 10px"}
+          cursor="pointer"
+        >
           <FadeUp>
             <video
               poster="/assets/image/videoCase/sn.jpg"

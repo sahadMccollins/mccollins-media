@@ -111,6 +111,14 @@ const Film = () => {
             layout={"fill"}
             height="350px"
           />
+          <Box
+            width={"100%"}
+            height="100%"
+            bg={"#00000092"}
+            pointerEvents="none"
+            pos={"absolute"}
+            top={0}
+          ></Box>
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>66%</Heading>
@@ -139,7 +147,15 @@ const Film = () => {
             width={"100%"}
             layout={"fill"}
             height="350px"
-          />
+          />{" "}
+          <Box
+            width={"100%"}
+            height="100%"
+            bg={"#00000092"}
+            pointerEvents="none"
+            pos={"absolute"}
+            top={0}
+          ></Box>
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>88%</Heading>
@@ -168,7 +184,15 @@ const Film = () => {
             width={"100%"}
             layout={"fill"}
             height="350px"
-          />
+          />{" "}
+          <Box
+            width={"100%"}
+            height="100%"
+            bg={"#00000092"}
+            pointerEvents="none"
+            pos={"absolute"}
+            top={0}
+          ></Box>
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>75%</Heading>
@@ -197,7 +221,15 @@ const Film = () => {
             width={"100%"}
             layout={"fill"}
             height="350px"
-          />
+          />{" "}
+          <Box
+            width={"100%"}
+            height="100%"
+            bg={"#00000080"}
+            pointerEvents="none"
+            pos={"absolute"}
+            top={0}
+          ></Box>
           <Box className="filmImg" pointerEvents={"none"}>
             <Center display={"flex"} flexDir="column">
               <Heading as={"h3"}>300%</Heading>
