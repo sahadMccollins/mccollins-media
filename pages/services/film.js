@@ -48,25 +48,11 @@ const Film = () => {
       />
 
       <Box position="relative">
-        {/* <Box
-          style={{
-            position: "absolute",
-            bottom: "-60px",
-            right: "0px",
-          }}
-          width={{ base: "150px", md: "unset" }}
-        >
-          <Image
-            src={"/assets/image/design/10.png"}
-            width="241px"
-            height={"228px"}
-          />
-        </Box> */}
         <Container maxWidth={"7xl"} my="10">
           <Flex
             direction={{ base: "column", md: "row" }}
             alignItems="center"
-            mt={20}
+            mt={10}
           >
             <Box width={{ base: "100%", md: "50%" }} mr={{ base: 0, md: 10 }}>
               <Box display={"flex"}>
@@ -95,7 +81,7 @@ const Film = () => {
               </Text>
             </Box>
 
-            <Box width={{ base: "100%", md: "50%" }}>
+            <Box width={{ base: "100%", md: "50%" }} mt={{ base: 10, md: 0 }}>
               <Image
                 src="/assets/image/servicePage/film/amazone2.jpg"
                 width="700px"
@@ -262,7 +248,7 @@ const Film = () => {
           <Heading mt={10} textAlign={"center"}>
             Creating Content that tells a story
           </Heading>
-          <Text mt={5} mb={10} textAlign={"justify"}>
+          <Text mt={5} mb={{ base: 0, md: 10 }} textAlign={"justify"}>
             The services offered by our video production agency in Dubai may
             vary depending on their clients' needs, but we typically include
             pre-production planning, production (filming), post-production
@@ -761,10 +747,10 @@ const Film = () => {
       <Box position="relative">
         <Container maxWidth={"7xl"} my="10">
           <Heading
-            as={"h6"}
-            className="main-h6"
+            as={"h5"}
+            className="main-h5"
+            maxWidth="800px"
             textAlign={"center"}
-            maxWidth="900px"
             margin={"auto"}
           >
             The types of social media videos that brands may create can vary
@@ -774,20 +760,20 @@ const Film = () => {
           <Flex
             direction={{ base: "column", md: "row" }}
             alignItems="center"
-            mt={10}
+            mt={{ base: 0, md: 10 }}
             className="sub-service"
           >
             <Box width={{ base: "100%", md: "50%" }} mr={{ base: 0, md: 10 }}>
               <OrderedList my={"6"}>
                 <li>
-                  <Text fontSize={"20px"} className="main-p">
+                  <Text className="main-p">
                     <b>Explainer videos:</b> These videos are used to explain a
                     product, service, or concept to an audience in an engaging
                     way.
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>WordPress customization: </b> WordPress provides a
                     variety of out-of-the-box features and plugins, but
                     customizing these features is often necessary to meet the
@@ -796,27 +782,27 @@ const Film = () => {
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>Product demos:</b> These videos showcase a product or
                     service in action, highlighting its features and benefits.
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>Behind-the-scenes videos:</b> These videos give viewers a
                     behind-the-scenes look at a business or individual, giving
                     them a glimpse into the creative process.
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>Customer testimonials:</b> These videos feature satisfied
                     customers talking about their experiences with a product or
                     service.
                   </Text>
                 </li>
                 <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
+                  <Text mt="5" className="main-p">
                     <b>How-to videos:</b> These videos provide step-by-step
                     instructions on how to do something, such as cooking a
                     recipe or completing a DIY project.
