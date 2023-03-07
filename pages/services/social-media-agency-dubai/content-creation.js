@@ -102,7 +102,7 @@ const ContentCreation = () => {
               width={{ base: "100%", md: "50%" }}
               position="relative"
               alignSelf={"center"}
-              mr={10}
+              mr={{ base: 0, md: 10 }}
             >
               <Image
                 src={"/assets/image/servicePage/cp2.jpg"}
