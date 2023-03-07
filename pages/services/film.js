@@ -289,7 +289,7 @@ const Film = () => {
           style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
         >
           <source
-            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_2_ivf5yh.mp4"
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1678202100/Mccollins%20Video/Tips_and_Toes_bteolm.mp4"
             type="video/mp4"
             media="screen"
           />
@@ -941,7 +941,7 @@ const Film = () => {
         </Container>
       </Box>
 
-      <Box>
+      {/* <Box style={{ marginBottom: "8px" }}>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={"10px"}>
           <Box
             position={"relative"}
@@ -1084,7 +1084,7 @@ const Film = () => {
             <Box className="bgHover"></Box>
           </Box>
         </SimpleGrid>
-      </Box>
+      </Box> */}
 
       <ClientsLogo />
 
