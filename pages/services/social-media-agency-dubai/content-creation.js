@@ -319,7 +319,7 @@ const ContentCreation = () => {
           </Box>
         </Container>
       </Box>
-      <CaseStudy data={favWorkData} />{" "}
+      {/* <CaseStudy data={favWorkData} /> */}
       <ModalVideo
         channel="custom"
         url={videoURL}

@@ -260,7 +260,7 @@ const ARExperiences = () => {
             </Box>
           </Flex>
         </Container>
-        <CaseStudy data={favWorkData} />
+        {/* <CaseStudy data={favWorkData} /> */}
       </Box>
     </Stack>
   );

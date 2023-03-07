@@ -209,7 +209,7 @@ const InfluencerMarketing = () => {
           </Flex>
         </Container>
 
-        <CaseStudy data={favWorkData} />
+        {/* <CaseStudy data={favWorkData} /> */}
       </Box>
     </Stack>
   );

@@ -199,7 +199,7 @@ const DigialMediaBuying = () => {
         </Container>
       </Box>
 
-      <CaseStudy data={favWorkData} />
+      {/* <CaseStudy data={favWorkData} /> */}
     </Stack>
   );
 };
