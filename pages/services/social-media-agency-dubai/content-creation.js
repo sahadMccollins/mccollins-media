@@ -194,7 +194,8 @@ const ContentCreation = () => {
               </Text>
             </Box>
           </Flex>
-
+        </Container>
+        <Container maxW={"6xl"}>
           <Box mb={"5"} width={"100%"} padding={"5px 10px"}>
             <FadeUp>
               <video
@@ -242,6 +243,7 @@ const ContentCreation = () => {
               ></video>
             </FadeUp>
           </Box>
+
           <Box mb={"5"} width={"100%"} padding={"5px 10px"}>
             <FadeUp>
               <video
