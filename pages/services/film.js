@@ -825,6 +825,7 @@ const Film = () => {
               className="filmBox"
               onClick={() => setOpen1(true)}
               cursor="pointer"
+              mt={{ base: 5, md: 0 }}
             >
               <Image
                 src="/assets/image/servicePage/film/amazone1.jpg"
