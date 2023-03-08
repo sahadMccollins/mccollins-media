@@ -126,16 +126,7 @@ const CommunityManagement = () => {
                     represented on social media. brands.
                   </Text>
                 </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Sitecore customization: </b>Sitecore provides a variety
-                    of out-of-the-box features and modules, but customizing
-                    these features is often necessary to meet the specific
-                    requirements of a project. Our Sitecore Web Developers in
-                    Dubai strive to keep themselves updated with the latest
-                    technologies.
-                  </Text>
-                </li>
+
                 <li>
                   <Text fontSize={"20px"} mt="5" className="main-p">
                     <b>Creating and curating content:</b> This involves

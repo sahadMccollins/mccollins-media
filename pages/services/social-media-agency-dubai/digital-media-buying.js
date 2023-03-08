@@ -51,14 +51,14 @@ const DigialMediaBuying = () => {
       <InnerBannerTwo h1="Digial Media Buying" />
       <Box>
         <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
+          <Flex direction={{ base: "column", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
               mr={{ base: 0, md: 10 }}
               alignSelf="center"
               className="main-p"
             >
-              <Heading as={"h5"} className="main-h5">
+              <Heading as={"h5"} className="main-h5" textAlign={"left"}>
                 Drive Traffic And Conversion With The Right Digital Media Buying
                 Strategy
               </Heading>
@@ -77,7 +77,11 @@ const DigialMediaBuying = () => {
                 Snapchat, TikTok, Baidu, Yandex and more.
               </Text>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Box
+              width={{ base: "100%", md: "50%" }}
+              mt={{ base: 5, md: 0 }}
+              position="relative"
+            >
               <Image
                 src={"/assets/image/servicePage/subPage/DigialMedia-1.jpg"}
                 width="585px"
@@ -87,7 +91,7 @@ const DigialMediaBuying = () => {
             </Box>
           </Flex>
           <Flex direction={{ base: "column-reverse", md: "row" }} my={10}>
-            <Box width={{ base: "100%", md: "50%" }}>
+            <Box width={{ base: "100%", md: "50%" }} mt={{ base: 5, md: 0 }}>
               <Image
                 src={"/assets/image/servicePage/subPage/DigitaAnalysis-1.jpg"}
                 width="585px"
@@ -116,7 +120,7 @@ const DigialMediaBuying = () => {
           </Flex>
 
           <Flex direction={{ base: "column", md: "row" }} my={10}>
-            <Box width={{ base: "100%", md: "50%" }} alignSelf="center" mr={10}>
+            <Box width={"100%"} alignSelf="center">
               <Heading as={"h5"} className="main-h5">
                 The process of digital media planning involves several key
                 steps:
@@ -175,15 +179,8 @@ const DigialMediaBuying = () => {
                   </Text>
                 </li>
               </OrderedList>
-              {/* <Text className="main-p">
-                Overall, effective digital media planning involves a deep
-                understanding of the target audience, a thorough knowledge of
-                the digital media landscape, and an ability to develop and
-                implement strategies that are tailored to a brand's specific
-                needs and goals.
-              </Text> */}
             </Box>
-            <Box
+            {/* <Box
               width={{ base: "100%", md: "50%" }}
               position="relative"
               alignSelf={"center"}
@@ -194,7 +191,7 @@ const DigialMediaBuying = () => {
                 height={"750px"}
                 objectFit="cover"
               />
-            </Box>
+            </Box> */}
           </Flex>
         </Container>
       </Box>

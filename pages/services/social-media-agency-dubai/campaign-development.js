@@ -53,8 +53,34 @@ const CampaignDevelopment = () => {
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Campaign Development" />
       <Box>
-        <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
+        <Container maxWidth={"4xl"} mt={10}>
+          <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
+            At McCollins Media, we work with you on developing Digital
+            campaigns. It is the process of creating a comprehensive plan for a
+            digital marketing campaign that is designed to achieve specific
+            marketing goals. It involves developing a strategy, selecting
+            appropriate digital channels and tactics, creating content, and
+            executing and monitoring the campaign. As we aim to be a leading
+            digital marketing agency in the UAE, we provide a 360 approach to
+            your Digital Marketing campaigns.
+          </Text>
+        </Container>
+        <Container maxWidth={"7xl"} pb={"50px"} mt={10} justifyContent="center">
+          <Flex gap={10} flexDir={{ base: "column", md: "row" }}>
+            <Image
+              src={"/assets/image/servicePage/Magneto.jpg"}
+              width="585px"
+              height={"528px"}
+              objectFit="cover"
+            />
+            <Image
+              src={"/assets/image/servicePage/Magneto2.jpg"}
+              width="585px"
+              height={"528px"}
+              objectFit="cover"
+            />
+          </Flex>
+          {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
               mr={{ base: 0, md: 10 }}
@@ -80,9 +106,9 @@ const CampaignDevelopment = () => {
                 objectFit="cover"
               />
             </Box>
-          </Flex>
+          </Flex> */}
           <Flex direction={{ base: "column", md: "row" }} my={10}>
-            <Flex
+            {/* <Flex
               width={{ base: "100%", md: "50%" }}
               position="relative"
               mr={{ base: 0, md: 10 }}
@@ -102,8 +128,8 @@ const CampaignDevelopment = () => {
                 height={"528px"}
                 objectFit="cover"
               />
-            </Flex>
-            <Box width={{ base: "100%", md: "50%" }}>
+            </Flex> */}
+            <Box width={{ base: "100%", md: "100%" }}>
               <Heading as={"h3"} className={"main-h3"}>
                 Here are the key steps involved in digital campaign development:
               </Heading>
@@ -114,16 +140,6 @@ const CampaignDevelopment = () => {
                     setting clear, specific, and measurable goals for the
                     campaign, such as increasing brand awareness, driving
                     website traffic, generating leads, or increasing sales.
-                  </Text>
-                </li>
-                <li>
-                  <Text mt="5" className="main-p">
-                    <b>Sitecore customization: </b>Sitecore provides a variety
-                    of out-of-the-box features and modules, but customizing
-                    these features is often necessary to meet the specific
-                    requirements of a project. Our Sitecore Web Developers in
-                    Dubai strive to keep themselves updated with the latest
-                    technologies.
                   </Text>
                 </li>
                 <li>
@@ -198,7 +214,6 @@ const CampaignDevelopment = () => {
             </Box>
           </Flex>
         </Container>
-
         {/* <CaseStudy data={favWorkData} /> */}
       </Box>
     </Stack>

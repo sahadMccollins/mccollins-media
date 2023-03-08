@@ -23,8 +23,18 @@ const Shopify = () => {
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Wordpress web development" />
       <Box>
-        <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
+        <Container maxWidth={"4xl"} mt={10}>
+          <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
+            Wordpress is one of the most popular open source content management
+            platforms to develop websites. Many businesses feel the ease to
+            align their business requirements with a Wordpress Website. Our
+            in-house Wordpress development team in Dubai specializes in creating
+            Corporate Websites, e-commerce websites or micro websites -
+            depending upon the brand’s requirement.
+          </Text>
+        </Container>
+        <Container maxWidth={"7xl"} pb={"50px"} pt={5}>
+          {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
               mr={{ base: 0, md: 10 }}
@@ -48,7 +58,7 @@ const Shopify = () => {
                 objectFit="cover"
               />
             </Box>
-          </Flex>
+          </Flex> */}
           <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box
               width={{ base: "100%", md: "50%" }}

@@ -84,7 +84,7 @@ const Shopify = () => {
               <Image
                 src={"/assets/image/servicePage/subPage/Shopify-01.jpg"}
                 width="585px"
-                height={"528px"}
+                height={"450px"}
                 objectFit="cover"
               />
             </Box>
@@ -99,7 +99,7 @@ const Shopify = () => {
               <Image
                 src={"/assets/image/servicePage/subPage/Shopify-02.jpg"}
                 width="585px"
-                height={"528px"}
+                height={"450px"}
                 objectFit="cover"
               />
             </Box>

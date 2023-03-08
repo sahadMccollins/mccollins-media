@@ -55,8 +55,20 @@ const Shopify = () => {
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="SITECORE CRM" />
       <Box>
-        <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
+        <Container maxWidth={"4xl"} mt={10}>
+          <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
+            Sitecore is a powerful enterprise-level content management system
+            (CMS) that is widely used for building complex websites, e-commerce
+            platforms, and digital marketing applications. Sitecore development
+            involves creating and customizing digital experiences on the
+            Sitecore platform, using a combination of programming languages,
+            tools, and techniques. Many businesses are scaling with time and now
+            opting for Sitecore Websites. As we do Sitecore development in the
+            UAE, share a brief for your next project.
+          </Text>
+        </Container>
+        <Container maxWidth={"7xl"} pb={"50px"} pt={5}>
+          {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
               mr={{ base: 0, md: 10 }}
@@ -83,7 +95,7 @@ const Shopify = () => {
                 objectFit="cover"
               />
             </Box>
-          </Flex>
+          </Flex> */}
           <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box
               width={{ base: "100%", md: "50%" }}

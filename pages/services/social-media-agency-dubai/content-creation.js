@@ -101,8 +101,26 @@ const ContentCreation = () => {
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Content Creation" />
       <Box>
-        <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
+        <Container maxWidth={"4xl"} my={10}>
+          <Heading as={"h5"} className="main-h5" textAlign={"center"} mb={5}>
+            Are you looking for a one-stop shop for all your
+            <br /> content creation needs? Let’s talk shop.
+          </Heading>
+          <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
+            As a content marketing agency in Dubai, we provide a wide range of
+            services including photoshoots, video shoots, and copywriting. Our
+            team of experts is equipped to help you create content that is both
+            engaging and mobile-first. With our extensive portfolio of work, we
+            know just what it takes to get your content seen by the masses. We
+            work on the brand strategy, aiming to be the best content marketing
+            service provider in the UAE and other GCC Markets like Saudi Arabia,
+            Kuwait, Qatar, Bahrain, Oman and more. The content creation process
+            in Dubai is competitive and we need to ensure our brands are ahead
+            of the curve.
+          </Text>
+        </Container>
+        <Container maxWidth={"7xl"} pb={"50px"} pt={5}>
+          {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
               mr={{ base: "0", md: "10" }}
@@ -131,11 +149,11 @@ const ContentCreation = () => {
               <Image
                 src={"/assets/image/servicePage/contentProduction.jpg"}
                 width="585px"
-                height={"400px"}
+                height={"450px"}
                 objectFit="cover"
               />
             </Box>
-          </Flex>
+          </Flex> */}
           <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box
               width={{ base: "100%", md: "50%" }}
