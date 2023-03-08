@@ -81,6 +81,7 @@ const DigialMediaBuying = () => {
               width={{ base: "100%", md: "50%" }}
               mt={{ base: 5, md: 0 }}
               position="relative"
+              mr={{ base: 0, md: 10 }}
             >
               <Image
                 src={"/assets/image/servicePage/subPage/DigialMedia-1.jpg"}

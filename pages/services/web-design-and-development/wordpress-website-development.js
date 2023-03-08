@@ -33,7 +33,7 @@ const Shopify = () => {
             depending upon the brand’s requirement.
           </Text>
         </Container>
-        <Container maxWidth={"7xl"} pb={"50px"} pt={5}>
+        <Container maxWidth={"7xl"} pb={"50px"}>
           {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
