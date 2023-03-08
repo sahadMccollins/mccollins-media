@@ -312,6 +312,23 @@ const Film = () => {
           />
           Your browser does not support HTML5 video.
         </video>
+        <video
+          title="Film Production Company Dubai"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          alt="McCollins Media Production"
+          style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
+        >
+          <source
+            src="https://res.cloudinary.com/mccollins-media/video/upload/v1678238137/Mccollins%20Video/458640823_zc3t2c.mp4"
+            type="video/mp4"
+            media="screen"
+          />
+          Your browser does not support HTML5 video.
+        </video>
       </Box>
       <Heading
         textAlign={"center"}
