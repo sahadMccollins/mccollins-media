@@ -14,7 +14,7 @@ const Awards = () => {
       <Container maxWidth={"7xl"} pb="20" position={"relative"}>
         <FadeUp>
           <Heading
-            fontSize={"4xl"}
+            fontSize={{ base: "3xl", md: "4xl" }}
             position={{ base: "relative", md: "absolute" }}
             top={{ base: "0", md: 16 }}
             mb={{ base: "50px", md: 0 }}
@@ -29,6 +29,7 @@ const Awards = () => {
         <Flex>
           <Box width="10%" style={{ base: "none", md: "block" }}>
             <Image
+              alt="McCollins Media"
               src="/assets/image/awards/awardsAlp.png"
               width="101px"
               height="447px"

@@ -25,6 +25,7 @@ const ClientsLogo = () => {
           width={{ base: "25%", md: "unset" }}
         >
           <Image
+            alt="McCollins Media"
             src="/assets/image/design/5.svg"
             height={"56px"}
             width="302px"
@@ -62,6 +63,7 @@ const ClientsLogo = () => {
           >
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(5).png"
                 width={"330px"}
                 height={"72px"}
@@ -69,6 +71,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(6).png"
                 width={"118px"}
                 height={"118px"}
@@ -76,6 +79,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(7).png"
                 width={"225px"}
                 height={"37px"}
@@ -83,6 +87,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(10).png"
                 width={"218px"}
                 height={"34px"}
@@ -90,6 +95,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(4).png"
                 width={"230px"}
                 height={"96px"}
@@ -97,6 +103,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(3).png"
                 width={"220px"}
                 height={"30px"}
@@ -104,6 +111,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(2).png"
                 width={"260px"}
                 height={"39px"}
@@ -111,6 +119,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(9).png"
                 width={"140px"}
                 height={"206px"}
@@ -118,6 +127,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(11).png"
                 width={"352px"}
                 height={"78px"}
@@ -125,6 +135,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(12).png"
                 width={"244px"}
                 height={"65px"}
@@ -132,6 +143,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(1).png"
                 width={"166px"}
                 height={"124px"}
@@ -139,6 +151,7 @@ const ClientsLogo = () => {
             </Box>
             <Box justifySelf={"center"}>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/clientLogo/clientLogo-(8).png"
                 width={"182px"}
                 height={"86px"}

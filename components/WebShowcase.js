@@ -73,6 +73,7 @@ const WebShowcase = () => {
                       href="/assets/image/webShowcase/(1).jpg"
                     >
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/webShowcase/(1).jpg"
                         width={"350px"}
                         height={"350px"}
@@ -91,6 +92,7 @@ const WebShowcase = () => {
                       href="/assets/image/webShowcase/(2).jpg"
                     >
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/webShowcase/(2).jpg"
                         width={"350px"}
                         height={"350px"}
@@ -109,6 +111,7 @@ const WebShowcase = () => {
                       href="/assets/image/webShowcase/(3).jpg"
                     >
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/webShowcase/(3).jpg"
                         width={"350px"}
                         height={"350px"}
@@ -127,6 +130,7 @@ const WebShowcase = () => {
                       href="/assets/image/webShowcase/(3).jpg"
                     >
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/webShowcase/(4).jpg"
                         width={"350px"}
                         height={"350px"}
@@ -145,6 +149,7 @@ const WebShowcase = () => {
                       href="/assets/image/webShowcase/(3).jpg"
                     >
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/webShowcase/(5).jpg"
                         width={"350px"}
                         height={"350px"}

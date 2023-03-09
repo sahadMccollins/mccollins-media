@@ -99,6 +99,7 @@ const Magento = () => {
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/servicePage/Magneto.jpg"}
                 width="585px"
                 height={"528px"}
@@ -109,6 +110,7 @@ const Magento = () => {
           <Flex direction={{ base: "column", md: "row" }} my="75px">
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/servicePage/Magneto2.jpg"}
                 width="585px"
                 height={"528px"}

@@ -84,6 +84,7 @@ const DigialMediaBuying = () => {
               mr={{ base: 0, md: 10 }}
             >
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/servicePage/subPage/DigialMedia-1.jpg"}
                 width="585px"
                 height={"350px"}
@@ -94,6 +95,7 @@ const DigialMediaBuying = () => {
           <Flex direction={{ base: "column-reverse", md: "row" }} my={10}>
             <Box width={{ base: "100%", md: "50%" }} mt={{ base: 5, md: 0 }}>
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/servicePage/subPage/DigitaAnalysis-1.jpg"}
                 width="585px"
                 height={"350px"}
@@ -186,7 +188,7 @@ const DigialMediaBuying = () => {
               position="relative"
               alignSelf={"center"}
             >
-              <Image
+              <Image alt="McCollins Media"
                 src={"/assets/image/servicePage/subPage/plan-management.jpg"}
                 width="585px"
                 height={"750px"}

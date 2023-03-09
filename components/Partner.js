@@ -17,6 +17,7 @@ const Partner = () => {
           >
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (1).png"
                 width="120px"
                 height="120px"
@@ -24,6 +25,7 @@ const Partner = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (2).png"
                 width="120px"
                 height="120px"
@@ -31,6 +33,7 @@ const Partner = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (3).png"
                 width="120px"
                 height="120px"
@@ -38,6 +41,7 @@ const Partner = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (4).png"
                 width="120px"
                 height="120px"
@@ -45,6 +49,7 @@ const Partner = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (5).png"
                 width="120px"
                 height="120px"
@@ -53,6 +58,7 @@ const Partner = () => {
             <Box display={{ base: "none", md: "block" }}></Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (6).png"
                 width="120px"
                 height="120px"
@@ -60,6 +66,7 @@ const Partner = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (7).png"
                 width="120px"
                 height="120px"
@@ -67,6 +74,7 @@ const Partner = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/partner/ (8).png"
                 width="120px"
                 height="120px"

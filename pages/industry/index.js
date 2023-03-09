@@ -20,6 +20,7 @@ const index = () => {
         zIndex="9"
       >
         <Image
+          alt="McCollins Media"
           src={"/assets/image/design/7.svg"}
           width="89px"
           height={"103px"}
@@ -34,6 +35,7 @@ const index = () => {
         bottom={{ base: "-1%", md: "0" }}
       >
         <Image
+          alt="McCollins Media"
           src={"/assets/image/design/1.svg"}
           width="118px"
           height={"165px"}

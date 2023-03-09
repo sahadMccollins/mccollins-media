@@ -56,53 +56,49 @@ const BrandReputationManagement = () => {
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Brand Reputation Management" />
       <Box>
-        <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              mr={{ base: 0, md: 10 }}
-              alignSelf="center"
-              className="main-p"
-            >
-              <Text mt={{ base: 5, md: 0 }} className="main-p">
-                Being a leading social media agency in UAE, we work towards
-                managing the digital brand reputation for your brand. Our social
-                media monitoring tools analyze the brand sentiment. Tools like
-                Meltwater, Hootsuite, Socialbakers, SEMRush and more help us
-                keep a close look at the pulse of the brands. Positive brand
-                sentiment refers to the overall perception of a brand by its
-                target audience. It is the degree to which customers have
-                positive emotions, feelings, and associations with a brand.
-                Positive brand sentiment is important because it can lead to
-                increased customer loyalty, advocacy, and sales.
-              </Text>
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
-                src={"/assets/image/servicePage/Magneto.jpg"}
-                width="585px"
-                height={"300px"}
-                objectFit="cover"
-              />
-            </Box>
-          </Flex>
+        <Container maxWidth={"4xl"} mt={10}>
+          <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
+            Being a leading social media agency in UAE, we work towards managing
+            the digital brand reputation for your brand. Our social media
+            monitoring tools analyze the brand sentiment. Tools like Meltwater,
+            Hootsuite, Socialbakers, SEMRush and more help us keep a close look
+            at the pulse of the brands. Positive brand sentiment refers to the
+            overall perception of a brand by its target audience. It is the
+            degree to which customers have positive emotions, feelings, and
+            associations with a brand. Positive brand sentiment is important
+            because it can lead to increased customer loyalty, advocacy, and
+            sales.
+          </Text>
+        </Container>
+        <Container maxWidth={"7xl"} py={"10"}>
+          <Box
+            display={"flex"}
+            flexDir={{ base: "column", md: "row" }}
+            justifyContent="space-around"
+            gap={5}
+          >
+            <Image
+              alt="McCollins Media"
+              src={
+                "/assets/image/servicePage/subPage/Brand Reputation Management-01.jpg"
+              }
+              width="585px"
+              height={"500px"}
+              objectFit="cover"
+            />
+
+            <Image
+              alt="McCollins Media"
+              src={
+                "/assets/image/servicePage/subPage/Brand Reputation Management-02.jpg"
+              }
+              width="585px"
+              height={"500px"}
+              objectFit="cover"
+            />
+          </Box>
           <Flex direction={{ base: "column", md: "row" }} my={10}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              position="relative"
-              mr={{ base: 0, md: 10 }}
-              display={"flex"}
-              flexDir={"column"}
-              justifyContent="space-around"
-            >
-              <Image
-                src={"/assets/image/servicePage/Magneto2.jpg"}
-                width="585px"
-                height={"700px"}
-                objectFit="cover"
-              />
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }}>
+            <Box>
               <Heading as={"h3"} className={"main-h3"} mt={{ base: 5, md: 0 }}>
                 Here are some factors that can influence positive brand
                 sentiment:

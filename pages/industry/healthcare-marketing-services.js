@@ -29,6 +29,7 @@ const HealthCareMarketing = () => {
             <Box width={{ base: "100%", md: "40%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (6).jpg"
                   width="417px"
                   height="454px"
@@ -97,6 +98,7 @@ const HealthCareMarketing = () => {
           zIndex="9"
         >
           <Image
+            alt="McCollins Media"
             src={"/assets/image/design/7.svg"}
             width="89px"
             height={"103px"}
@@ -108,6 +110,7 @@ const HealthCareMarketing = () => {
           zIndex="9"
         >
           <Image
+            alt="McCollins Media"
             src={"/assets/image/design/14.svg"}
             width="60px"
             height={"50px"}
@@ -183,6 +186,7 @@ const HealthCareMarketing = () => {
                 mt={{ base: 10, md: 0 }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (10).jpg"
                   width="480px"
                   height="768px"
@@ -262,6 +266,7 @@ const HealthCareMarketing = () => {
                 mt={{ base: 10, md: 0 }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (21).jpg"
                   width="480px"
                   height="768px"

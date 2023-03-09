@@ -6,7 +6,13 @@ import Image from "next/image";
 const BlogList = (props) => {
   return (
     <Box as={ChakraLink} href={props.url} _hover={{ textDecoration: "none" }}>
-      <Image src={props.img} width="355px" height={"426px"} objectFit="cover" />
+      <Image
+        alt="McCollins Media"
+        src={props.img}
+        width="355px"
+        height={"426px"}
+        objectFit="cover"
+      />
       <Heading fontSize={"2xl"} pr="60px" height={"90px"}>
         {props.heading}
       </Heading>

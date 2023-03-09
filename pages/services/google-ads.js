@@ -26,6 +26,8 @@ import VideoCaseStudy from "../../components/VideoCaseStudy";
 import FormBox from "../../components/FormBox";
 import WebShowcase from "../../components/WebShowcase";
 import Testimonials from "../../components/Testimonials";
+import FadeUp from "../../components/Motion/FadeUp";
+import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
 
 const DigitalMarketingSEO = () => {
   const router = useRouter();
@@ -105,26 +107,32 @@ const DigitalMarketingSEO = () => {
             alignSelf="center"
             className="main-p"
           >
-            <Text mt={5} className="main-p">
-              Google Ad Management refers to the process of creating, managing,
-              and optimizing Google Ads campaigns for brands. Google Ads is an
-              online advertising platform where businesses can create and
-              display ads to reach potential customers when they search for
-              specific products or services on Google. Being an official Google
-              Partner, McCollins Media aims to be one of the best google ad
-              management agencies in the UAE. Search Engine Marketing in Dubai
-              is key for any business to reach their relevant target audience.
-              With lead generation and conversion campaigns, brands are able to
-              see their short term targets materialize a lot more faster.
-            </Text>
+            <FadeUp>
+              <Text mt={5} className="main-p">
+                Google Ad Management refers to the process of creating,
+                managing, and optimizing Google Ads campaigns for brands. Google
+                Ads is an online advertising platform where businesses can
+                create and display ads to reach potential customers when they
+                search for specific products or services on Google. Being an
+                official Google Partner, McCollins Media aims to be one of the
+                best google ad management agencies in the UAE. Search Engine
+                Marketing in Dubai is key for any business to reach their
+                relevant target audience. With lead generation and conversion
+                campaigns, brands are able to see their short term targets
+                materialize a lot more faster.
+              </Text>
+            </FadeUp>
           </Box>
           <Box width={{ base: "100%", md: "50%" }} position="relative">
-            <Image
-              src={"/assets/image/ServiceTabs/DigitalMarketing&SEO.png"}
-              width="450px"
-              height={"528px"}
-              objectFit="cover"
-            />
+            <ZoomInWithBounce>
+              <Image
+                alt="McCollins Media"
+                src={"/assets/image/ServiceTabs/DigitalMarketing&SEO.png"}
+                width="450px"
+                height={"528px"}
+                objectFit="cover"
+              />
+            </ZoomInWithBounce>
           </Box>
         </Flex>
 
@@ -134,61 +142,85 @@ const DigitalMarketingSEO = () => {
             alignSelf="center"
             mr={{ base: 0, md: 10 }}
           >
-            <Image
-              src={"/assets/image/servicePage/DM&SEO.jpg"}
-              width="585px"
-              height={"528px"}
-              objectFit="cover"
-            />
+            <ZoomInWithBounce>
+              <Image
+                alt="McCollins Media"
+                src={"/assets/image/servicePage/DM&SEO.jpg"}
+                width="585px"
+                height={"528px"}
+                objectFit="cover"
+              />
+            </ZoomInWithBounce>
           </Box>
-          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
-            <Heading as={"h5"} className="main-h5">
-              Google Ad Management involves several steps, including:
-            </Heading>
+          <Box
+            width={{ base: "100%", md: "50%" }}
+            alignSelf="center"
+            className="sub-service"
+          >
+            <FadeUp>
+              <Heading as={"h5"} className="main-h5">
+                Google Ad Management involves several steps, including:
+              </Heading>
+            </FadeUp>
             <OrderedList my={"6"}>
               <li>
-                <Text fontSize={"20px"} className="main-p">
-                  <b>Campaign planning:</b> Defining the campaign goals, target
-                  audience, and budget.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} className="main-p">
+                    <b>Campaign planning:</b> Defining the campaign goals,
+                    target audience, and budget.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Ad creation:</b> Creating compelling and relevant ads that
-                  resonate with the target audience.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Ad creation:</b> Creating compelling and relevant ads
+                    that resonate with the target audience.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Keyword research:</b> Identifying the keywords that people
-                  use to search for the products or services being advertised.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Keyword research:</b> Identifying the keywords that
+                    people use to search for the products or services being
+                    advertised.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Campaign setup:</b> Setting up the campaign structure, ad
-                  groups, and targeting options.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Campaign setup:</b> Setting up the campaign structure, ad
+                    groups, and targeting options.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Bid management:</b> Setting the right bid amounts for each
-                  ad and keyword to optimize ad performance.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Bid management:</b> Setting the right bid amounts for
+                    each ad and keyword to optimize ad performance.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Performance monitoring:</b> Tracking the campaign
-                  performance and making adjustments to improve the ad's
-                  performance.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Performance monitoring:</b> Tracking the campaign
+                    performance and making adjustments to improve the ad's
+                    performance.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Optimization: </b>Continuously testing and optimizing the
-                  ads to improve their relevance, click-through rate (CTR), and
-                  conversion rate.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Optimization: </b>Continuously testing and optimizing the
+                    ads to improve their relevance, click-through rate (CTR),
+                    and conversion rate.
+                  </Text>
+                </FadeUp>
               </li>
             </OrderedList>
           </Box>
@@ -201,17 +233,20 @@ const DigitalMarketingSEO = () => {
             alignSelf="center"
             className="main-p"
           >
-            <Text mt={5} className="main-p">
-              By effectively managing Google Ads campaigns, businesses can
-              increase their visibility and reach more potential customers,
-              ultimately leading to increased sales and revenue. Regenerate
-              response. Our inhouse team of SEM experts in Dubai, work on
-              several Google Ad Management Campaigns in the GCC and worldwide to
-              help brands reach the right target audience.
-            </Text>
+            <FadeUp>
+              <Text mt={5} className="main-p">
+                By effectively managing Google Ads campaigns, businesses can
+                increase their visibility and reach more potential customers,
+                ultimately leading to increased sales and revenue. Regenerate
+                response. Our inhouse team of SEM experts in Dubai, work on
+                several Google Ad Management Campaigns in the GCC and worldwide
+                to help brands reach the right target audience.
+              </Text>
+            </FadeUp>
           </Box>
           <Box width={{ base: "100%", md: "50%" }} textAlign="center">
             <Image
+              alt="McCollins Media"
               src={"/assets/image/servicePage/ksa/google-ads.jpg"}
               width="585px"
               height={"300px"}
@@ -230,42 +265,54 @@ const DigitalMarketingSEO = () => {
         <VideoCaseStudy />
       </Container>
       <Box className="creative-head" pb={10}>
-        <Heading
-          as={"h4"}
-          fontSize={{ base: "25px", md: "50px" }}
-          pt="20"
-          textAlign="center"
-          color={"#FFDE11"}
-          textTransform="uppercase"
-        >
-          I am also interested in
-        </Heading>
+        <FadeUp>
+          <Heading
+            as={"h4"}
+            fontSize={{ base: "25px", md: "50px" }}
+            pt="20"
+            textAlign="center"
+            color={"#FFDE11"}
+            textTransform="uppercase"
+          >
+            I am also interested in
+          </Heading>
+        </FadeUp>
         <Container maxWidth="4xl">
           <Box className="intrestedH2">
-            <Heading
-              onClick={() => router.push("/services/google-ads-and-sem")}
-            >
-              SEM - Google Ads
-            </Heading>
-            <Heading
-              onClick={() =>
-                router.push("/services/search-engine-optimization")
-              }
-            >
-              Search Engine Optimization
-            </Heading>
-            <Heading
-              onClick={() => router.push("/services/social-media-agency-dubai")}
-            >
-              Social Media Marketing
-            </Heading>
-            <Heading
-              onClick={() =>
-                router.push("/services/web-design-and-development")
-              }
-            >
-              Website Maintenance
-            </Heading>
+            <FadeUp>
+              <Heading
+                onClick={() => router.push("/services/google-ads-and-sem")}
+              >
+                SEM - Google Ads
+              </Heading>
+            </FadeUp>
+            <FadeUp>
+              <Heading
+                onClick={() =>
+                  router.push("/services/search-engine-optimization")
+                }
+              >
+                Search Engine Optimization
+              </Heading>
+            </FadeUp>
+            <FadeUp>
+              <Heading
+                onClick={() =>
+                  router.push("/services/social-media-agency-dubai")
+                }
+              >
+                Social Media Marketing
+              </Heading>
+            </FadeUp>
+            <FadeUp>
+              <Heading
+                onClick={() =>
+                  router.push("/services/web-design-and-development")
+                }
+              >
+                Website Maintenance
+              </Heading>
+            </FadeUp>
           </Box>
         </Container>
       </Box>

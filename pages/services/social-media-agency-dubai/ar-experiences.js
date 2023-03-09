@@ -55,110 +55,114 @@ const ARExperiences = () => {
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="AR Experiences" />
       <Box>
-        <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
+        <Container maxWidth={"4xl"} mt={10}>
+          <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
+            Augmented Reality (AR) brand experiences involve the use of
+            technology to enhance the customer's interaction with a brand. AR
+            technology allows customers to engage with a brand in a more
+            immersive and interactive way, creating a memorable experience that
+            can lead to increased brand awareness, customer loyalty, and sales.
+            Being an Augmented Reality Development Agency in Dubai, we design
+            and develop AR Experiences which work for your brand. Our skilled
+            in-house AR Developers in UAE can work on the latest technologies
+            and deliver an unforgettable experience.
+          </Text>
+        </Container>
+        <Container maxWidth={"7xl"} py={"10"}>
+          <Box
+            display={"flex"}
+            flexDir={{ base: "column", md: "row" }}
+            justifyContent="space-around"
+            gap={5}
+          >
+            <Image
+              alt="McCollins Media"
+              src={"/assets/image/servicePage/subPage/AR Experiences-01.jpg"}
+              width="585px"
+              height={"500px"}
+              objectFit="cover"
+            />
+
+            <Image
+              alt="McCollins Media"
+              src={"/assets/image/servicePage/subPage/AR Experiences-04.jpg"}
+              width="585px"
+              height={"500px"}
+              objectFit="cover"
+            />
+          </Box>
+          <Box mt={10}>
+            <Heading as={"h3"} className={"main-h3"} mt={{ base: 5, md: 0 }}>
+              How can your brand develop an AR Experience with McCollins :
+            </Heading>
+            <OrderedList my={"6"}>
+              <li>
+                <Text fontSize={"20px"} className="main-p">
+                  <b>Product visualization:</b> AR can be used to create
+                  interactive 3D models of products, allowing customers to see
+                  how they would look in their own environment or interact with
+                  them in a virtual space.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Gamification:</b> Brands can use AR to create interactive
+                  games and challenges that engage customers and encourage them
+                  to explore the brand's products and services.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Virtual try-ons:</b> AR can be used to create virtual
+                  try-on experiences for products such as clothing, makeup, and
+                  eyewear, allowing customers to see how they would look before
+                  making a purchase.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Interactive displays:</b> Brands can use AR to create
+                  interactive displays in physical retail locations or at
+                  events, allowing customers to engage with the brand in a more
+                  immersive and memorable way.
+                </Text>
+              </li>
+              <li>
+                <Text fontSize={"20px"} mt="5" className="main-p">
+                  <b>Storytelling:</b> AR can be used to create immersive and
+                  interactive storytelling experiences that showcase the brand's
+                  values and messaging, helping to create an emotional
+                  connection with customers.
+                </Text>
+              </li>
+            </OrderedList>
+          </Box>
+          <Flex direction={{ base: "column-reverse", md: "row" }} mt={10}>
             <Box
               width={{ base: "100%", md: "50%" }}
               mr={{ base: 0, md: 10 }}
-              alignSelf="center"
-              className="main-p"
-            >
-              <Text mt={{ base: 5, md: 0 }} className="main-p">
-                Augmented Reality (AR) brand experiences involve the use of
-                technology to enhance the customer's interaction with a brand.
-                AR technology allows customers to engage with a brand in a more
-                immersive and interactive way, creating a memorable experience
-                that can lead to increased brand awareness, customer loyalty,
-                and sales. Being an Augmented Reality Development Agency in
-                Dubai, we design and develop AR Experiences which work for your
-                brand. Our skilled in-house AR Developers in UAE can work on the
-                latest technologies and deliver an unforgettable experience.
-              </Text>
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
-                src={"/assets/image/servicePage/Magneto.jpg"}
-                width="585px"
-                height={"300px"}
-                objectFit="cover"
-              />
-            </Box>
-          </Flex>
-          <Flex direction={{ base: "column", md: "row" }} my={10}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
               position="relative"
-              mr={{ base: 0, md: 10 }}
               display={"flex"}
               flexDir={"column"}
               justifyContent="space-around"
             >
               <Image
-                src={"/assets/image/servicePage/Magneto2.jpg"}
+                alt="McCollins Media"
+                src={"/assets/image/servicePage/subPage/AR Experiences-02.jpg"}
                 width="585px"
-                height={"500px"}
+                height={"800px"}
                 objectFit="cover"
               />
             </Box>
-            <Box width={{ base: "100%", md: "50%" }}>
-              <Heading as={"h3"} className={"main-h3"} mt={{ base: 5, md: 0 }}>
-                How can your brand develop an AR Experience with McCollins :
-              </Heading>
-              <OrderedList my={"6"}>
-                <li>
-                  <Text fontSize={"20px"} className="main-p">
-                    <b>Product visualization:</b> AR can be used to create
-                    interactive 3D models of products, allowing customers to see
-                    how they would look in their own environment or interact
-                    with them in a virtual space.
-                  </Text>
-                </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Gamification:</b> Brands can use AR to create interactive
-                    games and challenges that engage customers and encourage
-                    them to explore the brand's products and services.
-                  </Text>
-                </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Virtual try-ons:</b> AR can be used to create virtual
-                    try-on experiences for products such as clothing, makeup,
-                    and eyewear, allowing customers to see how they would look
-                    before making a purchase.
-                  </Text>
-                </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Interactive displays:</b> Brands can use AR to create
-                    interactive displays in physical retail locations or at
-                    events, allowing customers to engage with the brand in a
-                    more immersive and memorable way.
-                  </Text>
-                </li>
-                <li>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Storytelling:</b> AR can be used to create immersive and
-                    interactive storytelling experiences that showcase the
-                    brand's values and messaging, helping to create an emotional
-                    connection with customers.
-                  </Text>
-                </li>
-              </OrderedList>
-            </Box>
-          </Flex>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
-              mr={{ base: 0, md: 10 }}
               alignSelf="center"
               mt={{ base: 5, md: 0 }}
             >
               <Heading
-                as={"h6"}
-                className={"main-h6"}
-                mt={{ base: 5, md: 0 }}
-                textAlign={{ base: "center", md: "left" }}
+                as={"h4"}
+                fontSize={{ base: "18px", md: "22px" }}
+                fontWeight={"600"}
               >
                 There are several AR tools available that brands can use to
                 create engaging and immersive AR experiences for their
@@ -214,37 +218,10 @@ const ARExperiences = () => {
                 </li>
               </OrderedList>
             </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              position="relative"
-              display={"flex"}
-              flexDir={"column"}
-              justifyContent="space-around"
-            >
-              <Image
-                src={"/assets/image/servicePage/Woocommerce.jpg"}
-                width="585px"
-                height={"700px"}
-                objectFit="cover"
-              />
-            </Box>
           </Flex>
           <Flex direction={{ base: "column", md: "row" }} mt={10}>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
-                src={"/assets/image/servicePage/Magneto.jpg"}
-                width="585px"
-                height={"300px"}
-                objectFit="cover"
-              />
-            </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              mr={{ base: 0, md: 10 }}
-              alignSelf="center"
-              className="main-p"
-            >
-              <Text mt={{ base: 5, md: 0 }} className="main-p">
+            <Box mr={{ base: 0, md: 10 }} alignSelf="center" className="main-p">
+              <Text className="main-p">
                 Overall, these AR tools provide brands with the resources and
                 tools needed to create engaging and immersive AR experiences
                 that can help to increase brand awareness, customer engagement,

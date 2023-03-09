@@ -34,6 +34,7 @@ const InnerBanner = (props) => {
               left={"70%"}
             >
               <Image
+                alt="McCollins Media"
                 src="/assets/image/design/3.svg"
                 width={"89px"}
                 height={"104px"}
@@ -50,6 +51,7 @@ const InnerBanner = (props) => {
             onClick={() => router.push("/contact")}
           >
             <Image
+              alt="McCollins Media"
               src="/assets/image/icons/call.svg"
               width="25px"
               height="25px"
@@ -71,7 +73,13 @@ const InnerBanner = (props) => {
         </FadeUp>
       </Box>
       <Box width={{ base: "100%", md: "45%" }} mt={{ base: "10", md: "0" }}>
-        <Image src={props.img} width="446px" height="467px" priority={true} />
+        <Image
+          alt="McCollins Media"
+          src={props.img}
+          width="446px"
+          height="467px"
+          priority={true}
+        />
       </Box>
     </Flex>
   );

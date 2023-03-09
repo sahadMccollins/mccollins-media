@@ -30,6 +30,7 @@ const FavWork = (props) => {
             display={{ base: "none", md: "block" }}
           >
             <Image
+              alt="McCollins Media"
               position={"absolute"}
               src="/assets/image/design/2.svg"
               width={"105px"}
@@ -49,6 +50,7 @@ const FavWork = (props) => {
               marginTop={{ base: "-50px", md: "0" }}
             >
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/design/9.svg"}
                 width="140px"
                 height={"140px"}
@@ -89,6 +91,7 @@ const FavWork = (props) => {
               right={"-150px"}
             ></Box>
             <Image
+              alt="McCollins Media"
               position={"absolute"}
               src="/assets/image/caseStudy/caseStudyAlp.png"
               width="80px"

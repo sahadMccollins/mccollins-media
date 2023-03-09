@@ -50,6 +50,7 @@ const Index = ({ blogs }) => {
               mb={"5"}
             >
               <Image
+                alt="McCollins Media"
                 src={blogs[0].photo}
                 objectFit="cover"
                 width="615px"

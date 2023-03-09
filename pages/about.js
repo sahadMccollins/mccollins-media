@@ -13,9 +13,10 @@ import FadeUp from "../components/Motion/FadeUp";
 const About = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://apps.elfsight.com/p/platform.js";
+    script.src = "https://widget.taggbox.com/embed-lite.min.js";
     script.defer = false;
     script.async = false;
+    script.type = "text/javascript";
     document.body.appendChild(script);
   }, []);
   return (
@@ -118,6 +119,7 @@ const About = () => {
             zIndex="2"
           >
             <Image
+              alt="McCollins Media"
               src="/assets/image/design/1.svg"
               width="187px"
               height="202px"
@@ -146,12 +148,17 @@ const About = () => {
 
       <ClientsLogo />
       <Awards />
-      <Heading textAlign={"center"} mb={"-45px"}>
+      <Heading textAlign={"center"} mb={5}>
         #BehindTheScenes
       </Heading>
       <Box>
-        {/* <script src="https://apps.elfsight.com/p/platform.js" defer></script> */}
-        <div className="elfsight-app-739c5489-936f-40ef-b775-08920d488e3c"></div>
+        {/* <div className="elfsight-app-739c5489-936f-40ef-b775-08920d488e3c"></div> */}
+        <div
+          className="taggbox"
+          style={{ width: "100%", height: "100%" }}
+          data-widget-id="124868"
+          data-tags="false"
+        ></div>
       </Box>
     </>
   );

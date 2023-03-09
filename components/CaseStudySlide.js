@@ -5,7 +5,13 @@ import Image from "next/image";
 const CaseStudySlide = (props) => {
   return (
     <Box position={"relative"} bottom={"-5px"}>
-      <Image src={props.img} priority={true} width="270px" height="400px" />
+      <Image
+        alt="McCollins Media"
+        src={props.img}
+        priority={true}
+        width="270px"
+        height="400px"
+      />
       <Box
         position={"absolute"}
         bottom="0"

@@ -189,6 +189,7 @@ const Portfolio = ({ data }) => {
                           <Td>{image.title}</Td>
                           <Td>
                             <Image
+                              alt="McCollins Media"
                               src={image.image}
                               width="250px"
                               height="250px"

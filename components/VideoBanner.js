@@ -96,6 +96,7 @@ const VideoBanner = (props) => {
                   onClick={() => router.push("/contact")}
                 >
                   <Image
+                    alt="McCollins Media"
                     src="/assets/image/icons/call.svg"
                     width="25px"
                     height="25px"

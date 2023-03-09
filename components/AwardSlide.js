@@ -34,7 +34,12 @@ const AwardSlide = (props) => {
             top="0"
             left="22px"
           ></Box>
-          <Image src={props.img} width="316px" height="376px" />
+          <Image
+            alt="McCollins Media"
+            src={props.img}
+            width="316px"
+            height="376px"
+          />
           <Box
             display={{ base: "none", md: "block" }}
             position={"absolute"}

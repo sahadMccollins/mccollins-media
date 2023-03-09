@@ -21,6 +21,7 @@ const SocialBox = () => {
           >
             <Box>
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/icons/SocialFB.png"}
                 width="150px"
                 height={"150px"}
@@ -28,6 +29,7 @@ const SocialBox = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/icons/socialInsta.png"}
                 width="150px"
                 height={"150px"}
@@ -35,6 +37,7 @@ const SocialBox = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/icons/socialTiktok.png"}
                 width="150px"
                 height={"150px"}
@@ -48,6 +51,7 @@ const SocialBox = () => {
           >
             <Box>
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/icons/socialSnap.png"}
                 width="150px"
                 height={"150px"}
@@ -55,6 +59,7 @@ const SocialBox = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/icons/socialLinkedin.png"}
                 width="150px"
                 height={"150px"}
@@ -62,6 +67,7 @@ const SocialBox = () => {
             </Box>
             <Box>
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/icons/socialGMBs.png"}
                 width="150px"
                 height={"150px"}

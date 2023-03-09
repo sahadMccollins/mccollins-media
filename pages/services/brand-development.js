@@ -143,26 +143,19 @@ const DesignAndBrandDevelopment = () => {
             }}
           >
             <Image
+              alt="McCollins Media"
               src={"/assets/image/design/1.svg"}
               width="118px"
               height={"165px"}
             />
           </Box>
-          <Container maxWidth={"7xl"} pb={10}>
-            <Heading>COPYWRIRING</Heading>
-            <Text my={15}>
-              Written content that goes along with design is key. Our
-              copywriters understand the DNA of your brand and create written
-              material for the design collaterals
-            </Text>
-          </Container>
         </Box>
       </Box>
       {/* <Box
         style={{ position: "absolute", top: "58%", left: "-4%" }}
         display={{ base: "none", md: "block" }}
       >
-        <Image
+        <Image alt="McCollins Media"
           src={"/assets/image/design/12.svg"}
           width="130px"
           height={"130px"}

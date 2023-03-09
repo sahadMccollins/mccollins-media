@@ -35,6 +35,7 @@ const Index = () => {
             >
               <ZoomInWithBounce>
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/design/3.svg"
                   width={"89px"}
                   height={"104px"}
@@ -66,6 +67,7 @@ const Index = () => {
                 onClick={() => router.push("/contact")}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/icons/call.svg"
                   width="25px"
                   height="25px"
@@ -96,6 +98,7 @@ const Index = () => {
           >
             <FadeUp>
               <Image
+                alt="McCollins Media"
                 src="/assets/image/servicePage/ourServicesAlp.svg"
                 height={"750px"}
                 width={"122px"}

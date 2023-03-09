@@ -17,41 +17,11 @@ import ClientsLogo from "../../../components/ClientsLogo";
 import VideoBanner from "../../../components/VideoBanner";
 import { useRouter } from "next/router";
 import VideoCaseStudy from "../../../components/VideoCaseStudy";
+import ZoomInWithBounce from "../../../components/Motion/ZoomInWithBounce";
+import FadeUp from "../../../components/Motion/FadeUp";
 
 const SocialMediaMarketing = () => {
   const router = useRouter();
-  // const favWorkData = [
-  //   {
-  //     name: "DAFZA",
-  //     img: "/assets/image/caseStudy/caseStudy1.jpg",
-  //     type: "Web Devlopment",
-  //   },
-  //   {
-  //     name: "Costa Coffee",
-  //     img: "/assets/image/caseStudy/caseStudy2.jpg",
-  //     type: "Web Devlopment",
-  //   },
-  //   {
-  //     name: "Fujifilm",
-  //     img: "/assets/image/caseStudy/caseStudy3.jpg",
-  //     type: "Web Devlopment",
-  //   },
-  //   {
-  //     name: "DAFZA",
-  //     img: "/assets/image/caseStudy/caseStudy1.jpg",
-  //     type: "Web Devlopment",
-  //   },
-  //   {
-  //     name: "Costa Coffee",
-  //     img: "/assets/image/caseStudy/caseStudy2.jpg",
-  //     type: "Web Devlopment",
-  //   },
-  //   {
-  //     name: "Fujifilm",
-  //     img: "/assets/image/caseStudy/caseStudy3.jpg",
-  //     type: "Web Devlopment",
-  //   },
-  // ];
 
   const SmmPointRef = useRef(null);
 
@@ -69,19 +39,15 @@ const SocialMediaMarketing = () => {
       <Box pb={12}>
         <Container maxWidth={"7xl"} position="relative">
           <Flex direction={{ base: "column", md: "row" }} position="relative">
-            <Box style={{ position: "absolute", top: "10%", left: "-20%" }}>
-              <Image
-                src={"/assets/image/design/11.svg"}
-                width="247px"
-                height={"284px"}
-              />
-            </Box>
             <Box width={{ base: "100%", md: "35%" }}>
-              <Image
-                src="/assets/image/ServiceTabs/IphoneReels.png"
-                width="610px"
-                height="905px"
-              />
+              <ZoomInWithBounce>
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/ServiceTabs/IphoneReels.png"
+                  width="610px"
+                  height="905px"
+                />
+              </ZoomInWithBounce>
             </Box>
             <Flex
               width={{ base: "100%", md: "30%" }}
@@ -90,21 +56,24 @@ const SocialMediaMarketing = () => {
               textAlign={"center"}
               mt={{ base: 0, lg: "120px" }}
             >
-              <Text className="main-p">
-                Get your business ahead of the curve with our Social Media
-                Management services. Develop targeted and effective social media
-                campaigns that result in brand conversions. As a Social Media
-                Marketing Agency in UAE, we stay up to date with the latest
-                digital trends and strategies to enhance your online presence.
-                <br />
-                <br />
-                Connect with a community of bloggers and content developers to
-                increase your reach and impact. Being an SMM Agency in Dubai, we
-                tap into the Arab market through our content development
-                services that are tailored to meet the needs of this vibrant
-                market.
-              </Text>
-              <Button
+              <FadeUp>
+                <Text className="main-p">
+                  Get your business ahead of the curve with our Social Media
+                  Management services. Develop targeted and effective social
+                  media campaigns that result in brand conversions. As a Social
+                  Media Marketing Agency in UAE, we stay up to date with the
+                  latest digital trends and strategies to enhance your online
+                  presence.
+                  <br />
+                  <br />
+                  Connect with a community of bloggers and content developers to
+                  increase your reach and impact. Being an SMM Agency in Dubai,
+                  we tap into the Arab market through our content development
+                  services that are tailored to meet the needs of this vibrant
+                  market.
+                </Text>
+              </FadeUp>
+              {/* <Button
                 colorScheme="black"
                 background={"#000"}
                 borderRadius="20px"
@@ -115,17 +84,20 @@ const SocialMediaMarketing = () => {
               >
                 view more
                 <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
-              </Button>
+              </Button> */}
             </Flex>
             <Box
               width={{ base: "100%", md: "35%" }}
               display={{ base: "none", md: "block" }}
             >
-              <Image
-                src="/assets/image/ServiceTabs/IphoneTiktok.png"
-                width="610px"
-                height="897px"
-              />
+              <ZoomInWithBounce>
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/ServiceTabs/IphoneTiktok.png"
+                  width="610px"
+                  height="897px"
+                />
+              </ZoomInWithBounce>
             </Box>
           </Flex>
         </Container>
@@ -133,60 +105,82 @@ const SocialMediaMarketing = () => {
       <Container maxW={"7xl"} style={{ margin: "auto" }}>
         <Flex direction={{ base: "column", md: "row" }}>
           <Box width={{ base: "100%", md: "50%" }} mr={{ base: 0, md: 10 }}>
-            <Image
-              src={"/assets/image/servicePage/subPage/social media1.jpg"}
-              width="585px"
-              height={"528px"}
-              objectFit="cover"
-            />
+            <ZoomInWithBounce>
+              <Image
+                alt="McCollins Media"
+                src={"/assets/image/servicePage/subPage/social media1.jpg"}
+                width="585px"
+                height={"528px"}
+                objectFit="cover"
+              />
+            </ZoomInWithBounce>
           </Box>
-          <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
-            <Heading
-              as={"h5"}
-              className="main-h5"
-              textAlign={{ base: "center", md: "left" }}
-            >
-              We are Partners with META, Google, Snapchat, TikTok, Yandex,
-              Baidu, WeChat and more
-            </Heading>
+          <Box
+            width={{ base: "100%", md: "50%" }}
+            alignSelf="center"
+            className="sub-service"
+          >
+            <FadeUp>
+              <Heading
+                as={"h5"}
+                className="main-h5"
+                textAlign={{ base: "center", md: "left" }}
+              >
+                We are Partners with META, Google, Snapchat, TikTok, Yandex,
+                Baidu, WeChat and more
+              </Heading>
+            </FadeUp>
             <OrderedList my={"6"}>
               <li>
-                <Text fontSize={"20px"} className="main-p">
-                  Get ahead with our result-driven approach to social media
-                  management.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} className="main-p">
+                    Get ahead with our result-driven approach to social media
+                    management.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2" className="main-p">
-                  Create powerful social media campaigns that drive brand
-                  awareness and conversions.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="2" className="main-p">
+                    Create powerful social media campaigns that drive brand
+                    awareness and conversions.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2" className="main-p">
-                  Manage your social media accounts in a simple, intuitive way.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="2" className="main-p">
+                    Manage your social media accounts in a simple, intuitive
+                    way.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2" className="main-p">
-                  Collaborate with bloggers to develop content that drives
-                  conversions and enhances your brand.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="2" className="main-p">
+                    Collaborate with bloggers to develop content that drives
+                    conversions and enhances your brand.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="2" className="main-p">
-                  Expand your reach through effective digital marketing
-                  strategies that integrate across all platforms.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="2" className="main-p">
+                    Expand your reach through effective digital marketing
+                    strategies that integrate across all platforms.
+                  </Text>
+                </FadeUp>
               </li>
             </OrderedList>
-            <Text className="main-p">
-              We aim to be the best social media agency in Dubai - also catering
-              to Saudi Arabia, Kuwait, Qatar, Oman, Bahrain and more. Apart from
-              our Social Media Services, we also provide Content Development
-              Services, Blogger Outreach Program Services and Web Development
-              Services
-            </Text>
+            <FadeUp>
+              <Text className="main-p">
+                We aim to be the best social media agency in Dubai - also
+                catering to Saudi Arabia, Kuwait, Qatar, Oman, Bahrain and more.
+                Apart from our Social Media Services, we also provide Content
+                Development Services, Blogger Outreach Program Services and Web
+                Development Services
+              </Text>
+            </FadeUp>
           </Box>
         </Flex>
       </Container>

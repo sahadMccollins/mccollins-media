@@ -45,6 +45,7 @@ const ServiceIcon = () => {
                 className="icon"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/techLogo/shopify.svg"
                   width="97px"
                   height="97px"
@@ -68,6 +69,7 @@ const ServiceIcon = () => {
                 className="icon"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/techLogo/site.png"
                   width="97px"
                   height="97px"
@@ -93,6 +95,7 @@ const ServiceIcon = () => {
                 className="icon"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/techLogo/wordpress.svg"
                   width="97px"
                   height="97px"
@@ -116,6 +119,7 @@ const ServiceIcon = () => {
                 className="icon"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/techLogo/react.png"
                   width="97px"
                   height="97px"
@@ -139,6 +143,7 @@ const ServiceIcon = () => {
                 className="icon"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/techLogo/magento.svg"
                   width="97px"
                   height="97px"

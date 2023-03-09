@@ -25,6 +25,9 @@ import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
 import VideoBanner from "../../components/VideoBanner";
 import { useRouter } from "next/router";
+import CaseStudy from "../../components/CaseStudy";
+import FadeUp from "../../components/Motion/FadeUp";
+import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
 
 const SEO = () => {
   const favWorkData = [
@@ -71,47 +74,32 @@ const SEO = () => {
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
         poster="/assets/image/servicePage/DM&SEO.jpg"
       />
-
-      <Container
-        maxWidth={"7xl"}
-        pt={{ base: "50px", md: "75px" }}
-        style={{ margin: "auto" }}
-      >
-        <Flex direction={{ base: "column-reverse", md: "row" }}>
-          <Box
-            width={{ base: "100%", md: "50%" }}
-            mr={{ base: "0", md: "10" }}
-            alignSelf="center"
-          >
-            <Text mt={5} className="main-p">
-              As a Performance driven, Search Engine Optimization agency in
-              Dubai, we specialize in providing SEO services to businesses. Our
-              primary goal is to support businesses to improve their online
-              visibility and increase organic traffic to their websites.
-            </Text>
-          </Box>
-          <Box width={{ base: "100%", md: "50%" }} position="relative">
-            <Image
-              src={"/assets/image/servicePage/DM&SEO2.jpg"}
-              width="585px"
-              height={"300px"}
-              objectFit="cover"
-            />
-          </Box>
-        </Flex>
-
+      <Container maxWidth={"4xl"} style={{ margin: "auto" }}>
+        <FadeUp>
+          <Text mt={10} className="main-p" textAlign={"center"}>
+            As a Performance driven, Search Engine Optimization agency in Dubai,
+            we specialize in providing SEO services to businesses. Our primary
+            goal is to support businesses to improve their online visibility and
+            increase organic traffic to their websites.
+          </Text>
+        </FadeUp>
+      </Container>
+      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
         <Flex direction={{ base: "column", md: "row" }} my={10}>
           <Box
             width={{ base: "100%", md: "50%" }}
             alignSelf="center"
             mr={{ base: 0, md: 10 }}
           >
-            <Image
-              src={"/assets/image/servicePage/ksa/seo.jpg"}
-              width="585px"
-              height={"528px"}
-              objectFit="cover"
-            />
+            <ZoomInWithBounce>
+              <Image
+                alt="McCollins Media"
+                src={"/assets/image/servicePage/subPage/SEO-01.jpg"}
+                width="585px"
+                height={"528px"}
+                objectFit="cover"
+              />
+            </ZoomInWithBounce>
           </Box>
           <Box
             width={{ base: "100%", md: "50%" }}
@@ -119,52 +107,66 @@ const SEO = () => {
             mt={{ base: 5, md: 0 }}
             className="sub-service"
           >
-            <Heading as={"h5"} className="main-h5">
-              As an SEO provider, we typically provide a range of services to
-              achieve these goals, including:
-            </Heading>
+            <FadeUp>
+              <Heading as={"h5"} className="main-h5">
+                As an SEO provider, we typically provide a range of services to
+                achieve these goals, including:
+              </Heading>
+            </FadeUp>
             <OrderedList my={"6"} className="main-p">
               <li>
-                <Text fontSize={"20px"} className="main-p">
-                  <b>On-page optimization:</b> Optimizing the content, meta
-                  tags, and other elements on the website to make it more
-                  relevant and accessible to search engines.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} className="main-p">
+                    <b>On-page optimization:</b> Optimizing the content, meta
+                    tags, and other elements on the website to make it more
+                    relevant and accessible to search engines.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Off-page optimization: </b> Building high-quality backlinks
-                  from other websites to improve the website's authority and
-                  relevance.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Off-page optimization: </b> Building high-quality
+                    backlinks from other websites to improve the website's
+                    authority and relevance.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Keyword research: </b> Identifying the most relevant and
-                  high-traffic keywords for the business and optimizing the
-                  website's content to target those keywords.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Keyword research: </b> Identifying the most relevant and
+                    high-traffic keywords for the business and optimizing the
+                    website's content to target those keywords.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Content creation: </b> Creating high-quality, relevant, and
-                  engaging content that appeals to the target audience and helps
-                  drive traffic to the website.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Content creation: </b> Creating high-quality, relevant,
+                    and engaging content that appeals to the target audience and
+                    helps drive traffic to the website.
+                  </Text>
+                </FadeUp>
               </li>
               <li>
-                <Text fontSize={"20px"} mt="5" className="main-p">
-                  <b>Analytics and reporting:</b> Monitoring the website's
-                  performance, tracking the progress of the SEO campaign, and
-                  providing regular reports to the client.
-                </Text>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Analytics and reporting:</b> Monitoring the website's
+                    performance, tracking the progress of the SEO campaign, and
+                    providing regular reports to the client.
+                  </Text>
+                </FadeUp>
               </li>
             </OrderedList>
-            <Text className="main-p" ml={8}>
-              We also provide other related services, such as social media
-              marketing, pay-per-click (PPC) advertising, and website design and
-              development.
-            </Text>
+            <FadeUp>
+              <Text className="main-p" ml={8}>
+                We also provide other related services, such as social media
+                marketing, pay-per-click (PPC) advertising, and website design
+                and development.
+              </Text>
+            </FadeUp>
           </Box>
         </Flex>
       </Container>
@@ -193,6 +195,7 @@ const SEO = () => {
           }}
         >
           <Image
+            alt="McCollins Media"
             src="/assets/image/servicePage/playBtn.svg"
             width={"93px"}
             height={"93px"}
@@ -218,6 +221,7 @@ const SEO = () => {
                   onClick={() => router.push("/contact")}
                 >
                   <Image
+                    alt="McCollins Media"
                     src="/assets/image/icons/call.svg"
                     width="25px"
                     height="25px"
@@ -232,6 +236,7 @@ const SEO = () => {
                   onClick={() => setOpen(true)}
                 >
                   <Image
+                    alt="McCollins Media"
                     src="/assets/image/icons/play.svg"
                     width="25px"
                     height="25px"
@@ -251,7 +256,7 @@ const SEO = () => {
         subHeading="Learn how we executed campaigns to get results"
         content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
       />
-      <FavWork data={favWorkData} />
+      <CaseStudy data={favWorkData} />
       <TextBox
         heading="Technologies We work with"
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."

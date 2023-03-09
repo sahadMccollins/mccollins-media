@@ -73,6 +73,7 @@ const HeroBanner = (props) => {
                   onClick={() => router.push("/contact")}
                 >
                   <Image
+                    alt="McCollins Media"
                     src="/assets/image/icons/call.svg"
                     width="25px"
                     height="25px"
@@ -87,6 +88,7 @@ const HeroBanner = (props) => {
                   color="#fff"
                 >
                   <Image
+                    alt="McCollins Media"
                     src="/assets/image/icons/play.svg"
                     width="25px"
                     height="25px"

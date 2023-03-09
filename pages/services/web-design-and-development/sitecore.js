@@ -68,42 +68,19 @@ const Shopify = () => {
           </Text>
         </Container>
         <Container maxWidth={"7xl"} pb={"50px"} pt={5}>
-          {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              mr={{ base: 0, md: 10 }}
-              alignSelf="center"
-              className="main-p"
-            >
-              <Text mt={{ base: 5, md: 0 }} className="main-p">
-                Sitecore is a powerful enterprise-level content management
-                system (CMS) that is widely used for building complex websites,
-                e-commerce platforms, and digital marketing applications.
-                Sitecore development involves creating and customizing digital
-                experiences on the Sitecore platform, using a combination of
-                programming languages, tools, and techniques. Many businesses
-                are scaling with time and now opting for Sitecore Websites. As
-                we do Sitecore development in the UAE, share a brief for your
-                next project.
-              </Text>
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
-                src={"/assets/image/servicePage/Magneto.jpg"}
-                width="585px"
-                height={"528px"}
-                objectFit="cover"
-              />
-            </Box>
-          </Flex> */}
-          <Flex direction={{ base: "column", md: "row" }} my={10}>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            my={{ base: 5, md: 5 }}
+          >
             <Box
               width={{ base: "100%", md: "50%" }}
               position="relative"
               mr={{ base: 0, md: 10 }}
+              alignSelf="center"
             >
               <Image
-                src={"/assets/image/servicePage/Magneto2.jpg"}
+                alt="McCollins Media"
+                src={"/assets/image/servicePage/subPage/sitecore (1).jpg"}
                 width="585px"
                 height={"528px"}
                 objectFit="cover"
@@ -203,9 +180,10 @@ const Shopify = () => {
                 </li>
               </UnorderedList>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
+            <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
               <Image
-                src={"/assets/image/servicePage/Woocommerce.jpg"}
+                alt="McCollins Media"
+                src={"/assets/image/servicePage/subPage/sitecore (2).jpg"}
                 width="585px"
                 height={"528px"}
                 objectFit="cover"

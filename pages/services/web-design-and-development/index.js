@@ -93,6 +93,7 @@ const WebsiteDevelopment = () => {
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <ZoomInWithBounce>
                 <Image
+                  alt="McCollins Media"
                   src={
                     "/assets/image/servicePage/subPage/web development-01.jpg"
                   }
@@ -114,6 +115,7 @@ const WebsiteDevelopment = () => {
             >
               <ZoomInWithBounce>
                 <Image
+                  alt="McCollins Media"
                   src={
                     "/assets/image/servicePage/subPage/web development-02.jpg"
                   }
@@ -202,6 +204,7 @@ const WebsiteDevelopment = () => {
             >
               <ZoomInWithBounce>
                 <Image
+                  alt="McCollins Media"
                   src={
                     "/assets/image/servicePage/subPage/web development-03.jpg"
                   }

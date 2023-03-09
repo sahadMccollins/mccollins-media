@@ -832,3 +832,17 @@ content: counter(step-counter);
     }
 
   }
+
+
+  
+  @media (max-width: 400px) {
+
+  .headerSideBarCont {
+    padding-right: 0 !important;
+  }
+
+  .headerSideBarCont .chakra-modal__body {
+    padding-right: 0 !important;
+  }
+
+}

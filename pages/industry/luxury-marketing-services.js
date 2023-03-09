@@ -29,6 +29,7 @@ const luxuryMarketing = () => {
             <Box width={{ base: "100%", md: "40%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (7).jpg"
                   width="417px"
                   height="454px"
@@ -99,6 +100,7 @@ const luxuryMarketing = () => {
           zIndex="9"
         >
           <Image
+            alt="McCollins Media"
             src={"/assets/image/design/7.svg"}
             width="89px"
             height={"103px"}
@@ -110,6 +112,7 @@ const luxuryMarketing = () => {
           zIndex="9"
         >
           <Image
+            alt="McCollins Media"
             src={"/assets/image/design/14.svg"}
             width="60px"
             height={"50px"}
@@ -200,6 +203,7 @@ const luxuryMarketing = () => {
                 mt={{ base: 10, md: 0 }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (11).jpg"
                   width="480px"
                   height="768px"
@@ -255,6 +259,7 @@ const luxuryMarketing = () => {
                 mt={{ base: 10, md: 0 }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (14).jpg"
                   width="451px"
                   height="384px"
@@ -274,6 +279,7 @@ const luxuryMarketing = () => {
                   zIndex="9"
                 >
                   <Image
+                    alt="McCollins Media"
                     src={"/assets/image/design/13.svg"}
                     width="89px"
                     height={"103px"}

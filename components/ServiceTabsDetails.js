@@ -12,7 +12,12 @@ const ServiceTabsDetails = (props) => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <Image src={props.img} width="610px" height="905px" />
+          <Image
+            alt="McCollins Media"
+            src={props.img}
+            width="610px"
+            height="905px"
+          />
         </motion.div>
       </Box>
       <Box width={"100%"} alignSelf="center">

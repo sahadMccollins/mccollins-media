@@ -56,8 +56,21 @@ const CommunityManagement = () => {
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Community Management" />
       <Box>
-        <Container maxWidth={"7xl"} py={"50px"}>
-          <Flex direction={{ base: "column-reverse", md: "row" }}>
+        <Container maxWidth={"4xl"} mt={10}>
+          <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
+            Social media community management involves building and managing a
+            brand's online presence on social media platforms. It involves
+            engaging with customers, creating content, monitoring feedback, and
+            managing social media campaigns. Being a leading Social Media Agency
+            in UAE, one of our main objectives is to represent the brand on
+            Digital channels with a particular brand persona which we outline
+            with our clients. From the tonality, to FAQs , we work with our
+            partners on creating real time responses and acknowledging their
+            stakeholders on social media.
+          </Text>
+        </Container>
+        <Container maxWidth={"7xl"} py={"10"}>
+          {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
               mr={{ base: 0, md: 10 }}
@@ -77,39 +90,42 @@ const CommunityManagement = () => {
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
+              <Image alt="McCollins Media"
                 src={"/assets/image/servicePage/Magneto.jpg"}
                 width="585px"
                 height={"300px"}
                 objectFit="cover"
               />
             </Box>
-          </Flex>
+          </Flex> */}
+          <Box
+            display={"flex"}
+            flexDir={{ base: "column", md: "row" }}
+            justifyContent="space-around"
+            gap={5}
+          >
+            <Image
+              alt="McCollins Media"
+              src={
+                "/assets/image/servicePage/subPage/Community Management-01.jpg"
+              }
+              width="585px"
+              height={"500px"}
+              objectFit="cover"
+            />
+
+            <Image
+              alt="McCollins Media"
+              src={
+                "/assets/image/servicePage/subPage/Community Management-02.jpg"
+              }
+              width="585px"
+              height={"500px"}
+              objectFit="cover"
+            />
+          </Box>
           <Flex direction={{ base: "column", md: "row" }} my={10}>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              position="relative"
-              mr={{ base: 0, md: 10 }}
-              display={"flex"}
-              flexDir={"column"}
-              justifyContent="space-around"
-            >
-              <Image
-                src={"/assets/image/servicePage/Magneto2.jpg"}
-                width="585px"
-                height={"700px"}
-                objectFit="cover"
-              />
-              <Box display={{ base: "none", md: "block" }}>
-                <Image
-                  src={"/assets/image/servicePage/Magneto2.jpg"}
-                  width="585px"
-                  height={"700px"}
-                  objectFit="cover"
-                />
-              </Box>
-            </Box>
-            <Box width={{ base: "100%", md: "50%" }}>
+            <Box>
               <Heading as={"h3"} className={"main-h3"} mt={{ base: 5, md: 0 }}>
                 A few steps on how we go about Community Management :
               </Heading>

@@ -34,6 +34,7 @@ const ServicePageAccordian = () => {
           display={{ base: "none", md: "block" }}
         >
           <Image
+            alt="McCollins Media"
             src="/assets/image/design/1.svg"
             width="150px"
             height="172px"

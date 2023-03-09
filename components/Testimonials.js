@@ -61,7 +61,7 @@ const Testimonials = () => {
                     recommend them to other brands
                   </Text>
                   <Heading fontSize={"2xl"} mt="5">
-                    Alexa - Marketing Manager1
+                    Alexa - Marketing Manager
                   </Heading>
                   <Text fontSize={"20px"}>Cleaning Superstore</Text>
                 </Box>
@@ -98,6 +98,7 @@ const Testimonials = () => {
           textAlign={"center"}
         >
           <Image
+            alt="McCollins Media"
             src={"/assets/image/design/4.png"}
             width="176px"
             height={"370px"}

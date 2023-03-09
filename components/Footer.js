@@ -120,6 +120,7 @@ const Footer = (props) => {
                 target="_blank"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/icons/tiktok.svg"
                   width={"18px"}
                   height="21px"
@@ -132,6 +133,7 @@ const Footer = (props) => {
                 target="_blank"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/icons/insta.svg"
                   width={"21px"}
                   height="21px"
@@ -144,6 +146,7 @@ const Footer = (props) => {
                 target="_blank"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/icons/fb.svg"
                   width={"9px"}
                   height="21px"
@@ -156,6 +159,7 @@ const Footer = (props) => {
                 target="_blank"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/icons/linkedin.svg"
                   width={"22px"}
                   height="21px"
@@ -168,6 +172,7 @@ const Footer = (props) => {
                 target="_blank"
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/icons/twiter.svg"
                   width={"27px"}
                   height="20px"
@@ -252,8 +257,8 @@ const Footer = (props) => {
         >
           <Box mt={"30px"}>
             <Image
+              alt="McCollins Media"
               src="/assets/image/navbar/logo-yellow.svg"
-              alt="Mccolins Media logo"
               width="209px"
               height="46"
             />

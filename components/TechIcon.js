@@ -15,6 +15,7 @@ const TechIcon = () => {
         >
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/angular.svg"
               width="97px"
               height="97px"
@@ -25,6 +26,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/flutter.svg"
               width="97px"
               height="97px"
@@ -35,6 +37,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/codeigniterlogo.svg"
               width="97px"
               height="97px"
@@ -45,6 +48,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/magento.svg"
               width="97px"
               height="97px"
@@ -55,6 +59,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/shopify.svg"
               width="97px"
               height="97px"
@@ -65,6 +70,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/vue.svg"
               width="97px"
               height="97px"
@@ -75,6 +81,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/prestashop.svg"
               width="97px"
               height="97px"
@@ -85,6 +92,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/android.svg"
               width="97px"
               height="97px"
@@ -95,6 +103,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/wordpress.svg"
               width="97px"
               height="97px"
@@ -105,6 +114,7 @@ const TechIcon = () => {
           </Box>
           <Box>
             <Image
+              alt="McCollins Media"
               src="/assets/image/techLogo/swift.svg"
               width="97px"
               height="97px"

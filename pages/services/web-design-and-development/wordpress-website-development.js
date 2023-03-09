@@ -51,7 +51,7 @@ const Shopify = () => {
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
+              <Image alt="McCollins Media"
                 src={"/assets/image/servicePage/subPage/Wordpress-02.jpg"}
                 width="585px"
                 height={"300px"}
@@ -66,6 +66,7 @@ const Shopify = () => {
               position="relative"
             >
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/servicePage/subPage/Wordpress-01.jpg"}
                 width="585px"
                 height={"528px"}
@@ -169,6 +170,7 @@ const Shopify = () => {
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/servicePage/subPage/Wordpress-03.jpg"}
                 width="585px"
                 height={"528px"}

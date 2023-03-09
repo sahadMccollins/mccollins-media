@@ -34,6 +34,7 @@ function Test() {
           onClick={() => setOpen(true)}
         >
           <Image
+            alt="McCollins Media"
             src="/assets/image/caseStudy/items/portfolio-big-03.jpg"
             layout="fill"
             objectFit="cover"
@@ -66,6 +67,7 @@ function Test() {
           mt={10}
         >
           <Image
+            alt="McCollins Media"
             src="/assets/image/caseStudy/items/portfolio-big-02.jpg"
             layout="fill"
             objectFit="cover"
@@ -78,6 +80,7 @@ function Test() {
           mt={10}
         >
           <Image
+            alt="McCollins Media"
             src="/assets/image/caseStudy/items/portfolio-big-01.jpg"
             layout="fill"
             objectFit="cover"
@@ -103,6 +106,7 @@ function Test() {
                 mt={{ base: 2, md: 10 }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/caseStudy/items/related-image-01.jpg"
                   layout="fill"
                   objectFit="cover"
@@ -121,6 +125,7 @@ function Test() {
                 mt={{ base: 2, md: 10 }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/caseStudy/items/related-image-02.jpg"
                   layout="fill"
                   objectFit="cover"

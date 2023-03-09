@@ -63,6 +63,7 @@
 
 .sidebarUl li a {
     padding: 0 10px;
+    display: block;
 }
 
 .ulDropdown {

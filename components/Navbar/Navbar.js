@@ -40,6 +40,7 @@ import NavItem from "../Navbar/NavItem";
 
 const Navbar = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
+  const [isSmallerThan400] = useMediaQuery("(max-width: 400px)");
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isActive, setIsActive] = useState(false);
@@ -118,11 +119,10 @@ const Navbar = (props) => {
           <Box flexGrow={1} zIndex="99">
             <Link href="/">
               <Image
+                alt="McCollins Media"
                 src={`/assets/image/navbar/${
                   props.color ? `logo-${props.color}` : "logo"
                 }.svg`}
-                // src={`/assets/image/navbar/logo-${props.color}.png`}
-                alt="Mccolins Media logo"
                 width="223"
                 height="50"
                 priority={true}
@@ -147,6 +147,7 @@ const Navbar = (props) => {
                         alignItems="center"
                       >
                         <Image
+                          alt="McCollins Media"
                           src="/assets/image/icons/call.svg"
                           width="25px"
                           height="25px"
@@ -162,6 +163,7 @@ const Navbar = (props) => {
                       onClick={onOpen2}
                     >
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/icons/chat.svg"
                         width="25px"
                         height="25px"
@@ -178,12 +180,14 @@ const Navbar = (props) => {
                   >
                     {props.color === "black" ? (
                       <Image
+                        alt="McCollins Media"
                         src={"/assets/image/navbar/ham-burger.svg"}
                         width="31px"
                         height={"27px"}
                       />
                     ) : (
                       <Image
+                        alt="McCollins Media"
                         src={"/assets/image/navbar/ham-burger-yellow.svg"}
                         width="31px"
                         height={"27px"}
@@ -205,6 +209,7 @@ const Navbar = (props) => {
                     target="_blank"
                   >
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/tiktok.svg"
                       width={"18px"}
                       height="21px"
@@ -218,6 +223,7 @@ const Navbar = (props) => {
                     target="_blank"
                   >
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/insta.svg"
                       width={"21px"}
                       height="21px"
@@ -231,6 +237,7 @@ const Navbar = (props) => {
                     target="_blank"
                   >
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/fb.svg"
                       width={"9px"}
                       height="21px"
@@ -244,6 +251,7 @@ const Navbar = (props) => {
                     target="_blank"
                   >
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/linkedin.svg"
                       width={"22px"}
                       height="21px"
@@ -257,6 +265,7 @@ const Navbar = (props) => {
                     target="_blank"
                   >
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/twiter.svg"
                       width={"27px"}
                       height="20px"
@@ -276,6 +285,7 @@ const Navbar = (props) => {
                     }}
                   >
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/whatsapp.svg"
                       width={"27px"}
                       height={"27px"}
@@ -293,6 +303,7 @@ const Navbar = (props) => {
                       Scroll
                     </Text>
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/scroll.svg"
                       width={"9px"}
                       height="58px"
@@ -309,12 +320,14 @@ const Navbar = (props) => {
               >
                 {props.color === "black" ? (
                   <Image
+                    alt="McCollins Media"
                     src={"/assets/image/navbar/ham-burger.svg"}
                     width="31px"
                     height={"27px"}
                   />
                 ) : (
                   <Image
+                    alt="McCollins Media"
                     src={"/assets/image/navbar/ham-burger-yellow.svg"}
                     width="31px"
                     height={"27px"}
@@ -333,8 +346,8 @@ const Navbar = (props) => {
             <Box flexGrow={1} zIndex="99">
               <Link href="/">
                 <Image
+                  alt="McCollins Media"
                   src={`/assets/image/navbar/logo-black.svg`}
-                  alt="Mccolins Media logo"
                   width="223"
                   height="50"
                   priority={true}
@@ -359,6 +372,7 @@ const Navbar = (props) => {
                           alignItems="center"
                         >
                           <Image
+                            alt="McCollins Media"
                             src="/assets/image/icons/call.svg"
                             width="25px"
                             height="25px"
@@ -374,6 +388,7 @@ const Navbar = (props) => {
                         onClick={onOpen2}
                       >
                         <Image
+                          alt="McCollins Media"
                           src="/assets/image/icons/chat.svg"
                           width="25px"
                           height="25px"
@@ -388,6 +403,7 @@ const Navbar = (props) => {
                       onClick={onOpen}
                     >
                       <Image
+                        alt="McCollins Media"
                         src={"/assets/image/navbar/ham-burger.svg"}
                         width="31px"
                         height={"27px"}
@@ -426,10 +442,12 @@ const Navbar = (props) => {
       >
         <DrawerOverlay />
         <DrawerContent overflowY={"scroll"}>
-          <Container>
+          <Container className="headerSideBarCont">
             <DrawerCloseButton
               className={styles.sidebarCloseBtn}
-              right={isLargerThan780 ? "100px" : "25px"}
+              right={
+                isLargerThan780 ? "100px" : isSmallerThan400 ? "10px" : "25px"
+              }
             />
             <DrawerHeader>
               <ButtonGroup gap="4" float={"right"} mr={"50px"}>
@@ -445,6 +463,7 @@ const Navbar = (props) => {
                     alignItems="center"
                   >
                     <Image
+                      alt="McCollins Media"
                       src="/assets/image/icons/call.svg"
                       width="25px"
                       height="25px"
@@ -460,6 +479,7 @@ const Navbar = (props) => {
                   onClick={onOpen2}
                 >
                   <Image
+                    alt="McCollins Media"
                     src="/assets/image/icons/chat.svg"
                     width="25px"
                     height="25px"
@@ -714,6 +734,7 @@ const Navbar = (props) => {
                         target="_blank"
                       >
                         <Image
+                          alt="McCollins Media"
                           src="/assets/image/icons/tiktok.svg"
                           width={"18px"}
                           height="21px"
@@ -727,6 +748,7 @@ const Navbar = (props) => {
                         target="_blank"
                       >
                         <Image
+                          alt="McCollins Media"
                           src="/assets/image/icons/insta.svg"
                           width={"21px"}
                           height="21px"
@@ -740,6 +762,7 @@ const Navbar = (props) => {
                         target="_blank"
                       >
                         <Image
+                          alt="McCollins Media"
                           src="/assets/image/icons/fb.svg"
                           width={"9px"}
                           height="21px"
@@ -753,6 +776,7 @@ const Navbar = (props) => {
                         target="_blank"
                       >
                         <Image
+                          alt="McCollins Media"
                           src="/assets/image/icons/linkedin.svg"
                           width={"22px"}
                           height="21px"
@@ -766,6 +790,7 @@ const Navbar = (props) => {
                         target="_blank"
                       >
                         <Image
+                          alt="McCollins Media"
                           src="/assets/image/icons/twiter.svg"
                           width={"27px"}
                           height="20px"
@@ -787,6 +812,7 @@ const Navbar = (props) => {
                       }}
                     >
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/icons/whatsapp.svg"
                         width={"27px"}
                         height={"27px"}
@@ -808,6 +834,7 @@ const Navbar = (props) => {
                         Scroll
                       </Text>
                       <Image
+                        alt="McCollins Media"
                         src="/assets/image/icons/scroll.svg"
                         width={"9px"}
                         height="58px"

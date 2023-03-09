@@ -150,7 +150,12 @@ const ServiceAccordian = () => {
             display={{ base: "none", md: "block" }}
           >
             <ZoomInWithBounce>
-              <Image src={AccImg} width="457.5px" height="678.75px" />
+              <Image
+                alt="McCollins Media"
+                src={AccImg}
+                width="457.5px"
+                height="678.75px"
+              />
             </ZoomInWithBounce>
           </Box>
         </Flex>

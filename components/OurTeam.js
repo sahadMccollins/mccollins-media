@@ -35,7 +35,13 @@ const variants = {
 function TeamMemberSlide(props) {
   return (
     <Box position={"relative"} bottom={"-5px"}>
-      <Image src={props.img} width="270px" height="400px" objectFit="cover" />
+      <Image
+        alt="McCollins Media"
+        src={props.img}
+        width="270px"
+        height="400px"
+        objectFit="cover"
+      />
       <Box
         position={"absolute"}
         bottom="0"
@@ -90,6 +96,7 @@ const OurTeam = () => {
             display={{ base: "none", md: "block" }}
           >
             <Image
+              alt="McCollins Media"
               position={"absolute"}
               src="/assets/image/design/2.svg"
               width={"105px"}
@@ -138,6 +145,7 @@ const OurTeam = () => {
               right={"-150px"}
             ></Box>
             <Image
+              alt="McCollins Media"
               position={"absolute"}
               src="/assets/image/team/ourTeamAlp.png"
               width="80px"

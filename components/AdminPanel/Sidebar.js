@@ -48,12 +48,14 @@ export default function Sidebar() {
       >
         <Box p={2}>
           <Image
+            alt="McCollins Media"
             src="/assets/image/navbar/logo-yellow.svg"
             width="100%"
             height="47px"
             display={navSize == "small" ? "none" : "flex"}
           />
           <Image
+            alt="McCollins Media"
             src="/assets/image/navbar/logo-sq.jpg"
             width="47px"
             height="47px"

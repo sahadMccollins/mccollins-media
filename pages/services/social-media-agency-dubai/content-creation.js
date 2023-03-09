@@ -103,8 +103,11 @@ const ContentCreation = () => {
       <Box>
         <Container maxWidth={"4xl"} my={10}>
           <Heading as={"h5"} className="main-h5" textAlign={"center"} mb={5}>
-            Are you looking for a one-stop shop for all your
-            <br /> content creation needs? Let’s talk shop.
+            Are you looking for a one-stop shop for all your{}
+            <Box display={{ base: "none", md: "block" }} height="0">
+              <br />
+            </Box>
+            content creation needs? Let’s talk shop.
           </Heading>
           <Text mt={{ base: 5, md: 0 }} className="main-p" textAlign="center">
             As a content marketing agency in Dubai, we provide a wide range of
@@ -119,7 +122,7 @@ const ContentCreation = () => {
             of the curve.
           </Text>
         </Container>
-        <Container maxWidth={"7xl"} pb={"50px"}>
+        <Container maxWidth={"7xl"}>
           {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
             <Box
               width={{ base: "100%", md: "50%" }}
@@ -146,7 +149,7 @@ const ContentCreation = () => {
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
+              <Image alt="McCollins Media"
                 src={"/assets/image/servicePage/contentProduction.jpg"}
                 width="585px"
                 height={"450px"}
@@ -162,6 +165,7 @@ const ContentCreation = () => {
               mr={{ base: 0, md: 10 }}
             >
               <Image
+                alt="McCollins Media"
                 src={"/assets/image/servicePage/cp2.jpg"}
                 width="585px"
                 height={"600px"}
@@ -169,7 +173,7 @@ const ContentCreation = () => {
               />
             </Box>
             <Box width={{ base: "100%", md: "50%" }} alignSelf="center">
-              <Heading as={"h5"} className="main-h5">
+              <Heading as={"h5"} className="main-h5" mt={{ base: 5, md: 0 }}>
                 Why work with us ?
               </Heading>
               <OrderedList my={"6"}>

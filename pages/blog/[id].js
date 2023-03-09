@@ -47,6 +47,7 @@ const Blog = ({ blog, recentPost }) => {
               left={"70%"}
             >
               <Image
+                alt="McCollins Media"
                 src="/assets/image/design/3.svg"
                 width={"89px"}
                 height={"104px"}
@@ -74,6 +75,7 @@ const Blog = ({ blog, recentPost }) => {
               }}
             >
               <Image
+                alt="McCollins Media"
                 src="/assets/image/icons/call.svg"
                 width="25px"
                 height="25px"
@@ -108,6 +110,7 @@ const Blog = ({ blog, recentPost }) => {
           </Box>
           <Box width={{ base: "100%", md: "55%" }} position="relative">
             <Image
+              alt="McCollins Media"
               src={blog.photo}
               width="740px"
               height={"430px"}
@@ -138,6 +141,7 @@ const Blog = ({ blog, recentPost }) => {
                 {recentPost.map((rp) => (
                   <Flex key={rp._id} alignItems={"center"} mt="10">
                     <Image
+                      alt="McCollins Media"
                       src={rp.photo}
                       width="170px"
                       height={"80px"}

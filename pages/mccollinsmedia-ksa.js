@@ -28,7 +28,13 @@ import VideoBanner from "../components/VideoBanner";
 function TeamMemberSlide(props) {
   return (
     <Box position={"relative"} bottom={"-5px"}>
-      <Image src={props.img} width="270px" height="400px" objectFit="cover" />
+      <Image
+        alt="McCollins Media"
+        src={props.img}
+        width="270px"
+        height="400px"
+        objectFit="cover"
+      />
       <Box
         position={"absolute"}
         bottom="0"
@@ -87,23 +93,6 @@ const MccollinsmediaKsa = () => {
         minHeight={{ base: "500px", md: "700px" }}
         overflow={"hidden"}
       >
-        {/* <video
-          muted
-          loop
-          width="100%"
-          className="video-banner"
-          ref={videoRef}
-          poster={
-            isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
-          }
-        >
-          <source
-            src={
-              "https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
-            }
-            type="video/mp4"
-          />
-        </video> */}
         <video
           playsInline
           autoPlay
@@ -145,6 +134,7 @@ const MccollinsmediaKsa = () => {
                 marginLeft={locale === "ar" ? "auto" : "unset"}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/icons/call.svg"
                   width="25px"
                   height="25px"
@@ -202,6 +192,7 @@ const MccollinsmediaKsa = () => {
             <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/servicePage/ksa/web-dev.jpg"
                   width="500px"
                   height="312.5px"
@@ -245,6 +236,7 @@ const MccollinsmediaKsa = () => {
             <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/servicePage/ksa/social-media.jpg"
                   width="500px"
                   height="312.5px"
@@ -283,6 +275,7 @@ const MccollinsmediaKsa = () => {
             <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/servicePage/ksa/google-ads.jpg"
                   width="500px"
                   height="312.5px"
@@ -326,6 +319,7 @@ const MccollinsmediaKsa = () => {
             <Box width={{ base: "100%", md: "50%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/servicePage/ksa/seo.jpg"
                   width="500px"
                   height="312.5px"
@@ -374,6 +368,7 @@ const MccollinsmediaKsa = () => {
               display={{ base: "none", md: "block" }}
             >
               <Image
+                alt="McCollins Media"
                 position={"absolute"}
                 src="/assets/image/design/2.svg"
                 width={"105px"}
@@ -424,6 +419,7 @@ const MccollinsmediaKsa = () => {
                 right={"-150px"}
               ></Box>
               <Image
+                alt="McCollins Media"
                 position={"absolute"}
                 src="/assets/image/team/ourTeamAlp.png"
                 width="80px"

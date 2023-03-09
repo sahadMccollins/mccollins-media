@@ -47,6 +47,7 @@ const Login = () => {
             <Flex direction={"column"} justifyContent="center" height={"100vh"}>
               <Box bg="#fff" p={10} borderRadius="10%">
                 <Image
+                  alt="McCollins Media"
                   margin={"auto"}
                   width={"209px"}
                   height="47px"

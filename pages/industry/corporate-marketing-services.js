@@ -29,6 +29,7 @@ const CorporateMarketing = () => {
             <Box width={{ base: "100%", md: "40%" }}>
               <Box alignSelf="center" position={"relative"} textAlign="center">
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (4).jpg"
                   width="417px"
                   height="454px"
@@ -96,6 +97,7 @@ const CorporateMarketing = () => {
           zIndex="9"
         >
           <Image
+            alt="McCollins Media"
             src={"/assets/image/design/7.svg"}
             width="89px"
             height={"103px"}
@@ -107,6 +109,7 @@ const CorporateMarketing = () => {
           top={{ base: "7%", md: "4%" }}
         >
           <Image
+            alt="McCollins Media"
             src={"/assets/image/design/14.svg"}
             width="60px"
             height={"50px"}
@@ -202,6 +205,7 @@ const CorporateMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (8).jpg"
                   width="480px"
                   height="768px"
@@ -279,6 +283,7 @@ const CorporateMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (19).jpg"
                   width="480px"
                   objectFit="cover"
@@ -335,6 +340,7 @@ const CorporateMarketing = () => {
                 mt={{ base: "10", md: "0" }}
               >
                 <Image
+                  alt="McCollins Media"
                   src="/assets/image/industryPage/new/NC (12).jpg"
                   width="451px"
                   height="384px"
@@ -355,6 +361,7 @@ const CorporateMarketing = () => {
                   zIndex="9"
                 >
                   <Image
+                    alt="McCollins Media"
                     src={"/assets/image/design/13.svg"}
                     width="89px"
                     height={"103px"}

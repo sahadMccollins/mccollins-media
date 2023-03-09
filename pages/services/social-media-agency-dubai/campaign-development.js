@@ -68,13 +68,15 @@ const CampaignDevelopment = () => {
         <Container maxWidth={"7xl"} pb={"50px"} mt={10} justifyContent="center">
           <Flex gap={10} flexDir={{ base: "column", md: "row" }}>
             <Image
-              src={"/assets/image/servicePage/Magneto.jpg"}
+              alt="McCollins Media"
+              src={"/assets/image/servicePage/subPage/camp-dev (1).jpg"}
               width="585px"
               height={"528px"}
               objectFit="cover"
             />
             <Image
-              src={"/assets/image/servicePage/Magneto2.jpg"}
+              alt="McCollins Media"
+              src={"/assets/image/servicePage/subPage/camp-dev (2).jpg"}
               width="585px"
               height={"528px"}
               objectFit="cover"
@@ -99,7 +101,7 @@ const CampaignDevelopment = () => {
               </Text>
             </Box>
             <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <Image
+              <Image alt="McCollins Media"
                 src={"/assets/image/servicePage/Magneto.jpg"}
                 width="585px"
                 height={"528px"}
@@ -116,13 +118,13 @@ const CampaignDevelopment = () => {
               flexDir={"column"}
               gap={20}
             >
-              <Image
+              <Image alt="McCollins Media"
                 src={"/assets/image/servicePage/Magneto2.jpg"}
                 width="585px"
                 height={"528px"}
                 objectFit="cover"
               />
-              <Image
+              <Image alt="McCollins Media"
                 src={"/assets/image/servicePage/Woocommerce.jpg"}
                 width="585px"
                 height={"528px"}
