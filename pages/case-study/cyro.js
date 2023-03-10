@@ -163,7 +163,6 @@ function CaseStudy() {
               preload="auto"
               alt="McCollins Media Production"
               style={{
-                width: "100%",
                 marginTop: "-10px",
                 height: "550px",
                 marginBottom: "-10px",
@@ -188,7 +187,6 @@ function CaseStudy() {
               preload="auto"
               alt="McCollins Media Production"
               style={{
-                width: "100%",
                 height: "550px",
                 marginTop: "-10px",
                 marginBottom: "-10px",
@@ -213,7 +211,6 @@ function CaseStudy() {
               preload="auto"
               alt="McCollins Media Production"
               style={{
-                width: "100%",
                 height: "550px",
                 marginTop: "-10px",
                 marginBottom: "-10px",
