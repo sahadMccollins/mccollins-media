@@ -29,6 +29,7 @@ import CaseStudy from "../../components/CaseStudy";
 import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
 import IntrestedInBox from "../../components/IntrestedInBox";
+import SeoIcon from "../../components/SeoIcon";
 
 const SEO = () => {
   const favWorkData = [
@@ -262,7 +263,8 @@ const SEO = () => {
         heading="Technologies We work with"
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."
       />
-      <TechIcon />
+      {/* <TechIcon /> */}
+      <SeoIcon />
       <IntrestedInBox />
       <ClientsLogo />
     </Stack>
