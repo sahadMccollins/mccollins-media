@@ -65,38 +65,6 @@ const ContentCreation = () => {
     }
   }
 
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
   return (
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Content Creation" />
@@ -291,7 +259,7 @@ const ContentCreation = () => {
           </Box>
         </Container>
       </Box>
-      {/* <CaseStudy data={favWorkData} /> */}
+      {/* <CaseStudy /> */}
       <ModalVideo
         channel="custom"
         url={videoURL}

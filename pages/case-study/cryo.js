@@ -11,42 +11,9 @@ import "../../node_modules/react-modal-video/css/modal-video.min.css";
 function CaseStudyPage() {
   const [isOpen, setOpen] = useState(false);
 
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
-
   return (
     <>
-      <CaseStudyBanner h2="cyro" p="Case Study" />
+      <CaseStudyBanner h2="cryo" p="Case Study" />
       <Container maxW={"4xl"} mt={"50px"} pb={10}>
         {/* <Heading className="main-h2">Trydo</Heading> */}
         {/* <Divider my={10} bg={"#e1e1e1"} /> */}
@@ -79,6 +46,7 @@ function CaseStudyPage() {
               autoPlay
               loop
               muted
+              controls
               playsInline
               preload="auto"
               alt="McCollins Media Production"
@@ -173,99 +141,16 @@ function CaseStudyPage() {
           Increase in bookings of sessions and footfall
         </Text>
 
-        <Flex
-          gap={10}
-          justifyContent="space-around"
-          my={10}
-          flexDir={{ base: "column", md: "row" }}
-        >
-          <FadeUp>
-            <video
-              title="Film Production Company Dubai"
-              autoPlay
-              loop
-              muted
-              controls
-              playsInline
-              preload="auto"
-              alt="McCollins Media Production"
-              style={{
-                margin: "auto",
-                marginTop: "-10px",
-                height: "550px",
-                marginBottom: "-10px",
-              }}
-            >
-              <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449645/Mccollins%20Video/Many_faces_of_Cryo_Body_zzgtod.mp4"
-                type="video/mp4"
-                media="screen"
-              />
-              Your browser does not support HTML5 video.
-            </video>
-          </FadeUp>
-          <FadeUp>
-            <video
-              title="Film Production Company Dubai"
-              autoPlay
-              loop
-              muted
-              controls
-              playsInline
-              preload="auto"
-              alt="McCollins Media Production"
-              style={{
-                height: "550px",
-                margin: "auto",
-                marginTop: "-10px",
-                marginBottom: "-10px",
-              }}
-            >
-              <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447494/Mccollins%20Video/1.mp4"
-                type="video/mp4"
-                media="screen"
-              />
-              Your browser does not support HTML5 video.
-            </video>
-          </FadeUp>
-          <FadeUp>
-            <video
-              title="Film Production Company Dubai"
-              autoPlay
-              loop
-              controls
-              muted
-              playsInline
-              preload="auto"
-              alt="McCollins Media Production"
-              style={{
-                height: "550px",
-                margin: "auto",
-                marginTop: "-10px",
-                marginBottom: "-10px",
-              }}
-            >
-              <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449702/Mccollins%20Video/Everybody_Scream_p8mq88.mp4"
-                type="video/mp4"
-                media="screen"
-              />
-              Your browser does not support HTML5 video.
-            </video>
-          </FadeUp>
-        </Flex>
-
         <Box mt={{ base: 10, md: 20 }} textAlign="center">
           <Heading color={"#FFDE11"} fontSize="25px" as={"h5"}>
             Related Work
           </Heading>
           <Heading as={"h3"} className="main-h2">
-            Our More Projects
+            Case Study
           </Heading>
         </Box>
       </Container>
-      <CaseStudy data={favWorkData} />
+      <CaseStudy />
       <ModalVideo
         channel="custom"
         url="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/cyro.mp4"

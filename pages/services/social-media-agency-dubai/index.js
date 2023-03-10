@@ -265,7 +265,7 @@ const SocialMediaMarketing = () => {
         subHeading="sneak peak into our social media marketing projects"
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
-      <CaseStudy data={favWorkData} /> */}
+      <CaseStudy /> */}
       <Box mt={10}>
         <VideoCaseStudy />
       </Box>

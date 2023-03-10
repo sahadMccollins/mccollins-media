@@ -6,6 +6,7 @@ import {
   OrderedList,
   Stack,
   Text,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
 import InnerLayout from "../../../components/Layout/InnerLayout";
@@ -26,7 +27,7 @@ import ZoomInWithBounce from "../../../components/Motion/ZoomInWithBounce";
 import IntrestedInBox from "../../../components/IntrestedInBox";
 
 const WebsiteDevelopment = () => {
-  const router = useRouter();
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
   return (
     <Stack position={"relative"}>
@@ -91,18 +92,20 @@ const WebsiteDevelopment = () => {
                 </Text>
               </FadeUp>
             </Box>
-            <Box width={{ base: "100%", md: "50%" }} position="relative">
-              <ZoomInWithBounce>
-                <Image
-                  alt="McCollins Media"
-                  src={
-                    "/assets/image/servicePage/subPage/web development-01.jpg"
-                  }
-                  width="585px"
-                  height={"528px"}
-                />
-              </ZoomInWithBounce>
-            </Box>
+            {isLargerThan780 && (
+              <Box width={{ base: "100%", md: "50%" }} position="relative">
+                <ZoomInWithBounce>
+                  <Image
+                    alt="McCollins Media"
+                    src={
+                      "/assets/image/servicePage/subPage/web development-01.jpg"
+                    }
+                    width="585px"
+                    height={"528px"}
+                  />
+                </ZoomInWithBounce>
+              </Box>
+            )}
           </Flex>
           <Flex
             direction={{ base: "column", md: "row" }}

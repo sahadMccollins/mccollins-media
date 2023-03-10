@@ -236,14 +236,6 @@ const FormBox = (props) => {
               <Checkbox
                 size="md"
                 value="apple"
-                isChecked={checkedItems.includes("Public Relations")}
-                onChange={() => handleCheckboxChange("Public Relations")}
-              >
-                Public Relations
-              </Checkbox>
-              <Checkbox
-                size="md"
-                value="apple"
                 isChecked={checkedItems.includes("Web Design / Development")}
                 onChange={() =>
                   handleCheckboxChange("Web Design / Development")

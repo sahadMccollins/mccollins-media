@@ -8,39 +8,6 @@ import ServiceAccordian from "../components/ServiceAccordian";
 import TextBox from "../components/TextBox";
 
 export default function Home() {
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
-
   return (
     <>
       <HeroBanner
@@ -72,7 +39,7 @@ export default function Home() {
         content="13 Years in the making, pioneers to UAE’s digital scene, we are McCollins Media ! We enjoy working with earned media, where we get others to talk about your brand."
       />
 
-      <CaseStudy data={favWorkData} />
+      <CaseStudy />
 
       <ClientsLogo />
 

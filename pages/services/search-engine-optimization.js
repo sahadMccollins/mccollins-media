@@ -32,39 +32,6 @@ import IntrestedInBox from "../../components/IntrestedInBox";
 import SeoIcon from "../../components/SeoIcon";
 
 const SEO = () => {
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
-
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const [isOpen, setOpen] = useState(false);
   const router = useRouter();
@@ -258,7 +225,7 @@ const SEO = () => {
         subHeading="Learn how we executed campaigns to get results"
         content="Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work"
       />
-      <CaseStudy data={favWorkData} />
+      <CaseStudy />
       <TextBox
         heading="Technologies We work with"
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."

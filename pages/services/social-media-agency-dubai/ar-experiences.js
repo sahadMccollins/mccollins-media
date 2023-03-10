@@ -19,38 +19,6 @@ import ServicePoint from "../../../components/ServicePoint";
 import TextBox from "../../../components/TextBox";
 
 const ARExperiences = () => {
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
   return (
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="AR Experiences" />
@@ -237,7 +205,7 @@ const ARExperiences = () => {
             </Box>
           </Flex>
         </Container>
-        {/* <CaseStudy data={favWorkData} /> */}
+        {/* <CaseStudy /> */}
       </Box>
     </Stack>
   );

@@ -17,38 +17,6 @@ import InnerLayout from "../../../components/Layout/InnerLayout";
 import WebShowcase from "../../../components/WebShowcase";
 
 const CampaignDevelopment = () => {
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
   return (
     <Stack position={"relative"} className="sub-service">
       <InnerBannerTwo h1="Campaign Development" />
@@ -216,7 +184,7 @@ const CampaignDevelopment = () => {
             </Box>
           </Flex>
         </Container>
-        {/* <CaseStudy data={favWorkData} /> */}
+        {/* <CaseStudy /> */}
       </Box>
     </Stack>
   );

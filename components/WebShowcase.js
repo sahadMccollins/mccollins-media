@@ -118,7 +118,7 @@ const WebShowcase = () => {
                       />
                       <Box className="contentBox" mt={"-50px"}>
                         <Heading as={"h4"} fontSize="2xl">
-                          Cleaning Super Store
+                          Cleaning Superstore
                         </Heading>
                       </Box>
                     </a>

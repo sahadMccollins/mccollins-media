@@ -20,39 +20,6 @@ import VideoBanner from "../../components/VideoBanner";
 const DesignAndBrandDevelopment = () => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
-  const favWorkData = [
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "DAFZA",
-      img: "/assets/image/caseStudy/caseStudy1.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Costa Coffee",
-      img: "/assets/image/caseStudy/caseStudy2.jpg",
-      type: "Web Devlopment",
-    },
-    {
-      name: "Fujifilm",
-      img: "/assets/image/caseStudy/caseStudy3.jpg",
-      type: "Web Devlopment",
-    },
-  ];
-
   return (
     <Stack position={"relative"}>
       <VideoBanner
@@ -135,40 +102,8 @@ const DesignAndBrandDevelopment = () => {
             "Logo Development \n Copywriting \n Translation \n Printing Guidelines \n Brand Asset Development \n Brand Guideline Development"
           }
         />
-        <Box position={"relative"}>
-          <Box
-            style={{
-              position: "absolute",
-              top: isLargerThan780 ? "10%" : "-50%",
-              right: "5%",
-            }}
-          >
-            <Image
-              alt="McCollins Media"
-              src={"/assets/image/design/1.svg"}
-              width="118px"
-              height={"165px"}
-            />
-          </Box>
-        </Box>
       </Box>
-      {/* <Box
-        style={{ position: "absolute", top: "58%", left: "-4%" }}
-        display={{ base: "none", md: "block" }}
-      >
-        <Image alt="McCollins Media"
-          src={"/assets/image/design/12.svg"}
-          width="130px"
-          height={"130px"}
-        />
-      </Box> */}
-      {/* <TextBox
-        heading="CASE STUDY"
-        smallHeading="social media designs"
-        subHeading="sneak peak into our social media marketing projects"
-        content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
-      />
-      <FavWork data={favWorkData} /> */}
+
       <IntrestedInBox />
       <ClientsLogo />
     </Stack>
