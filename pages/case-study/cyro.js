@@ -170,6 +170,31 @@ function CaseStudy() {
               }}
             >
               <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449645/Mccollins%20Video/Many_faces_of_Cryo_Body_zzgtod.mp4"
+                type="video/mp4"
+                media="screen"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </FadeUp>
+          <FadeUp>
+            <video
+              title="Film Production Company Dubai"
+              autoPlay
+              loop
+              muted
+              controls
+              playsInline
+              preload="auto"
+              alt="McCollins Media Production"
+              style={{
+                width: "100%",
+                height: "550px",
+                marginTop: "-10px",
+                marginBottom: "-10px",
+              }}
+            >
+              <source
                 src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447494/Mccollins%20Video/1.mp4"
                 type="video/mp4"
                 media="screen"
@@ -182,31 +207,6 @@ function CaseStudy() {
               title="Film Production Company Dubai"
               autoPlay
               loop
-              muted
-              controls
-              playsInline
-              preload="auto"
-              alt="McCollins Media Production"
-              style={{
-                width: "100%",
-                height: "550px",
-                marginTop: "-10px",
-                marginBottom: "-10px",
-              }}
-            >
-              <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447501/Mccollins%20Video/2.mp4"
-                type="video/mp4"
-                media="screen"
-              />
-              Your browser does not support HTML5 video.
-            </video>
-          </FadeUp>
-          <FadeUp>
-            <video
-              title="Film Production Company Dubai"
-              autoPlay
-              loop
               controls
               muted
               playsInline
@@ -220,7 +220,7 @@ function CaseStudy() {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447489/Mccollins%20Video/13_xg5tyk.mp4"
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449702/Mccollins%20Video/Everybody_Scream_p8mq88.mp4"
                 type="video/mp4"
                 media="screen"
               />
