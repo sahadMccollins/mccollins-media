@@ -1,22 +1,49 @@
 import { Box, Container, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
+import CaseStudy from "../../components/CaseStudy";
 import CaseStudyBanner from "../../components/caseStudyBanner";
 import FadeUp from "../../components/Motion/FadeUp";
-import TextBox from "../../components/TextBox";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 import "../../node_modules/react-modal-video/css/modal-video.min.css";
 
-function CaseStudy() {
+function CaseStudyPage() {
   const [isOpen, setOpen] = useState(false);
-  const video1Ref = useRef(null);
 
-  function playVideo1() {
-    video1Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/cyro.mp4";
-    video1Ref.current.play();
-  }
+  const favWorkData = [
+    {
+      name: "DAFZA",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Coffee",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "DAFZA",
+      img: "/assets/image/caseStudy/caseStudy1.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Costa Coffee",
+      img: "/assets/image/caseStudy/caseStudy2.jpg",
+      type: "Web Devlopment",
+    },
+    {
+      name: "Fujifilm",
+      img: "/assets/image/caseStudy/caseStudy3.jpg",
+      type: "Web Devlopment",
+    },
+  ];
+
   return (
     <>
       <CaseStudyBanner h2="cyro" p="Case Study" />
@@ -163,6 +190,7 @@ function CaseStudy() {
               preload="auto"
               alt="McCollins Media Production"
               style={{
+                margin: "auto",
                 marginTop: "-10px",
                 height: "550px",
                 marginBottom: "-10px",
@@ -188,6 +216,7 @@ function CaseStudy() {
               alt="McCollins Media Production"
               style={{
                 height: "550px",
+                margin: "auto",
                 marginTop: "-10px",
                 marginBottom: "-10px",
               }}
@@ -212,6 +241,7 @@ function CaseStudy() {
               alt="McCollins Media Production"
               style={{
                 height: "550px",
+                margin: "auto",
                 marginTop: "-10px",
                 marginBottom: "-10px",
               }}
@@ -226,84 +256,16 @@ function CaseStudy() {
           </FadeUp>
         </Flex>
 
-        <Box
-          width="100%"
-          height={{ base: "250px", sm: "400px", md: "600px" }}
-          position={"relative"}
-          mt={10}
-        >
-          <Image
-            alt="McCollins Media"
-            src="/assets/image/caseStudy/items/portfolio-big-02.jpg"
-            layout="fill"
-            objectFit="cover"
-          />
-        </Box>
-        <Box
-          width="100%"
-          height={{ base: "250px", sm: "400px", md: "600px" }}
-          position={"relative"}
-          mt={10}
-        >
-          <Image
-            alt="McCollins Media"
-            src="/assets/image/caseStudy/items/portfolio-big-01.jpg"
-            layout="fill"
-            objectFit="cover"
-          />
-        </Box>
-        <Box mt={{ base: 10, md: 20 }} mb="10" textAlign="center">
+        <Box mt={{ base: 10, md: 20 }} textAlign="center">
           <Heading color={"#FFDE11"} fontSize="25px" as={"h5"}>
             Related Work
           </Heading>
           <Heading as={"h3"} className="main-h2">
             Our More Projects
           </Heading>
-          <Flex
-            mt={{ base: 5, md: 10 }}
-            flexDir={{ base: "column", md: "row" }}
-            gap="10"
-          >
-            <Box width="100%">
-              <Box
-                width="100%"
-                height={{ base: "250px", sm: "300px", md: "400px" }}
-                position={"relative"}
-                mt={{ base: 2, md: 10 }}
-              >
-                <Image
-                  alt="McCollins Media"
-                  src="/assets/image/caseStudy/items/related-image-01.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </Box>
-
-              <Heading className="main-h5" mt={5}>
-                Digital Analysis
-              </Heading>
-            </Box>
-            <Box width="100%">
-              <Box
-                width="100%"
-                height={{ base: "250px", sm: "300px", md: "400px" }}
-                position={"relative"}
-                mt={{ base: 2, md: 10 }}
-              >
-                <Image
-                  alt="McCollins Media"
-                  src="/assets/image/caseStudy/items/related-image-02.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </Box>
-              <Heading className="main-h5" mt={5}>
-                Plan Management
-              </Heading>
-            </Box>
-          </Flex>
         </Box>
       </Container>
+      <CaseStudy data={favWorkData} />
       <ModalVideo
         channel="custom"
         url="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/cyro.mp4"
@@ -315,4 +277,4 @@ function CaseStudy() {
   );
 }
 
-export default CaseStudy;
+export default CaseStudyPage;

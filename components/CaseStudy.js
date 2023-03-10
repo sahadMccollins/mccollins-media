@@ -7,13 +7,14 @@ import "swiper/css";
 import { Box, Text, Button, useMediaQuery, Heading } from "@chakra-ui/react";
 
 const CaseStudy = ({ data }) => {
-  const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
+  const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+  const [isLargerThan1250] = useMediaQuery("(min-width: 1250px)");
 
   return (
     <Box className="swiper-container caseStudySwiper" pb={"50px"}>
       <Swiper
         modules={[Pagination]}
-        slidesPerView={isLargerThan768 ? 4 : 1}
+        slidesPerView={isLargerThan1250 ? 4 : isLargerThan900 ? 3 : 1}
         spaceBetween={50}
         centeredSlides={true}
         pagination={{ clickable: true }}
