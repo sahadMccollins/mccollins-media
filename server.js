@@ -26,6 +26,7 @@ const redirects = {
   "/technology-marketing-services": "/industry/technology-marketing-services",
   "/portfolio": "/",
   "/team": "/",
+  "/faq": "/",
 };
 
 app.prepare().then(() => {
