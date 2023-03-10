@@ -146,6 +146,84 @@ function CaseStudy() {
           Increase in bookings of sessions and footfall
         </Text>
 
+        <Flex gap={10} justifyContent="space-around" my={10}>
+          <FadeUp>
+            <video
+              title="Film Production Company Dubai"
+              autoPlay
+              loop
+              muted
+              controls
+              playsInline
+              preload="auto"
+              alt="McCollins Media Production"
+              style={{
+                width: "100%",
+                marginTop: "-10px",
+                height: "550px",
+                marginBottom: "-10px",
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447494/Mccollins%20Video/1.mp4"
+                type="video/mp4"
+                media="screen"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </FadeUp>
+          <FadeUp>
+            <video
+              title="Film Production Company Dubai"
+              autoPlay
+              loop
+              muted
+              controls
+              playsInline
+              preload="auto"
+              alt="McCollins Media Production"
+              style={{
+                width: "100%",
+                height: "550px",
+                marginTop: "-10px",
+                marginBottom: "-10px",
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447501/Mccollins%20Video/2.mp4"
+                type="video/mp4"
+                media="screen"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </FadeUp>
+          <FadeUp>
+            <video
+              title="Film Production Company Dubai"
+              autoPlay
+              loop
+              controls
+              muted
+              playsInline
+              preload="auto"
+              alt="McCollins Media Production"
+              style={{
+                width: "100%",
+                height: "550px",
+                marginTop: "-10px",
+                marginBottom: "-10px",
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447489/Mccollins%20Video/13_xg5tyk.mp4"
+                type="video/mp4"
+                media="screen"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </FadeUp>
+        </Flex>
+
         <Box
           width="100%"
           height={{ base: "250px", sm: "400px", md: "600px" }}

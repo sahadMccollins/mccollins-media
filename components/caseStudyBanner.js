@@ -21,6 +21,7 @@ const CaseStudyBanner = (props) => {
             // background={"linear-gradient(145deg,#f81f01,#ee076e)"}
             color={"#FFDE11"}
             className="main-h1"
+            textTransform={"uppercase"}
           >
             {props.h2}
           </Heading>
