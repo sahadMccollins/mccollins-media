@@ -7,6 +7,7 @@ const VideoCaseStudy = () => {
   const video2Ref = useRef(null);
   const video3Ref = useRef(null);
   const video4Ref = useRef(null);
+  const video5Ref = useRef(null);
 
   function playVideo1() {
     video1Ref.current.src =
@@ -22,7 +23,7 @@ const VideoCaseStudy = () => {
 
   function playVideo3() {
     video3Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_2_ivf5yh.mp4";
+      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847842/Mccollins%20Video/Snaidero_Case_Study_Video_1_dmggpo.mp4";
     video3Ref.current.play();
   }
 
@@ -31,6 +32,12 @@ const VideoCaseStudy = () => {
       "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_kcnfgj.mp4";
     video4Ref.current.play();
   }
+
+  function playVideo5() {
+    video5Ref.current.src =
+      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/cyro.mp4";
+    video5Ref.current.play();
+  }
   return (
     <>
       <FadeUp>
@@ -38,7 +45,11 @@ const VideoCaseStudy = () => {
           Case Study
         </Heading>
       </FadeUp>
-      <Flex flexDirection={{ base: "column", md: "row" }} flexWrap="wrap">
+      <Flex
+        flexDirection={{ base: "column", md: "row" }}
+        flexWrap="wrap"
+        placeContent={"center"}
+      >
         <Box
           mb={"10"}
           width={{ base: "100%", md: "50%" }}
@@ -107,7 +118,7 @@ const VideoCaseStudy = () => {
         >
           <FadeUp>
             <video
-              poster="/assets/image/videoCase/sn.jpg"
+              poster="/assets/image/videoCase/sn.png"
               playsinline=""
               muted="muted"
               loop="loop"
@@ -116,6 +127,26 @@ const VideoCaseStudy = () => {
               className="video4"
               onClick={playVideo4}
               ref={video4Ref}
+            ></video>
+          </FadeUp>
+        </Box>
+        <Box
+          mb={"10"}
+          width={{ base: "100%", md: "50%" }}
+          padding={"5px 10px"}
+          cursor="pointer"
+        >
+          <FadeUp>
+            <video
+              poster="/assets/image/videoCase/cyro.png"
+              playsinline=""
+              muted="muted"
+              loop="loop"
+              loading="lazy"
+              controls
+              className="video4"
+              onClick={playVideo5}
+              ref={video5Ref}
             ></video>
           </FadeUp>
         </Box>

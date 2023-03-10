@@ -28,6 +28,7 @@ import { useRouter } from "next/router";
 import CaseStudy from "../../components/CaseStudy";
 import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
+import IntrestedInBox from "../../components/IntrestedInBox";
 
 const SEO = () => {
   const favWorkData = [
@@ -179,7 +180,7 @@ const SEO = () => {
         onClose={() => setOpen(false)}
       />
 
-      <Box position={"relative"} style={{ marginTop: "0" }}>
+      {/* <Box position={"relative"} style={{ marginTop: "0" }}>
         <Chakraimage
           src="/assets/image/servicePage/DM&SEO2.jpg"
           width={"100%"}
@@ -248,7 +249,7 @@ const SEO = () => {
             </Box>
           </Container>
         </Box>
-      </Box>
+      </Box> */}
 
       <TextBox
         heading="Case study"
@@ -262,6 +263,7 @@ const SEO = () => {
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."
       />
       <TechIcon />
+      <IntrestedInBox />
       <ClientsLogo />
     </Stack>
   );

@@ -1,13 +1,13 @@
 import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
-const CaseStudyBanner = () => {
+const CaseStudyBanner = (props) => {
   return (
     <Stack>
       <Box
         bgImage={"/assets/image/caseStudy/items/bg-image-4.jpg"}
         width="100%"
-        height={"500px"}
+        height={"475px"}
         mt={"-85px"}
         style={{ backgroundPositionX: "center", backgroundPositionY: "bottom" }}
       >
@@ -18,14 +18,11 @@ const CaseStudyBanner = () => {
           height="100%"
         >
           <Heading
-            background={"linear-gradient(145deg,#f81f01,#ee076e)"}
-            style={{
-              "-webkit-background-clip": "text",
-              "-webkit-text-fill-color": "transparent",
-            }}
+            // background={"linear-gradient(145deg,#f81f01,#ee076e)"}
+            color={"#FFDE11"}
             className="main-h1"
           >
-            Getting tickets to the big show
+            {props.h2}
           </Heading>
           <Text
             className="main-h5"
@@ -33,7 +30,7 @@ const CaseStudyBanner = () => {
             style={{ fontWeight: "400 !important" }}
             mt={5}
           >
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            {props.p}
           </Text>
         </Flex>
       </Box>

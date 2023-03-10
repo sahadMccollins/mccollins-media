@@ -11,6 +11,7 @@ import Image from "next/image";
 import React from "react";
 import ClientsLogo from "../../components/ClientsLogo";
 import FavWork from "../../components/FavWork";
+import IntrestedInBox from "../../components/IntrestedInBox";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import ServicePoint from "../../components/ServicePoint";
 import TextBox from "../../components/TextBox";
@@ -168,6 +169,7 @@ const DesignAndBrandDevelopment = () => {
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
       />
       <FavWork data={favWorkData} /> */}
+      <IntrestedInBox />
       <ClientsLogo />
     </Stack>
   );

@@ -23,6 +23,7 @@ import "../../node_modules/react-modal-video/css/modal-video.min.css";
 import ServicePoint from "../../components/ServicePoint";
 import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
+import IntrestedInBox from "../../components/IntrestedInBox";
 
 const Film = () => {
   const [isOpen, setOpen] = useState(false);
@@ -350,6 +351,63 @@ const Film = () => {
           >
             <source
               src="https://res.cloudinary.com/mccollins-media/video/upload/v1678238137/Mccollins%20Video/458640823_zc3t2c.mp4"
+              type="video/mp4"
+              media="screen"
+            />
+            Your browser does not support HTML5 video.
+          </video>
+        </FadeUp>
+        <FadeUp>
+          <video
+            title="Film Production Company Dubai"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            alt="McCollins Media Production"
+            style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
+          >
+            <source
+              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678438039/Mccollins%20Video/All_Locations_-_Website_Video_min_dhbs4x.mp4"
+              type="video/mp4"
+              media="screen"
+            />
+            Your browser does not support HTML5 video.
+          </video>
+        </FadeUp>
+        <FadeUp>
+          <video
+            title="Film Production Company Dubai"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            alt="McCollins Media Production"
+            style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
+          >
+            <source
+              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678438358/Mccollins%20Video/All_Locations_-_Website_Video_2_1_bchkw6.mp4"
+              type="video/mp4"
+              media="screen"
+            />
+            Your browser does not support HTML5 video.
+          </video>
+        </FadeUp>
+        <FadeUp>
+          <video
+            title="Film Production Company Dubai"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            alt="McCollins Media Production"
+            style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
+          >
+            <source
+              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678438306/Mccollins%20Video/All_Locations_-_Website_Video_2_2_dppces.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -1149,7 +1207,7 @@ const Film = () => {
           </Box>
         </SimpleGrid>
       </Box> */}
-
+      <IntrestedInBox />
       <ClientsLogo />
 
       <ModalVideo

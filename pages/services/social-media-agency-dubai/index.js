@@ -19,15 +19,11 @@ import { useRouter } from "next/router";
 import VideoCaseStudy from "../../../components/VideoCaseStudy";
 import ZoomInWithBounce from "../../../components/Motion/ZoomInWithBounce";
 import FadeUp from "../../../components/Motion/FadeUp";
+import IntrestedInBox from "../../../components/IntrestedInBox";
 
 const SocialMediaMarketing = () => {
   const router = useRouter();
 
-  const SmmPointRef = useRef(null);
-
-  const scrollFun = () => {
-    SmmPointRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <Stack>
       <VideoBanner
@@ -283,13 +279,15 @@ const SocialMediaMarketing = () => {
                 fontWeight={"black"}
                 pl="6"
               >
-                Social media Platform
+                Our Partners
               </Heading>
             </Box>
           </Flex>
         </Container>
       </Stack>
       <SocialBox />
+      <IntrestedInBox />
+
       <ClientsLogo />
     </Stack>
   );

@@ -28,6 +28,7 @@ import WebShowcase from "../../components/WebShowcase";
 import Testimonials from "../../components/Testimonials";
 import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
+import IntrestedInBox from "../../components/IntrestedInBox";
 
 const DigitalMarketingSEO = () => {
   const router = useRouter();
@@ -261,61 +262,7 @@ const DigitalMarketingSEO = () => {
       >
         <FormBox heading={"Request a Call Back"} />
       </Container>
-      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
-        <VideoCaseStudy />
-      </Container>
-      <Box className="creative-head" pb={10}>
-        <FadeUp>
-          <Heading
-            as={"h4"}
-            fontSize={{ base: "25px", md: "50px" }}
-            pt="20"
-            textAlign="center"
-            color={"#FFDE11"}
-            textTransform="uppercase"
-          >
-            I am also interested in
-          </Heading>
-        </FadeUp>
-        <Container maxWidth="4xl">
-          <Box className="intrestedH2">
-            <FadeUp>
-              <Heading
-                onClick={() => router.push("/services/google-ads-and-sem")}
-              >
-                SEM - Google Ads
-              </Heading>
-            </FadeUp>
-            <FadeUp>
-              <Heading
-                onClick={() =>
-                  router.push("/services/search-engine-optimization")
-                }
-              >
-                Search Engine Optimization
-              </Heading>
-            </FadeUp>
-            <FadeUp>
-              <Heading
-                onClick={() =>
-                  router.push("/services/social-media-agency-dubai")
-                }
-              >
-                Social Media Marketing
-              </Heading>
-            </FadeUp>
-            <FadeUp>
-              <Heading
-                onClick={() =>
-                  router.push("/services/web-design-and-development")
-                }
-              >
-                Website Maintenance
-              </Heading>
-            </FadeUp>
-          </Box>
-        </Container>
-      </Box>
+      <IntrestedInBox />
       <Box style={{ margin: "0" }}>
         <ClientsLogo />
       </Box>

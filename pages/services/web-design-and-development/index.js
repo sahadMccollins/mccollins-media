@@ -23,6 +23,7 @@ import { useRouter } from "next/router";
 import WebShowcase from "../../../components/WebShowcase";
 import FadeUp from "../../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../../components/Motion/ZoomInWithBounce";
+import IntrestedInBox from "../../../components/IntrestedInBox";
 
 const WebsiteDevelopment = () => {
   const router = useRouter();
@@ -116,9 +117,7 @@ const WebsiteDevelopment = () => {
               <ZoomInWithBounce>
                 <Image
                   alt="McCollins Media"
-                  src={
-                    "/assets/image/servicePage/subPage/web development-02.jpg"
-                  }
+                  src={"/assets/image/servicePage/webDev1.png"}
                   width="585px"
                   height={"400px"}
                   objectFit="cover"
@@ -237,47 +236,7 @@ const WebsiteDevelopment = () => {
       >
         <FormBox heading={"Request a Call Back"} />
       </Container>
-      <Container maxWidth={"7xl"} style={{ margin: "auto" }}>
-        <VideoCaseStudy />
-      </Container>
-      <Box className="creative-head" pb={10}>
-        <Heading
-          as={"h4"}
-          fontSize={{ base: "25px", md: "50px" }}
-          pt="20"
-          textAlign="center"
-          color={"#FFDE11"}
-          textTransform="uppercase"
-        >
-          I am also interested in
-        </Heading>
-        <Container maxWidth="4xl">
-          <Box className="intrestedH2">
-            <Heading onClick={() => router.push("/services/google-ads")}>
-              Google Ads
-            </Heading>
-            <Heading
-              onClick={() =>
-                router.push("/services/search-engine-optimization")
-              }
-            >
-              Search Engine Optimization
-            </Heading>
-            <Heading
-              onClick={() => router.push("/services/social-media-agency-dubai")}
-            >
-              Social Media Marketing
-            </Heading>
-            <Heading
-              onClick={() =>
-                router.push("/services/web-design-and-development")
-              }
-            >
-              Website Maintenance
-            </Heading>
-          </Box>
-        </Container>
-      </Box>
+      <IntrestedInBox />
 
       <Box style={{ margin: "0" }}>
         <ClientsLogo />
