@@ -175,14 +175,6 @@ const DigitalMarketingSEO = () => {
               <li>
                 <FadeUp>
                   <Text fontSize={"20px"} mt="5" className="main-p">
-                    <b>Ad creation:</b> Creating compelling and relevant ads
-                    that resonate with the target audience.
-                  </Text>
-                </FadeUp>
-              </li>
-              <li>
-                <FadeUp>
-                  <Text fontSize={"20px"} mt="5" className="main-p">
                     <b>Keyword research:</b> Identifying the keywords that
                     people use to search for the products or services being
                     advertised.
@@ -194,6 +186,14 @@ const DigitalMarketingSEO = () => {
                   <Text fontSize={"20px"} mt="5" className="main-p">
                     <b>Campaign setup:</b> Setting up the campaign structure, ad
                     groups, and targeting options.
+                  </Text>
+                </FadeUp>
+              </li>
+              <li>
+                <FadeUp>
+                  <Text fontSize={"20px"} mt="5" className="main-p">
+                    <b>Ad creation:</b> Creating compelling and relevant ads
+                    that resonate with the target audience.
                   </Text>
                 </FadeUp>
               </li>

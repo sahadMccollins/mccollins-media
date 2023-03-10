@@ -21,6 +21,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const Footer = (props) => {
   const [name, setName] = useState("");
@@ -93,7 +94,11 @@ const Footer = (props) => {
               </TabList>
               <TabPanels>
                 <TabPanel pl={"0"}>
-                  <Text>G04, Loft Office 2, Entrance C, Dubai Media City</Text>
+                  <Text>
+                    G04, Loft Office 2,
+                    <br />
+                    Entrance C, Dubai Media City
+                  </Text>
                 </TabPanel>
                 {/* <TabPanel>
                   <p>Calicut, Kerala</p>
@@ -102,13 +107,14 @@ const Footer = (props) => {
             </Tabs>
             <Box fontSize={"18px"} color="#fff" mt={"5"}>
               <Text>
-                <b>Phone: </b>+971 4 445 6848
+                <b>Phone: </b>
+                <Link href="tel:+97144456848">+971 4 445 6848</Link>
               </Text>
-              {/* <Text>
-                <b>Mobile: </b>+971 55 956 4135
-              </Text> */}
               <Text>
-                <b>Email: </b>info@mccollinsmedia.com
+                <b>Email: </b>
+                <Link href="mailto:info@mccollinsmedia.com">
+                  info@mccollinsmedia.com
+                </Link>
               </Text>
             </Box>
             <Flex mt={5}>
@@ -265,7 +271,7 @@ const Footer = (props) => {
           </Box>
           <Box mt={"30px"}>
             <Text color={"#fff"} fontSize="12px">
-              © 2021 All Rights Reserved{" "}
+              © 2023 All Rights Reserved
               <span style={{ color: "#FFDE11", cursor: "pointer" }}>
                 McCollins Media
               </span>

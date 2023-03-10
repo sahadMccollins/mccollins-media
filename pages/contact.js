@@ -86,7 +86,9 @@ const Contact = () => {
                   </Box>
                 </FadeUp>
               </Flex>
-              <FormBox />
+              <Box id="formSec">
+                <FormBox />
+              </Box>
             </Flex>
           </Container>
           <Box bg={"#FFDE11"}>
@@ -98,7 +100,15 @@ const Contact = () => {
                 </Heading>
               </FadeUp>
               <FadeUp>
-                <Button my={5} bg="#fff" borderRadius={"20px"}>
+                <Button
+                  my={5}
+                  bg="#fff"
+                  borderRadius={"20px"}
+                  onClick={() => {
+                    const section = document.getElementById("formSec");
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
                   Start New Project
                 </Button>
               </FadeUp>
