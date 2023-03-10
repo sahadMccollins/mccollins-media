@@ -40,7 +40,6 @@ import NavItem from "../Navbar/NavItem";
 
 const Navbar = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
-  const [isSmallerThan400] = useMediaQuery("(max-width: 400px)");
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isActive, setIsActive] = useState(false);
@@ -445,9 +444,7 @@ const Navbar = (props) => {
           <Container className="headerSideBarCont">
             <DrawerCloseButton
               className={styles.sidebarCloseBtn}
-              right={
-                isLargerThan780 ? "100px" : isSmallerThan400 ? "10px" : "25px"
-              }
+              right={isLargerThan780 ? "100px" : "25px"}
             />
             <DrawerHeader>
               <ButtonGroup gap="4" float={"right"} mr={"50px"}>
