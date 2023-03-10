@@ -146,7 +146,12 @@ function CaseStudy() {
           Increase in bookings of sessions and footfall
         </Text>
 
-        <Flex gap={10} justifyContent="space-around" my={10}>
+        <Flex
+          gap={10}
+          justifyContent="space-around"
+          my={10}
+          flexDir={{ base: "column", md: "row" }}
+        >
           <FadeUp>
             <video
               title="Film Production Company Dubai"
