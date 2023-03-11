@@ -13,7 +13,11 @@ function CaseStudyPage() {
 
   return (
     <>
-      <CaseStudyBanner h2="Cleaning Superstore" p="Case Study" />
+      <CaseStudyBanner
+        h2="Cleaning Superstore"
+        p="Case Study"
+        img="/assets/image/caseStudy/banner/banner1.jpg"
+      />
       <Container maxW={"4xl"} mt={"50px"} pb={10}>
         {/* <Heading className="main-h2">Trydo</Heading> */}
         {/* <Divider my={10} bg={"#e1e1e1"} /> */}

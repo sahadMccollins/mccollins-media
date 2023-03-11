@@ -13,7 +13,12 @@ function CaseStudyPage() {
 
   return (
     <>
-      <CaseStudyBanner h2="cryo" p="Case Study" />
+      <CaseStudyBanner
+        h2color="#ffde11"
+        h2="cryo"
+        p="Case Study"
+        img="/assets/image/caseStudy/banner/banner4.jpg"
+      />
       <Container maxW={"4xl"} mt={"50px"} pb={10}>
         {/* <Heading className="main-h2">Trydo</Heading> */}
         {/* <Divider my={10} bg={"#e1e1e1"} /> */}
@@ -120,6 +125,15 @@ function CaseStudyPage() {
             </Text>
           </Box>
         </Box>
+        <Box mt={5}>
+          <img
+            src="/assets/image/caseStudy/feed (2).jpg"
+            alt="mccollins media"
+            width={"100%"}
+            objectFit="cover"
+            objectPosition="center"
+          />
+        </Box>
         <Heading
           as={"h2"}
           className="main-h2"
@@ -202,8 +216,8 @@ function CaseStudyPage() {
               title="Film Production Company Dubai"
               autoPlay
               loop
-              controls
               muted
+              controls
               playsInline
               preload="auto"
               alt="McCollins Media Production"
@@ -215,7 +229,7 @@ function CaseStudyPage() {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1677846880/Mccollins%20Video/Oakberry_Case_Study_Video_akplh6.mp4"
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449702/Mccollins%20Video/Everybody_Scream_p8mq88.mp4"
                 type="video/mp4"
                 media="screen"
               />

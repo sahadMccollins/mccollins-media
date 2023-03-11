@@ -13,7 +13,11 @@ function CaseStudyPage() {
 
   return (
     <>
-      <CaseStudyBanner h2="OAKBERRY" p="Case Study" />
+      <CaseStudyBanner
+        h2="OAKBERRY"
+        p="Case Study"
+        img="/assets/image/caseStudy/banner/banner3.jpg"
+      />
       <Container maxW={"4xl"} mt={"50px"} pb={10}>
         {/* <Heading className="main-h2">Trydo</Heading> */}
         {/* <Divider my={10} bg={"#e1e1e1"} /> */}
@@ -132,6 +136,15 @@ function CaseStudyPage() {
               of a new location.
             </Text>
           </Box>
+        </Box>
+        <Box mt={5}>
+          <img
+            src="/assets/image/caseStudy/feed (3).jpg"
+            alt="mccollins media"
+            width={"100%"}
+            objectFit="cover"
+            objectPosition="center"
+          />
         </Box>
         <Heading
           as={"h2"}
