@@ -141,6 +141,89 @@ function CaseStudyPage() {
           Increase in bookings of sessions and footfall
         </Text>
 
+        <Flex
+          gap={10}
+          justifyContent="space-around"
+          my={10}
+          flexDir={{ base: "column", md: "row" }}
+        >
+          <FadeUp>
+            <video
+              title="Film Production Company Dubai"
+              autoPlay
+              loop
+              muted
+              controls
+              playsInline
+              preload="auto"
+              alt="McCollins Media Production"
+              style={{
+                margin: "auto",
+                marginTop: "-10px",
+                height: "550px",
+                marginBottom: "-10px",
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449645/Mccollins%20Video/Many_faces_of_Cryo_Body_zzgtod.mp4"
+                type="video/mp4"
+                media="screen"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </FadeUp>
+          <FadeUp>
+            <video
+              title="Film Production Company Dubai"
+              autoPlay
+              loop
+              muted
+              controls
+              playsInline
+              preload="auto"
+              alt="McCollins Media Production"
+              style={{
+                height: "550px",
+                margin: "auto",
+                marginTop: "-10px",
+                marginBottom: "-10px",
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447494/Mccollins%20Video/1.mp4"
+                type="video/mp4"
+                media="screen"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </FadeUp>
+          <FadeUp>
+            <video
+              title="Film Production Company Dubai"
+              autoPlay
+              loop
+              controls
+              muted
+              playsInline
+              preload="auto"
+              alt="McCollins Media Production"
+              style={{
+                height: "550px",
+                margin: "auto",
+                marginTop: "-10px",
+                marginBottom: "-10px",
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/mccollins-media/video/upload/v1677846880/Mccollins%20Video/Oakberry_Case_Study_Video_akplh6.mp4"
+                type="video/mp4"
+                media="screen"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </FadeUp>
+        </Flex>
+
         <Box mt={{ base: 10, md: 20 }} textAlign="center">
           <Heading color={"#FFDE11"} fontSize="25px" as={"h5"}>
             Related Work
