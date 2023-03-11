@@ -187,20 +187,7 @@ const OurTeam = () => {
                   />
                 </motion.div>
               </SwiperSlide>
-              <SwiperSlide>
-                <motion.div
-                  variants={variants}
-                  initial="initial"
-                  animate={controls}
-                  custom={2}
-                >
-                  <TeamMemberSlide
-                    img="/assets/image/team/asher.jpg"
-                    name="Azhar"
-                    designation="Digital Designer"
-                  />
-                </motion.div>
-              </SwiperSlide>
+
               <SwiperSlide>
                 <motion.div
                   variants={variants}

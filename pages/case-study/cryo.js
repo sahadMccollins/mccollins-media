@@ -248,13 +248,6 @@ function CaseStudyPage() {
         </Box>
       </Container>
       <CaseStudy />
-      <ModalVideo
-        channel="custom"
-        url="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/cyro.mp4"
-        autoplay
-        isOpen={isOpen}
-        onClose={() => setOpen(false)}
-      />
     </>
   );
 }
