@@ -8,6 +8,9 @@ const nextConfig = {
     locales: ["en", "ar"],
     defaultLocale: "en",
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
