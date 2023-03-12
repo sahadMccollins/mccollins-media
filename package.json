@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
     "start": "node server.js",
     "lint": "next lint",
@@ -21,7 +21,6 @@
     "mongodb": "^4.7.0",
     "next": "12.1.6",
     "next-auth": "^4.19.2",
-    "openid-client": "^5.4.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-draft-wysiwyg": "^1.14.7",
