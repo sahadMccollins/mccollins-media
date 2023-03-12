@@ -198,7 +198,7 @@ const ContentCreation = () => {
             <FadeUp>
               <video
                 poster="/assets/image/servicePage/contentProduction/thoshiba-vid.png"
-                playsinline=""
+                playsInline=""
                 muted="muted"
                 loop="loop"
                 loading="lazy"
@@ -214,7 +214,7 @@ const ContentCreation = () => {
             <FadeUp>
               <video
                 poster="/assets/image/servicePage/contentProduction/armoured-vid.png"
-                playsinline=""
+                playsInline=""
                 muted="muted"
                 loop="loop"
                 loading="lazy"
@@ -230,7 +230,7 @@ const ContentCreation = () => {
             <FadeUp>
               <video
                 poster="/assets/image/servicePage/contentProduction/cyro-vid.png"
-                playsinline=""
+                playsInline=""
                 muted="muted"
                 loop="loop"
                 loading="lazy"
@@ -246,7 +246,7 @@ const ContentCreation = () => {
             <FadeUp>
               <video
                 poster="/assets/image/servicePage/contentProduction/mapei-vid.png"
-                playsinline=""
+                playsInline=""
                 muted="muted"
                 loop="loop"
                 loading="lazy"

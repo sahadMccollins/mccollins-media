@@ -492,7 +492,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -531,7 +530,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -570,7 +568,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -609,7 +606,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -648,7 +644,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -687,7 +682,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -726,7 +720,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -765,7 +758,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -804,7 +796,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -843,7 +834,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -882,7 +872,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -921,7 +910,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -1046,7 +1034,6 @@ const Film = () => {
                     <polygon
                       className="triangle"
                       points="5,0 30,15 5,30"
-                      viewBox="0 0 30 15"
                     ></polygon>
                     <path
                       className="path"
@@ -1090,7 +1077,7 @@ const Film = () => {
                   <polygon
                     className="triangle"
                     points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
+                    
                   ></polygon>
                   <path
                     className="path"
@@ -1121,7 +1108,7 @@ const Film = () => {
                   <polygon
                     className="triangle"
                     points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
+                    
                   ></polygon>
                   <path
                     className="path"
@@ -1152,7 +1139,7 @@ const Film = () => {
                   <polygon
                     className="triangle"
                     points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
+                    
                   ></polygon>
                   <path
                     className="path"
@@ -1191,7 +1178,7 @@ const Film = () => {
                   <polygon
                     className="triangle"
                     points="5,0 30,15 5,30"
-                    viewBox="0 0 30 15"
+                    
                   ></polygon>
                   <path
                     className="path"

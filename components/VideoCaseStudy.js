@@ -59,7 +59,7 @@ const VideoCaseStudy = () => {
           <FadeUp>
             <video
               poster="/assets/image/videoCase/OakberryCaseStudySS.jpg"
-              playsinline=""
+              playsInline=""
               muted="muted"
               loop="loop"
               loading="lazy"
@@ -79,7 +79,7 @@ const VideoCaseStudy = () => {
           <FadeUp>
             <video
               poster="/assets/image/videoCase/pocco.jpg"
-              playsinline=""
+              playsInline=""
               muted="muted"
               loop="loop"
               loading="lazy"
@@ -99,7 +99,7 @@ const VideoCaseStudy = () => {
           <FadeUp>
             <video
               poster="/assets/image/videoCase/cleaning-superstore.jpg"
-              playsinline=""
+              playsInline=""
               muted="muted"
               loop="loop"
               loading="lazy"
@@ -119,7 +119,7 @@ const VideoCaseStudy = () => {
           <FadeUp>
             <video
               poster="/assets/image/videoCase/sn.png"
-              playsinline=""
+              playsInline=""
               muted="muted"
               loop="loop"
               loading="lazy"
@@ -139,7 +139,7 @@ const VideoCaseStudy = () => {
           <FadeUp>
             <video
               poster="/assets/image/videoCase/cyro.png"
-              playsinline=""
+              playsInline=""
               muted="muted"
               loop="loop"
               loading="lazy"
