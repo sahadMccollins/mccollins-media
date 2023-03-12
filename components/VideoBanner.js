@@ -58,7 +58,9 @@ const VideoBanner = (props) => {
           width="100%"
           className="video-banner"
           poster={
-            isSmallerThan780 && "/assets/image/servicePage/serviceAccordian.jpg"
+            isSmallerThan780
+              ? "/assets/image/servicePage/serviceAccordian.jpg"
+              : "none"
           }
         >
           <source src={props.video} type="video/mp4" />
