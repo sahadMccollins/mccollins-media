@@ -1,11 +1,12 @@
 import { Stack } from "@chakra-ui/react";
 import Awards from "../components/Awards";
-import CaseStudy from "../components/CaseStudy";
 import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
 import Partner from "../components/Partner";
 import ServiceAccordian from "../components/ServiceAccordian";
 import TextBox from "../components/TextBox";
+import dynamic from "next/dynamic";
+const CaseStudy = dynamic(() => import("../components/CaseStudy"));
 
 export default function Home() {
   return (
@@ -29,8 +30,6 @@ export default function Home() {
         content="We are McCollins Media, a story that began over 15 years ago on the principles of creativity, innovation, and result-driven thinking. We blend creative thinking and digital development with purposeful strategies to create a digital ecosystem like no other. We are passionate about being the leading digital marketing and web development services provider in the UAE and across all GCC countries."
       />
 
-      {/* <ServiceTabs /> */}
-
       <ServiceAccordian />
 
       <TextBox
@@ -42,15 +41,6 @@ export default function Home() {
       <CaseStudy />
 
       <ClientsLogo />
-
-      {/* <TextBox
-        bg="#F7F7F7"
-        heading={"WHAT \n WE DO"}
-        subHeading="Creating game-changing campaigns"
-        content=" that help brands all across the GCC region grow and perform better. We bridge the gap between purpose-driven storytelling and data-driven improvements."
-      /> */}
-
-      {/* <ServiceAccordian /> */}
 
       <TextBox
         heading="OUR PARTNERS"
