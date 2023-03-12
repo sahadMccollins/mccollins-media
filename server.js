@@ -40,7 +40,7 @@ app.prepare().then(() => {
     } else {
       handle(req, res, parsedUrl);
     }
-  }).listen(80, () => {
-    console.log("Server is listening on http://localhost:3000");
+  }).listen(3000, () => {
+    console.log("Server is listening 3000");
   });
 });
