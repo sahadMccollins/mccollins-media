@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-
 import "swiper/css/pagination";
 import "swiper/css";
 import { Box, Text, Button, useMediaQuery, Heading } from "@chakra-ui/react";

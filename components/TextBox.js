@@ -1,5 +1,4 @@
 import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import FadeUp from "./Motion/FadeUp";
 

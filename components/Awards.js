@@ -4,8 +4,9 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AwardSlide from "./AwardSlide";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
-import "swiper/css";
 import FadeUp from "./Motion/FadeUp";
+
+import "swiper/css";
 
 const Awards = () => {
   const swiperRef = useRef(null);

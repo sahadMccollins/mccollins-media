@@ -1,4 +1,4 @@
-import { Box, Container, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, SimpleGrid, Stack } from "@chakra-ui/react";
 import Image from "next/image";
 import FadeUp from "./Motion/FadeUp";
 

@@ -1,4 +1,3 @@
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   Accordion,
   AccordionButton,
@@ -12,6 +11,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";

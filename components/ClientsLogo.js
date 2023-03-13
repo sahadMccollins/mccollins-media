@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Container,
   Flex,
   Heading,
@@ -48,9 +47,6 @@ const ClientsLogo = () => {
               CLIENTS WE WORK WITH
               <span style={{ color: "#fff", fontSize: "20px" }}>■</span>
             </Heading>
-            {/* <Button borderRadius={20} mt="20px" background={"#fff"}>
-            view all <ChevronRightIcon w={"1.3em"} h={"1.3em"} />
-          </Button> */}
           </Flex>
         </FadeUp>
         <FadeUp>

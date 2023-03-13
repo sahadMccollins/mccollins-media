@@ -13,10 +13,10 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import { useState } from "react";
-const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
-import "../node_modules/react-modal-video/css/modal-video.min.css";
 import FadeUp from "./Motion/FadeUp";
 import ZoomOut from "./Motion/ZoomOut";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
+import "../node_modules/react-modal-video/css/modal-video.min.css";
 
 const HeroBanner = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
