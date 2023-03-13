@@ -1,12 +1,27 @@
 import { Stack } from "@chakra-ui/react";
-import Awards from "../components/Awards";
-import ClientsLogo from "../components/ClientsLogo";
-import HeroBanner from "../components/HeroBanner";
-import Partner from "../components/Partner";
-import ServiceAccordian from "../components/ServiceAccordian";
-import TextBox from "../components/TextBox";
 import dynamic from "next/dynamic";
-const CaseStudy = dynamic(() => import("../components/CaseStudy"));
+import HeroBanner from "../components/HeroBanner";
+const CaseStudy = dynamic(() => import("../components/CaseStudy"), {
+  ssr: true,
+});
+const TextBox = dynamic(() => import("../components/TextBox"), {
+  ssr: true,
+});
+const Partner = dynamic(() => import("../components/Partner"), {
+  ssr: true,
+});
+const ClientsLogo = dynamic(() => import("../components/ClientsLogo"), {
+  ssr: true,
+});
+const Awards = dynamic(() => import("../components/Awards"), {
+  ssr: true,
+});
+const ServiceAccordian = dynamic(
+  () => import("../components/ServiceAccordian"),
+  {
+    ssr: true,
+  }
+);
 
 export default function Home() {
   return (

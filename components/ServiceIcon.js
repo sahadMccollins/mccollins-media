@@ -25,7 +25,7 @@ const ServiceIcon = () => {
         <FadeUp>
           <Swiper
             spaceBetween={20}
-            slidesPerView={isLargerThan780 ? 5 : 1}
+            slidesPerView={isLargerThan780 ? 3 : 1}
             loop={isLargerThan780 ? false : true}
             ref={swiperRef}
             autoplay={{
@@ -111,7 +111,7 @@ const ServiceIcon = () => {
                 </Text>
               </Box>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <Box
                 onClick={() =>
                   router.push("/services/web-design-and-development/react")
@@ -158,7 +158,7 @@ const ServiceIcon = () => {
                   Magento
                 </Text>
               </Box>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </FadeUp>
       </Container>

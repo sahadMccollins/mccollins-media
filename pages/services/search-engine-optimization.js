@@ -18,10 +18,7 @@ const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 import { useState } from "react";
 
 import "../../node_modules/react-modal-video/css/modal-video.min.css";
-import ServicePoint from "../../components/ServicePoint";
 import TextBox from "../../components/TextBox";
-import FavWork from "../../components/FavWork";
-import TechIcon from "../../components/TechIcon";
 import ClientsLogo from "../../components/ClientsLogo";
 import VideoBanner from "../../components/VideoBanner";
 import { useRouter } from "next/router";
@@ -40,7 +37,7 @@ const SEO = () => {
       <VideoBanner
         heading={`search engine \n  optimization`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
-        content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
+        content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search"
         poster="/assets/image/servicePage/DM&SEO.jpg"
       />
       <Container maxWidth={"4xl"} style={{ margin: "auto" }}>
@@ -148,77 +145,6 @@ const SEO = () => {
         onClose={() => setOpen(false)}
       />
 
-      {/* <Box position={"relative"} style={{ marginTop: "0" }}>
-        <Chakraimage
-          src="/assets/image/servicePage/DM&SEO2.jpg"
-          width={"100%"}
-          height={"700px"}
-          objectFit={"cover"}
-        />
-        <Box
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          <Image
-            alt="McCollins Media"
-            src="/assets/image/servicePage/playBtn.svg"
-            width={"93px"}
-            height={"93px"}
-            style={{ cursor: "pointer" }}
-            onClick={() => setOpen(true)}
-          />
-        </Box>
-
-        <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
-          <Container maxWidth={"7xl"}>
-            <Box width={isLargerThan780 ? "50%" : "100%"}>
-              <Heading fontSize={isLargerThan780 ? "60px" : "40px"}>
-                result driven
-                <br /> seo & sem partner
-              </Heading>
-
-              <ButtonGroup gap="4" zIndex="99" mt={"25px"}>
-                <Button
-                  colorScheme="yellow"
-                  background={"#FFDE11"}
-                  borderRadius="20px"
-                  color="#000"
-                  onClick={() => router.push("/contact")}
-                >
-                  <Image
-                    alt="McCollins Media"
-                    src="/assets/image/icons/call.svg"
-                    width="25px"
-                    height="25px"
-                    priority={true}
-                  />
-                  &nbsp;&nbsp;contact us
-                </Button>
-                <Button
-                  colorScheme="whiteAlpha"
-                  borderRadius="20px"
-                  color="#fff"
-                  onClick={() => setOpen(true)}
-                >
-                  <Image
-                    alt="McCollins Media"
-                    src="/assets/image/icons/play.svg"
-                    width="25px"
-                    height="25px"
-                    priority={true}
-                  />
-                  &nbsp;&nbsp;watch now
-                </Button>
-              </ButtonGroup>
-            </Box>
-          </Container>
-        </Box>
-      </Box> */}
-
       <TextBox
         heading="Case study"
         smallHeading={"Search engine optimization"}
@@ -230,7 +156,6 @@ const SEO = () => {
         heading="Technologies We work with"
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."
       />
-      {/* <TechIcon /> */}
       <SeoIcon />
       <IntrestedInBox />
       <ClientsLogo />

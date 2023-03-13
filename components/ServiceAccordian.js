@@ -87,6 +87,21 @@ const ServiceAccordian = () => {
               <div
                 onClick={(e) => {
                   setAccImg(
+                    "/assets/image/ServiceTabs/Social-Media-Marketing.png"
+                  );
+                }}
+              >
+                <FadeUp>
+                  <AccItem
+                    name="Social Media Marketing"
+                    content="Storytellers for your brand ! Be it creating the strategy to content development or engaging with your brands audience, our team of Social Media Experts represent your brand"
+                    url="social-media-agency-dubai"
+                  />
+                </FadeUp>
+              </div>
+              <div
+                onClick={(e) => {
+                  setAccImg(
                     "/assets/image/ServiceTabs/DigitalMarketing&SEO.png"
                   );
                 }}
@@ -101,19 +116,18 @@ const ServiceAccordian = () => {
               </div>
               <div
                 onClick={(e) => {
-                  setAccImg(
-                    "/assets/image/ServiceTabs/Social-Media-Marketing.png"
-                  );
+                  setAccImg("/assets/image/ServiceTabs/seo.png");
                 }}
               >
                 <FadeUp>
                   <AccItem
-                    name="Social Media Marketing"
-                    content="Storytellers for your brand ! Be it creating the strategy to content development or engaging with your brands audience, our team of Social Media Experts represent your brand"
-                    url="social-media-agency-dubai"
+                    name="Search Engine Optimization"
+                    content="As a Performance driven, Search Engine Optimization agency in Dubai, we specialize in providing SEO services to businesses. Our primary goal is to support businesses to improve their online visibility and increase organic traffic to their websites."
+                    url="search-engine-optimization"
                   />
                 </FadeUp>
               </div>
+
               <div
                 onClick={(e) => {
                   setAccImg("/assets/image/ServiceTabs/IphoneReels.png");
