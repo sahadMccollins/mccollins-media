@@ -9,8 +9,9 @@ function CaseStudyPage() {
     <>
       <CaseStudyBanner
         h2="Toshiba "
+        h2color="#000"
         p="Case Study"
-        img="/assets/image/caseStudy/banner/banner3.jpg"
+        img="/assets/image/caseStudy/banner/banner5.jpg"
       />
       <Container maxW={"4xl"} mt={"50px"} pb={10}>
         {/* <Heading className="main-h2">Trydo</Heading> */}

@@ -273,7 +273,7 @@ const Footer = (props) => {
             <Text color={"#fff"} fontSize="12px">
               © 2023 All Rights Reserved
               <span style={{ color: "#FFDE11", cursor: "pointer" }}>
-                McCollins Media
+                &nbsp; McCollins Media
               </span>
             </Text>
           </Box>

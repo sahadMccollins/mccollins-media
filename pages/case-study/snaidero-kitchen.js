@@ -18,9 +18,9 @@ function CaseStudyPage() {
         h2color="#ffde11"
         h2="Snaidero Kitchen"
         p="Case Study"
-        img="/assets/image/caseStudy/banner/banner4.jpg"
+        img="/assets/image/caseStudy/banner/banner8.jpg"
       />
-      <Container maxW={"4xl"} mt={"50px"} pb={10}>
+      <Container maxW={"4xl"} mt={"50px"} pb={5}>
         {/* <Heading className="main-h2">Trydo</Heading> */}
         {/* <Divider my={10} bg={"#e1e1e1"} /> */}
 
