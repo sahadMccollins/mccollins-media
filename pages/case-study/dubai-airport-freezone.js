@@ -102,7 +102,7 @@ function CaseStudyPage() {
             maxWidth="fit-content"
             padding={"0 20px 20px 20px"}
             margin={"auto"}
-            mt={20}
+            mt={{ base: 0, md: 20 }}
             mb={10}
           >
             The Route
