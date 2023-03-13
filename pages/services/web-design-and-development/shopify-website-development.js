@@ -16,6 +16,7 @@ import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
 import ServicePoint from "../../../components/ServicePoint";
 import TextBox from "../../../components/TextBox";
+import WebShowcase from "../../../components/WebShowcase";
 
 const Shopify = () => {
   return (
@@ -129,7 +130,7 @@ const Shopify = () => {
           ></video>
         </Container>
 
-        <CaseStudy />
+        <WebShowcase />
       </Box>
     </Stack>
   );

@@ -812,7 +812,47 @@ content: counter(step-counter);
 }
 
 
+.checkmark .ulSub {
+  margin-left: 30px;
+}
+
+.checkmark .ulSub::before {
+    content: "-";
+    display: block;
+    height: 0;
+    left: 0.4em;
+    top: 30%;
+    margin-top: -0.5em;
+    font-weight: 900;
+    margin-left: -10px;
+}
+
+
+.newCM {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newCM li {
+  width: 50%;
+}
+
+.newCM .CMtop::before {
+  top: 14% !important;
+}
+
+.newCM .CMtop::after {
+    top: 17% !important;
+}
+
+
   @media (max-width: 768px) {
+
+    
+.newCM li {
+  width: 100%;
+}
+
 
     .webshowcase .swiper-wrapper {
       margin-left: 12px;
