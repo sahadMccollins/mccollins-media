@@ -7,12 +7,87 @@ import "swiper/css";
 import { Box, Text, Button, useMediaQuery, Heading } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import FadeUp from "./Motion/FadeUp";
+import Image from "next/image";
+
+const CaseStudySlide = (props) => {
+  const router = useRouter();
+  return (
+    <Box
+      w="320px"
+      h="450px"
+      bgRepeat="no-repeat"
+      bgPosition="center"
+      bgSize="cover"
+      borderRadius="lg"
+      position="relative"
+      margin={"auto"}
+      transition="transform 0.3s ease-in-out"
+      _after={{
+        content: '""',
+        display: "block",
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        width: "100%",
+        height: "60%",
+        background: "linear-gradient(to top, #050505, rgba(255,222,17,0))",
+        borderRadius: "lg",
+        opacity: 0.8,
+        zIndex: 5,
+      }}
+      _hover={{
+        transform: "scale(1.05)",
+      }}
+    >
+      <Image
+        src={props.img}
+        layout="fill"
+        objectFit="cover"
+        style={{ borderRadius: "10px" }}
+      />
+      <Heading
+        position="absolute"
+        bottom="120px"
+        left="20px"
+        color="white"
+        fontSize="2xl"
+        fontWeight="bold"
+        zIndex={9}
+      >
+        {props.name}
+      </Heading>
+      <Text
+        position="absolute"
+        bottom="80px"
+        left="20px"
+        color="white"
+        fontSize="2xl"
+        fontWeight="medium"
+        zIndex={9}
+      >
+        {props.service}
+      </Text>
+      <Button
+        colorScheme="yellow"
+        background={"#FFDE11"}
+        borderRadius="20px"
+        color="#000"
+        position="absolute"
+        bottom="30px"
+        left="20px"
+        variant="solid"
+        onClick={() => router.push(`/case-study/${props.loc}`)}
+        zIndex={9}
+      >
+        {props.topic}
+      </Button>
+    </Box>
+  );
+};
 
 const CaseStudy = () => {
   const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
   const [isLargerThan1250] = useMediaQuery("(min-width: 1250px)");
-
-  const router = useRouter();
 
   return (
     <Box className="swiper-container caseStudySwiper" pb={"50px"}>
@@ -27,461 +102,67 @@ const CaseStudy = () => {
           initialSlide={5}
         >
           <SwiperSlide>
-            <Box
-              w="320px"
-              h="450px"
-              bgImage="/assets/image/caseStudy/caseStudy6.jpg"
-              bgRepeat="no-repeat"
-              bgPosition="center"
-              bgSize="cover"
-              borderRadius="lg"
-              position="relative"
-              margin={"auto"}
-              transition="transform 0.3s ease-in-out"
-              // _hover={{ transform: "scale(1.05)" }}
-              _hover={{
-                transform: "scale(1.05)",
-                "&::before": {
-                  content: '""',
-                  display: "block",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "65%",
-                  background:
-                    "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
-                  borderRadius: "lg",
-                  opacity: 0.8,
-                },
-              }}
-            >
-              <Heading
-                position="absolute"
-                bottom="120px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="bold"
-              >
-                CRYO
-              </Heading>
-              <Text
-                position="absolute"
-                bottom="80px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="medium"
-              >
-                Digital Marketing
-              </Text>
-              <Button
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                borderRadius="20px"
-                color="#000"
-                position="absolute"
-                bottom="30px"
-                left="20px"
-                variant="solid"
-                onClick={() => router.push("/case-study/cryo")}
-              >
-                Case Study
-              </Button>
-            </Box>
+            <CaseStudySlide
+              name="CRYO"
+              img="/assets/image/caseStudy/caseStudy6.jpg"
+              service="Digital Marketing"
+              topic="Case Study"
+              loc="cryo"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              w="320px"
-              h="450px"
-              bgImage="/assets/image/caseStudy/caseStudy4.jpg"
-              bgRepeat="no-repeat"
-              bgPosition="center"
-              bgSize="cover"
-              borderRadius="lg"
-              position="relative"
-              margin={"auto"}
-              transition="transform 0.3s ease-in-out"
-              // _hover={{ transform: "scale(1.05)" }}
-              _hover={{
-                transform: "scale(1.05)",
-                "&::before": {
-                  content: '""',
-                  display: "block",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "65%",
-                  background:
-                    "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
-                  borderRadius: "lg",
-                  opacity: 0.8,
-                },
-              }}
-            >
-              <Heading
-                position="absolute"
-                bottom="120px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="bold"
-              >
-                OAKBERRY
-              </Heading>
-              <Text
-                position="absolute"
-                bottom="80px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="medium"
-              >
-                Digital Marketing
-              </Text>
-              <Button
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                borderRadius="20px"
-                color="#000"
-                position="absolute"
-                bottom="30px"
-                left="20px"
-                variant="solid"
-                onClick={() => router.push("/case-study/oakberry")}
-              >
-                Case Study
-              </Button>
-            </Box>
+            <CaseStudySlide
+              name="OAKBERRY"
+              img="/assets/image/caseStudy/caseStudy4.jpg"
+              service="Digital Marketing"
+              topic="Case Study"
+              loc="oakberry"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              w="320px"
-              h="450px"
-              bgImage="/assets/image/caseStudy/caseStudy5.jpg"
-              bgRepeat="no-repeat"
-              bgPosition="center"
-              bgSize="cover"
-              borderRadius="lg"
-              position="relative"
-              margin={"auto"}
-              transition="transform 0.3s ease-in-out"
-              // _hover={{ transform: "scale(1.05)" }}
-              _hover={{
-                transform: "scale(1.05)",
-                "&::before": {
-                  content: '""',
-                  display: "block",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "65%",
-                  background:
-                    "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
-                  borderRadius: "lg",
-                  opacity: 0.8,
-                },
-              }}
-            >
-              <Heading
-                position="absolute"
-                bottom="120px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="bold"
-              >
-                Cleaning Superstore
-              </Heading>
-              <Text
-                position="absolute"
-                bottom="80px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="medium"
-              >
-                Digital Marketing
-              </Text>
-              <Button
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                borderRadius="20px"
-                color="#000"
-                position="absolute"
-                bottom="30px"
-                left="20px"
-                variant="solid"
-                onClick={() => router.push("/case-study/cleaning-super-store")}
-              >
-                Case Study
-              </Button>
-            </Box>
+            <CaseStudySlide
+              name="Cleaning Superstore"
+              img="/assets/image/caseStudy/caseStudy5.jpg"
+              service="Digital Marketing"
+              topic="Case Study"
+              loc="cleaning-super-store"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              w="320px"
-              h="450px"
-              bgImage="/assets/image/caseStudy/caseStudy7.jpg"
-              bgRepeat="no-repeat"
-              bgPosition="center"
-              bgSize="cover"
-              borderRadius="lg"
-              position="relative"
-              margin={"auto"}
-              transition="transform 0.3s ease-in-out"
-              // _hover={{ transform: "scale(1.05)" }}
-              _hover={{
-                transform: "scale(1.05)",
-                "&::before": {
-                  content: '""',
-                  display: "block",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "65%",
-                  background:
-                    "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
-                  borderRadius: "lg",
-                  opacity: 0.8,
-                },
-              }}
-            >
-              <Heading
-                position="absolute"
-                bottom="120px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="bold"
-              >
-                Pioneer
-              </Heading>
-              <Text
-                position="absolute"
-                bottom="80px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="medium"
-              >
-                Digital Marketing
-              </Text>
-              <Button
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                borderRadius="20px"
-                color="#000"
-                position="absolute"
-                bottom="30px"
-                left="20px"
-                variant="solid"
-                onClick={() => router.push("/case-study/pioneer")}
-              >
-                Case Study
-              </Button>
-            </Box>
+            <CaseStudySlide
+              img="/assets/image/caseStudy/caseStudy7.jpg"
+              name="Pioneer"
+              service="Digital Marketing"
+              topic="Case Study"
+              loc="pioneer"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              w="320px"
-              h="450px"
-              bgImage="/assets/image/caseStudy/caseStudy8.jpg"
-              bgRepeat="no-repeat"
-              bgPosition="center"
-              bgSize="cover"
-              borderRadius="lg"
-              position="relative"
-              margin={"auto"}
-              transition="transform 0.3s ease-in-out"
-              // _hover={{ transform: "scale(1.05)" }}
-              _hover={{
-                transform: "scale(1.05)",
-                "&::before": {
-                  content: '""',
-                  display: "block",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "65%",
-                  background:
-                    "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
-                  borderRadius: "lg",
-                  opacity: 0.8,
-                },
-              }}
-            >
-              <Heading
-                position="absolute"
-                bottom="120px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="bold"
-              >
-                Toshiba
-              </Heading>
-              <Text
-                position="absolute"
-                bottom="80px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="medium"
-              >
-                Digital Marketing
-              </Text>
-              <Button
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                borderRadius="20px"
-                color="#000"
-                position="absolute"
-                bottom="30px"
-                left="20px"
-                variant="solid"
-                onClick={() => router.push("/case-study/toshiba")}
-              >
-                Case Study
-              </Button>
-            </Box>
+            <CaseStudySlide
+              img="/assets/image/caseStudy/caseStudy8.jpg"
+              name="Toshiba"
+              service="Digital Marketing"
+              topic="Case Study"
+              loc="toshiba"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              w="320px"
-              h="450px"
-              bgImage="/assets/image/caseStudy/caseStudy1.jpg"
-              bgRepeat="no-repeat"
-              bgPosition="center"
-              bgSize="cover"
-              borderRadius="lg"
-              position="relative"
-              margin={"auto"}
-              transition="transform 0.3s ease-in-out"
-              // _hover={{ transform: "scale(1.05)" }}
-              _hover={{
-                transform: "scale(1.05)",
-                "&::before": {
-                  content: '""',
-                  display: "block",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "65%",
-                  background:
-                    "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
-                  borderRadius: "lg",
-                  opacity: 0.8,
-                },
-              }}
-            >
-              <Heading
-                position="absolute"
-                bottom="120px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="bold"
-              >
-                Dubai Airport Freezone
-              </Heading>
-              <Text
-                position="absolute"
-                bottom="80px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="medium"
-              >
-                Digital Marketing
-              </Text>
-              <Button
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                borderRadius="20px"
-                color="#000"
-                position="absolute"
-                bottom="30px"
-                left="20px"
-                variant="solid"
-                onClick={() =>
-                  router.push("/case-study/dubai-airport-freezone")
-                }
-              >
-                Case Study
-              </Button>
-            </Box>
+            <CaseStudySlide
+              img="/assets/image/caseStudy/caseStudy1.jpg"
+              name="Dubai Airport Freezone"
+              service="Digital Marketing"
+              topic="Case Study"
+              loc="dubai-airport-freezone"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              w="320px"
-              h="450px"
-              bgImage="/assets/image/caseStudy/caseStudy9.jpg"
-              bgRepeat="no-repeat"
-              bgPosition="center"
-              bgSize="cover"
-              borderRadius="lg"
-              position="relative"
-              margin={"auto"}
-              transition="transform 0.3s ease-in-out"
-              // _hover={{ transform: "scale(1.05)" }}
-              _hover={{
-                transform: "scale(1.05)",
-                "&::before": {
-                  content: '""',
-                  display: "block",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "65%",
-                  background:
-                    "linear-gradient(to bottom, #FFDE11, rgba(255,222,17,0))",
-                  borderRadius: "lg",
-                  opacity: 0.8,
-                },
-              }}
-            >
-              <Heading
-                position="absolute"
-                bottom="120px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="bold"
-              >
-                Snaidro Kitchen
-              </Heading>
-              <Text
-                position="absolute"
-                bottom="80px"
-                left="20px"
-                color="white"
-                fontSize="2xl"
-                fontWeight="medium"
-              >
-                Digital Marketing
-              </Text>
-              <Button
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                borderRadius="20px"
-                color="#000"
-                position="absolute"
-                bottom="30px"
-                left="20px"
-                variant="solid"
-                onClick={() => router.push("/case-study/snaidero-kitchen")}
-              >
-                Case Study
-              </Button>
-            </Box>
+            <CaseStudySlide
+              img="/assets/image/caseStudy/caseStudy9.jpg"
+              name="Snaidro Kitchen"
+              service="Digital Marketing"
+              topic="Case Study"
+              loc="snaidero-kitchen"
+            />
           </SwiperSlide>
         </Swiper>
       </FadeUp>
