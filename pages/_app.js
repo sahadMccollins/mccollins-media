@@ -4,8 +4,8 @@ import "../styles/globals.css";
 import { SessionProvider } from "next-auth/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-// import TagManager from "react-gtm-module";
-// import { useEffect } from "react";
+import TagManager from "react-gtm-module";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
@@ -139,17 +139,17 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   };
   const { title, description } = metaData[router.pathname.toString()] || {};
 
-  // useEffect(() => {
-  //   TagManager.initialize({ gtmId: "GTM-KK6CH2S" });
-  //   router.events.on("routeChangeComplete", (url) => {
-  //     TagManager.dataLayer({
-  //       dataLayer: {
-  //         pagePath: url,
-  //       },
-  //       dataLayerName: "PageDataLayer",
-  //     });
-  //   });
-  // }, []);
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-KK6CH2S" });
+    router.events.on("routeChangeComplete", (url) => {
+      TagManager.dataLayer({
+        dataLayer: {
+          pagePath: url,
+        },
+        dataLayerName: "PageDataLayer",
+      });
+    });
+  }, []);
 
   return (
     <>

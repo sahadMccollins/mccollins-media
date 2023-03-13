@@ -5,7 +5,7 @@ export default function Document() {
     <Html>
       <Head>
         {/* Google Tag Manager */}
-        {/* <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,7 +15,7 @@ export default function Document() {
           })(window,document,'script','dataLayer','GTM-KK6CH2S');
               `,
           }}
-        /> */}
+        />
         {/* End Google Tag Manager */}
 
         <link
@@ -28,14 +28,14 @@ export default function Document() {
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}
-        {/* <noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KK6CH2S"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript> */}
+        </noscript>
         {/* End Google Tag Manager (noscript) */}
         <Main />
         <NextScript />
