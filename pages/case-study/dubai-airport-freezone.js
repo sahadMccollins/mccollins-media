@@ -1,16 +1,10 @@
-import { Box, Container, Divider, Flex, Heading, Text } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import React, { useState } from "react";
+import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import React from "react";
 import CaseStudy from "../../components/CaseStudy";
 import CaseStudyBanner from "../../components/caseStudyBanner";
 import FadeUp from "../../components/Motion/FadeUp";
-const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
-import "../../node_modules/react-modal-video/css/modal-video.min.css";
 
 function CaseStudyPage() {
-  const [isOpen, setOpen] = useState(false);
-
   return (
     <>
       <CaseStudyBanner
@@ -140,7 +134,7 @@ function CaseStudyPage() {
           Digitalization of the brand - DAFZA. Automated process for DAFZA
           Stakeholders.
         </Text>
-        <Box mt={5}>
+        {/* <Box mt={5}>
           <img
             src="/assets/image/caseStudy/feed (4).jpg"
             alt="mccollins media"
@@ -148,7 +142,7 @@ function CaseStudyPage() {
             objectFit="cover"
             objectPosition="center"
           />
-        </Box>
+        </Box> */}
 
         <Box mt={{ base: 10, md: 20 }} textAlign="center">
           <Heading color={"#FFDE11"} fontSize="25px" as={"h5"}>

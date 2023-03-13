@@ -1,16 +1,9 @@
-import { Box, Container, Divider, Flex, Heading, Text } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import React, { useState } from "react";
+import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import CaseStudy from "../../components/CaseStudy";
 import CaseStudyBanner from "../../components/caseStudyBanner";
 import FadeUp from "../../components/Motion/FadeUp";
-const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
-import "../../node_modules/react-modal-video/css/modal-video.min.css";
 
 function CaseStudyPage() {
-  const [isOpen, setOpen] = useState(false);
-
   return (
     <>
       <CaseStudyBanner
