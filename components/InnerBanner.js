@@ -24,9 +24,10 @@ const InnerBanner = (props) => {
               color="#000"
               fontWeight="black"
             >
-              {props.heading.split("\n").map((str) => (
-                <div key={str}>{str}</div>
-              ))}
+              {props.heading &&
+                props.heading
+                  .split("\n")
+                  .map((str) => <div key={str}>{str}</div>)}
             </Heading>
             <Box
               position={"absolute"}
