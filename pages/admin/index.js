@@ -15,10 +15,10 @@ const Index = ({ blog, portfolio, testimonials }) => {
   const { data: session } = useSession();
   const router = useRouter();
 
-  // if (!session) {
-  //   router.push("/admin/login");
-  //   return <p>Loading...</p>;
-  // }
+  if (!session) {
+    router.push("/admin/login");
+    return <p>Loading...</p>;
+  }
 
   return (
     <Stack width={"100%"}>
