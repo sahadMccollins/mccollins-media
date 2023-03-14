@@ -78,6 +78,27 @@ const FormBox = (props) => {
         isClosable: true,
       })
     );
+
+    let formData = new FormData();
+    formData.append("Firstname", FirstName);
+    formData.append("Lastname", LastName);
+    formData.append("Email", email);
+    formData.append("Phone", contact);
+    formData.append("Company", company);
+    formData.append("Services", checkedItemsString);
+    formData.append("jobTitle", jobTitle);
+    formData.append("Message", text);
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
   };
   return (
     <Box width={"100%"} mt="50px">

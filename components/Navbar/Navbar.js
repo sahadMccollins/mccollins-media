@@ -53,6 +53,7 @@ const Navbar = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
+  const [company, setCompany] = useState("");
   const [lookingFor, setLookingFor] = useState("");
   const [project, setProject] = useState("");
 
@@ -70,11 +71,12 @@ const Navbar = (props) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: name,
+        firstName: name,
         email: email,
         contact: contact,
-        lookingFor: lookingFor,
-        project: project,
+        company: company,
+        services: lookingFor,
+        text: project,
       }),
     };
     fetch("/api/form-submit", requestOptions).then(
@@ -83,6 +85,7 @@ const Navbar = (props) => {
       setContact(""),
       setEmail(""),
       setLookingFor(""),
+      setCompany(""),
       setProject(""),
       setLoading(false),
       toast({
@@ -94,6 +97,25 @@ const Navbar = (props) => {
       }),
       onClose2()
     );
+
+    let formData = new FormData();
+    formData.append("Firstname", name);
+    formData.append("Email", email);
+    formData.append("Phone", contact);
+    formData.append("Company", company);
+    formData.append("Services", lookingFor);
+    formData.append("Message", project);
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
   };
 
   useEffect(() => {
@@ -854,7 +876,7 @@ const Navbar = (props) => {
           <form onSubmit={formHandler}>
             <ModalBody>
               <FormControl isRequired>
-                <FormLabel htmlFor="first-name">First Name</FormLabel>
+                <FormLabel htmlFor="first-name">Name</FormLabel>
                 <Input
                   id="first-name"
                   onChange={(e) => setName(e.target.value)}
@@ -879,6 +901,15 @@ const Navbar = (props) => {
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+              <FormControl isRequired mt={5}>
+                <FormLabel htmlFor="looking-for">Company</FormLabel>
+                <Input
+                  id="looking-for"
+                  onChange={(e) => setCompany(e.target.value)}
+                  value={company}
                   borderRadius={"50px"}
                 />
               </FormControl>
