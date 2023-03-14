@@ -140,15 +140,19 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const { title, description } = metaData[router.pathname.toString()] || {};
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-KK6CH2S" });
-    router.events.on("routeChangeComplete", (url) => {
-      TagManager.dataLayer({
-        dataLayer: {
-          pagePath: url,
-        },
-        dataLayerName: "PageDataLayer",
+    const timer = setTimeout(() => {
+      TagManager.initialize({ gtmId: "GTM-KK6CH2S" });
+      router.events.on("routeChangeComplete", (url) => {
+        TagManager.dataLayer({
+          dataLayer: {
+            pagePath: url,
+          },
+          dataLayerName: "PageDataLayer",
+        });
       });
-    });
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
