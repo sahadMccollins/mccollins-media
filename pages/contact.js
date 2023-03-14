@@ -7,6 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import FormBox from "../components/FormBox";
 import HeroBanner from "../components/HeroBanner";
 import FadeUp from "../components/Motion/FadeUp";
@@ -42,9 +43,13 @@ const Contact = () => {
                       Contact
                     </Heading>
                     <Text fontWeight={"bold"} fontSize={"20px"} mt={5} mb={10}>
-                      Mobile: +971 4 445 6848
+                      Mobile:{" "}
+                      <Link href="tel:+97144456848">+971 4 445 6848</Link>
                       <br />
-                      E-Mail: info@mccollinsmedia.com
+                      E-Mail:{" "}
+                      <Link href="mailto:info@mccollinsmedia.com">
+                        info@mccollinsmedia.com
+                      </Link>
                     </Text>
                   </Box>
                 </FadeUp>
