@@ -1,9 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 
 export default function Document() {
-  const router = useRouter();
+  // const router = useRouter();
   // useEffect(() => {
   //   (function (w, d, s, l, i) {
   //     w[l] = w[l] || [];
