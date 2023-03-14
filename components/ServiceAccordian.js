@@ -137,7 +137,7 @@ const ServiceAccordian = () => {
                   <AccItem
                     name="Film"
                     content="Creating multimedia content that works for your brand. Our team of in-house content producers work on Photography, Videography and Motion Graphics"
-                    url="content-production"
+                    url="film"
                   />
                 </FadeUp>
               </div>
