@@ -18,12 +18,15 @@ import {
   Text,
   Link as chakraLink,
   useToast,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
 const Footer = () => {
+  const [isSmallerThan400] = useMediaQuery("(max-width: 400px)");
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
@@ -295,8 +298,9 @@ const Footer = () => {
             />
           </Box>
           <Box mt={"30px"}>
-            <Text color={"#fff"} fontSize="12px">
+            <Text color={"#fff"} fontSize="12px" textAlign={"center"}>
               © 2023 All Rights Reserved
+              {isSmallerThan400 && <br />}
               <span style={{ color: "#FFDE11", cursor: "pointer" }}>
                 &nbsp; McCollins Media
               </span>
