@@ -11,8 +11,10 @@ import React from "react";
 import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import ClientsLogo from "../../components/ClientsLogo";
+import { useRouter } from "next/router";
 
 const foodAndBeverageMarketing = () => {
+  const router = useRouter();
   return (
     <Stack>
       <Container maxWidth={"7xl"}>
