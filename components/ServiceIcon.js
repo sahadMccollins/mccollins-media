@@ -111,11 +111,11 @@ const ServiceIcon = () => {
                 </Text>
               </Box>
             </SwiperSlide>
-            {/* <SwiperSlide>
+            <SwiperSlide>
               <Box
-                onClick={() =>
-                  router.push("/services/web-design-and-development/react")
-                }
+                // onClick={() =>
+                //   router.push("/services/web-design-and-development/react")
+                // }
                 className="icon"
               >
                 <Image
@@ -137,9 +137,9 @@ const ServiceIcon = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Box
-                onClick={() =>
-                  router.push("/services/web-design-and-development/magento")
-                }
+                // onClick={() =>
+                //   router.push("/services/web-design-and-development/magento")
+                // }
                 className="icon"
               >
                 <Image
@@ -158,7 +158,7 @@ const ServiceIcon = () => {
                   Magento
                 </Text>
               </Box>
-            </SwiperSlide> */}
+            </SwiperSlide>
           </Swiper>
         </FadeUp>
       </Container>
