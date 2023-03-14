@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export default function Document() {
   const router = useRouter();
   useEffect(() => {
-    if (router.pathname.startsWith("/admin")) {
+    if (router.pathname.includes("/admin")) {
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
