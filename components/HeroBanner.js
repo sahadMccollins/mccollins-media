@@ -29,6 +29,7 @@ const HeroBanner = (props) => {
         <ZoomOut>
           <Chakraimage
             src={props.img}
+            alt="mccollins media banner image"
             width="100vw"
             height={"100vh"}
             minHeight={isLargerThan780 ? "600px" : "500px"}

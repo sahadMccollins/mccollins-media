@@ -40,6 +40,7 @@ const CaseStudySlide = (props) => {
     >
       <Image
         src={props.img}
+        alt="Mccollins Media"
         layout="fill"
         objectFit="cover"
         style={{ borderRadius: "10px" }}
