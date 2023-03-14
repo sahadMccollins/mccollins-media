@@ -23,7 +23,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
-const Footer = (props) => {
+const Footer = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
@@ -85,12 +85,6 @@ const Footer = (props) => {
             <Tabs color={"#fff"} mt="5">
               <TabList>
                 <Tab fontSize={"xl"}>Our Address</Tab>
-                {/* <Tab
-                  fontSize={"xl"}
-                  display={props.hideIndia ? "none" : "block"}
-                >
-                  India Office.
-                </Tab> */}
               </TabList>
               <TabPanels>
                 <TabPanel pl={"0"}>

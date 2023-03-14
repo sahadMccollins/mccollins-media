@@ -6,7 +6,7 @@ const InnerLayout = ({ children, color, hideIndia }) => {
     <>
       <Navbar color={color ? color : "black"} />
       <div>{children}</div>
-      <Footer hideIndia={hideIndia} />
+      <Footer />
     </>
   );
 };
