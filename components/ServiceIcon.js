@@ -25,7 +25,7 @@ const ServiceIcon = () => {
         <FadeUp>
           <Swiper
             spaceBetween={20}
-            slidesPerView={isLargerThan780 ? 3 : 1}
+            slidesPerView={isLargerThan780 ? 5 : 1}
             loop={isLargerThan780 ? false : true}
             ref={swiperRef}
             autoplay={{
