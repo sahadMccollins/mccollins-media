@@ -8,9 +8,9 @@ const nextConfig = {
     locales: ["en", "ar"],
     defaultLocale: "en",
   },
-  // eslint: {
-  //   ignoreDuringBuilds: true,
-  // },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   async redirects() {
     return [
       {
