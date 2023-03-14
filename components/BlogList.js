@@ -10,8 +10,9 @@ const BlogList = (props) => {
         alt="McCollins Media"
         src={props.img}
         width="355px"
-        height={"426px"}
+        height={"200px"}
         objectFit="cover"
+        style={{ borderRadius: "10px" }}
       />
       <Heading fontSize={"2xl"} pr="60px" height={"90px"}>
         {props.heading}

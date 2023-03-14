@@ -100,6 +100,38 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/find-the-best-web-development-company",
+        destination: "/blog/find-the-best-web-development-company",
+        permanent: true,
+      },
+      {
+        source: "/web-design-trends-for-2022",
+        destination: "/blog/web-design-trends-for-2022",
+        permanent: true,
+      },
+      {
+        source: "/5-Trends-that-will-fuel-e-commerce-businesses-in-2022",
+        destination:
+          "/blog/5-Trends-that-will-fuel-e-commerce-businesses-in-2022",
+        permanent: true,
+      },
+      {
+        source: "/How-to-plan-your-Digital-Marketing-Budget-for-2022",
+        destination: "/blog/How-to-plan-your-Digital-Marketing-Budget-for-2022",
+        permanent: true,
+      },
+      {
+        source: "/5-Questions-you-must-ask-your-customer",
+        destination: "/blog/5-Questions-you-must-ask-your-customer",
+        permanent: true,
+      },
+      {
+        source: "/Social-Media-Trends-in-2022---What-the-next-year-looks-like",
+        destination:
+          "/blog/Social-Media-Trends-in-2022---What-the-next-year-looks-like",
+        permanent: true,
+      },
     ];
   },
 };
