@@ -64,6 +64,7 @@ const foodAndBeverageMarketing = () => {
               borderRadius="20px"
               color="#000"
               mt={"5"}
+              onClick={() => router.push("/contact")}
             >
               <Image
                 alt="McCollins Media"
