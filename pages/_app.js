@@ -150,7 +150,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           dataLayerName: "PageDataLayer",
         });
       });
-    }, 500);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);

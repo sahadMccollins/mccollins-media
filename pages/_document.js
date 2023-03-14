@@ -14,7 +14,7 @@ export default function Document() {
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-KK6CH2S");
-    }, 500);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
