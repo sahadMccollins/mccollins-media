@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 
 export default function Document() {
   const router = useRouter();
-  useEffect(() => {
-    if (router.pathname.includes("/admin")) {
+  if (router.pathname.includes("/admin")) {
+    useEffect(() => {
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -17,8 +17,8 @@ export default function Document() {
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-KK6CH2S");
-    }
-  }, []);
+    }, []);
+  }
   return (
     <Html>
       <Head>
