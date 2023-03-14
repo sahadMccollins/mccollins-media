@@ -905,9 +905,9 @@ const Navbar = (props) => {
                 />
               </FormControl>
               <FormControl isRequired mt={5}>
-                <FormLabel htmlFor="looking-for">Company</FormLabel>
+                <FormLabel htmlFor="company">Company</FormLabel>
                 <Input
-                  id="looking-for"
+                  id="company"
                   onChange={(e) => setCompany(e.target.value)}
                   value={company}
                   borderRadius={"50px"}
