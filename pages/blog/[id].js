@@ -14,6 +14,7 @@ import Image from "next/image";
 import { EditorState, convertFromRaw, Editor } from "draft-js";
 import { TbFolders, TbCalendar } from "react-icons/tb";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Blog = ({ blog, recentPost }) => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -32,6 +33,11 @@ const Blog = ({ blog, recentPost }) => {
 
   return (
     <Stack>
+      <Head>
+        <title>{blog.title}</title>
+        <meta name="description" content={blog.description} />
+        <meta name="keywords" content={blog.keywords} />
+      </Head>
       <Container maxWidth={"7xl"}>
         <Flex
           mt="-50px"

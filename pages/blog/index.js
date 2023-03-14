@@ -17,6 +17,7 @@ import BlogList from "../../components/BlogList";
 import clientPromise from "../../lib/mongodb";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Index = ({ blogs }) => {
   const router = useRouter();
