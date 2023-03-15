@@ -14,7 +14,7 @@ const ClientsLogo = () => {
     <Stack
       background={"#FFDE11"}
       position="relative"
-      style={{ marginTop: "-10px !important" }}
+      className={"clientsLogoStack"}
     >
       <Container maxWidth={"7xl"} py="20">
         <Box

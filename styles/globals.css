@@ -886,3 +886,8 @@ content: counter(step-counter);
   }
 
 }
+
+
+body .clientsLogoStack {
+  margin-top: 0 !important;
+}
