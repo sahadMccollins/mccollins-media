@@ -141,7 +141,7 @@ const Footer = () => {
                 p={3}
                 pl={0}
                 as={chakraLink}
-                href="https://vm.tiktok.com/ZSJShjmYH/"
+                href="https://www.tiktok.com/@mccollinsmedia"
                 target="_blank"
               >
                 <Image

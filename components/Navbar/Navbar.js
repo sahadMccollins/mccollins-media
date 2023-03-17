@@ -226,7 +226,7 @@ const Navbar = (props) => {
                   <Box
                     mb={3}
                     as={ChakraLink}
-                    href="https://vm.tiktok.com/ZSJShjmYH/"
+                    href="https://www.tiktok.com/@mccollinsmedia"
                     target="_blank"
                   >
                     <Image
@@ -749,7 +749,7 @@ const Navbar = (props) => {
                       <Box
                         mb={3}
                         as={ChakraLink}
-                        href="https://vm.tiktok.com/ZSJShjmYH/"
+                        href="https://www.tiktok.com/@mccollinsmedia"
                         target="_blank"
                       >
                         <Image

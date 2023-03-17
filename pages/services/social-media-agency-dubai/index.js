@@ -20,6 +20,7 @@ import VideoCaseStudy from "../../../components/VideoCaseStudy";
 import ZoomInWithBounce from "../../../components/Motion/ZoomInWithBounce";
 import FadeUp from "../../../components/Motion/FadeUp";
 import IntrestedInBox from "../../../components/IntrestedInBox";
+import CaseStudy from "../../../components/CaseStudy";
 
 const SocialMediaMarketing = () => {
   const router = useRouter();
@@ -264,11 +265,13 @@ const SocialMediaMarketing = () => {
         smallHeading="social media designs"
         subHeading="sneak peak into our social media marketing projects"
         content="Have a look at some of the Social Media Marketing work we have done for our clients over these years"
-      />
-      <CaseStudy /> */}
-      <Box mt={10}>
-        <VideoCaseStudy />
+      />*/}
+      <Box textAlign="center">
+        <Heading as={"h3"} my={10} className="main-h2">
+          Case Study
+        </Heading>
       </Box>
+      <CaseStudy />
       <Stack bg={"#fff"}>
         <Container maxWidth={"7xl"} py="50" zIndex={2} position="relative">
           <Flex direction={{ base: "column", md: "row" }}>
