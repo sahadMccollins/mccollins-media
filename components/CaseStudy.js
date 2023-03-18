@@ -99,24 +99,27 @@ const CaseStudy = () => {
     const direction = e.deltaY > 0 ? "next" : "prev";
     e.stopPropagation();
     e.preventDefault();
-    console.log(direction);
-    const swiperSld = document.querySelector(".swiper").swiper;
-    if (direction === "next") {
-      swiperSld.slideNext();
-    } else {
-      swiperSld.slidePrev();
+    if (document) {
+      const swiperSld = document.querySelector(".swiper").swiper;
+      if (direction === "next") {
+        swiperSld.slideNext();
+      } else {
+        swiperSld.slidePrev();
+      }
     }
   };
 
-  var swiperDiv = document.querySelector("#swiperDiv");
-  if (swiperDiv) {
-    swiperDiv.addEventListener(
-      "wheel",
-      function (e) {
-        e.preventDefault();
-      },
-      { passive: false }
-    );
+  if (document) {
+    var swiperDiv = document.querySelector("#swiperDiv");
+    if (swiperDiv) {
+      swiperDiv.addEventListener(
+        "wheel",
+        function (e) {
+          e.preventDefault();
+        },
+        { passive: false }
+      );
+    }
   }
 
   return (
