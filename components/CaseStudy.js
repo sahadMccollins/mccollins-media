@@ -99,7 +99,7 @@ const CaseStudy = () => {
     const direction = e.deltaY > 0 ? "next" : "prev";
     e.stopPropagation();
     e.preventDefault();
-    if (typeof document !== "undefined") {
+    if (typeof window !== "undefined") {
       const swiperSld = document.querySelector(".swiper").swiper;
       if (direction === "next") {
         swiperSld.slidePrev();
@@ -109,7 +109,7 @@ const CaseStudy = () => {
     }
   };
 
-  if (typeof document !== "undefined") {
+  if (typeof window !== "undefined") {
     var swiperDiv = document.querySelector("#swiperDiv");
     if (swiperDiv) {
       swiperDiv.addEventListener(
