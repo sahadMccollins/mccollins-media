@@ -89,8 +89,43 @@ const CaseStudy = () => {
   const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
   const [isLargerThan1250] = useMediaQuery("(min-width: 1250px)");
 
+  let swiperInstance = null;
+
+  const onSwiper = (swiper) => {
+    swiperInstance = swiper;
+  };
+
+  const handleMousewheel = (e) => {
+    const direction = e.deltaY > 0 ? "next" : "prev";
+    e.stopPropagation();
+    e.preventDefault();
+    console.log(direction);
+    const swiperSld = document.querySelector(".swiper").swiper;
+    if (direction === "next") {
+      swiperSld.slideNext();
+    } else {
+      swiperSld.slidePrev();
+    }
+  };
+
+  var swiperDiv = document.querySelector("#swiperDiv");
+  if (swiperDiv) {
+    swiperDiv.addEventListener(
+      "wheel",
+      function (e) {
+        e.preventDefault();
+      },
+      { passive: false }
+    );
+  }
+
   return (
-    <Box className="swiper-container caseStudySwiper" pb={"50px"}>
+    <Box
+      className="swiper-container caseStudySwiper"
+      pb={"50px"}
+      onWheel={handleMousewheel}
+      id="swiperDiv"
+    >
       <FadeUp>
         <Swiper
           modules={[Pagination]}
@@ -100,6 +135,8 @@ const CaseStudy = () => {
           pagination={{ clickable: true }}
           loop={true}
           initialSlide={5}
+          forceToAxis={true}
+          onSwiper={onSwiper}
         >
           <SwiperSlide>
             <CaseStudySlide
