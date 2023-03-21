@@ -870,7 +870,7 @@ const Navbar = (props) => {
       <Modal isOpen={isOpen2} onClose={onClose2}>
         <ModalOverlay />
         <ModalContent maxWidth={{ base: "90%", md: "60%" }}>
-          <ModalHeader>Lets talk</ModalHeader>
+          <ModalHeader className="main-h3">Lets talk</ModalHeader>
           <ModalCloseButton />
 
           <form onSubmit={formHandler}>

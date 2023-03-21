@@ -40,7 +40,7 @@ const Index = ({ blogs }) => {
               width: "fit-content",
               padding: "0 5px",
             }}
-            fontWeight="black"
+            className="main-h2"
           >
             LATEST BLOG
           </Heading>
@@ -63,15 +63,16 @@ const Index = ({ blogs }) => {
               ml={{ base: "0", md: 20 }}
               alignSelf="center"
               mb={"5"}
+              textAlign={{ base: "center", md: "left" }}
             >
-              <Heading fontSize={"5xl"}>{blogs[0].title}</Heading>
+              <Heading className="main-h2">{blogs[0].title}</Heading>
               <Box my={5} display="flex">
                 <Text
-                  fontSize={"2xl"}
                   bg="#393838"
                   width={"fit-content"}
                   color="#fff"
                   p={"5px 30px 5px 20px"}
+                  margin={{ base: "auto", md: "unset" }}
                 >
                   {blogs[0].date}
                 </Text>
@@ -92,7 +93,6 @@ const Index = ({ blogs }) => {
                 background={"#FFDE11"}
                 borderRadius="20px"
                 color="#000"
-                mt={7}
                 fontWeight="bold"
                 onClick={() => {
                   router.push(`/blog/${blogs[0].blogUrl}`);

@@ -9,7 +9,7 @@ const IntrestedInBox = () => {
     <Box className="creative-head" pb={10}>
       <Heading
         as={"h4"}
-        fontSize={{ base: "25px", md: "50px" }}
+        className="main-h2"
         pt="20"
         textAlign="center"
         color={"#FFDE11"}

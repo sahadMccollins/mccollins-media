@@ -50,14 +50,10 @@ const foodAndBeverageMarketing = () => {
                 priority={true}
               />
             </Box>
-            <Heading fontSize={"50px"} color="#FFDE11">
+            <Heading className="main-h2" color="#FFDE11">
               our services
             </Heading>
-            <Heading
-              fontSize={{ base: "55px", md: "80px" }}
-              color="#000"
-              fontWeight="black"
-            >
+            <Heading className="bnrBigHd" color="#000" fontWeight="black">
               food & <br /> beverage <br /> marketing
             </Heading>
             <Button
@@ -77,13 +73,7 @@ const foodAndBeverageMarketing = () => {
               />
               &nbsp;&nbsp;contact us
             </Button>
-            <Text
-              mt="10"
-              fontSize={{ base: "18px", md: "18px" }}
-              fontWeight="bold"
-              color={"#6F6F6F"}
-              pr="5"
-            >
+            <Text mt="10" fontWeight="bold" color={"#6F6F6F"} pr="5">
               the food and beverage industry has been booming in recent years.
               While the target market for this industry changes from brand to
               brand, the strategies used are more or less the same.
@@ -124,8 +114,8 @@ const foodAndBeverageMarketing = () => {
               </Box>
             </Box>
             <Box width={{ base: "100%", md: "60%" }} p={10}>
-              <Box fontSize={"9xl"}>
-                <Heading>ONE OF THE MOST </Heading>
+              <Box>
+                <Heading className="main-h3">ONE OF THE MOST </Heading>
                 <Flex direction={{ base: "column", lg: "row" }}>
                   <Heading
                     style={{
@@ -134,7 +124,7 @@ const foodAndBeverageMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     FAMOUS AND
                   </Heading>
@@ -145,12 +135,12 @@ const foodAndBeverageMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     IN-DEMAND
                   </Heading>
                 </Flex>
-                <Heading>INDUSTRIES IN THE WORLD,</Heading>
+                <Heading className="main-h3">INDUSTRIES IN THE WORLD,</Heading>
               </Box>
               <Text mt={10}>
                 the food and beverage industry has been booming in recent years.
@@ -187,7 +177,7 @@ const foodAndBeverageMarketing = () => {
           <Heading
             color={"#ffde11"}
             textAlign="center"
-            fontSize={"6xl"}
+            className="main-h2"
             mt={"20"}
           >
             digital marketing services
@@ -196,16 +186,22 @@ const foodAndBeverageMarketing = () => {
             textAlign={"center"}
             fontSize="2xl"
             fontWeight={"bold"}
-            mt="7"
+            mt="5"
             px={{ base: "0", md: "15%" }}
           >
             although there are many methods that can be used to market a food
             and beverage brand successfully, here are some services that we
             swear by:
           </Text>
-          <Flex mt={10} direction={{ base: "column", md: "row" }}>
+          <Flex
+            mt={10}
+            direction={{ base: "column", md: "row" }}
+            alignItems="center"
+          >
             <Box width={{ base: "100%", md: "50%" }} pr={{ base: "0", md: 20 }}>
-              <Heading mt={4}>CONTENT MARKETING AND ENGAGEMENT</Heading>
+              <Heading mt={4} className="main-h3">
+                Content Marketing & Engagement
+              </Heading>
               <Box
                 my={4}
                 background="#FFDE11"
@@ -225,7 +221,9 @@ const foodAndBeverageMarketing = () => {
                 customer want to look at it. And with such wonderful brands in
                 our kitty, we know what content will work the best.
               </Text>
-              <Heading mt={4}>Website Design and Development</Heading>
+              <Heading mt={4} className="main-h3">
+                Website Design and Development
+              </Heading>
               <Box
                 my={4}
                 background="#FFDE11"
@@ -234,7 +232,7 @@ const foodAndBeverageMarketing = () => {
                 fontWeight="bold"
                 fontSize={"1xl"}
               >
-                <Text>creating content that tells a story</Text>
+                {/* <Text>creating content that tells a story</Text> */}
               </Box>
               <Text>
                 Are you introducing a new juice or a new food item into the
@@ -243,7 +241,9 @@ const foodAndBeverageMarketing = () => {
                 customer want to look at it. And with such wonderful brands in
                 our kitty, we know what content will work the best.
               </Text>
-              <Heading mt={4}>Branding</Heading>
+              <Heading mt={4} className="main-h3">
+                Branding
+              </Heading>
               <Box
                 my={4}
                 background="#FFDE11"
@@ -290,9 +290,15 @@ const foodAndBeverageMarketing = () => {
               </Box>
             </Box>
           </Flex>
-          <Flex mt={20} direction={{ base: "column", md: "row-reverse" }}>
+          <Flex
+            mt={20}
+            direction={{ base: "column", md: "row-reverse" }}
+            alignItems="center"
+          >
             <Box width={{ base: "100%", md: "50%" }} pr={{ base: "0", md: 20 }}>
-              <Heading mt={4}>SOCIAL MEDIA MARKETING</Heading>
+              <Heading mt={4} className="main-h3">
+                Social Media Marketing
+              </Heading>
               <Box
                 my={4}
                 background="#FFDE11"
@@ -315,7 +321,9 @@ const foodAndBeverageMarketing = () => {
                 Media helps build the NEED for a customer to order in that
                 burger or dine at a restaurant for the story that you sell.
               </Text>
-              <Heading mt={4}>PERFORMANCE MARKETING</Heading>
+              <Heading mt={4} className="main-h3">
+                Performance Marketing
+              </Heading>
               <Box
                 my={4}
                 background="#FFDE11"
@@ -364,10 +372,14 @@ const foodAndBeverageMarketing = () => {
               </Box>
             </Box>
           </Flex>
-          <Flex my={20} direction={{ base: "column", md: "row" }}>
+          <Flex
+            my={20}
+            direction={{ base: "column", md: "row" }}
+            alignItems="center"
+          >
             <Box width={{ base: "100%", md: "50%" }} pr={{ base: "0", md: 20 }}>
-              <Heading mt={4}>
-                BLOGGER COLLABORATION AND INFLUENCE MARKETING
+              <Heading mt={4} className="main-h3">
+                Blogger Collaboration & Influence Marketing
               </Heading>
               <Box
                 my={4}

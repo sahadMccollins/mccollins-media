@@ -60,7 +60,7 @@ const Film = () => {
             <Box width={{ base: "100%", md: "50%" }} mr={{ base: 0, md: 10 }}>
               <Box display={"flex"}>
                 <FadeUp>
-                  <Heading>
+                  <Heading className="main-h2">
                     CONTENT <br />
                     PRODUCTION
                   </Heading>
@@ -421,6 +421,7 @@ const Film = () => {
             textAlign={"center"}
             bg={"#F7F7F7"}
             style={{ marginBottom: "-35px", paddingTop: "30px", zIndex: 9 }}
+            className="main-h2"
           >
             Key Services
           </Heading>
@@ -435,7 +436,7 @@ const Film = () => {
       <Container maxWidth={"6xl"} style={{ margin: "auto" }}>
         <Box>
           <FadeUp>
-            <Heading mt={10} textAlign={"center"}>
+            <Heading className="main-h2" mt={10} textAlign={"center"}>
               Creating Content that tells a story
             </Heading>
           </FadeUp>

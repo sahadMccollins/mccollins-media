@@ -56,7 +56,7 @@ const TechnologyMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     MARKETING
                   </Heading>
@@ -68,11 +68,14 @@ const TechnologyMarketing = () => {
                       padding: "0 5px",
                     }}
                     fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     EXPERTS
                   </Heading>
                 </Flex>
-                <Heading fontSize="4xl">WITHIN THE TECHNOLOGY SECTOR</Heading>
+                <Heading className="main-h3">
+                  WITHIN THE TECHNOLOGY SECTOR
+                </Heading>
               </Box>
               <Text mt={10}>
                 The world today revolves around technology. From a simple task
@@ -115,7 +118,9 @@ const TechnologyMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Social Media Marketing</Heading>
+                <Heading mt={4} className="main-h3">
+                  Social Media Marketing
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -147,7 +152,9 @@ const TechnologyMarketing = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading mt={4}>Content Marketing</Heading>
+                <Heading mt={4} className="main-h3">
+                  Content Marketing
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -207,7 +214,9 @@ const TechnologyMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Website Design and Development</Heading>
+                <Heading mt={4} className="main-h3">
+                  Website Design and Development
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"

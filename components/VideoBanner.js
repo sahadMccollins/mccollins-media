@@ -39,17 +39,6 @@ const VideoBanner = (props) => {
         minHeight={"700px"}
         overflow={"hidden"}
       >
-        {/* <video
-          muted
-          loop
-          width="100%"
-          className="video-banner"
-          ref={videoRef}
-          poster={isSmallerThan780 && props.poster}
-        >
-          <source src={props.video} type="video/mp4" />
-        </video> */}
-
         <video
           playsInline
           autoPlay
@@ -77,14 +66,10 @@ const VideoBanner = (props) => {
           >
             <Box width={"100%"}>
               <FadeUp>
-                <Heading fontSize={"50px"} color="#FFDE11">
+                <Heading className="main-h2" color="#FFDE11">
                   our services
                 </Heading>
-                <Heading
-                  fontSize={{ base: "55px", md: "80px" }}
-                  color="#fff"
-                  fontWeight="black"
-                >
+                <Heading className="bnrBigHd" color="#fff" fontWeight="black">
                   {props.heading.split("\n").map((str) => (
                     <div key={str}>{str}</div>
                   ))}
@@ -110,7 +95,6 @@ const VideoBanner = (props) => {
               <FadeUp delay={"0.3"}>
                 <Text
                   mt="10"
-                  fontSize={{ base: "18px", md: "18px" }}
                   fontWeight="bold"
                   color={"#fff"}
                   pr="5"

@@ -51,11 +51,7 @@ const ServicePageAccordian = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box
-                        textAlign="left"
-                        fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-                        display="flex"
-                      >
+                      <Box textAlign="left" className="main-h3" display="flex">
                         <span
                           style={{
                             width: "30px",
@@ -99,11 +95,7 @@ const ServicePageAccordian = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box
-                        textAlign="left"
-                        fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-                        display="flex"
-                      >
+                      <Box textAlign="left" className="main-h3" display="flex">
                         <span
                           style={{
                             width: "30px",
@@ -148,11 +140,7 @@ const ServicePageAccordian = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box
-                        textAlign="left"
-                        fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-                        display="flex"
-                      >
+                      <Box textAlign="left" className="main-h3" display="flex">
                         <span
                           style={{
                             width: "30px",
@@ -195,11 +183,7 @@ const ServicePageAccordian = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box
-                        textAlign="left"
-                        fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-                        display="flex"
-                      >
+                      <Box textAlign="left" className="main-h3" display="flex">
                         <span
                           style={{
                             width: "30px",
@@ -245,11 +229,7 @@ const ServicePageAccordian = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box
-                        textAlign="left"
-                        fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-                        display="flex"
-                      >
+                      <Box textAlign="left" className="main-h3" display="flex">
                         <span
                           style={{
                             width: "30px",
@@ -291,11 +271,7 @@ const ServicePageAccordian = () => {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box
-                        textAlign="left"
-                        fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-                        display="flex"
-                      >
+                      <Box textAlign="left" className="main-h3" display="flex">
                         <span
                           style={{
                             width: "30px",

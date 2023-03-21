@@ -30,7 +30,7 @@ const ServicePoint = (props) => {
               <Text className="subHeading">{props.subHeading}</Text>
             </Box>
             <Box width={{ base: "100%", md: "70%" }}>
-              <Heading fontSize={"28px"} fontWeight={"bold"}>
+              <Heading className="main-h3" fontWeight={"bold"}>
                 {props.contentHeading}
               </Heading>
               <Text mt={"10px"}>{props.content}</Text>

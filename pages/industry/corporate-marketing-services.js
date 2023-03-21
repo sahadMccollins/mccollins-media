@@ -56,7 +56,7 @@ const CorporateMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", lg: "4xl" }}
+                    className="main-h3"
                   >
                     #1 CORPORATE
                   </Heading>
@@ -67,12 +67,12 @@ const CorporateMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", lg: "4xl" }}
+                    className="main-h3"
                   >
                     MARKETING
                   </Heading>
                 </Flex>
-                <Heading fontSize="4xl">AGENCY IN UAE</Heading>
+                <Heading className="main-h3">AGENCY IN UAE</Heading>
               </Box>
               <Text mt={10}>
                 When you take a company as a whole and promote its services and
@@ -103,7 +103,7 @@ const CorporateMarketing = () => {
             height={"103px"}
           />
         </Box>
-        <Box
+        {/* <Box
           style={{ position: "absolute", right: "10%" }}
           zIndex="9"
           top={{ base: "7%", md: "4%" }}
@@ -114,12 +114,12 @@ const CorporateMarketing = () => {
             width="60px"
             height={"50px"}
           />
-        </Box>
+        </Box> */}
         <Container maxWidth={"7xl"}>
           <Heading
             color={"#ffde11"}
             textAlign="center"
-            fontSize={"4xl"}
+            className="main-h3"
             pt="10"
             maxWidth="800px"
             margin={"auto"}
@@ -135,7 +135,9 @@ const CorporateMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Corporate Branding</Heading>
+                <Heading mt={4} className="main-h3">
+                  Corporate Branding
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -154,7 +156,9 @@ const CorporateMarketing = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading mt={4}>Personalized Customer Experience</Heading>
+                <Heading mt={4} className="main-h3">
+                  Personalized Customer Experience
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -176,7 +180,9 @@ const CorporateMarketing = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading mt={4}>Social Media Marketing</Heading>
+                <Heading mt={4} className="main-h3">
+                  Social Media Marketing
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -232,7 +238,9 @@ const CorporateMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Video Marketing</Heading>
+                <Heading mt={4} className="main-h3">
+                  Video Marketing
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -255,7 +263,9 @@ const CorporateMarketing = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading mt={4}>Search Engine Marketing and Google Ads</Heading>
+                <Heading mt={4} className="main-h3">
+                  Search Engine Marketing and Google Ads
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -310,7 +320,9 @@ const CorporateMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Website Development and Chatbots</Heading>
+                <Heading mt={4} className="main-h3">
+                  Website Development and Chatbots
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"

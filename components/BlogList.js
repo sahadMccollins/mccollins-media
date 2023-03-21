@@ -14,7 +14,7 @@ const BlogList = (props) => {
         objectFit="cover"
         style={{ borderRadius: "10px" }}
       />
-      <Heading fontSize={"2xl"} pr="60px" height={"90px"}>
+      <Heading fontSize={"2xl"} pr="60px" height={"90px"} overflow={"auto"}>
         {props.heading}
       </Heading>
       <Box my={5} display="flex">

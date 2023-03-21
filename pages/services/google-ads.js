@@ -159,7 +159,7 @@ const DigitalMarketingSEO = () => {
             className="sub-service"
           >
             <FadeUp>
-              <Heading as={"h5"} className="main-h5">
+              <Heading as={"h5"} className="main-h5" maxW={"400px"}>
                 Google Ad Management involves several steps, including:
               </Heading>
             </FadeUp>

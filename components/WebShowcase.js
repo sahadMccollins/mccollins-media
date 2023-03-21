@@ -79,7 +79,7 @@ const WebShowcase = () => {
                         height={"350px"}
                       />
                       <Box className="contentBox" mt={"-50px"}>
-                        <Heading as={"h4"} fontSize="2xl">
+                        <Heading as={"h4"} className="main-h5">
                           Modern Oman Bakery
                         </Heading>
                       </Box>
@@ -98,7 +98,7 @@ const WebShowcase = () => {
                         height={"350px"}
                       />
                       <Box className="contentBox" mt={"-50px"}>
-                        <Heading as={"h4"} fontSize="2xl">
+                        <Heading as={"h4"} className="main-h5">
                           Master Baker Studio
                         </Heading>
                       </Box>
@@ -117,7 +117,7 @@ const WebShowcase = () => {
                         height={"350px"}
                       />
                       <Box className="contentBox" mt={"-50px"}>
-                        <Heading as={"h4"} fontSize="2xl">
+                        <Heading as={"h4"} className="main-h5">
                           Cleaning Superstore
                         </Heading>
                       </Box>
@@ -136,7 +136,7 @@ const WebShowcase = () => {
                         height={"350px"}
                       />
                       <Box className="contentBox" mt={"-50px"}>
-                        <Heading as={"h4"} fontSize="2xl">
+                        <Heading as={"h4"} className="main-h5">
                           VOSS
                         </Heading>
                       </Box>
@@ -155,7 +155,7 @@ const WebShowcase = () => {
                         height={"350px"}
                       />
                       <Box className="contentBox" mt={"-50px"}>
-                        <Heading as={"h4"} fontSize="2xl">
+                        <Heading as={"h4"} className="main-h5">
                           Zilli Dubai
                         </Heading>
                       </Box>

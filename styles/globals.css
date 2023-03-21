@@ -94,8 +94,17 @@ p {
     margin: 0 222px;
 }
 
+.bnrBigHd {
+  font-size: 60px !important;
+}
+
 
 @media (max-width: 768px) {
+
+  
+.bnrBigHd {
+  font-size: 40px !important;
+}
   
 .h2404 {
   font-size: 40px !important;

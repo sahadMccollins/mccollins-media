@@ -15,15 +15,11 @@ const InnerBanner = (props) => {
     >
       <Box width={{ base: "100%", md: "55%" }}>
         <FadeUp>
-          <Heading fontSize={"50px"} color="#FFDE11">
+          <Heading className="main-h2" color="#FFDE11">
             {props.name ? props.name : "our services"}
           </Heading>
           <Box position="relative">
-            <Heading
-              fontSize={{ base: "55px", md: "80px" }}
-              color="#000"
-              fontWeight="black"
-            >
+            <Heading className="bnrBigHd" color="#000" fontWeight="black">
               {props.heading &&
                 props.heading
                   .split("\n")
@@ -62,13 +58,7 @@ const InnerBanner = (props) => {
           </Button>
         </FadeUp>
         <FadeUp delay={"0.3"}>
-          <Text
-            mt="10"
-            fontSize={{ base: "18px", md: "18px" }}
-            fontWeight="bold"
-            color={"#6F6F6F"}
-            pr="5"
-          >
+          <Text mt="10" fontWeight="bold" color={"#6F6F6F"} pr="5">
             {props.content}
           </Text>
         </FadeUp>

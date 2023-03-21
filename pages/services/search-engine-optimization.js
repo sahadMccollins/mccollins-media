@@ -156,7 +156,9 @@ const SEO = () => {
         heading="Technologies We work with"
         content="Transform your brand journey today. We grow brands, create experiences and solve problems."
       />
-      <SeoIcon />
+      <Box mt={"-30px !important"}>
+        <SeoIcon />
+      </Box>
       <IntrestedInBox />
       <ClientsLogo />
     </Stack>

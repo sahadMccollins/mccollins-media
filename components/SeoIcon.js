@@ -9,7 +9,7 @@ const SeoIcon = () => {
   const swiperRef = useRef(null);
   return (
     <Stack>
-      <Container maxWidth={"7xl"} pb="20">
+      <Container maxWidth={"7xl"} pb="5">
         <Swiper
           spaceBetween={20}
           slidesPerView={isLargerThan780 ? 5 : 2}

@@ -26,7 +26,6 @@ const TextBox2 = (props) => {
                 width={"fit-content"}
                 p={"0px 10% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"1xl"}
               >
                 <Text>{props.subHeading}</Text>
               </Box>

@@ -32,7 +32,7 @@ const DesignAndBrandDevelopment = () => {
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }} my={10}>
             <Box width={{ base: "100%", md: "50%" }} mr={"20"}>
-              <Heading fontWeight={"bold"} fontSize={"4xl"}>
+              <Heading fontWeight={"bold"} className="main-h3">
                 Brand Development
               </Heading>
               <Box
@@ -65,7 +65,7 @@ const DesignAndBrandDevelopment = () => {
                       "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
                   }}
                 ></span>
-                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
+                <Heading className="main-h3">
                   brand identity development
                 </Heading>
               </Box>

@@ -58,8 +58,8 @@ const WebsiteDevelopment = () => {
               mr={{ base: 0, md: 10 }}
             >
               <FadeUp>
-                <Heading className="main-h2">
-                  Develop Websites That Drive Traffic And Conversion
+                <Heading className="main-h3">
+                  Develop Websites That Drive <br /> Traffic And Conversion
                 </Heading>
               </FadeUp>
               <FadeUp>

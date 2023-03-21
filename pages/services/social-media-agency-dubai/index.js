@@ -28,7 +28,7 @@ const SocialMediaMarketing = () => {
   return (
     <Stack>
       <VideoBanner
-        heading={`social \n media \n marketing`}
+        heading={`social media \n marketing`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600385/Mccollins%20Video/Social_Media-_jmavct.mp4"
         content="Mobile First, Content Driven, Result Oriented extended marketing arm for your brand!"
         poster="/assets/image/servicePage/socialMediaMarketing.jpg"
@@ -184,7 +184,7 @@ const SocialMediaMarketing = () => {
       <Box className="creative-head" pb={10} style={{ marginTop: "50px" }}>
         <Heading
           as={"h4"}
-          fontSize={{ base: "25px", md: "50px" }}
+          className="main-h2"
           pt="20"
           textAlign="center"
           color={"#FFDE11"}

@@ -56,7 +56,7 @@ const HealthCareMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     Get a Best-
                   </Heading>
@@ -68,13 +68,13 @@ const HealthCareMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     Healthcare
                   </Heading>
                 </Flex>
 
-                <Heading fontSize="4xl">Marketing Plan</Heading>
+                <Heading className="main-h3">Marketing Plan</Heading>
               </Box>
               <Text mt={10}>
                 Be it for a hospital, medicine suppliers, or even their
@@ -135,7 +135,9 @@ const HealthCareMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Content Marketing and Lead Generation</Heading>
+                <Heading mt={4} className="main-h3">
+                  Content Marketing and Lead Generation
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -157,7 +159,9 @@ const HealthCareMarketing = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading mt={4}>Website Design and Development</Heading>
+                <Heading mt={4} className="main-h3">
+                  Website Design and Development
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -212,7 +216,9 @@ const HealthCareMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Social Media Marketing</Heading>
+                <Heading mt={4} className="main-h3">
+                  Social Media Marketing
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -237,7 +243,9 @@ const HealthCareMarketing = () => {
                 </Text>
               </Box>
               <Box>
-                <Heading mt={4}>Performance Marketing</Heading>
+                <Heading mt={4} className="main-h3">
+                  Performance Marketing
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"

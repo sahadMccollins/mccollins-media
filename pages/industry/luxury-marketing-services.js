@@ -56,7 +56,7 @@ const luxuryMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     Get a Best-
                   </Heading>
@@ -68,12 +68,12 @@ const luxuryMarketing = () => {
                       width: "fit-content",
                       padding: "0 5px",
                     }}
-                    fontSize={{ base: "3xl", md: "4xl" }}
+                    className="main-h3"
                   >
                     Luxury
                   </Heading>
                 </Flex>
-                <Heading fontSize="4xl">Marketing Plan</Heading>
+                <Heading className="main-h3">Marketing Plan</Heading>
               </Box>
               <Text mt={10}>
                 There’s a reason why luxury brands don’t advertise like the
@@ -122,9 +122,9 @@ const luxuryMarketing = () => {
           <Heading
             color={"#ffde11"}
             textAlign="center"
-            fontSize={"4xl"}
+            className="main-h3"
             pt="10"
-            maxWidth="800px"
+            maxWidth="600px"
             margin={"auto"}
           >
             The route that can be used to market a Luxury Brand are:
@@ -137,7 +137,9 @@ const luxuryMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Content Marketing and Lead Generation</Heading>
+                <Heading mt={4} className="main-h3">
+                  Content Marketing and Lead Generation
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -172,7 +174,9 @@ const luxuryMarketing = () => {
                 </ul>
               </Box>
               <Box>
-                <Heading mt={4}>Website Design and Development</Heading>
+                <Heading mt={4} className="main-h3">
+                  Website Design and Development
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"
@@ -229,7 +233,9 @@ const luxuryMarketing = () => {
               pr={{ base: "0", md: 20 }}
             >
               <Box>
-                <Heading mt={4}>Social Media Marketing</Heading>
+                <Heading mt={4} className="main-h3">
+                  Social Media Marketing
+                </Heading>
                 <Box
                   my={4}
                   background="#FFDE11"

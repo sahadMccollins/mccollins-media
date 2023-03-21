@@ -44,15 +44,12 @@ const Index = () => {
               </ZoomInWithBounce>
             </Box>
             <FadeUp>
-              <Heading fontSize={"50px"} color="#FFDE11">
+              <Heading className="main-h2" color="#FFDE11">
                 our services
               </Heading>
             </FadeUp>
             <FadeUp>
-              <Heading
-                fontSize={{ base: "60px", md: "70px" }}
-                fontWeight="black"
-              >
+              <Heading className="bnrBigHd" fontWeight="black">
                 what we do and {isLargerThan780 ? <br /> : ""}
                 how we do it.
               </Heading>
@@ -77,12 +74,7 @@ const Index = () => {
               </Button>
             </FadeUp>
             <FadeUp delay={0.5}>
-              <Text
-                mt="10"
-                fontSize={{ base: "24px", md: "30px" }}
-                fontWeight="bold"
-                color={"#6F6F6F"}
-              >
+              <Text mt="10" fontWeight="bold" color={"#6F6F6F"}>
                 our key services include social media marketing, website ,
                 search engine optimization & search engine marketing and content
                 development videography & photography!
