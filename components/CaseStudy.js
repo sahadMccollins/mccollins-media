@@ -50,7 +50,7 @@ const CaseStudySlide = (props) => {
         bottom="120px"
         left="20px"
         color="white"
-        fontSize="2xl"
+        className="main-h5"
         fontWeight="bold"
         zIndex={9}
       >
@@ -61,7 +61,7 @@ const CaseStudySlide = (props) => {
         bottom="80px"
         left="20px"
         color="white"
-        fontSize="2xl"
+        className="main-p"
         fontWeight="medium"
         zIndex={9}
       >
@@ -98,7 +98,6 @@ const CaseStudy = () => {
   const handleMousewheel = (e) => {
     const direction = e.deltaY > 0 ? "next" : "prev";
     e.stopPropagation();
-    e.preventDefault();
     if (typeof window !== "undefined") {
       const swiperSld = document.querySelector(".swiper").swiper;
       if (direction === "next") {
@@ -138,7 +137,6 @@ const CaseStudy = () => {
           pagination={{ clickable: true }}
           loop={true}
           initialSlide={5}
-          forceToAxis={true}
           onSwiper={onSwiper}
         >
           <SwiperSlide>

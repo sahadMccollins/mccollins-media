@@ -12,7 +12,7 @@ const Partner = () => {
             spacingX="40px"
             spacingY="60px"
             alignItems={"center"}
-            mt="75px"
+            mt={{ base: 0, md: "25px" }}
             textAlign={"center"}
           >
             <Box>

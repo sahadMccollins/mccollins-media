@@ -18,7 +18,7 @@ import FadeUp from "./Motion/FadeUp";
 
 const FormBox = (props) => {
   const [FirstName, setFirstName] = useState("");
-  const [LastName, setLastName] = useState("");
+  // const [LastName, setLastName] = useState("");
   const [company, setCompany] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [email, setEmail] = useState("");
@@ -50,7 +50,7 @@ const FormBox = (props) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         firstName: FirstName,
-        lastName: LastName,
+        // lastName: LastName,
         company: company,
         jobTitle: jobTitle,
         email: email,
@@ -62,7 +62,7 @@ const FormBox = (props) => {
     fetch("/api/form-submit", requestOptions).then(
       (response) => response.json(),
       setFirstName(""),
-      setLastName(""),
+      // setLastName(""),
       setCompany(""),
       setJobTitle(""),
       setContact(""),
@@ -81,7 +81,7 @@ const FormBox = (props) => {
 
     let formData = new FormData();
     formData.append("Firstname", FirstName);
-    formData.append("Lastname", LastName);
+    // formData.append("Lastname", LastName);
     formData.append("Email", email);
     formData.append("Phone", contact);
     formData.append("Company", company);
@@ -131,25 +131,24 @@ const FormBox = (props) => {
       </FadeUp>
       <FadeUp threshold={0.1}>
         <form onSubmit={formHandler} className="contact-form">
+          <FormControl isRequired mb={10}>
+            {/* <FormLabel htmlFor="first-name">First Name</FormLabel> */}
+            <Input
+              id="first-name"
+              onChange={(e) => setFirstName(e.target.value)}
+              value={FirstName}
+              placeholder="Full Name"
+            />
+          </FormControl>
           <SimpleGrid columns={{ sm: 1, md: 2 }} spacing="50px" mb={"50px"}>
-            <FormControl isRequired>
-              {/* <FormLabel htmlFor="first-name">First Name</FormLabel> */}
-              <Input
-                id="first-name"
-                onChange={(e) => setFirstName(e.target.value)}
-                value={FirstName}
-                placeholder="First Name"
-              />
-            </FormControl>
-            <FormControl isRequired>
-              {/* <FormLabel htmlFor="last-name">Last Name</FormLabel> */}
+            {/* <FormControl isRequired>
               <Input
                 id="last-name"
                 onChange={(e) => setLastName(e.target.value)}
                 value={LastName}
                 placeholder="Last Name"
               />
-            </FormControl>
+            </FormControl> */}
             <FormControl isRequired>
               {/* <FormLabel htmlFor="company">Company</FormLabel> */}
               <Input

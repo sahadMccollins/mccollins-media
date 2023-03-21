@@ -100,8 +100,8 @@ const Contact = () => {
             <Container maxWidth={"7xl"} py={10} textAlign="center">
               <FadeUp>
                 <Heading fontSize={"5xl"}>
-                  we would love to hear about
-                  <br /> start your new project?
+                  We would love to hear about
+                  <br /> your new project?. Begin a conversation.
                 </Heading>
               </FadeUp>
               <FadeUp>

@@ -41,7 +41,7 @@ const ClientsLogo = () => {
               pl="20px"
               color={"#000"}
               width={{ base: "100%", md: "50%" }}
-              fontSize={{ base: "35px", md: "45px" }}
+              className="main-h2"
               fontWeight={"black"}
             >
               CLIENTS WE WORK WITH

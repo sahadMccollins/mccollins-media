@@ -15,7 +15,7 @@ const Awards = () => {
       <Container maxWidth={"7xl"} pb="20" position={"relative"}>
         <FadeUp>
           <Heading
-            fontSize={{ base: "3xl", md: "4xl" }}
+            className="main-h2"
             position={{ base: "relative", md: "absolute" }}
             top={{ base: "0", md: 16 }}
             mb={{ base: "50px", md: 0 }}

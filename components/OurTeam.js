@@ -89,26 +89,30 @@ const OurTeam = () => {
   return (
     <Stack>
       <Container maxWidth={"7xl"} pb="20">
-        <Flex direction={{ base: "column", md: "row" }}>
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          mt={{ base: "-10", md: 0 }}
+        >
           <Box
             width="50%"
             zIndex={2}
             textAlign="center"
             display={{ base: "none", md: "block" }}
           >
-            <Image
+            {/* <Image
               alt="McCollins Media"
               position={"absolute"}
               src="/assets/image/design/2.svg"
               width={"105px"}
               height={"168px"}
               top={-10}
-            />
+            /> */}
           </Box>
           <Box width="100%" mb={"20px"} alignSelf="end" zIndex={2}>
-            <Text fontSize={"35px"}>
+            <Text className="main-h3">
               <b>
-                we grow brands, <br /> create experiences and solve problems.
+                we grow brands, {isLargerThan780 && <br />} create experiences
+                and solve problems.
               </b>
             </Text>
           </Box>

@@ -10,6 +10,7 @@ import {
   Flex,
   Stack,
   Text,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Image from "next/image";
@@ -24,10 +25,7 @@ const AccItem = (props) => {
     <AccordionItem>
       <h2>
         <AccordionButton>
-          <Box
-            textAlign="left"
-            fontSize={{ base: "20px", sm: "26px", xl: "40px" }}
-          >
+          <Box textAlign="left" className="main-h3">
             {props.name}
           </Box>
           <AccordionIcon />
@@ -56,8 +54,7 @@ const AccItem = (props) => {
 };
 
 const ServiceAccordian = () => {
-  const router = useRouter();
-
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const [AccImg, setAccImg] = useState(
     "/assets/image/ServiceTabs/WebDevelopment.png"
   );
@@ -121,7 +118,9 @@ const ServiceAccordian = () => {
               >
                 <FadeUp>
                   <AccItem
-                    name="Search Engine Optimization"
+                    name={
+                      isLargerThan780 ? "Search Engine Optimization" : "SEO"
+                    }
                     content="As a Performance driven, Search Engine Optimization agency in Dubai, we specialize in providing SEO services to businesses. Our primary goal is to support businesses to improve their online visibility and increase organic traffic to their websites."
                     url="search-engine-optimization"
                   />

@@ -1,13 +1,16 @@
-import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
-import { useInView } from "react-intersection-observer";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import FadeUp from "./Motion/FadeUp";
 
 const TextBox = (props) => {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    triggerOnce: true,
-  });
-
+  const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   return (
     <Stack bg={props.bg ? props.bg : "#fff"}>
       <Container maxWidth={"7xl"} py="50" zIndex={2} position="relative">
@@ -16,8 +19,8 @@ const TextBox = (props) => {
             <FadeUp>
               <Heading
                 borderLeft="20px solid #FFE962"
-                fontSize={{ base: "3xl", md: props.h2Fs ? props.h2Fs : "5xl" }}
                 fontWeight={"black"}
+                className="main-h2"
                 pl="6"
               >
                 {props.heading.split("\n").map((str) => (
@@ -26,7 +29,7 @@ const TextBox = (props) => {
               </Heading>
               <Heading
                 borderLeft="20px solid #FFE962"
-                fontSize={{ base: "18px", md: "18px" }}
+                className="main-p"
                 fontWeight={"black"}
                 pl="6"
                 mr={{ base: "0", md: "50%" }}
@@ -43,22 +46,16 @@ const TextBox = (props) => {
             pl={{ base: "0", md: "5" }}
           >
             <FadeUp>
-              <Heading
-                fontSize={{ base: "2xl", md: "3xl" }}
-                mb="2"
-                mt={{ base: "5", md: "0" }}
-              >
+              <Heading className="main-h3" mb="2" mt={{ base: "5", md: "0" }}>
                 {props.subHeading}
               </Heading>
-              <Heading
-                fontSize={{ base: "1xl", md: "2xl" }}
-                mb="2"
-                mt={{ base: "5", md: "0" }}
-              >
-                {props.subHeadingOnly &&
-                  props.subHeadingOnly
-                    .split("\n")
-                    .map((str) => <div key={str}>{str}</div>)}
+              <Heading className="main-h6" mb="2" mt={{ base: "5", md: "0" }}>
+                {isLargerThan780
+                  ? props.subHeadingOnly &&
+                    props.subHeadingOnly
+                      .split("\n")
+                      .map((str) => <div key={str}>{str}</div>)
+                  : props.subHeadingOnly}
               </Heading>
               <Text>{props.content}</Text>
             </FadeUp>

@@ -14,7 +14,11 @@ const AwardSlide = (props) => {
           alignSelf="end"
           bg={"#F7F7F7"}
         >
-          <Heading fontSize={"20px"} mb="20px">
+          <Heading
+            className="main-h5"
+            mb="20px"
+            textAlign={{ base: "center", md: "left" }}
+          >
             {props.h1}
           </Heading>
           <Text>{props.p}</Text>

@@ -36,19 +36,18 @@ const About = () => {
         >
           <Box width={{ base: "100%", md: "45%" }}>
             <FadeUp>
-              <Heading fontSize={"24px"}>
+              <Heading className="main-h5">
                 BUILT ON STRATEGIC VALUES, FUELED BY CREATIVITY AND DRIVEN BY
                 CONSUMER INSIGHTS.
               </Heading>
             </FadeUp>
             <FadeUp>
               <Box
-                my={8}
+                my={5}
                 background="#FFDE11"
                 width={"fit-content"}
                 p={"0px 8% 0px 10px"}
                 fontWeight="bold"
-                fontSize={"20px"}
               >
                 <Text>A Voice For Your Brand</Text>
               </Box>
@@ -77,7 +76,7 @@ const About = () => {
           <Box width={{ base: "100%", md: "45%" }}>
             <FadeUp>
               <Box p={6} bg={"#F7F7F7"} mb={5}>
-                <Heading fontSize={16} mb="5">
+                <Heading className="subh5" maxWidth={"400px"} mb="5">
                   Managing the digital ecosystem for your brand with a result
                 </Heading>
                 <Text>
@@ -89,7 +88,7 @@ const About = () => {
             </FadeUp>
             <FadeUp>
               <Box p={6} bg={"#F7F7F7"} mb={5}>
-                <Heading fontSize={16} mb="5">
+                <Heading className="subh5" maxWidth={"400px"} mb="5">
                   Be it a mobile application, website or an e-commerce platform,
                 </Heading>
                 <Text>
@@ -101,7 +100,7 @@ const About = () => {
             </FadeUp>
             <FadeUp>
               <Box p={6} bg={"#F7F7F7"} mb={5}>
-                <Heading fontSize={16} mb="5">
+                <Heading className="subh5" maxWidth={"400px"} mb="5">
                   Implement performance based marketing, ensure lead generation
                 </Heading>
                 <Text>

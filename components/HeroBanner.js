@@ -43,26 +43,15 @@ const HeroBanner = (props) => {
           <Box width={{ base: "100%", md: "50%" }}>
             <FadeUp>
               {props.breadcrumb ? (
-                <Heading
-                  fontSize={isLargerThan780 ? "60px" : "40px"}
-                  color="#FFDE11"
-                >
+                <Heading className="bannerH2" color="#FFDE11">
                   {props.breadcrumb}
                 </Heading>
               ) : (
                 ""
               )}
 
-              <Heading fontSize={isLargerThan780 ? "60px" : "40px"}>
-                {props.h2}
-              </Heading>
-              {props.content ? (
-                <Text mt={"15px"} fontSize={isLargerThan780 ? "25px" : "16px"}>
-                  {props.content}
-                </Text>
-              ) : (
-                ""
-              )}
+              <Heading className="bannerH2">{props.h2}</Heading>
+              {props.content ? <Text mt={"15px"}>{props.content}</Text> : ""}
             </FadeUp>
             <FadeUp>
               <ButtonGroup gap="4" zIndex="99" mt={"25px"}>
