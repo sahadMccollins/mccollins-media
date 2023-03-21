@@ -29,7 +29,7 @@ const TextBox = (props) => {
               </Heading>
               <Heading
                 borderLeft="20px solid #FFE962"
-                className="main-p"
+                className="main-h6"
                 fontWeight={"black"}
                 pl="6"
                 mr={{ base: "0", md: "50%" }}
