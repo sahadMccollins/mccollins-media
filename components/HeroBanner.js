@@ -55,22 +55,24 @@ const HeroBanner = (props) => {
             </FadeUp>
             <FadeUp>
               <ButtonGroup gap="4" zIndex="99" mt={"25px"}>
-                <Button
-                  colorScheme="yellow"
-                  background={"#FFDE11"}
-                  borderRadius="20px"
-                  color="#000"
-                  onClick={() => router.push("/contact")}
-                >
-                  <Image
-                    alt="McCollins Media"
-                    src="/assets/image/icons/call.svg"
-                    width="25px"
-                    height="25px"
-                    priority={true}
-                  />
-                  &nbsp;&nbsp;contact us
-                </Button>
+                {router.pathname !== "/contact" && (
+                  <Button
+                    colorScheme="yellow"
+                    background={"#FFDE11"}
+                    borderRadius="20px"
+                    color="#000"
+                    onClick={() => router.push("/contact")}
+                  >
+                    <Image
+                      alt="McCollins Media"
+                      src="/assets/image/icons/call.svg"
+                      width="25px"
+                      height="25px"
+                      priority={true}
+                    />
+                    &nbsp;&nbsp;contact us
+                  </Button>
+                )}
                 <Button
                   colorScheme="whiteAlpha"
                   onClick={() => setOpen(true)}
