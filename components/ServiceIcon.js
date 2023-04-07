@@ -137,6 +137,30 @@ const ServiceIcon = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Box
+                onClick={() =>
+                  router.push("/services/web-design-and-development/sitefinity")
+                }
+                className="icon"
+              >
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/techLogo/Sitefinity.png"
+                  width="97px"
+                  height="97px"
+                  margin={"auto"}
+                />
+                <Text
+                  mt={5}
+                  fontSize={"2xl"}
+                  fontWeight={"bold"}
+                  textAlign="center"
+                >
+                  Sitefinity
+                </Text>
+              </Box>
+            </SwiperSlide>
+            {/* <SwiperSlide>
+              <Box
                 // onClick={() =>
                 //   router.push("/services/web-design-and-development/magento")
                 // }
@@ -158,7 +182,7 @@ const ServiceIcon = () => {
                   Magento
                 </Text>
               </Box>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </FadeUp>
       </Container>
