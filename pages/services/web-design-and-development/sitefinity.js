@@ -4,18 +4,13 @@ import {
   Flex,
   Heading,
   OrderedList,
-  SimpleGrid,
   Stack,
   Text,
-  UnorderedList,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import FavWork from "../../../components/FavWork";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
-import ServicePoint from "../../../components/ServicePoint";
-import TextBox from "../../../components/TextBox";
 import WebShowcase from "../../../components/WebShowcase";
 
 const sitefinity = () => {

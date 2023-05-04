@@ -530,7 +530,9 @@ const Navbar = (props) => {
                       }
                       onClick={() => onClose()}
                     >
-                      <a href="/about">about us</a>
+                      <Link href="/about">
+                        <a>about us</a>
+                      </Link>
                     </li>
                     <li
                       className={
