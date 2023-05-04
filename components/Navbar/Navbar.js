@@ -530,7 +530,7 @@ const Navbar = (props) => {
                       }
                       onClick={() => onClose()}
                     >
-                      <Link href="/about">
+                      <Link href="https://www.mccollinsmedia.com/about">
                         <a>about us</a>
                       </Link>
                     </li>
@@ -552,7 +552,7 @@ const Navbar = (props) => {
                           <ChevronRightIcon bg="#fff" placeSelf={"center"} />
                         )}
                         <Box flexGrow={1} bg="#fff"></Box>
-                        <Link href="/services">
+                        <Link href="https://www.mccollinsmedia.com/services">
                           <a
                             onClick={() => {
                               onClose();
@@ -725,7 +725,7 @@ const Navbar = (props) => {
                       }
                       onClick={() => onClose()}
                     >
-                      <Link href="/blog">
+                      <Link href="https://www.mccollinsmedia.com/blog">
                         <a>blog</a>
                       </Link>
                     </li>
@@ -737,7 +737,7 @@ const Navbar = (props) => {
                       }
                       onClick={() => onClose()}
                     >
-                      <Link href="/contact">
+                      <Link href="https://www.mccollinsmedia.com/contact">
                         <a>contact</a>
                       </Link>
                     </li>
