@@ -948,3 +948,7 @@ content: counter(step-counter);
 body .clientsLogoStack {
   margin-top: 0 !important;
 }
+
+.footerQuicklink a {
+  color: #000;
+}
