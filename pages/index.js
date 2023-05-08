@@ -54,7 +54,7 @@ export default function Home() {
       <Awards />
 
       <Box className="footerQuicklink">
-        {PageLInks.map((link) => (
+        {PageLinks.map((link) => (
           <a href={link}>{link}</a>
         ))}
       </Box>

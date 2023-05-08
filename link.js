@@ -1,4 +1,4 @@
-export const PageLInks = [
+export const PageLinks = [
   "home",
   "about",
   "contact",
