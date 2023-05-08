@@ -2,6 +2,7 @@ export const PageLInks = [
   "home",
   "about",
   "contact",
+  "/blog",
   "/services",
   "/services/social-media-agency-dubai",
   "/services/social-media-agency-dubai/ar-experiences",
