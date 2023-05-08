@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
 import Awards from "../components/Awards";
 import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
@@ -6,6 +6,7 @@ import Partner from "../components/Partner";
 import ServiceAccordian from "../components/ServiceAccordian";
 import TextBox from "../components/TextBox";
 import CaseStudy from "../components/CaseStudy";
+import { PageLInks } from "../link";
 
 export default function Home() {
   return (
@@ -51,6 +52,12 @@ export default function Home() {
       <hr />
 
       <Awards />
+
+      <Box className="footerQuicklink">
+        {PageLInks.map((link) => (
+          <a href={link}>{link}</a>
+        ))}
+      </Box>
     </>
   );
 }

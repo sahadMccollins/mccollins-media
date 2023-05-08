@@ -950,5 +950,5 @@ body .clientsLogoStack {
 }
 
 .footerQuicklink a {
-  color: #000;
+  display: none;
 }

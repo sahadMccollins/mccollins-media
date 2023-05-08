@@ -282,12 +282,6 @@ const Footer = () => {
             </form>
           </Box>
         </Flex>
-        <Box className="footerQuicklink">
-          <a href="/about">About</a>
-          <a href="/service">Service</a>
-          <a href="/blog">Blog</a>
-          <a href="/contact">Contact</a>
-        </Box>
         <hr />
         <Flex
           mt={"20px"}
