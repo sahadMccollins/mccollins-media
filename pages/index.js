@@ -6,7 +6,7 @@ import Partner from "../components/Partner";
 import ServiceAccordian from "../components/ServiceAccordian";
 import TextBox from "../components/TextBox";
 import CaseStudy from "../components/CaseStudy";
-import { PageLInks } from "../link";
+import { PageLinks } from "../link";
 
 export default function Home() {
   return (
@@ -55,7 +55,9 @@ export default function Home() {
 
       <Box className="footerQuicklink">
         {PageLinks.map((link) => (
-          <a href={link}>{link}</a>
+          <a href={link} key={link}>
+            {link}
+          </a>
         ))}
       </Box>
     </>
