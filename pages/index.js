@@ -1,12 +1,13 @@
 import { Box, Stack } from "@chakra-ui/react";
 import Awards from "../components/Awards";
-import ClientsLogo from "../components/ClientsLogo";
 import HeroBanner from "../components/HeroBanner";
 import Partner from "../components/Partner";
 import ServiceAccordian from "../components/ServiceAccordian";
 import TextBox from "../components/TextBox";
 import CaseStudy from "../components/CaseStudy";
 import { PageLinks } from "../link";
+import ClientsLogoWhite from "../components/ClientsLogoWhite";
+import WhatWeOffer from "../components/WhatWeOffer";
 
 export default function Home() {
   return (
@@ -25,12 +26,14 @@ export default function Home() {
         zIndex="0"
       ></Stack>
 
-      <TextBox
+      {/* <TextBox
         heading={"WHO WE ARE"}
         content="We are McCollins Media, a story that began over 15 years ago on the principles of creativity, innovation, and result-driven thinking. We blend creative thinking and digital development with purposeful strategies to create a digital ecosystem like no other. We are passionate about being the leading digital marketing and web development services provider in the UAE and across all GCC countries."
-      />
+      /> */}
 
-      <ServiceAccordian />
+      <ClientsLogoWhite />
+
+      {/* <ServiceAccordian /> */}
 
       <TextBox
         heading="CASE STUDY"
@@ -40,7 +43,7 @@ export default function Home() {
 
       <CaseStudy />
 
-      <ClientsLogo />
+      <WhatWeOffer />
 
       <TextBox
         heading="OUR PARTNERS"
