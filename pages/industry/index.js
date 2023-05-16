@@ -4,9 +4,9 @@ import React from "react";
 import HeroBanner from "../../components/HeroBanner";
 import IndustryPageAccordian from "../../components/IndustryPageAccordian";
 import TextBox2 from "../../components/TextBox2";
-import clientPromise from "../lib/mongodb";
 import Head from "next/head";
 import ReactHtmlParser from "react-html-parser";
+import clientPromise from "../../lib/mongodb";
 
 const index = ({ metaTags }) => {
   return (

@@ -15,7 +15,7 @@ import TextBox2 from "../../components/TextBox2";
 import { useRouter } from "next/router";
 import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
-import clientPromise from "../lib/mongodb";
+import clientPromise from "../../lib/mongodb";
 import Head from "next/head";
 import ReactHtmlParser from "react-html-parser";
 
