@@ -22,6 +22,7 @@ import { GrGallery } from "react-icons/gr";
 import { AiOutlineForm } from "react-icons/ai";
 import NavItem from "../AdminPanel/NavItem";
 import { useRouter } from "next/router";
+import { MdOutlineEngineering } from "react-icons/md";
 
 export default function Sidebar() {
   const { data: session } = useSession();
@@ -113,6 +114,13 @@ export default function Sidebar() {
           title="Form Submit"
           page="/admin/form-submit"
           active={router.pathname == "/admin/form-submit"}
+        />
+        <NavItem
+          navSize={navSize}
+          icon={MdOutlineEngineering}
+          title="Meta Tag"
+          page="/admin/meta"
+          active={router.pathname == "/admin/meta"}
         />
       </Flex>
 
