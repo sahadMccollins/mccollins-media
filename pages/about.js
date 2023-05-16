@@ -9,8 +9,11 @@ import Awards from "../components/Awards";
 import "react-ig-feed/dist/index.css";
 import { useEffect } from "react";
 import FadeUp from "../components/Motion/FadeUp";
+import clientPromise from "../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const About = () => {
+const About = ({ metaTags }) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://widget.taggbox.com/embed-lite.min.js";
@@ -21,6 +24,11 @@ const About = () => {
   }, []);
   return (
     <>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <HeroBanner
         img="/assets/image/banner/about-banner.webp"
         breadcrumb="about us"
@@ -162,5 +170,20 @@ const About = () => {
     </>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 export default About;
