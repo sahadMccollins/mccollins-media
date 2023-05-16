@@ -29,11 +29,19 @@ import Testimonials from "../../components/Testimonials";
 import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
 import IntrestedInBox from "../../components/IntrestedInBox";
+import clientPromise from "../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const DigitalMarketingSEO = () => {
+const DigitalMarketingSEO = ({ metaTags }) => {
   const router = useRouter();
   return (
     <Stack position={"relative"}>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <VideoBanner
         heading={`google ads`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
@@ -272,6 +280,21 @@ const DigitalMarketingSEO = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 DigitalMarketingSEO.getLayout = function getLayout(DigitalMarketingSEO) {
   return <InnerLayout color="yellow">{DigitalMarketingSEO}</InnerLayout>;

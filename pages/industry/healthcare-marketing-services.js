@@ -12,10 +12,18 @@ import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import ClientsLogo from "../../components/ClientsLogo";
 import InnerBanner from "../../components/InnerBanner";
+import clientPromise from "../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const HealthCareMarketing = () => {
+const HealthCareMarketing = ({ metaTags }) => {
   return (
     <Stack>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <Container maxWidth={"7xl"}>
         <InnerBanner
           heading={`Healthcare \n Marketing \n Services`}
@@ -298,6 +306,21 @@ const HealthCareMarketing = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 HealthCareMarketing.getLayout = function getLayout(HealthCareMarketing) {
   return <InnerLayout>{HealthCareMarketing}</InnerLayout>;

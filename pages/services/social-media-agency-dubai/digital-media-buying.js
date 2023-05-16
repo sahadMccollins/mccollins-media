@@ -12,10 +12,18 @@ import React from "react";
 import CaseStudy from "../../../components/CaseStudy";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
+import clientPromise from "../../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const DigialMediaBuying = () => {
+const DigialMediaBuying = ({ metaTags }) => {
   return (
     <Stack position={"relative"} className="sub-service">
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <InnerBannerTwo h1="Digial Media Buying" />
       <Box>
         <Container maxWidth={"7xl"} py={"50px"}>
@@ -171,6 +179,21 @@ const DigialMediaBuying = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 DigialMediaBuying.getLayout = function getLayout(DigialMediaBuying) {
   return <InnerLayout>{DigialMediaBuying}</InnerLayout>;

@@ -27,13 +27,21 @@ import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
 import IntrestedInBox from "../../components/IntrestedInBox";
 import SeoIcon from "../../components/SeoIcon";
+import clientPromise from "../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const SEO = () => {
+const SEO = ({ metaTags }) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const [isOpen, setOpen] = useState(false);
   const router = useRouter();
   return (
     <Stack position={"relative"}>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <VideoBanner
         heading={`search engine \n  optimization`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
@@ -164,6 +172,21 @@ const SEO = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 SEO.getLayout = function getLayout(SEO) {
   return <InnerLayout color="yellow">{SEO}</InnerLayout>;

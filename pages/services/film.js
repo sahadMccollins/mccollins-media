@@ -24,8 +24,11 @@ import ServicePoint from "../../components/ServicePoint";
 import FadeUp from "../../components/Motion/FadeUp";
 import ZoomInWithBounce from "../../components/Motion/ZoomInWithBounce";
 import IntrestedInBox from "../../components/IntrestedInBox";
+import clientPromise from "../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const Film = () => {
+const Film = ({ metaTags }) => {
   const [isOpen, setOpen] = useState(false);
   const [isOpen1, setOpen1] = useState(false);
   const [videoURL, setvideoURL] = useState("");
@@ -43,6 +46,11 @@ const Film = () => {
 
   return (
     <Stack position={"relative"}>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <VideoBanner
         heading={`film`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219369/Mccollins%20Video/Content_Creation_m3dsap.mp4"
@@ -1213,6 +1221,21 @@ const Film = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 Film.getLayout = function getLayout(Film) {
   return <InnerLayout color="yellow">{Film}</InnerLayout>;

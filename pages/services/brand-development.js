@@ -16,12 +16,20 @@ import InnerLayout from "../../components/Layout/InnerLayout";
 import ServicePoint from "../../components/ServicePoint";
 import TextBox from "../../components/TextBox";
 import VideoBanner from "../../components/VideoBanner";
+import clientPromise from "../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const DesignAndBrandDevelopment = () => {
+const DesignAndBrandDevelopment = ({ metaTags }) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
   return (
     <Stack position={"relative"}>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <VideoBanner
         heading={`brand \n development`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/BRANDING_-_z6r43b.mp4"
@@ -109,6 +117,21 @@ const DesignAndBrandDevelopment = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 DesignAndBrandDevelopment.getLayout = function getLayout(
   DesignAndBrandDevelopment

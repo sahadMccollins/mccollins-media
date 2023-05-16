@@ -2,10 +2,18 @@ import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import CaseStudy from "../../components/CaseStudy";
 import CaseStudyBanner from "../../components/caseStudyBanner";
+import clientPromise from "../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-function CaseStudyPage() {
+function CaseStudyPage({ metaTags }) {
   return (
     <>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <CaseStudyBanner
         h2="Pioneer"
         p="Case Study"
@@ -147,6 +155,21 @@ function CaseStudyPage() {
       <CaseStudy />
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
 }
 
 export default CaseStudyPage;

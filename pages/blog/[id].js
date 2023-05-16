@@ -15,8 +15,9 @@ import { EditorState, convertFromRaw, Editor } from "draft-js";
 import { TbFolders, TbCalendar } from "react-icons/tb";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const Blog = ({ blog, recentPost }) => {
+const Blog = ({ blog, recentPost, metaTags }) => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
 
   const router = useRouter();
@@ -37,6 +38,9 @@ const Blog = ({ blog, recentPost }) => {
         <title>{blog.title}</title>
         <meta name="description" content={blog.description} />
         <meta name="keywords" content={blog.keywords} />
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
       </Head>
       <Container maxWidth={"7xl"}>
         <Flex
@@ -179,6 +183,7 @@ const Blog = ({ blog, recentPost }) => {
 };
 
 export async function getServerSideProps(context) {
+  const { req } = context;
   const client = await clientPromise;
 
   const db = client.db("MccollinsMedia");
@@ -187,6 +192,9 @@ export async function getServerSideProps(context) {
     .collection("blogs")
     .findOne({ blogUrl: context.params.id });
   blog = JSON.parse(JSON.stringify(blog));
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
 
   let recentPost = await db
     .collection("blogs")
@@ -203,7 +211,7 @@ export async function getServerSideProps(context) {
   }
 
   return {
-    props: { blog, recentPost },
+    props: { blog, recentPost, metaTags },
   };
 }
 

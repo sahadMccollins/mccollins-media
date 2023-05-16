@@ -15,10 +15,18 @@ import CaseStudy from "../../../components/CaseStudy";
 import InnerBannerTwo from "../../../components/InnerBannerTwo";
 import InnerLayout from "../../../components/Layout/InnerLayout";
 import WebShowcase from "../../../components/WebShowcase";
+import clientPromise from "../../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const CampaignDevelopment = () => {
+const CampaignDevelopment = ({ metaTags }) => {
   return (
     <Stack position={"relative"} className="sub-service">
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <InnerBannerTwo h1="Campaign Development" />
       <Box>
         <Container maxWidth={"4xl"} mt={10}>
@@ -189,6 +197,21 @@ const CampaignDevelopment = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 CampaignDevelopment.getLayout = function getLayout(CampaignDevelopment) {
   return <InnerLayout>{CampaignDevelopment}</InnerLayout>;

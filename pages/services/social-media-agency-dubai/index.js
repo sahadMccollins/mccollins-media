@@ -21,12 +21,20 @@ import ZoomInWithBounce from "../../../components/Motion/ZoomInWithBounce";
 import FadeUp from "../../../components/Motion/FadeUp";
 import IntrestedInBox from "../../../components/IntrestedInBox";
 import CaseStudy from "../../../components/CaseStudy";
+import clientPromise from "../../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const SocialMediaMarketing = () => {
+const SocialMediaMarketing = ({ metaTags }) => {
   const router = useRouter();
 
   return (
     <Stack>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <VideoBanner
         heading={`social media \n marketing`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600385/Mccollins%20Video/Social_Media-_jmavct.mp4"
@@ -295,6 +303,21 @@ const SocialMediaMarketing = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 SocialMediaMarketing.getLayout = function getLayout(SocialMediaMarketing) {
   return <InnerLayout color="yellow">{SocialMediaMarketing}</InnerLayout>;

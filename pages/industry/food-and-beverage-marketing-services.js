@@ -12,11 +12,19 @@ import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import ClientsLogo from "../../components/ClientsLogo";
 import { useRouter } from "next/router";
+import clientPromise from "../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const foodAndBeverageMarketing = () => {
+const foodAndBeverageMarketing = ({ metaTags }) => {
   const router = useRouter();
   return (
     <Stack>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <Container maxWidth={"7xl"}>
         <Box
           style={{ position: "absolute", top: "9.5%", left: "60%" }}
@@ -446,6 +454,21 @@ const foodAndBeverageMarketing = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 foodAndBeverageMarketing.getLayout = function getLayout(
   foodAndBeverageMarketing

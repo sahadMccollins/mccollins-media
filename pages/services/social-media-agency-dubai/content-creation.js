@@ -18,8 +18,11 @@ import InnerLayout from "../../../components/Layout/InnerLayout";
 import FadeUp from "../../../components/Motion/FadeUp";
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 import "../../../node_modules/react-modal-video/css/modal-video.min.css";
+import clientPromise from "../../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const ContentCreation = () => {
+const ContentCreation = ({ metaTags }) => {
   const [isOpen, setOpen] = useState(false);
   const [videoURL, setvideoURL] = useState("");
 
@@ -67,6 +70,11 @@ const ContentCreation = () => {
 
   return (
     <Stack position={"relative"} className="sub-service">
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <InnerBannerTwo h1="Content Creation" />
       <Box>
         <Container maxWidth={"4xl"} my={10}>
@@ -269,6 +277,21 @@ const ContentCreation = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 ContentCreation.getLayout = function getLayout(ContentCreation) {
   return <InnerLayout>{ContentCreation}</InnerLayout>;

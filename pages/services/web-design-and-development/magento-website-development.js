@@ -15,10 +15,18 @@ import InnerLayout from "../../../components/Layout/InnerLayout";
 import ServicePoint from "../../../components/ServicePoint";
 import TextBox from "../../../components/TextBox";
 import WebShowcase from "../../../components/WebShowcase";
+import clientPromise from "../../../lib/mongodb";
+import Head from "next/head";
+import ReactHtmlParser from "react-html-parser";
 
-const Magento = () => {
+const Magento = ({ metaTags }) => {
   return (
     <Stack position={"relative"}>
+      <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head>
       <InnerBannerTwo h1="Magento Website Development" />
       <Box>
         <Container maxWidth={"7xl"} py={"50px"}>
@@ -135,6 +143,21 @@ const Magento = () => {
     </Stack>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { req } = context;
+  const client = await clientPromise;
+
+  const db = client.db("MccollinsMedia");
+
+  let metaTags = await db.collection("meta").find({ name: req.url }).toArray();
+  metaTags = JSON.parse(JSON.stringify(metaTags));
+  console.log(metaTags);
+
+  return {
+    props: { metaTags },
+  };
+}
 
 Magento.getLayout = function getLayout(Magento) {
   return <InnerLayout>{Magento}</InnerLayout>;
