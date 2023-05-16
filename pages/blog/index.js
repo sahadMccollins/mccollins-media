@@ -14,7 +14,6 @@ import InnerLayout from "../../components/Layout/InnerLayout";
 import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import BlogList from "../../components/BlogList";
-import clientPromise from "../../lib/mongodb";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import clientPromise from "../../lib/mongodb";
