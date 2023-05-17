@@ -50,13 +50,13 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
     },
     "/services/social-media-agency-dubai": {
       title:
-        "Social Media Agency in Dubai, UAE | Social Media Marketing In Abu Dubai -Mccollins",
+        "Social Media Agency in Dubai, UAE | Social Media Marketing in Abu Dhabi-Mccollins",
       description:
         "Mccollins is the award-winning social media agency in Dubai providing quality services to clients over years around UAE and Abu Dhabi. Join our team of experts in SEO, content generation, lead generation, Ad management offering the best in the price? Let's start together to make a digital web revolution.",
     },
     "/services/web-design-and-development": {
       title:
-        "Web Development Company in Dubai | Web Design Company Dubai-Mccollins",
+        "Web Development Company in Dubai | Web Design Company UAE- Mccollins",
       description:
         "Are you looking for a web development company to build your website and brand in Dubai? Mccollins is the leading web development and design agency providing web solutions cost-effectively. Reach out to us for responsive custom web development services.",
     },
