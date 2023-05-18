@@ -56,7 +56,7 @@ const ServiceTabs = () => {
             </TabPanel>
             <TabPanel>
               <ServiceTabsDetails
-                img="/assets/image/ServiceTabs/DigitalMarketing&SEO.png"
+                img="/assets/image/ServiceTabs/DigitalMarketingSEO.png"
                 heading={"Digital \n Marketing & SEO"}
                 subHeading={"creating content that tells a story"}
                 desc={

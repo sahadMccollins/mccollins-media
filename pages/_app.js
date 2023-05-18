@@ -58,7 +58,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       title:
         "Web Development Company in Dubai | Web Design Company UAE- Mccollins",
       description:
-        "Are you looking for a web development company to build your website and brand in Dubai? Mccollins is the leading web development and design agency providing web solutions cost-effectively. Reach out to us for responsive custom web development services.",
+        "Are you looking for a web development company to build your website and brand in Dubai? Mccollins is the leading web development and design agency providing web solutions cost-effectively. Reach out to us for responsive custom web development services in UAE.",
     },
     "/services/brand-development": {
       title:

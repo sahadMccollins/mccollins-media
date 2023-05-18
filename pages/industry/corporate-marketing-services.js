@@ -16,7 +16,7 @@ import clientPromise from "../../lib/mongodb";
 import Head from "next/head";
 import ReactHtmlParser from "react-html-parser";
 
-const CorporateMarketing = () => {
+const CorporateMarketing = ({ metaTags }) => {
   return (
     <Stack>
       <Head>

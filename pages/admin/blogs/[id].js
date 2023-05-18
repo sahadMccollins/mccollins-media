@@ -32,6 +32,7 @@ const Editor = dynamic(
 
 const EditBlog = ({ blog }) => {
   const [title, setTitle] = useState(blog.title);
+  const [SEOtitle, setSEOTitle] = useState(blog.SEOtitle);
   const [date, setDate] = useState(blog.date);
   const [blogUrl, setBlogUrl] = useState(blog.blogUrl);
   const [category, setCategory] = useState(blog.category);
@@ -95,6 +96,7 @@ const EditBlog = ({ blog }) => {
       body: JSON.stringify({
         id: blog._id,
         title: title,
+        SEOtitle: SEOtitle,
         date: date,
         blogUrl: blogUrl,
         category: category,
@@ -161,6 +163,16 @@ const EditBlog = ({ blog }) => {
                     type="text"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
+                    required
+                  />
+                </FormControl>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">SEO Title</FormLabel>
+                  <Input
+                    id="tilte"
+                    type="text"
+                    value={SEOtitle}
+                    onChange={(e) => setSEOTitle(e.target.value)}
                     required
                   />
                 </FormControl>

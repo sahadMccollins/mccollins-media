@@ -35,7 +35,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
   return (
     <Stack>
       <Head>
-        <title>{blog.title}</title>
+        <title>{blog.SEOtitle}</title>
         <meta name="description" content={blog.description} />
         <meta name="keywords" content={blog.keywords} />
         {metaTags[0] && (

@@ -46,7 +46,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
         heading={`google ads`}
         video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
-        poster="/assets/image/servicePage/DM&SEO.jpg"
+        poster="/assets/image/servicePage/DMSEO.jpg"
       />
 
       {/* <Box py={10}>
@@ -136,7 +136,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
             <ZoomInWithBounce>
               <Image
                 alt="McCollins Media"
-                src={"/assets/image/ServiceTabs/DigitalMarketing&SEO.png"}
+                src={"/assets/image/ServiceTabs/DigitalMarketingSEO.png"}
                 width="450px"
                 height={"528px"}
                 objectFit="cover"
@@ -154,7 +154,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
             <ZoomInWithBounce>
               <Image
                 alt="McCollins Media"
-                src={"/assets/image/servicePage/DM&SEO.jpg"}
+                src={"/assets/image/servicePage/DMSEO.jpg"}
                 width="585px"
                 height={"528px"}
                 objectFit="cover"

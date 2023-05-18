@@ -99,7 +99,7 @@ const ServiceAccordian = () => {
               <div
                 onClick={(e) => {
                   setAccImg(
-                    "/assets/image/ServiceTabs/DigitalMarketing&SEO.png"
+                    "/assets/image/ServiceTabs/DigitalMarketingSEO.png"
                   );
                 }}
               >
