@@ -114,25 +114,19 @@ const Blogs = ({ blogs }) => {
                 <Thead>
                   <Tr>
                     <Th>SI.No</Th>
+                    <Th>Actions</Th>
                     <Th>Title</Th>
                     <Th>Date</Th>
                     <Th>Category</Th>
                     <Th>Author Name</Th>
                     <Th>Tags</Th>
                     <Th>Photo</Th>
-                    <Th>Actions</Th>
                   </Tr>
                 </Thead>
                 <Tbody>
                   {blogs.map((blog, i) => (
                     <Tr key={blog._id}>
                       <Td>{i + 1}</Td>
-                      <Td>{blog.title}</Td>
-                      <Td>{blog.date}</Td>
-                      <Td>{blog.category}</Td>
-                      <Td>{blog.author}</Td>
-                      <Td>{blog.tags}</Td>
-                      <Td>{blog.photo}</Td>
                       <Td>
                         <EditIcon
                           cursor={"pointer"}
@@ -150,19 +144,25 @@ const Blogs = ({ blogs }) => {
                           }}
                         />
                       </Td>
+                      <Td>{blog.title}</Td>
+                      <Td>{blog.date}</Td>
+                      <Td>{blog.category}</Td>
+                      <Td>{blog.author}</Td>
+                      <Td>{blog.tags}</Td>
+                      <Td>{blog.photo}</Td>
                     </Tr>
                   ))}
                 </Tbody>
                 <Tfoot>
                   <Tr>
                     <Th>SI.No</Th>
+                    <Th>Actions</Th>
                     <Th>Title</Th>
                     <Th>Date</Th>
                     <Th>Category</Th>
                     <Th>Author Name</Th>
                     <Th>Tags</Th>
                     <Th>Photo</Th>
-                    <Th>Actions</Th>
                   </Tr>
                 </Tfoot>
               </Table>
