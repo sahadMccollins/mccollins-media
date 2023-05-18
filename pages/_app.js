@@ -200,7 +200,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
               name="google-site-verification"
               content="4-M5o7X8y6PSgfeFRz29BnTw8NAAOp4glbOCry2i7hk"
             />
-            <link rel="canonical" href="https://www.mccollinsmedia.com/" />
+            <link rel="canonical" href="https://www.mccollinsmedia.com" />
           </>
         ) : (
           <>
@@ -226,10 +226,12 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             <meta name="Rating" content="General" />
             <meta name="allow-search" content="yes" />
             <meta name="expires" content="never" />
-            <link
-              rel="canonical"
-              href={`https://www.mccollinsmedia.com${router.pathname}`}
-            />
+            {!router.pathname.includes("blog") && (
+              <link
+                rel="canonical"
+                href={`https://www.mccollinsmedia.com${router.pathname}`}
+              />
+            )}
           </>
         )}
       </Head>

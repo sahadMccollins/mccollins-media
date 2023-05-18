@@ -38,6 +38,12 @@ const Blog = ({ blog, recentPost, metaTags }) => {
         <title>{blog.title}</title>
         <meta name="description" content={blog.description} />
         <meta name="keywords" content={blog.keywords} />
+        {metaTags[0] && (
+          <link
+            rel="canonical"
+            href={`https://www.mccollinsmedia.com${metaTags[0].url}`}
+          />
+        )}
         {metaTags.length > 0 &&
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
