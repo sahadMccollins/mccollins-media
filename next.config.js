@@ -19,6 +19,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/social-media-agency-dubai",
         destination: "/services/social-media-agency-dubai",
         permanent: true,
