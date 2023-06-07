@@ -107,7 +107,7 @@ const MccollinsmediaKsa = () => {
           }
         >
           <source
-            src="https://res.cloudinary.com/mccollins-media/video/upload/v1657219431/Mccollins%20Video/Website_Development_cs3y2v.mp4"
+            src="/assets/cloudinaryBackup/Website_Development_cs3y2v.mp4"
             type="video/mp4"
           />
         </video>
@@ -168,7 +168,7 @@ const MccollinsmediaKsa = () => {
       <Box py={"0px "} style={{ marginTop: "0" }}>
         <video loop muted autoPlay width="100%" controls>
           <source
-            src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
+            src="/assets/cloudinaryBackup/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
             type="video/mp4"
           />
         </video>

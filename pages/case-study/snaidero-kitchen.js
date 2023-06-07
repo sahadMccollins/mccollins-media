@@ -138,7 +138,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_kcnfgj.mp4"
+                src="/assets/cloudinaryBackup/Snaidero_Case_Study_Video_kcnfgj.mp4"
                 type="video/mp4"
                 media="screen"
               />

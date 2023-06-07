@@ -63,7 +63,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678476812/Mccollins%20Video/Cleaning_Superstore_Dubai_Lynx_Awards_Entry_Video_Second_Cut_03.02_zguftp.mp4"
+                src="/assets/cloudinaryBackup/Cleaning_Superstore_Dubai_Lynx_Awards_Entry_Video_Second_Cut_03.02_zguftp.mp4"
                 type="video/mp4"
                 media="screen"
               />

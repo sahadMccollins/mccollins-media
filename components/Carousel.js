@@ -41,7 +41,7 @@ const Carousel = () => {
             <a
               data-fancybox="gallery"
               style={{ position: "relative" }}
-              href="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
+              href="/assets/cloudinaryBackup/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
             >
               <img
                 alt="snaidero"
@@ -117,7 +117,7 @@ const Carousel = () => {
             <a
               data-fancybox="gallery"
               style={{ position: "relative" }}
-              href="https://res.cloudinary.com/mccollins-media/video/upload/v1657047733/Mccollins%20Video/Toshiba-Fullvdo-1min_xs4yve.mp4"
+              href="/assets/cloudinaryBackup/Toshiba-Fullvdo-1min_xs4yve.mp4"
             >
               <img
                 alt=""

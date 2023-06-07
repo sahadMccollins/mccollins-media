@@ -77,7 +77,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
+                src="/assets/cloudinaryBackup/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
                 type="video/mp4"
                 media="screen"
               />

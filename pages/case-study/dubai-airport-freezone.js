@@ -86,7 +86,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678696919/Mccollins%20Video/Dubai_Airport_Free_Zone_Authority_-_launch_its_First_Mobile_App_uqzqcv.mp4"
+                src="/assets/cloudinaryBackup/Dubai_Airport_Free_Zone_Authority_-_launch_its_First_Mobile_App_uqzqcv.mp4"
                 type="video/mp4"
                 media="screen"
               />

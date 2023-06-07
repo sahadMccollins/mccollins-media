@@ -53,7 +53,7 @@ const Film = ({ metaTags }) => {
       </Head>
       <VideoBanner
         heading={`film`}
-        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657219369/Mccollins%20Video/Content_Creation_m3dsap.mp4"
+        video="/assets/cloudinaryBackup/Content_Creation_m3dsap.mp4"
         content="From Photo & Video content creation to website redesign & development, and Social Media Branding, we engage with your audience by telling your brand's story!"
         poster="/assets/image/servicePage/contentProduction.jpg"
       />
@@ -282,7 +282,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
+              src="/assets/cloudinaryBackup/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -301,7 +301,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/dhhtgppki/video/upload/v1672984054/mccollins-media/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4"
+              src="/assets/cloudinaryBackup/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -320,7 +320,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678202100/Mccollins%20Video/Tips_and_Toes_bteolm.mp4"
+              src="/assets/cloudinaryBackup/Tips_and_Toes_bteolm.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -339,7 +339,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/dhhtgppki/video/upload/v1672987704/mccollins-media/Mapei-LoadingVideo_thrg6q.mp4"
+              src="/assets/cloudinaryBackup/Mapei-LoadingVideo_thrg6q.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -358,7 +358,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678238137/Mccollins%20Video/458640823_zc3t2c.mp4"
+              src="/assets/cloudinaryBackup/458640823_zc3t2c.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -377,7 +377,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678438039/Mccollins%20Video/All_Locations_-_Website_Video_min_dhbs4x.mp4"
+              src="/assets/cloudinaryBackup/All_Locations_-_Website_Video_min_dhbs4x.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -396,7 +396,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678438358/Mccollins%20Video/biz.mp4"
+              src="/assets/cloudinaryBackup/biz.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -415,7 +415,7 @@ const Film = ({ metaTags }) => {
             style={{ width: "100%", marginTop: "-10px", marginBottom: "-10px" }}
           >
             <source
-              src="https://res.cloudinary.com/mccollins-media/video/upload/v1678438306/Mccollins%20Video/Doors.mp4"
+              src="/assets/cloudinaryBackup/Doors.mp4"
               type="video/mp4"
               media="screen"
             />
@@ -481,7 +481,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672984433/mccollins-media/BBQ_Party_Video_-_POST_audkzz.mp4"
+                  "/assets/cloudinaryBackup/BBQ_Party_Video_-_POST_audkzz.mp4"
                 )
               }
             >
@@ -519,7 +519,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672984054/mccollins-media/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4"
+                  "/assets/cloudinaryBackup/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4"
                 )
               }
             >
@@ -557,7 +557,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987639/mccollins-media/Braised_Cabbage_Video_bbpwre.mp4"
+                  "/assets/cloudinaryBackup/Braised_Cabbage_Video_bbpwre.mp4"
                 )
               }
             >
@@ -595,7 +595,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987911/mccollins-media/Breakfast_Set_kg0pop.mp4"
+                  "/assets/cloudinaryBackup/Breakfast_Set_kg0pop.mp4"
                 )
               }
             >
@@ -633,7 +633,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987689/mccollins-media/Cryo_Red_Light_Therapy_ixcnv5.mp4"
+                  "/assets/cloudinaryBackup/Cryo_Red_Light_Therapy_ixcnv5.mp4"
                 )
               }
             >
@@ -671,7 +671,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987787/mccollins-media/Doors_Valentines_Day_2022_Video_-_YOUTUBE_p7shnb.mp4"
+                  "/assets/cloudinaryBackup/Doors_Valentines_Day_2022_Video_-_YOUTUBE_p7shnb.mp4"
                 )
               }
             >
@@ -709,7 +709,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672988500/mccollins-media/Dr._Babor_Female_Version_-_YOUTUBE_mhl5xn.mp4"
+                  "/assets/cloudinaryBackup/Dr._Babor_Female_Version_-_YOUTUBE_mhl5xn.mp4"
                 )
               }
             >
@@ -747,7 +747,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987730/mccollins-media/Family_Video_-_POST_zzjsdt.mp4"
+                  "/assets/cloudinaryBackup/Family_Video_-_POST_zzjsdt.mp4"
                 )
               }
             >
@@ -785,7 +785,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987738/mccollins-media/HR-CineBTS-Final-01112021-1min-26102021_tnpxp9.mp4"
+                  "/assets/cloudinaryBackup/HR-CineBTS-Final-01112021-1min-26102021_tnpxp9.mp4"
                 )
               }
             >
@@ -823,7 +823,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987704/mccollins-media/Mapei-LoadingVideo_thrg6q.mp4"
+                  "/assets/cloudinaryBackup/Mapei-LoadingVideo_thrg6q.mp4"
                 )
               }
             >
@@ -861,7 +861,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672988446/mccollins-media/Midea-Frier-VDO-Instapost-Portrait_idpg2n.mp4"
+                  "/assets/cloudinaryBackup/Midea-Frier-VDO-Instapost-Portrait_idpg2n.mp4"
                 )
               }
             >
@@ -899,7 +899,7 @@ const Film = ({ metaTags }) => {
               className="filmBox"
               onClick={() =>
                 videoHandler(
-                  "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987991/mccollins-media/Prato_Branding_Video_liuj6j.mp4"
+                  "/assets/cloudinaryBackup/Prato_Branding_Video_liuj6j.mp4"
                 )
               }
             >
@@ -1059,150 +1059,6 @@ const Film = ({ metaTags }) => {
         </Container>
       </Box>
 
-      {/* <Box style={{ marginBottom: "8px" }}>
-        <SimpleGrid columns={{ base: 2, md: 4 }} spacing={"10px"}>
-          <Box
-            position={"relative"}
-            className="filmBox"
-            onClick={() =>
-              videoHandler(
-                "https://mccollinsmediaweb.github.io/mccollins-media-landing-page-assetes/video-landing/main-banner-2.mp4"
-              )
-            }
-          >
-            <ChakraImg
-              src="/assets/image/servicePage/film/vid13.jpg"
-              backgroundSize={"cover"}
-              backgroundRepeat="no-repeat"
-              bgPosition={"center"}
-              width={"100%"}
-              height={{ base: "350px", md: "500px" }}
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            <Box className="bgHover"></Box>
-          </Box>
-          <Box position={"relative"} className="filmBox">
-            <ChakraImg
-              src="/assets/image/servicePage/film/vid14.jpg"
-              backgroundSize={"cover"}
-              backgroundRepeat="no-repeat"
-              bgPosition={"center"}
-              width={"100%"}
-              height={{ base: "350px", md: "500px" }}
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            <Box className="bgHover"></Box>
-          </Box>
-          <Box position={"relative"} className="filmBox">
-            <ChakraImg
-              src="/assets/image/servicePage/film/vid15.jpg"
-              backgroundSize={"cover"}
-              backgroundRepeat="no-repeat"
-              bgPosition={"center"}
-              width={"100%"}
-              height={{ base: "350px", md: "500px" }}
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            <Box className="bgHover"></Box>
-          </Box>
-          <Box
-            position={"relative"}
-            className="filmBox"
-            onClick={() =>
-              videoHandler(
-                "https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4"
-              )
-            }
-          >
-            <ChakraImg
-              src="/assets/image/servicePage/film/vid16.jpg"
-              backgroundSize={"cover"}
-              backgroundRepeat="no-repeat"
-              bgPosition={"center"}
-              width={"100%"}
-              height={{ base: "350px", md: "500px" }}
-            />
-            <a className="button is-play">
-              <div className="button-outer-circle has-scale-animation"></div>
-              <div className="button-outer-circle has-scale-animation has-delay-short"></div>
-              <div className="button-icon is-play">
-                <svg height="100%" width="100%" fill="#f857a6">
-                  <polygon
-                    className="triangle"
-                    points="5,0 30,15 5,30"
-                    
-                  ></polygon>
-                  <path
-                    className="path"
-                    d="M5,0 L30,15 L5,30z"
-                    fill="none"
-                    stroke="#f857a6"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            <Box className="bgHover"></Box>
-          </Box>
-        </SimpleGrid>
-      </Box> */}
       <IntrestedInBox />
       <ClientsLogo />
 

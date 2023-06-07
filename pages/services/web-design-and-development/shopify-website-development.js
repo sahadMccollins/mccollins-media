@@ -128,7 +128,7 @@ const Shopify = ({ metaTags }) => {
           </Flex>
 
           <video
-            src="https://res.cloudinary.com/mccollins-media/video/upload/v1677863386/Mccollins%20Video/Shopify_Video_01.03.2023_s3zes4.mp4"
+            src="/assets/cloudinaryBackup/Shopify_Video_01.03.2023_s3zes4.mp4"
             autoPlay="autoplay"
             playsInline=""
             muted="muted"

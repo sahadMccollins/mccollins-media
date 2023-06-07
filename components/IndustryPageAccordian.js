@@ -264,7 +264,7 @@ const IndustryPageAccordian = () => {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1657020825/Mccollins%20Video/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
+                src="/assets/cloudinaryBackup/WEBSITE_SHOWCASE_VIDEO_1_h7ntf6.mp4"
                 type="video/mp4"
               />
             </video>

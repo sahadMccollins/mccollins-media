@@ -11,31 +11,30 @@ const VideoCaseStudy = () => {
 
   function playVideo1() {
     video1Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677846880/Mccollins%20Video/Oakberry_Case_Study_Video_akplh6.mp4";
+      "/assets/cloudinaryBackup/Oakberry_Case_Study_Video_akplh6.mp4";
     video1Ref.current.play();
   }
 
   function playVideo2() {
     video2Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847650/Mccollins%20Video/Poco_Case_Study_yes5es.mp4";
+      "/assets/cloudinaryBackup/Poco_Case_Study_yes5es.mp4";
     video2Ref.current.play();
   }
 
   function playVideo3() {
     video3Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847842/Mccollins%20Video/Snaidero_Case_Study_Video_1_dmggpo.mp4";
+      "/assets/cloudinaryBackup/Snaidero_Case_Study_Video_1_dmggpo.mp4";
     video3Ref.current.play();
   }
 
   function playVideo4() {
     video4Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_kcnfgj.mp4";
+      "/assets/cloudinaryBackup/Snaidero_Case_Study_Video_kcnfgj.mp4";
     video4Ref.current.play();
   }
 
   function playVideo5() {
-    video5Ref.current.src =
-      "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/cyro.mp4";
+    video5Ref.current.src = "/assets/cloudinaryBackup/cyro.mp4";
     video5Ref.current.play();
   }
   return (

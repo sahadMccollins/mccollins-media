@@ -39,7 +39,7 @@ const ContentCreation = ({ metaTags }) => {
   function playVideo1() {
     if (!video1Ref.current.src) {
       video1Ref.current.src =
-        "https://res.cloudinary.com/dhhtgppki/video/upload/v1672984054/mccollins-media/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4";
+        "/assets/cloudinaryBackup/Armoured_Vehicles_-_Interior_-_Exterior_Video_cvqcvv.mp4";
       video1Ref.current.play();
     }
   }
@@ -47,15 +47,14 @@ const ContentCreation = ({ metaTags }) => {
   function playVideo2() {
     if (!video2Ref.current.src) {
       video2Ref.current.src =
-        "https://res.cloudinary.com/mccollins-media/video/upload/v1678182417/Mccollins%20Video/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4";
+        "/assets/cloudinaryBackup/Toshiba-Arabicversion-Youngman2_bvjmwq.mp4";
       video2Ref.current.play();
     }
   }
 
   function playVideo3() {
     if (!video3Ref.current.src) {
-      video3Ref.current.src =
-        "https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/Snaidero_Case_Study_Video_2_ivf5yh.mp4";
+      video3Ref.current.src = "/assets/cloudinaryBackup/cyro.mp4";
       video3Ref.current.play();
     }
   }
@@ -63,7 +62,7 @@ const ContentCreation = ({ metaTags }) => {
   function playVideo4() {
     if (!video4Ref.current.src) {
       video4Ref.current.src =
-        "https://res.cloudinary.com/dhhtgppki/video/upload/v1672987704/mccollins-media/Mapei-LoadingVideo_thrg6q.mp4";
+        "/assets/cloudinaryBackup/Mapei-LoadingVideo_thrg6q.mp4";
       video4Ref.current.play();
     }
   }

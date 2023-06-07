@@ -32,7 +32,7 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
       </Head>
       <VideoBanner
         heading={`brand \n development`}
-        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/BRANDING_-_z6r43b.mp4"
+        video="/assets/cloudinaryBackup/BRANDING_-_z6r43b.mp4"
         content="Brand identity is everything, and we bring in unimaginable creativity through brand execution, logo creation, website redesign, social media content creation, and more."
         poster="/assets/image/servicePage/designAndBrand.jpg"
       />

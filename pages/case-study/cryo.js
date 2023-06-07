@@ -63,7 +63,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1677847856/Mccollins%20Video/cyro.mp4"
+                src="/assets/cloudinaryBackup/yro.mp4"
                 type="video/mp4"
                 media="screen"
               />
@@ -180,7 +180,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449645/Mccollins%20Video/Many_faces_of_Cryo_Body_zzgtod.mp4"
+                src="/assets/cloudinaryBackup/Many_faces_of_Cryo_Body_zzgtod.mp4"
                 type="video/mp4"
                 media="screen"
               />
@@ -205,7 +205,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678447494/Mccollins%20Video/1.mp4"
+                src="/assets/cloudinaryBackup/1.mp4"
                 type="video/mp4"
                 media="screen"
               />
@@ -230,7 +230,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1678449702/Mccollins%20Video/Everybody_Scream_p8mq88.mp4"
+                src="/assets/cloudinaryBackup/Everybody_Scream_p8mq88.mp4"
                 type="video/mp4"
                 media="screen"
               />

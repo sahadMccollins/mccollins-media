@@ -21,7 +21,7 @@ export default function Home({ metaTags }) {
           ReactHtmlParser(metaTags[0].content)}
       </Head>
       <HeroBanner
-        img="https://res.cloudinary.com/mccollins-media/image/upload/v1657138383/Mccollins%20Banner/home-banner_bwes6c.webp"
+        img="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
         h2="A Digital Pioneer In Changing The Game"
         content="We architect end-to-end experiences which create a meaningful digital footprint for your future."
       />

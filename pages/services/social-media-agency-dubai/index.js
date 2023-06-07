@@ -37,7 +37,7 @@ const SocialMediaMarketing = ({ metaTags }) => {
       </Head>
       <VideoBanner
         heading={`social media \n marketing`}
-        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600385/Mccollins%20Video/Social_Media-_jmavct.mp4"
+        video="/assets/cloudinaryBackup/Social_Media-_jmavct.mp4"
         content="Mobile First, Content Driven, Result Oriented extended marketing arm for your brand!"
         poster="/assets/image/servicePage/socialMediaMarketing.jpg"
       />

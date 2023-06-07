@@ -63,7 +63,7 @@ function CaseStudyPage({ metaTags }) {
               }}
             >
               <source
-                src="https://res.cloudinary.com/mccollins-media/video/upload/v1677846880/Mccollins%20Video/Oakberry_Case_Study_Video_akplh6.mp4"
+                src="/assets/cloudinaryBackup/Oakberry_Case_Study_Video_akplh6.mp4"
                 type="video/mp4"
                 media="screen"
               />

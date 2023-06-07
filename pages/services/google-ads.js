@@ -44,7 +44,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
       </Head>
       <VideoBanner
         heading={`google ads`}
-        video="https://res.cloudinary.com/mccollins-media/video/upload/v1657600388/Mccollins%20Video/Search_engine_marketing-_kg3pi4.mp4"
+        video="/assets/cloudinaryBackup/Search_engine_marketing-_kg3pi4.mp4"
         content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
         poster="/assets/image/servicePage/DMSEO.jpg"
       />
