@@ -64,7 +64,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
           pb={"50px"}
           direction={{ base: "column", md: "row" }}
         >
-          <Box width={{ base: "100%", md: "45%" }} position="relative">
+          <Box width={{ base: "100%", md: "50%" }} position="relative">
             <Box
               position={"absolute"}
               top={{ base: "37%", md: "-10%" }}
@@ -110,7 +110,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
             <Flex mt={5}>
               <Flex alignItems={"center"} mr="10">
                 <TbFolders size={"40px"} />
-                <Box ml={3}>
+                <Box ml={3} maxWidth={"225px"}>
                   <Text fontSize={"20px"} color="#FFDE11">
                     Category
                   </Text>
@@ -132,7 +132,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
               </Flex>
             </Flex>
           </Box>
-          <Box width={{ base: "100%", md: "55%" }} position="relative">
+          <Box width={{ base: "100%", md: "50%" }} position="relative">
             <Image
               alt="McCollins Media"
               src={blog.photo}
