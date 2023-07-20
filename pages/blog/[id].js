@@ -58,7 +58,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
       </Head>
       <Container maxWidth={"7xl"}>
         <Flex
-          mt="-50px"
+          mt={{ base: "-160px", md: "-100px" }}
           height={"100%"}
           minHeight="600px"
           pt="170px"
@@ -66,24 +66,11 @@ const Blog = ({ blog, recentPost, metaTags }) => {
           direction={{ base: "column", md: "row" }}
         >
           <Box width={{ base: "100%", md: "50%" }} position="relative">
-            {/* <Box
-              position={"absolute"}
-              top={{ base: "37%", md: "-10%" }}
-              left={"70%"}
-            >
-              <Image
-                alt="McCollins Media"
-                src="/assets/image/design/3.svg"
-                width={"89px"}
-                height={"104px"}
-                priority={true}
-              />
-            </Box> */}
             <Heading fontSize={"50px"} mt="10" color="#FFDE11">
               Blog
             </Heading>
             <Heading
-              fontSize={{ base: "40px", md: "42px" }}
+              fontSize={{ base: "30px", md: "42px" }}
               color="#000"
               fontWeight="black"
             >
@@ -108,7 +95,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
               />
               &nbsp;&nbsp;contact us
             </Button>
-            <Flex mt={5}>
+            <Flex mt={5} flexDir={{ base: "column", md: "row" }} my={10}>
               <Flex alignItems={"center"} mr="10">
                 <TbFolders size={"40px"} />
                 <Box ml={3} maxWidth={"225px"}>
@@ -120,7 +107,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
                   </Text>
                 </Box>
               </Flex>
-              <Flex alignItems={"center"}>
+              <Flex alignItems={"center"} mt={{ base: "5", md: "0" }}>
                 <TbCalendar size={"40px"} />
                 <Box ml={3}>
                   <Text fontSize={"20px"} color="#FFDE11">
