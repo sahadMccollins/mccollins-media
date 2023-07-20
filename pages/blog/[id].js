@@ -54,6 +54,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
         {metaTags.length > 0 &&
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
+        /assets/image/design/3.svg 1x, /asset
       </Head>
       <Container maxWidth={"7xl"}>
         <Flex
@@ -65,7 +66,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
           direction={{ base: "column", md: "row" }}
         >
           <Box width={{ base: "100%", md: "50%" }} position="relative">
-            <Box
+            {/* <Box
               position={"absolute"}
               top={{ base: "37%", md: "-10%" }}
               left={"70%"}
@@ -77,7 +78,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
                 height={"104px"}
                 priority={true}
               />
-            </Box>
+            </Box> */}
             <Heading fontSize={"50px"} mt="10" color="#FFDE11">
               Blog
             </Heading>
