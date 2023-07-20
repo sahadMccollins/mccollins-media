@@ -51,9 +51,10 @@ const Blog = ({ blog, recentPost, metaTags }) => {
       <Container maxWidth={"7xl"}>
         <Flex
           mt="-50px"
-          height={{ base: "100%", md: "100vh" }}
+          height={"100%"}
           minHeight="600px"
           pt="170px"
+          pb={"50px"}
           direction={{ base: "column", md: "row" }}
         >
           <Box width={{ base: "100%", md: "40%" }} position="relative">
