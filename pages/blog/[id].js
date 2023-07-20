@@ -43,7 +43,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
         <meta property="og:image" content={blog.photo} />
         <meta
           property="og:url"
-          content={`https://www.mccollinsmedia.com${metaTags[0].url}`}
+          content={`https://www.mccollinsmedia.com${metaTags[0]?.url}`}
         />
         {metaTags[0] && (
           <link
