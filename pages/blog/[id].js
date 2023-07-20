@@ -38,6 +38,13 @@ const Blog = ({ blog, recentPost, metaTags }) => {
         <title>{blog.SEOtitle}</title>
         <meta name="description" content={blog.description} />
         <meta name="keywords" content={blog.keywords} />
+        <meta property="og:title" content={blog.SEOtitle} />
+        <meta property="og:description" content={blog.description} />
+        <meta property="og:image" content={blog.photo} />
+        <meta
+          property="og:url"
+          content={`https://www.mccollinsmedia.com${metaTags[0].url}`}
+        />
         {metaTags[0] && (
           <link
             rel="canonical"
@@ -57,7 +64,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
           pb={"50px"}
           direction={{ base: "column", md: "row" }}
         >
-          <Box width={{ base: "100%", md: "40%" }} position="relative">
+          <Box width={{ base: "100%", md: "45%" }} position="relative">
             <Box
               position={"absolute"}
               top={{ base: "37%", md: "-10%" }}
