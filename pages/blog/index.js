@@ -29,14 +29,14 @@ const Index = ({ blogs, metaTags }) => {
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
       </Head>
-      <Container maxWidth={"7xl"}>
+      {/* <Container maxWidth={"7xl"}>
         <InnerBanner
           name="blog"
           img="/assets/image/blogPage/blogBanner.jpg"
           heading={`Boost Your \n Business Online \n Presence`}
           content="Stay ahead of the competition with our expert advice on SEO, social media, email marketing, PPC, and more. Upgrade your digital marketing skills today!"
         />
-      </Container>
+      </Container> */}
       <Box py="10" bg="#F7F7F7">
         <Container maxWidth={"7xl"}>
           <Heading
