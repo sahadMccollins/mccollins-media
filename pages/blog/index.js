@@ -70,9 +70,15 @@ const Index = ({ blogs, metaTags }) => {
               alignSelf="center"
               mb={"5"}
               textAlign={{ base: "center", md: "left" }}
+              onClick={() => {
+                router.push(`/blog/${blogs[0].blogUrl}`);
+              }}
+              cursor={"pointer"}
             >
-              <Heading className="main-h2">{blogs[0].title}</Heading>
-              <Box my={5} display="flex">
+              <Heading className="main-h2" textAlign={"right"}>
+                {blogs[0].title}
+              </Heading>
+              <Box my={5} display="flex" justifyContent={"end"}>
                 <Text
                   bg="#393838"
                   width={"fit-content"}
@@ -93,16 +99,16 @@ const Index = ({ blogs, metaTags }) => {
                 ></Box>
               </Box>
 
-              <Text fontWeight={"bold"}>{blogs[0].shortContent}</Text>
+              <Text fontWeight={"bold"} textAlign={"right"}>
+                {blogs[0].shortContent}
+              </Text>
               <Button
+                float={"right"}
                 colorScheme="yellow"
                 background={"#FFDE11"}
                 borderRadius="20px"
                 color="#000"
                 fontWeight="bold"
-                onClick={() => {
-                  router.push(`/blog/${blogs[0].blogUrl}`);
-                }}
               >
                 read more
                 <ChevronRightIcon mt="2px" width="1.3em" height="1.3em" />
