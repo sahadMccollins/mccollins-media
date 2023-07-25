@@ -151,7 +151,15 @@ const Blog = ({ blog, recentPost, metaTags }) => {
               <hr />
               <Box mt={5}>
                 {recentPost.map((rp) => (
-                  <Flex key={rp._id} alignItems={"center"} mt="10">
+                  <Flex
+                    key={rp._id}
+                    alignItems={"center"}
+                    mt="10"
+                    onClick={() => {
+                      router.push(`/blog/${rp.blogUrl}`);
+                    }}
+                    cursor={"pointer"}
+                  >
                     <Image
                       alt="McCollins Media"
                       src={rp.photo}
