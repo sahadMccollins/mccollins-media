@@ -144,6 +144,14 @@ const Blog = ({ blog, recentPost, metaTags }) => {
               bg={"#fff"}
               p="5"
             >
+              {blog.video && (
+                <video
+                  style={{ marginBottom: "30px" }}
+                  src={blog.video}
+                  controls
+                  width={"100%"}
+                />
+              )}
               <Editor editorState={editorState} readOnly />
             </Box>
             <Box width={{ base: "100%", md: "25%" }} bg="#fff" p="5">

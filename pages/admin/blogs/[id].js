@@ -38,6 +38,7 @@ const EditBlog = ({ blog }) => {
   const [category, setCategory] = useState(blog.category);
   const [author, setAuthor] = useState(blog.author);
   const [photo, setPhoto] = useState(blog.photo);
+  const [video, setVideo] = useState(blog.video);
   const [tags, setTags] = useState(blog.tags);
   const [keywords, setkeywords] = useState(blog.keywords);
   const [description, setDescription] = useState(blog.description);
@@ -102,6 +103,7 @@ const EditBlog = ({ blog }) => {
         category: category,
         author: author,
         photo: photo,
+        video: video,
         tags: tags,
         keywords: keywords,
         description: description,
@@ -226,6 +228,16 @@ const EditBlog = ({ blog }) => {
                     id="photo"
                     type="file"
                     onChange={(e) => imgUpload(e)}
+                  />
+                </FormControl>
+                <FormControl p={5}>
+                  <FormLabel htmlFor="category">Video</FormLabel>
+                  <Input
+                    id="video"
+                    type="text"
+                    value={video}
+                    onChange={(e) => setVideo(e.target.value)}
+                    required
                   />
                 </FormControl>
               </Box>
