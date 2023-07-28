@@ -237,7 +237,6 @@ const EditBlog = ({ blog }) => {
                     type="text"
                     value={video}
                     onChange={(e) => setVideo(e.target.value)}
-                    required
                   />
                 </FormControl>
               </Box>
