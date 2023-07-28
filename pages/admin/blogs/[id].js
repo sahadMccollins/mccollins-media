@@ -230,6 +230,15 @@ const EditBlog = ({ blog }) => {
                     onChange={(e) => imgUpload(e)}
                   />
                 </FormControl>
+                {/* <FormControl p={5}>
+                  <FormLabel htmlFor="category">Video</FormLabel>
+                  <Input
+                    id="video"
+                    type="text"
+                    value={video}
+                    onChange={(e) => setVideo(e.target.value)}
+                  />
+                </FormControl> */}
                 <FormControl p={5}>
                   <FormLabel htmlFor="category">Video</FormLabel>
                   <Input
