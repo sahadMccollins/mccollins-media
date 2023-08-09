@@ -57,6 +57,7 @@ const FormBox = (props) => {
         contact: contact,
         text: text,
         services: checkedItemsString,
+        page: props.page,
       }),
     };
     fetch("/api/form-submit", requestOptions).then(
@@ -88,6 +89,9 @@ const FormBox = (props) => {
     formData.append("Services", checkedItemsString);
     formData.append("jobTitle", jobTitle);
     formData.append("Message", text);
+    if (props.page) {
+      formData.append("page", props.page);
+    }
 
     fetch(
       "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
