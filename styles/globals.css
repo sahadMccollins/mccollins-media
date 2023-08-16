@@ -956,3 +956,9 @@ body .clientsLogoStack {
 .taggbox a , .tb_post_modal_modal_body a {
   clip-path: polygon(50% 0%, 0% 100%, 0 100%);
 }
+
+.T1 {
+    color: #64e22e !important;
+    font-size: 50px !important;
+    margin-bottom: 10px;
+}
