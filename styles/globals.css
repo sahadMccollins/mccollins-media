@@ -957,8 +957,202 @@ body .clientsLogoStack {
   clip-path: polygon(50% 0%, 0% 100%, 0 100%);
 }
 
-.T1 {
-    color: #64e22e !important;
-    font-size: 50px !important;
-    margin-bottom: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Film Production */
+
+
+  .film-prd {
+    background: #000;
+  }
+
+  .filmSubmit {
+        background-color: #E22E46 !important;
+    color: #fff !important;
+    border: 0px solid #e4e4e4;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .filmSubmit2 {
+    margin: 0;
+    display: inline-block;
+    background-color: #fff !important;
+    padding: 12px;
+    width: auto;
+    min-width: 210px;
+    line-height: 1;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #000 !important;
+  }
+
+  .film-prd  .formElements input{
+    padding: 10px;
+    border: 0px solid #e4e4e4;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background-color: #E22E46 !important;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff !important;
+  }
+  .film-prd .formElements ::placeholder {
+    color: #fff !important;
+    opacity: 1; /* Firefox */
+  }
+  
+  .film-prd .formElements :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff !important;
+  }
+  
+  .film-prd .formElements ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #fff !important;
+  }
+  .film-prd .formElements p{
+    margin-bottom: 0 !important;
+  }
+  .film-prd .formElements br{
+    display: none !important;
+  }
+  .film-prd .formElements input.SubmitBtn , 
+  .film-prd .formElements input.wpcf7-submit{
+    margin: 0;
+    display: inline-block;
+    background-color: #fff !important;
+    padding: 12px;
+    width: auto;
+    min-width: 210px;
+    line-height: 1;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #000 !important;
+  }
+  .film-prd footer a{
+      color:#fff !important;
+  }
+  
+  .film-prd .HeaderForm .formElements input, .HeaderForm .formElements select{
+      background-color: transparent !important;
+      margin-bottom: 10px;
+      font-size: 17px;
+      padding:10px 0px;
+  }
+  .film-prd .HeaderForm .formElements input.wpcf7-submit{
+      background-color: #E22E46 !important;
+        color: #fff !important;
+        border: 0px solid #e4e4e4;
+        width: 100%;
+        margin-top: 10px;
+  }
+  .film-prd .HeaderForm .formElements select option{
+      background-color: #E22E46 !important;
+      color:#fff !important;
+  }
+  .film-prd .image-title .row{
+      align-items:center;
+  }
+  .film-prd .film-prd footer .wpcf7-not-valid-tip {
+  color: #25d366;
+  }
+  .film-prd .film-prd input:-webkit-autofill,
+.film-prd .film-prd input:-webkit-autofill:hover, 
+.film-prd .film-prd input:-webkit-autofill:focus, 
+.film-prd .film-prd input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgba(0,0,0,0.4) inset !important;
 }
+.film-prd .film-prd input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
+.film-prd .HeaderForm .formElements select option:checked , 
+.film-prd .HeaderForm .formElements select option:hover{
+    background-color:#000 !important;
+}
+.film-prd .film-prd input , .film-prd select{
+    -webkit-appearance: none;
+    -webkit-appearance: none !important;
+}
+
+  @media only screen and (max-width: 800px) {
+  .film-prd .p2mainContent {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .film-prd .p2HeadText {
+      font-size: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    .film-prd .cta1 {
+      font-size: 20px;
+    }
+    .film-prd .Popup2 {
+      padding: 20px;
+      border-bottom:0px solid #e4e4e4 !important;
+    }
+    .film-prd .formElements input ,.formElements select {
+      padding: 10px 10px !important;
+      margin-bottom: 15px !important;
+    }
+}
+		  
+		  .film-prd .stickyBtmBtn {
+			  display:none;
+			  position:fixed;
+			  bottom:0;
+			  width:100%;
+			  background:#000;
+			  color:#fff;
+			  justify-content: space-around;
+			  z-index:99;
+		  }
+		  
+		  .film-prd .darkHeader .stickyBtmBtn {
+			  display:flex;
+		  }
+		  
+		  .film-prd .stickyBtmBtn .SBBtn {
+			  padding:10px;
+			  font-size:12px;
+			  color:#fff;
+		  }
+		  
+		  .film-prd .stickyBtmBtn a {
+			  text-decoration: none;
+		  }
+		  
+		  .film-prd .stickyBtmBtn .SBWhatsapp {
+			  	background-color: #25d366;
+				height: auto;
+				padding: 10px;
+				display: flex;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 600;
+		  }
+		  
+		  @media only screen and (max-width: 800px) {
+			.film-prd .darkHeader .stickyBtmBtn {
+			  display:none;
+		  	}
+		  }
+
+
+
+
