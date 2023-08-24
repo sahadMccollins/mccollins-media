@@ -1113,7 +1113,7 @@ body .clientsLogoStack {
 }
 		  
 		  .film-prd .stickyBtmBtn {
-			  display:none;
+			  display:flex;
 			  position:fixed;
 			  bottom:0;
 			  width:100%;
@@ -1131,6 +1131,7 @@ body .clientsLogoStack {
 			  padding:10px;
 			  font-size:12px;
 			  color:#fff;
+        display: inline-flex;
 		  }
 		  
 		  .film-prd .stickyBtmBtn a {
