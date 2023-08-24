@@ -28,16 +28,22 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import AdminLayout from "../../components/Layout/AdminLayout";
 import NextLink from "next/link";
 import clientPromise from "../../lib/mongodb";
 import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
+import dynamic from "next/dynamic";
+
+const AdminLayout = dynamic(
+  () => import("../../components/Layout/AdminLayout"),
+  { ssr: false }
+);
 
 const FormSubmit = ({ data }) => {
   const [name, setName] = useState("");
   const [formId, setFormId] = useState("");
 
+  const router = useRouter();
   const { data: session } = useSession();
 
   const {
@@ -45,8 +51,6 @@ const FormSubmit = ({ data }) => {
     onOpen: onDeleteOpen,
     onClose: onDeleteClose,
   } = useDisclosure();
-
-  const router = useRouter();
 
   const refreshData = () => {
     router.replace(router.asPath);
