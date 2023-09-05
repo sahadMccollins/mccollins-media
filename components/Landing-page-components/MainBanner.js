@@ -21,7 +21,12 @@ const MainBanner1 = () => {
             </div>
             <div className="image-title">
                 <div className="widthFull">
-                    <div className="container">Ijas</div>
+                    <div className="icontainer">
+                        <div className="irow">
+                            <div className="icol-md-9">Ijas</div>
+                            <div className="icol-md-3">Ijas</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

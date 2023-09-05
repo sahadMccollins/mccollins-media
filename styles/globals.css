@@ -1210,8 +1210,23 @@ body .clientsLogoStack {
   height: 100%;
   z-index: 2;
 }
-.image-title  .container{
+.image-title  .icontainer{
   max-width: 1300px;
   margin: 0 auto;
   color: #fff;
+}
+.irow{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.icol-md-9{
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.icol-md-3{
+  flex: 0 0 25%;
+  max-width: 25%;
 }
