@@ -12,13 +12,11 @@ import {
 } from "@chakra-ui/react";
 import VideoBanner from "../../components/VideoBanner";
 import FadeUp from "../../components/Motion/FadeUp";
-import { useRouter } from "next/router";
 import Image from "next/image";
+import InnerLayout from "../../components/Layout/InnerLayout";
 
-const ThankYou = (props) => {
+const ThankYou = () => {
   const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
-  // const videoRef = useRef();
-  const router = useRouter();
   return (
     <>
       <Stack
@@ -78,6 +76,10 @@ const ThankYou = (props) => {
       </Stack>
     </>
   );
+};
+
+ThankYou.getLayout = function getLayout(ThankYou) {
+  return <InnerLayout color="yellow">{ThankYou}</InnerLayout>;
 };
 
 export default ThankYou;
