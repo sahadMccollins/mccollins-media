@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import EmptyLayout from "../components/Layout/EmptyLayout";
+import EmptyLayout from "../../components/Layout/EmptyLayout";
 import Head from "next/head";
 import $ from "jquery";
 
 import OwlCarousel from "react-owl-carousel2";
 import { useToast } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 const FilmProduction = () => {
   const [fullName, setFullName] = useState("");
@@ -16,6 +17,8 @@ const FilmProduction = () => {
   const [loading, setLoading] = useState(false);
 
   const toast = useToast();
+
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -64,7 +67,8 @@ const FilmProduction = () => {
         status: "success",
         duration: 9000,
         isClosable: true,
-      })
+      }),
+      router.push(`/film-production/thank-you`)
     );
   };
 
