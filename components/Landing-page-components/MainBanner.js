@@ -14,7 +14,7 @@ const MainBanner1 = () => {
           muted
           width="100%"
           className="LpMainVideo"
-          poster="/assets/image/servicePage/serviceAccordian.jpg"
+          poster="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
         >
           <source
             src="/mccollins-media-video-compressed.mp4"
