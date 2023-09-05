@@ -1211,7 +1211,7 @@ body .clientsLogoStack {
   z-index: 2;
 }
 .image-title  .icontainer{
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   color: #fff;
 }
@@ -1221,12 +1221,84 @@ body .clientsLogoStack {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  align-items: center;
 }
 .icol-md-9{
-  flex: 0 0 75%;
-  max-width: 75%;
+  flex: 0 0 70%;
+  max-width: 70%;
 }
 .icol-md-3{
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.T1{
+  font-size: 60px;
+  text-transform: capitalize;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.T2{
+  font-size: 20px;
+}
+.PartnerItemImg{
+  width: 100%;
+}
+.PartnerBox{
+  display: flex;
+  margin: 0 -10px;
+}
+.PartnerItem{
+  padding: 0 10px;
+  flex: 0 0 190px;
+  max-width: 190px;
+}
+.HeaderForm {
+  padding: 25px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  min-height: 250px;
+  border-radius: 20px;
+}
+
+.FormItem input ,
+.FormItem select{
+  padding: 8px 15px;
+  color: #fff;
+  width: 100%;
+  box-shadow: none;
+  outline: none !important;
+  color: #212121;
+  border-radius: 20px;
+}
+.FormElements .FormItem{
+  margin-bottom: 10px;
+}
+.intl-tel-input{
+  display: block !important;
+}
+.FormItem ::placeholder {
+  color: #212121;
+  opacity: 1; 
+}
+
+.FormItem :-ms-input-placeholder {
+ color: #212121;
+}
+
+.FormItem ::-ms-input-placeholder{ 
+ color: #212121;
+}
+.FormLabel{
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.intl-tel-input .country-list .country ,
+.intl-tel-input .flag-container .arrow{
+  color: #212121 !important;
+}
+.intl-tel-input .country-list{
+  max-width: 320px !important;
+  overflow-x: hidden !important;
 }
