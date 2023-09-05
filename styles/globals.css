@@ -1289,14 +1289,14 @@ body .clientsLogoStack {
 
 .FormItem input ,
 .FormItem select{
-  padding: 7px 15px;
+  padding: 9px 15px;
   color: #fff;
   width: 100%;
   box-shadow: none;
   outline: none !important;
   color: #212121;
   border-radius: 20px;
-  font-size: 17px;
+  font-size: 15px;
   display: block;
 }
 .FormElements .FormItem{
@@ -1454,6 +1454,59 @@ max-width: 50%;
 .T8{
   margin-bottom: 10px;
 }
+.bg-3{
+  background-color: #000;
+}
 .padExt .c5555{
   padding: 0px 15px;
+}
+.HdStyle1{
+  text-align: center;
+  color: #fff;
+}
+.Hd1{
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.Hd2{
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.Hd3 span{
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #ECCA1C;
+  margin-bottom: 40px;
+}
+.PortFolioBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.PortFolioBoxItem{
+  flex: 0 0 33.33%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.ItemName{
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ECCA1C;
+  font-weight: 900;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  bottom: -500%;
+  transition: 0.4s;
+}
+.PortFolioBoxItem:hover .ItemName{
+  bottom: 0;
 }
