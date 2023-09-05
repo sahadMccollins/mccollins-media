@@ -1521,17 +1521,21 @@ max-width: 50%;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 -35px;
 }
 .WorkStep{
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  padding: 0 15px;
+  padding: 0 35px;
   color: #fff;
 }
+.WorkSteps .WorkStep:first-child{
+  padding-left: 0;
+}
+
 .WorkStepHeader{
-  font-size: 23px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 600;
   color: #ECCA1C;
   margin-bottom: 15px;
   position: relative;
@@ -1561,4 +1565,10 @@ margin-right: 20px;
   background-size: 100% 100%;
   background-image: url(../public/lp/ic3.png);
   margin-right: 20px;
+}
+.HdStyle1.st1 .Hd3 span{
+  margin-bottom: 20px;
+}
+.HdStyle1.st1 .Hd2{
+margin-bottom: 40px;
 }
