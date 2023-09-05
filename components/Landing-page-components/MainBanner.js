@@ -182,6 +182,7 @@ const MainBanner1 = () => {
                       <option value="Financial Services and Banking">Financial Services and Banking</option>
                       <option value="Other">Other</option></select>
                     </div>
+                    <button className="SubmitBtn1">Get A Quote</button>
                   </div>
                 </div>
               </div>
