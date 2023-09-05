@@ -5,17 +5,7 @@ const LandingPage1 = () => {
     return(
         <div>
             <div>ijas</div>
-            <video
-          playsInline
-          autoPlay
-          loop
-          muted
-          width="100%"
-          className="LpMainVideo"
-          poster="/assets/image/servicePage/serviceAccordian.jpg"
-        >
-          <source src="/mccollins-media-video-compressed.mp4" type="video/mp4" />
-        </video>
+            
             <MainBanner1/>
         </div>
     )
