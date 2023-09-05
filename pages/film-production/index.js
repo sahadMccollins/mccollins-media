@@ -19,6 +19,7 @@ const FilmProduction = () => {
   const toast = useToast();
 
   const router = useRouter();
+  const currentURL = router.asPath;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,6 +31,7 @@ const FilmProduction = () => {
     formData.append("Phone", customerPhone);
     formData.append("Company", industry);
     formData.append("Services", lookingFor);
+    formData.append("URL", currentURL);
 
     fetch(
       "https://script.google.com/macros/s/AKfycbxLYnVN41fnxO2U8Pz81uFu4cOJc_W577hrs3fILAyD5ZKcdEs6vkiLzavvReQtecJSLQ/exec",
