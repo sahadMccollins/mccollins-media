@@ -14,6 +14,28 @@ const WorkTogether = () => {
             <span>&nbsp;</span>
           </div>
         </div>
+        <div className="WorkStepWrap">
+            <div className="WorkSteps">
+                <div className="WorkStep">
+                    <div>
+                        <div className="WorkStepHeader "><span className="ic1"></span>WE DISCUSS</div>
+                        <div className="WorkStepCnt">We’re a full-service digital marketing agency that hustles hard to makes users happy while infusing everything we do with the heart.</div>
+                    </div>
+                </div>
+                <div className="WorkStep">
+                    <div>
+                        <div className="WorkStepHeader"><span className="ic2"></span>WE DEVELOP</div>
+                        <div className="WorkStepCnt">We see beyond the insights and take you to the eye stand.</div>
+                    </div>
+                </div>
+                <div className="WorkStep">
+                    <div>
+                        <div className="WorkStepHeader"><span className="ic3"></span>WE DELIVER</div>
+                        <div className="WorkStepCnt">As a multifaceted digital marketing agency, we craft beautiful solutions that outdo business goals and garner recognition.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
       </div>
     </div>
