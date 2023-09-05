@@ -3001,7 +3001,7 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-classnames@^2.2.6:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.3.2"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -5603,6 +5603,11 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+libphonenumber-js-utils@^8.10.5:
+  version "8.10.5"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js-utils/-/libphonenumber-js-utils-8.10.5.tgz#778cb7633c94e2524f08c3109a7450095b4e6727"
+  integrity sha512-VxpwgrAGps1p5avOVQVBTCpUQwkrJZqptV2DoTimY3VXTzm0EetbT73sWVTkg8FmreVmM2qwwFl7yqymdOkFug==
+
 limiter@^1.0.5:
   version "1.1.5"
   resolved "https://registry.npmjs.org/limiter/-/limiter-1.1.5.tgz"
@@ -6918,7 +6923,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7106,6 +7111,17 @@ react-intersection-observer@^9.4.3:
   resolved "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.4.3.tgz"
   integrity sha512-WNRqMQvKpupr6MzecAQI0Pj0+JQong307knLP4g/nBex7kYfIaZsPpXaIhKHR+oV8z+goUbH9e10j6lGRnTzlQ==
 
+react-intl-tel-input@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/react-intl-tel-input/-/react-intl-tel-input-8.2.0.tgz#9e830fbe3bcca5aa5e8cdd84bac80da13e3ab389"
+  integrity sha512-fuIrd+rk2GTXj9Ff1qnSAIjwKkOb37xcTHjsQ4CcJZUma533pOOFtQxIhPYFA0qFRmblzclhP+Pn7EfiA38Eqg==
+  dependencies:
+    classnames "^2.2.5"
+    libphonenumber-js-utils "^8.10.5"
+    prop-types "^15.6.1"
+    react-style-proptype "^3.0.0"
+    underscore.deferred "^0.4.0"
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -7158,6 +7174,13 @@ react-remove-scroll@^2.5.5:
     tslib "^2.1.0"
     use-callback-ref "^1.3.0"
     use-sidecar "^1.1.2"
+
+react-style-proptype@^3.0.0:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/react-style-proptype/-/react-style-proptype-3.2.2.tgz#d8e998e62ce79ec35b087252b90f19f1c33968a0"
+  integrity sha512-ywYLSjNkxKHiZOqNlso9PZByNEY+FTyh3C+7uuziK0xFXu9xzdyfHwg4S9iyiRRoPCR4k2LqaBBsWVmSBwCWYQ==
+  dependencies:
+    prop-types "^15.5.4"
 
 react-style-singleton@^2.2.1:
   version "2.2.1"
@@ -8349,6 +8372,11 @@ undeclared-identifiers@^1.1.2:
     get-assigned-identifiers "^1.2.0"
     simple-concat "^1.0.0"
     xtend "^4.0.1"
+
+underscore.deferred@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/underscore.deferred/-/underscore.deferred-0.4.0.tgz#2753de633b9ff7db601a2f3fa2af92b3dd290e6c"
+  integrity sha512-OByG6SGS1FlbQrOijhS/B+QBiKbbtoOt6KvLrF/042W/96poPkVIVfaYxvoxW7ifDwG6RgKFV2X2x/EYEPXObA==
 
 unique-string@^2.0.0:
   version "2.0.0"
