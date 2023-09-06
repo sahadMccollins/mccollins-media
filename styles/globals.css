@@ -1653,4 +1653,136 @@ body.LandingPage .chakra-container{
   .pd-common {
     padding: 20px 0px;
   }
+  .TrustLogosBox {
+    background-color: #efefef;
+  }
+  .rowBox1 {
+    display: block;
+  }
+  .rowBox1L, .rowBox1R{
+    max-width: 100%;
+  }
+  .T3 {
+    font-size: 21px;
+    line-height: 1.1;
+    padding-bottom: 25px;
+  }
+  .T3::after {
+    height: 3px;
+    bottom: 10px;
+  }
+  .StepBoxItem {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .StepBox {
+    justify-content: center;
+  }
+  .rowBox1 {
+    margin-bottom: 20px;
+  }
+  .StepBoxItem .imgbox {
+    width: 50px !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+  }
+  .S1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .c55 {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .c5 {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .TExtHeader {
+    margin-bottom: 15px;
+  }
+  .TExtHeaderL{
+    flex: 0 0 15%;
+    max-width: 15%;
+    font-size: 30px;
+  }
+  .TExtHeaderR{
+    flex: 0 0 85%;
+    max-width: 85%;
+    font-size: 17px;
+  }
+  .c555 , .c5555{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .Hd1 {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.1;
+  }
+  .Hd2{
+    margin-bottom: 10px;
+  }
+  .Hd3 span {
+    height: 2px;
+    margin-bottom: 25px;
+  }
+  .PortFolioBoxItem{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .PortFolioBox , .WorkSteps{
+    justify-content: center;
+  }
+  .WorkStep {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .ic3 , .ic2 , .ic3{
+    width: 30px;
+  height: 30px;
+  }
+  .WorkStepHeader {
+    font-size: 15px;
+  }
+  .WorkTogether .icontainer {
+    padding: 20px 15px 0px 15px;
+  }
+  .footer .css-1w2b190{
+    font-size: 25px !important;
+  }
+  .footer {
+    padding: 20px 0px !important;
+  }
+  .footer p {
+    font-size: 15px !important;
+  }
+  .footer .css-147f185 {
+    margin-top: 0;
+  }
+  .footer .css-y6ena7{
+    padding-left: 0 !important;
+    font-size: 15px;
+  }
+  .footer .css-fy6cs6{
+    margin-top: 0;
+  }
+  .footer .css-15zcjia{
+    margin-top: 15px;
+  }
+  .footer .css-g6pte{
+    font-size: 13px;
+  }
+  .footer .css-p02364{
+    font-size: 14px;
+  }
 }
