@@ -78,14 +78,14 @@ const MainBanner1 = () => {
                   <div className="FormElements">
                     <div className="FormItem">
                       <div className="FormLabel">Full Name</div>
-                      <input type="text" placeholder="Your Name" />
+                      <input type="text" placeholder="Full Name" />
                     </div>
                     <div className="FormItem">
                       <div className="FormLabel">Email</div>
-                      <input type="text" placeholder="Your Email" />
+                      <input type="text" placeholder="Email" />
                     </div>
                     <div className="FormItem">
-                      <div className="FormLabel">Name</div>
+                      <div className="FormLabel">Phone Number</div>
                       <IntlTelInput
                         defaultCountry="ae"
                         containerClassName="intl-tel-input"
