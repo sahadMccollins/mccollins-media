@@ -28,8 +28,8 @@ const MainBanner1 = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                  web design &<br />
-                  development
+                  web design &<br /> development
+                  
                 </div>
                 <div className="T2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
@@ -76,15 +76,15 @@ const MainBanner1 = () => {
                 <div className="HeaderForm">
                   <div className="FormElements">
                     <div className="FormItem">
-                      <div className="FormLabel">Your Name</div>
+                      <div className="FormLabel">Full Name</div>
                       <input type="text" placeholder="Your Name" />
                     </div>
                     <div className="FormItem">
-                      <div className="FormLabel">Your Email</div>
+                      <div className="FormLabel">Email</div>
                       <input type="text" placeholder="Your Email" />
                     </div>
                     <div className="FormItem">
-                      <div className="FormLabel">Your Name</div>
+                      <div className="FormLabel">Name</div>
                       <IntlTelInput
                         defaultCountry="ae"
                         containerClassName="intl-tel-input"
