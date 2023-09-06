@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
+
 const MainBanner1 = () => {
   return (
     <div className="VideoBanner">
@@ -73,7 +74,7 @@ const MainBanner1 = () => {
                 </div>
               </div>
               <div className="icol-md-3">
-                <div className="HeaderForm">
+                <div className="HeaderForm" id="contactus">
                   <div className="FormElements">
                     <div className="FormItem">
                       <div className="FormLabel">Full Name</div>
