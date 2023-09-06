@@ -1214,9 +1214,9 @@ body .clientsLogoStack {
   z-index: 2;
 }
 .icontainer{
-  max-width: 1370px;
+  max-width: 1415px;
   margin: 0 auto;
-
+  padding:0 15px;
 }
 .VideoBanner .icontainer{
   color: #fff;
@@ -1232,10 +1232,12 @@ body .clientsLogoStack {
 .icol-md-9{
   flex: 0 0 70%;
   max-width: 70%;
+  padding: 0 15px;
 }
 .icol-md-3{
   flex: 0 0 25%;
   max-width: 25%;
+  padding: 0 15px;
 }
 .T1{
   font-size: 60px;
@@ -1376,7 +1378,7 @@ max-width: 50%;
 .StepBoxItem{
   flex: 0 0 20%;
   max-width: 20%;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .StepBoxItem .imgbox{
   width: 90px !important;
@@ -1414,10 +1416,12 @@ max-width: 60%;
 .c555{
   flex: 0 0 40%;
 max-width: 40%;
+padding: 0 15px;
 }
 .c5555{
   flex: 0 0 50%;
 max-width: 50%;
+padding: 0 15px;
 }
 .TExtHeader{
   display: flex;
@@ -1515,23 +1519,21 @@ max-width: 50%;
 .WorkTogether .icontainer{
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  padding: 40px 0px;
+  padding: 40px 15px;
 }
 .WorkSteps{
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -35px;
+  margin: 0 -15px;
 }
 .WorkStep{
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  padding: 0 35px;
+  padding: 0 15px;
   color: #fff;
 }
-.WorkSteps .WorkStep:first-child{
-  padding-left: 0;
-}
+
 
 .WorkStepHeader{
   font-size: 20px;
@@ -1571,4 +1573,7 @@ margin-right: 20px;
 }
 .HdStyle1.st1 .Hd2{
 margin-bottom: 40px;
+}
+body.LandingPage .chakra-container{
+  max-width: 1415px !important;
 }

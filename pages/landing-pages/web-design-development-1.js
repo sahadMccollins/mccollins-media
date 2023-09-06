@@ -6,6 +6,9 @@ import WebPortfolio from "../../components/Landing-page-components/portfolio";
 import WorkTogether from "../../components/Landing-page-components/workTogether";
 import { Box } from "@chakra-ui/react";
 const LandingPage1 = () => {
+  useEffect(() => {
+    document.body.className = 'LandingPage';
+  });
   return (
     <Box marginTop={"-85px"} position="relative">
       <MainBanner1 />

@@ -1525,12 +1525,7 @@ const FilmProduction = () => {
             target="_blank"
           >
             <div className="SBWhatsapp">
-              <img
-                src="https://film.mccollinsmedia.com/wp-content/uploads/2023/08/whatsapp-white.png"
-                width="22px"
-                height="22px"
-              />{" "}
-              &nbsp; WhatsApp us
+               WhatsApp us
             </div>
           </a>
         </div>
