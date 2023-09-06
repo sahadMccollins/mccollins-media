@@ -139,7 +139,7 @@ const Navbar = (props) => {
       <Container maxWidth={"8xl"} mt="7" position="relative">
         <Flex>
           <Box flexGrow={1} zIndex="99">
-            <Link href="/">
+            <Link href="/" className="MainLogo1Link">
               <Image
                 alt="McCollins Media"
                 src={`/assets/image/navbar/${
@@ -149,6 +149,7 @@ const Navbar = (props) => {
                 height="50"
                 priority={true}
                 style={{ cursor: "pointer" }}
+                className="MainLogo1"
               />
             </Link>
           </Box>

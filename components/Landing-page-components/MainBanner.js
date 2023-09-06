@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
+
 const MainBanner1 = () => {
   return (
     <div className="VideoBanner">
@@ -14,7 +15,7 @@ const MainBanner1 = () => {
           muted
           width="100%"
           className="LpMainVideo"
-          poster="/assets/image/servicePage/serviceAccordian.jpg"
+          poster="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
         >
           <source
             src="/mccollins-media-video-compressed.mp4"
@@ -28,8 +29,8 @@ const MainBanner1 = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                  web design &<br />
-                  development
+                  web design &<br /> development
+                  
                 </div>
                 <div className="T2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
@@ -73,18 +74,18 @@ const MainBanner1 = () => {
                 </div>
               </div>
               <div className="icol-md-3">
-                <div className="HeaderForm">
+                <div className="HeaderForm" id="contactus">
                   <div className="FormElements">
                     <div className="FormItem">
-                      <div className="FormLabel">Your Name</div>
-                      <input type="text" placeholder="Your Name" />
+                      <div className="FormLabel">Full Name</div>
+                      <input type="text" placeholder="Full Name" />
                     </div>
                     <div className="FormItem">
-                      <div className="FormLabel">Your Email</div>
-                      <input type="text" placeholder="Your Email" />
+                      <div className="FormLabel">Email</div>
+                      <input type="text" placeholder="Email" />
                     </div>
                     <div className="FormItem">
-                      <div className="FormLabel">Your Name</div>
+                      <div className="FormLabel">Phone Number</div>
                       <IntlTelInput
                         defaultCountry="ae"
                         containerClassName="intl-tel-input"

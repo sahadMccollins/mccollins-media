@@ -985,6 +985,7 @@ body .clientsLogoStack {
     border: 0px solid #e4e4e4;
     width: 100%;
     margin-top: 10px;
+    padding: 8px;
   }
 
   .filmSubmit2 {
@@ -1214,9 +1215,9 @@ body .clientsLogoStack {
   z-index: 2;
 }
 .icontainer{
-  max-width: 1370px;
+  max-width: 1415px;
   margin: 0 auto;
-
+  padding:0 15px;
 }
 .VideoBanner .icontainer{
   color: #fff;
@@ -1232,10 +1233,12 @@ body .clientsLogoStack {
 .icol-md-9{
   flex: 0 0 70%;
   max-width: 70%;
+  padding: 0 15px;
 }
 .icol-md-3{
   flex: 0 0 25%;
   max-width: 25%;
+  padding: 0 15px;
 }
 .T1{
   font-size: 60px;
@@ -1286,17 +1289,19 @@ body .clientsLogoStack {
   min-height: 250px;
   border-radius: 20px;
 }
-
+.ft2{
+  line-height: 1;
+}
 .FormItem input ,
 .FormItem select{
-  padding: 7px 15px;
+  padding: 9px 15px;
   color: #fff;
   width: 100%;
   box-shadow: none;
   outline: none !important;
   color: #212121;
   border-radius: 20px;
-  font-size: 17px;
+  font-size: 15px;
   display: block;
 }
 .FormElements .FormItem{
@@ -1374,7 +1379,7 @@ max-width: 50%;
 .StepBoxItem{
   flex: 0 0 20%;
   max-width: 20%;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .StepBoxItem .imgbox{
   width: 90px !important;
@@ -1412,10 +1417,12 @@ max-width: 60%;
 .c555{
   flex: 0 0 40%;
 max-width: 40%;
+padding: 0 15px;
 }
 .c5555{
   flex: 0 0 50%;
 max-width: 50%;
+padding: 0 15px;
 }
 .TExtHeader{
   display: flex;
@@ -1454,9 +1461,409 @@ max-width: 50%;
 .T8{
   margin-bottom: 10px;
 }
+.bg-3{
+  background-color: #000;
+}
 .padExt .c5555{
   padding: 0px 15px;
 }
+.HdStyle1{
+  text-align: center;
+  color: #fff;
+}
+.Hd1{
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.Hd2{
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.Hd3 span{
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #ECCA1C;
+  margin-bottom: 40px;
+}
+.PortFolioBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.PortFolioBoxItem{
+  flex: 0 0 33.33%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.ItemName{
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ECCA1C;
+  font-weight: 900;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  bottom: -500%;
+  transition: 0.4s;
+}
+.PortFolioBoxItem:hover .ItemName{
+  bottom: 0;
+}
+.WorkTogether .icontainer{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 40px 15px;
+}
+.WorkSteps{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.WorkStep{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+  color: #fff;
+}
+
+
+.WorkStepHeader{
+  font-size: 20px;
+  font-weight: 600;
+  color: #ECCA1C;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ic1{
+display: inline-block;
+width: 45px;
+  height: 45px;
+background-size: 100% 100%;
+background-image: url(../public/lp/ic1.png);
+margin-right: 20px;
+}
+.ic2{
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background-size: 100% 100%;
+  background-image: url(../public/lp/ic2.png);
+  margin-right: 20px;
+}
+.ic3{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-size: 100% 100%;
+  background-image: url(../public/lp/ic3.png);
+  margin-right: 20px;
+}
+.HdStyle1.st1 .Hd3 span{
+  margin-bottom: 20px;
+}
+.HdStyle1.st1 .Hd2{
+margin-bottom: 40px;
+}
+body.LandingPage .chakra-container{
+  max-width: 1415px !important;
+}
+
+.mobile-only{
+  display: none !important;
+}
+@media (max-width: 780px) {
+  .mobile-only{
+    display: block !important;
+  }
+  .Navbar_hamBurger__6kFbf {
+    height: 25px;
+    width: 25px;
+    margin-top: -15px;
+  }
+  body.LandingPage .css-k008qs{
+    justify-content: space-between;
+    align-items: center;
+  }
+  body.LandingPage  .css-1omvuc1{
+    display: inline-block;
+    max-width: 140px;
+  }
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  .image-background{
+    display: none;
+  }
+  .VideoBanner{
+    background-color: #000;
+  }
+  .image-title {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    padding: 15px 0px;
+  }
+  .irow {
+    display: block;
+  }
+  .icol-md-3,
+  .icol-md-9{
+    max-width: 100%;
+  }
+  .T1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  body.LandingPage  br{
+    display: none;
+  }
+  body.LandingPage{
+    font-size: 14px;
+  }
+  .T2 {
+    font-size: 15px;
+  }
+  .video-background video{
+    min-height: 50vh;
+    object-fit: cover;
+  }
+  .PartnerItem {
+    padding: 0 10px;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .HeaderForm {
+    padding: 15px 0px;
+  }
+  .FormItem input, .FormItem select{
+    font-size: 13px;
+  }
+  .pd-common {
+    padding: 20px 0px;
+  }
+  .TrustLogosBox {
+    background-color: #efefef;
+  }
+  .rowBox1 {
+    display: block;
+  }
+  .rowBox1L, .rowBox1R{
+    max-width: 100%;
+  }
+  .T3 {
+    font-size: 21px;
+    line-height: 1.1;
+    padding-bottom: 25px;
+  }
+  .T3::after {
+    height: 3px;
+    bottom: 10px;
+  }
+  .StepBoxItem {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .StepBox {
+    justify-content: center;
+  }
+  .rowBox1 {
+    margin-bottom: 20px;
+  }
+  .StepBoxItem .imgbox {
+    width: 50px !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+  }
+  .S1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .c55 {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .c5 {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .TExtHeader {
+    margin-bottom: 15px;
+  }
+  .TExtHeaderL{
+    flex: 0 0 15%;
+    max-width: 15%;
+    font-size: 30px;
+  }
+  .TExtHeaderR{
+    flex: 0 0 85%;
+    max-width: 85%;
+    font-size: 17px;
+  }
+  .c555 , .c5555{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .Hd1 {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.1;
+  }
+  .Hd2{
+    margin-bottom: 10px;
+  }
+  .Hd3 span {
+    height: 2px;
+    margin-bottom: 25px;
+  }
+  .PortFolioBoxItem{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .PortFolioBox , .WorkSteps{
+    justify-content: center;
+  }
+  .WorkStep {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .ic3 , .ic2 , .ic3{
+    width: 30px;
+  height: 30px;
+  }
+  .WorkStepHeader {
+    font-size: 15px;
+  }
+  .WorkTogether .icontainer {
+    padding: 20px 15px 0px 15px;
+  }
+  .footer .css-1w2b190{
+    font-size: 25px !important;
+  }
+  .footer {
+    padding: 20px 0px !important;
+  }
+  .footer p {
+    font-size: 15px !important;
+  }
+  .footer .css-147f185 {
+    margin-top: 0;
+  }
+  .footer .css-y6ena7{
+    padding-left: 0 !important;
+    font-size: 15px;
+  }
+  .footer .css-fy6cs6{
+    margin-top: 0;
+  }
+  .footer .css-15zcjia{
+    margin-top: 15px;
+  }
+  .footer .css-g6pte{
+    font-size: 13px;
+  }
+  .footer .css-p02364{
+    font-size: 14px;
+  }
+  .footer .css-8g3cq9{
+    font-size: 15px;
+  }
+  .ItemName {
+    height: auto;
+    display: block;
+    font-size: 12px;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    padding: 10px 0px;
+  }
+  .halo-sticky-toolbar-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 9px #0000001f;
+    transition: transform .6s;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+  .bottom-bar {
+    padding: 3px 15px;
+    min-height: 60px;
+  }
+  .bottom-bar--list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+  .bottom-bar--list li {
+    position: relative;
+  }
+  .bottom-bar--list li > a {
+    padding: 7px 2px;
+    display: block;
+    pointer-events: auto;
+    text-align: center;
+    color: #1d1d1b;
+  }
+  .bottom-bar--list .icon + .text {
+    margin-top: 6px;
+    line-height: 1;
+    font-size: 11px;
+  }
+  .FtrIconH {
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+  .FtrIconH.whatsapp{
+    background-image: url(../public/lp/whatsapp.png);
+  }
+  .FtrIconH.call{
+    background-image: url(../public/lp/call.png);
+  }
+  .FtrIconH.home{
+    background-image: url(../public/lp/home.png);
+  }
+  .FtrIconH.reserve{
+    background-image: url(../public/lp/getaquote.png);
+  }
+  .FtrIconH.email{
+    background-image: url(../public/lp/email.png);
+  }
+}
+
+
 
 .formTbl td {
     max-width: 300px;
