@@ -1457,3 +1457,8 @@ max-width: 50%;
 .padExt .c5555{
   padding: 0px 15px;
 }
+
+.formTbl td {
+    max-width: 300px;
+    text-wrap: balance;
+}
