@@ -18,7 +18,7 @@ const FooterNav = () => {
               <div class="icon">
                 <div class="FtrIconH reserve">&nbsp;</div>
               </div>
-              <div class="text">Reserve</div>
+              <div class="text">Get a Quote</div>
             </a>
           </li>
           <li>
