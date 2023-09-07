@@ -1255,7 +1255,7 @@ body .clientsLogoStack {
   font-size: 35px;
   text-transform: capitalize;
   font-weight: 800;
-  line-height: 1.3;
+  line-height: 1.2;
   position: relative;
   padding-bottom: 20px;
 }
@@ -1294,14 +1294,14 @@ body .clientsLogoStack {
 }
 .FormItem input ,
 .FormItem select{
-  padding: 9px 15px;
+  padding: 10px 15px;
   color: #fff;
   width: 100%;
   box-shadow: none;
   outline: none !important;
   color: #fff;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 13px;
   display: block;
   background-color: transparent;
   border: 1px solid #fff;
@@ -1877,9 +1877,173 @@ body.LandingPage .chakra-container{
   }
 }
 
+.BtnSt1{
+  background-color: #FFDE11;
+  border-radius: 50px;
+  border: 0px solid #e4e4e4;
+  outline: none !important;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  color: #212121;
+  font-weight: var(--chakra-fontWeights-bold);
+  display: block;
+  max-width: 250px;
+  margin-top: 15px;
+}
+.HdSt2{
+  text-align: center;
 
-
+}
+.HdSt2T1{
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 800;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 15px;
+}
+.HdSt2T3 span{
+  display: inline-block;
+  background-color: #FFDE11;
+  width: 120px;
+  height: 3px;
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+.Portfolios{
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.PortfolioItem{
+  flex: 0 0 16.6666%;
+  max-width: 16.6666%;
+  padding: 0 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.PortfolioItem .imgWrap{
+  max-width: 220px;
+  padding: 10px 10px;
+  width: auto;
+  margin: 0 auto;
+}
+.pd-common-container .icontainer{
+  padding: 50px 15px;
+}
+.St12{
+  color: #FFDE11;
+  font-weight: 700;
+  font-size: 20px;
+}
+.Ar1 .rowBox1L{
+  flex: 0 0 40%;
+  max-width:40%;
+}
+.Ar1 .rowBox1R{
+  flex: 0 0 auto;
+  max-width:auto;
+}
+.rowBox1.Ar1{
+  align-items: center;
+  margin-bottom: 20px;
+}
 .formTbl td {
     max-width: 300px;
     text-wrap: balance;
+}
+.irow{
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+.irc3{
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0px 15px;
+  padding-top: 30px;
+}
+.OfferItemBox{
+  background-color: #F8F8F8;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+}
+.OfferItemBox *{
+  transition: 0.5s;
+}
+.OftIcon{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffde11;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.OfT2{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.OfT3{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.OfT4{
+  background-color: #FFDE11;
+  border-radius: 50px;
+  border: 0px solid #e4e4e4;
+  outline: none !important;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  color: #212121;
+  font-weight: var(--chakra-fontWeights-bold);
+  max-width: 150px;
+  display: inline-block;
+}
+.OfferItemBox:hover{
+  background-color: #fdce1a;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+}
+.OfferItemBox:hover .OftIcon ,
+.OfferItemBox:hover .OfT4{
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+  background-color: #fff;
+}
+.no-pb .icontainer{
+  padding-bottom: 0px !important;
+}
+.w{
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+}
+.w1{
+  background-image: url(../public/lp/w1.png);
+}
+.w2{
+  background-image: url(../public/lp/w2.png);
+  width: 15px;
+}
+.w3{
+  background-image: url(../public/lp/w3.png);
+}
+.w4{
+  background-image: url(../public/lp/w4.png);
+}
+.w5{
+  background-image: url(../public/lp/w5.png);
+}
+.w6{
+  background-image: url(../public/lp/w6.png);
 }
