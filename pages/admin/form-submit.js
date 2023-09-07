@@ -27,7 +27,7 @@ import {
   Tr,
   useDisclosure,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NextLink from "next/link";
 import clientPromise from "../../lib/mongodb";
 import { useRouter } from "next/router";
@@ -55,6 +55,10 @@ const FormSubmit = ({ data }) => {
   const refreshData = () => {
     router.replace(router.asPath);
   };
+
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
 
   const formDelete = () => {
     if (formId) {
@@ -107,13 +111,12 @@ const FormSubmit = ({ data }) => {
                 <TableCaption>Form Submit Table</TableCaption>
                 <Thead>
                   <Tr>
-                    <Th>SI.No</Th>
+                    <Th>Date</Th>
                     <Th>First Name</Th>
-                    <Th>Last Name</Th>
+                    <Th>Contact</Th>
+                    <Th>Email</Th>
                     <Th>Company</Th>
                     <Th>Job Title</Th>
-                    <Th>Email</Th>
-                    <Th>Contact</Th>
                     <Th>Services</Th>
                     <Th>How can we help you</Th>
                     <Th>Delete</Th>
@@ -121,36 +124,47 @@ const FormSubmit = ({ data }) => {
                 </Thead>
                 <Tbody>
                   {data
-                    ? data.map((form, i) => (
-                        <Tr key={form._id}>
-                          <Td>{i + 1}</Td>
-                          <Td>{form.firstName}</Td>
-                          <Td>{form.lastName}</Td>
-                          <Td>{form.company}</Td>
-                          <Td>{form.jobTitle}</Td>
-                          <Td>{form.email}</Td>
-                          <Td>{form.contact}</Td>
-                          <Td>{form.services}</Td>
-                          <Td>{form.text}</Td>
-                          <Td>
-                            <DeleteIcon
-                              cursor={"pointer"}
-                              onClick={() => {
-                                setName(form.firstName);
-                                setFormId(form._id);
-                                onDeleteOpen();
-                              }}
-                            />
-                          </Td>
-                        </Tr>
-                      ))
+                    ? data
+                        .slice()
+                        .reverse()
+                        .map((form, i) => (
+                          <Tr key={form._id} className="formTbl">
+                            <Td>
+                              {form.date !== undefined
+                                ? new Date(form.date).toLocaleDateString()
+                                : ""}
+                            </Td>
+                            <Td>
+                              {form.firstName +
+                                " " +
+                                (form.lastName !== undefined
+                                  ? form.lastName
+                                  : "")}
+                            </Td>
+                            <Td>{form.contact}</Td>
+                            <Td>{form.email}</Td>
+                            <Td>{form.company}</Td>
+                            <Td>{form.jobTitle}</Td>
+                            <Td>{form.services}</Td>
+                            <Td>{form.text}</Td>
+                            <Td>
+                              <DeleteIcon
+                                cursor={"pointer"}
+                                onClick={() => {
+                                  setName(form.firstName);
+                                  setFormId(form._id);
+                                  onDeleteOpen();
+                                }}
+                              />
+                            </Td>
+                          </Tr>
+                        ))
                     : null}
                 </Tbody>
                 <Tfoot>
                   <Tr>
-                    <Th>SI.No</Th>
+                    <Th>Date</Th>
                     <Th>First Name</Th>
-                    <Th>Last Name</Th>
                     <Th>Company</Th>
                     <Th>Job Title</Th>
                     <Th>Email</Th>

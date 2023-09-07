@@ -58,6 +58,7 @@ const FormBox = (props) => {
         text: text,
         services: checkedItemsString,
         page: props.page,
+        date: new Date(),
       }),
     };
     fetch("/api/form-submit", requestOptions).then(

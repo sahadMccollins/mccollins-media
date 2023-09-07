@@ -1876,3 +1876,10 @@ body.LandingPage .chakra-container{
     background-image: url(../public/lp/email.png);
   }
 }
+
+
+
+.formTbl td {
+    max-width: 300px;
+    text-wrap: balance;
+}

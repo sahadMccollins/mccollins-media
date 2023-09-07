@@ -52,6 +52,7 @@ const Footer = () => {
         company: company,
         services: lookingFor,
         text: project,
+        date: new Date(),
       }),
     };
     fetch("/api/form-submit", requestOptions).then(
@@ -71,7 +72,6 @@ const Footer = () => {
         isClosable: true,
       })
     );
-
     let formData = new FormData();
     formData.append("Firstname", name);
     formData.append("Email", email);

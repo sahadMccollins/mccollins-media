@@ -77,6 +77,7 @@ const Navbar = (props) => {
         company: company,
         services: lookingFor,
         text: project,
+        date: new Date(),
       }),
     };
     fetch("/api/form-submit", requestOptions).then(

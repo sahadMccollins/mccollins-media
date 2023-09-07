@@ -53,6 +53,7 @@ const FilmProduction = () => {
         contact: customerPhone,
         company: industry,
         services: lookingFor,
+        date: new Date(),
       }),
     };
     fetch("/api/form-submit", requestOptions).then(
