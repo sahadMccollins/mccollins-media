@@ -1299,10 +1299,16 @@ body .clientsLogoStack {
   width: 100%;
   box-shadow: none;
   outline: none !important;
-  color: #212121;
+  color: #fff;
   border-radius: 20px;
   font-size: 15px;
   display: block;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.FormItem select option{
+  background-color: #FFDE11;
+  color: #000;
 }
 .FormElements .FormItem{
   margin-bottom: 10px;
@@ -1311,28 +1317,36 @@ body .clientsLogoStack {
   display: block !important;
 }
 .FormItem ::placeholder {
-  color: #212121;
+  color: #fff;
   opacity: 1; 
 }
 
 .FormItem :-ms-input-placeholder {
- color: #212121;
+ color: #fff;
 }
 
 .FormItem ::-ms-input-placeholder{ 
- color: #212121;
+ color: #fff;
 }
 .FormLabel{
   font-size: 14px;
   margin-bottom: 4px;
 }
 .intl-tel-input .country-list .country ,
-.intl-tel-input .flag-container .arrow{
+.intl-tel-input .country-list .country .dial-code
+{
   color: #212121 !important;
 }
+.intl-tel-input .flag-container .arrow{
+color: #fff !important;
+}
 .intl-tel-input .country-list{
-  max-width: 320px !important;
+  background-color: #ffde11 !important;
+}
+.intl-tel-input .country-list{
+  max-width: 100% !important;
   overflow-x: hidden !important;
+  border-radius: 5px;
 }
 .SubmitBtn1{
 background-color: #FFDE11;
