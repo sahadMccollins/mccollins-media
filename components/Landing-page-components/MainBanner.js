@@ -29,46 +29,104 @@ const MainBanner1 = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                  web design &<br /> development
+                Tired of One-Size-Fits-All <br/>Websites?
                   
                 </div>
                 <div className="T2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
-                  <br />
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.{" "}
+                Generic website templates can't effectively showcase what sets your business apart.<br/> Don't settle for mediocrity when you can have a website that's as unique as your brand.
                 </div>
                 <div className="PartnerBoxWrap">
                   <div className="PartnerBox">
                     <div className="PartnerItem">
+                      <div className="TechBox">
                       <Image
-                        src="/lp/react.png"
+                        src="/lp/react1.png"
                         layout="responsive"
-                        width={"186"}
-                        height={"101"}
+                        width={"200"}
+                        height={"200"}
                         priority={true}
                         className="PartnerItemImg"
                       />
+                      <div className="TechName">React Js</div>
+                      </div>
                     </div>
                     <div className="PartnerItem">
+                      <div className="TechBox">
                       <Image
-                        src="/lp/wordpress1.png"
+                        src="/lp/wordpressnew.png"
                         layout="responsive"
-                        width={"186"}
-                        height={"101"}
+                        width={"200"}
+                        height={"200"}
                         priority={true}
                         className="PartnerItemImg"
                       />
+                      <div className="TechName">Wordpress</div>
+                      </div>
                     </div>
                     <div className="PartnerItem">
+                      <div className="TechBox">
                       <Image
-                        src="/lp/shopify.png"
+                        src="/lp/vue.png"
                         layout="responsive"
-                        width={"186"}
-                        height={"101"}
+                        width={"200"}
+                        height={"200"}
                         priority={true}
                         className="PartnerItemImg"
                       />
+                      <div className="TechName">Vue Js</div>
+                      </div>
+                    </div>
+                    <div className="PartnerItem">
+                      <div className="TechBox">
+                      <Image
+                        src="/lp/angular.png"
+                        layout="responsive"
+                        width={"200"}
+                        height={"200"}
+                        priority={true}
+                        className="PartnerItemImg"
+                      />
+                      <div className="TechName">Angular Js</div>
+                      </div>
+                    </div>
+                    <div className="PartnerItem">
+                      <div className="TechBox">
+                      <Image
+                        src="/lp/nodejs.png"
+                        layout="responsive"
+                        width={"200"}
+                        height={"200"}
+                        priority={true}
+                        className="PartnerItemImg"
+                      />
+                      <div className="TechName">Node Js</div>
+                      </div>
+                    </div>
+                    <div className="PartnerItem">
+                      <div className="TechBox">
+                      <Image
+                        src="/lp/shopify1.png"
+                        layout="responsive"
+                        width={"200"}
+                        height={"200"}
+                        priority={true}
+                        className="PartnerItemImg"
+                      />
+                      <div className="TechName">Shopify</div>
+                      </div>
+                    </div>
+                    <div className="PartnerItem">
+                      <div className="TechBox">
+                      <Image
+                        src="/lp/php1.png"
+                        layout="responsive"
+                        width={"200"}
+                        height={"200"}
+                        priority={true}
+                        className="PartnerItemImg"
+                      />
+                      <div className="TechName">Php</div>
+                      </div>
                     </div>
                   </div>
                 </div>

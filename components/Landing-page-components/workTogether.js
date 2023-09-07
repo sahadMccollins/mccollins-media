@@ -40,6 +40,7 @@ const WorkTogether = () => {
         
       </div>
     </div>
+    
   );
 };
 export default WorkTogether;

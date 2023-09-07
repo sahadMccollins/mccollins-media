@@ -17,8 +17,8 @@ const LpGrid = () => {
                         <div className="TExtHeaderR">Corporate Websites</div>
                     </div>
                 </div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div className="T8">Unlock the potential of your corporate identity with our expertly tailored websites. Our designs reflect your unique brand and values, offering seamless user experiences across all devices.</div>
+                
             </div>
             <div className="c55">
               <Image
@@ -53,9 +53,7 @@ const LpGrid = () => {
                         <div className="TExtHeaderR">E-Commerce Development </div>
                     </div>
                 </div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div className="T8">Our strategic approach to design and functionality ensures a seamless shopping experience for your customers, resulting in higher conversion rates and increased revenue</div>
             </div>
             
           </div>
@@ -73,8 +71,7 @@ const LpGrid = () => {
                         <div className="TExtHeaderR">Application Development</div>
                     </div>
                 </div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div className="T8">Revolutionize your ideas into impactful apps with us. Our team excels in crafting user-centric mobile and web applications that drive results. From concept to launch, we ensure your app stands out and delivers</div>
             </div>
             <div className="c55">
               <Image
@@ -97,10 +94,10 @@ const LpGrid = () => {
                         <div className="TExtHeaderL">
                             4
                         </div>
-                        <div className="TExtHeaderR">Idea Based Development</div>
+                        <div className="TExtHeaderR">Tailored Websites for Your Unique Needs</div>
                     </div>
                 </div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div className="T81">Tired of One-Size-Fits-All Websites? Generic website templates can't effectively showcase what sets your business apart. Don't settle for mediocrity when you can have a website that's as unique as your brand.</div>
                
             </div>
             <div className="c5555">
@@ -109,10 +106,10 @@ const LpGrid = () => {
                         <div className="TExtHeaderL">
                             5
                         </div>
-                        <div className="TExtHeaderR">Mobile First Development </div>
+                        <div className="TExtHeaderR">Tailored Websites for Your Unique Needs</div>
                     </div>
                 </div>
-                <div className="T8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div className="T81">Mobile-first development is our foundation. We prioritize responsive design, delivering seamless user experiences on all devices. Engage and convert your audience across the mobile landscape with us</div>
                 
             </div>
           </div>

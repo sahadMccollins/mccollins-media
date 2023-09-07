@@ -1278,8 +1278,8 @@ body .clientsLogoStack {
 }
 .PartnerItem{
   padding: 0 10px;
-  flex: 0 0 190px;
-  max-width: 190px;
+  flex: 0 0 120px;
+  max-width: 120px;
 }
 .HeaderForm {
   padding: 25px;
@@ -1417,6 +1417,7 @@ max-width: 50%;
   margin-right: -15px;
   margin-left: -15px;
   justify-content: space-between;
+  align-items: center;
 }
 .c5{
   padding: 0 15px;
@@ -1449,10 +1450,19 @@ padding: 0 15px;
   flex: 0 0 auto;
   max-width: auto;
 }
+.TechName{
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.PartnerBoxWrap{
+  margin-top: 25px;
+}
 .TExtHeaderL{
   color: #000;
   opacity: 0.5;
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 800;
   padding-right: 25px;
   line-height: 1;
@@ -1461,6 +1471,7 @@ padding: 0 15px;
   font-size: 30px;
   font-weight: 800;
   position: relative;
+  line-height: 1.2;
 }
 .TExtHeaderR::after{
   content: "";
@@ -1474,6 +1485,11 @@ padding: 0 15px;
 }
 .T8{
   margin-bottom: 10px;
+  font-size: 27px;
+}
+.T81{
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 .bg-3{
   background-color: #000;
@@ -1596,286 +1612,7 @@ body.LandingPage .chakra-container{
 .mobile-only{
   display: none !important;
 }
-@media (max-width: 780px) {
-  .mobile-only{
-    display: block !important;
-  }
-  .Navbar_hamBurger__6kFbf {
-    height: 25px;
-    width: 25px;
-    margin-top: -15px;
-  }
-  body.LandingPage .css-k008qs{
-    justify-content: space-between;
-    align-items: center;
-  }
-  body.LandingPage  .css-1omvuc1{
-    display: inline-block;
-    max-width: 140px;
-  }
-  html {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  body {
-    overflow-x: hidden !important;
-  }
-  .image-background{
-    display: none;
-  }
-  .VideoBanner{
-    background-color: #000;
-  }
-  .image-title {
-    position: relative;
-    left: auto;
-    top: auto;
-    display: block;
-    padding: 15px 0px;
-  }
-  .irow {
-    display: block;
-  }
-  .icol-md-3,
-  .icol-md-9{
-    max-width: 100%;
-  }
-  .T1 {
-    font-size: 21px;
-    margin-bottom: 10px;
-  }
-  body.LandingPage  br{
-    display: none;
-  }
-  body.LandingPage{
-    font-size: 14px;
-  }
-  .T2 {
-    font-size: 15px;
-  }
-  .video-background video{
-    min-height: 50vh;
-    object-fit: cover;
-  }
-  .PartnerItem {
-    padding: 0 10px;
-    flex: 0 0 30%;
-    max-width: 30%;
-  }
-  .HeaderForm {
-    padding: 15px 0px;
-  }
-  .FormItem input, .FormItem select{
-    font-size: 13px;
-  }
-  .pd-common {
-    padding: 20px 0px;
-  }
-  .TrustLogosBox {
-    background-color: #efefef;
-  }
-  .rowBox1 {
-    display: block;
-  }
-  .rowBox1L, .rowBox1R{
-    max-width: 100%;
-  }
-  .T3 {
-    font-size: 21px;
-    line-height: 1.1;
-    padding-bottom: 25px;
-  }
-  .T3::after {
-    height: 3px;
-    bottom: 10px;
-  }
-  .StepBoxItem {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  .StepBox {
-    justify-content: center;
-  }
-  .rowBox1 {
-    margin-bottom: 20px;
-  }
-  .StepBoxItem .imgbox {
-    width: 50px !important;
-    margin: 0 auto;
-    margin-bottom: 15px;
 
-  }
-  .S1 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1;
-    margin-bottom: 10px;
-  }
-  .c55 {
-    padding: 0 15px;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .c5 {
-    padding: 0 15px;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .TExtHeader {
-    margin-bottom: 15px;
-  }
-  .TExtHeaderL{
-    flex: 0 0 15%;
-    max-width: 15%;
-    font-size: 30px;
-  }
-  .TExtHeaderR{
-    flex: 0 0 85%;
-    max-width: 85%;
-    font-size: 17px;
-  }
-  .c555 , .c5555{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .Hd1 {
-    font-size: 21px;
-    font-weight: 800;
-    margin-bottom: 10px;
-    line-height: 1.1;
-  }
-  .Hd2{
-    margin-bottom: 10px;
-  }
-  .Hd3 span {
-    height: 2px;
-    margin-bottom: 25px;
-  }
-  .PortFolioBoxItem{
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .PortFolioBox , .WorkSteps{
-    justify-content: center;
-  }
-  .WorkStep {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 25px;
-  }
-  .ic3 , .ic2 , .ic3{
-    width: 30px;
-  height: 30px;
-  }
-  .WorkStepHeader {
-    font-size: 15px;
-  }
-  .WorkTogether .icontainer {
-    padding: 20px 15px 0px 15px;
-  }
-  .footer .css-1w2b190{
-    font-size: 25px !important;
-  }
-  .footer {
-    padding: 20px 0px !important;
-  }
-  .footer p {
-    font-size: 15px !important;
-  }
-  .footer .css-147f185 {
-    margin-top: 0;
-  }
-  .footer .css-y6ena7{
-    padding-left: 0 !important;
-    font-size: 15px;
-  }
-  .footer .css-fy6cs6{
-    margin-top: 0;
-  }
-  .footer .css-15zcjia{
-    margin-top: 15px;
-  }
-  .footer .css-g6pte{
-    font-size: 13px;
-  }
-  .footer .css-p02364{
-    font-size: 14px;
-  }
-  .footer .css-8g3cq9{
-    font-size: 15px;
-  }
-  .ItemName {
-    height: auto;
-    display: block;
-    font-size: 12px;
-    position: relative;
-    left: auto;
-    bottom: auto;
-    padding: 10px 0px;
-  }
-  .halo-sticky-toolbar-mobile {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    box-shadow: 0 0 9px #0000001f;
-    transition: transform .6s;
-    background: #fff;
-    border: 1px solid #fff;
-  }
-  .bottom-bar {
-    padding: 3px 15px;
-    min-height: 60px;
-  }
-  .bottom-bar--list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
-  }
-  .bottom-bar--list li {
-    position: relative;
-  }
-  .bottom-bar--list li > a {
-    padding: 7px 2px;
-    display: block;
-    pointer-events: auto;
-    text-align: center;
-    color: #1d1d1b;
-  }
-  .bottom-bar--list .icon + .text {
-    margin-top: 6px;
-    line-height: 1;
-    font-size: 11px;
-  }
-  .FtrIconH {
-    width: 25px;
-    height: 25px;
-    background-size: 100% 100%;
-    margin: 0 auto;
-  }
-  .FtrIconH.whatsapp{
-    background-image: url(../public/lp/whatsapp.png);
-  }
-  .FtrIconH.call{
-    background-image: url(../public/lp/call.png);
-  }
-  .FtrIconH.home{
-    background-image: url(../public/lp/home.png);
-  }
-  .FtrIconH.reserve{
-    background-image: url(../public/lp/getaquote.png);
-  }
-  .FtrIconH.email{
-    background-image: url(../public/lp/email.png);
-  }
-}
 
 .BtnSt1{
   background-color: #FFDE11;
@@ -2131,4 +1868,344 @@ background-color: #F7F7F7;
   height: 15px;
   background-size: 100% 100%;
   background-image: url(../public/lp/nav.png);
+}
+
+@media (max-width: 780px) {
+  .mobile-only{
+    display: block !important;
+  }
+  .Navbar_hamBurger__6kFbf {
+    height: 25px;
+    width: 25px;
+    margin-top: -15px;
+  }
+  body.LandingPage .css-k008qs{
+    justify-content: space-between;
+    align-items: center;
+  }
+  body.LandingPage  .css-1omvuc1{
+    display: inline-block;
+    max-width: 140px;
+  }
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  .image-background{
+    display: none;
+  }
+  .VideoBanner{
+    background-color: #000;
+  }
+  .image-title {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    padding: 15px 0px;
+  }
+  .irow {
+    display: block;
+  }
+  .icol-md-3,
+  .icol-md-9{
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .T1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  body.LandingPage  br{
+    display: none;
+  }
+  body.LandingPage{
+    font-size: 14px;
+  }
+  .T2 {
+    font-size: 15px;
+  }
+  .video-background video{
+    min-height: 50vh;
+    object-fit: cover;
+  }
+  .PartnerItem {
+    padding: 0 10px;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .PartnerBox{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .HeaderForm {
+    padding: 15px 0px;
+  }
+  .FormItem input, .FormItem select{
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+  .pd-common {
+    padding: 20px 0px;
+  }
+  .TrustLogosBox {
+    background-color: #efefef;
+  }
+  .rowBox1 {
+    display: block;
+  }
+  .rowBox1L, .rowBox1R{
+    max-width: 100%;
+  }
+  .T3 {
+    font-size: 21px;
+    line-height: 1.1;
+    padding-bottom: 25px;
+  }
+  .T3::after {
+    height: 3px;
+    bottom: 10px;
+  }
+  .StepBoxItem {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .StepBox {
+    justify-content: center;
+  }
+  .rowBox1 {
+    margin-bottom: 20px;
+  }
+  .StepBoxItem .imgbox {
+    width: 50px !important;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+  }
+  .S1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .c55 {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .c5 {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .TExtHeader {
+    margin-bottom: 15px;
+  }
+  .TExtHeaderL{
+    flex: 0 0 15%;
+    max-width: 15%;
+    font-size: 30px;
+  }
+  .TExtHeaderR{
+    flex: 0 0 85%;
+    max-width: 85%;
+    font-size: 17px;
+  }
+  .c555 , .c5555{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .Hd1 {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.1;
+  }
+  .Hd2{
+    margin-bottom: 10px;
+  }
+  .Hd3 span {
+    height: 2px;
+    margin-bottom: 25px;
+  }
+  .PortFolioBoxItem{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .PortFolioBox , .WorkSteps{
+    justify-content: center;
+  }
+  .WorkStep {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .ic3 , .ic2 , .ic3{
+    width: 30px;
+  height: 30px;
+  }
+  .WorkStepHeader {
+    font-size: 15px;
+  }
+  .WorkTogether .icontainer {
+    padding: 20px 15px 0px 15px;
+  }
+  .footer .css-1w2b190{
+    font-size: 25px !important;
+  }
+  .footer {
+    padding: 20px 0px !important;
+  }
+  .footer p {
+    font-size: 15px !important;
+  }
+  .footer .css-147f185 {
+    margin-top: 0;
+  }
+  .footer .css-y6ena7{
+    padding-left: 0 !important;
+    font-size: 15px;
+  }
+  .footer .css-fy6cs6{
+    margin-top: 0;
+  }
+  .footer .css-15zcjia{
+    margin-top: 15px;
+  }
+  .footer .css-g6pte{
+    font-size: 13px;
+  }
+  .footer .css-p02364{
+    font-size: 14px;
+  }
+  .footer .css-8g3cq9{
+    font-size: 15px;
+  }
+  .ItemName {
+    height: auto;
+    display: block;
+    font-size: 12px;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    padding: 10px 0px;
+  }
+  .halo-sticky-toolbar-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 9px #0000001f;
+    transition: transform .6s;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+  .bottom-bar {
+    padding: 3px 15px;
+    min-height: 60px;
+  }
+  .bottom-bar--list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+  .bottom-bar--list li {
+    position: relative;
+  }
+  .bottom-bar--list li > a {
+    padding: 7px 2px;
+    display: block;
+    pointer-events: auto;
+    text-align: center;
+    color: #1d1d1b;
+  }
+  .bottom-bar--list .icon + .text {
+    margin-top: 6px;
+    line-height: 1;
+    font-size: 11px;
+  }
+  .FtrIconH {
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+  .FtrIconH.whatsapp{
+    background-image: url(../public/lp/whatsapp.png);
+  }
+  .FtrIconH.call{
+    background-image: url(../public/lp/call.png);
+  }
+  .FtrIconH.home{
+    background-image: url(../public/lp/home.png);
+  }
+  .FtrIconH.reserve{
+    background-image: url(../public/lp/getaquote.png);
+  }
+  .FtrIconH.email{
+    background-image: url(../public/lp/email.png);
+  }
+  .FormLabel {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .pd-common-container .icontainer {
+    padding: 20px 15px;
+  }
+  .HdSt2T1 {
+    font-size: 21px;
+    margin-bottom: 5px;
+  }
+  .PortfolioItem {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 5px;
+  }
+  .Portfolios{
+    margin: 0 -5px;
+  }
+  .PortfolioItem .imgWrap {
+    max-width: 220px;
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+      margin-bottom: 0px;
+    background: #efefef;
+    height: 90px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .TechName {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .T8 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .T81 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .TExtHeaderR::after{
+    height: 1px;
+  }
 }
