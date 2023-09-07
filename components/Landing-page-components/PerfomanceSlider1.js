@@ -1,11 +1,15 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { useState } from "react";
 import "swiper/css";
-import { useMediaQuery } from "@chakra-ui/react";
+import dynamic from "next/dynamic";
+const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
+import "../../node_modules/react-modal-video/css/modal-video.min.css";
+
 const PerfomanceSlider1 = () => {
     const swiperRef = useRef(null);
+    const [isOpen, setOpen] = useState(false);
   return (
     <div className="PerfomanceWrap pd-common-container">
       <div className="icontainer pt-0">
@@ -98,7 +102,7 @@ const PerfomanceSlider1 = () => {
                   </div>
                 </div>
                 <div className="PrGridMiddle2">
-                  <div className="VideoModalClick">
+                  <div className="VideoModalClick" onClick={() => setOpen(true)}>
                     <Image
                       alt="McCollins Media"
                       src="/lp/video.jpg"
@@ -107,7 +111,22 @@ const PerfomanceSlider1 = () => {
                       layout="responsive"
                     />
                   </div>
+                  <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={isOpen}
+          videoId="Pj6P8kQvpZw"
+          onClose={() => setOpen(false)}
+        />
                 </div>
+              </div>
+              <div className="SliderBtnWrp">
+                <span className="SliderBtn NextBtn" onClick={() => swiperRef.current.swiper.slideNext()}>
+                    <span className="Ner1">&nbsp;</span>
+                </span>
+                <span className="SliderBtn PrevBtn" onClick={() => swiperRef.current.swiper.slidePrev()}>
+                <span className="Ner2">&nbsp;</span>
+                </span>
               </div>
             </div>
           </div>
