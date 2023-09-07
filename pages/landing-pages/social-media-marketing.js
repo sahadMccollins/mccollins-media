@@ -6,6 +6,7 @@ import SocialMainBanner from "../../components/Landing-page-components/SocialMai
 import ClientPortFolio from "../../components/Landing-page-components/ClientPortfolio";
 import WhatWeOffer1 from "../../components/Landing-page-components/WhatWeOffer";
 import PerfomanceSlider1 from "../../components/Landing-page-components/PerfomanceSlider1";
+import ClientResults from "../../components/Landing-page-components/ClientResults";
 const LandingPage1 = () => {
   useEffect(() => {
     document.body.className = 'LandingPage';
@@ -23,6 +24,7 @@ const LandingPage1 = () => {
       <ClientPortFolio/>
       <WhatWeOffer1/>
       <PerfomanceSlider1/>
+      <ClientResults/>
       <FooterNav/>
     </Box>
   );
