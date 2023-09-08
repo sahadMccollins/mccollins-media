@@ -31,8 +31,6 @@ const LandingPage1 = () => {
       
       <WorkTogether/>
       <FooterNav/>
-      <AutoPlayVideo src="/abaka.mp4"/>
-      <AutoPlayVideo src="/asia.mp4"/>
     </Box>
   );
 };
