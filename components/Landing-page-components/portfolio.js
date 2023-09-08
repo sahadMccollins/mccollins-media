@@ -18,93 +18,63 @@ const WebPortfolio = () => {
           <div className="PortFolioBox">
             <div className="PortFolioBoxItem">
               <Image
-                src="/lp/p1.jpg"
+                src="/lp/a1.jpg"
                 layout="responsive"
                 width={"810"}
-                height={"766"}
+                height={"514"}
                 priority={true}
               />
-              <div className="ItemName">Pioneer</div>
+              <div className="ItemName">Doors Dubai</div>
             </div>
             <div className="PortFolioBoxItem">
               <Image
-                src="/lp/p2.jpg"
+                src="/lp/a2.jpg"
                 layout="responsive"
                 width={"810"}
-                height={"766"}
+                height={"514"}
                 priority={true}
               />
-              <div className="ItemName">Voss</div>
+              <div className="ItemName">DIH Dubai</div>
             </div>
             <div className="PortFolioBoxItem">
               <Image
-                src="/lp/p3.jpg"
+                src="/lp/a3.jpg"
                 layout="responsive"
                 width={"810"}
-                height={"766"}
+                height={"514"}
                 priority={true}
               />
-              <div className="ItemName">Snaidero Kitchen</div>
+              <div className="ItemName">Cleaning Superstore</div>
             </div>
             <div className="PortFolioBoxItem">
               <Image
-                src="/lp/p4.jpg"
+                src="/lp/a4.jpg"
                 layout="responsive"
                 width={"810"}
-                height={"766"}
+                height={"514"}
                 priority={true}
               />
-              <div className="ItemName">Dubai Freezone</div>
+              <div className="ItemName">Prowork</div>
             </div>
             <div className="PortFolioBoxItem">
               <Image
-                src="/lp/p5.jpg"
+                src="/lp/a5.jpg"
                 layout="responsive"
                 width={"810"}
-                height={"766"}
+                height={"514"}
                 priority={true}
               />
-              <div className="ItemName">Modern Oman Bakery</div>
+              <div className="ItemName">77asia</div>
             </div>
             <div className="PortFolioBoxItem">
               <Image
-                src="/lp/p6.jpg"
+                src="/lp/a7.jpg"
                 layout="responsive"
                 width={"810"}
-                height={"766"}
+                height={"514"}
                 priority={true}
               />
-              <div className="ItemName">Midea</div>
-            </div>
-            <div className="PortFolioBoxItem">
-              <Image
-                src="/lp/p7.jpg"
-                layout="responsive"
-                width={"810"}
-                height={"766"}
-                priority={true}
-              />
-              <div className="ItemName">Thoshiba</div>
-            </div>
-            <div className="PortFolioBoxItem">
-              <Image
-                src="/lp/p8.jpg"
-                layout="responsive"
-                width={"810"}
-                height={"766"}
-                priority={true}
-              />
-              <div className="ItemName">RTA</div>
-            </div>
-            <div className="PortFolioBoxItem">
-              <Image
-                src="/lp/p9.jpg"
-                layout="responsive"
-                width={"810"}
-                height={"766"}
-                priority={true}
-              />
-              <div className="ItemName">Costa Coffee</div>
+              <div className="ItemName">Zilli Dubai</div>
             </div>
           </div>
         </div>
