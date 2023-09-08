@@ -97,6 +97,11 @@
   font-weight: var(--chakra-fontWeights-bold);
   max-width: 200px;
   display: inline-block;
+  &.black{
+    background-color: #212121;
+    margin-top: 10px;
+    color: #fff;
+  }
 }
 .GridSt12Flex{
   width: 140%;
@@ -120,4 +125,42 @@
 }
 .GridSt12T2{
   font-size: 12px;
+}
+
+@media (max-width: 780px) {
+  .SliderWrap2{
+    .SliderGridBox{
+      .SliderGridBoxM{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .Flex50{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .SliderBox2{
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .GridSt12Flex{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .GridSt12T1{
+    font-size: 16px;
+  }
+  .GridSt12T2{
+    font-size: 9px;
+  }
+  .LogoWrap1{
+    max-width: 70px;
+  }
+  .st3{
+    padding: 8px;
+    max-width: 100%;
+  }
 }

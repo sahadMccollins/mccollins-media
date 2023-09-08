@@ -2210,4 +2210,84 @@ background-color: #F7F7F7;
   .TExtHeaderR::after{
     height: 1px;
   }
+  .Ar1 .rowBox1L {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .irc3 {
+    flex: 0 0 50%;
+    max-width: 100%;
+    padding: 15px 15px 0;
+  }
+  .OfT2 {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .OftIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .w {
+    width: 20px;
+    height: 20px;
+  }
+  .w2 {
+    width: 10px;
+  }
+  .St12 {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+  .rowBox1.Ar1 {
+    margin-bottom: 0;
+  }
+  .PrGridLeft{
+    display: none !important;
+  }
+  .PrGT1 {
+    font-size: 20px;
+    padding: 0;
+    border-left: 0px solid #fdce1a;
+    margin-bottom: 10px;
+    line-height: 1.1;
+  }
+  .PrGridMiddle1, .PrGridMiddle2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .PerfomanceG {
+    padding: 5px 0px;
+    display: inline-block;
+    width: 49%;
+    border-bottom: 0px solid #fff;
+  }
+  .PerfomanceG1 {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .PrGridMiddle {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .PerfomanceWrap {
+    background: #FFDE11;
+  padding-top: 20px;
+  }
+  .PrGridMiddle1 {
+    background-color: #FFDE11;
+  }
+  .SliderBtnWrp{
+    margin-top: 10px;
+  }
+  .SliderBtn {
+    width: 45px;
+    height: 30px;
+  }
+  .Ner1,
+  .Ner2 {
+    width: 7px;
+    height: 12px;
+  }
 }
