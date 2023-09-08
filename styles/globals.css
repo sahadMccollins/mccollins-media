@@ -2095,6 +2095,7 @@ background-color: #F7F7F7;
     left: auto;
     bottom: auto;
     padding: 10px 0px;
+    text-align: center;
   }
   .halo-sticky-toolbar-mobile {
     position: fixed;
