@@ -53,7 +53,7 @@ const TrustedLogos = () => {
                 />
               </div>
 
-              <div className="S1">Unique Features</div>
+              <div className="S1">Technology First</div>
               <div className="S2">
               Choose from a wide range of customizable website features that will make your site unique.
               </div>
@@ -69,8 +69,7 @@ const TrustedLogos = () => {
                 />
               </div>
 
-              <div className="S1">Smooth
-Maintenance</div>
+              <div className="S1">Annual Maintenance</div>
               <div className="S2">
               Enjoy hassle-free website maintenance that will keep your site running smoothly.
               </div>
@@ -86,7 +85,7 @@ Maintenance</div>
                 />
               </div>
 
-              <div className="S1">SEO Techniques</div>
+              <div className="S1">SEO Friendly</div>
               <div className="S2">
               Optimize your website for better search engine ranking with our cutting-edge SEO techniques.
               </div>

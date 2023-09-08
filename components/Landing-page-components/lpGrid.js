@@ -106,7 +106,7 @@ const LpGrid = () => {
                         <div className="TExtHeaderL">
                             5
                         </div>
-                        <div className="TExtHeaderR">Tailored Websites for Your Unique Needs</div>
+                        <div className="TExtHeaderR">Mobile-first development</div>
                     </div>
                 </div>
                 <div className="T81">Mobile-first development is our foundation. We prioritize responsive design, delivering seamless user experiences on all devices. Engage and convert your audience across the mobile landscape with us</div>
