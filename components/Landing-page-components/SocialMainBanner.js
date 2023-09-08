@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
+import {useMediaQuery} from "@chakra-ui/react";
 
 const SocialMainBanner = () => {
+  const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
   return (
     <div className="VideoBanner">
       <div className="image-background">&nbsp;</div>
@@ -38,9 +40,11 @@ Social media marketing agency <br/>in Dubai.
 Drive engagement, increase brand visibility and
 Reach your target <br/>audience effectively.
                 </div>
+                {!isSmallerThan1000 && (
                 <div className="BtnWrap1">
                     <a href="#" className="BtnSt1">Get Estimate Now</a>
                 </div>
+                )}
               </div>
               <div className="icol-md-3">
                 <div className="HeaderForm" id="contactus">
