@@ -23,7 +23,7 @@ const WebPortfolio = () => {
                 height={"514"}
                 priority={true}
               />
-              <div className="ItemName">Doors Dubai</div>
+              <div className="ItemName">Doors Freestyle Grill </div>
             </div>
             <div className="PortFolioBoxItem">
               <Image
@@ -33,7 +33,7 @@ const WebPortfolio = () => {
                 height={"514"}
                 priority={true}
               />
-              <div className="ItemName">DIH Dubai</div>
+              <div className="ItemName">Dubai International Hotel</div>
             </div>
             <div className="PortFolioBoxItem">
               <Image
