@@ -7,8 +7,7 @@ const WebPortfolio = () => {
         <div className="HdStyle1">
           <div className="Hd1">Businesses we have empowered digitally!</div>
           <div className="Hd2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          Over the decade we have worked on some exciting web projects from Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia. Have a look at some of our work
           </div>
           <div className="Hd3">
             <span>&nbsp;</span>
