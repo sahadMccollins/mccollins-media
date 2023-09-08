@@ -15,6 +15,16 @@ const WebPortfolio = () => {
         </div>
         <div className="PortfolioBoxWrp">
           <div className="PortFolioBox">
+          <div className="PortFolioBoxItem">
+              <Image
+                src="/lp/a8.jpg"
+                layout="responsive"
+                width={"810"}
+                height={"514"}
+                priority={true}
+              />
+              <div className="ItemName">VOSS</div>
+            </div>
             <div className="PortFolioBoxItem">
               <Image
                 src="/lp/a1.jpg"
@@ -45,16 +55,7 @@ const WebPortfolio = () => {
               />
               <div className="ItemName">Cleaning Superstore</div>
             </div>
-            <div className="PortFolioBoxItem">
-              <Image
-                src="/lp/a4.jpg"
-                layout="responsive"
-                width={"810"}
-                height={"514"}
-                priority={true}
-              />
-              <div className="ItemName">Prowork</div>
-            </div>
+           
             <div className="PortFolioBoxItem">
               <Image
                 src="/lp/a5.jpg"

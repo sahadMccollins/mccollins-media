@@ -92,9 +92,9 @@ const ClientPortFolio = () => {
               <div className="imgWrap">
               <Image
                 alt="McCollins Media"
-                src="/assets/image/clientLogo/clientLogo-(11).png"
-                width={"352px"}
-                height={"78px"}
+                src="/lp/zaman1.png"
+                width={"300px"}
+                height={"126px"}
               />
               </div>
             </div>
@@ -102,9 +102,9 @@ const ClientPortFolio = () => {
               <div className="imgWrap">
               <Image
                 alt="McCollins Media"
-                src="/assets/image/clientLogo/clientLogo-(9).png"
-                width={"140px"}
-                height={"206px"}
+                src="/lp/lg.png"
+                width={"130px"}
+                height={"130px"}
               />
               </div>
             </div>
