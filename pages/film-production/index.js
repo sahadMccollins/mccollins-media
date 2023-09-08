@@ -34,7 +34,7 @@ const FilmProduction = () => {
     formData.append("URL", currentURL);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbxLYnVN41fnxO2U8Pz81uFu4cOJc_W577hrs3fILAyD5ZKcdEs6vkiLzavvReQtecJSLQ/exec",
+      "https://script.google.com/macros/s/AKfycbwHXaynFaEsLOz6tA_nFBYnT0mZpvQz1S2q83wf3w6JuaCsjEEJci76Ce35TIP46z6cUA/exec",
       {
         method: "POST",
         body: formData,
@@ -1525,9 +1525,7 @@ const FilmProduction = () => {
             href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
             target="_blank"
           >
-            <div className="SBWhatsapp">
-               WhatsApp us
-            </div>
+            <div className="SBWhatsapp">WhatsApp us</div>
           </a>
         </div>
 
