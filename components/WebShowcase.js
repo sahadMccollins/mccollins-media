@@ -16,6 +16,7 @@ import Image from "next/image";
 import Fancybox from "./Fancybox";
 import FadeUp from "./Motion/FadeUp";
 
+
 const WebShowcase = () => {
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   return (

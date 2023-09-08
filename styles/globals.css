@@ -1869,7 +1869,10 @@ background-color: #F7F7F7;
   background-size: 100% 100%;
   background-image: url(../public/lp/nav.png);
 }
-
+.CommonLink1{
+  display: block;
+  position: relative;
+}
 @media (max-width: 780px) {
   .mobile-only{
     display: block !important;

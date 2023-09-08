@@ -1,9 +1,123 @@
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+.SliderWrap2{
+  
+  .SliderGridBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    .SliderGridBoxL{
+      flex: 0 0 10%;
+      max-width: 10%;
+    }
+    .SliderGridBoxM{
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+    .SliderGridBoxR{
+      flex: 0 0 10%;
+      max-width: 10%;
+      display: flex;
+      justify-content: end;
+    }
+  }
 }
+.ImgWr1{
+  img{
+    border-radius: 30px;
+  }
+}
+.Flex50{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.SliderBtn{
+  width: 70px;
+  height: 50px;
+  display: flex;
+  background-color: #6F6F6F;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  .Ner1{
+    width: 10px;
+    height: 15px;
+    background-size: 100% 100%;
+    background-image: url(../public/lp/nav.png);
+    transform: rotate(180deg);
+  }
+  .Ner2{
+    width: 10px;
+    height: 15px;
+    background-size: 100% 100%;
+    background-image: url(../public/lp/nav.png);
+  }
+}
+.SliderBox2{
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.ContentHeader1Flex{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 -15px;
+  align-items: center;
 
-.heading {
-  font-size: 24px;
-  color: #333;
+  .flexAuto{
+    flex: 0 0 auto;
+    max-width: auto;
+    padding: 0 15px;
+  }
+}
+.LogoWrap1{
+  max-width: 120px;
+}
+.LogoName{
+  font-size: 30px;
+  font-weight: 800;
+  &.color1{
+    color: #51335E;
+  }
+}
+.st1{
+  margin-bottom: 15px;
+}
+.st3{
+  background-color: #FFDE11;
+  border-radius: 50px;
+  border: 0px solid #e4e4e4;
+  outline: none !important;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: #212121;
+  font-weight: var(--chakra-fontWeights-bold);
+  max-width: 200px;
+  display: inline-block;
+}
+.GridSt12Flex{
+  width: 140%;
+  background-color: #ffde11;
+  position: relative;
+  z-index: 7;
+  padding: 25px;
+  border-radius: 30px;
+  display: flex;
+  margin-bottom: 20px;
+  .GridSt12Column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+  }
+}
+.GridSt12T1{
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.GridSt12T2{
+  font-size: 12px;
 }
