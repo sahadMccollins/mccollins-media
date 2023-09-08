@@ -2046,7 +2046,7 @@ background-color: #F7F7F7;
     max-width: 100%;
     margin-bottom: 25px;
   }
-  .ic3 , .ic2 , .ic3{
+  .ic1 , .ic2 , .ic3{
     width: 30px;
   height: 30px;
   }
@@ -2107,6 +2107,9 @@ background-color: #F7F7F7;
     transition: transform .6s;
     background: #fff;
     border: 1px solid #fff;
+  }
+  .desktop-only{
+    display: none !important;
   }
   .bottom-bar {
     padding: 3px 15px;

@@ -91,7 +91,7 @@ Maintenance</div>
               Optimize your website for better search engine ranking with our cutting-edge SEO techniques.
               </div>
             </div>
-            <div className="StepBoxItem">
+            <div className="StepBoxItem desktop-only">
               <div className="imgbox">
                 <Image
                   src="/lp/s5.png"
