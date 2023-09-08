@@ -1873,6 +1873,9 @@ background-color: #F7F7F7;
   display: block;
   position: relative;
 }
+.footer .chakra-tabs .chakra-tabs__tab[aria-selected="true"] {
+  padding-left: 0 !important;
+}
 @media (max-width: 780px) {
   .mobile-only{
     display: block !important;
