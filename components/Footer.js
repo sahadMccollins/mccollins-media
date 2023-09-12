@@ -21,10 +21,57 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const Footer = () => {
+  const [phrase, setPhrase] = useState("");
+  const [i, setI] = useState(0);
+  const phraseRef = useRef(null);
+
+  const phrases = ["Website", "Vision", "Objective"];
+
+  const randomNum = (num, max) => {
+    let j = Math.floor(Math.random() * max);
+
+    while (num === j) {
+      j = Math.floor(Math.random() * max);
+    }
+    return j;
+  };
+
+  const updatePhrase = () => {
+    const newIndex = randomNum(i, phrases.length);
+    setI(newIndex);
+    const newPhrase = phrases[newIndex];
+    phraseRef.current.style.opacity = 0;
+    setTimeout(() => {
+      setPhrase(newPhrase);
+      phraseRef.current.style.opacity = 1;
+    }, 500);
+  };
+
+  useEffect(() => {
+    updatePhrase();
+  }, []);
+
+  useEffect(() => {
+    const animationTime = getAnimationTime();
+    const interval = setInterval(updatePhrase, animationTime);
+    return () => clearInterval(interval);
+  }, []);
+
+  const getAnimationTime = () => {
+    const compStyles = window.getComputedStyle(phraseRef.current);
+    let animation = compStyles.getPropertyValue("animation");
+    animation =
+      animation || compStyles.getPropertyValue("-moz-animation-duration");
+    animation =
+      animation || compStyles.getPropertyValue("-webkit-animation-duration");
+    const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
+    return animationTime;
+  };
+
   const [isSmallerThan400] = useMediaQuery("(max-width: 400px)");
 
   const [name, setName] = useState("");
@@ -99,10 +146,19 @@ const Footer = () => {
           justifyContent="space-between"
           mb={5}
         >
-          <Box width={{ base: "100%", md: "30%" }}>
-            <Heading color={"#fff"} fontSize={"7xl"}>
-              Got A<br /> Project? <br />
-              <span style={{ color: "#FFDE11" }}>Let’s Talk.</span>
+          <Box width={{ base: "100%", md: "60%" }}>
+            <Heading color={"#fff"} fontSize={"7xl"} className="FooterCustomT1">
+              Got A Project? <br />
+              <span style={{ color: "#FFDE11" }}>
+              Let’s Discuss Your&nbsp;
+                <span
+                  id="Transform"
+                  className=" TransfomText random-word"
+                  ref={phraseRef}
+                >
+                  {phrase}
+                </span>
+              </span>
             </Heading>
             <Text color={"#fff"} fontSize={"2xl"}>
               Connect with us to change your digital game.
@@ -116,7 +172,8 @@ const Footer = () => {
                   <Text>
                     G04, Loft Office 2,
                     <br />
-                    Entrance C, Dubai Media City
+                    Entrance C, Dubai Media City<br/>
+                    United Arab Emirates
                   </Text>
                 </TabPanel>
                 {/* <TabPanel>
@@ -133,6 +190,12 @@ const Footer = () => {
                 <b>Email: </b>
                 <Link href="mailto:info@mccollinsmedia.com">
                   info@mccollinsmedia.com
+                </Link>
+              </Text>
+              <Text>
+                <b>WhatsApp Us: </b>
+                <Link href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media">
+                  +971 55 956 4135
                 </Link>
               </Text>
             </Box>
@@ -206,7 +269,7 @@ const Footer = () => {
             </Flex>
           </Box>
           <Box
-            width={{ base: "100%", md: "50%" }}
+            width={{ base: "100%", md: "35%" }}
             mt={{ base: "50px", md: "0" }}
             color="#fff"
           >
