@@ -9,26 +9,11 @@ const MainBanner1 = () => {
   const phraseRef = useRef(null);
 
   const phrases = [
-    "energetic",
-    "cool",
-    "amazing",
-    "l33t",
-    "smart",
-    "strong",
-    "fierce",
-    "unstoppable",
-    "powerful",
-    "exciting",
-    "relentless",
-    "loving",
-    "kind",
-    "beast-mode",
-    "hardcore",
-    "intelligent",
-    "next-level",
-    "fun",
-    "free",
-    "awesome",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
   ];
 
   const randomNum = (num, max) => {
