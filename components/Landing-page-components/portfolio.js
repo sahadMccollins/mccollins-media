@@ -24,7 +24,7 @@ const WebPortfolio = () => {
                 <a
                   data-fancybox="gallery"
                   style={{ position: "relative" }}
-                  href="/abaka.mp4"
+                  href="/voss-w.mp4"
                   className="CommonLink1"
                 >
                   <Image
@@ -93,7 +93,7 @@ const WebPortfolio = () => {
               <a
                   data-fancybox="gallery"
                   style={{ position: "relative" }}
-                  href="/abaka.mp4"
+                  href="/asia.mp4"
                   className="CommonLink1"
                 >
                 <Image
@@ -110,7 +110,7 @@ const WebPortfolio = () => {
               <a
                   data-fancybox="gallery"
                   style={{ position: "relative" }}
-                  href="/abaka.mp4"
+                  href="/zilli-w.mp4"
                   className="CommonLink1"
                 >
                 <Image
