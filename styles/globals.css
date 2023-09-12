@@ -1231,17 +1231,17 @@ body .clientsLogoStack {
   align-items: center;
 }
 .icol-md-9{
-  flex: 0 0 75%;
-  max-width: 75%;
+  flex: 0 0 73%;
+  max-width: 73%;
   padding: 0 15px;
 }
 .icol-md-3{
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 22%;
+  max-width: 22%;
   padding: 0 15px;
 }
 .T1{
-  font-size: 60px;
+  font-size: 55px;
   text-transform: capitalize;
   font-weight: 800;
   line-height: 1.1;
@@ -2331,22 +2331,22 @@ background-color: #F7F7F7;
 
 
 .random-word {
-  animation: slidedown 4s infinite;
-  -webkit-animation: slidedown 4s infinite;
-  -moz-animation: slidedown 4s infinite;
+  animation: slidedown 3s infinite;
+  -webkit-animation: slidedown 3s infinite;
+  -moz-animation: slidedown 3s infinite;
 }
 
 @keyframes slidedown {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   
   25% {
-    opacity: .5;
+    opacity: 1;
   }
   
   75% {
-    opacity: .75;
+    opacity: 1;
   }
   
   100% {

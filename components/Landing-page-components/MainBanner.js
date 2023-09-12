@@ -33,7 +33,7 @@ const MainBanner1 = () => {
     setTimeout(() => {
       setPhrase(newPhrase);
       phraseRef.current.style.opacity = 1;
-    }, 400);
+    }, 1000);
   };
 
   useEffect(() => {
