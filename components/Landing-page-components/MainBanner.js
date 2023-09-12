@@ -188,7 +188,7 @@ const MainBanner1 = () => {
           poster="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
         >
           <source
-            src="/mccollins-media-video-compressed.mp4"
+            src="/bg.mp4"
             type="video/mp4"
           />
         </video>
