@@ -340,9 +340,7 @@ const MainBanner1 = () => {
                           required
                           onChange={(e) => setLookingFor(e.target.value)}
                         >
-                          <option value="" selected="">
-                            Looking for ?
-                          </option>
+                          
                           <option value="" selected="">
                             Looking for ?
                           </option>
