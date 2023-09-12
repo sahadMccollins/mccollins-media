@@ -12,9 +12,7 @@ const MainBanner1 = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
-  const [company, setCompany] = useState();
   const [lookingFor, setLookingFor] = useState("");
-  const [project, setProject] = useState("");
 
   const [loading, setLoading] = useState(false);
 
@@ -130,7 +128,6 @@ const MainBanner1 = () => {
         email: email,
         contact: contact,
         services: lookingFor,
-        text: project,
         date: new Date(),
         page: "Web development Landing Page",
       }),
@@ -141,7 +138,6 @@ const MainBanner1 = () => {
       setContact(""),
       setEmail(""),
       setLookingFor(""),
-      setProject(""),
       setLoading(false),
       toast({
         title: "Form Submited",
@@ -156,7 +152,6 @@ const MainBanner1 = () => {
     formData.append("Email", email);
     formData.append("Phone", contact);
     formData.append("Services", lookingFor);
-    formData.append("Message", project);
     formData.append("date", new Date());
     formData.append("Page", "Web development Landing Page");
 
@@ -187,10 +182,7 @@ const MainBanner1 = () => {
           className="LpMainVideo"
           poster="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
         >
-          <source
-            src="/bg.mp4"
-            type="video/mp4"
-          />
+          <source src="/bg.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="image-title">
@@ -381,78 +373,6 @@ const MainBanner1 = () => {
                           </option>
                           <option value={"Government and Municipal Website"}>
                             Government and Municipal Website
-                          </option>
-                          <option value="Other">Other</option>
-                        </select>
-                      </div>
-                      <div className="FormItem">
-                        <div className="FormLabel">Industry</div>
-                        <select
-                          required
-                          onChange={(e) => setProject(e.target.value)}
-                        >
-                          <option value="" selected="">
-                            Industry
-                          </option>
-                          <option value="Fashion and Apparel">
-                            Fashion and Apparel
-                          </option>
-                          <option value="Beauty and Cosmetics">
-                            Beauty and Cosmetics
-                          </option>
-                          <option value="Food and Beverage">
-                            Food and Beverage
-                          </option>
-                          <option value="Hospitality and Travel">
-                            Hospitality and Travel
-                          </option>
-                          <option value="Real Estate and Architecture">
-                            Real Estate and Architecture
-                          </option>
-                          <option value="Automotive and Transportation">
-                            Automotive and Transportation
-                          </option>
-                          <option value="Technology and Electronics">
-                            Technology and Electronics
-                          </option>
-                          <option value="Health and Fitness">
-                            Health and Fitness
-                          </option>
-                          <option value="Education and Training">
-                            Education and Training
-                          </option>
-                          <option value="Music and Entertainment">
-                            Music and Entertainment
-                          </option>
-                          <option value="Sports and Fitness">
-                            Sports and Fitness
-                          </option>
-                          <option value="Corporate and Business">
-                            Corporate and Business
-                          </option>
-                          <option value="Non-profit and Social Causes">
-                            Non-profit and Social Causes
-                          </option>
-                          <option value="Art and Culture">
-                            Art and Culture
-                          </option>
-                          <option value="Wedding and Events">
-                            Wedding and Events
-                          </option>
-                          <option value="E-commerce and Retail">
-                            E-commerce and Retail
-                          </option>
-                          <option value="Film and Television">
-                            Film and Television
-                          </option>
-                          <option value="Advertising and Marketing">
-                            Advertising and Marketing
-                          </option>
-                          <option value="Health Care and Pharmaceuticals">
-                            Health Care and Pharmaceuticals
-                          </option>
-                          <option value="Financial Services and Banking">
-                            Financial Services and Banking
                           </option>
                           <option value="Other">Other</option>
                         </select>
