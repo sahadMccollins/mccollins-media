@@ -3,6 +3,7 @@ import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 
+
 const MainBanner1 = () => {
   return (
     <div className="VideoBanner">
@@ -29,11 +30,12 @@ const MainBanner1 = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                Tired of One-Size-Fits-All <br/>Websites?
+                Developing <span id="Transform" className="TransfomText">Dynamic</span> Websites<br/>
+To grow and establish your online presence
                   
                 </div>
                 <div className="T2">
-                Generic website templates can't effectively showcase what sets your business apart.<br/> Don't settle for mediocrity when you can have a website that's as unique as your brand.
+                Elevate Your Online Presence with Our Web Development Services, Crafting Contemporary, Responsive, and User-Centric Websites that Fuel Business Growth and Spotlight Your Brand
                 </div>
                 <div className="PartnerBoxWrap">
                   <div className="PartnerBox">

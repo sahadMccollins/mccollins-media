@@ -1247,6 +1247,11 @@ body .clientsLogoStack {
   line-height: 1.1;
   margin-bottom: 20px;
 }
+.TransfomText {
+  color: #2e76ff00;
+  -webkit-text-stroke: 1px #FFDE11;
+  font-weight: bold;
+}
 
 .T2{
   font-size: 20px;
