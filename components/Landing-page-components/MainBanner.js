@@ -2,13 +2,68 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
+import { useToast } from "@chakra-ui/react";
 
 const MainBanner1 = () => {
   const [phrase, setPhrase] = useState("");
   const [i, setI] = useState(0);
   const phraseRef = useRef(null);
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState();
+  const [company, setCompany] = useState();
+  const [lookingFor, setLookingFor] = useState("");
+  const [project, setProject] = useState("");
+
+  const [loading, setLoading] = useState(false);
+
   const phrases = [
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
+    "Custom",
+    "Wordpress",
+    "React",
+    "E-Commerce",
+    "Shopify",
     "Custom",
     "Wordpress",
     "React",
@@ -55,6 +110,68 @@ const MainBanner1 = () => {
       animation || compStyles.getPropertyValue("-webkit-animation-duration");
     const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
     return animationTime;
+  };
+
+  const toast = useToast();
+
+  const handlePhoneChange = (status, number, country) => {
+    setContact(number);
+  };
+
+  const formHandler = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName: name,
+        email: email,
+        contact: contact,
+        services: lookingFor,
+        text: project,
+        date: new Date(),
+        page: "Web development Landing Page",
+      }),
+    };
+    fetch("/api/form-submit", requestOptions).then(
+      (response) => response.json(),
+      setName(""),
+      setContact(""),
+      setEmail(""),
+      setLookingFor(""),
+      setProject(""),
+      setLoading(false),
+      toast({
+        title: "Form Submited",
+        description: "Thank you for getting in touch!",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      })
+    );
+    let formData = new FormData();
+    formData.append("Firstname", name);
+    formData.append("Email", email);
+    formData.append("Phone", contact);
+    formData.append("Services", lookingFor);
+    formData.append("Message", project);
+    formData.append("date", new Date());
+    formData.append("Page", "Web development Landing Page");
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
+
+    setLoading(false);
   };
 
   return (
@@ -198,155 +315,162 @@ const MainBanner1 = () => {
               <div className="icol-md-3">
                 <div className="HeaderForm" id="contactus">
                   <div className="FormElements">
-                    <div className="FormItem">
-                      <div className="FormLabel">Full Name</div>
-                      <input type="text" placeholder="Full Name" />
-                    </div>
-                    <div className="FormItem">
-                      <div className="FormLabel">Email</div>
-                      <input type="text" placeholder="Email" />
-                    </div>
-                    <div className="FormItem">
-                      <div className="FormLabel">Phone Number</div>
-                      <IntlTelInput
-                        defaultCountry="ae"
-                        containerClassName="intl-tel-input"
-                        inputClassName="form-control"
+                    <form>
+                      <div className="FormItem">
+                        <div className="FormLabel">Full Name</div>
+                        <input
+                          type="text"
+                          placeholder="Full Name"
+                          onChange={(e) => setName(e.target.value)}
+                        />
+                      </div>
+                      <div className="FormItem">
+                        <div className="FormLabel">Email</div>
+                        <input
+                          type="text"
+                          placeholder="Email"
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                      </div>
+                      <div className="FormItem">
+                        <div className="FormLabel">Phone Number</div>
+                        <IntlTelInput
+                          defaultCountry="ae"
+                          containerClassName="intl-tel-input"
+                          inputClassName="form-control"
+                          value={contact}
+                          onPhoneNumberChange={handlePhoneChange}
+                        />
+                      </div>
+                      <div className="FormItem">
+                        <div className="FormLabel">Looking For</div>
+                        <select
+                          required
+                          onChange={(e) => setLookingFor(e.target.value)}
+                        >
+                          <option value="" selected="">
+                            Looking for ?
+                          </option>
+                          <option value="" selected="">
+                            Looking for ?
+                          </option>
+                          <option value={"Corporate Website"}>
+                            Corporate Website
+                          </option>
+                          <option value={"E-commerce Website"}>
+                            E-commerce Website
+                          </option>
+                          <option value={"Landing Pages"}>Landing Pages</option>
+                          <option value={"Real Estate Website"}>
+                            Real Estate Website
+                          </option>
+                          <option value={"Restaurant and Food Service Site"}>
+                            Restaurant and Food Service Site
+                          </option>
+                          <option value={"Travel and Tourism Website"}>
+                            Travel and Tourism Website
+                          </option>
+                          <option value={"Healthcare and Medical Website"}>
+                            Healthcare and Medical Website
+                          </option>
+                          <option value={"Fitness and Wellness Website"}>
+                            Fitness and Wellness Website
+                          </option>
+                          <option value={"Technology Website"}>
+                            Technology Website
+                          </option>
+                          <option value={"Government and Municipal Website"}>
+                            Government and Municipal Website
+                          </option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                      <div className="FormItem">
+                        <div className="FormLabel">Industry</div>
+                        <select
+                          required
+                          onChange={(e) => setProject(e.target.value)}
+                        >
+                          <option value="" selected="">
+                            Industry
+                          </option>
+                          <option value="Fashion and Apparel">
+                            Fashion and Apparel
+                          </option>
+                          <option value="Beauty and Cosmetics">
+                            Beauty and Cosmetics
+                          </option>
+                          <option value="Food and Beverage">
+                            Food and Beverage
+                          </option>
+                          <option value="Hospitality and Travel">
+                            Hospitality and Travel
+                          </option>
+                          <option value="Real Estate and Architecture">
+                            Real Estate and Architecture
+                          </option>
+                          <option value="Automotive and Transportation">
+                            Automotive and Transportation
+                          </option>
+                          <option value="Technology and Electronics">
+                            Technology and Electronics
+                          </option>
+                          <option value="Health and Fitness">
+                            Health and Fitness
+                          </option>
+                          <option value="Education and Training">
+                            Education and Training
+                          </option>
+                          <option value="Music and Entertainment">
+                            Music and Entertainment
+                          </option>
+                          <option value="Sports and Fitness">
+                            Sports and Fitness
+                          </option>
+                          <option value="Corporate and Business">
+                            Corporate and Business
+                          </option>
+                          <option value="Non-profit and Social Causes">
+                            Non-profit and Social Causes
+                          </option>
+                          <option value="Art and Culture">
+                            Art and Culture
+                          </option>
+                          <option value="Wedding and Events">
+                            Wedding and Events
+                          </option>
+                          <option value="E-commerce and Retail">
+                            E-commerce and Retail
+                          </option>
+                          <option value="Film and Television">
+                            Film and Television
+                          </option>
+                          <option value="Advertising and Marketing">
+                            Advertising and Marketing
+                          </option>
+                          <option value="Health Care and Pharmaceuticals">
+                            Health Care and Pharmaceuticals
+                          </option>
+                          <option value="Financial Services and Banking">
+                            Financial Services and Banking
+                          </option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                      <input
+                        style={{ display: "none" }}
+                        type="text"
+                        value={"Web Development Landing Page"}
+                        name="page"
                       />
-                    </div>
-                    <div className="FormItem">
-                      <div className="FormLabel">Looking For</div>
-                      <select required="">
-                        <option value="" selected="">
-                          Looking for ?
-                        </option>
-                        <option value="Photoshoot">Photoshoot</option>
-                        <option value="Videoshoot">Videoshoot</option>
-                        <option value="Photography services">
-                          Photography services
-                        </option>
-                        <option value="Videography services">
-                          Videography services
-                        </option>
-                        <option value="Corporate photoshoot">
-                          Corporate photoshoot
-                        </option>
-                        <option value="Commercial videoshoot">
-                          Commercial videoshoot
-                        </option>
-                        <option value="Fashion photoshoot">
-                          Fashion photoshoot
-                        </option>
-                        <option value="Product photography">
-                          Product photography
-                        </option>
-                        <option value="Wedding photography">
-                          Wedding photography
-                        </option>
-                        <option value="Event videography">
-                          Event videography
-                        </option>
-                        <option value="Portrait photography">
-                          Portrait photography
-                        </option>
-                        <option value="Documentary filmmaking">
-                          Documentary filmmaking
-                        </option>
-                        <option value="Music video production">
-                          Music video production
-                        </option>
-                        <option value="Drone videography">
-                          Drone videography
-                        </option>
-                        <option value="Food photography">
-                          Food photography
-                        </option>
-                        <option value="Real estate videography">
-                          Real estate videography
-                        </option>
-                        <option value="Lifestyle photoshoot">
-                          Lifestyle photoshoot
-                        </option>
-                        <option value="Sports photography">
-                          Sports photography
-                        </option>
-                        <option value="Editorial photoshoot">
-                          Editorial photoshoot
-                        </option>
-                        <option value="Branding videoshoot">
-                          Branding videoshoot
-                        </option>
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-                    <div className="FormItem">
-                      <div className="FormLabel">Industry</div>
-                      <select required="">
-                        <option value="" selected="">
-                          Industry
-                        </option>
-                        <option value="Fashion and Apparel">
-                          Fashion and Apparel
-                        </option>
-                        <option value="Beauty and Cosmetics">
-                          Beauty and Cosmetics
-                        </option>
-                        <option value="Food and Beverage">
-                          Food and Beverage
-                        </option>
-                        <option value="Hospitality and Travel">
-                          Hospitality and Travel
-                        </option>
-                        <option value="Real Estate and Architecture">
-                          Real Estate and Architecture
-                        </option>
-                        <option value="Automotive and Transportation">
-                          Automotive and Transportation
-                        </option>
-                        <option value="Technology and Electronics">
-                          Technology and Electronics
-                        </option>
-                        <option value="Health and Fitness">
-                          Health and Fitness
-                        </option>
-                        <option value="Education and Training">
-                          Education and Training
-                        </option>
-                        <option value="Music and Entertainment">
-                          Music and Entertainment
-                        </option>
-                        <option value="Sports and Fitness">
-                          Sports and Fitness
-                        </option>
-                        <option value="Corporate and Business">
-                          Corporate and Business
-                        </option>
-                        <option value="Non-profit and Social Causes">
-                          Non-profit and Social Causes
-                        </option>
-                        <option value="Art and Culture">Art and Culture</option>
-                        <option value="Wedding and Events">
-                          Wedding and Events
-                        </option>
-                        <option value="E-commerce and Retail">
-                          E-commerce and Retail
-                        </option>
-                        <option value="Film and Television">
-                          Film and Television
-                        </option>
-                        <option value="Advertising and Marketing">
-                          Advertising and Marketing
-                        </option>
-                        <option value="Health Care and Pharmaceuticals">
-                          Health Care and Pharmaceuticals
-                        </option>
-                        <option value="Financial Services and Banking">
-                          Financial Services and Banking
-                        </option>
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-                    <button className="SubmitBtn1">Get A Quote</button>
+                      <button
+                        className="SubmitBtn1"
+                        type="submit"
+                        onClick={formHandler}
+                      >
+                        Get A Quote
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
