@@ -14,10 +14,10 @@ const LpGrid = () => {
                         <div className="TExtHeaderL">
                             1
                         </div>
-                        <div className="TExtHeaderR">Corporate Websites</div>
+                        <div className="TExtHeaderR">Corporate website development</div>
                     </div>
                 </div>
-                <div className="T8">Unlock the potential of your corporate identity with our expertly tailored websites. Our designs reflect your unique brand and values, offering seamless user experiences across all devices.</div>
+                <div className="T8">Our corporate website development services unlock the potential of your corporate identity. Our expertly tailored websites are designed to reflect your unique brand and values, offering seamless user experiences across all devices</div>
                 
             </div>
             <div className="c55">
@@ -50,10 +50,10 @@ const LpGrid = () => {
                         <div className="TExtHeaderL">
                             2
                         </div>
-                        <div className="TExtHeaderR">E-Commerce Development </div>
+                        <div className="TExtHeaderR">E-commerce website development</div>
                     </div>
                 </div>
-                <div className="T8">Our strategic approach to design and functionality ensures a seamless shopping experience for your customers, resulting in higher conversion rates and increased revenue</div>
+                <div className="T8">Our E-commerce website development services follow a strategic approach to design and functionality, guaranteeing a seamless shopping experience for your customers. This results in higher conversion rates and increased revenue for your business</div>
             </div>
             
           </div>
@@ -68,10 +68,10 @@ const LpGrid = () => {
                         <div className="TExtHeaderL">
                             3
                         </div>
-                        <div className="TExtHeaderR">Application Development</div>
+                        <div className="TExtHeaderR">Lead Generation Funnel Development</div>
                     </div>
                 </div>
-                <div className="T8">Revolutionize your ideas into impactful apps with us. Our team excels in crafting user-centric mobile and web applications that drive results. From concept to launch, we ensure your app stands out and delivers</div>
+                <div className="T8">Our lead generation funnel development services are designed to empower your business with a steady stream of high-quality leads. Through a strategic approach to crafting, optimizing, and managing your lead generation funnels, we help you reach your target audience more efficiently and convert prospects into valuable customers.</div>
             </div>
             <div className="c55">
               <Image
@@ -106,10 +106,10 @@ const LpGrid = () => {
                         <div className="TExtHeaderL">
                             5
                         </div>
-                        <div className="TExtHeaderR">Mobile-first development</div>
+                        <div className="TExtHeaderR">Mobile-First Website Development</div>
                     </div>
                 </div>
-                <div className="T81">Mobile-first development is our foundation. We prioritize responsive design, delivering seamless user experiences on all devices. Engage and convert your audience across the mobile landscape with us</div>
+                <div className="T81">Our mobile-first website development services prioritize the mobile user experience. We ensure your website is designed and optimized for smartphones and tablets, with a focus on speed, functionality, and user-friendliness</div>
                 
             </div>
           </div>

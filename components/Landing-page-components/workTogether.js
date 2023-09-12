@@ -10,8 +10,7 @@ const WorkTogether = () => {
             <span>&nbsp;</span>
           </div>
           <div className="Hd2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          Discover the journey behind our website development process and witness your vision come to life
           </div>
           
         </div>
