@@ -1,10 +1,77 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 
-
 const MainBanner1 = () => {
+  const [phrase, setPhrase] = useState("");
+  const [i, setI] = useState(0);
+  const phraseRef = useRef(null);
+
+  const phrases = [
+    "energetic",
+    "cool",
+    "amazing",
+    "l33t",
+    "smart",
+    "strong",
+    "fierce",
+    "unstoppable",
+    "powerful",
+    "exciting",
+    "relentless",
+    "loving",
+    "kind",
+    "beast-mode",
+    "hardcore",
+    "intelligent",
+    "next-level",
+    "fun",
+    "free",
+    "awesome",
+  ];
+
+  const randomNum = (num, max) => {
+    let j = Math.floor(Math.random() * max);
+
+    while (num === j) {
+      j = Math.floor(Math.random() * max);
+    }
+    return j;
+  };
+
+  const updatePhrase = () => {
+    const newIndex = randomNum(i, phrases.length);
+    setI(newIndex);
+    const newPhrase = phrases[newIndex];
+    phraseRef.current.style.opacity = 0;
+    setTimeout(() => {
+      setPhrase(newPhrase);
+      phraseRef.current.style.opacity = 1;
+    }, 400);
+  };
+
+  useEffect(() => {
+    updatePhrase();
+  }, []);
+
+  useEffect(() => {
+    const animationTime = getAnimationTime();
+    const interval = setInterval(updatePhrase, animationTime);
+    return () => clearInterval(interval);
+  }, []);
+
+  const getAnimationTime = () => {
+    const compStyles = window.getComputedStyle(phraseRef.current);
+    let animation = compStyles.getPropertyValue("animation");
+    animation =
+      animation || compStyles.getPropertyValue("-moz-animation-duration");
+    animation =
+      animation || compStyles.getPropertyValue("-webkit-animation-duration");
+    const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
+    return animationTime;
+  };
+
   return (
     <div className="VideoBanner">
       <div className="image-background">&nbsp;</div>
@@ -30,104 +97,114 @@ const MainBanner1 = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                Developing <span id="Transform" className="TransfomText">Dynamic</span> Websites<br/>
-To grow and establish your online presence
-                  
+                  Developing{" "}
+                  <span
+                    id="Transform"
+                    className=" TransfomText random-word"
+                    ref={phraseRef}
+                  >
+                    {phrase}
+                  </span>{" "}
+                  Websites
+                  <br />
+                  To grow and establish your online presence
                 </div>
                 <div className="T2">
-                Elevate Your Online Presence with Our Web Development Services, Crafting Contemporary, Responsive, and User-Centric Websites that Fuel Business Growth and Spotlight Your Brand
+                  Elevate Your Online Presence with Our Web Development
+                  Services, Crafting Contemporary, Responsive, and User-Centric
+                  Websites that Fuel Business Growth and Spotlight Your Brand
                 </div>
                 <div className="PartnerBoxWrap">
                   <div className="PartnerBox">
                     <div className="PartnerItem">
                       <div className="TechBox">
-                      <Image
-                        src="/lp/react1.png"
-                        layout="responsive"
-                        width={"200"}
-                        height={"200"}
-                        priority={true}
-                        className="PartnerItemImg"
-                      />
-                      <div className="TechName">React Js</div>
+                        <Image
+                          src="/lp/react1.png"
+                          layout="responsive"
+                          width={"200"}
+                          height={"200"}
+                          priority={true}
+                          className="PartnerItemImg"
+                        />
+                        <div className="TechName">React Js</div>
                       </div>
                     </div>
                     <div className="PartnerItem">
                       <div className="TechBox">
-                      <Image
-                        src="/lp/wordpressnew.png"
-                        layout="responsive"
-                        width={"200"}
-                        height={"200"}
-                        priority={true}
-                        className="PartnerItemImg"
-                      />
-                      <div className="TechName">Wordpress</div>
+                        <Image
+                          src="/lp/wordpressnew.png"
+                          layout="responsive"
+                          width={"200"}
+                          height={"200"}
+                          priority={true}
+                          className="PartnerItemImg"
+                        />
+                        <div className="TechName">Wordpress</div>
                       </div>
                     </div>
                     <div className="PartnerItem">
                       <div className="TechBox">
-                      <Image
-                        src="/lp/vue.png"
-                        layout="responsive"
-                        width={"200"}
-                        height={"200"}
-                        priority={true}
-                        className="PartnerItemImg"
-                      />
-                      <div className="TechName">Vue Js</div>
+                        <Image
+                          src="/lp/vue.png"
+                          layout="responsive"
+                          width={"200"}
+                          height={"200"}
+                          priority={true}
+                          className="PartnerItemImg"
+                        />
+                        <div className="TechName">Vue Js</div>
                       </div>
                     </div>
                     <div className="PartnerItem">
                       <div className="TechBox">
-                      <Image
-                        src="/lp/angular.png"
-                        layout="responsive"
-                        width={"200"}
-                        height={"200"}
-                        priority={true}
-                        className="PartnerItemImg"
-                      />
-                      <div className="TechName">Angular Js</div>
+                        <Image
+                          src="/lp/angular.png"
+                          layout="responsive"
+                          width={"200"}
+                          height={"200"}
+                          priority={true}
+                          className="PartnerItemImg"
+                        />
+                        <div className="TechName">Angular Js</div>
                       </div>
                     </div>
                     <div className="PartnerItem">
                       <div className="TechBox">
-                      <Image
-                        src="/lp/nodejs.png"
-                        layout="responsive"
-                        width={"200"}
-                        height={"200"}
-                        priority={true}
-                        className="PartnerItemImg"
-                      />
-                      <div className="TechName">Node Js</div>
+                        <Image
+                          src="/lp/nodejs.png"
+                          layout="responsive"
+                          width={"200"}
+                          height={"200"}
+                          priority={true}
+                          className="PartnerItemImg"
+                        />
+                        <div className="TechName">Node Js</div>
                       </div>
                     </div>
                     <div className="PartnerItem">
                       <div className="TechBox">
-                      <Image
-                        src="/lp/shopify1.png"
-                        layout="responsive"
-                        width={"200"}
-                        height={"200"}
-                        priority={true}
-                        className="PartnerItemImg"
-                      />
-                      <div className="TechName">Shopify</div>
+                        <Image
+                          src="/lp/shopify1.png"
+                          layout="responsive"
+                          width={"200"}
+                          height={"200"}
+                          priority={true}
+                          className="PartnerItemImg"
+                        />
+                        <div className="TechName">Shopify</div>
                       </div>
                     </div>
                     <div className="PartnerItem">
                       <div className="TechBox">
-                      <Image
-                        src="/lp/php1.png"
-                        layout="responsive"
-                        width={"200"}
-                        height={"200"}
-                        priority={true}
-                        className="PartnerItemImg"
-                      />
-                      <div className="TechName">Php</div>
+                        <Image
+                          src="/lp/php1.png"
+                          layout="responsive"
+                          width={"200"}
+                          height={"200"}
+                          priority={true}
+                          className="PartnerItemImg"
+                        />
+                        <div className="TechName">Php</div>
                       </div>
                     </div>
                   </div>
@@ -220,28 +297,69 @@ To grow and establish your online presence
                     <div className="FormItem">
                       <div className="FormLabel">Industry</div>
                       <select required="">
-                        <option value="" selected="">Industry</option>
-                      <option value="Fashion and Apparel">Fashion and Apparel</option>
-                      <option value="Beauty and Cosmetics">Beauty and Cosmetics</option>
-                      <option value="Food and Beverage">Food and Beverage</option>
-                      <option value="Hospitality and Travel">Hospitality and Travel</option>
-                      <option value="Real Estate and Architecture">Real Estate and Architecture</option>
-                      <option value="Automotive and Transportation">Automotive and Transportation</option>
-                      <option value="Technology and Electronics">Technology and Electronics</option>
-                      <option value="Health and Fitness">Health and Fitness</option>
-                      <option value="Education and Training">Education and Training</option>
-                      <option value="Music and Entertainment">Music and Entertainment</option>
-                      <option value="Sports and Fitness">Sports and Fitness</option>
-                      <option value="Corporate and Business">Corporate and Business</option>
-                      <option value="Non-profit and Social Causes">Non-profit and Social Causes</option>
-                      <option value="Art and Culture">Art and Culture</option>
-                      <option value="Wedding and Events">Wedding and Events</option>
-                      <option value="E-commerce and Retail">E-commerce and Retail</option>
-                      <option value="Film and Television">Film and Television</option>
-                      <option value="Advertising and Marketing">Advertising and Marketing</option>
-                      <option value="Health Care and Pharmaceuticals">Health Care and Pharmaceuticals</option>
-                      <option value="Financial Services and Banking">Financial Services and Banking</option>
-                      <option value="Other">Other</option></select>
+                        <option value="" selected="">
+                          Industry
+                        </option>
+                        <option value="Fashion and Apparel">
+                          Fashion and Apparel
+                        </option>
+                        <option value="Beauty and Cosmetics">
+                          Beauty and Cosmetics
+                        </option>
+                        <option value="Food and Beverage">
+                          Food and Beverage
+                        </option>
+                        <option value="Hospitality and Travel">
+                          Hospitality and Travel
+                        </option>
+                        <option value="Real Estate and Architecture">
+                          Real Estate and Architecture
+                        </option>
+                        <option value="Automotive and Transportation">
+                          Automotive and Transportation
+                        </option>
+                        <option value="Technology and Electronics">
+                          Technology and Electronics
+                        </option>
+                        <option value="Health and Fitness">
+                          Health and Fitness
+                        </option>
+                        <option value="Education and Training">
+                          Education and Training
+                        </option>
+                        <option value="Music and Entertainment">
+                          Music and Entertainment
+                        </option>
+                        <option value="Sports and Fitness">
+                          Sports and Fitness
+                        </option>
+                        <option value="Corporate and Business">
+                          Corporate and Business
+                        </option>
+                        <option value="Non-profit and Social Causes">
+                          Non-profit and Social Causes
+                        </option>
+                        <option value="Art and Culture">Art and Culture</option>
+                        <option value="Wedding and Events">
+                          Wedding and Events
+                        </option>
+                        <option value="E-commerce and Retail">
+                          E-commerce and Retail
+                        </option>
+                        <option value="Film and Television">
+                          Film and Television
+                        </option>
+                        <option value="Advertising and Marketing">
+                          Advertising and Marketing
+                        </option>
+                        <option value="Health Care and Pharmaceuticals">
+                          Health Care and Pharmaceuticals
+                        </option>
+                        <option value="Financial Services and Banking">
+                          Financial Services and Banking
+                        </option>
+                        <option value="Other">Other</option>
+                      </select>
                     </div>
                     <button className="SubmitBtn1">Get A Quote</button>
                   </div>
