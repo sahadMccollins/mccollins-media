@@ -185,7 +185,7 @@ const MainBanner1 = () => {
           <source src="/bg.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="image-title">
+      <div className="image-title" id="contactus">
         <div className="widthFull">
           <div className="icontainer">
             <div className="irow">
@@ -305,7 +305,7 @@ const MainBanner1 = () => {
                 </div>
               </div>
               <div className="icol-md-3">
-                <div className="HeaderForm" id="contactus">
+                <div className="HeaderForm">
                   <div className="FormElements">
                     <form>
                       <div className="FormItem">
