@@ -23,7 +23,7 @@ const FooterNav = () => {
           </li>
           <li>
             <a
-              href="#contactus"
+              href="mailto:info@mccollinsmedia.com"
             >
               <div class="icon">
                 <div class="FtrIconH email">&nbsp;</div>
@@ -32,7 +32,7 @@ const FooterNav = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media">
               <div class="icon">
                 <div class="FtrIconH whatsapp">&nbsp;</div>
               </div>
@@ -40,7 +40,7 @@ const FooterNav = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="tel:+971 4 445 6848">
               <div class="icon">
                 <div class="FtrIconH call">&nbsp;</div>
               </div>
