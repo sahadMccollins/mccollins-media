@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import MainBanner1 from "../../components/Landing-page-components/MainBanner";
 import ClientPortFolio from "../../components/Landing-page-components/ClientPortfolio";
 import TrustedLogos from "../../components/Landing-page-components/TrustLogos";
@@ -10,27 +10,56 @@ import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 const LandingPage1 = () => {
   useEffect(() => {
-    document.body.className = 'LandingPage';
+    document.body.className = "LandingPage";
   });
-  
+
+  useEffect(() => {
+    // Create the script element and append it to the head
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://static.hotjar.com/c/hotjar-3505417.js?sv=6`;
+    document.head.appendChild(script);
+
+    // Define a cleanup function to remove the script element
+    const cleanup = () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+
+    // Add the Hotjar script element
+    script.onload = () => {
+      // Initialize Hotjar when the script has loaded
+      window.hj =
+        window.hj ||
+        function () {
+          (window.hj.q = window.hj.q || []).push(arguments);
+        };
+      window._hjSettings = { hjid: 3505417, hjsv: 6 };
+    };
+
+    // Attach the cleanup function to the component unmount event
+    return cleanup;
+  }, []);
+
   return (
     <Box marginTop={"-85px"} position="relative">
       <Head>
-      <meta
+        <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
         />
       </Head>
       <MainBanner1 />
-      <ClientPortFolio/>
-      
-      <TrustedLogos/>
-      <LpGrid/>
-      
-      <WebPortfolio/>
-      
-      <WorkTogether/>
-      <FooterNav/>
+      <ClientPortFolio />
+
+      <TrustedLogos />
+      <LpGrid />
+
+      <WebPortfolio />
+
+      <WorkTogether />
+      <FooterNav />
     </Box>
   );
 };
