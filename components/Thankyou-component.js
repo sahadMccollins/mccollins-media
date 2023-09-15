@@ -44,14 +44,13 @@ import {
               <FadeUp>
                 {props.breadcrumb ? (
                   <Heading className="bannerH2" color="#FFDE11">
-                    Thank you for
-getting in touch!
+                    Thank you for reaching out !
                   </Heading>
                 ) : (
                   ""
                 )}
   
-                <Heading className="bannerH2">Our team will contact you soon to discuss your inquiry</Heading>
+                <Heading className="bannerH2">We will connect with you within 24 Hours</Heading>
                 {props.content ? <Text mt={"15px"}>{props.content}</Text> : ""}
               </FadeUp>
               <FadeUp>
