@@ -66,7 +66,7 @@ const ThankYou = () => {
                     Thank you for contacting us.
                   </Heading>
                   <Heading className="bnrBigHd" color="#fff" fontWeight="black">
-                    We will get back to you soon.
+                    We will connect with you within 24 Hours.
                   </Heading>
                 </FadeUp>
               </Box>

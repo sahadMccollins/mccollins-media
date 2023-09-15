@@ -3,6 +3,7 @@ import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import { useToast } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 const MainBanner1 = () => {
   const [phrase, setPhrase] = useState("");
@@ -15,6 +16,8 @@ const MainBanner1 = () => {
   const [lookingFor, setLookingFor] = useState("");
 
   const [loading, setLoading] = useState(false);
+
+  const router = useRouter();
 
   const phrases = [
     "Custom",
@@ -85,7 +88,9 @@ const MainBanner1 = () => {
     phraseRef.current.style.opacity = 0;
     setTimeout(() => {
       setPhrase(newPhrase);
-      phraseRef.current.style.opacity = 1;
+      if (phraseRef.current.style.opacity) {
+        phraseRef.current.style.opacity = 1;
+      }
     }, 500);
   };
 
@@ -163,7 +168,7 @@ const MainBanner1 = () => {
       }
     )
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => router.push("/Thank-you-for-contacting-us"))
       .catch((error) => console.error(error));
 
     setLoading(false);
@@ -340,7 +345,6 @@ const MainBanner1 = () => {
                           required
                           onChange={(e) => setLookingFor(e.target.value)}
                         >
-                          
                           <option value="" selected="">
                             Looking for ?
                           </option>
