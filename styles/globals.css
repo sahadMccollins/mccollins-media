@@ -2244,10 +2244,12 @@ background-color: #F7F7F7;
   .OftIcon {
     width: 50px;
     height: 50px;
+    background-color: #fff;
   }
   .w {
     width: 20px;
     height: 20px;
+    background-color: #fff;
   }
   .w2 {
     width: 10px;
@@ -2323,9 +2325,29 @@ background-color: #F7F7F7;
   .OfferItemBox{
     padding: 15px;
   }
+  .OfferItemBox.color1{
+    background-color: #d59379;
+  }
+  .OfferItemBox.color2{
+    background-color: #8bbcc1;
+  }
+  .OfferItemBox.color3{
+    background-color: #eccf93;
+  }
+  .OfferItemBox.color4{
+    background-color: #97c4a3;
+  }
+  .OfferItemBox.color5{
+    background-color: #c0d59a;
+  }
+  .OfferItemBox.color6{
+    
+    background-color: #f1dcad;
+  }
   .OfT4 {
     padding: 7px;
     max-width: 130px;
+    background-color: #fff;
   }
 }
 
