@@ -164,3 +164,61 @@
     max-width: 100%;
   }
 }
+
+.Style1{
+    .full{
+      flex: 0 0 60% !important;
+      max-width: 60%;
+      font-size: 18px;
+    }
+}
+
+.TabBox{
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  .TabItem{
+    flex: 0 0 200px;
+    max-width: 200px;
+    padding: 0 15px;
+    .TabRound{
+        background-color: #FFDE11;
+        height: 130px;
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: 0.4s;
+        box-shadow: 0 5px 25px rgba(0,0,0,.17);
+        &:hover{
+          border: 2px solid #282202;
+        }
+        
+    }
+  }
+}
+.TabRoundIcon{
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  &.icon1{
+    background-image: url(../public/t1.png);
+  }
+  &.icon2{
+    background-image: url(../public/t2.png);
+  }
+  &.icon3{
+    background-image: url(../public/t3.png);
+  }
+  &.icon4{
+    background-image: url(../public/t4.png);
+  }
+  &.icon5{
+    background-image: url(../public/t5.png);
+  }
+}

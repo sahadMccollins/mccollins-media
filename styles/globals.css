@@ -2403,3 +2403,40 @@ background-color: #F7F7F7;
     opacity: 1;
   }
 }
+
+
+.FtrBx1Wrp{
+  margin-top: 60px;
+}
+
+.FtrBx1{
+  display: flex;
+  margin: 0 -20px;
+  flex-wrap: wrap;
+
+}
+.FtrBx1Item{
+  flex: 0 0 180px;
+  max-width: 180px;
+  padding: 0 20px;
+  border-right: 1px solid #fff;
+}
+.FtrBx1Item:last-child{
+  border-right: 0px solid #fff;
+}
+.FtrBx1ItemT1{
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.FtrBx1ItemT2{
+  font-size: 20px;
+  line-height: 1.1;
+}
+.bg-4{
+  background-color: #F8F8F8;
+}
+.iconSt1.active{
+  border: 2px solid #282202 !important;
+}
