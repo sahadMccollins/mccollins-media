@@ -20,7 +20,7 @@ const SocialMainBanner = () => {
           poster="/lp/lp1main.jpg"
         >
           <source
-            src="/mccollins-media-video-compressed.mp4"
+            src="/social.mp4"
             type="video/mp4"
           />
         </video>
