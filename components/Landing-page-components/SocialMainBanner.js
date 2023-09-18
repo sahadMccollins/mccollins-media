@@ -31,7 +31,7 @@ const SocialMainBanner = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                  Social Media<br /> Marketing
+                  Social Media  Marketing
                   
                 </div>
                 <div className="T2">
