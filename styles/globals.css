@@ -2304,11 +2304,11 @@ background-color: #F7F7F7;
     max-width: 100%;
   }
   .PerfomanceWrap {
-    background: #FFDE11;
+    background: #c0d59a;
   padding-top: 20px;
   }
   .PrGridMiddle1 {
-    background-color: #FFDE11;
+    background-color: #c0d59a;
   }
   .SliderBtnWrp{
     margin-top: 10px;
@@ -2348,6 +2348,9 @@ background-color: #F7F7F7;
     padding: 7px;
     max-width: 130px;
     background-color: #fff;
+  }
+  .PrGridMiddle2{
+    margin-bottom: 15px;
   }
 }
 
