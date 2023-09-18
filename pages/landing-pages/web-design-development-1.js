@@ -42,6 +42,27 @@ const LandingPage1 = () => {
     return cleanup;
   }, []);
 
+  useEffect(() => {
+    // Add the Google Tag Manager script to this page
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-10803441186";
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-10803441186");
+    };
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <Box marginTop={"-85px"} position="relative">
       <Head>
