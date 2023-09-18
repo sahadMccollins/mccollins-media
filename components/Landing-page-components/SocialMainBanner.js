@@ -20,7 +20,7 @@ const SocialMainBanner = () => {
           poster="/lp/lp1main.jpg"
         >
           <source
-            src="/mccollins-media-video-compressed.mp4"
+            src="/social.mp4"
             type="video/mp4"
           />
         </video>
@@ -31,7 +31,7 @@ const SocialMainBanner = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                  Social Media<br /> Marketing
+                  Social Media  Marketing
                   
                 </div>
                 <div className="T2">

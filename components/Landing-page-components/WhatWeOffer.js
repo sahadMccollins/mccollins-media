@@ -23,7 +23,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
         <div className="WhatWeOfrWrp">
             <div className="OurOffers irow">
                 <div className="OfferItem irc3">
-                    <a className="OfferItemBox" href="#">
+                    <a className="OfferItemBox color1" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
                                 <span className="w w1">&nbsp;</span>
@@ -35,7 +35,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     </a>
                 </div>
                 <div className="OfferItem irc3">
-                    <a className="OfferItemBox" href="#">
+                    <a className="OfferItemBox color2" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
                                 <span className="w w2">&nbsp;</span>
@@ -47,7 +47,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     </a>
                 </div>
                 <div className="OfferItem irc3">
-                    <a className="OfferItemBox" href="#">
+                    <a className="OfferItemBox color3" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
                                 <span className="w w3">&nbsp;</span>
@@ -59,7 +59,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     </a>
                 </div>
                 <div className="OfferItem irc3">
-                    <a className="OfferItemBox" href="#">
+                    <a className="OfferItemBox color4" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
                                 <span className="w w4">&nbsp;</span>
@@ -71,7 +71,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     </a>
                 </div>
                 <div className="OfferItem irc3">
-                    <a className="OfferItemBox" href="#">
+                    <a className="OfferItemBox color5" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
                                 <span className="w w5">&nbsp;</span>
@@ -83,7 +83,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     </a>
                 </div>
                 <div className="OfferItem irc3">
-                    <a className="OfferItemBox" href="#">
+                    <a className="OfferItemBox color6" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
                                 <span className="w w6">&nbsp;</span>
