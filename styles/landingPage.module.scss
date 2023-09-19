@@ -335,8 +335,9 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 1;
-      background-color: #212121;
-      color: #fff;
+      background-color: #d59379;
+      color: #212121;
+      border-radius: 10px;
     }
     .AccordionFlex1Right{
       flex: 0 0 80%;
@@ -351,6 +352,7 @@
       padding: 10px;
       max-width: 100%;
       margin-top: 15px;
+      background-color:#d59379;
     }
   }
 }
@@ -476,5 +478,152 @@ font-size: 18px;
   }
   .Box1ItemT2{
     font-size: 15px;
+  }
+}
+
+
+.ServicesWeOfferWrap{
+  background-color: #ffde11;
+}
+.ServicesGrids{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px -15px 30px -15px;
+ 
+  .ServicesGrid{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  .ServicesGridItem{
+    background-color: #000;
+    color: #ffde11;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+      background-color: #191919;
+    }
+    .ServicesGridItem1{
+      text-align: right;
+      margin-bottom: 15px;
+    }
+    .ServicesGridItem2{
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .ServicesGridItem3{
+      line-height: 1.4;
+    }
+  }
+}
+.GridItem1Icon{
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+  &.GridItem1Icon1{
+    background-image: url(../public/lp/y1.png);
+    width: 70px;
+  }
+  &.GridItem1Icon2{
+    background-image: url(../public/lp/y2.png);
+    width: 40px;
+  }
+  &.GridItem1Icon3{
+    background-image: url(../public/lp/y3.png);
+    width: 37px;
+  }
+  &.GridItem1Icon4{
+    background-image: url(../public/lp/y4.png);
+    width: 55px;
+  }
+  &.GridItem1Icon5{
+    background-image: url(../public/lp/y5.png);
+  }
+  &.GridItem1Icon6{
+    background-image: url(../public/lp/y6.png);
+  }
+  &.GridItem1Icon7{
+    background-image: url(../public/lp/y7.png);
+    width: 40px;
+  }
+  &.GridItem1Icon8{
+    background-image: url(../public/lp/y1.png);
+    width: 80px;
+  }
+
+}
+.BtnWrap{
+  a{
+    background-color: #fff;
+    border-radius: 50px;
+    border: 0px solid #e4e4e4;
+    outline: none !important;
+    padding: 13px;
+    width: 100%;
+    text-align: center;
+    color: #212121;
+    font-weight: var(--chakra-fontWeights-bold);
+    max-width: 200px;
+    display: inline-block;
+    line-height: 1;
+    transition: 0.3s;
+    &:first-child{
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .BtnWrap{
+    a{
+      max-width: 140px;
+      padding: 10px;
+    }
+  }
+  .ServicesWeOfferWrap{
+    background-color: #eccf93;
+  }
+  .ServicesGrids{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px -15px 15px -15px;
+   
+    .ServicesGrid{
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    .ServicesGridItem{
+      background-color: #646060;
+      color: #ffde11;
+      padding: 20px;
+      cursor: pointer;
+      transition: 0.4s;
+      border-radius: 15px;
+      &:hover{
+        background-color: #191919;
+      }
+      .ServicesGridItem1{
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .ServicesGridItem2{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .ServicesGridItem3{
+        line-height: 1.4;
+        text-align: center;
+      }
+    }
   }
 }

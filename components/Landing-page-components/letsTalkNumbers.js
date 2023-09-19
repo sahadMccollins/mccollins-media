@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useMediaQuery } from "@chakra-ui/react";
 const LetsTalkNumbers = () => {
   return (
-    <div className={`pd-common ${styles.LetsTalkBoxWrap}`}>
+    <div className={` pd-common ${styles.LetsTalkBoxWrap}`}>
         <div className={`icontainer ${styles.container}`}>
             <div className={`GridBox50 ${styles.GridBox50}`}>
                 <div className={`GridBox50c ${styles.GridBox50c}`}>

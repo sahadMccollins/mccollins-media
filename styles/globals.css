@@ -2537,3 +2537,38 @@ background-color: #F7F7F7;
     background-color: #c0d59a !important;
   }
 }
+
+.ServicesWeOfferWrap .St12{
+  color: #fff;
+  text-transform: uppercase;
+}
+.ServicesWeOfferWrap .T3::after{
+  content: none;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+.T11{
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+.T11::after{
+  content: "";
+  background-color: #fff;
+  width: 25%;
+  height: 5px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 780px) {
+  .ServicesWeOfferWrap .T3{
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  } 
+  .T11::after {
+    height: 3px;
+    bottom: 5px;
+  }
+}
