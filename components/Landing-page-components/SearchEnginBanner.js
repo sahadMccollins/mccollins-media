@@ -22,7 +22,7 @@ const SearchEngineBanner = () => {
           <source src="/social.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="image-title">
+      <div className="image-title SEOTitleBox" id="contactnow">
         <div className="widthFull">
           <div className="icontainer">
             <div className="irow">
@@ -41,25 +41,25 @@ const SearchEngineBanner = () => {
                 )}
                  <div className="FtrBx1Wrp">
                     <div className="FtrBx1">
-                        <div className="FtrBx1Item">
+                        <div className="FtrBx1Item color1">
                             <div>
                                 <div className="FtrBx1ItemT1">$2B</div>
                                 <div className="FtrBx1ItemT2">Billion revenue For our clients</div>
                             </div>
                         </div>
-                        <div className="FtrBx1Item">
+                        <div className="FtrBx1Item color2">
                             <div>
                                 <div className="FtrBx1ItemT1">30</div>
                                 <div className="FtrBx1ItemT2">Published Client wins</div>
                             </div>
                         </div>
-                        <div className="FtrBx1Item">
+                        <div className="FtrBx1Item color3">
                             <div>
                                 <div className="FtrBx1ItemT1">150+</div>
                                 <div className="FtrBx1ItemT2">5 - Star client Reviews </div>
                             </div>
                         </div>
-                        <div className="FtrBx1Item">
+                        <div className="FtrBx1Item color4">
                             <div>
                                 <div className="FtrBx1ItemT1">4</div>
                                 <div className="FtrBx1ItemT2">Agency of the Year awards</div>

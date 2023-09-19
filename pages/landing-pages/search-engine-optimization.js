@@ -6,6 +6,7 @@ import ClientPortFolio from "../../components/Landing-page-components/ClientPort
 import ClientResults from "../../components/Landing-page-components/ClientResults";
 import SearchEngineBanner from "../../components/Landing-page-components/SearchEnginBanner";
 import OurApproachtoSEO from "../../components/Landing-page-components/OurApproachtoSEO";
+import LetsTalkNumbers from "../../components/Landing-page-components/letsTalkNumbers";
 const SearchEngineOptimization = () => {
   useEffect(() => {
     document.body.className = 'LandingPage';
@@ -22,6 +23,7 @@ const SearchEngineOptimization = () => {
       <SearchEngineBanner/>
       <ClientPortFolio/>
       <OurApproachtoSEO/>
+      <LetsTalkNumbers/>
       <ClientResults/>
       <FooterNav/>
     </Box>

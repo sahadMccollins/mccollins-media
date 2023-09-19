@@ -2440,3 +2440,100 @@ background-color: #F7F7F7;
 .iconSt1.active{
   border: 2px solid #282202 !important;
 }
+
+
+@media (max-width: 780px) {
+  .SEOTitleBox.image-title{
+    background: #d59379;
+  }
+  .SEOTitleBox .HeaderForm{
+    background-color: transparent;
+  }
+  .SEOTitleBox .FtrBx1Item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 15px;
+    border-right: 0px solid #e4e4e4;
+  }
+  .SEOTitleBox .FtrBx1Item.color1{
+    background-color: #8bbcc1;
+  }
+  .SEOTitleBox .FtrBx1Item.color2{
+    background-color: #eccf93;
+  }
+  .SEOTitleBox .FtrBx1Item.color3{
+    background-color: #97c4a3;
+  }
+  .SEOTitleBox .FtrBx1Item.color4{
+    background-color: #c0d59a;
+  }
+  .FtrBx1ItemT1{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .FtrBx1ItemT2 {
+    font-size: 15px;
+  }
+  .FtrBx1Wrp {
+    margin-top: 20px;
+  }
+  .SEOTitleBox .SubmitBtn1{
+    background-color: #c0d59a;
+  }
+  .VideoBanner .SEOTitleBox .icontainer ,
+  .SEOTitleBox .HeaderForm ,
+  .SEOTitleBox .flag-container .arrow{
+    color: var(--chakra-colors-chakra-body-text) !important;
+  }
+  .SEOTitleBox  .FormItem ::placeholder {
+    color: var(--chakra-colors-chakra-body-text);
+    opacity: 1; 
+  }
+  
+  .SEOTitleBox .FormItem :-ms-input-placeholder {
+    color: var(--chakra-colors-chakra-body-text);
+  }
+  
+  .SEOTitleBox .FormItem ::-ms-input-placeholder{ 
+    color: var(--chakra-colors-chakra-body-text);
+  }
+  .SEOTitleBox .FormItem input ,
+  .SEOTitleBox .FormItem select{
+      color: var(--chakra-colors-chakra-body-text);
+      border: 1px solid var(--chakra-colors-chakra-body-text);
+  }
+  .bg-4 {
+    background-color: #c0d59a;
+  }
+  .OurApMob .T4{
+    margin-bottom: 15px;
+  }
+  .AccrRowWrap{
+    margin-bottom: 10px;
+  }
+  .AccrRowWrap.active{
+    background-color: #fff;
+  }
+  .MobAccordionItem{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .AccordionContent{
+    padding: 10px;
+  }
+  .gridBg.color1{
+    background-color: #8bbcc1 !important;
+  }
+  .gridBg.color2{
+    background-color: #eccf93 !important;
+  }
+  .gridBg.color3{
+    background-color: #97c4a3 !important;
+  }
+  .gridBg.color4{
+    background-color: #c0d59a !important;
+  }
+}
