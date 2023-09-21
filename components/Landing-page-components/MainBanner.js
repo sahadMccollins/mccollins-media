@@ -13,6 +13,7 @@ const MainBanner1 = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
+  const [contactStatus, setContactStatus] = useState();
   const [lookingFor, setLookingFor] = useState("");
 
   const [loading, setLoading] = useState(false);
@@ -119,58 +120,77 @@ const MainBanner1 = () => {
 
   const handlePhoneChange = (status, number, country) => {
     setContact(number);
+    setContactStatus(status);
   };
 
   const formHandler = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        firstName: name,
-        email: email,
-        contact: contact,
-        services: lookingFor,
-        date: new Date(),
-        page: "Web development Landing Page",
-      }),
-    };
-    fetch("/api/form-submit", requestOptions).then(
-      (response) => response.json(),
-      setName(""),
-      setContact(""),
-      setEmail(""),
-      setLookingFor(""),
-      setLoading(false),
+    if (name !== "" && lookingFor !== "" && email !== "") {
+      if (contactStatus === true) {
+        const requestOptions = {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            firstName: name,
+            email: email,
+            contact: contact,
+            services: lookingFor,
+            date: new Date(),
+            page: "Web development Landing Page",
+          }),
+        };
+        fetch("/api/form-submit", requestOptions).then(
+          (response) => response.json(),
+          setName(""),
+          setContact(""),
+          setEmail(""),
+          setLookingFor(""),
+          setLoading(false),
+          toast({
+            title: "Form Submited",
+            description: "Thank you for getting in touch!",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          })
+        );
+        let formData = new FormData();
+        formData.append("Firstname", name);
+        formData.append("Email", email);
+        formData.append("Phone", contact);
+        formData.append("Services", lookingFor);
+        formData.append("date", new Date());
+        formData.append("Page", "Web development Landing Page");
+
+        fetch(
+          "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+          {
+            method: "POST",
+            body: formData,
+          }
+        )
+          .then((response) => response.json())
+          .then((data) => router.push("/Thank-you-for-contacting-us"))
+          .catch((error) => console.error(error));
+      } else {
+        toast({
+          title: "Phone field is not valid",
+          description: "Please check the phone field",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+      }
+    } else {
       toast({
-        title: "Form Submited",
-        description: "Thank you for getting in touch!",
-        status: "success",
+        title: "Please fill all the required field",
+        status: "error",
         duration: 9000,
         isClosable: true,
-      })
-    );
-    let formData = new FormData();
-    formData.append("Firstname", name);
-    formData.append("Email", email);
-    formData.append("Phone", contact);
-    formData.append("Services", lookingFor);
-    formData.append("date", new Date());
-    formData.append("Page", "Web development Landing Page");
-
-    fetch(
-      "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
-      {
-        method: "POST",
-        body: formData,
-      }
-    )
-      .then((response) => response.json())
-      .then((data) => router.push("/Thank-you-for-contacting-us"))
-      .catch((error) => console.error(error));
-
+      });
+    }
     setLoading(false);
   };
 
