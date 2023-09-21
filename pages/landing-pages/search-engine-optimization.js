@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from "react";
 import FooterNav from "../../components/Landing-page-components/FooterNav";
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
-import SocialMainBanner from "../../components/Landing-page-components/SocialMainBanner";
-
 import ClientPortFolio from "../../components/Landing-page-components/ClientPortfolio";
-import WhatWeOffer1 from "../../components/Landing-page-components/WhatWeOffer";
-import PerfomanceSlider1 from "../../components/Landing-page-components/PerfomanceSlider1";
 import ClientResults from "../../components/Landing-page-components/ClientResults";
-const LandingPage1 = () => {
+import SearchEngineBanner from "../../components/Landing-page-components/SearchEnginBanner";
+import OurApproachtoSEO from "../../components/Landing-page-components/OurApproachtoSEO";
+import LetsTalkNumbers from "../../components/Landing-page-components/letsTalkNumbers";
+import SeoServicesWeOffer from "../../components/Landing-page-components/SEOServicesWeOffer";
+const SearchEngineOptimization = () => {
   useEffect(() => {
-    document.body.className = 'LandingPage';
+    document.body.className = 'LandingPage SeoPage';
   });
   
   return (
@@ -21,13 +21,14 @@ const LandingPage1 = () => {
           content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
         />
       </Head>
-      <SocialMainBanner/>
+      <SearchEngineBanner/>
       <ClientPortFolio/>
-      <WhatWeOffer1/>
-      <PerfomanceSlider1/>
+      <OurApproachtoSEO/>
+      <SeoServicesWeOffer/>
+      <LetsTalkNumbers/>
       <ClientResults/>
       <FooterNav/>
     </Box>
   );
 };
-export default LandingPage1;
+export default SearchEngineOptimization;

@@ -2403,3 +2403,253 @@ background-color: #F7F7F7;
     opacity: 1;
   }
 }
+
+
+.FtrBx1Wrp{
+  margin-top: 60px;
+}
+
+.FtrBx1{
+  display: flex;
+  margin: 0 -20px;
+  flex-wrap: wrap;
+
+}
+.FtrBx1Item{
+  flex: 0 0 180px;
+  max-width: 180px;
+  padding: 0 20px;
+  border-right: 1px solid #fff;
+}
+.FtrBx1Item:last-child{
+  border-right: 0px solid #fff;
+}
+.FtrBx1ItemT1{
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.FtrBx1ItemT2{
+  font-size: 20px;
+  line-height: 1.1;
+}
+.bg-4{
+  background-color: #F8F8F8;
+}
+.iconSt1.active{
+  border: 2px solid #282202 !important;
+}
+
+
+@media (max-width: 780px) {
+  .SEOTitleBox.image-title{
+    background: #d59379;
+  }
+  .SEOTitleBox .HeaderForm{
+    background-color: transparent;
+  }
+  .SEOTitleBox .FtrBx1Item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 20px;
+    border-right: 0px solid #e4e4e4;
+  }
+  .SEOTitleBox .FtrBx1Item.color1{
+    background-color: #8bbcc1;
+  }
+  .SEOTitleBox .FtrBx1Item.color2{
+    background-color: #eccf93;
+  }
+  .SEOTitleBox .FtrBx1Item.color3{
+    background-color: #97c4a3;
+  }
+  .SEOTitleBox .FtrBx1Item.color4{
+    background-color: #c0d59a;
+  }
+  .FtrBx1ItemT1{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .FtrBx1ItemT2 {
+    font-size: 15px;
+  }
+  .FtrBx1Wrp {
+    margin-top: 20px;
+  }
+  .SEOTitleBox .SubmitBtn1{
+    background-color: #c0d59a;
+  }
+  .VideoBanner .SEOTitleBox .icontainer ,
+  .SEOTitleBox .HeaderForm ,
+  .SEOTitleBox .flag-container .arrow{
+    color: var(--chakra-colors-chakra-body-text) !important;
+  }
+  .SEOTitleBox  .FormItem ::placeholder {
+    color: var(--chakra-colors-chakra-body-text);
+    opacity: 1; 
+  }
+  
+  .SEOTitleBox .FormItem :-ms-input-placeholder {
+    color: var(--chakra-colors-chakra-body-text);
+  }
+  
+  .SEOTitleBox .FormItem ::-ms-input-placeholder{ 
+    color: var(--chakra-colors-chakra-body-text);
+  }
+  .SEOTitleBox .FormItem input ,
+  .SEOTitleBox .FormItem select{
+      color: var(--chakra-colors-chakra-body-text);
+      border: 1px solid var(--chakra-colors-chakra-body-text);
+  }
+  .bg-4 {
+    background-color: #c0d59a;
+  }
+  .OurApMob .T4{
+    margin-bottom: 15px;
+  }
+  .AccrRowWrap{
+    margin-bottom: 10px;
+  }
+  .AccrRowWrap.active{
+    background-color: #fff;
+  }
+  .MobAccordionItem{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .AccordionContent{
+    padding: 10px;
+  }
+  .gridBg.color1{
+    background-color: #8bbcc1 !important;
+  }
+  .gridBg.color2{
+    background-color: #eccf93 !important;
+  }
+  .gridBg.color3{
+    background-color: #97c4a3 !important;
+  }
+  .gridBg.color4{
+    background-color: #c0d59a !important;
+  }
+}
+
+.ServicesWeOfferWrap .St12{
+  color: #fff;
+  text-transform: uppercase;
+}
+.ServicesWeOfferWrap .T3::after{
+  content: none;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+.T11{
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+.T11::after{
+  content: "";
+  background-color: #fff;
+  width: 25%;
+  height: 5px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 780px) {
+  .ServicesWeOfferWrap .T3{
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  } 
+  .T11::after {
+    height: 3px;
+    bottom: 5px;
+  }
+}
+
+.fullWidthRow .rowBox1R{
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+button{
+  box-shadow: none !important;
+}
+.InstaBoxWrap{
+  padding-bottom: 0;
+}
+.Column3Row{
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+.Column3{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+}
+.Column3 .PerfomanceGraphWrap{
+  background: #F7F7F7;
+  padding: 0 15px;
+}
+.ClientTestimonial{
+  background: #F7F7F7;
+}
+@media (max-width: 780px) {
+   .fullWidthRow .rowBox1R{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .InstaBoxWrap .T4{
+    margin-bottom: 20px;
+  }
+  .Column3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .Column3 .PerfomanceGraphWrap{
+    padding: 15px;
+  }
+  .PerfomanceServicesWrap {
+    background: #97c4a3;
+  }
+  .PerfomancePage .ClientPortfolio {
+    background-color: #c0d59a;
+  }
+  .Column3 .PerfomanceGraphWrap.color1{
+    background-color: #8bbcc1;
+  }
+  .Column3 .PerfomanceGraphWrap.color2{
+    background-color: #eccf93;
+  }
+  .Column3 .PerfomanceGraphWrap.color3{
+background-color: #d59379;
+  }
+  .ClientTestimonial {
+    background: #eccf93;
+  }
+  .ClientTestimonial .chakra-heading.css-1hsfz7s  {
+    font-size: 20px !important;
+  border-left: 4px solid #FFDE11 !important;
+  }
+  .ClientTestimonial .css-1lmyikl{
+    padding: 15px !important;
+    margin-top: 15px !important;
+   
+  }
+  .ClientTestimonial .css-1lmyikl p{
+    font-size: 14px !important;
+  }
+  .ClientTestimonial .css-1lmyikl h2{
+    font-size: 16px !important;
+  }
+  .SeoPage .ClientPortfolio{
+    background: #eccf93;
+  }
+}

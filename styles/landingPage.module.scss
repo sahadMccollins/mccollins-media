@@ -1,20 +1,19 @@
-.SliderWrap2{
-  
-  .SliderGridBox{
+.SliderWrap2 {
+  .SliderGridBox {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
-    .SliderGridBoxL{
+
+    .SliderGridBoxL {
       flex: 0 0 10%;
       max-width: 10%;
     }
-    .SliderGridBoxM{
+    .SliderGridBoxM {
       flex: 0 0 80%;
       max-width: 80%;
     }
-    .SliderGridBoxR{
+    .SliderGridBoxR {
       flex: 0 0 10%;
       max-width: 10%;
       display: flex;
@@ -22,71 +21,71 @@
     }
   }
 }
-.ImgWr1{
-  img{
+.ImgWr1 {
+  img {
     border-radius: 30px;
   }
 }
-.Flex50{
+.Flex50 {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 15px;
 }
-.SliderBtn{
+.SliderBtn {
   width: 70px;
   height: 50px;
   display: flex;
-  background-color: #6F6F6F;
+  background-color: #6f6f6f;
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  .Ner1{
+  .Ner1 {
     width: 10px;
     height: 15px;
     background-size: 100% 100%;
     background-image: url(../public/lp/nav.png);
     transform: rotate(180deg);
   }
-  .Ner2{
+  .Ner2 {
     width: 10px;
     height: 15px;
     background-size: 100% 100%;
     background-image: url(../public/lp/nav.png);
   }
 }
-.SliderBox2{
+.SliderBox2 {
   padding: 20px;
   background-color: #fff;
   border-radius: 30px;
 }
-.ContentHeader1Flex{
+.ContentHeader1Flex {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 0 -15px;
   align-items: center;
 
-  .flexAuto{
+  .flexAuto {
     flex: 0 0 auto;
     max-width: auto;
     padding: 0 15px;
   }
 }
-.LogoWrap1{
+.LogoWrap1 {
   max-width: 120px;
 }
-.LogoName{
+.LogoName {
   font-size: 30px;
   font-weight: 800;
-  &.color1{
-    color: #51335E;
+  &.color1 {
+    color: #51335e;
   }
 }
-.st1{
+.st1 {
   margin-bottom: 15px;
 }
-.st3{
-  background-color: #FFDE11;
+.st3 {
+  background-color: #ffde11;
   border-radius: 50px;
   border: 0px solid #e4e4e4;
   outline: none !important;
@@ -97,13 +96,13 @@
   font-weight: var(--chakra-fontWeights-bold);
   max-width: 200px;
   display: inline-block;
-  &.black{
+  &.black {
     background-color: #212121;
     margin-top: 10px;
     color: #fff;
   }
 }
-.GridSt12Flex{
+.GridSt12Flex {
   width: 140%;
   background-color: #ffde11;
   position: relative;
@@ -112,55 +111,642 @@
   border-radius: 30px;
   display: flex;
   margin-bottom: 20px;
-  .GridSt12Column{
+  .GridSt12Column {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 0 15px;
   }
 }
-.GridSt12T1{
+.GridSt12T1 {
   font-weight: 800;
   font-size: 35px;
   margin-bottom: 5px;
 }
-.GridSt12T2{
+.GridSt12T2 {
   font-size: 12px;
 }
 
 @media (max-width: 780px) {
-  .SliderWrap2{
-    .SliderGridBox{
-      .SliderGridBoxM{
+  .SliderWrap2 {
+    .SliderGridBox {
+      .SliderGridBoxM {
         flex: 0 0 100%;
         max-width: 100%;
       }
     }
   }
-  .Flex50{
+  .Flex50 {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0 15px;
   }
-  .SliderBox2{
+  .SliderBox2 {
     padding: 10px;
     border-radius: 20px;
   }
-  .GridSt12Flex{
+  .GridSt12Flex {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
   }
-  .GridSt12T1{
+  .GridSt12T1 {
     font-size: 16px;
   }
-  .GridSt12T2{
+  .GridSt12T2 {
     font-size: 9px;
   }
-  .LogoWrap1{
+  .LogoWrap1 {
     max-width: 70px;
   }
-  .st3{
+  .st3 {
     padding: 8px;
     max-width: 100%;
+  }
+}
+
+.Style1 {
+  .full {
+    flex: 0 0 60% !important;
+    max-width: 60%;
+    font-size: 18px;
+  }
+}
+
+.TabBox {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  .TabItem {
+    flex: 0 0 200px;
+    max-width: 200px;
+    padding: 0 15px;
+    .TabRound {
+      background-color: #ffde11;
+      height: 130px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: 0.4s;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17);
+      &:hover {
+        border: 2px solid #282202;
+      }
+    }
+  }
+}
+.TabRoundIcon {
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  &.icon1 {
+    background-image: url(../public/t1.png);
+  }
+  &.icon2 {
+    background-image: url(../public/t2.png);
+  }
+  &.icon3 {
+    background-image: url(../public/t3.png);
+  }
+  &.icon4 {
+    background-image: url(../public/t4.png);
+  }
+  &.icon5 {
+    background-image: url(../public/t5.png);
+  }
+}
+.TabContentFlex {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  align-items: center;
+  .TabContentItem {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    .TabT1 {
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 30px;
+      line-height: 1;
+    }
+    .TabT2 {
+      font-size: 18px;
+    }
+  }
+}
+.PointBoxFlex {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  .PointBoxItem {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 10px;
+    &.PointBoxItemBold {
+      font-weight: 700;
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  }
+}
+.BannerBtn2 {
+  a {
+    background-color: #ffde11;
+    border-radius: 50px;
+    border: 0px solid #e4e4e4;
+    outline: none !important;
+    padding: 13px;
+    width: 100%;
+    text-align: center;
+    color: #212121;
+    font-weight: var(--chakra-fontWeights-bold);
+    max-width: 200px;
+    display: inline-block;
+    margin-top: 30px;
+    line-height: 1;
+    transition: 0.3s;
+    &:hover {
+      background-color: #282202;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .Style1 {
+    .full {
+      flex: 0 0 100% !important;
+      max-width: 100%;
+      font-size: 15px;
+    }
+  }
+  .TabContentFlex {
+    margin-top: 0px;
+    .TabContentItem {
+      flex: 0 0 100%;
+      max-width: 100%;
+      .TabT1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+      }
+      .TabT2 {
+        font-size: 15px;
+      }
+    }
+  }
+  .PointBoxFlex {
+    margin-top: 10px;
+    .PointBoxItem {
+      flex: 0 0 60%;
+      max-width: 60%;
+      font-size: 15px;
+      line-height: 1;
+      margin-bottom: 10px;
+      line-height: 1.2;
+      &.PointBoxItemBold {
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
+    }
+  }
+  .AccordionFlex1 {
+    display: flex;
+    flex-wrap: wrap;
+    .AccordionFlex1Left{
+      flex: 0 0 20%;
+      max-width: 20%;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1;
+      background-color: #d59379;
+      color: #212121;
+      border-radius: 10px;
+    }
+    .AccordionFlex1Right{
+      flex: 0 0 80%;
+      max-width: 80%;
+      padding: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  .BannerBtn2 {
+    a {
+      padding: 10px;
+      max-width: 100%;
+      margin-top: 15px;
+      background-color:#d59379;
+    }
+  }
+}
+
+.LetsTalkBoxWrap{
+  background-color: #000;
+  padding-bottom: 0;
+  color: #fff;
+}
+.GridBox50{
+  display: flex;
+  flex-wrap: wrap;
+  
+  .GridBox50c{
+    flex: 0 0 50%;
+    max-width: 50%;
+    &.bgchange{
+      background-color: #191919;
+    }
+    .PadBox{
+      padding: 25px;
+    }
+  }
+}
+.PadBoxT1{
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 800;
+  line-height: 1.2;
+  position: relative;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.PadBoxT2{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  color: #ffde11;
+  margin-bottom: 15px;
+}
+.PadBoxT3{
+color: #fff;
+opacity: 0.8;
+font-size: 18px;
+}
+.NumbersBox1{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: -90px;
+  position: relative;
+  .NumbersBox1Item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    color: var(--chakra-colors-chakra-body-text);
+    background-color: #ffde11;
+    text-align: center;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &:nth-child(even){
+      background-color: #E0C100;
+    }
+  }
+}
+.Box1ItemT1{
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.Box1ItemT2{
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+@media (max-width: 780px) {
+  .GridBox50{
+    .GridBox50c{
+      flex: 0 0 100%;
+      max-width: 100%;
+      .PadBox{
+        padding: 15px;
+      }
+      &.bgchange{
+        background-color: #d59379;
+      }
+    }
+  }
+  .PadBoxT1{
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: var(--chakra-colors-chakra-body-text);
+  }
+  .PadBoxT2{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .PadBoxT3{
+    font-size: 15px;
+    color: var(--chakra-colors-chakra-body-text);
+  }
+  .NumbersBox1{
+    margin-top: 0px;
+    .NumbersBox1Item{
+      flex: 0 0 50%;
+      max-width:50%;
+      padding: 0 15px;
+      height: 130px;
+    }
+    &.color1{
+      background-color: #8bbcc1 !important;
+    }
+  }
+  .Box1ItemT1{
+    font-size: 27px;
+  }
+  .Box1ItemT2{
+    font-size: 15px;
+  }
+}
+
+
+.ServicesWeOfferWrap{
+  background-color: #ffde11;
+}
+.ServicesGrids{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px -15px 30px -15px;
+ 
+  .ServicesGrid{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  .ServicesGridItem{
+    background-color: #000;
+    color: #ffde11;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+      background-color: #191919;
+    }
+    .ServicesGridItem1{
+      text-align: right;
+      margin-bottom: 15px;
+    }
+    .ServicesGridItem2{
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .ServicesGridItem3{
+      line-height: 1.4;
+    }
+  }
+}
+.GridItem1Icon{
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+  &.GridItem1Icon1{
+    background-image: url(../public/lp/y1.png);
+    width: 70px;
+  }
+  &.GridItem1Icon2{
+    background-image: url(../public/lp/y2.png);
+    width: 40px;
+  }
+  &.GridItem1Icon3{
+    background-image: url(../public/lp/y3.png);
+    width: 37px;
+  }
+  &.GridItem1Icon4{
+    background-image: url(../public/lp/y4.png);
+    width: 55px;
+  }
+  &.GridItem1Icon5{
+    background-image: url(../public/lp/y5.png);
+  }
+  &.GridItem1Icon6{
+    background-image: url(../public/lp/y6.png);
+  }
+  &.GridItem1Icon7{
+    background-image: url(../public/lp/y7.png);
+    width: 40px;
+  }
+  &.GridItem1Icon8{
+    background-image: url(../public/lp/y1.png);
+    width: 80px;
+  }
+
+}
+.BtnWrap{
+  a{
+    background-color: #fff;
+    border-radius: 50px;
+    border: 0px solid #e4e4e4;
+    outline: none !important;
+    padding: 13px;
+    width: 100%;
+    text-align: center;
+    color: #212121;
+    font-weight: var(--chakra-fontWeights-bold);
+    max-width: 200px;
+    display: inline-block;
+    line-height: 1;
+    transition: 0.3s;
+    &:first-child{
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .BtnWrap{
+    a{
+      max-width: 100%;
+      padding: 13px;
+      margin: 0;
+      &:first-child{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .ServicesWeOfferWrap{
+    background-color: #eccf93;
+  }
+  .ServicesGrids{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px -15px 15px -15px;
+   
+    .ServicesGrid{
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    .ServicesGridItem{
+      background-color: #646060;
+      color: #ffde11;
+      padding: 20px;
+      cursor: pointer;
+      transition: 0.4s;
+      border-radius: 15px;
+      &:hover{
+        background-color: #191919;
+      }
+      .ServicesGridItem1{
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .ServicesGridItem2{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .ServicesGridItem3{
+        line-height: 1.4;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.PrServicesBoxs{
+  display: flex;
+  margin: 0 -5px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  .PrServicesBox{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 5px;
+  }
+}
+.PrServicesBoxItem{
+  width: 100%;
+  height: 300px;
+  background-color: #191919;
+  position: relative;
+  margin-bottom: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size:cover;
+  &::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &.PrServicesBoxItem1{
+    background-image: url(../public/pr1.jpg);
+  }
+  &.PrServicesBoxItem2{
+    background-image: url(../public/pr2.jpg);
+  }
+  &.PrServicesBoxItem3{
+    background-image: url(../public/pr3.jpg);
+  }
+  &.PrServicesBoxItem4{
+    background-image: url(../public/pr4.jpg);
+  }
+  &.PrServicesBoxItem5{
+    background-image: url(../public/pr5.jpg);
+  }
+  &.PrServicesBoxItem6{
+    background-image: url(../public/pr6.jpg);
+  }
+  &.PrServicesBoxItem7{
+    background-image: url(../public/pr7.jpg);
+  }
+  &.PrServicesBoxItem8{
+    background-image: url(../public/pr8.jpg);
+  }
+  .PrServicesBoxItemHover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    .PrServicesBoxItemT1{
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .PrServicesBoxItemT2{
+      font-size: 15px;
+      font-weight: 600;
+      color: #191919;
+      background-color: #ffde11;
+      padding: 5px;
+      max-width: 120px;
+      margin: 0 auto;
+      margin-top: 10px;
+      display: none;
+    }
+    &:hover{
+      .PrServicesBoxItemT2{
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 780px) {
+  .PrServicesBoxs{
+    margin-top: 20px;
+    .PrServicesBox{
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  .PrServicesBoxItem{
+    height: 150px;
+    
+    .PrServicesBoxItemHover{
+      padding: 10px;
+      .PrServicesBoxItemT1{
+        font-size: 14px;
+      }
+      .PrServicesBoxItemT2{
+        font-size: 12px;
+        display: block;
+        max-width: 100px;
+        padding: 5px;
+        background-color: #eccf93;
+      }
+    }
   }
 }
