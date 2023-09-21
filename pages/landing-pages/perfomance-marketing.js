@@ -10,8 +10,7 @@ import ClientPerfomance from "../../components/Landing-page-components/ClientPer
 import CleantTestimonials from "../../components/Landing-page-components/ClientTestimonials";
 const PerfomanceMarketing = () => {
   useEffect(() => {
-    document.body.className = 'LandingPage';
-    document.body.className = 'PerfomancePage';
+    document.body.className = 'LandingPage PerfomancePage';
   });
   return (
     <Box marginTop={"-85px"} position="relative">

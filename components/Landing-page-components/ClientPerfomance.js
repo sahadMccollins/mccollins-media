@@ -31,7 +31,7 @@ const ClientPerfomance = () => {
               </div>
               <div className="Column3Row">
                         <div className="Column3">
-                            <div className="PerfomanceGraphWrap">
+                            <div className="PerfomanceGraphWrap color1">
                             <div className="PerfomanceG">
                                 <div className="PerfomanceG1">1234567</div>
                                 <div className="PerfomanceG2">Spend</div>
@@ -51,7 +51,7 @@ const ClientPerfomance = () => {
                             </div>
                         </div>
                         <div className="Column3">
-                            <div className="PerfomanceGraphWrap">
+                            <div className="PerfomanceGraphWrap color2">
                             <div className="PerfomanceG">
                                 <div className="PerfomanceG1">1234567</div>
                                 <div className="PerfomanceG2">Spend</div>
@@ -71,7 +71,7 @@ const ClientPerfomance = () => {
                             </div>
                         </div>
                         <div className="Column3">
-                            <div className="PerfomanceGraphWrap">
+                            <div className="PerfomanceGraphWrap color3">
                             <div className="PerfomanceG">
                                 <div className="PerfomanceG1">1234567</div>
                                 <div className="PerfomanceG2">Spend</div>

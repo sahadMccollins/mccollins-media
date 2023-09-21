@@ -10,7 +10,7 @@ import LetsTalkNumbers from "../../components/Landing-page-components/letsTalkNu
 import SeoServicesWeOffer from "../../components/Landing-page-components/SEOServicesWeOffer";
 const SearchEngineOptimization = () => {
   useEffect(() => {
-    document.body.className = 'LandingPage';
+    document.body.className = 'LandingPage SeoPage';
   });
   
   return (

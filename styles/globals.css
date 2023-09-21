@@ -2622,4 +2622,34 @@ button{
   .PerfomancePage .ClientPortfolio {
     background-color: #c0d59a;
   }
+  .Column3 .PerfomanceGraphWrap.color1{
+    background-color: #8bbcc1;
+  }
+  .Column3 .PerfomanceGraphWrap.color2{
+    background-color: #eccf93;
+  }
+  .Column3 .PerfomanceGraphWrap.color3{
+background-color: #d59379;
+  }
+  .ClientTestimonial {
+    background: #eccf93;
+  }
+  .ClientTestimonial .chakra-heading.css-1hsfz7s  {
+    font-size: 20px !important;
+  border-left: 4px solid #FFDE11 !important;
+  }
+  .ClientTestimonial .css-1lmyikl{
+    padding: 15px !important;
+    margin-top: 15px !important;
+   
+  }
+  .ClientTestimonial .css-1lmyikl p{
+    font-size: 14px !important;
+  }
+  .ClientTestimonial .css-1lmyikl h2{
+    font-size: 16px !important;
+  }
+  .SeoPage .ClientPortfolio{
+    background: #eccf93;
+  }
 }
