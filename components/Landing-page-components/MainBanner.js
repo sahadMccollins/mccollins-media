@@ -15,6 +15,7 @@ const MainBanner1 = () => {
   const [contact, setContact] = useState();
   const [contactStatus, setContactStatus] = useState();
   const [lookingFor, setLookingFor] = useState("");
+  const [company, setCompany] = useState("");
 
   const [loading, setLoading] = useState(false);
 
@@ -127,7 +128,7 @@ const MainBanner1 = () => {
     e.preventDefault();
     setLoading(true);
 
-    if (name !== "" && lookingFor !== "" && email !== "") {
+    if (name !== "" && lookingFor !== "" && email !== "" && company !== "") {
       if (contactStatus === true) {
         const requestOptions = {
           method: "POST",
@@ -137,16 +138,14 @@ const MainBanner1 = () => {
             email: email,
             contact: contact,
             services: lookingFor,
+            company: company,
             date: new Date(),
             page: "Web development Landing Page",
           }),
         };
         fetch("/api/form-submit", requestOptions).then(
           (response) => response.json(),
-          setName(""),
-          setContact(""),
-          setEmail(""),
-          setLookingFor(""),
+
           setLoading(false),
           toast({
             title: "Form Submited",
@@ -160,6 +159,7 @@ const MainBanner1 = () => {
         formData.append("Firstname", name);
         formData.append("Email", email);
         formData.append("Phone", contact);
+        formData.append("Company", company);
         formData.append("Services", lookingFor);
         formData.append("date", new Date());
         formData.append("Page", "Web development Landing Page");
@@ -171,7 +171,14 @@ const MainBanner1 = () => {
             body: formData,
           }
         )
-          .then((response) => response.json())
+          .then(
+            (response) => response.json(),
+            setName(""),
+            setContact(""),
+            setEmail(""),
+            setCompany(""),
+            setLookingFor("")
+          )
           .then((data) => router.push("/Thank-you-for-contacting-us"))
           .catch((error) => console.error(error));
       } else {
@@ -337,7 +344,6 @@ const MainBanner1 = () => {
                         <div className="FormLabel">Full Name</div>
                         <input
                           type="text"
-                          placeholder="Full Name"
                           onChange={(e) => setName(e.target.value)}
                         />
                       </div>
@@ -345,7 +351,6 @@ const MainBanner1 = () => {
                         <div className="FormLabel">Email</div>
                         <input
                           type="text"
-                          placeholder="Email"
                           onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
@@ -357,6 +362,13 @@ const MainBanner1 = () => {
                           inputClassName="form-control"
                           value={contact}
                           onPhoneNumberChange={handlePhoneChange}
+                        />
+                      </div>
+                      <div className="FormItem">
+                        <div className="FormLabel">Company</div>
+                        <input
+                          type="text"
+                          onChange={(e) => setCompany(e.target.value)}
                         />
                       </div>
                       <div className="FormItem">
