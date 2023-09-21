@@ -162,6 +162,7 @@ const MainBanner1 = () => {
         formData.append("Company", company);
         formData.append("Services", lookingFor);
         formData.append("page", "Web development Landing Page");
+        formData.append("full Url", router.asPath);
 
         fetch(
           "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
