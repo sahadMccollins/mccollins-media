@@ -2605,6 +2605,16 @@ button{
   background: #F7F7F7;
 }
 @media (max-width: 780px) {
+  .video-background video {
+    height: auto;
+  }
+  .Hicon1,
+  .Hicon2,
+  .Hicon3,
+  .Hicon4 {
+    display: none !important;
+  }
+
    .fullWidthRow .rowBox1R{
     flex: 0 0 100%;
     max-width: 100%;
@@ -2657,3 +2667,4 @@ background-color: #d59379;
     background: #eccf93;
   }
 }
+
