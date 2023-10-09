@@ -286,7 +286,7 @@ const FilmProduction = () => {
           <section className="HeroSection" id="home">
             <div className="main-video">
               <div className="image-background"></div>
-              <div className="image-title">
+              <div className="image-title filmBnr">
                 <div className="container">
                   <div className="row">
                     <div className="col-md-9">
@@ -316,7 +316,7 @@ const FilmProduction = () => {
                       </div>
                     </div>
                     <div className="col-md-3">
-                      <div className="HeaderForm">
+                      <div className="HeaderForm" style={{ display: "block" }}>
                         <div className="Hicon1">&nbsp;</div>
                         <div className="Hicon2">&nbsp;</div>
                         <div className="Hicon3">&nbsp;</div>
