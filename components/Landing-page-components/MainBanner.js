@@ -339,7 +339,7 @@ const MainBanner1 = () => {
               <div className="icol-md-3">
                 <div className="HeaderForm">
                   <div className="FormElements">
-                    <form>
+                    <form onSubmit={formHandler}>
                       <div className="FormItem">
                         <div className="FormLabel">Full Name</div>
                         <input
@@ -350,7 +350,7 @@ const MainBanner1 = () => {
                       <div className="FormItem">
                         <div className="FormLabel">Email</div>
                         <input
-                          type="text"
+                          type="email"
                           onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
@@ -417,11 +417,7 @@ const MainBanner1 = () => {
                         value={"Web Development Landing Page"}
                         name="page"
                       />
-                      <button
-                        className="SubmitBtn1"
-                        type="submit"
-                        onClick={formHandler}
-                      >
+                      <button className="SubmitBtn1" type="submit">
                         Get A Quote
                       </button>
                     </form>
