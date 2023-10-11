@@ -345,6 +345,7 @@ const MainBanner1 = () => {
                         <input
                           type="text"
                           onChange={(e) => setName(e.target.value)}
+                          required
                         />
                       </div>
                       <div className="FormItem">
@@ -352,6 +353,7 @@ const MainBanner1 = () => {
                         <input
                           type="email"
                           onChange={(e) => setEmail(e.target.value)}
+                          required
                         />
                       </div>
                       <div className="FormItem">
@@ -369,6 +371,7 @@ const MainBanner1 = () => {
                         <input
                           type="text"
                           onChange={(e) => setCompany(e.target.value)}
+                          required
                         />
                       </div>
                       <div className="FormItem">
