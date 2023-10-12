@@ -70,6 +70,10 @@ const Navbar = (props) => {
     ? "+971 55 127 6222"
     : "+971 4 445 6848";
 
+  const whatsappNumber = isWebDesignDevelopmentPage()
+    ? "+971 55 127 6222"
+    : "+971 55 956 4135";
+
   const toast = useToast();
 
   const formHandler = (e) => {
@@ -309,7 +313,7 @@ const Navbar = (props) => {
                     p="8px 11px 6px 11px"
                     borderRadius="30px"
                     as={ChakraLink}
-                    href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                    href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media`}
                     target="_blank"
                     style={{
                       marginTop: "75px",
@@ -834,7 +838,7 @@ const Navbar = (props) => {
                       p="8px 11px 6px 11px"
                       borderRadius="30px"
                       as={ChakraLink}
-                      href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                      href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media`}
                       target="_blank"
                       style={{
                         marginTop: "75px",
