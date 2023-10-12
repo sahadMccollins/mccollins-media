@@ -1241,8 +1241,8 @@ const FilmProduction = () => {
                   <br /> Entrance C, Dubai Media City
                 </div>
                 <div className="ft4">
-                  <a href="tel:+97144456848">
-                    <span>Phone&nbsp;:</span>&nbsp;+971 4 445 6848
+                  <a href="tel:+971551276222">
+                    <span>Phone&nbsp;:</span>&nbsp;+971 55 127 6222
                   </a>
                   <br />
                   <a href="mailto:info@mccollinsmedia.com">
@@ -1506,23 +1506,20 @@ const FilmProduction = () => {
           <a href="#footer">
             <div className="SBBtn">
               <img
-                src="https://film.mccollinsmedia.com/wp-content/uploads/2023/08/call-back-white.png"
+                src="http://localhost:3000/assets/image/icons/call.svg"
                 width="18px"
               />
               &nbsp; Request A Call Back
             </div>
           </a>
-          <a href="tel:+97144456848" target="_blank">
+          <a href="tel:+971551276222" target="_blank">
             <div className="SBBtn">
-              <img
-                src="https://film.mccollinsmedia.com/wp-content/uploads/2023/08/phone-call-white.png"
-                width="18px"
-              />
-              &nbsp; Call Us On : +971 4 445 6848
+              <img src="/assets/image/icons/call.svg" width="18px" />
+              &nbsp; Call Us On : +971 55 127 6222
             </div>
           </a>
           <a
-            href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+            href="https://api.whatsapp.com/send?phone=971551276222&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
             target="_blank"
           >
             <div className="SBWhatsapp">WhatsApp us</div>
@@ -1536,7 +1533,7 @@ const FilmProduction = () => {
                 Get a quote
               </a>
               <a
-                href="https://wa.me/971559564135?text=Hello%20there%20%2C%20%0AWe%20would%20like%20to%20know%20more%20about%20your%20services%20%0A"
+                href="https://api.whatsapp.com/send?phone=971551276222&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                 className="mediaFlex2"
                 target="_blank"
               >
