@@ -60,6 +60,15 @@ const Navbar = (props) => {
   const [loading, setLoading] = useState(false);
 
   const router = useRouter();
+  const currentUrl = router.asPath;
+
+  const isWebDesignDevelopmentPage = () => {
+    return currentUrl === "/landing-pages/web-design-development-1";
+  };
+
+  const phoneNumber = isWebDesignDevelopmentPage()
+    ? "+971 55 127 6222"
+    : "+971 4 445 6848";
 
   const toast = useToast();
 
@@ -165,7 +174,7 @@ const Navbar = (props) => {
                       color="#000"
                     >
                       <ChakraLink
-                        href="tel:+971 4 445 6848"
+                        href={`tel:${phoneNumber}`}
                         display={"flex"}
                         alignItems="center"
                       >
@@ -175,7 +184,7 @@ const Navbar = (props) => {
                           width="25px"
                           height="25px"
                         />
-                        <span>&nbsp;&nbsp;+971 4 445 6848</span>
+                        <span>&nbsp;&nbsp;{phoneNumber}</span>
                       </ChakraLink>
                     </Button>
                     <Button
@@ -390,7 +399,7 @@ const Navbar = (props) => {
                         color="#000"
                       >
                         <ChakraLink
-                          href="tel:+971 4 445 6848"
+                          href={`tel:${phoneNumber}`}
                           display={"flex"}
                           alignItems="center"
                         >
@@ -400,7 +409,7 @@ const Navbar = (props) => {
                             width="25px"
                             height="25px"
                           />
-                          <span>&nbsp;&nbsp;+971 4 445 6848</span>
+                          <span>&nbsp;&nbsp;{phoneNumber}</span>
                         </ChakraLink>
                       </Button>
                       <Button
@@ -479,7 +488,7 @@ const Navbar = (props) => {
                   color="#000"
                 >
                   <ChakraLink
-                    href="tel:+971 4 445 6848"
+                    href={`tel:${phoneNumber}`}
                     display={"flex"}
                     alignItems="center"
                   >

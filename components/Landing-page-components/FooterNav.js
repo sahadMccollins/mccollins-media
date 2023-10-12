@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-const FooterNav = () => {
+const FooterNav = (props) => {
   return (
     <div class="halo-sticky-toolbar-mobile mobile-only">
       <div class="bottom-bar">
@@ -22,9 +22,7 @@ const FooterNav = () => {
             </a>
           </li>
           <li>
-            <a
-              href="mailto:info@mccollinsmedia.com"
-            >
+            <a href="mailto:info@mccollinsmedia.com">
               <div class="icon">
                 <div class="FtrIconH email">&nbsp;</div>
               </div>
@@ -32,7 +30,13 @@ const FooterNav = () => {
             </a>
           </li>
           <li>
-            <a href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media">
+            <a
+              href={
+                props.phone
+                  ? "https://api.whatsapp.com/send?phone=971551276222&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                  : "https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+              }
+            >
               <div class="icon">
                 <div class="FtrIconH whatsapp">&nbsp;</div>
               </div>
@@ -40,7 +44,11 @@ const FooterNav = () => {
             </a>
           </li>
           <li>
-            <a href="tel:+971 4 445 6848">
+            <a
+              href={
+                props.phone ? "tel:+971 55 127 6222" : "tel:+971 4 445 6848"
+              }
+            >
               <div class="icon">
                 <div class="FtrIconH call">&nbsp;</div>
               </div>

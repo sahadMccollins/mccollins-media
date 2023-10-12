@@ -23,6 +23,7 @@ import {
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Footer = () => {
   const [phrase, setPhrase] = useState("");
@@ -82,6 +83,21 @@ const Footer = () => {
   const [project, setProject] = useState("");
 
   const [loading, setLoading] = useState(false);
+
+  const router = useRouter();
+  const currentUrl = router.asPath;
+
+  const isWebDesignDevelopmentPage = () => {
+    return currentUrl === "/landing-pages/web-design-development-1";
+  };
+
+  const phoneNumber = isWebDesignDevelopmentPage()
+    ? "+971 55 127 6222"
+    : "+971 4 445 6848";
+
+  const whatsappNumber = isWebDesignDevelopmentPage()
+    ? "+971 55 127 6222"
+    : "+971 55 956 4135";
 
   const toast = useToast();
 
@@ -150,7 +166,7 @@ const Footer = () => {
             <Heading color={"#fff"} fontSize={"7xl"} className="FooterCustomT1">
               Got A Project? <br />
               <span style={{ color: "#FFDE11" }}>
-              Let’s Discuss Your&nbsp;
+                Let’s Discuss Your&nbsp;
                 <span
                   id="Transform"
                   className=" TransfomText random-word"
@@ -172,7 +188,8 @@ const Footer = () => {
                   <Text>
                     G04, Loft Office 2,
                     <br />
-                    Entrance C, Dubai Media City<br/>
+                    Entrance C, Dubai Media City
+                    <br />
                     United Arab Emirates
                   </Text>
                 </TabPanel>
@@ -184,7 +201,7 @@ const Footer = () => {
             <Box fontSize={"18px"} color="#fff" mt={"5"}>
               <Text>
                 <b>Phone: </b>
-                <Link href="tel:+97144456848">+971 4 445 6848</Link>
+                <Link href={`tel:${phoneNumber}`}>{phoneNumber}</Link>
               </Text>
               <Text>
                 <b>Email: </b>
@@ -194,8 +211,10 @@ const Footer = () => {
               </Text>
               <Text>
                 <b>WhatsApp Us: </b>
-                <Link href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media">
-                  +971 55 956 4135
+                <Link
+                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media`}
+                >
+                  {whatsappNumber}
                 </Link>
               </Text>
             </Box>

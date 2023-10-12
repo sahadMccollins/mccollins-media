@@ -80,7 +80,7 @@ const LandingPage1 = () => {
       <WebPortfolio />
 
       <WorkTogether />
-      <FooterNav />
+      <FooterNav phone={true} />
     </Box>
   );
 };
