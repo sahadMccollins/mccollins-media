@@ -1505,10 +1505,7 @@ const FilmProduction = () => {
         <div className="stickyBtmBtn">
           <a href="#footer">
             <div className="SBBtn">
-              <img
-                src="http://localhost:3000/assets/image/icons/call.svg"
-                width="18px"
-              />
+              <img src="/assets/image/icons/call.svg" width="18px" />
               &nbsp; Request A Call Back
             </div>
           </a>
