@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import FadeUp from "./Motion/FadeUp";
+const axios = require("axios");
 
 const FormBox = (props) => {
   const [FirstName, setFirstName] = useState("");
@@ -64,7 +65,6 @@ const FormBox = (props) => {
     fetch("/api/form-submit", requestOptions).then(
       (response) => response.json(),
       setFirstName(""),
-      // setLastName(""),
       setCompany(""),
       setJobTitle(""),
       setContact(""),
@@ -83,7 +83,6 @@ const FormBox = (props) => {
 
     let formData = new FormData();
     formData.append("Firstname", FirstName);
-    // formData.append("Lastname", LastName);
     formData.append("Email", email);
     formData.append("Phone", contact);
     formData.append("Company", company);
@@ -108,62 +107,27 @@ const FormBox = (props) => {
     const refreshUrl =
       "https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.b08cb054df8f248fb6d6bf12739d82f6.b03dc43f54c99a2aed5b16093e950261&client_id=1000.BAQO3P3DTMRBTPEP99PKP9VRX9V9SM&client_secret=6a93c8818b92a1b381a6e4de999ef7e9a0c987620c&grant_type=refresh_token";
 
-    // First, send a POST request to refresh the access token
-    fetch(refreshUrl, {
-      method: "POST",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Extract the new access token
-        const accessToken = data.access_token;
+    const data = {
+      Company: company,
+      FirstName: FirstName,
+      Email: email,
+      Page: props.page,
+      Phone: contact,
+      SelectedServices: checkedItemsString,
+      Message: text,
+    };
 
-        // Use the new access token to make the POST request
-        const apiUrl = "https://www.zohoapis.com/crm/v3/Leads";
-        const postData = {
-          data: [
-            {
-              Company: company,
-              First_Name: FirstName,
-              Email: email,
-              Page: props.page,
-              Phone: contact,
-              SelectedServices: checkedItemsString,
-              Message: text,
-            },
-          ],
-          apply_feature_execution: [
-            {
-              name: "layout_rules",
-            },
-          ],
-          trigger: ["approval", "workflow", "blueprint"],
-        };
-
-        const headers = {
-          "Content-Type": "application/json",
-          Authorization: `Zoho-oauthtoken ${accessToken}`,
-        };
-
-        // Send the POST request with the new access token
-        fetch(apiUrl, {
-          method: "POST",
-          headers: headers,
-          body: JSON.stringify(postData),
-        })
-          .then((response) => response.json())
-          .then((responseData) => {
-            // Handle the API response here
-            console.log(responseData);
-          })
-          .catch((error) => {
-            // Handle errors here
-            console.error(error);
-          });
+    axios
+      .post("/api/zoho/refresh-token", data)
+      .then((res) => {
+        console.log(res);
       })
       .catch((error) => {
         // Handle errors in obtaining the new access token
         console.error(error);
       });
+
+    setLoading(false);
   };
 
   return (
