@@ -25,6 +25,8 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import axios from "axios";
+import IntlTelInput from "react-intl-tel-input";
+import "react-intl-tel-input/dist/main.css";
 
 const Footer = () => {
   const [phrase, setPhrase] = useState("");
@@ -79,6 +81,8 @@ const Footer = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
+  const [contactMain, setContactMain] = useState();
+  const [contactStatus, setContactStatus] = useState();
   const [company, setCompany] = useState();
   const [lookingFor, setLookingFor] = useState("");
   const [project, setProject] = useState("");
@@ -102,79 +106,100 @@ const Footer = () => {
 
   const toast = useToast();
 
+  const handlePhoneChange = (status, number, countryData) => {
+    setContact(number);
+    setContactMain(`+${countryData.dialCode} ${number}`);
+    setContactStatus(status);
+  };
+
   const formHandler = (e) => {
     e.preventDefault();
     setLoading(true);
+    if (contactStatus === true) {
+      const data = {
+        Company: company,
+        FirstName: name,
+        Email: email,
+        Page: currentUrl,
+        Phone: contactMain,
+        SelectedServices: lookingFor,
+        Message: project,
+      };
 
-    const data = {
-      Company: company,
-      FirstName: name,
-      Email: email,
-      Page: currentUrl,
-      Phone: contact,
-      SelectedServices: lookingFor,
-      Message: project,
-    };
+      axios
+        .post("/api/zoho/refresh-token", data)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          // Handle errors in obtaining the new access token
+          console.error(error);
+        });
 
-    axios
-      .post("/api/zoho/refresh-token", data)
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((error) => {
-        // Handle errors in obtaining the new access token
-        console.error(error);
-      });
+      const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: name,
+          email: email,
+          contact: contactMain,
+          company: company,
+          services: lookingFor,
+          text: project,
+          date: new Date(),
+        }),
+      };
+      fetch("/api/form-submit", requestOptions).then(
+        (response) => response.json(),
+        setName(""),
+        setContact(""),
+        setContactMain(""),
+        setContactStatus(false),
+        setEmail(""),
+        setCompany(""),
+        setLookingFor(""),
+        setProject(""),
+        setLoading(false),
+        toast({
+          title: "Form Submited",
+          description: "Thank you for getting in touch!",
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        })
+      );
+      let formData = new FormData();
+      formData.append("Firstname", name);
+      formData.append("Email", email);
+      formData.append("Phone", contactMain);
+      formData.append("Company", company);
+      formData.append("Services", lookingFor);
+      formData.append("Message", project);
 
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        firstName: name,
-        email: email,
-        contact: contact,
-        company: company,
-        services: lookingFor,
-        text: project,
-        date: new Date(),
-      }),
-    };
-    fetch("/api/form-submit", requestOptions).then(
-      (response) => response.json(),
-      setName(""),
-      setContact(""),
-      setEmail(""),
-      setCompany(""),
-      setLookingFor(""),
-      setProject(""),
-      setLoading(false),
+      fetch(
+        "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+        {
+          method: "POST",
+          body: formData,
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.error(error));
+    } else {
       toast({
-        title: "Form Submited",
-        description: "Thank you for getting in touch!",
-        status: "success",
+        title: "Phone field is not valid",
+        description: "Please check the phone field",
+        status: "error",
         duration: 9000,
         isClosable: true,
-      })
-    );
-    let formData = new FormData();
-    formData.append("Firstname", name);
-    formData.append("Email", email);
-    formData.append("Phone", contact);
-    formData.append("Company", company);
-    formData.append("Services", lookingFor);
-    formData.append("Message", project);
+      });
+      setLoading(false);
+    }
 
-    fetch(
-      "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
-      {
-        method: "POST",
-        body: formData,
-      }
-    )
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error(error));
+    setLoading(false);
   };
+
   return (
     <Stack bg={"#000"} pt="70px" pb="20px" className="footer">
       <Container maxWidth={"7xl"} pb="2">
@@ -323,15 +348,28 @@ const Footer = () => {
                   borderRadius={"50px"}
                 />
               </FormControl>
-              <FormControl isRequired mt={5}>
+              <FormControl
+                isRequired
+                mt={5}
+                style={{ alignSelf: "end" }}
+                className="int-grp1"
+              >
                 <FormLabel htmlFor="contact">Contact No</FormLabel>
-                <NumberInput max={50} min={10} value={contact}>
+                {/* <NumberInput max={50} min={10} value={contact}>
                   <NumberInputField
                     id="contact"
                     onChange={(e) => setContact(e.target.value)}
                     borderRadius={"50px"}
                   />
-                </NumberInput>
+                </NumberInput> */}
+                <IntlTelInput
+                  style={{ width: "100%" }}
+                  defaultCountry="ae"
+                  containerClassName="intl-tel-input"
+                  inputClassName="form-control"
+                  value={contact}
+                  onPhoneNumberChange={handlePhoneChange}
+                />
               </FormControl>
               <FormControl isRequired mt={5}>
                 <FormLabel htmlFor="email">Email</FormLabel>

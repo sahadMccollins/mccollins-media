@@ -2668,3 +2668,21 @@ background-color: #d59379;
   }
 }
 
+
+
+.int-grp input {
+  width: 100%;
+}
+
+.int-grp1 input {
+  width: 100%;
+      background: transparent;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 8px 0 8px 50px;
+}
+
+
+.int-grp1 input::placeholder {
+  color: #fff;
+}

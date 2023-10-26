@@ -16,6 +16,8 @@ import {
 import { useState } from "react";
 import FadeUp from "./Motion/FadeUp";
 const axios = require("axios");
+import IntlTelInput from "react-intl-tel-input";
+import "react-intl-tel-input/dist/main.css";
 
 const FormBox = (props) => {
   const [FirstName, setFirstName] = useState("");
@@ -24,6 +26,8 @@ const FormBox = (props) => {
   const [jobTitle, setJobTitle] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
+  const [contactMain, setContactMain] = useState();
+  const [contactStatus, setContactStatus] = useState();
   const [text, setText] = useState("");
 
   const [loading, setLoading] = useState(false);
@@ -42,90 +46,107 @@ const FormBox = (props) => {
 
   const toast = useToast();
 
+  const handlePhoneChange = (status, number, countryData) => {
+    setContact(number);
+    setContactMain(`+${countryData.dialCode} ${number}`);
+    setContactStatus(status);
+  };
+
   const formHandler = (e) => {
     e.preventDefault();
     setLoading(true);
+    if (contactStatus === true) {
+      const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: FirstName,
+          // lastName: LastName,
+          company: company,
+          jobTitle: jobTitle,
+          email: email,
+          contact: contact,
+          text: text,
+          services: checkedItemsString,
+          page: props.page,
+          date: new Date(),
+        }),
+      };
+      fetch("/api/form-submit", requestOptions).then(
+        (response) => response.json(),
+        setFirstName(""),
+        setCompany(""),
+        setJobTitle(""),
+        setContact(""),
+        setContactMain(""),
+        setContactStatus(false),
+        setEmail(""),
+        setText(""),
+        setCheckedItems([]),
+        setLoading(false),
+        toast({
+          title: "Form Submited",
+          description: "Thank you for getting in touch!",
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        })
+      );
 
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        firstName: FirstName,
-        // lastName: LastName,
-        company: company,
-        jobTitle: jobTitle,
-        email: email,
-        contact: contact,
-        text: text,
-        services: checkedItemsString,
-        page: props.page,
-        date: new Date(),
-      }),
-    };
-    fetch("/api/form-submit", requestOptions).then(
-      (response) => response.json(),
-      setFirstName(""),
-      setCompany(""),
-      setJobTitle(""),
-      setContact(""),
-      setEmail(""),
-      setText(""),
-      setCheckedItems([]),
-      setLoading(false),
+      let formData = new FormData();
+      formData.append("Firstname", FirstName);
+      formData.append("Email", email);
+      formData.append("Phone", contactMain);
+      formData.append("Company", company);
+      formData.append("Services", checkedItemsString);
+      formData.append("jobTitle", jobTitle);
+      formData.append("Message", text);
+      if (props.page) {
+        formData.append("page", props.page);
+      }
+
+      fetch(
+        "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+        {
+          method: "POST",
+          body: formData,
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.error(error));
+
+      const refreshUrl =
+        "https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.b08cb054df8f248fb6d6bf12739d82f6.b03dc43f54c99a2aed5b16093e950261&client_id=1000.BAQO3P3DTMRBTPEP99PKP9VRX9V9SM&client_secret=6a93c8818b92a1b381a6e4de999ef7e9a0c987620c&grant_type=refresh_token";
+
+      const data = {
+        Company: company,
+        FirstName: FirstName,
+        Email: email,
+        Page: props.page,
+        Phone: contactMain,
+        SelectedServices: checkedItemsString,
+        Message: text,
+      };
+
+      axios
+        .post("/api/zoho/refresh-token", data)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          // Handle errors in obtaining the new access token
+          console.error(error);
+        });
+    } else {
       toast({
-        title: "Form Submited",
-        description: "Thank you for getting in touch!",
-        status: "success",
+        title: "Phone field is not valid",
+        description: "Please check the phone field",
+        status: "error",
         duration: 9000,
         isClosable: true,
-      })
-    );
-
-    let formData = new FormData();
-    formData.append("Firstname", FirstName);
-    formData.append("Email", email);
-    formData.append("Phone", contact);
-    formData.append("Company", company);
-    formData.append("Services", checkedItemsString);
-    formData.append("jobTitle", jobTitle);
-    formData.append("Message", text);
-    if (props.page) {
-      formData.append("page", props.page);
-    }
-
-    fetch(
-      "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
-      {
-        method: "POST",
-        body: formData,
-      }
-    )
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error(error));
-
-    const refreshUrl =
-      "https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.b08cb054df8f248fb6d6bf12739d82f6.b03dc43f54c99a2aed5b16093e950261&client_id=1000.BAQO3P3DTMRBTPEP99PKP9VRX9V9SM&client_secret=6a93c8818b92a1b381a6e4de999ef7e9a0c987620c&grant_type=refresh_token";
-
-    const data = {
-      Company: company,
-      FirstName: FirstName,
-      Email: email,
-      Page: props.page,
-      Phone: contact,
-      SelectedServices: checkedItemsString,
-      Message: text,
-    };
-
-    axios
-      .post("/api/zoho/refresh-token", data)
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((error) => {
-        // Handle errors in obtaining the new access token
-        console.error(error);
       });
+    }
 
     setLoading(false);
   };
@@ -197,15 +218,27 @@ const FormBox = (props) => {
                 placeholder="Job Title"
               />
             </FormControl>
-            <FormControl isRequired>
+            <FormControl
+              isRequired
+              style={{ alignSelf: "end" }}
+              className="int-grp"
+            >
               {/* <FormLabel htmlFor="contact">Contact No</FormLabel> */}
-              <NumberInput max={50} min={10} value={contact}>
+              {/* <NumberInput max={50} min={10} value={contact}>
                 <NumberInputField
                   id="contact"
                   onChange={(e) => setContact(e.target.value)}
                   placeholder="Contact No"
                 />
-              </NumberInput>
+              </NumberInput> */}
+              <IntlTelInput
+                style={{ width: "100%" }}
+                defaultCountry="ae"
+                containerClassName="intl-tel-input"
+                inputClassName="form-control"
+                value={contact}
+                onPhoneNumberChange={handlePhoneChange}
+              />
             </FormControl>
             <FormControl isRequired>
               {/* <FormLabel htmlFor="email">Email Address</FormLabel> */}

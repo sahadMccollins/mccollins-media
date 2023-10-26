@@ -14,6 +14,7 @@ const MainBanner1 = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState();
+  const [contactMain, setContactMain] = useState();
   const [contactStatus, setContactStatus] = useState();
   const [lookingFor, setLookingFor] = useState("");
   const [company, setCompany] = useState("");
@@ -120,8 +121,9 @@ const MainBanner1 = () => {
 
   const toast = useToast();
 
-  const handlePhoneChange = (status, number, country) => {
+  const handlePhoneChange = (status, number, countryData) => {
     setContact(number);
+    setContactMain(`+${countryData.dialCode} ${number}`);
     setContactStatus(status);
   };
 
@@ -137,7 +139,7 @@ const MainBanner1 = () => {
           body: JSON.stringify({
             firstName: name,
             email: email,
-            contact: contact,
+            contact: contactMain,
             services: lookingFor,
             company: company,
             date: new Date(),
@@ -159,7 +161,7 @@ const MainBanner1 = () => {
         let formData = new FormData();
         formData.append("Firstname", name);
         formData.append("Email", email);
-        formData.append("Phone", contact);
+        formData.append("Phone", contactMain);
         formData.append("Company", company);
         formData.append("Services", lookingFor);
         formData.append("page", "Web development Landing Page");
@@ -176,6 +178,8 @@ const MainBanner1 = () => {
             (response) => response.json(),
             setName(""),
             setContact(""),
+            setContactMain(""),
+            setContactStatus(false),
             setEmail(""),
             setCompany(""),
             setLookingFor("")
@@ -218,6 +222,7 @@ const MainBanner1 = () => {
         duration: 9000,
         isClosable: true,
       });
+      setLoading(false);
     }
     setLoading(false);
   };
