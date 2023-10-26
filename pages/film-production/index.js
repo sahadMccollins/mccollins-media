@@ -25,6 +25,26 @@ const FilmProduction = () => {
     e.preventDefault();
     setLoading(true);
 
+    const data = {
+      Company: industry,
+      FirstName: fullName,
+      Email: clientEmail,
+      Page: currentURL,
+      Phone: customerPhone,
+      SelectedServices: lookingFor,
+      Message: "",
+    };
+
+    axios
+      .post("/api/zoho/refresh-token", data)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => {
+        // Handle errors in obtaining the new access token
+        console.error(error);
+      });
+
     let formData = new FormData();
     formData.append("Firstname", fullName);
     formData.append("email", clientEmail);

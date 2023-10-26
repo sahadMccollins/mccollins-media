@@ -181,6 +181,26 @@ const MainBanner1 = () => {
           )
           .then((data) => router.push("/Thank-you-for-contacting-us"))
           .catch((error) => console.error(error));
+
+        const data = {
+          Company: company,
+          FirstName: name,
+          Email: email,
+          Page: router.asPath,
+          Phone: contact,
+          SelectedServices: lookingFor,
+          Message: "",
+        };
+
+        axios
+          .post("/api/zoho/refresh-token", data)
+          .then((res) => {
+            console.log(res);
+          })
+          .catch((error) => {
+            // Handle errors in obtaining the new access token
+            console.error(error);
+          });
       } else {
         toast({
           title: "Phone field is not valid",

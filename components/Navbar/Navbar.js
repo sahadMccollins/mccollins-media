@@ -130,6 +130,26 @@ const Navbar = (props) => {
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
+
+    const data = {
+      Company: company,
+      FirstName: name,
+      Email: email,
+      Page: currentUrl,
+      Phone: contact,
+      SelectedServices: lookingFor,
+      Message: project,
+    };
+
+    axios
+      .post("/api/zoho/refresh-token", data)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => {
+        // Handle errors in obtaining the new access token
+        console.error(error);
+      });
   };
 
   useEffect(() => {

@@ -153,6 +153,29 @@ const Footer = () => {
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
+
+    const refreshUrl =
+      "https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.b08cb054df8f248fb6d6bf12739d82f6.b03dc43f54c99a2aed5b16093e950261&client_id=1000.BAQO3P3DTMRBTPEP99PKP9VRX9V9SM&client_secret=6a93c8818b92a1b381a6e4de999ef7e9a0c987620c&grant_type=refresh_token";
+
+    const data = {
+      Company: company,
+      FirstName: name,
+      Email: email,
+      Page: currentUrl,
+      Phone: contact,
+      SelectedServices: lookingFor,
+      Message: project,
+    };
+
+    axios
+      .post("/api/zoho/refresh-token", data)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => {
+        // Handle errors in obtaining the new access token
+        console.error(error);
+      });
   };
   return (
     <Stack bg={"#000"} pt="70px" pb="20px" className="footer">
