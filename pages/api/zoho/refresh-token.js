@@ -16,7 +16,7 @@ export default async (req, res) => {
           First_Name: req.body.FirstName,
           Last_Name: "N/A",
           Email: req.body.Email,
-          Website: req.body.Page,
+          Page: req.body.Page,
           Phone: req.body.Phone,
           SelectedServices: req.body.SelectedServices,
           Message: req.body.Message,

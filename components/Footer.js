@@ -110,6 +110,7 @@ const Footer = () => {
       Company: company,
       FirstName: name,
       Email: email,
+      Page: currentUrl,
       Phone: contact,
       SelectedServices: lookingFor,
       Message: project,
