@@ -37,6 +37,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import NavItem from "../Navbar/NavItem";
+import axios from "axios";
 
 const Navbar = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");

@@ -4,6 +4,7 @@ import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import { useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import axios from "axios";
 
 const MainBanner1 = () => {
   const [phrase, setPhrase] = useState("");
