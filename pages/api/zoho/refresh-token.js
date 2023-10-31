@@ -20,6 +20,7 @@ export default async (req, res) => {
           Phone: req.body.Phone,
           SelectedServices: req.body.SelectedServices,
           Message: req.body.Message,
+          $gclid: req.body.gclid,
         },
       ],
       apply_feature_execution: [

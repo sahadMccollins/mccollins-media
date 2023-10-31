@@ -13,7 +13,7 @@ import {
   Textarea,
   useToast,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FadeUp from "./Motion/FadeUp";
 const axios = require("axios");
 import IntlTelInput from "react-intl-tel-input";
@@ -35,6 +35,18 @@ const FormBox = (props) => {
   const [checkedItems, setCheckedItems] = useState([]);
   const checkedItemsString = checkedItems.join(", ");
 
+  const [hiddenInputValue, setHiddenInputValue] = useState("");
+  const hiddenInputRef = useRef();
+
+  useEffect(() => {
+    // Initialize the hidden input value when the component mounts
+    setHiddenInputValue(hiddenInputRef.current.value);
+  }, []);
+
+  const handleHiddenInputChange = () => {
+    // Update the state with the current hidden input value
+    setHiddenInputValue(hiddenInputRef.current.value);
+  };
   const handleCheckboxChange = (value) => {
     if (checkedItems.includes(value)) {
       setCheckedItems(checkedItems.filter((item) => item !== value));
@@ -127,6 +139,7 @@ const FormBox = (props) => {
         Phone: contactMain,
         SelectedServices: checkedItemsString,
         Message: text,
+        gclid: hiddenInputValue,
       };
 
       axios
@@ -370,7 +383,14 @@ const FormBox = (props) => {
               placeholder="How Can We Help You?"
             />
           </FormControl>
-          <input type="hidden" id="zc_gad" name="zc_gad" value="" />
+          <input
+            type="hidden"
+            id="zc_gad"
+            name="zc_gad"
+            defaultValue={hiddenInputValue}
+            ref={hiddenInputRef}
+            onChange={handleHiddenInputChange}
+          />
           <Button
             mt={5}
             colorScheme="yellow"

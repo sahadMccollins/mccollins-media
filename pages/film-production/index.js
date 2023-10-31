@@ -17,6 +17,19 @@ const FilmProduction = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const [hiddenInputValue, setHiddenInputValue] = useState("");
+  const hiddenInputRef = useRef();
+
+  useEffect(() => {
+    // Initialize the hidden input value when the component mounts
+    setHiddenInputValue(hiddenInputRef.current.value);
+  }, []);
+
+  const handleHiddenInputChange = () => {
+    // Update the state with the current hidden input value
+    setHiddenInputValue(hiddenInputRef.current.value);
+  };
+
   const toast = useToast();
 
   const router = useRouter();
@@ -34,6 +47,7 @@ const FilmProduction = () => {
       Phone: customerPhone,
       SelectedServices: lookingFor,
       Message: "",
+      gclid: hiddenInputValue,
     };
 
     axios
@@ -91,8 +105,8 @@ const FilmProduction = () => {
         status: "success",
         duration: 9000,
         isClosable: true,
-      }),
-      router.push(`/film-production/thank-you`)
+      })
+      // router.push(`/film-production/thank-you`)
     );
   };
 
@@ -509,6 +523,15 @@ const FilmProduction = () => {
                               <option value="Other">Other</option>
                             </select>
                           </div>
+
+                          <input
+                            type="hidden"
+                            id="zc_gad"
+                            name="zc_gad"
+                            defaultValue={hiddenInputValue}
+                            ref={hiddenInputRef}
+                            onChange={handleHiddenInputChange}
+                          />
                           <div className="formElements">
                             <button type="submit" className="filmSubmit">
                               Submit
@@ -1443,7 +1466,14 @@ const FilmProduction = () => {
                         <option value="Other">Other</option>
                       </select>
                     </div>
-                    <input type="hidden" id="zc_gad" name="zc_gad" value="" />
+                    <input
+                      type="hidden"
+                      id="zc_gad"
+                      name="zc_gad"
+                      defaultValue={hiddenInputValue}
+                      ref={hiddenInputRef}
+                      onChange={handleHiddenInputChange}
+                    />
                     <div className="formElements">
                       <button type="submit" className="filmSubmit2">
                         Submit

@@ -21,6 +21,19 @@ const MainBanner1 = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const [hiddenInputValue, setHiddenInputValue] = useState("");
+  const hiddenInputRef = useRef();
+
+  useEffect(() => {
+    // Initialize the hidden input value when the component mounts
+    setHiddenInputValue(hiddenInputRef.current.value);
+  }, []);
+
+  const handleHiddenInputChange = () => {
+    // Update the state with the current hidden input value
+    setHiddenInputValue(hiddenInputRef.current.value);
+  };
+
   const router = useRouter();
 
   const phrases = [
@@ -195,6 +208,7 @@ const MainBanner1 = () => {
           Phone: contact,
           SelectedServices: lookingFor,
           Message: "",
+          gclid: hiddenInputValue,
         };
 
         axios
@@ -446,7 +460,14 @@ const MainBanner1 = () => {
                         value={"Web Development Landing Page"}
                         name="page"
                       />
-                      <input type="hidden" id="zc_gad" name="zc_gad" value="" />
+                      <input
+                        type="hidden"
+                        id="zc_gad"
+                        name="zc_gad"
+                        defaultValue={hiddenInputValue}
+                        ref={hiddenInputRef}
+                        onChange={handleHiddenInputChange}
+                      />
                       <button className="SubmitBtn1" type="submit">
                         Get A Quote
                       </button>
