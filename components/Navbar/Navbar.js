@@ -967,6 +967,7 @@ const Navbar = (props) => {
                   borderRadius={"50px"}
                 />
               </FormControl>
+              <input type="hidden" id="zc_gad" name="zc_gad" value="" />
             </ModalBody>
 
             <ModalFooter>

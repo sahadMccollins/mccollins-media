@@ -370,6 +370,7 @@ const FormBox = (props) => {
               placeholder="How Can We Help You?"
             />
           </FormControl>
+          <input type="hidden" id="zc_gad" name="zc_gad" value="" />
           <Button
             mt={5}
             colorScheme="yellow"

@@ -446,6 +446,7 @@ const MainBanner1 = () => {
                         value={"Web Development Landing Page"}
                         name="page"
                       />
+                      <input type="hidden" id="zc_gad" name="zc_gad" value="" />
                       <button className="SubmitBtn1" type="submit">
                         Get A Quote
                       </button>

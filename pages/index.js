@@ -22,9 +22,7 @@ export default function Home({ metaTags }) {
         <script
           type="text/javascript"
           src="https://crm.zoho.com/crm/javascript/zcga.js"
-        >
-           
-        </script>
+        ></script>
       </Head>
       <HeroBanner
         img="/assets/cloudinaryBackup/home-banner_bwes6c.webp"

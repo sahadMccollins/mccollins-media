@@ -408,6 +408,7 @@ const Footer = () => {
                   borderRadius={"50px"}
                 />
               </FormControl>
+              <input type="hidden" id="zc_gad" name="zc_gad" value="" />
               <Button
                 mt={5}
                 colorScheme="yellow"
