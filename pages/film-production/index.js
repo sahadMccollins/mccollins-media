@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import EmptyLayout from "../../components/Layout/EmptyLayout";
 import Head from "next/head";
-import $ from "jquery";
 
 import OwlCarousel from "react-owl-carousel2";
 import { useToast } from "@chakra-ui/react";
@@ -21,13 +20,11 @@ const FilmProduction = () => {
   const hiddenInputRef = useRef();
 
   useEffect(() => {
-    // Initialize the hidden input value when the component mounts
-    setHiddenInputValue(hiddenInputRef.current.value);
+    setHiddenInputValue(hiddenInputRef.current?.value);
   }, []);
 
   const handleHiddenInputChange = () => {
-    // Update the state with the current hidden input value
-    setHiddenInputValue(hiddenInputRef.current.value);
+    setHiddenInputValue(hiddenInputRef.current?.value);
   };
 
   const toast = useToast();

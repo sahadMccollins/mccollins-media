@@ -26,12 +26,12 @@ const MainBanner1 = () => {
 
   useEffect(() => {
     // Initialize the hidden input value when the component mounts
-    setHiddenInputValue(hiddenInputRef.current.value);
+    setHiddenInputValue(hiddenInputRef.current?.value);
   }, []);
 
   const handleHiddenInputChange = () => {
     // Update the state with the current hidden input value
-    setHiddenInputValue(hiddenInputRef.current.value);
+    setHiddenInputValue(hiddenInputRef.current?.value);
   };
 
   const router = useRouter();
