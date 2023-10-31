@@ -27,6 +27,10 @@ export default function Document() {
         <meta name="theme-color" content="#fdce1a" />
       </Head>
       <body>
+        <script
+          type="text/javascript"
+          src="https://crm.zoho.com/crm/javascript/zcga.js"
+        ></script>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
