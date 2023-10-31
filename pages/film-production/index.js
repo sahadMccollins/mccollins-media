@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import EmptyLayout from "../../components/Layout/EmptyLayout";
 import Head from "next/head";
 import $ from "jquery";

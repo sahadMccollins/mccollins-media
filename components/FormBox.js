@@ -13,7 +13,7 @@ import {
   Textarea,
   useToast,
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import FadeUp from "./Motion/FadeUp";
 const axios = require("axios");
 import IntlTelInput from "react-intl-tel-input";
