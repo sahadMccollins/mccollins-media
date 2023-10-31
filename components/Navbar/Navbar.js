@@ -60,18 +60,18 @@ const Navbar = (props) => {
 
   const [loading, setLoading] = useState(false);
 
-  const [hiddenInputValue, setHiddenInputValue] = useState("");
-  const hiddenInputRef = useRef();
+  // const [hiddenInputValue, setHiddenInputValue] = useState("");
+  // const hiddenInputRef = useRef();
 
-  useEffect(() => {
-    // Initialize the hidden input value when the component mounts
-    setHiddenInputValue(hiddenInputRef.current.value);
-  }, []);
+  // useEffect(() => {
+  //   // Initialize the hidden input value when the component mounts
+  //   setHiddenInputValue(hiddenInputRef.current.value);
+  // }, []);
 
-  const handleHiddenInputChange = () => {
-    // Update the state with the current hidden input value
-    setHiddenInputValue(hiddenInputRef.current.value);
-  };
+  // const handleHiddenInputChange = () => {
+  //   // Update the state with the current hidden input value
+  //   setHiddenInputValue(hiddenInputRef.current.value);
+  // };
   const router = useRouter();
   const currentUrl = router.asPath;
 
@@ -152,7 +152,7 @@ const Navbar = (props) => {
       Phone: contact,
       SelectedServices: lookingFor,
       Message: project,
-      gclid: hiddenInputValue,
+      // gclid: hiddenInputValue,
     };
 
     axios
@@ -980,14 +980,14 @@ const Navbar = (props) => {
                   borderRadius={"50px"}
                 />
               </FormControl>
-              <input
+              {/* <input
                 type="hidden"
                 id="zc_gad"
                 name="zc_gad"
                 defaultValue={hiddenInputValue}
                 ref={hiddenInputRef}
                 onChange={handleHiddenInputChange}
-              />
+              /> */}
             </ModalBody>
 
             <ModalFooter>
