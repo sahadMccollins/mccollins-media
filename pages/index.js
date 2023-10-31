@@ -19,10 +19,10 @@ export default function Home({ metaTags }) {
         {metaTags.length > 0 &&
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
-        <script
+        {/* <script
           type="text/javascript"
           src="https://crm.zoho.com/crm/javascript/zcga.js"
-        ></script>
+        ></script> */}
       </Head>
       <HeroBanner
         img="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
