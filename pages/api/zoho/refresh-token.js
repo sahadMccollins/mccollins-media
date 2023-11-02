@@ -21,6 +21,7 @@ export default async (req, res) => {
           SelectedServices: req.body.SelectedServices,
           Message: req.body.Message,
           $gclid: req.body.gclid,
+          Date: new Date(),
         },
       ],
       apply_feature_execution: [
