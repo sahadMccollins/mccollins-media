@@ -84,7 +84,7 @@ const FormBox = (props) => {
           date: new Date(),
         }),
       };
-      fetch("/api/form-submit2", requestOptions).then(
+      fetch("/api/form-submit", requestOptions).then(
         (response) => response.json(),
         setFirstName(""),
         setCompany(""),
@@ -118,7 +118,7 @@ const FormBox = (props) => {
       }
 
       fetch(
-        "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec2",
+        "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
         {
           method: "POST",
           body: formData,
