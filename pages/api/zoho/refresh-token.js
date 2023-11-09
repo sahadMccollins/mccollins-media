@@ -21,7 +21,7 @@ export default async (req, res) => {
           SelectedServices: req.body.SelectedServices,
           Message: req.body.Message,
           $gclid: req.body.gclid,
-          Date: new Date(),
+          Date_Time: new Date().toISOString(),
         },
       ],
       apply_feature_execution: [
@@ -38,7 +38,10 @@ export default async (req, res) => {
     };
 
     const apiResponse = await axios.post(apiUrl, postData, { headers });
-    res.status(apiResponse.status).json(apiResponse.data);
+    res
+      .status(apiResponse.status)
+      .json(apiResponse.data)
+      .then(console.log(apiResponse));
   } catch (error) {
     console.error(error);
     res.status(500).json({

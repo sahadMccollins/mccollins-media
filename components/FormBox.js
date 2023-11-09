@@ -84,7 +84,7 @@ const FormBox = (props) => {
           date: new Date(),
         }),
       };
-      fetch("/api/form-submit", requestOptions).then(
+      fetch("/api/form-submit2", requestOptions).then(
         (response) => response.json(),
         setFirstName(""),
         setCompany(""),
@@ -118,7 +118,7 @@ const FormBox = (props) => {
       }
 
       fetch(
-        "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+        "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec2",
         {
           method: "POST",
           body: formData,
@@ -376,13 +376,13 @@ const FormBox = (props) => {
             </SimpleGrid>
           </FormControl>
           <FormControl mt={5}>
-            {/* <FormLabel htmlFor="email">How Can We Help You?</FormLabel> */}
             <Textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="How Can We Help You?"
             />
           </FormControl>
+          {/* ZC_GAD hidden input */}
           <input
             type="hidden"
             id="zc_gad"
