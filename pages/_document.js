@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <meta name="msvalidate.01" content="AF2100A2AEBECD20B09A1D8458E73DAD" />
         {/* Google Tag Manager */}
         {/* <script
           dangerouslySetInnerHTML={{
