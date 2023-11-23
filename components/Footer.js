@@ -197,8 +197,22 @@ const Footer = () => {
           body: formData,
         }
       )
-        .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((response) => {
+          // Check if the response is OK (status 200)
+          if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.status}`);
+          }
+
+          // Parse the JSON and return the result
+          return response.json();
+        })
+        .then((data) => {
+          // Use the parsed JSON data
+          console.log(data);
+
+          // Now you can navigate to the thank-you page
+          router.push("/thank-you-ft");
+        })
         .catch((error) => console.error(error));
     } else {
       toast({

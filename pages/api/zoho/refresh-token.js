@@ -38,10 +38,7 @@ export default async (req, res) => {
     };
 
     const apiResponse = await axios.post(apiUrl, postData, { headers });
-    res
-      .status(apiResponse.status)
-      .json(apiResponse.data)
-      .then(console.log(apiResponse));
+    res.status(apiResponse.status).json(apiResponse.data);
   } catch (error) {
     console.error(error);
     res.status(500).json({
