@@ -173,14 +173,14 @@ const Footer = () => {
         setCompany(""),
         setLookingFor(""),
         setProject(""),
-        setLoading(false),
-        toast({
-          title: "Form Submited",
-          description: "Thank you for getting in touch!",
-          status: "success",
-          duration: 9000,
-          isClosable: true,
-        })
+        setLoading(false)
+        // toast({
+        //   title: "Form Submited",
+        //   description: "Thank you for getting in touch!",
+        //   status: "success",
+        //   duration: 9000,
+        //   isClosable: true,
+        // })
       );
       let formData = new FormData();
       formData.append("Firstname", name);
