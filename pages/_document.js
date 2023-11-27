@@ -5,6 +5,13 @@ export default function Document() {
     <Html>
       <Head>
         <meta name="msvalidate.01" content="AF2100A2AEBECD20B09A1D8458E73DAD" />
+
+        <script
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LdRaB0pAAAAADkho8kQ1qjUhjQaHafEUtWeLhsO"
+          async
+          defer
+        ></script>
+
         {/* Google Tag Manager */}
         {/* <script
           dangerouslySetInnerHTML={{

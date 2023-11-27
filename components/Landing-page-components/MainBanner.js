@@ -5,6 +5,7 @@ import "react-intl-tel-input/dist/main.css";
 import { useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const MainBanner1 = () => {
   const [phrase, setPhrase] = useState("");
@@ -23,6 +24,8 @@ const MainBanner1 = () => {
 
   const [hiddenInputValue, setHiddenInputValue] = useState("");
   const hiddenInputRef = useRef();
+
+  const recaptchaRef = useRef();
 
   useEffect(() => {
     // Initialize the hidden input value when the component mounts
@@ -140,105 +143,119 @@ const MainBanner1 = () => {
     setContactStatus(status);
   };
 
-  const formHandler = (e) => {
+  const formHandler = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    if (name !== "" && lookingFor !== "" && email !== "" && company !== "") {
-      if (contactStatus === true) {
-        const requestOptions = {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            firstName: name,
-            email: email,
-            contact: contactMain,
-            services: lookingFor,
-            company: company,
-            date: new Date(),
-            page: "Web development Landing Page",
-          }),
-        };
-        fetch("/api/form-submit", requestOptions).then(
-          (response) => response.json(),
+    // Verify reCAPTCHA
+    const recaptchaValue = recaptchaRef.current.getValue();
 
-          setLoading(false),
+    if (recaptchaValue) {
+      if (name !== "" && lookingFor !== "" && email !== "" && company !== "") {
+        if (contactStatus === true) {
+          const requestOptions = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              firstName: name,
+              email: email,
+              contact: contactMain,
+              services: lookingFor,
+              company: company,
+              date: new Date(),
+              page: "Web development Landing Page",
+            }),
+          };
+          fetch("/api/form-submit", requestOptions).then(
+            (response) => response.json(),
+
+            setLoading(false),
+            toast({
+              title: "Form Submited",
+              description: "Thank you for getting in touch!",
+              status: "success",
+              duration: 9000,
+              isClosable: true,
+            })
+          );
+          let formData = new FormData();
+          formData.append("Firstname", name);
+          formData.append("Email", email);
+          formData.append("Phone", contactMain);
+          formData.append("Company", company);
+          formData.append("Services", lookingFor);
+          formData.append("page", "Web development Landing Page");
+          formData.append("full Url", router.asPath);
+
+          fetch(
+            "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+            {
+              method: "POST",
+              body: formData,
+            }
+          )
+            .then(
+              (response) => response.json(),
+              setName(""),
+              setContact(""),
+              setContactMain(""),
+              setContactStatus(false),
+              setEmail(""),
+              setCompany(""),
+              setLookingFor("")
+            )
+            .then((data) => router.push("/Thank-you-for-contacting-us"))
+            .catch((error) => console.error(error));
+
+          const data = {
+            Company: company,
+            FirstName: name,
+            Email: email,
+            Page: router.asPath,
+            Phone: contact,
+            SelectedServices: lookingFor,
+            Message: "",
+            gclid: hiddenInputValue,
+          };
+
+          axios
+            .post("/api/zoho/refresh-token", data)
+            .then((res) => {
+              console.log(res);
+            })
+            .catch((error) => {
+              // Handle errors in obtaining the new access token
+              console.error(error);
+            });
+        } else {
           toast({
-            title: "Form Submited",
-            description: "Thank you for getting in touch!",
-            status: "success",
+            title: "Phone field is not valid",
+            description: "Please check the phone field",
+            status: "error",
             duration: 9000,
             isClosable: true,
-          })
-        );
-        let formData = new FormData();
-        formData.append("Firstname", name);
-        formData.append("Email", email);
-        formData.append("Phone", contactMain);
-        formData.append("Company", company);
-        formData.append("Services", lookingFor);
-        formData.append("page", "Web development Landing Page");
-        formData.append("full Url", router.asPath);
-
-        fetch(
-          "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
-          {
-            method: "POST",
-            body: formData,
-          }
-        )
-          .then(
-            (response) => response.json(),
-            setName(""),
-            setContact(""),
-            setContactMain(""),
-            setContactStatus(false),
-            setEmail(""),
-            setCompany(""),
-            setLookingFor("")
-          )
-          .then((data) => router.push("/Thank-you-for-contacting-us"))
-          .catch((error) => console.error(error));
-
-        const data = {
-          Company: company,
-          FirstName: name,
-          Email: email,
-          Page: router.asPath,
-          Phone: contact,
-          SelectedServices: lookingFor,
-          Message: "",
-          gclid: hiddenInputValue,
-        };
-
-        axios
-          .post("/api/zoho/refresh-token", data)
-          .then((res) => {
-            console.log(res);
-          })
-          .catch((error) => {
-            // Handle errors in obtaining the new access token
-            console.error(error);
           });
+        }
       } else {
         toast({
-          title: "Phone field is not valid",
-          description: "Please check the phone field",
+          title: "Please fill all the required field",
           status: "error",
           duration: 9000,
           isClosable: true,
         });
+        setLoading(false);
       }
+      setLoading(false);
     } else {
+      // Show an error message or handle invalid reCAPTCHA
       toast({
-        title: "Please fill all the required field",
+        title: "reCAPTCHA verification failed",
         status: "error",
         duration: 9000,
         isClosable: true,
       });
       setLoading(false);
     }
-    setLoading(false);
   };
 
   return (
@@ -468,6 +485,16 @@ const MainBanner1 = () => {
                         ref={hiddenInputRef}
                         onChange={handleHiddenInputChange}
                       />
+                      <div className="FormItem">
+                        <div className="FormLabel">reCAPTCHA</div>
+                        <ReCAPTCHA
+                          ref={recaptchaRef}
+                          sitekey="6LdE4h0pAAAAABEHT4MMZt-FKotSZC7ajadfuqs3"
+                          onChange={(value) =>
+                            console.log("reCAPTCHA value:", value)
+                          }
+                        />
+                      </div>
                       <button className="SubmitBtn1" type="submit">
                         Get A Quote
                       </button>
