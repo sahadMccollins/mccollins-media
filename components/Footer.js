@@ -106,7 +106,7 @@ const Footer = () => {
   const currentUrl = router.asPath;
 
   const isWebDesignDevelopmentPage = () => {
-    return currentUrl === "/landing-pages/web-design-development-1";
+    return currentUrl.includes("landing-pages/");
   };
 
   const phoneNumber = isWebDesignDevelopmentPage()
