@@ -110,12 +110,20 @@ const Footer = () => {
   };
 
   const phoneNumber = isWebDesignDevelopmentPage()
-    ? "+971 55 127 6222"
+    ? "+971 55 956 4135"
     : "+971 4 445 6848";
 
   const whatsappNumber = isWebDesignDevelopmentPage()
-    ? "+971 55 127 6222"
+    ? "+971 55 956 4135"
     : "+971 55 956 4135";
+
+  // const phoneNumber = isWebDesignDevelopmentPage()
+  //   ? "+971 55 127 6222"
+  //   : "+971 4 445 6848";
+
+  // const whatsappNumber = isWebDesignDevelopmentPage()
+  //   ? "+971 55 127 6222"
+  //   : "+971 55 956 4135";
 
   const toast = useToast();
 
