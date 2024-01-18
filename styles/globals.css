@@ -2604,6 +2604,7 @@ button{
 .ClientTestimonial{
   background: #F7F7F7;
 }
+
 @media (max-width: 780px) {
   .video-background video {
     height: auto;
@@ -2685,4 +2686,12 @@ background-color: #d59379;
 
 .int-grp1 input::placeholder {
   color: #fff;
+}
+
+@media (min-width: 780px) {
+  
+.LpMainVideo {
+    min-height: 800px;
+    object-fit: cover;
+}
 }
