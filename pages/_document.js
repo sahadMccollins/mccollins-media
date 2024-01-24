@@ -6,6 +6,17 @@ export default function Document() {
       <Head>
         <meta name="msvalidate.01" content="AF2100A2AEBECD20B09A1D8458E73DAD" />
 
+        <meta
+          property="og:url"
+          content="https://www.mccollinsmedia.com/favicon/apple-icon.png"
+        />
+        <meta property="og:title" content="McCollins Meida" />
+        {/* <meta property="og:type" content="Home Page" /> */}
+        <meta
+          property="og:image"
+          content="https://www.mccollinsmedia.com/favicon/apple-icon.png"
+        />
+
         <script
           src="https://www.google.com/recaptcha/enterprise.js?render=6LdRaB0pAAAAADkho8kQ1qjUhjQaHafEUtWeLhsO"
           async

@@ -2688,10 +2688,9 @@ background-color: #d59379;
   color: #fff;
 }
 
-@media (min-width: 780px) {
-  
-.LpMainVideo {
+@media (min-width: 780px) { 
+  .LpMainVideo {
     min-height: 800px;
     object-fit: cover;
-}
+  }
 }
