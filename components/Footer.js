@@ -493,7 +493,8 @@ const Footer = () => {
           </Box>
           <Box mt={"30px"}>
             <Text color={"#fff"} fontSize="12px" cursor={"pointer"}>
-              Privacy Policy &nbsp;&nbsp; I &nbsp;&nbsp; Terms & Conditions
+              <Link href="/privacy-policy">Privacy Policy </Link> &nbsp;&nbsp; I
+              &nbsp;&nbsp; Terms & Conditions
             </Text>
           </Box>
         </Flex>

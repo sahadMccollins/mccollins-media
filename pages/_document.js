@@ -11,7 +11,6 @@ export default function Document() {
           content="https://www.mccollinsmedia.com/favicon/apple-icon.png"
         />
         <meta property="og:title" content="McCollins Meida" />
-        {/* <meta property="og:type" content="Home Page" /> */}
         <meta
           property="og:image"
           content="https://www.mccollinsmedia.com/favicon/apple-icon.png"
