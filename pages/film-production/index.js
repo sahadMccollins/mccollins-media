@@ -1282,8 +1282,8 @@ const FilmProduction = () => {
                   <br /> Entrance C, Dubai Media City
                 </div>
                 <div className="ft4">
-                  <a href="tel:+971551276222">
-                    <span>Phone&nbsp;:</span>&nbsp;+971 55 127 6222
+                  <a href="tel:+971 55 956 4135">
+                    <span>Phone&nbsp;:</span>&nbsp;+971 55 956 4135
                   </a>
                   <br />
                   <a href="mailto:info@mccollinsmedia.com">
@@ -1558,14 +1558,14 @@ const FilmProduction = () => {
               &nbsp; Request A Call Back
             </div>
           </a>
-          <a href="tel:+971551276222" target="_blank">
+          <a href="tel:+971 55 956 4135" target="_blank">
             <div className="SBBtn">
               <img src="/assets/image/icons/call.svg" width="18px" />
-              &nbsp; Call Us On : +971 55 127 6222
+              &nbsp; Call Us On : +971 55 956 4135
             </div>
           </a>
           <a
-            href="https://api.whatsapp.com/send?phone=971551276222&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+            href="https://api.whatsapp.com/send?phone=+971 55 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
             target="_blank"
           >
             <div className="SBWhatsapp">WhatsApp us</div>
@@ -1579,7 +1579,7 @@ const FilmProduction = () => {
                 Get a quote
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=971551276222&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                href="https://api.whatsapp.com/send?phone=+971 55 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                 className="mediaFlex2"
                 target="_blank"
               >

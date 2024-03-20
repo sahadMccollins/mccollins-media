@@ -82,7 +82,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       title:
         "Best SEO Company in UAE, Dubai | SEO Agency In Dubai | SEO Services Dubai - Mccolilins",
       description:
-        "Mccollins offer the best range of SEO services in Dubai, Abu Dhabi and across the globe at affordable price. Our team works for your website traffic, ranking and visibility with the best strategies.Get the seo services in UAE by calling- +971 4 445 6848",
+        "Mccollins offer the best range of SEO services in Dubai, Abu Dhabi and across the globe at affordable price. Our team works for your website traffic, ranking and visibility with the best strategies.Get the seo services in UAE by calling- +971 55 956 4135",
     },
     "/industry/corporate-marketing-services": {
       title:
