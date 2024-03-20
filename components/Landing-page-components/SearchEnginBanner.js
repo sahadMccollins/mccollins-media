@@ -3,6 +3,7 @@ import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import { useMediaQuery } from "@chakra-ui/react";
+import Form from "./Form";
 
 const SearchEngineBanner = () => {
   const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
@@ -27,48 +28,60 @@ const SearchEngineBanner = () => {
           <div className="icontainer">
             <div className="irow">
               <div className="icol-md-9">
-                <div className="T1">search engine<br/> optimization</div>
+                <div className="T1">
+                  search engine
+                  <br /> optimization
+                </div>
                 <div className="T2">
-                  McCollins is the conversion - first agency that helps Global<br/>
+                  McCollins is the conversion - first agency that helps Global
+                  <br />
                   brands attract and convert more customers From Google search.
                 </div>
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
                     <a href="#" className="BtnSt1">
-                        Get Your Free Proposals 
+                      Get Your Free Proposals
                     </a>
                   </div>
                 )}
-                 <div className="FtrBx1Wrp">
-                    <div className="FtrBx1">
-                        <div className="FtrBx1Item color1">
-                            <div>
-                                <div className="FtrBx1ItemT1">$2B</div>
-                                <div className="FtrBx1ItemT2">Billion revenue For our clients</div>
-                            </div>
+                <div className="FtrBx1Wrp">
+                  <div className="FtrBx1">
+                    <div className="FtrBx1Item color1">
+                      <div>
+                        <div className="FtrBx1ItemT1">$2B</div>
+                        <div className="FtrBx1ItemT2">
+                          Billion revenue For our clients
                         </div>
-                        <div className="FtrBx1Item color2">
-                            <div>
-                                <div className="FtrBx1ItemT1">30</div>
-                                <div className="FtrBx1ItemT2">Published Client wins</div>
-                            </div>
-                        </div>
-                        <div className="FtrBx1Item color3">
-                            <div>
-                                <div className="FtrBx1ItemT1">150+</div>
-                                <div className="FtrBx1ItemT2">5 - Star client Reviews </div>
-                            </div>
-                        </div>
-                        <div className="FtrBx1Item color4">
-                            <div>
-                                <div className="FtrBx1ItemT1">4</div>
-                                <div className="FtrBx1ItemT2">Agency of the Year awards</div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
-                 </div>
+                    <div className="FtrBx1Item color2">
+                      <div>
+                        <div className="FtrBx1ItemT1">30</div>
+                        <div className="FtrBx1ItemT2">
+                          Published Client wins
+                        </div>
+                      </div>
+                    </div>
+                    <div className="FtrBx1Item color3">
+                      <div>
+                        <div className="FtrBx1ItemT1">150+</div>
+                        <div className="FtrBx1ItemT2">
+                          5 - Star client Reviews{" "}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="FtrBx1Item color4">
+                      <div>
+                        <div className="FtrBx1ItemT1">4</div>
+                        <div className="FtrBx1ItemT2">
+                          Agency of the Year awards
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="icol-md-3">
+              {/* <div className="icol-md-3">
                 <div className="HeaderForm" id="contactus">
                   <div className="FormElements">
                     <div className="FormItem">
@@ -222,11 +235,11 @@ const SearchEngineBanner = () => {
                     <button className="SubmitBtn1">Request A Callback</button>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <Form />
             </div>
           </div>
         </div>
-       
       </div>
     </div>
   );

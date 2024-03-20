@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
-import {useMediaQuery} from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
+import Form from "./Form";
 
 const SocialMainBanner = () => {
   const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
@@ -19,10 +20,7 @@ const SocialMainBanner = () => {
           className="LpMainVideo"
           poster="/lp/lp1main.jpg"
         >
-          <source
-            src="/social.mp4"
-            type="video/mp4"
-          />
+          <source src="/social.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="image-title">
@@ -30,23 +28,23 @@ const SocialMainBanner = () => {
           <div className="icontainer">
             <div className="irow">
               <div className="icol-md-9">
-                <div className="T1">
-                  Social Media  Marketing
-                  
-                </div>
+                <div className="T1">Social Media Marketing</div>
                 <div className="T2">
-                Boost your online presence with a top notch
-Social media marketing agency <br/>in Dubai.
-Drive engagement, increase brand visibility and
-Reach your target <br/>audience effectively.
+                  Boost your online presence with a top notch Social media
+                  marketing agency <br />
+                  in Dubai. Drive engagement, increase brand visibility and
+                  Reach your target <br />
+                  audience effectively.
                 </div>
                 {!isSmallerThan1000 && (
-                <div className="BtnWrap1">
-                    <a href="#" className="BtnSt1">Get Estimate Now</a>
-                </div>
+                  <div className="BtnWrap1">
+                    <a href="#" className="BtnSt1">
+                      Get Estimate Now
+                    </a>
+                  </div>
                 )}
               </div>
-              <div className="icol-md-3">
+              {/* <div className="icol-md-3">
                 <div className="HeaderForm" id="contactus">
                   <div className="FormElements">
                     <div className="FormItem">
@@ -159,7 +157,8 @@ Reach your target <br/>audience effectively.
                     <button className="SubmitBtn1">Request A Callback</button>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <Form />
             </div>
           </div>
         </div>
