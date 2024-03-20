@@ -118,11 +118,11 @@ const Footer = () => {
     : "+971 55 956 4135";
 
   // const phoneNumber = isWebDesignDevelopmentPage()
-  //   ? "+971 55 127 6222"
+  //   ? "+971 55 956 41352"
   //   : "+971 55 956 4135";
 
   // const whatsappNumber = isWebDesignDevelopmentPage()
-  //   ? "+971 55 127 6222"
+  //   ? "+971 55 956 41352"
   //   : "+971 55 956 4135";
 
   const toast = useToast();
