@@ -76,10 +76,6 @@ const LandingPage1 = () => {
 
       <TrustedLogos />
       <LpGrid />
-
-      <WebPortfolio />
-
-      <WorkTogether />
       <FooterNav phone={true} />
     </Box>
   );
