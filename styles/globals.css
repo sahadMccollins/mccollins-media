@@ -2698,6 +2698,49 @@ background-color: #d59379;
 .CgiLanding a{
   text-decoration: none !important;
 }
-.CgiLanding .T3::after{
-  background-color: #25d366 !important;
+.CgiLanding .T3::after ,
+.CgiLanding .filmSubmit{
+  background-color: #efbf20 !important;
+}
+.CgiLanding footer ,
+.CgiLanding .HeaderRight ul li a:hover::after, 
+.CgiLanding .HeaderRight ul li a.active::after ,
+.CgiLanding .BkNw2 ,
+.CgiLanding .PrT2 ,
+.CgiLanding.film-prd footer .formElements input ,
+.CgiLanding.film-prd footer .formElements select ,
+.CgiLanding.film-prd .HeaderForm .formElements select option{
+  background-color: #efbf20 !important;
+}
+.CgiLanding .T1 ,
+.CgiLanding .HeaderRight ul li a:hover, 
+.CgiLanding .HeaderRight ul li a.active ,
+.CgiLanding .GridBx1T2 ,
+.CgiLanding .GridBx1T4 {
+  color: #efbf20;
+}
+.CgiLanding .Hicon1,
+.CgiLanding .Hicon2,
+.CgiLanding .Hicon3,
+.CgiLanding .Hicon4{
+  background-image: url(../public/icon11.png) !important;
+}
+.CgiLanding .Ct1 ,
+.CgiLanding .T4 ,
+.CgiLanding .TimeLine11 ,
+.CgiLanding .WrkT1{
+  border-color: #efbf20;
+}
+.CgiLanding .T6:hover, .CgiLanding .T6.highlight {
+  border: 2px solid #efbf20;
+  color: #efbf20;
+}
+.CgiLanding .timeline1::before{
+background-image: url(../public/timeline1.png) !important;
+}
+.CgiLanding .timeline2::before{
+  background-image: url(../public/timeline2.png) !important;
+}
+.CgiLanding .timeline3::before{
+  background-image: url(../public/timeline3.png) !important;
 }
