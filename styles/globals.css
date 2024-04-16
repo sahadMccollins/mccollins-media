@@ -2695,7 +2695,9 @@ background-color: #d59379;
   }
 }
 
-
+.CgiLanding a{
+  text-decoration: none !important;
+}
 .CgiLanding .T3::after{
   background-color: #25d366 !important;
 }
