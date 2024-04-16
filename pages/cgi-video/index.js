@@ -219,7 +219,7 @@ const FilmProduction = () => {
         />
         <title>McCollins Media Production</title>
       </Head>
-      <div className="film-prd">
+      <div className="film-prd CgiLanding">
         <header>
           <div className="container">
             <div>
