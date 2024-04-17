@@ -568,7 +568,7 @@ const FilmProduction = () => {
               <div className="col-md-4 p-0">
                 <CgiVideoAutoplay src1="/cgi/2.mp4" />
               </div>
-              <div className="col-md-4 p-0">
+              {/* <div className="col-md-4 p-0">
                 <CgiVideoAutoplay src1="/cgi/3.mp4" />
               </div>
               <div className="col-md-4 p-0">
@@ -576,7 +576,7 @@ const FilmProduction = () => {
               </div>
               <div className="col-md-4 p-0">
                 <CgiVideoAutoplay src1="/cgi/5.mp4" />
-              </div>
+              </div> */}
             </div>
           </section>
           <section className="OurClients" id="ourclients">
