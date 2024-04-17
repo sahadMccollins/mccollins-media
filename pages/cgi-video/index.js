@@ -7,8 +7,9 @@ import { useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import axios from "axios";
-
+import CgiVideoAutoplay from "../../components/CgiVideoAutoplay";
 const FilmProduction = () => {
+  
   const [fullName, setFullName] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
@@ -225,16 +226,15 @@ const FilmProduction = () => {
             <div>
               <div className="HeaderRow">
                 <div className="HeaderLeft ">
-                 
                   <Image
-                alt="McCollins Media"
-                src={"/assets/image/navbar/logo.svg"}
-                width="223"
-                height="50"
-                priority={true}
-                style={{ cursor: "pointer" }}
-                className="LogoImg"
-              />
+                    alt="McCollins Media"
+                    src={"/assets/image/navbar/logo.svg"}
+                    width="223"
+                    height="50"
+                    priority={true}
+                    style={{ cursor: "pointer" }}
+                    className="LogoImg"
+                  />
                 </div>
                 <div className="HeaderRight">
                   <ul>
@@ -334,7 +334,9 @@ const FilmProduction = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                       >
-                       Make a lasting impression <br/>and leave your audience<br/> in awe
+                        Make a lasting impression <br />
+                        and leave your audience
+                        <br /> in awe
                       </div>
                       {/* <div
                         className="T2"
@@ -348,7 +350,7 @@ const FilmProduction = () => {
                         data-aos="fade-right"
                         data-aos-duration="700"
                       >
-                        Elevate your brand with stunning CGI 
+                        Elevate your brand with stunning CGI
                         <br />
                         videos that captivate, engage, and inspire
                       </div>
@@ -553,6 +555,28 @@ const FilmProduction = () => {
                     type="video/mp4"
                   />
                 </video>
+              </div>
+            </div>
+          </section>
+          <section className="CgiVideos">
+            <div className="row m-0">
+              <div className="col-md-4 p-0">
+                <CgiVideoAutoplay src1="/cgi/dih.pm4"/>
+              </div>
+              <div className="col-md-4 p-0">
+              <CgiVideoAutoplay src1="/cgi/1.pm4"/>
+              </div>
+              <div className="col-md-4 p-0">
+              <CgiVideoAutoplay src1="/cgi/2.pm4"/>
+              </div>
+              <div className="col-md-4 p-0">
+              <CgiVideoAutoplay src1="/cgi/3.pm4"/>
+              </div>
+              <div className="col-md-4 p-0">
+              <CgiVideoAutoplay src1="/cgi/4.pm4"/>
+              </div>
+              <div className="col-md-4 p-0">
+              <CgiVideoAutoplay src1="/cgi/5.pm4"/>
               </div>
             </div>
           </section>
@@ -1297,14 +1321,14 @@ const FilmProduction = () => {
                   </a>
                 </div>
                 <Image
-                alt="McCollins Media"
-                src={"/assets/image/navbar/logo.svg"}
-                width="223"
-                height="50"
-                priority={true}
-                style={{ cursor: "pointer" }}
-                className="FtrLogo"
-              />
+                  alt="McCollins Media"
+                  src={"/assets/image/navbar/logo.svg"}
+                  width="223"
+                  height="50"
+                  priority={true}
+                  style={{ cursor: "pointer" }}
+                  className="FtrLogo"
+                />
                 {/* <img
                   src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
                   data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/footerlogo.png"

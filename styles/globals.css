@@ -2744,3 +2744,7 @@ background-image: url(../public/timeline1.png) !important;
 .CgiLanding .timeline3::before{
   background-image: url(../public/timeline3.png) !important;
 }
+.CgiVideos video{
+  width: 100%;
+}
+
