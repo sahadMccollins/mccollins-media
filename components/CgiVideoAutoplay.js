@@ -24,12 +24,9 @@ const CgiVideoAutoplay = (props) => {
   }, []);
   return (
     <div className="VideoWrAP">
-        <video autoPlay muted loop playsInline>
-                  <source
-                    src={props.src1}
-                    type="video/mp4"
-                  />
-                </video>
+      <video autoPlay muted loop playsInline>
+        <source src={props.src1} type="video/mp4" />
+      </video>
     </div>
   );
 };

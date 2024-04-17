@@ -9,7 +9,6 @@ import Image from "next/image";
 import axios from "axios";
 import CgiVideoAutoplay from "../../components/CgiVideoAutoplay";
 const FilmProduction = () => {
-  
   const [fullName, setFullName] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
@@ -561,22 +560,22 @@ const FilmProduction = () => {
           <section className="CgiVideos">
             <div className="row m-0">
               <div className="col-md-4 p-0">
-                <CgiVideoAutoplay src1="/cgi/dih.pm4"/>
+                <CgiVideoAutoplay src1="/cgi/dih.mp4" />
               </div>
               <div className="col-md-4 p-0">
-              <CgiVideoAutoplay src1="/cgi/1.pm4"/>
+                <CgiVideoAutoplay src1="/cgi/1.mp4" />
               </div>
               <div className="col-md-4 p-0">
-              <CgiVideoAutoplay src1="/cgi/2.pm4"/>
+                <CgiVideoAutoplay src1="/cgi/2.mp4" />
               </div>
               <div className="col-md-4 p-0">
-              <CgiVideoAutoplay src1="/cgi/3.pm4"/>
+                <CgiVideoAutoplay src1="/cgi/3.mp4" />
               </div>
               <div className="col-md-4 p-0">
-              <CgiVideoAutoplay src1="/cgi/4.pm4"/>
+                <CgiVideoAutoplay src1="/cgi/4.mp4" />
               </div>
               <div className="col-md-4 p-0">
-              <CgiVideoAutoplay src1="/cgi/5.pm4"/>
+                <CgiVideoAutoplay src1="/cgi/5.mp4" />
               </div>
             </div>
           </section>
