@@ -2770,3 +2770,15 @@ padding-bottom: 50px !important;
   background-color: #efbf20;
   border-radius: 50%;
 }
+
+@media (max-width: 880px) { 
+  .CgiVideos .container,
+  .CgiVideos .container .row ,
+  .CgiVideos .container .col-md-4{
+    margin: 0;
+    padding: 0;
+  }
+  .VideoPlaceHolder{
+    margin-top: 10px;
+  }
+}
