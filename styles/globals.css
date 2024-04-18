@@ -2747,4 +2747,26 @@ background-image: url(../public/timeline1.png) !important;
 .CgiVideos video{
   width: 100%;
 }
-
+.ourWorks{
+padding-bottom: 50px !important;
+}
+.VideoPlaceHolder{
+  margin-top: 20px;
+}
+.VideoPlaceHolder a{
+  position: relative;
+  display: block;
+}
+.PlayBtn{
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  background-image: url(../public/cgi/play.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  background-color: #efbf20;
+  border-radius: 50%;
+}

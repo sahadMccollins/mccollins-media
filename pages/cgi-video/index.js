@@ -248,7 +248,7 @@ const FilmProduction = () => {
                         data-go="ourservice"
                         className="GoLink"
                       >
-                        Our Services
+                        Our Works
                       </a>
                     </li>
                     <li>
@@ -260,11 +260,7 @@ const FilmProduction = () => {
                         Our Clients
                       </a>
                     </li>
-                    <li>
-                      <a href="#timeline" data-go="timeline" className="GoLink">
-                        Our Timeline
-                      </a>
-                    </li>
+                    
                     <li>
                       <a href="#ourworks" data-go="ourworks" className="GoLink">
                         Portfolio
@@ -557,28 +553,7 @@ const FilmProduction = () => {
               </div>
             </div>
           </section>
-          <section className="CgiVideos">
-            <div className="row m-0">
-              <div className="col-md-4 p-0">
-                <CgiVideoAutoplay src1="/cgi/dih.mp4" />
-              </div>
-              <div className="col-md-4 p-0">
-                <CgiVideoAutoplay src1="/cgi/1.mp4" />
-              </div>
-              <div className="col-md-4 p-0">
-                <CgiVideoAutoplay src1="/cgi/2.mp4" />
-              </div>
-              {/* <div className="col-md-4 p-0">
-                <CgiVideoAutoplay src1="/cgi/3.mp4" />
-              </div>
-              <div className="col-md-4 p-0">
-                <CgiVideoAutoplay src1="/cgi/4.mp4" />
-              </div>
-              <div className="col-md-4 p-0">
-                <CgiVideoAutoplay src1="/cgi/5.mp4" />
-              </div> */}
-            </div>
-          </section>
+
           <section className="OurClients" id="ourclients">
             <div className="container">
               <div className="Clt2">
@@ -708,7 +683,7 @@ const FilmProduction = () => {
             <div className="container">
               <div className="text-center">
                 <div className="T4" data-aos="fade-up" data-aos-duration="700">
-                  Our Services
+                  Our Works
                 </div>
                 <div className="T5" data-aos="fade-up" data-aos-duration="700">
                   We deliver anything and everything that has to
@@ -716,116 +691,156 @@ const FilmProduction = () => {
                   do with video productions, photography, animations, and
                   beyond.
                 </div>
-                <div>
-                  <div
-                    className="T6 popup2-trigger"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                  >
-                    Corporate Video
+                <section className="CgiVideos">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-md-4">
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/dih.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/dih.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/1.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/1.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/2.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/2.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/3.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/3.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/4.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/4.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/5.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/5.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <span className="d-none">
-                    Our talented team of professionals is dedicated to bringing
-                    your vision to life through captivating storytelling and
-                    visually stunning videos. We have a proven track record of
-                    delivering high-quality videos that engage and resonate with
-                    audiences. Whether it's a corporate promotional video, Event
-                    coverage, conceptual commercials, lifestyle video, we
-                    meticulously plan, shoot, and edit each project to ensure
-                    its success. We pride ourselves on our collaborative
-                    approach, working closely with our clients to understand
-                    their goals and deliver a final product that exceeds their
-                    expectations
-                  </span>
-                </div>
-                <div>
-                  <div
-                    className="T6 popup2-trigger"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                  >
-                    Social Media Videos
-                  </div>
-                  <span className="d-none">
-                    Our talented team of professionals is dedicated to bringing
-                    your vision to life through captivating storytelling and
-                    visually stunning videos. We have a proven track record of
-                    delivering high-quality videos that engage and resonate with
-                    audiences. Whether it's a corporate promotional video, Event
-                    coverage, conceptual commercials, lifestyle video, we
-                    meticulously plan, shoot, and edit each project to ensure
-                    its success. We pride ourselves on our collaborative
-                    approach, working closely with our clients to understand
-                    their goals and deliver a final product that exceeds their
-                    expectations
-                  </span>
-                </div>
-                <div>
-                  <div
-                    className="T6 popup2-trigger"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                  >
-                    CGI Video
-                  </div>
-                  <span className="d-none">
-                    Our talented team of professionals is dedicated to bringing
-                    your vision to life through captivating storytelling and
-                    visually stunning videos. We have a proven track record of
-                    delivering high-quality videos that engage and resonate with
-                    audiences. Whether it's a corporate promotional video, Event
-                    coverage, conceptual commercials, lifestyle video, we
-                    meticulously plan, shoot, and edit each project to ensure
-                    its success. We pride ourselves on our collaborative
-                    approach, working closely with our clients to understand
-                    their goals and deliver a final product that exceeds their
-                    expectations
-                  </span>
-                </div>
-                <div>
-                  <div
-                    className="T6 popup2-trigger"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                  >
-                    How to Video
-                  </div>
-                  <span className="d-none">
-                    Our talented team of professionals is dedicated to bringing
-                    your vision to life through captivating storytelling and
-                    visually stunning videos. We have a proven track record of
-                    delivering high-quality videos that engage and resonate with
-                    audiences. Whether it's a corporate promotional video, Event
-                    coverage, conceptual commercials, lifestyle video, we
-                    meticulously plan, shoot, and edit each project to ensure
-                    its success. We pride ourselves on our collaborative
-                    approach, working closely with our clients to understand
-                    their goals and deliver a final product that exceeds their
-                    expectations
-                  </span>
-                </div>
-                <div>
-                  <div
-                    className="T6 popup2-trigger"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                  >
-                    Explainer Video
-                  </div>
-                  <span className="d-none">
-                    Our talented team of professionals is dedicated to bringing
-                    your vision to life through captivating storytelling and
-                    visually stunning videos. We have a proven track record of
-                    delivering high-quality videos that engage and resonate with
-                    audiences. Whether it's a corporate promotional video, Event
-                    coverage, conceptual commercials, lifestyle video, we
-                    meticulously plan, shoot, and edit each project to ensure
-                    its success. We pride ourselves on our collaborative
-                    approach, working closely with our clients to understand
-                    their goals and deliver a final product that exceeds their
-                    expectations
-                  </span>
-                </div>
+                </section>
               </div>
             </div>
           </section>
@@ -838,7 +853,7 @@ const FilmProduction = () => {
                   data-aos="fade-up"
                   data-aos-duration="700"
                 >
-                  Schedule Your Shoot
+                  Schedule Your Appointment
                 </div>
                 <a
                   href="#footer"
@@ -848,161 +863,6 @@ const FilmProduction = () => {
                 >
                   Book Now
                 </a>
-              </div>
-            </div>
-          </section>
-          <section className="TimeLine" id="timeline">
-            <div className="container">
-              <div
-                className="TimeLine11"
-                data-aos="fade-up"
-                data-aos-duration="700"
-              >
-                Our Timeline
-              </div>
-              <div className="row">
-                <div className="col-md-4">
-                  <div
-                    className="GridBx1"
-                    data-aos="fade-left"
-                    data-aos-duration="700"
-                  >
-                    <div className="GridBx1T1">1.Start</div>
-                    <div className="GridBx1T2 timeline1">Pre Production</div>
-                    <div className="GridBx1T3">
-                      Once you submit the brief and confirm the project with us,
-                      our team of account directors will do the rest. Plan,
-                      strategize, set deadlines, and moderate every task from
-                      script to finish.
-                    </div>
-                    <div className="GridBx1T4">Timeline : 2-3 Days</div>
-                  </div>
-                </div>
-                <div
-                  className="col-md-4"
-                  data-aos="fade-up"
-                  data-aos-duration="700"
-                >
-                  <div className="GridBx1">
-                    <div className="GridBx1T1">2.Collab</div>
-                    <div className="GridBx1T2 timeline2">Production</div>
-                    <div className="GridBx1T3">
-                      Once we finish the pre-production stage according to the
-                      approved plan, we proceed to shoot. Our crew will make
-                      sure that we have a seamless journey throughout the shoot
-                      days.
-                    </div>
-                    <div className="GridBx1T4">Timeline : 1-2 Days</div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div
-                    className="GridBx1"
-                    data-aos="fade-right"
-                    data-aos-duration="700"
-                  >
-                    <div className="GridBx1T1">3.Approve</div>
-                    <div className="GridBx1T2 timeline3">Post - Production</div>
-                    <div className="GridBx1T3">
-                      Share your feedback using our technology, which allows you
-                      to add comments directly on the video with real-time
-                      playback along with your colleagues anywhere in the world,
-                      creating faster approvals.
-                    </div>
-                    <div className="GridBx1T4">Timeline : 3-5 Days</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="ourWorks" id="ourworks">
-            <div className="container">
-              <div className="WrkT1">Our portfolio</div>
-              <div className="PortFolioBlock">
-                {/* <div className="loop1  owl-carousel"> */}
-                <OwlCarousel options={options}>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Film Production</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Lifestyle Photography</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Food Photography</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Corporate Videos</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </OwlCarousel>
-                {/* </div> */}
               </div>
             </div>
           </section>
@@ -1199,6 +1059,97 @@ const FilmProduction = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </section>
+          <section className="ourWorks" id="ourworks">
+            <div className="container">
+              <div className="WrkT1">Our portfolio</div>
+              <div className="PortFolioBlock">
+                {/* <div className="loop1  owl-carousel"> */}
+                <OwlCarousel options={options}>
+                  <div className="item">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
+                      <img
+                        className=""
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg"
+                      />
+                      <div className="PrBlockContent">
+                        <div>
+                          <div className="PrT1">Film Production</div>
+                          <a href="javascript:void(0)" className="PrT2 Port1">
+                            Portfolio
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
+                      <img
+                        className=""
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg"
+                      />
+                      <div className="PrBlockContent">
+                        <div>
+                          <div className="PrT1">Lifestyle Photography</div>
+                          <a href="javascript:void(0)" className="PrT2 Port1">
+                            Portfolio
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
+                      <img
+                        className=""
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg"
+                      />
+                      <div className="PrBlockContent">
+                        <div>
+                          <div className="PrT1">Food Photography</div>
+                          <a href="javascript:void(0)" className="PrT2 Port1">
+                            Portfolio
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
+                      <img
+                        className=""
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg"
+                      />
+                      <div className="PrBlockContent">
+                        <div>
+                          <div className="PrT1">Corporate Videos</div>
+                          <a href="javascript:void(0)" className="PrT2 Port1">
+                            Portfolio
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </OwlCarousel>
+                {/* </div> */}
               </div>
             </div>
           </section>
@@ -1531,14 +1482,12 @@ const FilmProduction = () => {
                 Home
               </a>
               <a href="#ourservice" data-go="ourservice" className="GoLink1">
-                Our Services
+                Our Works
               </a>
               <a href="#ourclients" data-go="ourclients" className="GoLink1">
                 Our Clients
               </a>
-              <a href="#timeline" data-go="timeline" className="GoLink1">
-                Our Timeline
-              </a>
+              
               <a href="#ourworks" data-go="ourworks" className="GoLink1">
                 Portfolio
               </a>
