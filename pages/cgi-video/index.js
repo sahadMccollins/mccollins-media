@@ -872,7 +872,8 @@ const FilmProduction = () => {
               <div className="PortFolioBlock">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="PrBlock">
+                    <div className="PrBlock" data-aos="fade-up"
+                      data-aos-duration="700">
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -900,7 +901,8 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock">
+                    <div className="PrBlock" data-aos="fade-up"
+                      data-aos-duration="700">
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -931,7 +933,8 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock">
+                    <div className="PrBlock" data-aos="fade-up"
+                      data-aos-duration="700">
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -963,7 +966,8 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock">
+                    <div className="PrBlock" data-aos="fade-up"
+                      data-aos-duration="700">
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -995,7 +999,8 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock">
+                    <div className="PrBlock" data-aos="fade-up"
+                      data-aos-duration="700">
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -1027,7 +1032,8 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock">
+                    <div className="PrBlock" data-aos="fade-up"
+                      data-aos-duration="700">
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -1071,8 +1077,7 @@ const FilmProduction = () => {
                   <div className="item">
                     <div
                       className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
+                      
                     >
                       <img
                         className=""
@@ -1091,8 +1096,7 @@ const FilmProduction = () => {
                   <div className="item">
                     <div
                       className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
+                      
                     >
                       <img
                         className=""
@@ -1111,8 +1115,7 @@ const FilmProduction = () => {
                   <div className="item">
                     <div
                       className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
+                      
                     >
                       <img
                         className=""
@@ -1131,8 +1134,7 @@ const FilmProduction = () => {
                   <div className="item">
                     <div
                       className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
+                      
                     >
                       <img
                         className=""
