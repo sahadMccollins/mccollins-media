@@ -2770,7 +2770,9 @@ padding-bottom: 50px !important;
   background-color: #efbf20;
   border-radius: 50%;
 }
-
+.MarTp20{
+  margin-top: 20px;
+}
 @media (max-width: 880px) { 
   .CgiVideos .container,
   .CgiVideos .container .row ,
@@ -2779,6 +2781,9 @@ padding-bottom: 50px !important;
     padding: 0;
   }
   .VideoPlaceHolder{
+    margin-top: 10px;
+  }
+  .MarTp20{
     margin-top: 10px;
   }
 }

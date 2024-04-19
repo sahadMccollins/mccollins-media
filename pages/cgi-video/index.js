@@ -686,10 +686,7 @@ const FilmProduction = () => {
                   Our Works
                 </div>
                 <div className="T5" data-aos="fade-up" data-aos-duration="700">
-                  We deliver anything and everything that has to
-                  <br />
-                  do with video productions, photography, animations, and
-                  beyond.
+                Our expert team specializes in creating visually striking content that<br/> grabs attention, builds followers, and has the potential to go viral.
                 </div>
                 <section className="CgiVideos">
                   <div className="container">
@@ -839,6 +836,16 @@ const FilmProduction = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="text-center MarTp20">
+                    <a
+                  href="#footer"
+                  className="BkNw2"
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                >
+                  Let us bring your brand's vision to life through the magic of CGI
+                </a>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -943,7 +950,7 @@ const FilmProduction = () => {
                       <div className="PrBlockContent">
                         <div>
                           <div className="PrT1">
-                            State-of-the-Art
+                            State of the Art
                             <br />
                             Equipment
                           </div>
@@ -976,7 +983,7 @@ const FilmProduction = () => {
                       <div className="PrBlockContent">
                         <div>
                           <div className="PrT1">
-                            Full-Service
+                            Full Service
                             <br />
                             Solutions
                           </div>
