@@ -2773,6 +2773,10 @@ padding-bottom: 50px !important;
 .MarTp20{
   margin-top: 20px;
 }
+a.WrkT1:hover{
+  background-color: #efbf20;
+  color: #fff !important;
+}
 @media (max-width: 880px) { 
   .CgiVideos .container,
   .CgiVideos .container .row ,
