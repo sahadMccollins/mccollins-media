@@ -7,8 +7,10 @@ import { useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import axios from "axios";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import CgiVideoAutoplay from "../../components/CgiVideoAutoplay";
 const FilmProduction = () => {
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   const [fullName, setFullName] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
@@ -260,7 +262,7 @@ const FilmProduction = () => {
                         Our Clients
                       </a>
                     </li>
-                    
+
                     <li>
                       <a href="#ourworks" data-go="ourworks" className="GoLink">
                         Portfolio
@@ -317,6 +319,9 @@ const FilmProduction = () => {
           </div>
         </header>
         <main>
+        {!isDesktop && (
+                <CgiVideoAutoplay src1="/cgi/dih.mp4"/>
+              )}
           <section className="HeroSection" id="home">
             <div className="main-video">
               <div className="image-background"></div>
@@ -345,7 +350,7 @@ const FilmProduction = () => {
                         data-aos="fade-right"
                         data-aos-duration="700"
                       >
-                        Elevate your brand with stunning CGI
+                        Elevate your brand with stunning CGI&nbsp;
                         <br />
                         videos that captivate, engage, and inspire
                       </div>
@@ -543,17 +548,222 @@ const FilmProduction = () => {
                   </div>
                 </div>
               </div>
-              <div className="video-background">
-                <video autoPlay muted loop id="myVideo" playsInline>
-                  <source
-                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/mccollins-media-video-compressed.mp4"
-                    type="video/mp4"
-                  />
-                </video>
+              {isDesktop && (
+                <div className="video-background">
+                  <video autoPlay muted loop id="myVideo" playsInline>
+                    <source
+                      src="https://mccollinsmediaweb.github.io/mcc-video-production/images/mccollins-media-video-compressed.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              )}
+            </div>
+          </section>
+          <section className="serviceSection CstServ" id="ourservice">
+            <div className="container">
+              <div className="text-center">
+                <div className="T4" data-aos="fade-up" data-aos-duration="700">
+                  Our Works
+                </div>
+                <div className="T5" data-aos="fade-up" data-aos-duration="700">
+                  Our expert team specializes in creating visually striking
+                  content that
+                  <br /> grabs attention, builds followers, and has the
+                  potential to go viral.
+                </div>
+                <section className="CgiVideos">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-md-4">
+                      {isDesktop && (
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/dih.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/dih.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                         )}
+                        {!isDesktop && (
+                <CgiVideoAutoplay src1="/cgi/1.mp4"/>
+              )}
+                      </div>
+                      <div className="col-md-4">
+                      {isDesktop && (
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/1.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/1.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                         )}
+                         {!isDesktop && (
+                 <CgiVideoAutoplay src1="/cgi/2.mp4"/>
+               )}
+                      </div>
+                      <div className="col-md-4">
+                      {isDesktop && (
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/2.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/2.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                          )}
+                          {!isDesktop && (
+                  <CgiVideoAutoplay src1="/cgi/3.mp4"/>
+                )}
+                      </div>
+                      <div className="col-md-4">
+                      {isDesktop && (
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/3.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/3.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                        )}
+                        {!isDesktop && (
+                <CgiVideoAutoplay src1="/cgi/4.mp4"/>
+              )}
+                      </div>
+                      <div className="col-md-4">
+                      {isDesktop && (
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/4.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/4.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                         )}
+                         {!isDesktop && (
+                 <CgiVideoAutoplay src1="/cgi/5.mp4"/>
+               )}
+                 
+                      </div>
+                      <div className="col-md-4">
+                      {isDesktop && (
+                        <div
+                          className="VideoPlaceHolder"
+                          data-aos="fade-up"
+                          data-aos-duration="700"
+                        >
+                          <a
+                            href="/cgi/5.mp4"
+                            data-fancybox="portfolio2"
+                            title="Client Name"
+                          >
+                            <Image
+                              alt="McCollins Media"
+                              src={"/cgi/5.jpg"}
+                              width="511"
+                              height="849"
+                              priority={true}
+                              style={{ cursor: "pointer" }}
+                              className=""
+                            />
+                            <div className="PlayBtn">&nbsp;</div>
+                          </a>
+                        </div>
+                         )}
+                      </div>
+                    </div>
+                    <div className="text-center MarTp20">
+                      <a
+                        href="#footer"
+                        className="WrkT1"
+                        data-aos="fade-left"
+                        data-aos-duration="700"
+                      >
+                        Let us bring your brand's vision to life through the
+                        magic of CGI
+                      </a>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
           </section>
-
           <section className="OurClients" id="ourclients">
             <div className="container">
               <div className="Clt2">
@@ -679,178 +889,6 @@ const FilmProduction = () => {
               </div>
             </div>
           </section>
-          <section className="serviceSection" id="ourservice">
-            <div className="container">
-              <div className="text-center">
-                <div className="T4" data-aos="fade-up" data-aos-duration="700">
-                  Our Works
-                </div>
-                <div className="T5" data-aos="fade-up" data-aos-duration="700">
-                Our expert team specializes in creating visually striking content that<br/> grabs attention, builds followers, and has the potential to go viral.
-                </div>
-                <section className="CgiVideos">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-md-4">
-                        <div
-                          className="VideoPlaceHolder"
-                          data-aos="fade-up"
-                          data-aos-duration="700"
-                        >
-                          <a
-                            href="/cgi/dih.mp4"
-                            data-fancybox="portfolio2"
-                            title="Client Name"
-                          >
-                            <Image
-                              alt="McCollins Media"
-                              src={"/cgi/dih.jpg"}
-                              width="511"
-                              height="849"
-                              priority={true}
-                              style={{ cursor: "pointer" }}
-                              className=""
-                            />
-                            <div className="PlayBtn">&nbsp;</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div
-                          className="VideoPlaceHolder"
-                          data-aos="fade-up"
-                          data-aos-duration="700"
-                        >
-                          <a
-                            href="/cgi/1.mp4"
-                            data-fancybox="portfolio2"
-                            title="Client Name"
-                          >
-                            <Image
-                              alt="McCollins Media"
-                              src={"/cgi/1.jpg"}
-                              width="511"
-                              height="849"
-                              priority={true}
-                              style={{ cursor: "pointer" }}
-                              className=""
-                            />
-                            <div className="PlayBtn">&nbsp;</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div
-                          className="VideoPlaceHolder"
-                          data-aos="fade-up"
-                          data-aos-duration="700"
-                        >
-                          <a
-                            href="/cgi/2.mp4"
-                            data-fancybox="portfolio2"
-                            title="Client Name"
-                          >
-                            <Image
-                              alt="McCollins Media"
-                              src={"/cgi/2.jpg"}
-                              width="511"
-                              height="849"
-                              priority={true}
-                              style={{ cursor: "pointer" }}
-                              className=""
-                            />
-                            <div className="PlayBtn">&nbsp;</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div
-                          className="VideoPlaceHolder"
-                          data-aos="fade-up"
-                          data-aos-duration="700"
-                        >
-                          <a
-                            href="/cgi/3.mp4"
-                            data-fancybox="portfolio2"
-                            title="Client Name"
-                          >
-                            <Image
-                              alt="McCollins Media"
-                              src={"/cgi/3.jpg"}
-                              width="511"
-                              height="849"
-                              priority={true}
-                              style={{ cursor: "pointer" }}
-                              className=""
-                            />
-                            <div className="PlayBtn">&nbsp;</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div
-                          className="VideoPlaceHolder"
-                          data-aos="fade-up"
-                          data-aos-duration="700"
-                        >
-                          <a
-                            href="/cgi/4.mp4"
-                            data-fancybox="portfolio2"
-                            title="Client Name"
-                          >
-                            <Image
-                              alt="McCollins Media"
-                              src={"/cgi/4.jpg"}
-                              width="511"
-                              height="849"
-                              priority={true}
-                              style={{ cursor: "pointer" }}
-                              className=""
-                            />
-                            <div className="PlayBtn">&nbsp;</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div
-                          className="VideoPlaceHolder"
-                          data-aos="fade-up"
-                          data-aos-duration="700"
-                        >
-                          <a
-                            href="/cgi/5.mp4"
-                            data-fancybox="portfolio2"
-                            title="Client Name"
-                          >
-                            <Image
-                              alt="McCollins Media"
-                              src={"/cgi/5.jpg"}
-                              width="511"
-                              height="849"
-                              priority={true}
-                              style={{ cursor: "pointer" }}
-                              className=""
-                            />
-                            <div className="PlayBtn">&nbsp;</div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="text-center MarTp20">
-                    <a
-                  href="#footer"
-                  className="WrkT1"
-                  data-aos="fade-left"
-                  data-aos-duration="700"
-                >
-                  Let us bring your brand's vision to life through the magic of CGI
-                </a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </section>
 
           <section className="BookNowBox">
             <div className="container">
@@ -879,8 +917,11 @@ const FilmProduction = () => {
               <div className="PortFolioBlock">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="PrBlock" data-aos="fade-up"
-                      data-aos-duration="700">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -908,8 +949,11 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock" data-aos="fade-up"
-                      data-aos-duration="700">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -918,7 +962,7 @@ const FilmProduction = () => {
                       <div className="PrBlockContent">
                         <div>
                           <div className="PrT1">
-                            Professionalism &<br />
+                            Professionalism <br />&<br />
                             Reliability
                           </div>
                           <a
@@ -940,8 +984,11 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock" data-aos="fade-up"
-                      data-aos-duration="700">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -973,8 +1020,11 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock" data-aos="fade-up"
-                      data-aos-duration="700">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -1006,8 +1056,11 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock" data-aos="fade-up"
-                      data-aos-duration="700">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -1039,8 +1092,11 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="PrBlock" data-aos="fade-up"
-                      data-aos-duration="700">
+                    <div
+                      className="PrBlock"
+                      data-aos="fade-up"
+                      data-aos-duration="700"
+                    >
                       <img
                         className="ImageSwitcher"
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
@@ -1082,10 +1138,7 @@ const FilmProduction = () => {
                 {/* <div className="loop1  owl-carousel"> */}
                 <OwlCarousel options={options}>
                   <div className="item">
-                    <div
-                      className="PrBlock"
-                      
-                    >
+                    <div className="PrBlock">
                       <img
                         className=""
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg"
@@ -1101,10 +1154,7 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="item">
-                    <div
-                      className="PrBlock"
-                      
-                    >
+                    <div className="PrBlock">
                       <img
                         className=""
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg"
@@ -1120,10 +1170,7 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="item">
-                    <div
-                      className="PrBlock"
-                      
-                    >
+                    <div className="PrBlock">
                       <img
                         className=""
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg"
@@ -1139,10 +1186,7 @@ const FilmProduction = () => {
                     </div>
                   </div>
                   <div className="item">
-                    <div
-                      className="PrBlock"
-                      
-                    >
+                    <div className="PrBlock">
                       <img
                         className=""
                         src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg"
@@ -1496,7 +1540,7 @@ const FilmProduction = () => {
               <a href="#ourclients" data-go="ourclients" className="GoLink1">
                 Our Clients
               </a>
-              
+
               <a href="#ourworks" data-go="ourworks" className="GoLink1">
                 Portfolio
               </a>

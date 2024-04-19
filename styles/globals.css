@@ -2777,6 +2777,12 @@ a.WrkT1:hover{
   background-color: #efbf20;
   color: #fff !important;
 }
+.CgiLanding .serviceSection::before {
+  content: none;
+}
+.CgiLanding .serviceSection{
+  padding-top: 60px;
+}
 @media (max-width: 880px) { 
   .CgiVideos .container,
   .CgiVideos .container .row ,
@@ -2790,4 +2796,24 @@ a.WrkT1:hover{
   .MarTp20{
     margin-top: 10px;
   }
+  .CgiLanding .serviceSection.CstServ{
+    padding: 20px 0px;
+  }
+  .CgiLanding .serviceSection.CstServ .container{
+    padding: 0;
+  }
+  .CgiLanding .serviceSection.CstServ .container .T4,
+  .CgiLanding .serviceSection.CstServ .container .T5,
+    {
+    padding: 0px 15px;
+  }
+  .CgiLanding .serviceSection.CstServ .container .WrkT1 {
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .CgiLanding .filmBnr {
+    margin-top: 15px;
+  }
+  
 }
