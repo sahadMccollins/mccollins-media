@@ -2887,11 +2887,33 @@ margin-bottom: 10px;
 .Accordion.active .AccordionContent{
   display: block;
 }
+.ImageWrp1{
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.c555 .ImageWrp1{
+  margin-left: 0;
+}
+@media (min-width: 880px) {
+  .LpGridBoxWrp1 .c5555 {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 15px;
+  }
+  .LpGridBoxWrp1 .c555 {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 15px;
+  }
+}
 @media (max-width: 880px) { 
   .AccordionTitle{
     max-width: 100%;
-    font-size: 20px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .AccordionContent{
 max-width: 100%;
@@ -2899,12 +2921,12 @@ max-width: 100%;
 padding: 15px;
   }
   .AccordionContent ul{
-    font-size: 18px;
+    font-size: 16px;
   }
   .AccordionTitle::before ,
   .Accordion.active .AccordionTitle::after{
-    width: 22px;
-    height: 22px;
-    margin-top: -12px;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
   }
 }

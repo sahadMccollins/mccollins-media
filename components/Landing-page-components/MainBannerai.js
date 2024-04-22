@@ -216,17 +216,7 @@ const MainBanner1ai = () => {
     <div className="VideoBanner">
       <div className="image-background">&nbsp;</div>
       <div className="video-background">
-        <video
-          playsInline
-          autoPlay
-          loop
-          muted
-          width="100%"
-          className="LpMainVideo"
-          poster="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
-        >
-          <source src="/bg.mp4" type="video/mp4" />
-        </video>
+        <Image src={"/cgi/ar.jpg"} height={"1145"} width={"1920"} />
       </div>
       <div className="image-title" id="contactus">
         <div className="widthFull">
