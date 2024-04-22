@@ -2842,8 +2842,8 @@ a.WrkT1:hover{
 }
 .AccordionTitle::before{
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   background-size: 100% 100%;
   background-image: url(../public/cgi/plus.png);
   position: absolute;
@@ -2874,6 +2874,8 @@ a.WrkT1:hover{
   border: 1px solid #000;
   border-top: 0px solid #fff;
   margin: 0 auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .AccordionContent ul{
   list-style: none;

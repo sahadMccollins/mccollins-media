@@ -44,12 +44,51 @@ const CustomTab1 = (props) => {
           </div>
           <div
             className={`Accordion ${
-              activeAccordion === "Generative AI" ? "active" : ""
+              activeAccordion === "GenerativeAI" ? "active" : ""
             }`}
           >
             <div
               className="AccordionTitle"
-              onClick={() => handleAccordionClick("Generative AI")}
+              onClick={() => handleAccordionClick("GenerativeAI")}
+            >
+              Generative AI
+            </div>
+            <div className="AccordionContent">
+              <ul>
+                <li>AI Chatbot</li>
+                <li>AI Photobooth</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className={`Accordion ${
+              activeAccordion === "AR/VR/Metaverse1" ? "active" : ""
+            }`}
+          >
+            <div
+              className="AccordionTitle"
+              onClick={() => handleAccordionClick("AR/VR/Metaverse1")}
+            >
+              AR/VR/Metaverse
+            </div>
+            <div className="AccordionContent">
+              <ul>
+                <li>Augmented Reality</li>
+                <li>Virtual Reality</li>
+                <li>Metaverse</li>
+                <li>AR Glasses</li>
+                <li>Extended Reality</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className={`Accordion ${
+              activeAccordion === "GenerativeAI1" ? "active" : ""
+            }`}
+          >
+            <div
+              className="AccordionTitle"
+              onClick={() => handleAccordionClick("GenerativeAI1")}
             >
               Generative AI
             </div>
