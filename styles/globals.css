@@ -2838,6 +2838,7 @@ a.WrkT1:hover{
   position: relative;
   padding-left: 55px;
   padding-right: 55px;
+  border-radius: 5px;
 }
 .AccordionTitle::before{
   content: "";
@@ -2865,6 +2866,7 @@ a.WrkT1:hover{
   margin-top: -12px;
 }
 .AccordionContent{
+  border-radius: 5px;
   padding: 10px 55px;
   background-color: #fff;
   display: none;
@@ -2882,4 +2884,25 @@ margin-bottom: 10px;
 }
 .Accordion.active .AccordionContent{
   display: block;
+}
+
+@media (max-width: 880px) { 
+  .AccordionTitle{
+    max-width: 100%;
+    font-size: 20px;
+  }
+  .AccordionContent{
+max-width: 100%;
+
+padding: 15px;
+  }
+  .AccordionContent ul{
+    font-size: 18px;
+  }
+  .AccordionTitle::before ,
+  .Accordion.active .AccordionTitle::after{
+    width: 22px;
+    height: 22px;
+    margin-top: -12px;
+  }
 }
