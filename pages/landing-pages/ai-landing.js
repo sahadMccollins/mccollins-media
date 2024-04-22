@@ -73,7 +73,7 @@ const LandingPage1 = () => {
       <MainBanner1ai />
       <ClientPortFolio />
       <CustomTab1/>
-      <TrustedLogos />
+      {/* <TrustedLogos /> */}
       <LpGrid1 />
       <FooterNav phone={true} />
     </Box>
