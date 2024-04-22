@@ -1,22 +1,37 @@
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
+
 const CustomTab1 = (props) => {
+  const [activeAccordion, setActiveAccordion] = useState("AR/VR/Metaverse");
+
+  const handleAccordionClick = (accordionTitle) => {
+    setActiveAccordion(accordionTitle);
+  };
+
   return (
     <div className="CustomTab1 pd-common">
       <div className="icontainer">
-        <div class="HdSt2">
-          <div class="HdSt2T1">Our Services</div>
-          <div class="HdSt2T2">
+        <div className="HdSt2">
+          <div className="HdSt2T1">Our Services</div>
+          <div className="HdSt2T2">
             Transforming digital experiences with immersive technology, stunning
             visuals, and innovation.
           </div>
-          <div class="HdSt2T3">
+          <div className="HdSt2T3">
             <span>&nbsp;</span>
           </div>
         </div>
         <div className="AccordBoxTp1">
-          <div className="Accordion active">
-            <div className="AccordionTitle">AR/VR/Metaverse</div>
+          <div
+            className={`Accordion ${
+              activeAccordion === "AR/VR/Metaverse" ? "active" : ""
+            }`}
+          >
+            <div
+              className="AccordionTitle"
+              onClick={() => handleAccordionClick("AR/VR/Metaverse")}
+            >
+              AR/VR/Metaverse
+            </div>
             <div className="AccordionContent">
               <ul>
                 <li>Augmented Reality</li>
@@ -27,8 +42,17 @@ const CustomTab1 = (props) => {
               </ul>
             </div>
           </div>
-          <div className="Accordion">
-            <div className="AccordionTitle">Generative AI</div>
+          <div
+            className={`Accordion ${
+              activeAccordion === "Generative AI" ? "active" : ""
+            }`}
+          >
+            <div
+              className="AccordionTitle"
+              onClick={() => handleAccordionClick("Generative AI")}
+            >
+              Generative AI
+            </div>
             <div className="AccordionContent">
               <ul>
                 <li>AI Chatbot</li>
@@ -41,4 +65,5 @@ const CustomTab1 = (props) => {
     </div>
   );
 };
+
 export default CustomTab1;
