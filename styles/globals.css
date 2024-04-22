@@ -2820,3 +2820,66 @@ a.WrkT1:hover{
   }
   
 }
+
+.CustomTab1{
+  background-color: #efefef;
+}
+.Accordion{
+  margin-top: 15px;
+}
+.AccordionTitle{
+  padding: 15px;
+  font-size: 25px;
+  border: 1px solid #000;
+  max-width: 60%;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.AccordionTitle::before{
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+  background-image: url(../public/cgi/plus.png);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -12px;
+}
+.Accordion.active .AccordionTitle::before{
+  background-image: url(../public/cgi/minus.png);
+}
+.Accordion.active .AccordionTitle::after{
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+  background-image: url(../public/cgi/forward.png);
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -12px;
+}
+.AccordionContent{
+  padding: 10px 55px;
+  background-color: #fff;
+  display: none;
+  max-width: 60%;
+  border: 1px solid #000;
+  border-top: 0px solid #fff;
+  margin: 0 auto;
+}
+.AccordionContent ul{
+  list-style: none;
+  font-size: 22px;
+}
+.AccordionContent ul li{
+margin-bottom: 10px;
+}
+.Accordion.active .AccordionContent{
+  display: block;
+}

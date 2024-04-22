@@ -5,6 +5,7 @@ import TrustedLogos from "../../components/Landing-page-components/TrustLogos";
 import LpGrid from "../../components/Landing-page-components/lpGrid";
 import FooterNav from "../../components/Landing-page-components/FooterNav";
 import Head from "next/head";
+import CustomTab1 from "../../components/Landing-page-components/CustomTab1";
 import { Box } from "@chakra-ui/react";
 const LandingPage1 = () => {
   useEffect(() => {
@@ -71,7 +72,7 @@ const LandingPage1 = () => {
       </Head>
       <MainBanner1ai />
       <ClientPortFolio />
-
+      <CustomTab1/>
       <TrustedLogos />
       <LpGrid />
       <FooterNav phone={true} />
