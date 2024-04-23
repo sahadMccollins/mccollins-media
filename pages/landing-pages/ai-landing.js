@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import MainBanner1ai from "../../components/Landing-page-components/MainBannerai";
 import ClientPortFolio from "../../components/Landing-page-components/ClientPortfolio";
 import TrustedLogos from "../../components/Landing-page-components/TrustLogos";
-import LpGrid from "../../components/Landing-page-components/lpGrid";
+import LpGrid1 from "../../components/Landing-page-components/lpGrid1";
 import FooterNav from "../../components/Landing-page-components/FooterNav";
 import Head from "next/head";
 import CustomTab1 from "../../components/Landing-page-components/CustomTab1";
@@ -73,8 +73,8 @@ const LandingPage1 = () => {
       <MainBanner1ai />
       <ClientPortFolio />
       <CustomTab1/>
-      <TrustedLogos />
-      <LpGrid />
+      {/* <TrustedLogos /> */}
+      <LpGrid1 />
       <FooterNav phone={true} />
     </Box>
   );
