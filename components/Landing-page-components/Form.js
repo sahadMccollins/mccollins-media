@@ -88,7 +88,7 @@ const Form = () => {
           formData.append("full Url", router.asPath);
 
           fetch(
-            "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+            "https://script.google.com/macros/s/AKfycbwLCdI7e-WW9OvfSvThvVDIM8ftASYXf2ZtMz2WQhT14xOhKXmv5VGc1tAzr-pqc7NSCg/exec",
             {
               method: "POST",
               body: formData,

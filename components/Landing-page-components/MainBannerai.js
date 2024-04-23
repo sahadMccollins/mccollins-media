@@ -39,12 +39,7 @@ const MainBanner1ai = () => {
 
   const router = useRouter();
 
-  const phrases = [
-    "AI AR & VR",
-    "AI AR & VR",
-    "AI AR & VR",
-    "AI AR & VR",
-  ];
+  const phrases = ["AI AR & VR", "AI AR & VR", "AI AR & VR", "AI AR & VR"];
 
   const randomNum = (num, max) => {
     let j = Math.floor(Math.random() * max);
@@ -142,7 +137,7 @@ const MainBanner1ai = () => {
           formData.append("full Url", router.asPath);
 
           fetch(
-            "https://script.google.com/macros/s/AKfycbws5l_t6j39UZQ_unevk0qqn_IfYCbfKT7jI4UP6zb8mjX8QzNR/exec",
+            "https://script.google.com/macros/s/AKfycbwLCdI7e-WW9OvfSvThvVDIM8ftASYXf2ZtMz2WQhT14xOhKXmv5VGc1tAzr-pqc7NSCg/exec",
             {
               method: "POST",
               body: formData,
@@ -234,7 +229,7 @@ const MainBanner1ai = () => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                Our{" "}
+                  Our{" "}
                   <span
                     id="Transform"
                     className=" TransfomText random-word"
@@ -244,10 +239,13 @@ const MainBanner1ai = () => {
                   </span>{" "}
                   Services
                   <br />
-                   are revolutionizing the real estate sector
+                  are revolutionizing the real estate sector
                 </div>
                 <div className="T2">
-                Offering cutting-edge solutions to enhance your property experience . From virtual property tours to AI-powered data analysis, we are here to elevate your business to new heights. Explore the possibilities with us today
+                  Offering cutting-edge solutions to enhance your property
+                  experience . From virtual property tours to AI-powered data
+                  analysis, we are here to elevate your business to new heights.
+                  Explore the possibilities with us today
                 </div>
                 {/* <div className="PartnerBoxWrap">
                   <div className="PartnerBox">
