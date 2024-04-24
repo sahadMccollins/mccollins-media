@@ -134,7 +134,7 @@ const Navbar = (props) => {
     formData.append("Message", project);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbwLCdI7e-WW9OvfSvThvVDIM8ftASYXf2ZtMz2WQhT14xOhKXmv5VGc1tAzr-pqc7NSCg/exec",
+      "https://script.google.com/macros/s/AKfycbzOFap7qdSzq18NRJxwNBdYdfyK3rpMRmIL7XFhxm68edSSyc4Cv9m3saiNq4HTiTfx/exec",
       {
         method: "POST",
         body: formData,
