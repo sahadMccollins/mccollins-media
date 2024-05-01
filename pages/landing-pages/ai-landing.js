@@ -71,10 +71,10 @@ const LandingPage1 = () => {
         />
       </Head>
       <MainBanner1ai />
-      <ClientPortFolio />
       <CustomTab1/>
-      {/* <TrustedLogos /> */}
-      <LpGrid1 />
+      <ClientPortFolio />
+      
+     
       <FooterNav phone={true} />
     </Box>
   );

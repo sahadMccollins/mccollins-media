@@ -211,7 +211,7 @@ const MainBanner1ai = () => {
     <div className="VideoBanner">
       <div className="image-background">&nbsp;</div>
       <div className="video-background">
-        <Image src={"/cgi/ar.jpg"} height={"1145"} width={"1920"} />
+        <Image src={"/cgi/ar1.jpg"} height={"1145"} width={"1920"} />
       </div>
       <div className="image-title" id="contactus">
         <div className="widthFull">
