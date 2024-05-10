@@ -15,8 +15,9 @@ import Testimonials from "../components/Testimonials";
 import clientPromise from "../lib/mongodb";
 import Head from "next/head";
 import ReactHtmlParser from "react-html-parser";
-
+import { useRouter } from "next/router";
 const Contact = ({ metaTags }) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -109,7 +110,7 @@ const Contact = ({ metaTags }) => {
               <FadeUp>
                 <Heading fontSize={"5xl"}>
                   We would love to hear about
-                  <br /> your new project?. Begin a conversation.
+                  <br /> your new project.Begin a conversation.
                 </Heading>
               </FadeUp>
               <FadeUp>
@@ -117,12 +118,13 @@ const Contact = ({ metaTags }) => {
                   my={5}
                   bg="#fff"
                   borderRadius={"20px"}
-                  onClick={() => {
-                    const section = document.getElementById("formSec");
-                    section.scrollIntoView({ behavior: "smooth" });
-                  }}
+                  onClick={() => router.push("https://calendar.app.google/iWNfP7kRzxTQM5VV7")}
+                  // onClick={() => {
+                  //   const section = document.getElementById("formSec");
+                  //   section.scrollIntoView({ behavior: "smooth" });
+                  // }}
                 >
-                  Start New Project
+                 Schedule an appointment
                 </Button>
               </FadeUp>
             </Container>
