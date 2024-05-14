@@ -61,7 +61,7 @@ import {
                       background={"#FFDE11"}
                       borderRadius="20px"
                       color="#000"
-                      onClick={() => router.push("https://calendar.app.google/iWNfP7kRzxTQM5VV7")}
+                      onClick={() => router.push("https://calendly.com/manjeet-0rp5/30min")}
                     >
                       
                       &nbsp;&nbsp;Schedule an appointment

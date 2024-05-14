@@ -118,7 +118,7 @@ const Contact = ({ metaTags }) => {
                   my={5}
                   bg="#fff"
                   borderRadius={"20px"}
-                  onClick={() => router.push("https://calendar.app.google/iWNfP7kRzxTQM5VV7")}
+                  onClick={() => router.push("https://calendly.com/manjeet-0rp5/30min")}
                   // onClick={() => {
                   //   const section = document.getElementById("formSec");
                   //   section.scrollIntoView({ behavior: "smooth" });
