@@ -61,12 +61,14 @@ import {
                       background={"#FFDE11"}
                       borderRadius="20px"
                       color="#000"
-                      onClick={() => router.push("/")}
+                      onClick={() => router.push("https://calendly.com/manjeet-0rp5/30min")}
                     >
                       
-                      &nbsp;&nbsp;Go to Home
+                      &nbsp;&nbsp;Schedule an appointment
                     </Button>
+
                   )}
+                  {router.pathname !== "/Thank-you-for-contacting-us" && (
                   <Button
                     colorScheme="whiteAlpha"
                     onClick={() => setOpen(true)}
@@ -82,6 +84,17 @@ import {
                     />
                     &nbsp;&nbsp;watch now
                   </Button>
+                   )}
+                   {router.pathname == "/Thank-you-for-contacting-us" && (
+                  <Button
+                    colorScheme="whiteAlpha"
+                    onClick={() => router.push("/")}
+                    borderRadius="20px"
+                    color="#fff"
+                  >
+                    &nbsp;&nbsp;Go to home
+                  </Button>
+                   )}
                 </ButtonGroup>
               </FadeUp>
             </Box>
