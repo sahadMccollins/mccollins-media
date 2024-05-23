@@ -141,6 +141,7 @@ const Navbar = (props) => {
       }
     )
       .then((response) => response.json())
+      .then((data) => router.push("/Thank-you-for-contacting-us"))
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
 
