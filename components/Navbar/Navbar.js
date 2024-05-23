@@ -115,13 +115,14 @@ const Navbar = (props) => {
       setCompany(""),
       setProject(""),
       setLoading(false),
-      toast({
-        title: "Form Submited",
-        description: "Thank you for getting in touch!",
-        status: "success",
-        duration: 9000,
-        isClosable: true,
-      }),
+      // toast({
+      //   title: "Form Submited",
+      //   description: "Thank you for getting in touch!",
+      //   status: "success",
+      //   duration: 9000,
+      //   isClosable: true,
+      // }),
+      router.push("/Thank-you-for-contacting-us"),
       onClose2()
     );
 
@@ -141,7 +142,6 @@ const Navbar = (props) => {
       }
     )
       .then((response) => response.json())
-      .then((data) => router.push("/Thank-you-for-contacting-us"))
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
 
