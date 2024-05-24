@@ -18,6 +18,7 @@ import FadeUp from "./Motion/FadeUp";
 const axios = require("axios");
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
+import { useRouter } from "next/router";
 
 const FormBox = (props) => {
   const [FirstName, setFirstName] = useState("");
@@ -37,6 +38,8 @@ const FormBox = (props) => {
 
   const [hiddenInputValue, setHiddenInputValue] = useState("");
   const hiddenInputRef = useRef();
+
+  const router = useRouter();
 
   useEffect(() => {
     // Initialize the hidden input value when the component mounts
@@ -126,6 +129,7 @@ const FormBox = (props) => {
       )
         .then((response) => response.json())
         .then((data) => console.log(data))
+        .then((data) => router.push("/Thank-you-for-contacting-us"))
         .catch((error) => console.error(error));
 
       const refreshUrl =
