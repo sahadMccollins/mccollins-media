@@ -69,6 +69,9 @@ const VideoBanner = (props) => {
                 <Heading className="main-h2" color="#FFDE11">
                   our services
                 </Heading>
+                <h1 className="SEOTag">{props.heading.split("\n").map((str) => (
+                    <div key={str}>{str}</div>
+                  ))}</h1>
                 <Heading className="bnrBigHd" color="#fff" fontWeight="black">
                   {props.heading.split("\n").map((str) => (
                     <div key={str}>{str}</div>

@@ -84,6 +84,9 @@ const TechnologyMarketing = ({ metaTags }) => {
                 <Heading className="main-h3">
                   WITHIN THE TECHNOLOGY SECTOR
                 </Heading>
+                <h1 className="SEOTag">Technology
+Marketing
+Services</h1>
               </Box>
               <Text mt={10}>
                 The world today revolves around technology. From a simple task

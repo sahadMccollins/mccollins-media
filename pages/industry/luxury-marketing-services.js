@@ -82,6 +82,7 @@ const luxuryMarketing = ({ metaTags }) => {
                   </Heading>
                 </Flex>
                 <Heading className="main-h3">Marketing Plan</Heading>
+                <h1 className="SEOTag">Get a best luxury marketing plan</h1>
               </Box>
               <Text mt={10}>
                 There’s a reason why luxury brands don’t advertise like the

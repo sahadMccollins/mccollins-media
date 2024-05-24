@@ -83,6 +83,7 @@ const HealthCareMarketing = ({ metaTags }) => {
                 </Flex>
 
                 <Heading className="main-h3">Marketing Plan</Heading>
+                <h1 className="SEOTag">Get a best health care marketing plan</h1>
               </Box>
               <Text mt={10}>
                 Be it for a hospital, medicine suppliers, or even their

@@ -64,6 +64,7 @@ const foodAndBeverageMarketing = ({ metaTags }) => {
             <Heading className="bnrBigHd" color="#000" fontWeight="black">
               food & <br /> beverage <br /> marketing
             </Heading>
+            <h1 className="SEOTag"> food &  beverage  marketing</h1>
             <Button
               colorScheme="yellow"
               background={"#FFDE11"}

@@ -57,6 +57,7 @@ const CorporateMarketing = ({ metaTags }) => {
             <Box width={{ base: "100%", md: "60%" }} p={10}>
               <Box>
                 <Flex direction={{ base: "column", lg: "row" }}>
+                <h1 className="SEOTag"> #1 CORPORATE MARKETING</h1>
                   <Heading
                     style={{
                       background:
