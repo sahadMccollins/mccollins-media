@@ -58,30 +58,31 @@ const luxuryMarketing = ({ metaTags }) => {
               <Box>
                 <Flex direction={{ base: "column", lg: "row" }}>
                   <Heading
-                    style={{
-                      background:
-                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                      width: "fit-content",
-                      padding: "0 5px",
-                    }}
+                    // style={{
+                    //   background:
+                    //     "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                    //   width: "fit-content",
+                    //   padding: "0 5px",
+                    // }}
                     className="main-h3"
                   >
                     Get a Best-
                   </Heading>
 
                   <Heading
-                    style={{
-                      background:
-                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                      width: "fit-content",
-                      padding: "0 5px",
-                    }}
+                    // style={{
+                    //   background:
+                    //     "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                    //   width: "fit-content",
+                    //   padding: "0 5px",
+                    // }}
                     className="main-h3"
                   >
                     Luxury
                   </Heading>
                 </Flex>
                 <Heading className="main-h3">Marketing Plan</Heading>
+                <h1 className="SEOTag">Get a best luxury marketing plan</h1>
               </Box>
               <Text mt={10}>
                 There’s a reason why luxury brands don’t advertise like the

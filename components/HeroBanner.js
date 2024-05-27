@@ -50,7 +50,7 @@ const HeroBanner = (props) => {
                 ""
               )}
 
-              <Heading className="bannerH2">{props.h2}</Heading>
+              <h1 className="bannerH2 chakra-heading">{props.h2}</h1>
               {props.content ? <Text mt={"15px"}>{props.content}</Text> : ""}
             </FadeUp>
             <FadeUp>

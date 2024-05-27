@@ -64,6 +64,7 @@ const foodAndBeverageMarketing = ({ metaTags }) => {
             <Heading className="bnrBigHd" color="#000" fontWeight="black">
               food & <br /> beverage <br /> marketing
             </Heading>
+            <h1 className="SEOTag"> food &  beverage  marketing</h1>
             <Button
               colorScheme="yellow"
               background={"#FFDE11"}
@@ -126,23 +127,23 @@ const foodAndBeverageMarketing = ({ metaTags }) => {
                 <Heading className="main-h3">ONE OF THE MOST </Heading>
                 <Flex direction={{ base: "column", lg: "row" }}>
                   <Heading
-                    style={{
-                      background:
-                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                      width: "fit-content",
-                      padding: "0 5px",
-                    }}
+                    // style={{
+                    //   background:
+                    //     "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                    //   width: "fit-content",
+                    //   padding: "0 5px",
+                    // }}
                     className="main-h3"
                   >
                     FAMOUS AND
                   </Heading>
                   <Heading
-                    style={{
-                      background:
-                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                      width: "fit-content",
-                      padding: "0 5px",
-                    }}
+                    // style={{
+                    //   background:
+                    //     "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                    //   width: "fit-content",
+                    //   padding: "0 5px",
+                    // }}
                     className="main-h3"
                   >
                     IN-DEMAND
