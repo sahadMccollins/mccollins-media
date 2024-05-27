@@ -6,6 +6,7 @@ import { useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
+import TagManager from "react-gtm-module";
 
 const MainBanner1 = () => {
   const [phrase, setPhrase] = useState("");
@@ -205,6 +206,14 @@ const MainBanner1 = () => {
               setLookingFor("")
             )
             .then((data) => router.push("/Thank-you-for-contacting-us"))
+            .then((data) => {
+              TagManager.dataLayer({
+                dataLayer: {
+                  event: "conversion",
+                  send_to: "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
+                },
+              });
+            })
             .catch((error) => console.error(error));
 
           const data = {

@@ -38,6 +38,7 @@ import { useRouter } from "next/router";
 import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import NavItem from "../Navbar/NavItem";
 import axios from "axios";
+import TagManager from "react-gtm-module";
 
 const Navbar = (props) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
@@ -142,6 +143,14 @@ const Navbar = (props) => {
       }
     )
       .then((response) => response.json())
+      .then((data) => {
+        TagManager.dataLayer({
+          dataLayer: {
+            event: "conversion",
+            send_to: "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
+          },
+        });
+      })
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
 
