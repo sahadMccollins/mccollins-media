@@ -58,27 +58,27 @@ const TechnologyMarketing = ({ metaTags }) => {
               <Box>
                 <Flex direction={{ base: "column", lg: "row" }}>
                   <Heading
-                    style={{
-                      background:
-                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                      width: "fit-content",
-                      padding: "0 5px",
-                    }}
+                    // style={{
+                    //   background:
+                    //     "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                    //   width: "fit-content",
+                    //   padding: "0 5px",
+                    // }}
                     className="main-h3"
                   >
                     MARKETING
                   </Heading>
                   <Heading
-                    style={{
-                      background:
-                        "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                      width: "fit-content",
-                      padding: "0 5px",
-                    }}
+                    // style={{
+                    //   background:
+                    //     "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
+                    //   width: "fit-content",
+                    //   padding: "0 5px",
+                    // }}
                     fontSize={{ base: "3xl", md: "4xl" }}
                     className="main-h3"
                   >
-                    EXPERTS
+                    &nbsp;EXPERTS
                   </Heading>
                 </Flex>
                 <Heading className="main-h3">

@@ -74,7 +74,7 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
                   }}
                 ></span>
                 <Heading className="main-h3">
-                  brand identity development
+                  Brand Identity Development
                 </Heading>
               </Box>
               <Text>
@@ -91,7 +91,7 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
                   }}
                 ></span>
                 <Heading fontSize={{ base: "2xl", md: "3xl" }}>
-                  design projects
+                  Design Projects
                 </Heading>
               </Box>
               <Text>
