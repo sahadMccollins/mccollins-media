@@ -19,6 +19,7 @@ const axios = require("axios");
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import { useRouter } from "next/router";
+import TagManager from "react-gtm-module";
 
 const FormBox = (props) => {
   const [FirstName, setFirstName] = useState("");
@@ -128,7 +129,14 @@ const FormBox = (props) => {
         }
       )
         .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((data) => {
+          TagManager.dataLayer({
+            dataLayer: {
+              event: "conversion",
+              send_to: "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
+            },
+          });
+        })
         .then((data) => router.push("/Thank-you-for-contacting-us"))
         .catch((error) => console.error(error));
 
