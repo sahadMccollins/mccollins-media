@@ -928,12 +928,15 @@ const Navbar = (props) => {
       </Drawer>
       <Modal isOpen={isOpen2} onClose={onClose2}>
         <ModalOverlay />
-        <ModalContent maxWidth={{ base: "90%", md: "60%" }}>
+        <ModalContent maxWidth={{ base: "90%", md: "60%" }}  className="bgmodal">
           <ModalHeader className="main-h3">Lets talk</ModalHeader>
           <ModalCloseButton />
 
           <form onSubmit={formHandler}>
             <ModalBody>
+             
+              <div className="mrow">
+              <div className="m-col-md-4">
               <FormControl isRequired>
                 <FormLabel htmlFor="first-name">Name</FormLabel>
                 <Input
@@ -943,7 +946,9 @@ const Navbar = (props) => {
                   borderRadius={"50px"}
                 />
               </FormControl>
-              <FormControl isRequired mt={5}>
+              </div>
+                <div className="m-col-md-4">
+                <FormControl isRequired>
                 <FormLabel htmlFor="contact">Contact No</FormLabel>
                 <NumberInput max={50} min={10} value={contact}>
                   <NumberInputField
@@ -953,7 +958,9 @@ const Navbar = (props) => {
                   />
                 </NumberInput>
               </FormControl>
-              <FormControl isRequired mt={5}>
+                  </div>
+                  <div className="m-col-md-4">
+                  <FormControl isRequired >
                 <FormLabel htmlFor="email">Email</FormLabel>
                 <Input
                   id="email"
@@ -963,7 +970,9 @@ const Navbar = (props) => {
                   borderRadius={"50px"}
                 />
               </FormControl>
-              <FormControl isRequired mt={5}>
+                  </div>
+                  <div className="m-col-md-4">
+                  <FormControl isRequired>
                 <FormLabel htmlFor="company">Company</FormLabel>
                 <Input
                   id="company"
@@ -972,7 +981,9 @@ const Navbar = (props) => {
                   borderRadius={"50px"}
                 />
               </FormControl>
-              <FormControl isRequired mt={5}>
+                  </div>
+                  <div className="m-col-md-4">
+                  <FormControl isRequired >
                 <FormLabel htmlFor="looking-for">Looking For?</FormLabel>
                 <Input
                   id="looking-for"
@@ -981,7 +992,9 @@ const Navbar = (props) => {
                   borderRadius={"50px"}
                 />
               </FormControl>
-              <FormControl isRequired mt={5}>
+                  </div>
+                  <div className="m-col-md-4">
+                  <FormControl isRequired >
                 <FormLabel htmlFor="project">Project Details</FormLabel>
                 <Input
                   id="project"
@@ -990,7 +1003,9 @@ const Navbar = (props) => {
                   borderRadius={"50px"}
                 />
               </FormControl>
-              <input
+                </div>
+                <div className="m-col-md-4">
+                <input
                 type="hidden"
                 id="zc_gad"
                 name="zc_gad"
@@ -998,6 +1013,14 @@ const Navbar = (props) => {
                 ref={hiddenInputRef}
                 onChange={handleHiddenInputChange}
               />
+                </div>
+              </div>
+             
+              
+              
+              
+             
+              
             </ModalBody>
 
             <ModalFooter>
