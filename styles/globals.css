@@ -2981,3 +2981,36 @@ font-size: 20px;
 .SEOTag{
   display: none !important;
 }
+
+.mrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.m-col-md-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+.bgmodal{
+  background-color: #e4e4e4 !important;
+}
+.bgmodal input{
+  background: #fff !important;
+}
+@media (max-width: 768px) {
+  .m-col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+}
