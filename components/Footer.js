@@ -200,7 +200,7 @@ const Footer = () => {
       formData.append("Message", project);
 
       fetch(
-        "https://script.google.com/macros/s/AKfycbzOFap7qdSzq18NRJxwNBdYdfyK3rpMRmIL7XFhxm68edSSyc4Cv9m3saiNq4HTiTfx/exec",
+        "https://script.google.com/macros/s/AKfycbwDMfIDgsF8Y4nEOSm66uX1bIBlVXQ7nPtcotwoxfx2ECnC1hTlT3DQKtrjolvc-RCcJg/exec",
         {
           method: "POST",
           body: formData,
