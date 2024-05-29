@@ -165,6 +165,14 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
     });
   }, []);
 
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: "AW-10803441186",
+    };
+    // GTM initialization
+    TagManager.initialize(tagManagerArgs);
+  }, []);
+
   return (
     <>
       <Head>
