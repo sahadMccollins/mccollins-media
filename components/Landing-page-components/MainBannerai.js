@@ -138,7 +138,7 @@ const MainBanner1ai = () => {
           formData.append("full Url", router.asPath);
 
           fetch(
-            "https://script.google.com/macros/s/AKfycbzOFap7qdSzq18NRJxwNBdYdfyK3rpMRmIL7XFhxm68edSSyc4Cv9m3saiNq4HTiTfx/exec",
+            "https://script.google.com/macros/s/AKfycbxmDwaT4Le95NuEGMeviV3p_ofzhwfqW6w7TDLttjg0N2n0NdkRNHiPYBVt20eI4VgVKg/exec",
             {
               method: "POST",
               body: formData,

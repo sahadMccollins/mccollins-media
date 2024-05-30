@@ -136,7 +136,7 @@ const Navbar = (props) => {
     formData.append("Message", project);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbzOFap7qdSzq18NRJxwNBdYdfyK3rpMRmIL7XFhxm68edSSyc4Cv9m3saiNq4HTiTfx/exec",
+      "https://script.google.com/macros/s/AKfycbxmDwaT4Le95NuEGMeviV3p_ofzhwfqW6w7TDLttjg0N2n0NdkRNHiPYBVt20eI4VgVKg/exec",
       {
         method: "POST",
         body: formData,
@@ -928,99 +928,92 @@ const Navbar = (props) => {
       </Drawer>
       <Modal isOpen={isOpen2} onClose={onClose2}>
         <ModalOverlay />
-        <ModalContent maxWidth={{ base: "90%", md: "60%" }}  className="bgmodal">
+        <ModalContent maxWidth={{ base: "90%", md: "60%" }} className="bgmodal">
           <ModalHeader className="main-h3">Lets talk</ModalHeader>
           <ModalCloseButton />
 
           <form onSubmit={formHandler}>
             <ModalBody>
-             
               <div className="mrow">
-              <div className="m-col-md-4">
-              <FormControl isRequired>
-                <FormLabel htmlFor="first-name">Name</FormLabel>
-                <Input
-                  id="first-name"
-                  onChange={(e) => setName(e.target.value)}
-                  value={name}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-              </div>
                 <div className="m-col-md-4">
-                <FormControl isRequired>
-                <FormLabel htmlFor="contact">Contact No</FormLabel>
-                <NumberInput max={50} min={10} value={contact}>
-                  <NumberInputField
-                    id="contact"
-                    onChange={(e) => setContact(e.target.value)}
-                    borderRadius={"50px"}
-                  />
-                </NumberInput>
-              </FormControl>
-                  </div>
-                  <div className="m-col-md-4">
-                  <FormControl isRequired >
-                <FormLabel htmlFor="email">Email</FormLabel>
-                <Input
-                  id="email"
-                  type="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-                  </div>
-                  <div className="m-col-md-4">
                   <FormControl isRequired>
-                <FormLabel htmlFor="company">Company</FormLabel>
-                <Input
-                  id="company"
-                  onChange={(e) => setCompany(e.target.value)}
-                  value={company}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-                  </div>
-                  <div className="m-col-md-4">
-                  <FormControl isRequired >
-                <FormLabel htmlFor="looking-for">Looking For?</FormLabel>
-                <Input
-                  id="looking-for"
-                  onChange={(e) => setLookingFor(e.target.value)}
-                  value={lookingFor}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-                  </div>
-                  <div className="m-col-md-4">
-                  <FormControl isRequired >
-                <FormLabel htmlFor="project">Project Details</FormLabel>
-                <Input
-                  id="project"
-                  onChange={(e) => setProject(e.target.value)}
-                  value={project}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
+                    <FormLabel htmlFor="first-name">Name</FormLabel>
+                    <Input
+                      id="first-name"
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
+                      borderRadius={"50px"}
+                    />
+                  </FormControl>
                 </div>
                 <div className="m-col-md-4">
-                <input
-                type="hidden"
-                id="zc_gad"
-                name="zc_gad"
-                defaultValue={hiddenInputValue}
-                ref={hiddenInputRef}
-                onChange={handleHiddenInputChange}
-              />
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="contact">Contact No</FormLabel>
+                    <NumberInput max={50} min={10} value={contact}>
+                      <NumberInputField
+                        id="contact"
+                        onChange={(e) => setContact(e.target.value)}
+                        borderRadius={"50px"}
+                      />
+                    </NumberInput>
+                  </FormControl>
+                </div>
+                <div className="m-col-md-4">
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="email">Email</FormLabel>
+                    <Input
+                      id="email"
+                      type="email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                      borderRadius={"50px"}
+                    />
+                  </FormControl>
+                </div>
+                <div className="m-col-md-4">
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="company">Company</FormLabel>
+                    <Input
+                      id="company"
+                      onChange={(e) => setCompany(e.target.value)}
+                      value={company}
+                      borderRadius={"50px"}
+                    />
+                  </FormControl>
+                </div>
+                <div className="m-col-md-4">
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="looking-for">Looking For?</FormLabel>
+                    <Input
+                      id="looking-for"
+                      onChange={(e) => setLookingFor(e.target.value)}
+                      value={lookingFor}
+                      borderRadius={"50px"}
+                    />
+                  </FormControl>
+                </div>
+                <div className="m-col-md-4">
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="project">Project Details</FormLabel>
+                    <Input
+                      id="project"
+                      onChange={(e) => setProject(e.target.value)}
+                      value={project}
+                      borderRadius={"50px"}
+                    />
+                  </FormControl>
+                </div>
+                <div className="m-col-md-4">
+                  <input
+                    type="hidden"
+                    id="zc_gad"
+                    name="zc_gad"
+                    defaultValue={hiddenInputValue}
+                    ref={hiddenInputRef}
+                    onChange={handleHiddenInputChange}
+                  />
                 </div>
               </div>
-             
-              
-              
-              
-             
-              
             </ModalBody>
 
             <ModalFooter>
