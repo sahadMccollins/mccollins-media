@@ -26,11 +26,11 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     <a className="OfferItemBox color1" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
-                                <span className="w w1">&nbsp;</span>
+                                <span className="w w5">&nbsp;</span>
                             </span>
                         </div>
-                        <div className="OfT2">Social Media Management</div>
-                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
+                        <div className="OfT2">Digital Strategy Development </div>
+                        <div className="OfT3">Unlock your business potential with our cutting-edge digital strategy development. Drive growth, enhance engagement, and achieve your goals effortlessly.</div>
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -38,11 +38,11 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     <a className="OfferItemBox color2" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
-                                <span className="w w2">&nbsp;</span>
+                                <span className="w w5">&nbsp;</span>
                             </span>
                         </div>
-                        <div className="OfT2">Facebook Advertising</div>
-                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
+                        <div className="OfT2">Social Media Management </div>
+                        <div className="OfT3">Boost your brand's online presence with expert social media management. Engage audiences, increase followers, and drive conversions seamlessly.</div>
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -50,11 +50,11 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     <a className="OfferItemBox color3" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
-                                <span className="w w3">&nbsp;</span>
+                                <span className="w w5">&nbsp;</span>
                             </span>
                         </div>
-                        <div className="OfT2">Instagram Advertising</div>
-                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
+                        <div className="OfT2">Content Creation </div>
+                        <div className="OfT3">Captivate your audience with our monthly content creation. Engaging, high-quality content tailored to your brand’s voice and vision. </div>
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -62,11 +62,11 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     <a className="OfferItemBox color4" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
-                                <span className="w w4">&nbsp;</span>
+                                <span className="w w5">&nbsp;</span>
                             </span>
                         </div>
-                        <div className="OfT2">Linkedin Management</div>
-                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
+                        <div className="OfT2">Community Management </div>
+                        <div className="OfT3">Enhance brand loyalty with expert community management. Engage followers, foster relationships, and create vibrant social media communities effortlessly.</div>
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -77,8 +77,8 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                                 <span className="w w5">&nbsp;</span>
                             </span>
                         </div>
-                        <div className="OfT2">Content Creation</div>
-                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
+                        <div className="OfT2">Influencer Marketing</div>
+                        <div className="OfT3">Amplify your brand's reach with influencer marketing. Collaborate with top influencers to boost visibility, engagement, and drive authentic growth.</div>
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -86,11 +86,11 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                     <a className="OfferItemBox color6" href="#">
                         <div className="OfT1">
                             <span className="OftIcon">
-                                <span className="w w6">&nbsp;</span>
+                                <span className="w w5">&nbsp;</span>
                             </span>
                         </div>
-                        <div className="OfT2">Creative Design</div>
-                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
+                        <div className="OfT2">Performance Marketing </div>
+                        <div className="OfT3">Maximize your ROI with data-driven performance marketing. Target the right audience, optimize campaigns, and achieve measurable results efficiently.</div>
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
