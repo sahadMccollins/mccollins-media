@@ -6,7 +6,7 @@ import SocialMainBanner from "../../components/Landing-page-components/SocialMai
 
 import ClientPortFolio from "../../components/Landing-page-components/ClientPortfolio";
 import WhatWeOffer1 from "../../components/Landing-page-components/WhatWeOffer";
-import PerfomanceSlider1 from "../../components/Landing-page-components/PerfomanceSlider1";
+import OurPartners1 from "../../components/Landing-page-components/ourPartners1";
 import ClientResults from "../../components/Landing-page-components/ClientResults";
 const LandingPage1 = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const LandingPage1 = () => {
       <SocialMainBanner/>
       <ClientPortFolio/>
       <WhatWeOffer1/>
-      
+      <OurPartners1/>
       <ClientResults/>
       <FooterNav/>
     </Box>
