@@ -65,6 +65,7 @@ const OurPartners1 = () => {
                 width={"300px"}
                 height={"101px"}
               />
+              
               </div>
             </div>
           </div>
