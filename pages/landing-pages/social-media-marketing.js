@@ -6,27 +6,27 @@ import SocialMainBanner from "../../components/Landing-page-components/SocialMai
 
 import ClientPortFolio from "../../components/Landing-page-components/ClientPortfolio";
 import WhatWeOffer1 from "../../components/Landing-page-components/WhatWeOffer";
-import OurPartners1 from "../../components/Landing-page-components/ourPartners1";
 import ClientResults from "../../components/Landing-page-components/ClientResults";
+import OurPartners1 from "../../components/Landing-page-components/OurPartners1";
 const LandingPage1 = () => {
   useEffect(() => {
-    document.body.className = 'LandingPage';
+    document.body.className = "LandingPage";
   });
-  
+
   return (
     <Box marginTop={"-85px"} position="relative">
       <Head>
-      <meta
+        <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
         />
       </Head>
-      <SocialMainBanner/>
-      <ClientPortFolio/>
-      <WhatWeOffer1/>
-      <OurPartners1/>
-      <ClientResults/>
-      <FooterNav/>
+      <SocialMainBanner />
+      <ClientPortFolio />
+      <WhatWeOffer1 />
+      <OurPartners1 />
+      <ClientResults />
+      <FooterNav />
     </Box>
   );
 };
