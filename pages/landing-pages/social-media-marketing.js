@@ -24,7 +24,7 @@ const LandingPage1 = () => {
       <SocialMainBanner/>
       <ClientPortFolio/>
       <WhatWeOffer1/>
-      <PerfomanceSlider1/>
+      
       <ClientResults/>
       <FooterNav/>
     </Box>

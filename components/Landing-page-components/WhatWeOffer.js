@@ -30,7 +30,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                             </span>
                         </div>
                         <div className="OfT2">Social Media Management</div>
-                        <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -42,7 +42,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                             </span>
                         </div>
                         <div className="OfT2">Facebook Advertising</div>
-                        <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -54,7 +54,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                             </span>
                         </div>
                         <div className="OfT2">Instagram Advertising</div>
-                        <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -66,7 +66,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                             </span>
                         </div>
                         <div className="OfT2">Linkedin Management</div>
-                        <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -78,7 +78,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                             </span>
                         </div>
                         <div className="OfT2">Content Creation</div>
-                        <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
@@ -90,7 +90,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                             </span>
                         </div>
                         <div className="OfT2">Creative Design</div>
-                        <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                        {/* <div className="OfT3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div> */}
                         <div className="OfT4">Get a Quote</div>
                     </a>
                 </div>
