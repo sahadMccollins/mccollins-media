@@ -130,6 +130,7 @@ const FormBox = (props) => {
       )
         .then((response) => response.json())
         .then((data) => {
+          console.log(data);
           TagManager.dataLayer({
             dataLayer: {
               event: "conversion",
