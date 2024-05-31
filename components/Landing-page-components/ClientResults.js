@@ -134,6 +134,88 @@ const ClientResults = () => {
                                 <div className={`${styles.ContentHeader1Flex}`}>
                                   <div className={`${styles.flexAuto}`}>
                                     <div className={`${styles.LogoWrap1}`}>
+                                      <Image
+                                        alt="McCollins Media"
+                                        src="/case/r1.jpg"
+                                        width={"250px"}
+                                        height={"98px"}
+                                      />{" "}
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoName} ${styles.color2}`}>
+                                    Richemont Master baker 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className={`${styles.st11}`}>OBJECTIVE</div>
+                            <div className={`${styles.st1}`}>Drive enrollment to the Culinary Courses and get more leads to the UAE market.</div>
+                            <div className={`${styles.st11}`}>CHALLENGE</div>
+                            <div className={`${styles.st1}`}>Reach the right audience who have an interest in cooking Classes, Culinary Courses, and improving their cooking skills.</div>
+                            <div className={`${styles.st11}`}>Strategy & Implementation</div>
+                            <div className={`${styles.st1}`}>Utilize advanced targeting on Google and Facebook Ads to effectively reach the target audience. Narrow down demographics, interests, and behaviors for better ad targeting. Experiment with different criteria to find optimal audience segments. Implement lead nurturing strategies to engage potential students.</div>
+                            <div>
+                              <div className={`${styles.GridSt12}`}>
+                                <div className={`${styles.GridSt12Flex}`}>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+49.39%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in Impressions</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+56.40%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in Clicks</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+379.97%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increase in conversions</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="#" className={`${styles.st3}`}>Contact Now</a>
+                              {isSmallerThan1000 && (
+                                <a href="javascript:void(0);" className={`${styles.st3} ${styles.black}`} onClick={() => swiperRef.current.swiper.slideNext()}>Next Case Study</a>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        {!isSmallerThan1000 && (
+                            <div className={`${styles.Flex50}`}>
+                              <div className={`${styles.ImgWr1}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c9.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                            </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={`${styles.SliderBox2Wrap}`}>
+                    <div className={`${styles.SliderBox2}`}>
+                      <div className={`irow ${styles.SliderBoxFlex}`}>
+                        <div className={`${styles.Flex50}`}>
+                          <div className="ContentWrap1">
+                            <div>
+                              <div className={`${styles.ContentHeader1}`}>
+                                <div className={`${styles.ContentHeader1Flex}`}>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoWrap1}`}>
                                     <Image
                                         alt="McCollins Media"
                                         src="/case/maison.jpg"
