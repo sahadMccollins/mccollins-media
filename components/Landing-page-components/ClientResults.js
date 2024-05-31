@@ -221,6 +221,89 @@ Regularly monitored ad performance metrics like CTR, conversion rate, and ROAS.<
                                     <div className={`${styles.LogoWrap1}`}>
                                       <Image
                                         alt="McCollins Media"
+                                        src="/case/master.png"
+                                        width={"284px"}
+                                        height={"83px"}
+                                      />{" "}
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoName} ${styles.color2}`}>
+                                    Master Baker Studio 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className={`${styles.st11}`}>OBJECTIVE</div>
+                            <div className={`${styles.st1}`}>Masterbaker Studio aimed to boost website traffic and sales by targeting passionate bakers with premium ingredients like flour, chocolate, butters, and creams.</div>
+                            <div className={`${styles.st11}`}>CHALLENGE</div>
+                            <div className={`${styles.st1}`}>They are struggling to scale their brand online & increase the sales MoM consistently</div>
+                            <div className={`${styles.st11}`}>Strategy & Implementation</div>
+                            <div className={`${styles.st1}`}>To effectively display Masterbaker's extensive inventory, we utilized Dynamic Search Ads and Performance Max campaigns with Feed-only on Google Ads. Additionally, on Meta Ads, we employed Dynamic prospecting ads and catalog ads targeting lookalike and retargeting audiences.
+To prevent ad fatigue, we regularly refreshed the first card creatives when frequency exceeded the standard benchmark threshold. Furthermore, implementing negative keywords and placements at the account level helped optimize spending and achieve lower cost per acquisition.</div>
+                            <div>
+                              <div className={`${styles.GridSt12}`}>
+                                <div className={`${styles.GridSt12Flex}`}>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+32%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in conversion/purchase</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+14%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Conversion rates, with a 3.25 ROAS</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+28%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in ROAS</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="#" className={`${styles.st3}`}>Contact Now</a>
+                              {isSmallerThan1000 && (
+                                <a href="javascript:void(0);" className={`${styles.st3} ${styles.black}`} onClick={() => swiperRef.current.swiper.slideNext()}>Next Case Study</a>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        {!isSmallerThan1000 && (
+                            <div className={`${styles.Flex50}`}>
+                              <div className={`${styles.ImgWr1}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c6.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                            </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={`${styles.SliderBox2Wrap}`}>
+                    <div className={`${styles.SliderBox2}`}>
+                      <div className={`irow ${styles.SliderBoxFlex}`}>
+                        <div className={`${styles.Flex50}`}>
+                          <div className="ContentWrap1">
+                            <div>
+                              <div className={`${styles.ContentHeader1}`}>
+                                <div className={`${styles.ContentHeader1Flex}`}>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoWrap1}`}>
+                                      <Image
+                                        alt="McCollins Media"
                                         src="/case/mint.png"
                                         width={"196px"}
                                         height={"197px"}
@@ -293,6 +376,7 @@ Adjust bids to prioritize visibility for users searching for event rentals.</div
                     </div>
                   </div>
                 </SwiperSlide>
+                
                 <SwiperSlide>
                   <div className={`${styles.SliderBox2Wrap}`}>
                     <div className={`${styles.SliderBox2}`}>
@@ -542,89 +626,7 @@ We also analyzed past data to identify top-selling products and categories, laun
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                  <div className={`${styles.SliderBox2Wrap}`}>
-                    <div className={`${styles.SliderBox2}`}>
-                      <div className={`irow ${styles.SliderBoxFlex}`}>
-                        <div className={`${styles.Flex50}`}>
-                          <div className="ContentWrap1">
-                            <div>
-                              <div className={`${styles.ContentHeader1}`}>
-                                <div className={`${styles.ContentHeader1Flex}`}>
-                                  <div className={`${styles.flexAuto}`}>
-                                    <div className={`${styles.LogoWrap1}`}>
-                                      <Image
-                                        alt="McCollins Media"
-                                        src="/case/master.png"
-                                        width={"284px"}
-                                        height={"83px"}
-                                      />{" "}
-                                    </div>
-                                  </div>
-                                  <div className={`${styles.flexAuto}`}>
-                                    <div className={`${styles.LogoName} ${styles.color2}`}>
-                                    Master Baker Studio 
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className={`${styles.st11}`}>OBJECTIVE</div>
-                            <div className={`${styles.st1}`}>Masterbaker Studio aimed to boost website traffic and sales by targeting passionate bakers with premium ingredients like flour, chocolate, butters, and creams.</div>
-                            <div className={`${styles.st11}`}>CHALLENGE</div>
-                            <div className={`${styles.st1}`}>They are struggling to scale their brand online & increase the sales MoM consistently</div>
-                            <div className={`${styles.st11}`}>Strategy & Implementation</div>
-                            <div className={`${styles.st1}`}>To effectively display Masterbaker's extensive inventory, we utilized Dynamic Search Ads and Performance Max campaigns with Feed-only on Google Ads. Additionally, on Meta Ads, we employed Dynamic prospecting ads and catalog ads targeting lookalike and retargeting audiences.
-To prevent ad fatigue, we regularly refreshed the first card creatives when frequency exceeded the standard benchmark threshold. Furthermore, implementing negative keywords and placements at the account level helped optimize spending and achieve lower cost per acquisition.</div>
-                            <div>
-                              <div className={`${styles.GridSt12}`}>
-                                <div className={`${styles.GridSt12Flex}`}>
-                                  <div className={`${styles.GridSt12Column}`}>
-                                    <div>
-                                      <div className={`${styles.GridSt12T1}`}>+32%</div>
-                                      <div className={`${styles.GridSt12T2}`}>Increased in conversion/purchase</div>
-                                    </div>
-                                  </div>
-                                  <div className={`${styles.GridSt12Column}`}>
-                                    <div>
-                                      <div className={`${styles.GridSt12T1}`}>+14%</div>
-                                      <div className={`${styles.GridSt12T2}`}>Conversion rates, with a 3.25 ROAS</div>
-                                    </div>
-                                  </div>
-                                  <div className={`${styles.GridSt12Column}`}>
-                                    <div>
-                                      <div className={`${styles.GridSt12T1}`}>+28%</div>
-                                      <div className={`${styles.GridSt12T2}`}>Increased in ROAS</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <a href="#" className={`${styles.st3}`}>Contact Now</a>
-                              {isSmallerThan1000 && (
-                                <a href="javascript:void(0);" className={`${styles.st3} ${styles.black}`} onClick={() => swiperRef.current.swiper.slideNext()}>Next Case Study</a>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                        {!isSmallerThan1000 && (
-                            <div className={`${styles.Flex50}`}>
-                              <div className={`${styles.ImgWr1}`}>
-                                <Image
-                                  alt="McCollins Media"
-                                  src="/case/c6.jpg"
-                                  width={"394px"}
-                                  height={"446px"}
-                                  layout="responsive"
-                                />
-                              </div>
-                            </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
+                
                 <SwiperSlide>
                   <div className={`${styles.SliderBox2Wrap}`}>
                     <div className={`${styles.SliderBox2}`}>
@@ -779,7 +781,7 @@ Utilized Facebook's ad targeting to reach decision-makers & created engaging ad 
                               <div className={`${styles.ImgWr1}`}>
                                 <Image
                                   alt="McCollins Media"
-                                  src="/case/c12.jpg"
+                                  src="/case/c7.jpg"
                                   width={"394px"}
                                   height={"446px"}
                                   layout="responsive"
