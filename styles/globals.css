@@ -3099,4 +3099,7 @@ font-size: 20px;
   .AccordHeader {
     padding: 5px 0px;
   }
+  .VideoBanner .T2{
+    margin-bottom: 15px;
+  }
 }
