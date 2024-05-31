@@ -35,6 +35,15 @@ export default function Document() {
           }}
         /> */}
         {/* End Google Tag Manager */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-10803441186"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'AW-10803441186');
+        </script>
 
         <link
           rel="icon"
