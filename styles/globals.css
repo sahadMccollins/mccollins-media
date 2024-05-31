@@ -3017,3 +3017,52 @@ font-size: 20px;
     margin-bottom: 5px;
   }
 }
+
+.AccodionBox1{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.fullWidth1{
+  width: 100%;
+}
+.AccordHeader{
+  display: flex;
+  width: 100%;
+  padding: 10px 0px;
+}
+.AccordHeaderL{
+  flex: 0 0 45px;
+  max-width: 45px;
+  text-align: left;
+}
+.AccordHeaderM{
+  flex: auto;
+  max-width: auto;
+  padding: 0 15px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+.AccordHeaderR{
+  flex: 0 0 45px;
+  max-width: 45px;
+  padding: 0 15px;
+  text-align: right;
+  
+}
+.AccordHeaderL span{
+  display: flex;
+  background-color: #ECCA1C;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.AccordHeaderR svg{
+  width: 30px;
+  height: 30px;
+}
