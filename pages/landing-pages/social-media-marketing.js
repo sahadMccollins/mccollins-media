@@ -8,6 +8,7 @@ import ClientPortFolio from "../../components/Landing-page-components/ClientPort
 import WhatWeOffer1 from "../../components/Landing-page-components/WhatWeOffer";
 import ClientResults from "../../components/Landing-page-components/ClientResults";
 import OurPartners1 from "../../components/Landing-page-components/OurPartners1";
+import Accordion1 from "../../components/Landing-page-components/Accordion1";
 const LandingPage1 = () => {
   useEffect(() => {
     document.body.className = "LandingPage";
@@ -24,8 +25,11 @@ const LandingPage1 = () => {
       <SocialMainBanner />
       <ClientPortFolio />
       <WhatWeOffer1 />
+      
       <OurPartners1 />
+      <Accordion1/>
       <ClientResults />
+      
       <FooterNav />
     </Box>
   );

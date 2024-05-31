@@ -6,16 +6,16 @@
     justify-content: space-between;
 
     .SliderGridBoxL {
-      flex: 0 0 10%;
-      max-width: 10%;
+      flex: 0 0 7%;
+      max-width: 7%;
     }
     .SliderGridBoxM {
-      flex: 0 0 80%;
-      max-width: 80%;
+      flex: 0 0 86%;
+      max-width: 86%;
     }
     .SliderGridBoxR {
-      flex: 0 0 10%;
-      max-width: 10%;
+      flex: 0 0 7%;
+      max-width: 7%;
       display: flex;
       justify-content: end;
     }
@@ -72,17 +72,26 @@
   }
 }
 .LogoWrap1 {
-  max-width: 120px;
+  max-width: 110px;
 }
 .LogoName {
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 25px;
+  font-weight: 700;
   &.color1 {
     color: #51335e;
+  }
+  &.color2 {
+    color: #1c1c1a;
   }
 }
 .st1 {
   margin-bottom: 15px;
+}
+.st11{
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .st3 {
   background-color: #ffde11;
@@ -142,7 +151,7 @@
   }
   .SliderBox2 {
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0px;
   }
   .GridSt12Flex {
     width: 100%;
@@ -749,4 +758,24 @@ font-size: 18px;
       }
     }
   }
+
+  .LogoName {
+    font-size: 17px;
+  }
+  .st11{
+    font-size: 16px !important;
+  }
+  .st1{
+    margin-bottom: 10px !important;
+  }
+  .ImgWr1 {
+    &.ImgWr11{
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+    img {
+      border-radius: 0px;
+     
+    }
+  }  
 }

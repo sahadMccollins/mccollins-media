@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const OurPartners1 = () => {
   return (
-    <div className="ClientPortfolio pd-common-container">
+    <div className="ClientPortfolio pd-common-container bgf8f8f8">
       <div className="icontainer">
         <div className="HdSt2">
           <div className="HdSt2T1">Our Partners</div>

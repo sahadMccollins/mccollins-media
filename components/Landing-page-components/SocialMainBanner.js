@@ -44,8 +44,8 @@ const SocialMainBanner = () => {
                   </div>
                 )}
               </div>
-              {/* <div className="icol-md-3">
-                <div className="HeaderForm" id="contactus">
+              <div className="icol-md-3">
+                {/* <div className="HeaderForm" id="contactus">
                   <div className="FormElements">
                     <div className="FormItem">
                       <div className="FormLabel">Full Name</div>
@@ -156,9 +156,10 @@ const SocialMainBanner = () => {
                     </div>
                     <button className="SubmitBtn1">Request A Callback</button>
                   </div>
-                </div>
-              </div> */}
-              <Form />
+                </div> */}
+                <Form />
+              </div>
+              
             </div>
           </div>
         </div>
