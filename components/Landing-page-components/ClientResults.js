@@ -45,6 +45,7 @@ const ClientResults = () => {
                   <div className={`${styles.SliderBox2Wrap}`}>
                     <div className={`${styles.SliderBox2}`}>
                       <div className={`irow ${styles.SliderBoxFlex}`}>
+                        
                         <div className={`${styles.Flex50}`}>
                           <div className="ContentWrap1">
                             <div>
@@ -68,6 +69,17 @@ const ClientResults = () => {
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c12.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>The Goal of the client is to increase brand awareness from Ajman to all UAE and increase sales and market share after we launch it's e-commerce website and app</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -153,6 +165,17 @@ Regularly monitored ad performance metrics like CTR, conversion rate, and ROAS.<
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c8.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>Primary goal was to leverage digital marketing channels, specifically Google and Facebook campaigns,to increase sales and expand its customer base in Oman</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -235,6 +258,17 @@ Regularly monitored ad performance metrics like CTR, conversion rate, and ROAS.<
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c6.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>Masterbaker Studio aimed to boost website traffic and sales by targeting passionate bakers with premium ingredients like flour, chocolate, butters, and creams.</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -318,6 +352,17 @@ To prevent ad fatigue, we regularly refreshed the first card creatives when freq
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c10.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>The company aimed to increase high-quality leads for its rental units to expand its client base and drive revenue growth.</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -404,6 +449,17 @@ Adjust bids to prioritize visibility for users searching for event rentals.</div
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c9.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>Drive enrollment to the Culinary Courses and get more leads to the UAE market.</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -486,6 +542,17 @@ Adjust bids to prioritize visibility for users searching for event rentals.</div
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c4.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>Maison Bmore aimed to elevate its online presence and drive sales through targeted advertising, focusing on high-value products</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -569,6 +636,17 @@ Strategy & Implementation Utilized Dynamic Search Ads and performance max campai
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c5.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>Heveya aimed to enter the UAE market, targeting eco-conscious consumers.</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -654,6 +732,17 @@ We also analyzed past data to identify top-selling products and categories, laun
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c11.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>The company aimed to increase sales and market share in Dubai's competitive furniture industry.</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>
@@ -738,6 +827,17 @@ Utilized Facebook's ad targeting to reach decision-makers & created engaging ad 
                                 </div>
                               </div>
                             </div>
+                            {isSmallerThan1000 && (
+                              <div className={`${styles.ImgWr1} ${styles.ImgWr11}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c7.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                        )}
                             <div className={`${styles.st11}`}>OBJECTIVE</div>
                             <div className={`${styles.st1}`}>Mapei to boost website traffic and sales by targeting passionate bakers with premium ingredients like flour, chocolate, butters, and creams.</div>
                             <div className={`${styles.st11}`}>CHALLENGE</div>

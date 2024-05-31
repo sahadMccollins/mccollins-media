@@ -151,7 +151,7 @@
   }
   .SliderBox2 {
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0px;
   }
   .GridSt12Flex {
     width: 100%;
@@ -758,4 +758,24 @@ font-size: 18px;
       }
     }
   }
+
+  .LogoName {
+    font-size: 17px;
+  }
+  .st11{
+    font-size: 16px !important;
+  }
+  .st1{
+    margin-bottom: 10px !important;
+  }
+  .ImgWr1 {
+    &.ImgWr11{
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+    img {
+      border-radius: 0px;
+     
+    }
+  }  
 }

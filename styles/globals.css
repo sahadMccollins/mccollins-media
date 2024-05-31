@@ -3066,3 +3066,36 @@ font-size: 20px;
   width: 30px;
   height: 30px;
 }
+.icontainer .FormItem{
+  margin-bottom: 10px;
+}
+
+.icontainer .FormItem div iframe{
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .AccordHeaderM{
+    font-size: 14px;
+  }
+  .AccordHeaderL span{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .AccordHeaderL {
+    flex: 0 0 30px;
+    max-width: 30px;
+  }
+  .AccordHeaderR svg {
+    width: 25px;
+    height: 25px;
+  }
+  .AccordHeaderR {
+    flex: 0 0 30px;
+    max-width: 30px;
+  }
+  .AccordHeader {
+    padding: 5px 0px;
+  }
+}
