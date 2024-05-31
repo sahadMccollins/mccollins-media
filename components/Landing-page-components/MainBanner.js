@@ -8,7 +8,7 @@ import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import TagManager from "react-gtm-module";
 
-const MainBanner1 = () => {
+const MainBanner1 = (props) => {
   const [phrase, setPhrase] = useState("");
   const [i, setI] = useState(0);
   const phraseRef = useRef(null);
@@ -169,7 +169,14 @@ const MainBanner1 = () => {
           };
           fetch("/api/form-submit", requestOptions).then(
             (response) => response.json(),
-
+            TagManager.dataLayer({
+              dataLayer: {
+                event: "conversion",
+                send_to: props.label
+                  ? `AW-10803441186/${props.label}`
+                  : "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
+              },
+            }),
             setLoading(false),
             toast({
               title: "Form Submited",
@@ -206,14 +213,7 @@ const MainBanner1 = () => {
               setLookingFor("")
             )
             .then((data) => router.push("/Thank-you-for-contacting-us"))
-            .then((data) => {
-              TagManager.dataLayer({
-                dataLayer: {
-                  event: "conversion",
-                  send_to: "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
-                },
-              });
-            })
+            .then((data) => {})
             .catch((error) => console.error(error));
 
           const data = {
