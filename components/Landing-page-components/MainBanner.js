@@ -169,13 +169,21 @@ const MainBanner1 = (props) => {
           };
           fetch("/api/form-submit", requestOptions).then(
             (response) => response.json(),
-            TagManager.dataLayer({
-              dataLayer: {
-                event: "conversion",
-                send_to: props.label
-                  ? `AW-10803441186/${props.label}`
-                  : "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
-              },
+            // TagManager.dataLayer({
+            //   dataLayer: {
+            //     event: "conversion",
+            //     send_to: props.label
+            //       ? `AW-10803441186/${props.label}`
+            //       : "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
+            //   },
+            // }),
+            (window.dataLayer = window.dataLayer || []),
+            window.dataLayer.push({
+              event: "conversion",
+              conversionId: "10803441186",
+              conversionLabel: props.label
+                ? `AW-10803441186/${props.label}`
+                : "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
             }),
             setLoading(false),
             toast({
