@@ -52,6 +52,91 @@ const ClientResults = () => {
                                 <div className={`${styles.ContentHeader1Flex}`}>
                                   <div className={`${styles.flexAuto}`}>
                                     <div className={`${styles.LogoWrap1}`}>
+                                      <Image
+                                        alt="McCollins Media"
+                                        src="/case/css.png"
+                                        width={"290px"}
+                                        height={"295px"}
+                                      />{" "}
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoName} ${styles.color2}`}>
+                                    Cleaning Superstore
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className={`${styles.st11}`}>OBJECTIVE</div>
+                            <div className={`${styles.st1}`}>The Goal of the client is to increase brand awareness from Ajman to all UAE and increase sales and market share after we launch it's e-commerce website and app</div>
+                            <div className={`${styles.st11}`}>CHALLENGE</div>
+                            <div className={`${styles.st1}`}>Cleaning Superstore faced stiff competition and struggled to boost sales in Dubai's crowded cleaning products market.</div>
+                            <div className={`${styles.st11}`}>Strategy & Implementation</div>
+                            <div className={`${styles.st1}`}>Set up targeted Facebook ad campaigns with specific objectives to narrow down relevant demographics, interests, and behaviors.
+Created multiple ad sets targeting different audience segments and testing various ad creatives.
+Allocated budget strategically to ensure optimal reach and frequency.
+Regularly monitored ad performance metrics like CTR, conversion rate, and ROAS.</div>
+                            <div>
+                              <div className={`${styles.GridSt12}`}>
+                                <div className={`${styles.GridSt12Flex}`}>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+60%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increase in sales</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+68%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in order</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+130.71%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in Clicks</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="#" className={`${styles.st3}`}>Contact Now</a>
+                              {isSmallerThan1000 && (
+                                <a href="javascript:void(0);" className={`${styles.st3} ${styles.black}`} onClick={() => swiperRef.current.swiper.slideNext()}>Next Case Study</a>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        {!isSmallerThan1000 && (
+                            <div className={`${styles.Flex50}`}>
+                              <div className={`${styles.ImgWr1}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c12.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                            </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={`${styles.SliderBox2Wrap}`}>
+                    <div className={`${styles.SliderBox2}`}>
+                      <div className={`irow ${styles.SliderBoxFlex}`}>
+                        <div className={`${styles.Flex50}`}>
+                          <div className="ContentWrap1">
+                            <div>
+                              <div className={`${styles.ContentHeader1}`}>
+                                <div className={`${styles.ContentHeader1Flex}`}>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoWrap1}`}>
                                     <Image
                                         alt="McCollins Media"
                                         src="/case/mob.png"
@@ -112,6 +197,91 @@ const ClientResults = () => {
                                 <Image
                                   alt="McCollins Media"
                                   src="/case/c8.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                            </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={`${styles.SliderBox2Wrap}`}>
+                    <div className={`${styles.SliderBox2}`}>
+                      <div className={`irow ${styles.SliderBoxFlex}`}>
+                        <div className={`${styles.Flex50}`}>
+                          <div className="ContentWrap1">
+                            <div>
+                              <div className={`${styles.ContentHeader1}`}>
+                                <div className={`${styles.ContentHeader1Flex}`}>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoWrap1}`}>
+                                      <Image
+                                        alt="McCollins Media"
+                                        src="/case/mint.png"
+                                        width={"196px"}
+                                        height={"197px"}
+                                      />{" "}
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoName} ${styles.color2}`}>
+                                    Mint Event Rentals
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className={`${styles.st11}`}>OBJECTIVE</div>
+                            <div className={`${styles.st1}`}>The company aimed to increase high-quality leads for its rental units to expand its client base and drive revenue growth.</div>
+                            <div className={`${styles.st11}`}>CHALLENGE</div>
+                            <div className={`${styles.st1}`}>The furniture industry in Dubai is highly competitive, dominated by established brands, while Prowork was newly entering the market.</div>
+                            <div className={`${styles.st11}`}>Strategy & Implementation</div>
+                            <div className={`${styles.st1}`}>Conduct thorough keyword research.
+Audit and optimize existing campaigns.
+Set up targeted ad groups with relevant keywords and copy.
+Adjust bids to prioritize visibility for users searching for event rentals.</div>
+                            <div>
+                              <div className={`${styles.GridSt12}`}>
+                                <div className={`${styles.GridSt12Flex}`}>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+30391.17%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in Impressions</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+10825.48%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in Clicks</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+496.25%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increase in conversions</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="#" className={`${styles.st3}`}>Contact Now</a>
+                              {isSmallerThan1000 && (
+                                <a href="javascript:void(0);" className={`${styles.st3} ${styles.black}`} onClick={() => swiperRef.current.swiper.slideNext()}>Next Case Study</a>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        {!isSmallerThan1000 && (
+                            <div className={`${styles.Flex50}`}>
+                              <div className={`${styles.ImgWr1}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c10.jpg"
                                   width={"394px"}
                                   height={"446px"}
                                   layout="responsive"
@@ -444,6 +614,172 @@ To prevent ad fatigue, we regularly refreshed the first card creatives when freq
                                 <Image
                                   alt="McCollins Media"
                                   src="/case/c6.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                            </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={`${styles.SliderBox2Wrap}`}>
+                    <div className={`${styles.SliderBox2}`}>
+                      <div className={`irow ${styles.SliderBoxFlex}`}>
+                        <div className={`${styles.Flex50}`}>
+                          <div className="ContentWrap1">
+                            <div>
+                              <div className={`${styles.ContentHeader1}`}>
+                                <div className={`${styles.ContentHeader1Flex}`}>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoWrap1}`}>
+                                      <Image
+                                        alt="McCollins Media"
+                                        src="/case/pro.png"
+                                        width={"293px"}
+                                        height={"79px"}
+                                      />{" "}
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoName} ${styles.color2}`}>
+                                    Prowork
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className={`${styles.st11}`}>OBJECTIVE</div>
+                            <div className={`${styles.st1}`}>The company aimed to increase sales and market share in Dubai's competitive furniture industry.</div>
+                            <div className={`${styles.st11}`}>CHALLENGE</div>
+                            <div className={`${styles.st1}`}>They are struggling to scale their brand online & increase the sales MoM consistently</div>
+                            <div className={`${styles.st11}`}>Strategy & Implementation</div>
+                            <div className={`${styles.st1}`}>Utilized Google Ads for targeting office furniture seekers in Dubai with focused keyword research for high-intent terms.
+Created ad extensions for additional product details and used bid adjustments to boost ad visibility.
+Utilized Facebook's ad targeting to reach decision-makers & created engaging ad creatives featuring ProWork's products.</div>
+                            <div>
+                              <div className={`${styles.GridSt12}`}>
+                                <div className={`${styles.GridSt12Flex}`}>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+317.41%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increase in conversions</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+24.53%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Decreased In Cost Per Conversions</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+130.71%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Increased in Clicks</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="#" className={`${styles.st3}`}>Contact Now</a>
+                              {isSmallerThan1000 && (
+                                <a href="javascript:void(0);" className={`${styles.st3} ${styles.black}`} onClick={() => swiperRef.current.swiper.slideNext()}>Next Case Study</a>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        {!isSmallerThan1000 && (
+                            <div className={`${styles.Flex50}`}>
+                              <div className={`${styles.ImgWr1}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c11.jpg"
+                                  width={"394px"}
+                                  height={"446px"}
+                                  layout="responsive"
+                                />
+                              </div>
+                            </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className={`${styles.SliderBox2Wrap}`}>
+                    <div className={`${styles.SliderBox2}`}>
+                      <div className={`irow ${styles.SliderBoxFlex}`}>
+                        <div className={`${styles.Flex50}`}>
+                          <div className="ContentWrap1">
+                            <div>
+                              <div className={`${styles.ContentHeader1}`}>
+                                <div className={`${styles.ContentHeader1Flex}`}>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoWrap1}`}>
+                                      <Image
+                                        alt="McCollins Media"
+                                        src="/case/mapei.png"
+                                        width={"304px"}
+                                        height={"70px"}
+                                      />{" "}
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.flexAuto}`}>
+                                    <div className={`${styles.LogoName} ${styles.color2}`}>
+                                    Mapei
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className={`${styles.st11}`}>OBJECTIVE</div>
+                            <div className={`${styles.st1}`}>Mapei to boost website traffic and sales by targeting passionate bakers with premium ingredients like flour, chocolate, butters, and creams.</div>
+                            <div className={`${styles.st11}`}>CHALLENGE</div>
+                            <div className={`${styles.st1}`}>Despite that the Middle East provides the best ROI on spending, however, they struggled to find out the demand generation & the right target audience as a B2B2C business.</div>
+                            <div className={`${styles.st11}`}>Strategy & Implementation</div>
+                            <div className={`${styles.st1}`}>Implemented targeted search campaigns for construction adhesives, sealants, and chemicals, refining keywords daily for lower CPC & CPL, yielding quality leads with low CPA. Utilized Meta Ads & LinkedIn Ads for top-of-funnel awareness & Developed a diverse creative asset for A/B testing and optimized CTR & conversion rate. Used Geographic targeting across the Middle East, UAE, Bahrain, Oman, Kuwait, KSA, Kenya, and Egypt to build awareness and drive demand.</div>
+                            <div>
+                              <div className={`${styles.GridSt12}`}>
+                                <div className={`${styles.GridSt12Flex}`}>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+48%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Effective strategy increased</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+130%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Engagement</div>
+                                    </div>
+                                  </div>
+                                  <div className={`${styles.GridSt12Column}`}>
+                                    <div>
+                                      <div className={`${styles.GridSt12T1}`}>+122%</div>
+                                      <div className={`${styles.GridSt12T2}`}>Raised brand Awareness</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="#" className={`${styles.st3}`}>Contact Now</a>
+                              {isSmallerThan1000 && (
+                                <a href="javascript:void(0);" className={`${styles.st3} ${styles.black}`} onClick={() => swiperRef.current.swiper.slideNext()}>Next Case Study</a>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        {!isSmallerThan1000 && (
+                            <div className={`${styles.Flex50}`}>
+                              <div className={`${styles.ImgWr1}`}>
+                                <Image
+                                  alt="McCollins Media"
+                                  src="/case/c12.jpg"
                                   width={"394px"}
                                   height={"446px"}
                                   layout="responsive"
