@@ -71,7 +71,7 @@ const LandingPage1 = () => {
           content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
         />
       </Head>
-      <MainBanner1 />
+      <MainBanner1 label="qssOCPGu1uIYEKLcvZ8o" />
       <ClientPortFolio />
 
       <TrustedLogos />
