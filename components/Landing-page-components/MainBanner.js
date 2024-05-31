@@ -182,8 +182,8 @@ const MainBanner1 = (props) => {
               event: "conversion",
               conversionId: "10803441186",
               conversionLabel: props.label
-                ? `AW-10803441186/${props.label}`
-                : "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
+                ? `${props.label}`
+                : "fOI8CPypnfkYEKLcvZ8o",
             }),
             setLoading(false),
             toast({
