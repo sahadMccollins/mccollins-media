@@ -3005,6 +3005,9 @@ font-size: 20px;
 .bgmodal input{
   background: #fff !important;
 }
+.bgf8f8f8{
+  background-color: #f8f8f8 !important;
+}
 @media (max-width: 768px) {
   .m-col-md-4 {
     -webkit-box-flex: 0;
