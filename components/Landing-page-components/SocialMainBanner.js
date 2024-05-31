@@ -4,6 +4,7 @@ import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import { useMediaQuery } from "@chakra-ui/react";
 import Form from "./Form";
+import Form2 from "./Form2";
 
 const SocialMainBanner = () => {
   const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
@@ -157,9 +158,8 @@ const SocialMainBanner = () => {
                     <button className="SubmitBtn1">Request A Callback</button>
                   </div>
                 </div> */}
-                <Form />
+                <Form2 />
               </div>
-              
             </div>
           </div>
         </div>
