@@ -27,8 +27,9 @@ const LandingPage1 = () => {
       <WhatWeOffer1 />
       
       <OurPartners1 />
-      <Accordion1/>
       <ClientResults />
+      <Accordion1/>
+      
       
       <FooterNav />
     </Box>
