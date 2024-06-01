@@ -9,11 +9,13 @@ import Image from "next/image";
 import axios from "axios";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import CgiVideoAutoplay from "../../components/CgiVideoAutoplay";
+import IntlTelInput from "react-intl-tel-input";
 const FilmProduction = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [fullName, setFullName] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
+  const [contact, setContact] = useState("");
   const [lookingFor, setLookingFor] = useState("");
   const [industry, setIndustry] = useState("");
 
@@ -34,6 +36,11 @@ const FilmProduction = () => {
 
   const router = useRouter();
   const currentURL = router.asPath;
+
+  const handlePhoneChange = (status, number, countryData) => {
+    setContact(number);
+    setCustomerPhone(`+ ${countryData.dialCode} ${number}`);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -178,7 +185,7 @@ const FilmProduction = () => {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="msapplication-TileColor" content="#E22D46" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#E22D46" />
@@ -382,12 +389,20 @@ const FilmProduction = () => {
                             />
                           </div>
                           <div className="formElements">
-                            <input
+                            {/* <input
                               type="tel"
                               placeholder="Phone Number"
                               value={customerPhone}
                               required
                               onChange={(e) => setCustomerPhone(e.target.value)}
+                            /> */}
+                            <IntlTelInput
+                              style={{ width: "100%", paddingLeft: "50px" }}
+                              defaultCountry="ae"
+                              containerClassName="intl-tel-input"
+                              inputClassName="form-control"
+                              value={contact}
+                              onPhoneNumberChange={handlePhoneChange}
                             />
                           </div>
                           <div className="formElements">
@@ -1350,12 +1365,20 @@ const FilmProduction = () => {
                       />
                     </div>
                     <div className="formElements">
-                      <input
+                      {/* <input
                         type="tel"
                         placeholder="Phone Number"
                         value={customerPhone}
                         required
                         onChange={(e) => setCustomerPhone(e.target.value)}
+                      /> */}
+                      <IntlTelInput
+                        style={{ width: "100%" }}
+                        defaultCountry="ae"
+                        containerClassName="intl-tel-input"
+                        inputClassName="form-control"
+                        value={contact}
+                        onPhoneNumberChange={handlePhoneChange}
                       />
                     </div>
                     <div className="formElements">
