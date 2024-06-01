@@ -66,7 +66,7 @@ const FilmProduction = () => {
     formData.append("URL", currentURL);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbwHXaynFaEsLOz6tA_nFBYnT0mZpvQz1S2q83wf3w6JuaCsjEEJci76Ce35TIP46z6cUA/exec",
+      "https://script.google.com/macros/s/AKfycbxmDwaT4Le95NuEGMeviV3p_ofzhwfqW6w7TDLttjg0N2n0NdkRNHiPYBVt20eI4VgVKg/exec",
       {
         method: "POST",
         body: formData,
@@ -75,6 +75,8 @@ const FilmProduction = () => {
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error(error));
+
+    router.push("/Thank-you-for-contacting-us");
 
     const requestOptions = {
       method: "POST",
