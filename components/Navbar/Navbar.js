@@ -196,6 +196,7 @@ const Navbar = (props) => {
       <Container maxWidth={"8xl"} mt="7" position="relative">
         <Flex>
           <Box flexGrow={1} zIndex="99">
+            <div className="ImageWrap1">
             <Link href="/" className="MainLogo1Link">
               <Image
                 alt="McCollins Media"
@@ -209,6 +210,7 @@ const Navbar = (props) => {
                 className="MainLogo1"
               />
             </Link>
+            </div>
           </Box>
           <Box alignSelf={"start"}>
             {isLargerThan780 ? (
@@ -404,6 +406,7 @@ const Navbar = (props) => {
                     src={"/assets/image/navbar/ham-burger.svg"}
                     width="31px"
                     height={"27px"}
+                    className="Habm1"
                   />
                 ) : (
                   <Image
@@ -411,6 +414,7 @@ const Navbar = (props) => {
                     src={"/assets/image/navbar/ham-burger-yellow.svg"}
                     width="31px"
                     height={"27px"}
+                    className="Habm2"
                   />
                 )}
               </Box>
@@ -424,6 +428,7 @@ const Navbar = (props) => {
         <Container maxWidth={"8xl"}>
           <Flex>
             <Box flexGrow={1} zIndex="99">
+              <div className="ImageWrap1">
               <Link href="/">
                 <Image
                   alt="McCollins Media"
@@ -434,6 +439,7 @@ const Navbar = (props) => {
                   style={{ cursor: "pointer" }}
                 />
               </Link>
+              </div>
             </Box>
             <Box alignSelf={"center"}>
               {isLargerThan780 ? (
@@ -493,12 +499,13 @@ const Navbar = (props) => {
                 </>
               ) : (
                 <Box
-                  className={styles.hamBurger}
+                  className={styles.hamBurger + ' fixedArap1'}
                   colorScheme="teal"
                   onClick={onOpen}
                 >
                   <span
                     style={{ background: props.color ? "#000" : "#FFDE11" }}
+                    className="MarTp1"
                   ></span>
                   <span
                     style={{ background: props.color ? "#000" : "#FFDE11" }}
@@ -1033,6 +1040,22 @@ const Navbar = (props) => {
           </form>
         </ModalContent>
       </Modal>
+      <div class="FooterMediaIcons">
+          <div>
+            <div class="mediaFlex">
+              <a href="javasript:void(0);" class="mediaFlex1" onClick={onOpen2}>
+                Get a quote
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=971559564135&amp;text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                class="mediaFlex2"
+                target="_blank"
+              >
+                WhatsApp us
+              </a>
+            </div>
+          </div>
+        </div>
     </Stack>
   );
 };

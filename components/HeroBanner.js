@@ -38,7 +38,7 @@ const HeroBanner = (props) => {
           />
         </ZoomOut>
       </Box>
-      <Box position={"absolute"} width="100%" bottom={"50px"} color="#fff">
+      <Box position={"absolute"} width="100%" bottom={"60px"} color="#fff">
         <Container maxWidth={"7xl"}>
           <Box width={{ base: "100%", md: "50%" }}>
             <FadeUp>
