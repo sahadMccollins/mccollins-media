@@ -645,7 +645,7 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Social Media Marketing"
-                          href="/services/social-media-agency-dubai"
+                          href="/landing-pages/social-media-marketing"
                         />
                       </li>
                       <li
