@@ -3107,6 +3107,13 @@ font-size: 20px;
   font-weight: bold;
 }
 @media (max-width: 768px) {
+  .film-prd .stickyBtmBtn{
+    display: none !important;
+  }
+  .film-prd .mediaFlex1 {
+    background-color: #E22E46;
+    color: #fff !important;
+  }
   .FooterMediaIcons {
     display: block;
   }
