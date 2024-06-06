@@ -1896,7 +1896,6 @@ background-color: #F7F7F7;
   .Navbar_hamBurger__6kFbf {
     height: 25px;
     width: 25px;
-    margin-top: -15px;
   }
   body.LandingPage .css-k008qs{
     justify-content: space-between;
@@ -3074,8 +3073,50 @@ font-size: 20px;
 .icontainer .FormItem div iframe{
   width: 100% !important;
 }
-
+.FooterMediaIcons {
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #000;
+  box-shadow: 0 5px 25px rgba(0,0,0,.17);
+  display: none;
+}
+.mediaFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.mediaFlex a {
+  display: block;
+  flex: 0 0 49%;
+  max-width: 49%;
+  color: #fff;
+  text-align: center;
+}
+.mediaFlex1 {
+  background-color: #FFDE11;
+  padding: 8px;
+  font-weight: bold;
+  color: #000 !important;
+}
+.mediaFlex2 {
+  background-color: #25d366;
+  padding: 8px;
+  font-weight: bold;
+}
 @media (max-width: 768px) {
+  .film-prd .stickyBtmBtn{
+    display: none !important;
+  }
+  .film-prd .mediaFlex1 {
+    background-color: #E22E46;
+    color: #fff !important;
+  }
+  .FooterMediaIcons {
+    display: block;
+  }
   .AccordHeaderM{
     font-size: 14px;
   }
@@ -3101,5 +3142,14 @@ font-size: 20px;
   }
   .VideoBanner .T2{
     margin-bottom: 15px;
+  }
+  .ImageWrap1{
+    max-width: 160px;
+  }
+  .fixedArap1{
+    margin-top: -15px;
+  }
+  .pd-top-20{
+    padding-top: 15px !important;
   }
 }

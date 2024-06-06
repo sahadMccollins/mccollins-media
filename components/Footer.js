@@ -506,6 +506,7 @@ const Footer = () => {
             </Text>
           </Box>
         </Flex>
+        
       </Container>
     </Stack>
   );

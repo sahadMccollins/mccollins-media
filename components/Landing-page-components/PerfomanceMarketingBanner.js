@@ -3,7 +3,8 @@ import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import { useMediaQuery } from "@chakra-ui/react";
-import Form from "./Form";
+
+import Form2 from "./Form2";
 
 const PerfomanceBannerMarketing = () => {
   const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
@@ -81,6 +82,9 @@ const PerfomanceBannerMarketing = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="icol-md-3 pd-top-20">
+                <Form2/>
               </div>
               {/* <div className="icol-md-3">
                 <div className="HeaderForm" id="contactus">
@@ -238,7 +242,7 @@ const PerfomanceBannerMarketing = () => {
                 </div>
               </div> */}
 
-              <Form />
+              
             </div>
           </div>
         </div>
@@ -246,4 +250,5 @@ const PerfomanceBannerMarketing = () => {
     </div>
   );
 };
+
 export default PerfomanceBannerMarketing;
