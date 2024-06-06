@@ -18,6 +18,7 @@ const FilmProduction = () => {
   const [contact, setContact] = useState("");
   const [lookingFor, setLookingFor] = useState("");
   const [industry, setIndustry] = useState("");
+  const [contactStatus, setContactStatus] = useState();
 
   const [loading, setLoading] = useState(false);
 
@@ -39,84 +40,95 @@ const FilmProduction = () => {
 
   const handlePhoneChange = (status, number, countryData) => {
     setContact(number);
-    setCustomerPhone(`+ ${countryData.dialCode} ${number}`);
+    setCustomerPhone(`+${countryData.dialCode} ${number}`);
+    setContactStatus(status);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    const data = {
-      Company: industry,
-      FirstName: fullName,
-      Email: clientEmail,
-      Page: currentURL,
-      Phone: customerPhone,
-      SelectedServices: lookingFor,
-      Message: "",
-      gclid: hiddenInputValue,
-    };
+    if (contactStatus === true) {
+      const data = {
+        Company: industry,
+        FirstName: fullName,
+        Email: clientEmail,
+        Page: currentURL,
+        Phone: customerPhone,
+        SelectedServices: lookingFor,
+        Message: "",
+        gclid: hiddenInputValue,
+      };
 
-    axios
-      .post("/api/zoho/refresh-token", data)
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((error) => {
-        // Handle errors in obtaining the new access token
-        console.error(error);
-      });
+      axios
+        .post("/api/zoho/refresh-token", data)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          // Handle errors in obtaining the new access token
+          console.error(error);
+        });
 
-    let formData = new FormData();
-    formData.append("Firstname", fullName);
-    formData.append("email", clientEmail);
-    formData.append("Phone", customerPhone);
-    formData.append("Company", industry);
-    formData.append("Services", lookingFor);
-    formData.append("URL", currentURL);
+      let formData = new FormData();
+      formData.append("Firstname", fullName);
+      formData.append("email", clientEmail);
+      formData.append("Phone", customerPhone);
+      formData.append("Company", industry);
+      formData.append("Services", lookingFor);
+      formData.append("URL", currentURL);
 
-    fetch(
-      "https://script.google.com/macros/s/AKfycbxmDwaT4Le95NuEGMeviV3p_ofzhwfqW6w7TDLttjg0N2n0NdkRNHiPYBVt20eI4VgVKg/exec",
-      {
+      fetch(
+        "https://script.google.com/macros/s/AKfycbxmDwaT4Le95NuEGMeviV3p_ofzhwfqW6w7TDLttjg0N2n0NdkRNHiPYBVt20eI4VgVKg/exec",
+        {
+          method: "POST",
+          body: formData,
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.error(error));
+
+      router.push("/Thank-you-for-contacting-us");
+
+      const requestOptions = {
         method: "POST",
-        body: formData,
-      }
-    )
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error(error));
-
-    router.push("/Thank-you-for-contacting-us");
-
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        firstName: fullName,
-        email: clientEmail,
-        contact: customerPhone,
-        company: industry,
-        services: lookingFor,
-        date: new Date(),
-      }),
-    };
-    fetch("/api/form-submit", requestOptions).then(
-      (response) => response.json(),
-      setFullName(""),
-      setCustomerPhone(""),
-      setClientEmail(""),
-      setIndustry(""),
-      setLookingFor(""),
-      setLoading(false),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: fullName,
+          email: clientEmail,
+          contact: customerPhone,
+          company: industry,
+          services: lookingFor,
+          date: new Date(),
+        }),
+      };
+      fetch("/api/form-submit", requestOptions).then(
+        (response) => response.json(),
+        setFullName(""),
+        setCustomerPhone(""),
+        setClientEmail(""),
+        setIndustry(""),
+        setLookingFor(""),
+        setLoading(false),
+        toast({
+          title: "Form Submited",
+          description: "Thank you for getting in touch!",
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        })
+        // router.push(`/film-production/thank-you`)
+      );
+    } else {
       toast({
-        title: "Form Submited",
-        description: "Thank you for getting in touch!",
-        status: "success",
+        title: "Phone field is not valid",
+        description: "Please check the phone field",
+        status: "error",
         duration: 9000,
         isClosable: true,
-      })
-      // router.push(`/film-production/thank-you`)
-    );
+      });
+    }
   };
 
   useEffect(() => {
