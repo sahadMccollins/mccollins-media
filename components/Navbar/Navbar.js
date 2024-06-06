@@ -81,12 +81,12 @@ const Navbar = (props) => {
   };
 
   const phoneNumber = isWebDesignDevelopmentPage()
-    ? "+971 55 956 4135"
-    : "+971 55 956 4135";
+    ? "+971 55 901 5305"
+    : "+971 55 901 5305";
 
   const whatsappNumber = isWebDesignDevelopmentPage()
-    ? "+971 55 956 4135"
-    : "+971 55 956 4135";
+    ? "+971 55 901 5305"
+    : "+971 55 901 5305";
 
   const toast = useToast();
 

@@ -46,7 +46,7 @@ const FooterNav = (props) => {
           <li>
             <a
               href={
-                props.phone ? "tel:+971 55 956 4135" : "tel:+971 55 956 4135"
+                props.phone ? "tel:+971 55 901 5305" : "tel:+971 55 901 5305"
               }
             >
               <div class="icon">
