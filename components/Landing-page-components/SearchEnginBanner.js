@@ -236,7 +236,7 @@ const SearchEngineBanner = () => {
                   </div>
                 </div>
               </div> */}
-              <div className="icol-md-3">
+              <div className="icol-md-3 pd-top-20">
                 <Form2/>
               </div>
             </div>
