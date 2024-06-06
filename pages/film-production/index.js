@@ -1068,7 +1068,7 @@ const FilmProduction = () => {
                       <div className="PrBlockContent">
                         <div>
                           <div className="PrT1">
-                            State-of-the-Art
+                            State-of-the-Art&nbsp;
                             <br />
                             Equipment
                           </div>
@@ -1100,7 +1100,7 @@ const FilmProduction = () => {
                       <div className="PrBlockContent">
                         <div>
                           <div className="PrT1">
-                            Full-Service
+                            Full-Service&nbsp;
                             <br />
                             Solutions
                           </div>
@@ -1132,7 +1132,7 @@ const FilmProduction = () => {
                       <div className="PrBlockContent">
                         <div>
                           <div className="PrT1">
-                            Tailored
+                            Tailored&nbsp;
                             <br />
                             Approach
                           </div>
@@ -1164,7 +1164,7 @@ const FilmProduction = () => {
                       <div className="PrBlockContent">
                         <div>
                           <div className="PrT1">
-                            Client
+                            Client&nbsp;
                             <br />
                             Satisfaction
                           </div>
@@ -1290,7 +1290,7 @@ const FilmProduction = () => {
               <div className="col-md-6">
                 <div className="ft1">READY TO DO THIS</div>
                 <div className="ft2">
-                  Let’s get
+                  Let’s get&nbsp;
                   <br />
                   to work
                 </div>
@@ -1303,6 +1303,7 @@ const FilmProduction = () => {
                     <span>Phone&nbsp;:</span>&nbsp;+971 55 956 4135
                   </a>
                   <br />
+                  <div>&nbsp;</div>
                   <a href="mailto:info@mccollinsmedia.com">
                     <span>Email&nbsp;:</span>&nbsp; info@mccollinsmedia.com
                   </a>
