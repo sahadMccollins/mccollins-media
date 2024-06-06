@@ -1047,7 +1047,7 @@ const Navbar = (props) => {
                 Get a quote
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=971559564135&amp;text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                href="https://api.whatsapp.com/send?phone=+971 55 901 5305&amp;text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                 class="mediaFlex2"
                 target="_blank"
               >
