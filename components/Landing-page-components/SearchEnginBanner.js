@@ -3,7 +3,7 @@ import Image from "next/image";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import { useMediaQuery } from "@chakra-ui/react";
-import Form from "./Form";
+import Form2 from "./Form2";
 
 const SearchEngineBanner = () => {
   const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
@@ -236,7 +236,9 @@ const SearchEngineBanner = () => {
                   </div>
                 </div>
               </div> */}
-              <Form />
+              <div className="icol-md-3">
+                <Form2/>
+              </div>
             </div>
           </div>
         </div>

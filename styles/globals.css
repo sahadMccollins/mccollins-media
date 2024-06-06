@@ -3149,5 +3149,7 @@ font-size: 20px;
   .fixedArap1{
     margin-top: -15px;
   }
-  
+  .pd-top-20{
+    padding-top: 15px !important;
+  }
 }
