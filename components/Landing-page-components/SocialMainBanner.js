@@ -39,7 +39,7 @@ const SocialMainBanner = () => {
                 </div>
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
-                    <a href="#" className="BtnSt1">
+                    <a href="/contact" className="BtnSt1">
                       Get Estimate Now
                     </a>
                   </div>

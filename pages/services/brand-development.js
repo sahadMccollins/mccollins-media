@@ -19,7 +19,7 @@ import VideoBanner from "../../components/VideoBanner";
 import clientPromise from "../../lib/mongodb";
 import Head from "next/head";
 import ReactHtmlParser from "react-html-parser";
-
+import BrandsBanner from "../../components/Landing-page-components/BrandsBanner";
 const DesignAndBrandDevelopment = ({ metaTags }) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
@@ -30,12 +30,13 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
       </Head>
-      <VideoBanner
+      {/* <VideoBanner
         heading={`brand \n development`}
         video="/assets/cloudinaryBackup/BRANDING_-_z6r43b.mp4"
         content="Brand identity is everything, and we bring in unimaginable creativity through brand execution, logo creation, website redesign, social media content creation, and more."
         poster="/assets/image/servicePage/designAndBrand.jpg"
-      />
+      /> */}
+      <BrandsBanner/>
       <Box bg={"#F7F7F7"} style={{ marginTop: "0" }}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }} my={10}>

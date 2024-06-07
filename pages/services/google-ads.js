@@ -20,7 +20,7 @@ import { useState } from "react";
 import "../../node_modules/react-modal-video/css/modal-video.min.css";
 import TextBox from "../../components/TextBox";
 import ClientsLogo from "../../components/ClientsLogo";
-import VideoBanner from "../../components/VideoBanner";
+import GoogleAdsBanner1 from "../../components/Landing-page-components/googleAdsBanner";
 import { useRouter } from "next/router";
 import VideoCaseStudy from "../../components/VideoCaseStudy";
 import FormBox from "../../components/FormBox";
@@ -42,12 +42,8 @@ const DigitalMarketingSEO = ({ metaTags }) => {
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
       </Head>
-      <VideoBanner
-        heading={`google ads`}
-        video="/assets/cloudinaryBackup/Search_engine_marketing-_kg3pi4.mp4"
-        content="Get your brand noticed at the right place at the right time. Let us help you rank high on Google search and place strategic Google Ads to see those leads convert."
-        poster="/assets/image/servicePage/DMSEO.jpg"
-      />
+
+      <GoogleAdsBanner1/>
 
       {/* <Box py={10}>
         <Container maxWidth={"7xl"}>
@@ -108,7 +104,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
         </Container>
       </Box> */}
 
-      <Container maxWidth={"7xl"} pt={"50px"} style={{ margin: "auto" }}>
+      <Container maxWidth={"7xl"} pt={"50px"} style={{ margin: "auto" }} marginTop={"-85px"}>
         <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
