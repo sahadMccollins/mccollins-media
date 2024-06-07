@@ -642,7 +642,7 @@ const Navbar = (props) => {
                       >
                         <NavItem
                           name="Website Development"
-                          href="/services/web-design-and-development"
+                          href="/landing-pages/web-design-development-1"
                         />
                       </li>
                       <li
@@ -680,7 +680,7 @@ const Navbar = (props) => {
                           onClose();
                         }}
                       >
-                        <NavItem name="Film" href="/services/film" />
+                        <NavItem name="Film" href="/film-production" />
                       </li>
 
                       <li
@@ -691,6 +691,16 @@ const Navbar = (props) => {
                         <NavItem
                           name="Brand Development"
                           href="/services/brand-development"
+                        />
+                      </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Performance Marketing"
+                          href="/landing-pages/perfomance-marketing"
                         />
                       </li>
 
