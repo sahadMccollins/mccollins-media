@@ -20,7 +20,7 @@ import { useState } from "react";
 import "../../node_modules/react-modal-video/css/modal-video.min.css";
 import TextBox from "../../components/TextBox";
 import ClientsLogo from "../../components/ClientsLogo";
-import GoogleAdsBanner1 from "../../components/Landing-page-components/googleAdsBanner";
+import GoogleAdsBanner1 from "../../components/Landing-page-components/GoogleAdsBanner";
 import { useRouter } from "next/router";
 import VideoCaseStudy from "../../components/VideoCaseStudy";
 import FormBox from "../../components/FormBox";
@@ -43,7 +43,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
           ReactHtmlParser(metaTags[0].content)}
       </Head>
 
-      <GoogleAdsBanner1/>
+      <GoogleAdsBanner1 />
 
       {/* <Box py={10}>
         <Container maxWidth={"7xl"}>
@@ -104,7 +104,12 @@ const DigitalMarketingSEO = ({ metaTags }) => {
         </Container>
       </Box> */}
 
-      <Container maxWidth={"7xl"} pt={"50px"} style={{ margin: "auto" }} marginTop={"-85px"}>
+      <Container
+        maxWidth={"7xl"}
+        pt={"50px"}
+        style={{ margin: "auto" }}
+        marginTop={"-85px"}
+      >
         <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
