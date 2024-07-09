@@ -40,7 +40,7 @@ const SearchEngineBanner = () => {
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
                     <a href="/contact" className="BtnSt1">
-                      Get Your Free Proposals
+                      Request a Quote
                     </a>
                   </div>
                 )}
@@ -237,7 +237,7 @@ const SearchEngineBanner = () => {
                 </div>
               </div> */}
               <div className="icol-md-3 pd-top-20">
-                <Form2/>
+                <Form2 />
               </div>
             </div>
           </div>

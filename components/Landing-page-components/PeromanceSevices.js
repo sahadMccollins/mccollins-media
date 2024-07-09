@@ -44,9 +44,9 @@ const PerfomanceSevices = () => {
                     <div className={`${styles.PrServicesBoxItemT1}`}>
                       Campaign Planning
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -61,9 +61,9 @@ const PerfomanceSevices = () => {
                     <div className={`${styles.PrServicesBoxItemT1}`}>
                       Keyword Research
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -76,12 +76,11 @@ const PerfomanceSevices = () => {
                 <div className={`${styles.PrServicesBoxItemHover}`}>
                   <div>
                     <div className={`${styles.PrServicesBoxItemT1}`}>
-                    Campaign
-Setup
+                      Campaign Setup
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -94,11 +93,11 @@ Setup
                 <div className={`${styles.PrServicesBoxItemHover}`}>
                   <div>
                     <div className={`${styles.PrServicesBoxItemT1}`}>
-                    Ad Creation
+                      Ad Creation
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -111,12 +110,11 @@ Setup
                 <div className={`${styles.PrServicesBoxItemHover}`}>
                   <div>
                     <div className={`${styles.PrServicesBoxItemT1}`}>
-                    Bid
-Management
+                      Bid Management
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -129,12 +127,11 @@ Management
                 <div className={`${styles.PrServicesBoxItemHover}`}>
                   <div>
                     <div className={`${styles.PrServicesBoxItemT1}`}>
-                    Performance
-Monitoring
+                      Performance Monitoring
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -147,11 +144,11 @@ Monitoring
                 <div className={`${styles.PrServicesBoxItemHover}`}>
                   <div>
                     <div className={`${styles.PrServicesBoxItemT1}`}>
-                    Optimization
+                      Optimization
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -164,19 +161,18 @@ Monitoring
                 <div className={`${styles.PrServicesBoxItemHover}`}>
                   <div>
                     <div className={`${styles.PrServicesBoxItemT1}`}>
-                    Achieving Target
-Audience
+                      Achieving Target Audience
                     </div>
-                    <div className={`${styles.PrServicesBoxItemT2}`}>
+                    {/* <div className={`${styles.PrServicesBoxItemT2}`}>
                       Read More
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Modal onClose={onClose} isOpen={isOpen} isCentered>
+        {/* <Modal onClose={onClose} isOpen={isOpen} isCentered>
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>Campaign Planning</ModalHeader>
@@ -199,7 +195,7 @@ Audience
               </div>
             </ModalBody>
           </ModalContent>
-        </Modal>
+        </Modal> */}
       </div>
     </div>
   );

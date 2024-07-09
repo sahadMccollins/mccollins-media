@@ -20,7 +20,10 @@ const GoogleAdsBanner1 = () => {
           className="LpMainVideo"
           poster="/assets/image/servicePage/DMSEO.jpg"
         >
-          <source src="/assets/cloudinaryBackup/Search_engine_marketing-_kg3pi4.mp4" type="video/mp4" />
+          <source
+            src="/assets/cloudinaryBackup/Search_engine_marketing-_kg3pi4.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
       <div className="image-title SEOTitleBox" id="contactnow">
@@ -28,17 +31,17 @@ const GoogleAdsBanner1 = () => {
           <div className="icontainer">
             <div className="irow">
               <div className="icol-md-9">
-                <div className="T1">
-                  Google Ads
-                </div>
+                <div className="T1">Google Ads</div>
                 <div className="T2">
-                Get your brand noticed at the right place at the right time. <br/>
-                Let us help you rank high on Google search and place strategic Google Ads to see those leads convert.
+                  Get your brand noticed at the right place at the right time.{" "}
+                  <br />
+                  Let us help you rank high on Google search and place strategic
+                  Google Ads to see those leads convert.
                 </div>
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
                     <a href="/contact" className="BtnSt1">
-                      Get Your Free Proposals
+                      Request a Quote
                     </a>
                   </div>
                 )}
@@ -80,7 +83,7 @@ const GoogleAdsBanner1 = () => {
                 </div>
               </div>
               <div className="icol-md-3 pd-top-20">
-                <Form2/>
+                <Form2 />
               </div>
             </div>
           </div>

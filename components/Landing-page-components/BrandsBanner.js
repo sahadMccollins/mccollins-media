@@ -20,7 +20,10 @@ const BrandsBanner = () => {
           className="LpMainVideo"
           poster="/assets/image/servicePage/designAndBrand.jpg"
         >
-          <source src="/assets/cloudinaryBackup/BRANDING_-_z6r43b.mp4" type="video/mp4" />
+          <source
+            src="/assets/cloudinaryBackup/BRANDING_-_z6r43b.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
       <div className="image-title SEOTitleBox" id="contactnow">
@@ -28,16 +31,16 @@ const BrandsBanner = () => {
           <div className="icontainer">
             <div className="irow">
               <div className="icol-md-9">
-                <div className="T1">
-                brand development
-                </div>
+                <div className="T1">brand development</div>
                 <div className="T2">
-                Brand identity is everything, and we bring in unimaginable creativity through brand execution, logo creation, website redesign, social media content creation, and more.
+                  Brand identity is everything, and we bring in unimaginable
+                  creativity through brand execution, logo creation, website
+                  redesign, social media content creation, and more.
                 </div>
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
                     <a href="/contact" className="BtnSt1">
-                      Get Your Free Proposals
+                      Request a Quote
                     </a>
                   </div>
                 )}
@@ -79,7 +82,7 @@ const BrandsBanner = () => {
                 </div>
               </div>
               <div className="icol-md-3 pd-top-20">
-                <Form2/>
+                <Form2 />
               </div>
             </div>
           </div>

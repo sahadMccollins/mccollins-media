@@ -42,7 +42,7 @@ const PerfomanceBannerMarketing = () => {
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
                     <a href="#" className="BtnSt1">
-                      Get Your Free Proposals
+                      Request a Quote
                     </a>
                   </div>
                 )}
@@ -84,7 +84,7 @@ const PerfomanceBannerMarketing = () => {
                 </div>
               </div>
               <div className="icol-md-3 pd-top-20">
-                <Form2/>
+                <Form2 />
               </div>
               {/* <div className="icol-md-3">
                 <div className="HeaderForm" id="contactus">
@@ -241,8 +241,6 @@ const PerfomanceBannerMarketing = () => {
                   </div>
                 </div>
               </div> */}
-
-              
             </div>
           </div>
         </div>

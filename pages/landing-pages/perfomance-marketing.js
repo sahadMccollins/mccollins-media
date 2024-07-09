@@ -10,23 +10,23 @@ import ClientPerfomance from "../../components/Landing-page-components/ClientPer
 import CleantTestimonials from "../../components/Landing-page-components/ClientTestimonials";
 const PerfomanceMarketing = () => {
   useEffect(() => {
-    document.body.className = 'LandingPage PerfomancePage';
+    document.body.className = "LandingPage PerfomancePage";
   });
   return (
     <Box marginTop={"-85px"} position="relative">
       <Head>
-      <meta
+        <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
         />
       </Head>
-      <PerfomanceBannerMarketing/>
-      <ClientPortFolio/>
-      <PerfomanceSevices/>
-      <ClientPerfomance/>
-      <CleantTestimonials/>
-      <InstaBox/>
-      <FooterNav/>
+      <PerfomanceBannerMarketing />
+      <ClientPortFolio />
+      <PerfomanceSevices />
+      {/* <ClientPerfomance/> */}
+      <CleantTestimonials />
+      <InstaBox />
+      <FooterNav />
     </Box>
   );
 };
