@@ -1360,7 +1360,7 @@ const FilmProduction = () => {
                         defaultCountry="ae"
                         containerClassName="intl-tel-input"
                         inputClassName="form-control"
-                        value={customerPhone}
+                        value={contact}
                         onPhoneNumberChange={handlePhoneChange}
                       />
                     </div>
