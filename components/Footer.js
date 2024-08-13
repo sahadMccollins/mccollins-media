@@ -28,6 +28,7 @@ import axios from "axios";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import TagManager from "react-gtm-module";
+import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 const Footer = () => {
   const [phrase, setPhrase] = useState("");
@@ -288,7 +289,20 @@ const Footer = () => {
                 </TabPanel> */}
               </TabPanels>
             </Tabs>
-            <Box fontSize={"18px"} color="#fff" mt={"5"}>
+            <Tabs color={"#fff"} mt="5">
+              <TabList>
+                <Tab fontSize={"xl"}>Office Hours</Tab>
+              </TabList>
+              <TabPanels>
+                <TabPanel pl={"0"}>
+                  <Text>Monday - Friday: 9.00 AM to 6.00 PM</Text>
+                </TabPanel>
+                {/* <TabPanel>
+                  <p>Calicut, Kerala</p>
+                </TabPanel> */}
+              </TabPanels>
+            </Tabs>
+            {/* <Box fontSize={"18px"} color="#fff" mt={"5"}>
               <Text>
                 <b>Phone: </b>
                 <Link href={`tel:${phoneNumber}`}>{phoneNumber}</Link>
@@ -301,6 +315,335 @@ const Footer = () => {
               </Text>
               <Text>
                 <b>WhatsApp Us: </b>
+                <Link
+                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media`}
+                >
+                  {whatsappNumber}
+                </Link>
+              </Text>
+            </Box>*/}
+            {/* <Flex mt={5}>
+              <Box
+                p={3}
+                pl={0}
+                as={chakraLink}
+                href="https://www.tiktok.com/@mccollinsmedia"
+                target="_blank"
+              >
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/icons/tiktok.svg"
+                  width={"18px"}
+                  height="21px"
+                />
+              </Box>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://www.instagram.com/mccollinsmedia/?hl=en"
+                target="_blank"
+              >
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/icons/insta.svg"
+                  width={"21px"}
+                  height="21px"
+                />
+              </Box>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://www.facebook.com/mccollinsmedia/"
+                target="_blank"
+              >
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/icons/fb.svg"
+                  width={"9px"}
+                  height="21px"
+                />
+              </Box>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://www.linkedin.com/company/mccollins-media/"
+                target="_blank"
+              >
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/icons/linkedin.svg"
+                  width={"22px"}
+                  height="21px"
+                />
+              </Box>
+              <Box
+                p={3}
+                as={chakraLink}
+                href="https://twitter.com/mccollinsmedia?lang=en"
+                target="_blank"
+              >
+                <Image
+                  alt="McCollins Media"
+                  src="/assets/image/icons/twiter.svg"
+                  width={"27px"}
+                  height="20px"
+                />
+              </Box>
+            </Flex> */}
+          </Box>
+          <Box
+            width={{ base: "100%", md: "40%" }}
+            mt={{ base: "50px", md: "0" }}
+            color="#fff"
+          >
+            <form onSubmit={formHandler}>
+              <FormControl isRequired>
+                <FormLabel htmlFor="first-name">Name</FormLabel>
+                <Input
+                  id="first-name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+              <FormControl
+                isRequired
+                mt={5}
+                style={{ alignSelf: "end" }}
+                className="int-grp1"
+              >
+                <FormLabel htmlFor="contact">Contact No</FormLabel>
+                {/* <NumberInput max={50} min={10} value={contact}>
+                  <NumberInputField
+                    id="contact"
+                    onChange={(e) => setContact(e.target.value)}
+                    borderRadius={"50px"}
+                  />
+                </NumberInput> */}
+                <IntlTelInput
+                  style={{ width: "100%" }}
+                  defaultCountry="ae"
+                  containerClassName="intl-tel-input"
+                  inputClassName="form-control"
+                  value={contact}
+                  onPhoneNumberChange={handlePhoneChange}
+                />
+              </FormControl>
+              <FormControl isRequired mt={5}>
+                <FormLabel htmlFor="email">Email</FormLabel>
+                <Input
+                  id="email"
+                  type="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+              <Flex>
+                <FormControl isRequired mt={5} mr={5}>
+                  <FormLabel htmlFor="company">Company</FormLabel>
+                  <Input
+                    id="company"
+                    onChange={(e) => setCompany(e.target.value)}
+                    value={company}
+                    borderRadius={"50px"}
+                  />
+                </FormControl>
+                <FormControl isRequired mt={5}>
+                  <FormLabel htmlFor="looking-for">Looking For?</FormLabel>
+                  <Input
+                    id="looking-for"
+                    onChange={(e) => setLookingFor(e.target.value)}
+                    value={lookingFor}
+                    borderRadius={"50px"}
+                  />
+                </FormControl>
+              </Flex>
+              <FormControl isRequired mt={5}>
+                <FormLabel htmlFor="project">Project Details</FormLabel>
+                <Input
+                  id="project"
+                  onChange={(e) => setProject(e.target.value)}
+                  value={project}
+                  borderRadius={"50px"}
+                />
+              </FormControl>
+              <input
+                type="hidden"
+                id="zc_gad"
+                name="zc_gad"
+                defaultValue={hiddenInputValue}
+                ref={hiddenInputRef}
+                onChange={handleHiddenInputChange}
+              />
+              <Button
+                mt={5}
+                colorScheme="yellow"
+                background={"#FFDE11"}
+                type="submit"
+                borderRadius={"50px"}
+                fontSize={"18px"}
+                fontWeight="bold"
+                isLoading={loading}
+              >
+                Submit Inquiry
+              </Button>
+            </form>
+          </Box>
+        </Flex>
+        <hr style={{ marginTop: "40px" }} />
+
+        <Flex
+          my={"20px"}
+          justifyContent="space-between"
+          alignItems={"center"}
+          direction={{ base: "column", md: "row" }}
+        >
+          <Box
+            mt={"30px"}
+            textAlign={"center"}
+            width={{ base: "100%", md: "25%" }}
+          >
+            <Image
+              alt="McCollins Media"
+              src="/assets/image/navbar/logo-yellow.svg"
+              width="209px"
+              height="46"
+            />
+
+            <Text color={"#fff"} mt={2} fontSize="12px" textAlign={"center"}>
+              Connect with us to change <br /> your digital game.
+            </Text>
+          </Box>
+          <Flex
+            mt={"20px"}
+            justifyContent="space-between"
+            direction={{ base: "column", md: "row" }}
+            width={{ base: "100%", md: "50%" }}
+            className="footer-links"
+          >
+            {/* <Box>
+              <Heading color={"#fff"} fontSize={"2xl"} fontWeight={"normal"}>
+                Quick Link
+              </Heading>
+              <Box
+                style={{
+                  color: "white",
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "10px",
+                }}
+              >
+                <Link href="/about">About</Link>
+                <Link href="/services">Services</Link>
+                <Link href="/industry">Industry</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/contact">Contact</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
+                <Link href="/privacy-policy">Terms & Conditions</Link>
+              </Box>
+            </Box> */}
+            <Box mx={{ base: "0", md: "auto" }}>
+              <Heading color={"#fff"} fontSize={"2xl"} fontWeight={"normal"}>
+                Services
+              </Heading>
+              <Box
+                style={{
+                  color: "white",
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "10px",
+                }}
+              >
+                <Link href="/landing-pages/web-design-development-1">
+                  Website Development
+                </Link>
+                <Link href="/landing-pages/social-media-marketing">
+                  Social Media Marketing
+                </Link>
+                <Link href="/services/google-ads">Google Ads</Link>
+                <Link href="/services/search-engine-optimization">
+                  Search Engine Optimization
+                </Link>
+                <Link href="/film-production">Film Production</Link>
+                {/* <Link href="/services/brand-development">
+                  Brand Development
+                </Link>
+                <Link href="/landing-pages/perfomance-marketing">
+                  Perfomance Marketing
+                </Link> */}
+              </Box>
+            </Box>
+            <Box mx={{ base: "0", md: "auto" }}>
+              <Heading
+                color={"#fff"}
+                fontSize={"2xl"}
+                fontWeight={"normal"}
+                mt={{ base: "20px", md: "0" }}
+              >
+                Industry
+              </Heading>
+              <Box
+                style={{
+                  color: "white",
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "10px",
+                }}
+              >
+                <Link href="/industry/corporate-marketing-services">
+                  Corporate Marketing Services
+                </Link>
+                <Link href="/industry/food-and-beverage-marketing-services">
+                  Food & Beverage Marketing
+                </Link>
+                <Link href="/industry/healthcare-marketing-services">
+                  Healthcare Marketing Services
+                </Link>
+                <Link href="/industry/luxury-marketing-services">
+                  Luxury Marketing Services
+                </Link>
+                <Link href="/industry/technology-marketing-services">
+                  Technology Marketing Services
+                </Link>
+              </Box>
+            </Box>
+          </Flex>
+          <Box
+            width={{ base: "100%", md: "25%" }}
+            ml={{ base: "auto", md: "30px " }}
+            mt={"20px"}
+          >
+            <Heading
+              color={"#fff"}
+              fontSize={"2xl"}
+              fontWeight={"normal"}
+              mb={"2"}
+            >
+              Lets Talk
+            </Heading>
+            <Box fontSize={"18px"} color="#fff">
+              <Text>
+                <b>
+                  <PhoneIcon />{" "}
+                </b>
+                <Link href={`tel:${phoneNumber}`}>{phoneNumber}</Link>
+              </Text>
+              <Text>
+                <b>
+                  <EmailIcon />{" "}
+                </b>
+                <Link href="mailto:info@mccollinsmedia.com">
+                  info@mccollinsmedia.com
+                </Link>
+              </Text>
+              <Text display={"flex"}>
+                <img
+                  width={"18px"}
+                  height={"18px"}
+                  style={{ objectFit: "contain", marginRight: "4px" }}
+                  src="/assets/image/icons/whatsapp-24.png"
+                />
                 <Link
                   href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media`}
                 >
@@ -377,120 +720,7 @@ const Footer = () => {
               </Box>
             </Flex>
           </Box>
-          <Box
-            width={{ base: "100%", md: "35%" }}
-            mt={{ base: "50px", md: "0" }}
-            color="#fff"
-          >
-            <form onSubmit={formHandler}>
-              <FormControl isRequired>
-                <FormLabel htmlFor="first-name">Name</FormLabel>
-                <Input
-                  id="first-name"
-                  onChange={(e) => setName(e.target.value)}
-                  value={name}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-              <FormControl
-                isRequired
-                mt={5}
-                style={{ alignSelf: "end" }}
-                className="int-grp1"
-              >
-                <FormLabel htmlFor="contact">Contact No</FormLabel>
-                {/* <NumberInput max={50} min={10} value={contact}>
-                  <NumberInputField
-                    id="contact"
-                    onChange={(e) => setContact(e.target.value)}
-                    borderRadius={"50px"}
-                  />
-                </NumberInput> */}
-                <IntlTelInput
-                  style={{ width: "100%" }}
-                  defaultCountry="ae"
-                  containerClassName="intl-tel-input"
-                  inputClassName="form-control"
-                  value={contact}
-                  onPhoneNumberChange={handlePhoneChange}
-                />
-              </FormControl>
-              <FormControl isRequired mt={5}>
-                <FormLabel htmlFor="email">Email</FormLabel>
-                <Input
-                  id="email"
-                  type="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-              <FormControl isRequired mt={5}>
-                <FormLabel htmlFor="company">Company</FormLabel>
-                <Input
-                  id="company"
-                  onChange={(e) => setCompany(e.target.value)}
-                  value={company}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-              <FormControl isRequired mt={5}>
-                <FormLabel htmlFor="looking-for">Looking For?</FormLabel>
-                <Input
-                  id="looking-for"
-                  onChange={(e) => setLookingFor(e.target.value)}
-                  value={lookingFor}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-              <FormControl isRequired mt={5}>
-                <FormLabel htmlFor="project">Project Details</FormLabel>
-                <Input
-                  id="project"
-                  onChange={(e) => setProject(e.target.value)}
-                  value={project}
-                  borderRadius={"50px"}
-                />
-              </FormControl>
-              <input
-                type="hidden"
-                id="zc_gad"
-                name="zc_gad"
-                defaultValue={hiddenInputValue}
-                ref={hiddenInputRef}
-                onChange={handleHiddenInputChange}
-              />
-              <Button
-                mt={5}
-                colorScheme="yellow"
-                background={"#FFDE11"}
-                type="submit"
-                borderRadius={"50px"}
-                fontSize={"18px"}
-                fontWeight="bold"
-                isLoading={loading}
-              >
-                Submit Inquiry
-              </Button>
-            </form>
-          </Box>
-        </Flex>
-        <hr />
-        <Flex
-          mt={"20px"}
-          justifyContent="space-between"
-          alignItems={"center"}
-          direction={{ base: "column", md: "row" }}
-        >
-          <Box mt={"30px"}>
-            <Image
-              alt="McCollins Media"
-              src="/assets/image/navbar/logo-yellow.svg"
-              width="209px"
-              height="46"
-            />
-          </Box>
-          <Box mt={"30px"}>
+          {/* <Box mt={"30px"}>
             <Text color={"#fff"} fontSize="12px" textAlign={"center"}>
               © 2023 All Rights Reserved
               {isSmallerThan400 && <br />}
@@ -504,9 +734,17 @@ const Footer = () => {
               <Link href="/privacy-policy">Privacy Policy </Link> &nbsp;&nbsp; I
               &nbsp;&nbsp; Terms & Conditions
             </Text>
-          </Box>
+          </Box> */}
         </Flex>
-        
+        <hr />
+        <Text color={"#fff"} mt={5} fontSize="12px" textAlign={"center"}>
+          {" "}
+          © 2024 All Rights Reserved
+          {/* {isSmallerThan400 && <br />} */}
+          <span style={{ color: "#FFDE11", cursor: "pointer" }}>
+            &nbsp;McCollins Media
+          </span>
+        </Text>
       </Container>
     </Stack>
   );

@@ -197,19 +197,19 @@ const Navbar = (props) => {
         <Flex>
           <Box flexGrow={1} zIndex="99">
             <div className="ImageWrap1">
-            <Link href="/" className="MainLogo1Link">
-              <Image
-                alt="McCollins Media"
-                src={`/assets/image/navbar/${
-                  props.color ? `logo-${props.color}` : "logo"
-                }.svg`}
-                width="223"
-                height="50"
-                priority={true}
-                style={{ cursor: "pointer" }}
-                className="MainLogo1"
-              />
-            </Link>
+              <Link href="/" className="MainLogo1Link">
+                <Image
+                  alt="McCollins Media"
+                  src={`/assets/image/navbar/${
+                    props.color ? `logo-${props.color}` : "logo"
+                  }.svg`}
+                  width="223"
+                  height="50"
+                  priority={true}
+                  style={{ cursor: "pointer" }}
+                  className="MainLogo1"
+                />
+              </Link>
             </div>
           </Box>
           <Box alignSelf={"start"}>
@@ -429,16 +429,16 @@ const Navbar = (props) => {
           <Flex>
             <Box flexGrow={1} zIndex="99">
               <div className="ImageWrap1">
-              <Link href="/">
-                <Image
-                  alt="McCollins Media"
-                  src={`/assets/image/navbar/logo-black.svg`}
-                  width="223"
-                  height="50"
-                  priority={true}
-                  style={{ cursor: "pointer" }}
-                />
-              </Link>
+                <Link href="/">
+                  <Image
+                    alt="McCollins Media"
+                    src={`/assets/image/navbar/logo-black.svg`}
+                    width="223"
+                    height="50"
+                    priority={true}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Link>
               </div>
             </Box>
             <Box alignSelf={"center"}>
@@ -499,7 +499,7 @@ const Navbar = (props) => {
                 </>
               ) : (
                 <Box
-                  className={styles.hamBurger + ' fixedArap1'}
+                  className={styles.hamBurger + " fixedArap1"}
                   colorScheme="teal"
                   onClick={onOpen}
                 >
@@ -680,7 +680,10 @@ const Navbar = (props) => {
                           onClose();
                         }}
                       >
-                        <NavItem name="Film" href="/film-production" />
+                        <NavItem
+                          name="Film Production"
+                          href="/film-production"
+                        />
                       </li>
 
                       <li
@@ -1051,21 +1054,21 @@ const Navbar = (props) => {
         </ModalContent>
       </Modal>
       <div class="FooterMediaIcons">
-          <div>
-            <div class="mediaFlex">
-              <a href="javasript:void(0);" class="mediaFlex1" onClick={onOpen2}>
-                Get a quote
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?phone=+971 55 901 5305&amp;text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
-                class="mediaFlex2"
-                target="_blank"
-              >
-                WhatsApp us
-              </a>
-            </div>
+        <div>
+          <div class="mediaFlex">
+            <a href="javasript:void(0);" class="mediaFlex1" onClick={onOpen2}>
+              Get a quote
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+971 55 901 5305&amp;text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+              class="mediaFlex2"
+              target="_blank"
+            >
+              WhatsApp us
+            </a>
           </div>
         </div>
+      </div>
     </Stack>
   );
 };
