@@ -3153,6 +3153,10 @@ font-size: 20px;
   .pd-top-20{
     padding-top: 15px !important;
   }
+
+  .herobanner-container {
+    max-height: 550px;
+  }
 }
 
 .footer-links a {

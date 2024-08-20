@@ -27,7 +27,24 @@ const HeroBanner = (props) => {
     <Stack marginTop={"-85px"} position="relative">
       <Box>
         <ZoomOut>
-          <Chakraimage
+          <div
+            style={{
+              position: "relative",
+              width: "100vw",
+              height: "100vh",
+              minHeight: props.isLargerThan780 ? "600px" : "500px",
+            }}
+            className="herobanner-container"
+          >
+            <Image
+              src={props.img}
+              alt="mccollins media banner image"
+              layout="fill"
+              objectFit="cover"
+              className="herobanner"
+            />
+          </div>
+          {/* <Chakraimage
             src={props.img}
             alt="mccollins media banner image"
             width="100vw"
@@ -35,7 +52,7 @@ const HeroBanner = (props) => {
             minHeight={isLargerThan780 ? "600px" : "500px"}
             objectFit="cover"
             className="herobanner"
-          />
+          /> */}
         </ZoomOut>
       </Box>
       <Box position={"absolute"} width="100%" bottom={"60px"} color="#fff">
