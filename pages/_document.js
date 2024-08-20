@@ -21,6 +21,7 @@ export default function Document() {
           src="https://www.google.com/recaptcha/enterprise.js?render=6LdRaB0pAAAAADkho8kQ1qjUhjQaHafEUtWeLhsO"
           async
           defer
+          strategy="lazyOnload"
         ></script>
 
         {/* Google Tag Manager */}
@@ -50,6 +51,7 @@ export default function Document() {
         <script
           type="text/javascript"
           src="https://crm.zoho.com/crm/javascript/zcga.js"
+          strategy="lazyOnload"
         ></script>
         {/* Google Tag Manager (noscript) */}
         <noscript>
