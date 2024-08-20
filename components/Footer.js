@@ -27,7 +27,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
-// import TagManager from "react-gtm-module";
+import TagManager from "react-gtm-module";
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 const Footer = () => {
@@ -220,19 +220,11 @@ const Footer = () => {
           // Use the parsed JSON data
           console.log(data);
 
-          // TagManager.dataLayer({
-          //   dataLayer: {
-          //     event: "conversion",
-          //     send_to: "AW-10803441186/_QCnCMn-o_kYEKLcvZ8o",
-          //   },
-          // });
-          import("react-gtm-module").then((TagManager) => {
-            TagManager.dataLayer({
-              dataLayer: {
-                event: "conversion",
-                send_to: "AW-10803441186/_QCnCMn-o_kYEKLcvZ8o",
-              },
-            });
+          TagManager.dataLayer({
+            dataLayer: {
+              event: "conversion",
+              send_to: "AW-10803441186/_QCnCMn-o_kYEKLcvZ8o",
+            },
           });
 
           // Now you can navigate to the thank-you page
