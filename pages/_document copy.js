@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import DeferNextScript from "../components/Layout/DeferNextScript";
 
 export default function Document() {
   return (
@@ -62,7 +61,7 @@ export default function Document() {
         </noscript>
         {/* End Google Tag Manager (noscript) */}
         <Main />
-        <DeferNextScript />
+        <NextScript />
       </body>
     </Html>
   );
