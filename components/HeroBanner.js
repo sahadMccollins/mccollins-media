@@ -41,6 +41,7 @@ const HeroBanner = (props) => {
               alt="mccollins media banner image"
               layout="fill"
               objectFit="cover"
+              priority="true"
               className="herobanner"
             />
           </div>
