@@ -233,6 +233,7 @@ const Navbar = (props) => {
                           src="/assets/image/icons/call.svg"
                           width="25px"
                           height="25px"
+                          priority={true}
                         />
                         <span>&nbsp;&nbsp;{phoneNumber}</span>
                       </ChakraLink>
@@ -266,6 +267,7 @@ const Navbar = (props) => {
                         src={"/assets/image/navbar/ham-burger.svg"}
                         width="31px"
                         height={"27px"}
+                        priority={true}
                       />
                     ) : (
                       <Image
@@ -273,6 +275,7 @@ const Navbar = (props) => {
                         src={"/assets/image/navbar/ham-burger-yellow.svg"}
                         width="31px"
                         height={"27px"}
+                        priority={true}
                       />
                     )}
                   </Box>
@@ -407,6 +410,7 @@ const Navbar = (props) => {
                     width="31px"
                     height={"27px"}
                     className="Habm1"
+                    priority={true}
                   />
                 ) : (
                   <Image
@@ -415,6 +419,7 @@ const Navbar = (props) => {
                     width="31px"
                     height={"27px"}
                     className="Habm2"
+                    priority={true}
                   />
                 )}
               </Box>
@@ -462,6 +467,7 @@ const Navbar = (props) => {
                             src="/assets/image/icons/call.svg"
                             width="25px"
                             height="25px"
+                            priority={true}
                           />
                           <span>&nbsp;&nbsp;{phoneNumber}</span>
                         </ChakraLink>
@@ -493,6 +499,7 @@ const Navbar = (props) => {
                         src={"/assets/image/navbar/ham-burger.svg"}
                         width="31px"
                         height={"27px"}
+                        priority={true}
                       />
                     </Box>
                   </Flex>
@@ -552,6 +559,7 @@ const Navbar = (props) => {
                       src="/assets/image/icons/call.svg"
                       width="25px"
                       height="25px"
+                      priority={true}
                     />
                     <span>&nbsp;&nbsp;Call</span>
                   </ChakraLink>
