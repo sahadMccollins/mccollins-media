@@ -139,38 +139,104 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   };
   const { title, description } = metaData[router.pathname.toString()] || {};
 
-  useEffect(() => {
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.defer = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-KK6CH2S");
-  }, []);
+  // useEffect(() => {
+  //   (function (w, d, s, l, i) {
+  //     w[l] = w[l] || [];
+  //     w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+  //     var f = d.getElementsByTagName(s)[0],
+  //       j = d.createElement(s),
+  //       dl = l != "dataLayer" ? "&l=" + l : "";
+  //     j.async = true;
+  //     j.defer = true;
+  //     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+  //     f.parentNode.insertBefore(j, f);
+  //   })(window, document, "script", "dataLayer", "GTM-KK6CH2S");
+  // }, []);
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-KK6CH2S" });
-    router.events.on("routeChangeComplete", (url) => {
-      TagManager.dataLayer({
-        dataLayer: {
-          pagePath: url,
-        },
-        dataLayerName: "PageDataLayer",
-      });
-    });
-  }, []);
-
-  useEffect(() => {
-    const tagManagerArgs = {
-      gtmId: "AW-10803441186",
+    const loadGTM = () => {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.defer = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KK6CH2S");
     };
-    // GTM initialization
-    TagManager.initialize(tagManagerArgs);
+
+    // Dynamically load GTM after the page has loaded
+    if (typeof window !== "undefined") {
+      window.addEventListener("load", loadGTM);
+    }
+
+    return () => {
+      // Cleanup the event listener
+      if (typeof window !== "undefined") {
+        window.removeEventListener("load", loadGTM);
+      }
+    };
+  }, []);
+
+  // useEffect(() => {
+  //   TagManager.initialize({ gtmId: "GTM-KK6CH2S" });
+  //   router.events.on("routeChangeComplete", (url) => {
+  //     TagManager.dataLayer({
+  //       dataLayer: {
+  //         pagePath: url,
+  //       },
+  //       dataLayerName: "PageDataLayer",
+  //     });
+  //   });
+  // }, []);
+
+  useEffect(() => {
+    // Dynamically import react-gtm-module
+    const loadTagManager = async () => {
+      const TagManager = await import("react-gtm-module");
+
+      // Initialize GTM
+      TagManager.initialize({ gtmId: "GTM-KK6CH2S" });
+
+      // Handle route changes to push page path to dataLayer
+      router.events.on("routeChangeComplete", (url) => {
+        TagManager.dataLayer({
+          dataLayer: {
+            pagePath: url,
+          },
+          dataLayerName: "PageDataLayer",
+        });
+      });
+    };
+
+    loadTagManager();
+
+    return () => {
+      router.events.off("routeChangeComplete", () => {});
+    };
+  }, [router.events]);
+
+  // useEffect(() => {
+  //   const tagManagerArgs = {
+  //     gtmId: "AW-10803441186",
+  //   };
+  //   // GTM initialization
+  //   TagManager.initialize(tagManagerArgs);
+  // }, []);
+
+  useEffect(() => {
+    // Dynamically import react-gtm-module
+    const loadTagManager = async () => {
+      const TagManager = await import("react-gtm-module");
+
+      // Initialize another GTM container
+      TagManager.initialize({ gtmId: "AW-10803441186" });
+    };
+
+    loadTagManager();
   }, []);
 
   return (
