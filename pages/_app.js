@@ -15,10 +15,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
   const metaData = {
     "/": {
-      title:
-        "Web Development Company in Dubai | Web Design Company Dubai-Mccollins",
+      title: "Best Digital Marketing Agency in Dubai | McCollines Media",
       description:
-        "Are you looking for a web development company to build your website and brand in Dubai? Mccollins is the leading web development and design agency providing web solutions cost-effectively. Reach out to us for responsive custom web development services.",
+        "McCollines Media, best digital marketing agency in Dubai, UAE. Company with Innovative strategies, expert solutions, and measurable results. Contact Now!",
     },
     "/about": {
       title:
