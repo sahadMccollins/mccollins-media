@@ -15,9 +15,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
   const metaData = {
     "/": {
-      title: "Best Digital Marketing Agency in Dubai | McCollines Media",
+      title: "Best Digital Marketing Agency in Dubai | McCollins Media",
       description:
-        "McCollines Media, best digital marketing agency in Dubai, UAE. Company with Innovative strategies, expert solutions, and measurable results. Contact Now!",
+        "McCollins Media, best digital marketing agency in Dubai, UAE. Company with Innovative strategies, expert solutions, and measurable results. Contact Now!",
     },
     "/about": {
       title:
