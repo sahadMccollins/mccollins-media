@@ -122,7 +122,9 @@ const FilmProduction = () => {
   };
 
   useEffect(() => {
-    AOS.init();
+    if (AOS) {
+      AOS.init();
+    }
   }, []);
 
   const options = {
