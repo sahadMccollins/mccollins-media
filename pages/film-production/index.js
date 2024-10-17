@@ -108,7 +108,7 @@ const FilmProduction = () => {
           duration: 9000,
           isClosable: true,
         })
-        // router.push(`/film-production/thank-you yes`)
+        // router.push(`/film-production/thank-you`)
       );
     } else {
       toast({
