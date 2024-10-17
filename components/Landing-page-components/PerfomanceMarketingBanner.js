@@ -46,7 +46,7 @@ const PerfomanceBannerMarketing = () => {
                     </a>
                   </div>
                 )}
-                <div className="FtrBx1Wrp">
+                {/* <div className="FtrBx1Wrp">
                   <div className="FtrBx1">
                     <div className="FtrBx1Item color1">
                       <div>
@@ -81,7 +81,7 @@ const PerfomanceBannerMarketing = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="icol-md-3 pd-top-20">
                 <Form2 />

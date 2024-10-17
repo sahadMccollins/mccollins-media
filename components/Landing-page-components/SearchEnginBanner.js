@@ -44,7 +44,7 @@ const SearchEngineBanner = () => {
                     </a>
                   </div>
                 )}
-                <div className="FtrBx1Wrp">
+                {/* <div className="FtrBx1Wrp">
                   <div className="FtrBx1">
                     <div className="FtrBx1Item color1">
                       <div>
@@ -79,7 +79,7 @@ const SearchEngineBanner = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               {/* <div className="icol-md-3">
                 <div className="HeaderForm" id="contactus">
