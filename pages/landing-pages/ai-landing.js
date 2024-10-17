@@ -71,10 +71,9 @@ const LandingPage1 = () => {
         />
       </Head>
       <MainBanner1ai />
-      <CustomTab1/>
+      <CustomTab1 />
       <ClientPortFolio />
-      
-     
+
       <FooterNav phone={true} />
     </Box>
   );
