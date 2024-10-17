@@ -2,11 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import EmptyLayout from "../../components/Layout/EmptyLayout";
 import Head from "next/head";
 
-import OwlCarousel from "react-owl-carousel2";
 import { useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import axios from "axios";
 import IntlTelInput from "react-intl-tel-input";
+import dynamic from "next/dynamic";
+import Script from "next/script";
+
+const OwlCarousel = dynamic(() => import("react-owl-carousel2"), {
+  ssr: false,
+  loading: () => <p>Loading...</p>,
+});
 
 const FilmProduction = () => {
   const [fullName, setFullName] = useState("");
@@ -16,6 +22,15 @@ const FilmProduction = () => {
   const [lookingFor, setLookingFor] = useState("");
   const [industry, setIndustry] = useState("");
   const [contactStatus, setContactStatus] = useState();
+
+  const [scriptsLoaded, setScriptsLoaded] = useState({
+    jquery: false,
+    fancybox: false,
+    owlCarousel: false,
+    main: false,
+    aos: false,
+  });
+  const [owlLoaded, setOwlLoaded] = useState(false);
 
   const [loading, setLoading] = useState(false);
 
@@ -122,10 +137,17 @@ const FilmProduction = () => {
   };
 
   useEffect(() => {
-    if (AOS) {
-      AOS.init();
+    if (Object.values(scriptsLoaded).every(Boolean)) {
+      if (window.AOS) {
+        window.AOS.init();
+      }
+      setOwlLoaded(true);
     }
-  }, []);
+  }, [scriptsLoaded]);
+
+  const handleScriptLoad = (scriptName) => {
+    setScriptsLoaded((prev) => ({ ...prev, [scriptName]: true }));
+  };
 
   const options = {
     center: true,
@@ -916,97 +938,97 @@ const FilmProduction = () => {
               </div>
             </div>
           </section>
-          <section className="ourWorks" id="ourworks">
+          {/* <section className="ourWorks" id="ourworks">
             <div className="container">
               <div className="WrkT1">Our portfolio</div>
               <div className="PortFolioBlock">
-                {/* <div className="loop1  owl-carousel"> */}
-                <OwlCarousel options={options}>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Film Production</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
+                {owlLoaded && (
+                  <OwlCarousel options={options}>
+                    <div className="item">
+                      <div
+                        className="PrBlock"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                      >
+                        <img
+                          className=""
+                          src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg"
+                        />
+                        <div className="PrBlockContent">
+                          <div>
+                            <div className="PrT1">Film Production</div>
+                            <a href="javascript:void(0)" className="PrT2 Port1">
+                              Portfolio
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Lifestyle Photography</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
+                    <div className="item">
+                      <div
+                        className="PrBlock"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                      >
+                        <img
+                          className=""
+                          src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg"
+                        />
+                        <div className="PrBlockContent">
+                          <div>
+                            <div className="PrT1">Lifestyle Photography</div>
+                            <a href="javascript:void(0)" className="PrT2 Port1">
+                              Portfolio
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Food Photography</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
+                    <div className="item">
+                      <div
+                        className="PrBlock"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                      >
+                        <img
+                          className=""
+                          src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg"
+                        />
+                        <div className="PrBlockContent">
+                          <div>
+                            <div className="PrT1">Food Photography</div>
+                            <a href="javascript:void(0)" className="PrT2 Port1">
+                              Portfolio
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="item">
-                    <div
-                      className="PrBlock"
-                      data-aos="fade-up"
-                      data-aos-duration="700"
-                    >
-                      <img
-                        className=""
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg"
-                      />
-                      <div className="PrBlockContent">
-                        <div>
-                          <div className="PrT1">Corporate Videos</div>
-                          <a href="javascript:void(0)" className="PrT2 Port1">
-                            Portfolio
-                          </a>
+                    <div className="item">
+                      <div
+                        className="PrBlock"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                      >
+                        <img
+                          className=""
+                          src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg"
+                        />
+                        <div className="PrBlockContent">
+                          <div>
+                            <div className="PrT1">Corporate Videos</div>
+                            <a href="javascript:void(0)" className="PrT2 Port1">
+                              Portfolio
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </OwlCarousel>
-                {/* </div> */}
+                  </OwlCarousel>
+                )}
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="Whatsee" id="whatsee">
             <div className="container">
               <div className="WrkT1">What sets us apart</div>
@@ -1638,12 +1660,31 @@ const FilmProduction = () => {
           </div>
         </div>
 
-        <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.js"></script>
-        <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.fancybox.min.js"></script>
-        <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/owl.carousel.min.js"></script>
-        <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/main.js"></script>
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <Script
+          src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.js"
+          strategy="beforeInteractive"
+          onLoad={() => handleScriptLoad("jquery")}
+        />
+        <Script
+          src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.fancybox.min.js"
+          strategy="afterInteractive"
+          onLoad={() => handleScriptLoad("fancybox")}
+        />
+        <Script
+          src="https://mccollinsmediaweb.github.io/mcc-video-production/js/owl.carousel.min.js"
+          strategy="afterInteractive"
+          onLoad={() => handleScriptLoad("owlCarousel")}
+        />
+        <Script
+          src="https://mccollinsmediaweb.github.io/mcc-video-production/js/main.js"
+          strategy="afterInteractive"
+          onLoad={() => handleScriptLoad("main")}
+        />
+        <Script
+          src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+          strategy="afterInteractive"
+          onLoad={() => handleScriptLoad("aos")}
+        />
       </div>
     </>
   );

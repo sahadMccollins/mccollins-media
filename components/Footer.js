@@ -46,14 +46,33 @@ const Footer = () => {
     return j;
   };
 
+  // const updatePhrase = () => {
+  //   const newIndex = randomNum(i, phrases.length);
+  //   setI(newIndex);
+  //   const newPhrase = phrases[newIndex];
+  //   phraseRef.current.style.opacity = 0;
+  //   setTimeout(() => {
+  //     setPhrase(newPhrase);
+  //     phraseRef.current.style.opacity = 1;
+  //   }, 500);
+  // };
+
   const updatePhrase = () => {
     const newIndex = randomNum(i, phrases.length);
     setI(newIndex);
     const newPhrase = phrases[newIndex];
-    phraseRef.current.style.opacity = 0;
+
+    // Safely set opacity to 0
+    if (phraseRef.current) {
+      phraseRef.current.style.opacity = 0;
+    }
+
     setTimeout(() => {
       setPhrase(newPhrase);
-      phraseRef.current.style.opacity = 1;
+      // Safely set opacity to 1
+      if (phraseRef.current) {
+        phraseRef.current.style.opacity = 1;
+      }
     }, 500);
   };
 
