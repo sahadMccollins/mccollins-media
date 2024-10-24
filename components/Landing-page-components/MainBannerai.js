@@ -238,13 +238,11 @@ const MainBanner1ai = () => {
                   </span>{" "}
                   Services
                   <br />
-                  are revolutionizing the real estate sector
                 </div>
                 <div className="T2">
-                  Offering cutting-edge solutions to enhance your property
-                  experience . From virtual property tours to AI-powered data
-                  analysis, we are here to elevate your business to new heights.
-                  Explore the possibilities with us today
+                  are revolutionizing the real estate sector hospitality and F&B
+                  sectors, offering cutting-edge solutions to enhance your brand
+                  experience.
                 </div>
                 {/* <div className="PartnerBoxWrap">
                   <div className="PartnerBox">
