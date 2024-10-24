@@ -7,6 +7,32 @@ const CustomTab1 = (props) => {
     setActiveAccordion(accordionTitle);
   };
 
+  const videos = [
+    {
+      src: "/ar/AR Video 1.mp4",
+      heading: "A place where reality gets a makeover",
+      description:
+        "We assist brands create experiential solutions—smart, collaborative, and fun.",
+    },
+    {
+      src: "/ar/AR Video 2.mp4",
+      heading: "Step into the future of interaction",
+      description:
+        "Immersive experiences that blur the line between digital and physical.",
+    },
+    {
+      src: "/ar/AR Video 3.mp4",
+      heading: "Where imagination meets technology",
+      description: "Transforming ideas into tangible, interactive realities.",
+    },
+    {
+      src: "/ar/AR Video 4.mp4",
+      heading: "The next frontier of digital engagement",
+      description:
+        "Pushing boundaries to create unforgettable brand experiences.",
+    },
+  ];
+
   return (
     <div className="CustomTab1 pd-common">
       <div className="icontainer">
@@ -21,9 +47,9 @@ const CustomTab1 = (props) => {
           </div>
         </div>
         <div className="icontainer">
-        <div className="row1">
+          <div className="row1">
             <div className="col-md-4 FtrClmn">
-            <Image
+              <Image
                 src="/cgi/k4.jpg"
                 layout="responsive"
                 width={"1000"}
@@ -31,10 +57,12 @@ const CustomTab1 = (props) => {
                 priority={true}
               />
               <div class="TExtHeaderR">Augmented Reality</div>
-              <div class="TExtHeaderR1">Enhance reality with digital overlays.</div>
+              <div class="TExtHeaderR1">
+                Enhance reality with digital overlays.
+              </div>
             </div>
             <div className="col-md-4 FtrClmn">
-            <Image
+              <Image
                 src="/cgi/k7.jpg"
                 layout="responsive"
                 width={"1000"}
@@ -45,7 +73,7 @@ const CustomTab1 = (props) => {
               <div class="TExtHeaderR1">Immerse in simulated environments.</div>
             </div>
             <div className="col-md-4 FtrClmn">
-            <Image
+              <Image
                 src="/cgi/k10.jpg"
                 layout="responsive"
                 width={"1000"}
@@ -53,10 +81,12 @@ const CustomTab1 = (props) => {
                 priority={true}
               />
               <div class="TExtHeaderR">Metaverse</div>
-              <div class="TExtHeaderR1">Connect in a shared digital universe.</div>
+              <div class="TExtHeaderR1">
+                Connect in a shared digital universe.
+              </div>
             </div>
             <div className="col-md-4 FtrClmn">
-            <Image
+              <Image
                 src="/cgi/k2.jpg"
                 layout="responsive"
                 width={"1000"}
@@ -64,10 +94,12 @@ const CustomTab1 = (props) => {
                 priority={true}
               />
               <div class="TExtHeaderR">AR Glasses</div>
-              <div class="TExtHeaderR1">Wearable devices for augmented reality experiences.</div>
+              <div class="TExtHeaderR1">
+                Wearable devices for augmented reality experiences.
+              </div>
             </div>
             <div className="col-md-4 FtrClmn">
-            <Image
+              <Image
                 src="/cgi/k3.jpg"
                 layout="responsive"
                 width={"1000"}
@@ -75,10 +107,12 @@ const CustomTab1 = (props) => {
                 priority={true}
               />
               <div class="TExtHeaderR">Extended Reality</div>
-              <div class="TExtHeaderR1">Merge virtual and physical worlds seamlessly.</div>
+              <div class="TExtHeaderR1">
+                Merge virtual and physical worlds seamlessly.
+              </div>
             </div>
             <div className="col-md-4 FtrClmn">
-            <Image
+              <Image
                 src="/cgi/k6.jpg"
                 layout="responsive"
                 width={"1000"}
@@ -86,10 +120,12 @@ const CustomTab1 = (props) => {
                 priority={true}
               />
               <div class="TExtHeaderR">AI Chatbot</div>
-              <div class="TExtHeaderR1">Intelligent virtual conversational assistant.</div>
+              <div class="TExtHeaderR1">
+                Intelligent virtual conversational assistant.
+              </div>
             </div>
             <div className="col-md-4 FtrClmn">
-            <Image
+              <Image
                 src="/cgi/k5.jpg"
                 layout="responsive"
                 width={"1000"}
@@ -97,10 +133,11 @@ const CustomTab1 = (props) => {
                 priority={true}
               />
               <div class="TExtHeaderR">AI Photobooth</div>
-              <div class="TExtHeaderR1">Automated photo experience with AI enhancements.</div>
+              <div class="TExtHeaderR1">
+                Automated photo experience with AI enhancements.
+              </div>
             </div>
           </div>
-          
         </div>
         {/* <div className="AccordBoxTp1">
           <div
