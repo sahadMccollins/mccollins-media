@@ -99,7 +99,8 @@ const CustomTab1 = (props) => {
         },
         {
           title: "360 Photobooth",
-          description: "Captures moments from every angle",
+          description:
+            "Capture moments from every angle in an immersive experience",
           image: "/cgi/k5.jpg",
           details:
             "The 360 Photobooth captures moments from every angle, creating an immersive photo experience that delights customers in industries like real estate, hospitality, and entertainment. Marketing managers can use this innovative tool at events, promotions, or in-store activations to allow guests to create dynamic videos and photos that showcase their experiences in a unique way. By sharing 360-degree content on social media, brands can enhance visibility and engagement, encouraging user-generated content that resonates with their audience. This cutting-edge technology not only makes interactions more memorable but also differentiates your brand in a competitive landscape, driving customer loyalty and interest.",
