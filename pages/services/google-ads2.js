@@ -32,6 +32,12 @@ import IntrestedInBox from "../../components/IntrestedInBox";
 import clientPromise from "../../lib/mongodb";
 import Head from "next/head";
 import ReactHtmlParser from "react-html-parser";
+import GoogleAdsSec1 from "../../components/services/GoogleAdsSec1";
+import ServicesSection from "../../components/services/ServicesSection";
+import StrategySection from "../../components/services/SalesReport";
+import DigitalMarketingBanner from "../../components/services/IncreaseSales";
+import TestimonialSlider from "../../components/services/TestimonialSlider";
+import BlogSection from "../../components/services/BlogCard";
 
 const DigitalMarketingSEO = ({ metaTags }) => {
   const router = useRouter();
@@ -44,6 +50,18 @@ const DigitalMarketingSEO = ({ metaTags }) => {
       </Head>
 
       <GoogleAdsBanner1 />
+
+      <GoogleAdsSec1 />
+
+      <ServicesSection />
+
+      <StrategySection />
+
+      <DigitalMarketingBanner />
+
+      <TestimonialSlider />
+
+      <BlogSection />
 
       <Container
         maxWidth={"7xl"}
