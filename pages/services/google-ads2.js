@@ -38,10 +38,10 @@ import StrategySection from "../../components/services/SalesReport";
 import DigitalMarketingBanner from "../../components/services/IncreaseSales";
 import TestimonialSlider from "../../components/services/TestimonialSlider";
 import BlogSection from "../../components/services/BlogCard";
-import Content from "../../components/services/content";
 import FAQSection from "../../components/services/FAQItem";
 import CaseStudyLayout from "../../components/services/CaseStudyLayout";
 import VideoParallaxSection from "../../components/services/VideoParallaxSection";
+import ContentComp from "../../components/services/content";
 
 const DigitalMarketingSEO = ({ metaTags }) => {
   const router = useRouter();
@@ -61,7 +61,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
 
       <StrategySection />
 
-      <Content />
+      <ContentComp />
 
       <FAQSection />
 

@@ -39,7 +39,7 @@ const ServiceCard = ({ icon: Icon, title, category, ...rest }) => {
   );
 };
 
-const Content = () => {
+const ContentComp = () => {
   return (
     <Box as="section" pb={20} bg={useColorModeValue("white", "gray.900")}>
       <Container maxW="container.xl">
@@ -118,4 +118,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default ContentComp;
