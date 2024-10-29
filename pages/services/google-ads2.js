@@ -90,7 +90,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
       <ServicesSection />
 
       <StrategySection />
-
+      {/* content */}
       <Box as="section" pb={20} bg={useColorModeValue("white", "gray.900")}>
         <Container maxW="container.xl">
           <VStack spacing={16} align="stretch">
