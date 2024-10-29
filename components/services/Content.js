@@ -10,34 +10,32 @@ import {
 } from "@chakra-ui/react";
 import { Mouse, Cloud, FileEdit } from "lucide-react";
 
-const ServiceCard = ({ icon: Icon, title, category, ...rest }) => {
-  return (
-    <VStack
-      align="flex-start"
-      flexDir={"row"}
-      alignItems={"center"}
-      spacing={4}
-      p={6}
-      {...rest}
-    >
-      <Box color="blue.500" mr={10}>
-        <Icon size={24} strokeWidth={1.5} />
-      </Box>
-      <VStack align="flex-start" spacing={1}>
-        <Heading size="md" fontWeight="semibold">
-          {title}
-        </Heading>
-        <Text
-          color={useColorModeValue("gray.600", "gray.400")}
-          fontSize="sm"
-          textTransform="uppercase"
-        >
-          {category}
-        </Text>
-      </VStack>
+const ServiceCard = ({ icon: Icon, title, category, ...rest }) => (
+  <VStack
+    align="flex-start"
+    flexDir={"row"}
+    alignItems={"center"}
+    spacing={4}
+    p={6}
+    {...rest}
+  >
+    <Box color="blue.500" mr={10}>
+      <Icon size={24} strokeWidth={1.5} />
+    </Box>
+    <VStack align="flex-start" spacing={1}>
+      <Heading size="md" fontWeight="semibold">
+        {title}
+      </Heading>
+      <Text
+        color={useColorModeValue("gray.600", "gray.400")}
+        fontSize="sm"
+        textTransform="uppercase"
+      >
+        {category}
+      </Text>
     </VStack>
-  );
-};
+  </VStack>
+);
 
 const ContentComp = () => {
   return (
