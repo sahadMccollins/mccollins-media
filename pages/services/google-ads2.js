@@ -45,6 +45,7 @@ import FAQSection from "../../components/services/FAQItem";
 import CaseStudyLayout from "../../components/services/CaseStudyLayout";
 import VideoParallaxSection from "../../components/services/VideoParallaxSection";
 import { Mouse, Cloud, FileEdit } from "lucide-react";
+import { css, Global } from "@emotion/react";
 
 const ServiceCard = ({ icon: Icon, title, category, ...rest }) => (
   <VStack
@@ -82,6 +83,13 @@ const DigitalMarketingSEO = ({ metaTags }) => {
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
       </Head>
+      <Global
+        styles={css`
+          .FooterMediaIcons {
+            display: none !important;
+          }
+        `}
+      />
 
       <GoogleAdsBanner1 />
 
