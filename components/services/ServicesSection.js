@@ -121,7 +121,7 @@ const ServicesSection = () => {
             gridColumn={{ lg: "span 2" }}
             p={8}
             borderRadius="xl"
-            bgGradient="linear(to-r, #fdce1a, yellow.400)"
+            bgGradient="linear(to-r, #000, #000)"
             color="white"
             position="relative"
             overflow="hidden"

@@ -9,15 +9,18 @@ import {
   HStack,
   VStack,
   InputGroup,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { TrendingUp } from "lucide-react";
 
 const DigitalMarketingBanner = () => {
+  const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
   return (
     <Box
       bg="linear-gradient(135deg, #EBF4FF 0%, #E1F0FF 100%)"
       overflow="hidden"
       pt={10}
+      pb={isSmallerThan780 ? 10 : 0}
       mb={"-10px !important"}
       position="relative"
     >
@@ -86,10 +89,10 @@ const DigitalMarketingBanner = () => {
                   position="absolute"
                   right="0"
                   top="0"
-                  colorScheme="blue"
                   zIndex={2}
                   px={6}
-                  bg={"#fdce1a"}
+                  bg={isSmallerThan780 ? "black" : "#fdce1a"}
+                  color={isSmallerThan780 ? "white" : "black"}
                 >
                   Get Started
                 </Button>

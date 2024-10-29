@@ -21,7 +21,7 @@ const BlogCard = ({ title, date, comments, description, author, image }) => (
     transition="all 0.3s ease"
     _hover={{
       "& .blog-content": {
-        color: "white",
+        color: "black",
         zIndex: 2,
       },
       "& .blog-overlay": {
@@ -31,7 +31,7 @@ const BlogCard = ({ title, date, comments, description, author, image }) => (
         opacity: 1,
       },
       "& .blog-meta": {
-        color: "white",
+        color: "black",
       },
       transform: "translateY(-5px)",
       cursor: "pointer",

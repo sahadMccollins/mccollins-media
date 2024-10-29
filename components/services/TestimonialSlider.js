@@ -104,20 +104,20 @@ const TestimonialSlider = () => {
 
       <Container maxW="6xl" position="relative">
         <VStack spacing={16} align="flex-start">
-          <Heading fontSize="5xl" fontWeight="semibold" color={"white"}>
+          <Heading fontSize="5xl" fontWeight="semibold" color={"black"}>
             What people say
           </Heading>
 
           <Box maxW="4xl">
-            <Text fontSize="2xl" lineHeight="1.6" mb={8} color="white">
+            <Text fontSize="2xl" lineHeight="1.6" mb={8} color="black">
               {testimonials[currentSlide].content}
             </Text>
 
             <VStack spacing={1} align="flex-start">
-              <Text fontSize="2xl" fontWeight="semibold" color="#fff">
+              <Text fontSize="2xl" fontWeight="semibold" color="black">
                 {testimonials[currentSlide].author}
               </Text>
-              <Text fontSize="md" color="#fff">
+              <Text fontSize="md" color="black">
                 {testimonials[currentSlide].position}
               </Text>
             </VStack>
@@ -128,18 +128,18 @@ const TestimonialSlider = () => {
               icon={<ChevronLeft size={24} />}
               onClick={prevSlide}
               variant="ghost"
-              color="#fff"
+              color="black"
               _hover={{ bg: "blackAlpha.100" }}
               aria-label="Previous testimonial"
             />
-            <Text fontSize="lg" fontWeight="medium" color="#fff">
+            <Text fontSize="lg" fontWeight="medium" color="black">
               {currentSlide + 1} / {totalSlides}
             </Text>
             <IconButton
               icon={<ChevronRight size={24} />}
               onClick={nextSlide}
               variant="ghost"
-              color="#fff"
+              color="black"
               _hover={{ bg: "blackAlpha.100" }}
               aria-label="Next testimonial"
             />

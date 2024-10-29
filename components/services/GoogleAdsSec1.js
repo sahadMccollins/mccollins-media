@@ -70,26 +70,6 @@ const GoogleAdsSec1 = () => {
                   style={{ borderRadius: "0.5rem" }}
                 />
               </Box>
-
-              <Box
-                position="absolute"
-                top="25%"
-                right="-24px"
-                bg="gray.900"
-                color="white"
-                p={"10"}
-                borderRadius="lg"
-                boxShadow="xl"
-              >
-                <Text
-                  fontSize="80px !important"
-                  fontWeight="bold"
-                  lineHeight="1"
-                >
-                  18
-                </Text>
-                <Text fontSize="sm">Years Experience</Text>
-              </Box>
             </MotionBox>
           </Box>
 

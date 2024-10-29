@@ -38,6 +38,10 @@ import StrategySection from "../../components/services/SalesReport";
 import DigitalMarketingBanner from "../../components/services/IncreaseSales";
 import TestimonialSlider from "../../components/services/TestimonialSlider";
 import BlogSection from "../../components/services/BlogCard";
+import Content from "../../components/services/content";
+import FAQSection from "../../components/services/FAQItem";
+import CaseStudyLayout from "../../components/services/CaseStudyLayout";
+import VideoParallaxSection from "../../components/services/VideoParallaxSection";
 
 const DigitalMarketingSEO = ({ metaTags }) => {
   const router = useRouter();
@@ -57,6 +61,14 @@ const DigitalMarketingSEO = ({ metaTags }) => {
 
       <StrategySection />
 
+      <Content />
+
+      <FAQSection />
+
+      <VideoParallaxSection />
+
+      <CaseStudyLayout />
+
       <DigitalMarketingBanner />
 
       <TestimonialSlider />
@@ -69,7 +81,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
         style={{ margin: "auto" }}
         marginTop={"-85px"}
       >
-        <Flex direction={{ base: "column-reverse", md: "row" }}>
+        {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
             mr={{ base: "0", md: "10" }}
@@ -103,7 +115,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
               />
             </ZoomInWithBounce>
           </Box>
-        </Flex>
+        </Flex> */}
 
         <Flex direction={{ base: "column", md: "row" }} my={10}>
           <Box
@@ -195,7 +207,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
           </Box>
         </Flex>
 
-        <Flex direction={{ base: "column-reverse", md: "row" }}>
+        {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
             width={{ base: "100%", md: "50%" }}
             mr={{ base: "0", md: "10" }}
@@ -222,7 +234,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
               objectFit="cover"
             />
           </Box>
-        </Flex>
+        </Flex> */}
       </Container>
       <Container
         maxWidth={"7xl"}

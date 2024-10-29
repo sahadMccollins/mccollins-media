@@ -74,6 +74,7 @@ const StrategySection = () => {
                     style={{
                       height: "350px",
                       borderRadius: "8px",
+                      objectFit: "cover",
                     }}
                   />
                 </Box>
@@ -85,7 +86,7 @@ const StrategySection = () => {
                 bg="#fdce1a"
                 p={6}
                 borderRadius="xl"
-                color="white"
+                color="black"
                 gap={8}
               >
                 <Box>
