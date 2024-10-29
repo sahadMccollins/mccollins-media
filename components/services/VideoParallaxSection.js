@@ -33,7 +33,7 @@ const VideoParallaxSection = () => {
     <Box
       as="section"
       position="relative"
-      h="70vh"
+      h={{ base: "50vh", md: "70vh" }}
       overflow="hidden"
       sx={{
         "&::before": {
@@ -60,7 +60,7 @@ const VideoParallaxSection = () => {
         left={0}
         right={0}
         bottom={0}
-        bgGradient="linear(to-b, rgba(0,0,0,0.3), rgba(0,0,0,0.7))"
+        bgGradient="url('/assets/image/servicePage/vid-2-bg.jpg')"
         zIndex={1}
       />
 
