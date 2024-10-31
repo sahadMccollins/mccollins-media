@@ -103,8 +103,12 @@ const TestimonialSlider = () => {
       />
 
       <Container maxW="6xl" position="relative">
-        <VStack spacing={16} align="flex-start">
-          <Heading fontSize="5xl" fontWeight="semibold" color={"black"}>
+        <VStack spacing={{ base: 4, md: 16 }} align="flex-start">
+          <Heading
+            fontSize={{ base: "3xl", md: "5xl" }}
+            fontWeight="semibold"
+            color={"black"}
+          >
             What people say
           </Heading>
 

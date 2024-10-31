@@ -46,6 +46,7 @@ import CaseStudyLayout from "../../components/services/CaseStudyLayout";
 import VideoParallaxSection from "../../components/services/VideoParallaxSection";
 import { Mouse, Cloud, FileEdit } from "lucide-react";
 import { css, Global } from "@emotion/react";
+import CaseStudy from "../../components/CaseStudy";
 
 const ServiceCard = ({ icon: Icon, title, category, ...rest }) => (
   <VStack
@@ -104,12 +105,12 @@ const DigitalMarketingSEO = ({ metaTags }) => {
           <VStack spacing={16} align="stretch">
             {/* Header Section */}
             <VStack spacing={6} align="stretch">
-              <Text color="blue.500" fontSize="sm" fontWeight="medium">
+              <Text color="yellow.400" fontSize="sm" fontWeight="medium">
                 Business GROWTH
               </Text>
 
               <Heading
-                size={{ base: "lg", md: "2xl" }}
+                size={{ base: "md", md: "2xl" }}
                 lineHeight="1.2"
                 fontWeight="semibold"
                 mb={10}
@@ -178,7 +179,18 @@ const DigitalMarketingSEO = ({ metaTags }) => {
 
       <VideoParallaxSection />
 
-      <CaseStudyLayout />
+      {/* <CaseStudyLayout /> */}
+      <Heading
+        size={{ base: "md", md: "lg" }}
+        lineHeight="1.2"
+        fontWeight="semibold"
+        mb={10}
+        pt={10}
+        textAlign={"center"}
+      >
+        Case Study
+      </Heading>
+      <CaseStudy />
 
       <DigitalMarketingBanner />
 

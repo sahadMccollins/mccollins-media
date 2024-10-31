@@ -108,24 +108,24 @@ const CaseStudy = () => {
     }
   };
 
-  if (typeof window !== "undefined") {
-    var swiperDiv = document.querySelector("#swiperDiv");
-    if (swiperDiv) {
-      swiperDiv.addEventListener(
-        "wheel",
-        function (e) {
-          e.preventDefault();
-        },
-        { passive: false }
-      );
-    }
-  }
+  // if (typeof window !== "undefined") {
+  //   var swiperDiv = document.querySelector("#swiperDiv");
+  //   if (swiperDiv) {
+  //     swiperDiv.addEventListener(
+  //       "wheel",
+  //       function (e) {
+  //         e.preventDefault();
+  //       },
+  //       { passive: false }
+  //     );
+  //   }
+  // }
 
   return (
     <Box
       className="swiper-container caseStudySwiper"
       pb={"50px"}
-      onWheel={handleMousewheel}
+      // onWheel={handleMousewheel}
       id="swiperDiv"
     >
       <FadeUp>

@@ -15,6 +15,7 @@ const ClientsLogoWhite = dynamic(() =>
 const CaseStudy = dynamic(() => import("../components/CaseStudy"));
 const WhatWeOffer = dynamic(() => import("../components/WhatWeOffer"));
 const Partner = dynamic(() => import("../components/Partner"));
+const IntrestedInBox = dynamic(() => import("../components/IntrestedInBox"));
 
 export default function Home({ metaTags }) {
   return (
@@ -48,7 +49,8 @@ export default function Home({ metaTags }) {
 
       <CaseStudy />
 
-      <WhatWeOffer />
+      {/* <WhatWeOffer /> */}
+      <IntrestedInBox />
 
       <TextBox
         heading="OUR PARTNERS"

@@ -20,11 +20,15 @@ const StrategySection = () => {
 
   return (
     <Box py={16} bg="white">
-      <Container maxW="7xl" py={16}>
+      <Container maxW="7xl" py={{ base: 4, md: 16 }}>
         <Grid templateColumns={{ base: "1fr", lg: "1fr 1fr" }} gap={12}>
           {/* Left Column */}
           <Stack spacing={8} alignSelf={"center"}>
-            <Heading fontSize="5xl" lineHeight="1.1" fontWeight="bold">
+            <Heading
+              fontSize={{ base: "2xl", md: "5xl" }}
+              lineHeight="1.1"
+              fontWeight="bold"
+            >
               How we Plan to
               <br />
               Disrupt the Strategy
