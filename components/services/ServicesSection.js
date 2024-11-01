@@ -10,11 +10,11 @@ import {
 } from "@chakra-ui/react";
 import {
   Settings,
-  Package,
-  Monitor,
+  PenTool,
+  TrendingUp,
+  Users,
+  ShoppingCart,
   Globe2,
-  DollarSign,
-  Megaphone,
 } from "lucide-react";
 
 const ServiceCard = ({ icon: Icon, title, description, category }) => (
@@ -65,39 +65,45 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Settings,
-      title: "Content Marketing",
-      description: "Comparison new entertain melancholy son themselves.",
-      category: "MARKETING",
+      title: "Google Ads Strategy",
+      description:
+        "Developing a tailored strategy to maximize reach and impact through Google Ads.",
+      category: "Digital Marketing",
     },
     {
-      icon: Package,
-      title: "Social Marketing",
-      description: "Comparison new entertain melancholy son themselves.",
-      category: "MEDIA",
+      icon: TrendingUp,
+      title: "Campaign Development",
+      description:
+        "Building and executing effective campaigns to engage target audiences.",
+      category: "Campaign Management",
     },
     {
-      icon: Monitor,
-      title: "App Development",
-      description: "Comparison new entertain melancholy son themselves.",
-      category: "SOFTWARE",
+      icon: PenTool,
+      title: "Content Creation",
+      description:
+        "Crafting engaging, high-quality content that resonates with your audience.",
+      category: "Creative Media",
     },
     {
       icon: Globe2,
-      title: "SEO Optimization",
-      description: "Comparison new entertain melancholy son themselves.",
-      category: "OPTIMIZED",
+      title: "PMAX Campaigns",
+      description:
+        "Optimizing Performance Max campaigns to deliver results across Google’s channels.",
+      category: "Digital Optimization",
     },
     {
-      icon: DollarSign,
-      title: "PPC Advertising",
-      description: "Comparison new entertain melancholy son themselves.",
-      category: "ADVERTISEMENT",
+      icon: Users,
+      title: "Lead Generation Ads",
+      description:
+        "Creating ads focused on generating leads and expanding customer base.",
+      category: "Lead Generation",
     },
     {
-      icon: Megaphone,
-      title: "Digital Marketing",
-      description: "Comparison new entertain melancholy son themselves.",
-      category: "AGENCY",
+      icon: ShoppingCart,
+      title: "Catalog Ads",
+      description:
+        "Showcasing products through tailored catalog ads for a targeted audience.",
+      category: "E-Commerce Marketing",
     },
   ];
 

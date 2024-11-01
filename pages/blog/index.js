@@ -58,7 +58,7 @@ const Index = ({ blogs, metaTags }) => {
             >
               <Image
                 alt="McCollins Media"
-                src={blogs[0].photo}
+                src={blogs[0].photo || "/assets/image/blogPage/blog1.jpg"}
                 objectFit="cover"
                 width="615px"
                 height={"521px"}
@@ -129,7 +129,7 @@ const Index = ({ blogs, metaTags }) => {
                   key={blog._id}
                 >
                   <BlogList
-                    img={blog.photo}
+                    img={blog.photo || "/assets/image/blogPage/blog1.jpg"}
                     heading={blog.title}
                     date={blog.date}
                     url={`/blog/${blog.blogUrl}`}

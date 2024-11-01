@@ -14,24 +14,24 @@ const testimonials = [
   {
     id: 1,
     content:
-      "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now always remembering to the point at dimension per techinal issue.",
-    author: "Matthew J. Wyman",
-    position: "Senior Consultant",
+      "McCollins has helped launch cleaning Superstore from the website development to social media and ad management. We are very happy to have an extended team in McCollins. The team takes ownership and I would be more than happy to recommend them to other brands",
+    author: "Alexa - Marketing Manager",
+    position: "Cleaning Superstore",
   },
-  {
-    id: 2,
-    content:
-      "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now always remembering to the point at dimension per techinal issue.",
-    author: "Matthew J. Wyman",
-    position: "Senior Consultant",
-  },
-  {
-    id: 3,
-    content:
-      "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now always remembering to the point at dimension per techinal issue.",
-    author: "Matthew J. Wyman",
-    position: "Senior Consultant",
-  },
+  // {
+  //   id: 2,
+  //   content:
+  //     "McCollins has helped launch cleaning Superstore from the website development to social media and ad management. We are very happy to have an extended team in McCollins. The team takes ownership and I would be more than happy to recommend them to other brands",
+  //   author: "Matthew J. Wyman",
+  //   position: "Senior Consultant",
+  // },
+  // {
+  //   id: 3,
+  //   content:
+  //     "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now always remembering to the point at dimension per techinal issue.",
+  //   author: "Matthew J. Wyman",
+  //   position: "Senior Consultant",
+  // },
 ];
 
 const TestimonialSlider = () => {

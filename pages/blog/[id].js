@@ -40,7 +40,10 @@ const Blog = ({ blog, recentPost, metaTags }) => {
         <meta name="keywords" content={blog.keywords} />
         <meta property="og:title" content={blog.SEOtitle} />
         <meta property="og:description" content={blog.description} />
-        <meta property="og:image" content={blog.photo} />
+        <meta
+          property="og:image"
+          content={blog.photo || "/assets/image/blogPage/blog1.jpg"}
+        />
         <meta
           property="og:url"
           content={`https://www.mccollinsmedia.com${metaTags[0]?.url}`}
@@ -123,7 +126,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
           <Box width={{ base: "100%", md: "50%" }} position="relative">
             <Image
               alt="McCollins Media"
-              src={blog.photo}
+              src={blog.photo || "/assets/image/blogPage/blog1.jpg"}
               width="740px"
               height={"430px"}
               property={true}
@@ -170,7 +173,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
                   >
                     <Image
                       alt="McCollins Media"
-                      src={rp.photo}
+                      src={rp.photo || "/assets/image/blogPage/blog1.jpg"}
                       width="170px"
                       height={"80px"}
                       objectFit={"cover"}

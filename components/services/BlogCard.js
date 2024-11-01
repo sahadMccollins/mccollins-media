@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Container,
@@ -11,8 +11,17 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { Calendar, MessageCircle, ArrowRight } from "lucide-react";
+import axios from "axios";
 
-const BlogCard = ({ title, date, comments, description, author, image }) => (
+const BlogCard = ({
+  title,
+  date,
+  comments,
+  description,
+  author,
+  image,
+  url,
+}) => (
   <Box
     bg="white"
     borderRadius="xl"
@@ -37,7 +46,6 @@ const BlogCard = ({ title, date, comments, description, author, image }) => (
       cursor: "pointer",
     }}
   >
-    {/* Background Image (hidden by default) */}
     <Box
       className="blog-image"
       position="absolute"
@@ -52,7 +60,6 @@ const BlogCard = ({ title, date, comments, description, author, image }) => (
       transition="opacity 0.3s ease"
     />
 
-    {/* Blue Overlay (hidden by default) */}
     <Box
       className="blog-overlay"
       position="absolute"
@@ -61,11 +68,10 @@ const BlogCard = ({ title, date, comments, description, author, image }) => (
       right={0}
       bottom={0}
       bg="#fdce1a"
-      opacity={0}
+      opacity={0.3}
       transition="opacity 0.3s ease"
     />
 
-    {/* Content */}
     <VStack
       className="blog-content"
       spacing={4}
@@ -100,7 +106,7 @@ const BlogCard = ({ title, date, comments, description, author, image }) => (
           <Avatar size="sm" src="/assets/image/avatar.png" />
           <Text fontWeight="medium">{author}</Text>
         </HStack>
-        <Link href="#" _hover={{ textDecoration: "none" }}>
+        <Link href={url} _hover={{ textDecoration: "none" }}>
           <HStack>
             <Text>Learn More</Text>
             <ArrowRight size={16} />
@@ -112,35 +118,30 @@ const BlogCard = ({ title, date, comments, description, author, image }) => (
 );
 
 const BlogSection = () => {
-  const blogs = [
-    {
-      title: "Digital Privacy Changes And The Impact On Advertising",
-      date: "15 Nov, 2023",
-      comments: 12,
-      description:
-        "Dolor sed maecenas quis faucibus justo nibh ultricies praesent justo dolorIf you are going to use",
-      author: "Admin",
-      image: "/assets/image/servicePage/blog-1.jpg",
-    },
-    {
-      title: "How to Onboard New Clients the Right Way",
-      date: "15 Nov, 2023",
-      comments: 12,
-      description:
-        "Dolor sed maecenas quis faucibus justo nibh ultricies praesent justo dolorIf you are going to use",
-      author: "Admin",
-      image: "/assets/image/servicePage/blog-2.jpg",
-    },
-    {
-      title: "How Marketing Compliance Your Marketing Strategy",
-      date: "15 Nov, 2023",
-      comments: 12,
-      description:
-        "Dolor sed maecenas quis faucibus justo nibh ultricies praesent justo dolorIf you are going to use",
-      author: "Admin",
-      image: "/assets/image/servicePage/blog-3.jpg",
-    },
-  ];
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await axios.get("/api/blogs/blog");
+        // Select only the latest 3 blogs
+        const latestBlogs = response.data.slice(0, 3).map((blog) => ({
+          title: blog.title,
+          date: blog.date,
+          comments: blog.comments || 0, // Assuming `comments` is not in API
+          description: blog.shortContent,
+          author: blog.author || "Admin", // Fallback if author is missing
+          image: blog.photo || "/assets/image/blogPage/blog1.jpg", // Add a default image path
+          url: `/blog/${blog.blogUrl}`,
+        }));
+        setBlogs(latestBlogs);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
 
   return (
     <Box py={16} bg="gray.50">

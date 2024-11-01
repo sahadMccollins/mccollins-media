@@ -44,7 +44,14 @@ import BlogSection from "../../components/services/BlogCard";
 import FAQSection from "../../components/services/FAQItem";
 import CaseStudyLayout from "../../components/services/CaseStudyLayout";
 import VideoParallaxSection from "../../components/services/VideoParallaxSection";
-import { Mouse, Cloud, FileEdit } from "lucide-react";
+import {
+  Target,
+  Search,
+  Settings,
+  PenTool,
+  TrendingUp,
+  BarChart2,
+} from "lucide-react";
 import { css, Global } from "@emotion/react";
 import CaseStudy from "../../components/CaseStudy";
 
@@ -142,19 +149,34 @@ const DigitalMarketingSEO = ({ metaTags }) => {
               mt={"20px !important"}
             >
               <ServiceCard
-                icon={Mouse}
-                title="Information technology"
-                category="CONSULTING"
+                icon={Target}
+                title="Campaign planning"
+                category="Defining the campaign goals, target audience, and budget."
               />
               <ServiceCard
-                icon={Cloud}
-                title="Easy to edit process"
-                category="IT SERVICE"
+                icon={Search}
+                title="Keyword research"
+                category="Identifying the keywords that people use to search for the products or services being advertised."
               />
               <ServiceCard
-                icon={FileEdit}
-                title="Wordpress table design"
-                category="IT BUSINESS"
+                icon={Settings}
+                title="Campaign setup"
+                category="Setting up the campaign structure, ad groups, and targeting options."
+              />
+              <ServiceCard
+                icon={PenTool}
+                title="Ad creation"
+                category="Creating compelling and relevant ads that resonate with the target audience."
+              />
+              <ServiceCard
+                icon={TrendingUp}
+                title="Bid management"
+                category="Setting the right bid amounts for each ad and keyword to optimize ad performance."
+              />
+              <ServiceCard
+                icon={BarChart2}
+                title="Performance monitoring"
+                category="Tracking the campaign performance and making adjustments to improve the ad's performance."
               />
             </SimpleGrid>
 
@@ -240,7 +262,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
           </Box>
         </Flex> */}
 
-        <Flex direction={{ base: "column", md: "row" }} my={10}>
+        {/* <Flex direction={{ base: "column", md: "row" }} my={10}>
           <Box
             width={{ base: "100%", md: "50%" }}
             alignSelf="center"
@@ -328,7 +350,7 @@ const DigitalMarketingSEO = ({ metaTags }) => {
               </li>
             </OrderedList>
           </Box>
-        </Flex>
+        </Flex> */}
 
         {/* <Flex direction={{ base: "column-reverse", md: "row" }}>
           <Box
@@ -369,9 +391,9 @@ const DigitalMarketingSEO = ({ metaTags }) => {
       <Box style={{ margin: "0" }}>
         <ClientsLogo />
       </Box>
-      <Box my="10">
+      {/* <Box my="10">
         <Testimonials />
-      </Box>
+      </Box> */}
     </Stack>
   );
 };
