@@ -7,6 +7,7 @@ import FooterNav from "../../components/Landing-page-components/FooterNav";
 import Head from "next/head";
 import CustomTab1 from "../../components/Landing-page-components/CustomTab1";
 import { Box } from "@chakra-ui/react";
+import ARVRMarketingPage from "../../components/services/ARVRMarketingPage";
 const LandingPage1 = () => {
   useEffect(() => {
     document.body.className = "LandingPage";
@@ -72,6 +73,7 @@ const LandingPage1 = () => {
       </Head>
       <MainBanner1ai />
       <CustomTab1 />
+      <ARVRMarketingPage />
       <ClientPortFolio />
 
       <FooterNav phone={true} />

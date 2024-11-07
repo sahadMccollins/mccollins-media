@@ -17,46 +17,23 @@ import {
   useDisclosure,
   Flex,
   Center,
-  AspectRatio,
+  Badge,
+  Icon,
+  Divider,
   useMediaQuery,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronRight, ArrowUpRight, Sparkles, Play } from "lucide-react";
 import Image from "next/image";
 
 const MotionBox = motion(Box);
+const MotionFlex = motion(Flex);
 
-const CustomTab1 = (props) => {
+const CustomTab1 = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedService, setSelectedService] = useState(null);
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [hoveredService, setHoveredService] = useState(null);
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
-
-  const videos = [
-    {
-      src: "/ar/AR Video 1.mp4",
-      heading: "A place where reality gets a makeover",
-      description:
-        "We assist brands create experiential solutions—smart, collaborative, and fun.",
-    },
-    // {
-    //   src: "/ar/AR Video 2.mp4",
-    //   heading: "Step into the future of interaction",
-    //   description:
-    //     "Immersive experiences that blur the line between digital and physical.",
-    // },
-    {
-      src: "/ar/AR Video 3.mp4",
-      heading: "Where imagination meets technology",
-      description: "Transforming ideas into tangible, interactive realities.",
-    },
-    {
-      src: "/ar/AR Video 4.mp4",
-      heading: "The next frontier of digital engagement",
-      description:
-        "Pushing boundaries to create unforgettable brand experiences.",
-    },
-  ];
 
   const services = [
     {
@@ -99,8 +76,7 @@ const CustomTab1 = (props) => {
         },
         {
           title: "360 Photobooth",
-          description:
-            "Capture moments from every angle in an immersive experience",
+          description: "Capture moments from every angle",
           image: "/cgi/k5.jpg",
           details:
             "The 360 Photobooth captures moments from every angle, creating an immersive photo experience that delights customers in industries like real estate, hospitality, and entertainment. Marketing managers can use this innovative tool at events, promotions, or in-store activations to allow guests to create dynamic videos and photos that showcase their experiences in a unique way. By sharing 360-degree content on social media, brands can enhance visibility and engagement, encouraging user-generated content that resonates with their audience. This cutting-edge technology not only makes interactions more memorable but also differentiates your brand in a competitive landscape, driving customer loyalty and interest.",
@@ -133,127 +109,256 @@ const CustomTab1 = (props) => {
     onOpen();
   };
 
-  const nextVideo = () => {
-    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
-  };
-
-  const prevVideo = () => {
-    setCurrentVideoIndex(
-      (prevIndex) => (prevIndex - 1 + videos.length) % videos.length
-    );
-  };
-
   return (
-    <Box bg="white" color="gray.800" pb={16}>
-      {/* <Heading
-        as="h3"
-        size="xl"
-        fontWeight="bold"
-        color="#FFDE11"
-        textAlign="center"
-        my={10}
-      >
-        Revolutionizing Reality with AI and VR
-      </Heading> */}
-      <Box>
-        {isLargerThan780 ? (
-          <video src="/ar/aidesktop.mp4" width={"100%"} autoPlay muted loop />
-        ) : (
-          <video src="/ar/aimobile.mp4" width={"100%"} />
-        )}
-      </Box>
-      <Container maxW="container.xl" mt={10}>
-        <VStack spacing={12} align="center">
+    <Box
+      bg="linear-gradient(135deg, #FFF9E5 0%, #FFFAF0 100%)"
+      color="gray.800"
+      py={20}
+      position="relative"
+      overflow="hidden"
+    >
+      {/* Decorative Background Elements */}
+      <Box
+        position="absolute"
+        top="0"
+        left="0"
+        right="0"
+        bottom="0"
+        opacity="0.1"
+        bgImage="radial-gradient(circle at 2px 2px, #FFB800 1px, transparent 0)"
+        bgSize="40px 40px"
+        animation="fadeInOut 8s infinite"
+        sx={{
+          "@keyframes fadeInOut": {
+            "0%, 100%": { opacity: 0.1 },
+            "50%": { opacity: 0.2 },
+          },
+        }}
+      />
+
+      <Container maxW="8xl" px={4}>
+        <VStack spacing={16}>
+          {/* Header Section */}
           {services.map((serviceCategory, index) => (
-            <VStack
+            <MotionBox
               key={index}
-              spacing={12}
-              align="center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
               width="full"
-              mb={16}
             >
-              <Heading
-                as="h3"
-                size="xl"
-                fontWeight="bold"
-                color="#FFDE11"
-                textAlign="center"
-              >
-                {serviceCategory.category}
-              </Heading>
-              <Center>
+              <VStack spacing={8} mb={16}>
+                <Flex direction="column" align="center" mb={8}>
+                  <Badge
+                    colorScheme="yellow"
+                    px={4}
+                    py={2}
+                    borderRadius="full"
+                    mb={4}
+                  >
+                    {serviceCategory.category}
+                  </Badge>
+                  <Heading
+                    fontSize={{ base: "3xl", md: "4xl" }}
+                    textAlign="center"
+                    bgGradient="linear(to-r, yellow.400, orange.400)"
+                    bgClip="text"
+                    mb={4}
+                  >
+                    {serviceCategory.category} Solutions
+                  </Heading>
+                  <Text
+                    fontSize="lg"
+                    color="gray.600"
+                    textAlign="center"
+                    maxW="3xl"
+                  >
+                    Transform your digital presence with cutting-edge{" "}
+                    {serviceCategory.category} technologies
+                  </Text>
+                </Flex>
+
                 <SimpleGrid
-                  columns={
-                    serviceCategory.items.length <= 2 ? [1, 2] : [1, 2, 3]
-                  }
+                  columns={{ base: 1, md: 2, lg: 3 }}
                   spacing={8}
                   width="full"
-                  justifyItems="center"
                 >
                   {serviceCategory.items.map((service, serviceIndex) => (
                     <MotionBox
                       key={serviceIndex}
-                      bg="white"
-                      borderRadius="xl"
-                      overflow="hidden"
-                      boxShadow="md"
-                      borderWidth="1px"
-                      borderColor="gray.200"
-                      maxW="350px"
-                      whileHover={{
-                        scale: 1.05,
-                        boxShadow: "0 0 30px rgba(255, 222, 17, 0.7)",
-                      }}
+                      position="relative"
+                      onHoverStart={() => setHoveredService(service)}
+                      onHoverEnd={() => setHoveredService(null)}
+                      whileHover={{ y: -8 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <Box height="200px" width={"350px"} position="relative">
-                        <Image
-                          src={service.image}
-                          alt={service.title}
-                          layout="fill"
-                          objectFit="cover"
-                        />
+                      <Box
+                        bg="white"
+                        borderRadius="2xl"
+                        overflow="hidden"
+                        boxShadow="lg"
+                        borderWidth="1px"
+                        borderColor={
+                          hoveredService === service
+                            ? "yellow.400"
+                            : "transparent"
+                        }
+                        transition="all 0.3s"
+                        position="relative"
+                      >
+                        {/* Image Container */}
+                        <Box position="relative" height="250px">
+                          <Image
+                            src={service.image}
+                            alt={service.title}
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                          <Box
+                            position="absolute"
+                            top="0"
+                            left="0"
+                            right="0"
+                            bottom="0"
+                            bg="blackAlpha.50"
+                            transition="all 0.3s"
+                            _groupHover={{ bg: "blackAlpha.30" }}
+                          />
+                          {/* Floating Badge */}
+                          <Badge
+                            position="absolute"
+                            top={4}
+                            right={4}
+                            bg="yellow.400"
+                            color="gray.800"
+                            px={3}
+                            py={1}
+                            borderRadius="full"
+                            fontSize="sm"
+                          >
+                            {serviceCategory.category}
+                          </Badge>
+                        </Box>
+
+                        {/* Content */}
+                        <VStack p={6} spacing={4} align="start">
+                          <Heading size="md" fontWeight="bold">
+                            {service.title}
+                          </Heading>
+                          <Text color="gray.600" fontSize="sm">
+                            {service.description}
+                          </Text>
+
+                          <Flex
+                            justify="space-between"
+                            align="center"
+                            width="full"
+                            mt={4}
+                          >
+                            <Button
+                              onClick={() => handleOpenModal(service)}
+                              rightIcon={<ArrowUpRight size={18} />}
+                              variant="ghost"
+                              color="yellow.500"
+                              _hover={{
+                                bg: "yellow.50",
+                                transform: "translateX(4px)",
+                              }}
+                              transition="all 0.3s"
+                            >
+                              Learn More
+                            </Button>
+                            <Icon
+                              as={Sparkles}
+                              color="yellow.400"
+                              boxSize={5}
+                            />
+                          </Flex>
+                        </VStack>
                       </Box>
-                      <VStack p={6} align="center" spacing={3}>
-                        <Heading
-                          as="h4"
-                          size="md"
-                          fontWeight="semibold"
-                          textAlign="center"
-                        >
-                          {service.title}
-                        </Heading>
-                        <Text color="gray.600" textAlign="center">
-                          {service.description}
-                        </Text>
-                        <Button
-                          bg="#FFDE11"
-                          color="gray.800"
-                          _hover={{ bg: "yellow.400" }}
-                          onClick={() => handleOpenModal(service)}
-                        >
-                          Explore
-                        </Button>
-                      </VStack>
                     </MotionBox>
                   ))}
                 </SimpleGrid>
-              </Center>
-            </VStack>
+              </VStack>
+            </MotionBox>
           ))}
         </VStack>
 
+        {/* Enhanced Modal */}
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
-          <ModalOverlay />
-          <ModalContent bg="white" color="gray.800">
-            <ModalHeader color="#FFDE11">{selectedService?.title}</ModalHeader>
-            <ModalCloseButton />
-            <ModalBody>
-              <Text>{selectedService?.details}</Text>
+          <ModalOverlay bg="blackAlpha.700" backdropFilter="blur(4px)" />
+          <ModalContent bg="white" borderRadius="2xl" overflow="hidden" mx={4}>
+            <Box position="relative" height="200px">
+              {selectedService && (
+                <Image
+                  src={selectedService.image}
+                  alt={selectedService.title}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              )}
+              <Box
+                position="absolute"
+                top="0"
+                left="0"
+                right="0"
+                bottom="0"
+                bg="blackAlpha.60"
+              />
+              <Flex
+                position="absolute"
+                bottom={0}
+                left={0}
+                right={0}
+                p={6}
+                direction="column"
+                color="white"
+              >
+                <Heading size="lg">{selectedService?.title}</Heading>
+              </Flex>
+            </Box>
+
+            <ModalCloseButton color="white" top={4} right={4} />
+
+            <ModalBody py={6}>
+              <VStack align="start" spacing={4}>
+                <Text fontSize="lg" fontWeight="medium" color="yellow.500">
+                  Overview
+                </Text>
+                <Text color="gray.700" lineHeight="tall">
+                  {selectedService?.details}
+                </Text>
+
+                <Divider my={4} />
+
+                <Text fontSize="lg" fontWeight="medium" color="yellow.500">
+                  Key Features
+                </Text>
+                <SimpleGrid columns={2} spacing={4} width="full">
+                  {[
+                    "Interactive",
+                    "Scalable",
+                    "Customizable",
+                    "Innovative",
+                  ].map((feature, index) => (
+                    <Flex key={index} align="center" gap={2}>
+                      <Icon as={Sparkles} color="yellow.400" boxSize={4} />
+                      <Text>{feature}</Text>
+                    </Flex>
+                  ))}
+                </SimpleGrid>
+              </VStack>
             </ModalBody>
-            <ModalFooter>
-              <Button bg="#FFDE11" color="gray.800" mr={3} onClick={onClose}>
-                Close
+
+            <ModalFooter bg="gray.50" borderTop="1px" borderColor="gray.100">
+              <Button
+                bg="yellow.400"
+                color="gray.800"
+                _hover={{ bg: "yellow.500" }}
+                rightIcon={<ChevronRight size={18} />}
+                onClick={onClose}
+              >
+                Get Started
               </Button>
             </ModalFooter>
           </ModalContent>
