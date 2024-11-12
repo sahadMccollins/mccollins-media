@@ -186,34 +186,13 @@ const OurTeam = () => {
                   custom={1}
                 >
                   <TeamMemberSlide
-                    img="/assets/image/team/shome.jpg"
-                    name="Shome BAG"
-                    designation="Associate Business Director"
+                    img="/assets/image/team/manjeet.jpg"
+                    name="Manjeet"
+                    designation="Business Operations Director"
                   />
                 </motion.div>
               </SwiperSlide>
 
-              <SwiperSlide>
-                <motion.div
-                  variants={variants}
-                  initial="initial"
-                  animate={controls}
-                  custom={3}
-                >
-                  <TeamMemberSlide
-                    img="/assets/image/team/Fadwa.jpg"
-                    name="Fadwa"
-                    designation="Account Manager"
-                  />
-                </motion.div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Joeseph.jpg"
-                  name="Joseph"
-                  designation="Senior Copywriter"
-                />
-              </SwiperSlide>
               <SwiperSlide>
                 <TeamMemberSlide
                   img="/assets/image/team/asher.jpg"
@@ -221,25 +200,12 @@ const OurTeam = () => {
                   designation="Studio Lead"
                 />
               </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/youssef.jpg"
-                  name="Youssef"
-                  designation="Performance Manager"
-                />
-              </SwiperSlide>
+
               <SwiperSlide>
                 <TeamMemberSlide
                   img="/assets/image/team/George.jpg"
                   name="George "
                   designation="Account Manager"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TeamMemberSlide
-                  img="/assets/image/team/Kavya.jpg"
-                  name="Kavya"
-                  designation="Account Executive"
                 />
               </SwiperSlide>
               <SwiperSlide>
