@@ -7,6 +7,7 @@ const Partner = () => {
     <Stack>
       <Container maxWidth={"7xl"} pb="20">
         <FadeUp>
+          {/* partner images */}
           <SimpleGrid
             columns={{ base: 2, md: 5 }}
             spacingX="40px"
