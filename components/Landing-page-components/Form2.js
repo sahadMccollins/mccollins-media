@@ -111,6 +111,7 @@ const Form2 = () => {
                 dataLayer: {
                   event: "conversion",
                   send_to: "AW-10803441186/fOI8CPypnfkYEKLcvZ8o",
+                  page: window.location.href,
                 },
               });
             })

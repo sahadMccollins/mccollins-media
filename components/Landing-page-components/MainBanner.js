@@ -184,6 +184,7 @@ const MainBanner1 = (props) => {
               conversionLabel: props.label
                 ? `${props.label}`
                 : "fOI8CPypnfkYEKLcvZ8o",
+                page: window.location.href,
             }),
             setLoading(false),
             toast({

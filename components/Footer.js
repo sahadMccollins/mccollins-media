@@ -243,6 +243,7 @@ const Footer = () => {
             dataLayer: {
               event: "conversion",
               send_to: "AW-10803441186/_QCnCMn-o_kYEKLcvZ8o",
+              page: window.location.href,
             },
           });
 
