@@ -37,7 +37,7 @@ const WebPortfolio = () => {
                   <div className="ItemName">VOSS</div>
                 </a>
               </div>
-              <div className="PortFolioBoxItem">
+              {/* <div className="PortFolioBoxItem">
               <a
                   data-fancybox="gallery"
                   style={{ position: "relative" }}
@@ -87,40 +87,40 @@ const WebPortfolio = () => {
                 />
                 <div className="ItemName">Cleaning Superstore</div>
                 </a>
-              </div>
+              </div> */}
 
               <div className="PortFolioBoxItem">
-              <a
+                <a
                   data-fancybox="gallery"
                   style={{ position: "relative" }}
                   href="/asia.mp4"
                   className="CommonLink1"
                 >
-                <Image
-                  src="/lp/a5.jpg"
-                  layout="responsive"
-                  width={"810"}
-                  height={"514"}
-                  priority={true}
-                />
-                <div className="ItemName">77asia</div>
+                  <Image
+                    src="/lp/a5.jpg"
+                    layout="responsive"
+                    width={"810"}
+                    height={"514"}
+                    priority={true}
+                  />
+                  <div className="ItemName">77asia</div>
                 </a>
               </div>
               <div className="PortFolioBoxItem">
-              <a
+                <a
                   data-fancybox="gallery"
                   style={{ position: "relative" }}
                   href="/zilli-w.mp4"
                   className="CommonLink1"
                 >
-                <Image
-                  src="/lp/a7.jpg"
-                  layout="responsive"
-                  width={"810"}
-                  height={"514"}
-                  priority={true}
-                />
-                <div className="ItemName">Zilli Dubai</div>
+                  <Image
+                    src="/lp/a7.jpg"
+                    layout="responsive"
+                    width={"810"}
+                    height={"514"}
+                    priority={true}
+                  />
+                  <div className="ItemName">Zilli Dubai</div>
                 </a>
               </div>
             </div>

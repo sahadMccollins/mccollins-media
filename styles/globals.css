@@ -1379,10 +1379,12 @@ body .clientsLogoStack {
   margin-bottom: 10px;
 }
 .LpGridBox.bg1 {
-  background-color: #ffde11;
+  /* background-color: #ffde11; */
+  background-color: black;
 }
 .LpGridBox.bg2 {
-  background-color: #ecca1c;
+  /* background-color: #ecca1c; */
+  background-color: #ffde11;
 }
 .Row2 {
   display: flex;
@@ -1434,7 +1436,8 @@ body .clientsLogoStack {
   margin-top: 25px;
 }
 .TExtHeaderL {
-  color: #000;
+  /* color: #000; */
+  color: #ffde11;
   opacity: 0.5;
   font-size: 42px;
   font-weight: 800;
@@ -1442,25 +1445,44 @@ body .clientsLogoStack {
   line-height: 1;
 }
 .TExtHeaderR {
+  color: #ffde11;
   font-size: 25px;
   font-weight: 800;
   position: relative;
   line-height: 1.2;
 }
+
+.TExtHeaderL.secondary,
+.TExtHeaderR.secondary {
+  color: black;
+}
+
 .TExtHeaderR::after {
   content: "";
   height: 3px;
   width: 25%;
-  background-color: #000;
+  /* background-color: #000; */
+  background-color: #ffde11;
   border-radius: 10px;
   position: absolute;
   bottom: 0;
   left: 0;
 }
+
+.TExtHeaderR.secondary::after {
+  background-color: black;
+}
+
 .T8 {
   margin-bottom: 10px;
   font-size: 27px;
+  color: white;
 }
+
+.T8.secondary {
+  color: #000;
+}
+
 .T81 {
   margin-bottom: 10px;
   font-size: 20px;

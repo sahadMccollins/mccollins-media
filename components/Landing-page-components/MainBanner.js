@@ -102,39 +102,39 @@ const MainBanner1 = (props) => {
     return j;
   };
 
-  const updatePhrase = () => {
-    const newIndex = randomNum(i, phrases.length);
-    setI(newIndex);
-    const newPhrase = phrases[newIndex];
-    phraseRef.current.style.opacity = 0;
-    setTimeout(() => {
-      setPhrase(newPhrase);
-      if (phraseRef.current.style.opacity) {
-        phraseRef.current.style.opacity = 1;
-      }
-    }, 500);
-  };
+  // const updatePhrase = () => {
+  //   const newIndex = randomNum(i, phrases.length);
+  //   setI(newIndex);
+  //   const newPhrase = phrases[newIndex];
+  //   phraseRef.current.style.opacity = 0;
+  //   setTimeout(() => {
+  //     setPhrase(newPhrase);
+  //     if (phraseRef.current.style.opacity) {
+  //       phraseRef.current.style.opacity = 1;
+  //     }
+  //   }, 500);
+  // };
 
-  useEffect(() => {
-    updatePhrase();
-  }, []);
+  // useEffect(() => {
+  //   updatePhrase();
+  // }, []);
 
-  useEffect(() => {
-    const animationTime = getAnimationTime();
-    const interval = setInterval(updatePhrase, animationTime);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const animationTime = getAnimationTime();
+  //   const interval = setInterval(updatePhrase, animationTime);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  const getAnimationTime = () => {
-    const compStyles = window.getComputedStyle(phraseRef.current);
-    let animation = compStyles.getPropertyValue("animation");
-    animation =
-      animation || compStyles.getPropertyValue("-moz-animation-duration");
-    animation =
-      animation || compStyles.getPropertyValue("-webkit-animation-duration");
-    const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
-    return animationTime;
-  };
+  // const getAnimationTime = () => {
+  //   const compStyles = window.getComputedStyle(phraseRef.current);
+  //   let animation = compStyles.getPropertyValue("animation");
+  //   animation =
+  //     animation || compStyles.getPropertyValue("-moz-animation-duration");
+  //   animation =
+  //     animation || compStyles.getPropertyValue("-webkit-animation-duration");
+  //   const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
+  //   return animationTime;
+  // };
 
   const toast = useToast();
 
@@ -184,7 +184,7 @@ const MainBanner1 = (props) => {
               conversionLabel: props.label
                 ? `${props.label}`
                 : "fOI8CPypnfkYEKLcvZ8o",
-                page: window.location.href,
+              page: window.location.href,
             }),
             setLoading(false),
             toast({
@@ -280,7 +280,7 @@ const MainBanner1 = (props) => {
     <div className="VideoBanner">
       <div className="image-background">&nbsp;</div>
       <div className="video-background">
-        <video
+        {/* <video
           playsInline
           autoPlay
           loop
@@ -290,7 +290,8 @@ const MainBanner1 = (props) => {
           poster="/assets/cloudinaryBackup/home-banner_bwes6c.webp"
         >
           <source src="/bg.mp4" type="video/mp4" />
-        </video>
+        </video> */}
+        <img className="LpMainVideo" src="/BannerBg.jpg" />
       </div>
       <div className="image-title" id="contactus">
         <div className="widthFull">
@@ -298,7 +299,7 @@ const MainBanner1 = (props) => {
             <div className="irow">
               <div className="icol-md-9">
                 <div className="T1">
-                  Developing{" "}
+                  {/* Developing{" "}
                   <span
                     id="Transform"
                     className=" TransfomText random-word"
@@ -308,12 +309,13 @@ const MainBanner1 = (props) => {
                   </span>{" "}
                   Websites
                   <br />
-                  To grow and establish your online presence
+                  To grow and establish your online presence */}
+                  Crafting Digital Experiences That Inspire and Transform
                 </div>
                 <div className="T2">
-                  Elevate Your Online Presence with Our Web Development
-                  Services, Crafting Contemporary, Responsive, and User-Centric
-                  Websites that Fuel Business Growth and Spotlight Your Brand
+                  Cutting-edge websites designed to engage, captivate, and grow
+                  your business—where innovation meets creativity for every
+                  industry.
                 </div>
                 <div className="PartnerBoxWrap">
                   <div className="PartnerBox">
