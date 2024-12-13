@@ -294,9 +294,9 @@ const MainBanner1 = (props) => {
 
         <Image
           className="LpMainVideo"
-          src="https://res.cloudinary.com/duel7c31l/image/upload/v1734097478/shutterstock_2154586661_Converted_-min_2_rz29mr.jpg"
+          src="https://res.cloudinary.com/duel7c31l/image/upload/v1734099734/shutterstock_2154586661Converted-min2_pszjyq.jpg"
           alt="Banner background"
-          layout="intrinsic"
+          // layout="intrinsic"
           width={1600} // Specify the width
           height={900} // Specify the height (adjust according to the aspect ratio you need)
           priority
