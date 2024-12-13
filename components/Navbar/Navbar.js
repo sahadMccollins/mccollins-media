@@ -134,6 +134,7 @@ const Navbar = (props) => {
     formData.append("Company", company);
     formData.append("Services", lookingFor);
     formData.append("Message", project);
+    
 
     fetch(
       "https://script.google.com/macros/s/AKfycbxmDwaT4Le95NuEGMeviV3p_ofzhwfqW6w7TDLttjg0N2n0NdkRNHiPYBVt20eI4VgVKg/exec",
