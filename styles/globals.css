@@ -1384,7 +1384,8 @@ body .clientsLogoStack {
 }
 .LpGridBox.bg2 {
   /* background-color: #ecca1c; */
-  background-color: #ffde11;
+  /* background-color: #ffde11; */
+  background-color: #fff;
 }
 .Row2 {
   display: flex;
@@ -1936,10 +1937,10 @@ body.LandingPage .chakra-container {
     font-size: 15px;
     margin-bottom: 10px;
   }
-  .video-background video {
+  /* .video-background video {
     min-height: 50vh;
     object-fit: cover;
-  }
+  } */
   .PartnerItem {
     padding: 0 10px;
     flex: 0 0 25%;
@@ -2671,6 +2672,31 @@ button {
   .LpMainVideo {
     min-height: 800px;
     object-fit: cover;
+  }
+}
+
+/* @media (max-width: 780px) {
+  .video-background {
+    display: none;
+  }
+} */
+
+@media (max-width: 780px) {
+  .video-background {
+    visibility: hidden;
+    height: 115px;
+  }
+
+  /* If you want to hide the image specifically */
+  .video-background .LpMainVideo {
+    display: none;
+  }
+
+  .image-title {
+    background-image: url("https://res.cloudinary.com/duel7c31l/image/upload/v1734099734/shutterstock_2154586661Converted-min2_pszjyq.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
