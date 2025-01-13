@@ -134,7 +134,6 @@ const Navbar = (props) => {
     formData.append("Company", company);
     formData.append("Services", lookingFor);
     formData.append("Message", project);
-    
 
     fetch(
       "https://script.google.com/macros/s/AKfycbxmDwaT4Le95NuEGMeviV3p_ofzhwfqW6w7TDLttjg0N2n0NdkRNHiPYBVt20eI4VgVKg/exec",
@@ -203,7 +202,12 @@ const Navbar = (props) => {
                 <Image
                   alt="McCollins Media"
                   src={`/assets/image/navbar/${
-                    props.color ? `logo-${props.color}` : "logo"
+                    props.color
+                      ? `logo-${props.color}`
+                      : currentUrl === "/landing-pages/restaurant-marketing" ||
+                        currentUrl === "/landing-pages/restaurant-marketing-2"
+                      ? "logo-black"
+                      : "logo"
                   }.svg`}
                   width="223"
                   height="50"
