@@ -185,13 +185,13 @@ const RestaurantMarketing = () => {
         />
       </Head>
       {/* <SearchEngineBanner /> */}
-      <Box w="100%" bg="gray.50">
+      <Box w="100%" bg="gray.50" marginBottom="-30px">
         <Box
           // maxW="7xl"
           // bgGradient="linear(to-r, gray.50, red.100)"
           my={8}
           // boxShadow="lg"
-          w="80%"
+          w={{ base: "100%", md: "80%" }}
           mx="auto"
           bg="gray.50"
           position="relative"
