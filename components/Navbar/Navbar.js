@@ -720,6 +720,16 @@ const Navbar = (props) => {
                           href="/landing-pages/perfomance-marketing"
                         />
                       </li>
+                      <li
+                        onClick={() => {
+                          onClose();
+                        }}
+                      >
+                        <NavItem
+                          name="Restaurant Marketing"
+                          href="/landing-pages/restaurant-marketing"
+                        />
+                      </li>
 
                       {/* <li
                         onClick={() => {
