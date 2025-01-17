@@ -190,10 +190,14 @@ const RestaurantMarketing = () => {
           // maxW="7xl"
           // bgGradient="linear(to-r, gray.50, red.100)"
           my={8}
+          bgGradient={{
+            base: "linear(to-t,rgb(233, 126, 99),rgb(237, 226, 222))",
+            md: "none",
+          }}
           // boxShadow="lg"
-          w={{ base: "100%", md: "80%" }}
+          w={{ base: "100%", md: "90%" }}
           mx="auto"
-          bg="gray.50"
+          // bg="gray.50"
           position="relative"
           py={12}
           px={{ base: 2, md: 8 }}
@@ -210,6 +214,7 @@ const RestaurantMarketing = () => {
             bgGradient="radial(circle, #FC480E 30%, rgba(252, 72, 14, 0.5) 70%, transparent 100%)"
             filter="blur(100px)"
             zIndex={1}
+            display={{ md: "block", base: "none" }}
           />
 
           <img
@@ -227,41 +232,35 @@ const RestaurantMarketing = () => {
               {/* Left Content Section */}
               <Box flex={{ base: "1", md: "3" }} zIndex={5}>
                 <VStack align={{ base: "center", md: "start" }} spacing={6}>
-                  {/* <Heading size="3xl" lineHeight="1.2">
-                    Join the Ultimate
-                    <Text as="span" fontStyle="italic" display="block">
-                      Restaurant Marketing
-                    </Text>
-                    Workshop!
-                  </Heading> */}
-                  <Heading
-                    size={{ base: "2xl", md: "3xl" }}
-                    lineHeight={{ base: "1.4", md: "1.2" }}
-                  >
-                    Join the Ultimate
-                    <Text as="span" fontStyle="italic" display="block">
-                      Restaurant Marketing
-                    </Text>
-                    Workshop!
-                  </Heading>
-
-                  <Box
-                    flex={{ base: "1", md: "2" }}
-                    maxW={{ md: "400px" }}
-                    mt="37%"
-                    zIndex={5}
-                    display={{ base: "block", md: "none" }}
-                  >
-                    <Image
-                      src="https://res.cloudinary.com/duel7c31l/image/upload/v1736743942/shutterstock_2024994161_pqcai9.png"
-                      alt="Workshop discussion"
-                      w="full"
-                      h="auto"
-                      filter="grayscale(100%)"
-                      objectFit="cover"
-                      borderRadius="md"
-                    />
-                  </Box>
+                  {isMobile ? (
+                    <div
+                      style={{
+                        fontWeight: "bold",
+                        fontSize: "30px",
+                        lineHeight: "1.2",
+                      }}
+                    >
+                      <div>Join the Ultimate</div>
+                      <div style={{ color: "#FF4522" }}>
+                        Restaurant Marketing Workshop
+                      </div>
+                    </div>
+                  ) : (
+                    <Heading
+                      size={{ base: "2xl", md: "3xl" }}
+                      lineHeight={{ base: "1.4", md: "1.2" }}
+                    >
+                      Join the Ultimate
+                      <Text
+                        color="#FF4522"
+                        as="span"
+                        fontStyle="italic"
+                        display="block"
+                      >
+                        Restaurant Marketing Workshop!
+                      </Text>
+                    </Heading>
+                  )}
 
                   <Text fontSize="xl" maxW="3xl">
                     Discover the{" "}
@@ -295,6 +294,24 @@ const RestaurantMarketing = () => {
                     </List>
                   </Box>
 
+                  <Box
+                    flex={{ base: "1", md: "2" }}
+                    maxW={{ md: "400px" }}
+                    mt="37%"
+                    zIndex={5}
+                    display={{ base: "block", md: "none" }}
+                  >
+                    <Image
+                      src="https://res.cloudinary.com/duel7c31l/image/upload/v1736743942/shutterstock_2024994161_pqcai9.png"
+                      alt="Workshop discussion"
+                      w="full"
+                      h="auto"
+                      filter="grayscale(100%)"
+                      objectFit="cover"
+                      borderRadius="md"
+                    />
+                  </Box>
+
                   <Box bg="#C6C5C1" p={6} borderRadius="md" w="full" maxW="md">
                     <VStack align="start" spacing={3}>
                       <HStack>
@@ -311,7 +328,7 @@ const RestaurantMarketing = () => {
                         >
                           <CalendarDays color="white" boxSize={6} />
                         </Box>
-                        <Text>23rd January 2025</Text>
+                        <Text>5th February 2025</Text>
                       </HStack>
                       <HStack>
                         <Box
