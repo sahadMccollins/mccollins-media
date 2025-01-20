@@ -111,6 +111,13 @@ export default function Sidebar() {
         <NavItem
           navSize={navSize}
           icon={AiOutlineForm}
+          title="Restaurant Marketing Form Submit"
+          page="/admin/restaurant-marketing-form-submit"
+          active={router.pathname == "/admin/restaurant-marketing-form-submit"}
+        />
+        <NavItem
+          navSize={navSize}
+          icon={AiOutlineForm}
           title="Form Submit"
           page="/admin/form-submit"
           active={router.pathname == "/admin/form-submit"}
