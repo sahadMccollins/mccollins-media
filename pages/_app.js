@@ -241,6 +241,82 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             )}
           </>
         )}
+
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "McCollins Media",
+              "alternateName": "McCollins",
+              "url": "https://www.mccollinsmedia.com/",
+              "logo": "https://www.mccollinsmedia.com/assets/image/navbar/logo-yellow.svg",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971 55 901 5305",
+                "contactType": "sales",
+                "areaServed": "AE",
+                "availableLanguage": ["en", "Arabic"]
+              },
+              "sameAs": [
+                "https://www.facebook.com/mccollinsmedia/",
+                "https://x.com/mccollinsmedia?lang=en",
+                "https://www.instagram.com/mccollinsmedia/?hl=en",
+                "https://www.linkedin.com/company/mccollins-media/",
+                "https://www.mccollinsmedia.com/"
+              ]
+            })
+          }}
+        />
+
+        {/* Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "McCollins Media",
+              "image": "https://www.mccollinsmedia.com/assets/image/navbar/logo-yellow.svg",
+              "@id": "",
+              "url": "https://www.mccollinsmedia.com/",
+              "telephone": "+971 55 901 5305",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "G04, Loft Office 2, Entrance C",
+                "addressLocality": "Dubai Media City",
+                "postalCode": "",
+                "addressCountry": "AE"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 25.096917791379166,
+                "longitude": 55.15768169975908
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://www.facebook.com/mccollinsmedia/",
+                "https://x.com/mccollinsmedia?lang=en",
+                "https://www.instagram.com/mccollinsmedia/?hl=en",
+                "https://www.linkedin.com/company/mccollins-media/",
+                "https://www.mccollinsmedia.com/"
+              ]
+            })
+          }}
+        />
       </Head>
       <SessionProvider session={session}>
         <ChakraProvider>
