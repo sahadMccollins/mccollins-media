@@ -81,12 +81,12 @@ const Navbar = (props) => {
   };
 
   const phoneNumber = isWebDesignDevelopmentPage()
-    ? "+971 0559564135"
-    : "+971 0559564135";
+    ? "+971 055 956 4135"
+    : "+971 055 956 4135";
 
   const whatsappNumber = isWebDesignDevelopmentPage()
-    ? "+971 0559564135"
-    : "+971 0559564135";
+    ? "+971 055 956 4135"
+    : "+971 055 956 4135";
 
   const toast = useToast();
 
@@ -1084,7 +1084,7 @@ const Navbar = (props) => {
               Get a quote
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=+971 0559564135&amp;text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+              href="https://api.whatsapp.com/send?phone=+971 055 956 4135&amp;text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
               class="mediaFlex2"
               target="_blank"
             >

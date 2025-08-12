@@ -53,7 +53,7 @@ const Contact = ({ metaTags }) => {
                     </Heading>
                     <Text fontWeight={"bold"} fontSize={"20px"} mt={5} mb={10}>
                       Mobile:{" "}
-                      <Link href="tel:+97144456848">+971 0559564135</Link>
+                      <Link href="tel:+97144456848">+971 055 956 4135</Link>
                       <br />
                       E-Mail:{" "}
                       <Link href="mailto:info@mccollinsmedia.com">

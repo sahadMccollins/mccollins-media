@@ -81,7 +81,7 @@ export default async (req, res) => {
                             <p style="margin: 30px 0 20px 0;">If you have any questions or need additional information, please don't hesitate to contact us:</p>
                             <p style="margin: 0 0 20px 0;">
                                 <strong>Email:</strong> <a href="mailto:workshop@mccollinsmedia.com" style="color: #FF6B35;">workshop@mccollinsmedia.com</a><br>
-                                <strong>Phone:</strong> +971 0559564135
+                                <strong>Phone:</strong> +971 055 956 4135
                             </p>
                             
                             <p style="margin: 30px 0 20px 0;">We look forward to seeing you at the workshop!</p>
