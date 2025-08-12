@@ -566,7 +566,7 @@ const Contact = ({ metaTags }) => {
                 </p>
               </li>
               <li>
-                <p>By phone number: +971 55 901 5305</p>
+                <p>By phone number: +971 0559564135</p>
               </li>
             </ul>
           </Container>

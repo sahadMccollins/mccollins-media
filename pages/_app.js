@@ -81,7 +81,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       title:
         "Best SEO Company in UAE, Dubai | SEO Agency In Dubai | SEO Services Dubai - Mccolilins",
       description:
-        "Mccollins offer the best range of SEO services in Dubai, Abu Dhabi and across the globe at affordable price. Our team works for your website traffic, ranking and visibility with the best strategies.Get the seo services in UAE by calling- +971 55 901 5305",
+        "Mccollins offer the best range of SEO services in Dubai, Abu Dhabi and across the globe at affordable price. Our team works for your website traffic, ranking and visibility with the best strategies.Get the seo services in UAE by calling- +971 0559564135",
     },
     "/industry/corporate-marketing-services": {
       title:
@@ -255,7 +255,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
               "logo": "https://www.mccollinsmedia.com/assets/image/navbar/logo-yellow.svg",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+971 55 901 5305",
+                "telephone": "+971 0559564135",
                 "contactType": "sales",
                 "areaServed": "AE",
                 "availableLanguage": ["en", "Arabic"]
@@ -282,7 +282,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
               "image": "https://www.mccollinsmedia.com/assets/image/navbar/logo-yellow.svg",
               "@id": "",
               "url": "https://www.mccollinsmedia.com/",
-              "telephone": "+971 55 901 5305",
+              "telephone": "+971 0559564135",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "G04, Loft Office 2, Entrance C",
