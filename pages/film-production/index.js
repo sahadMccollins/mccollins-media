@@ -1578,7 +1578,7 @@ const FilmProduction = () => {
                   <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/twitter.png" />
                 </a>
                 <a
-                  href="https://api.whatsapp.com/send?phone=+971 55 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                  href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                   target="_blank"
                 >
                   <img
@@ -1605,7 +1605,7 @@ const FilmProduction = () => {
             </div>
           </a>
           <a
-            href="https://api.whatsapp.com/send?phone=+971 55 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+            href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
             target="_blank"
           >
             <div className="SBWhatsapp">WhatsApp us</div>
@@ -1619,7 +1619,7 @@ const FilmProduction = () => {
                 Get a quote
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=+971 55 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                 className="mediaFlex2"
                 target="_blank"
               >

@@ -336,7 +336,7 @@ const Footer = () => {
               <Text>
                 <b>WhatsApp Us: </b>
                 <Link
-                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media`}
+                  href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                 >
                   {whatsappNumber}
                 </Link>
@@ -665,7 +665,7 @@ const Footer = () => {
                   src="/assets/image/icons/whatsapp-24.png"
                 />
                 <Link
-                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media`}
+                  href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                 >
                   {whatsappNumber}
                 </Link>
