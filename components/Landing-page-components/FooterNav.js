@@ -33,8 +33,8 @@ const FooterNav = (props) => {
             <a
               href={
                 props.phone
-                  ? "https://api.whatsapp.com/send?phone=+971 055 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
-                  : "https://api.whatsapp.com/send?phone=+971 055 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                  ? "https://api.whatsapp.com/send?phone=+971 55 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
+                  : "https://api.whatsapp.com/send?phone=+971 55 956 4135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
               }
             >
               <div class="icon">
@@ -46,7 +46,7 @@ const FooterNav = (props) => {
           <li>
             <a
               href={
-                props.phone ? "tel:+971 055 956 4135" : "tel:+971 055 956 4135"
+                props.phone ? "tel:+971 55 956 4135" : "tel:+971 55 956 4135"
               }
             >
               <div class="icon">

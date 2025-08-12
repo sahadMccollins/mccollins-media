@@ -131,20 +131,20 @@ const Footer = () => {
   };
 
   const phoneNumber = isWebDesignDevelopmentPage()
-    ? "+971 055 956 4135"
-    : "+971 055 956 4135";
+    ? "+971 55 956 4135"
+    : "+971 55 956 4135";
 
   const whatsappNumber = isWebDesignDevelopmentPage()
-    ? "+971 055 956 4135"
-    : "+971 055 956 4135";
+    ? "+971 55 956 4135"
+    : "+971 55 956 4135";
 
   // const phoneNumber = isWebDesignDevelopmentPage()
-  //   ? "+971 055 956 41352"
-  //   : "+971 055 956 4135";
+  //   ? "+971 55 956 41352"
+  //   : "+971 55 956 4135";
 
   // const whatsappNumber = isWebDesignDevelopmentPage()
-  //   ? "+971 055 956 41352"
-  //   : "+971 055 956 4135";
+  //   ? "+971 55 956 41352"
+  //   : "+971 55 956 4135";
 
   const toast = useToast();
 
