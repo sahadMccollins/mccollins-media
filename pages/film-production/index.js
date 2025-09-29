@@ -170,30 +170,30 @@ const FilmProduction = () => {
     setContactStatus(status);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      const images = document.querySelectorAll(".ImageSwitcher");
-      const windowWidth = window.innerWidth;
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     const images = document.querySelectorAll(".ImageSwitcher");
+  //     const windowWidth = window.innerWidth;
 
-      images.forEach((image) => {
-        const defaultSrc = image.getAttribute("src");
-        const alternateSrc = image.getAttribute("data-src");
+  //     images.forEach((image) => {
+  //       const defaultSrc = image.getAttribute("src");
+  //       const alternateSrc = image.getAttribute("data-src");
 
-        if (windowWidth < 1000) {
-          image.src = alternateSrc;
-        } else {
-          image.src = defaultSrc;
-        }
-      });
-    };
+  //       if (windowWidth < 1000) {
+  //         image.src = alternateSrc;
+  //       } else {
+  //         image.src = defaultSrc;
+  //       }
+  //     });
+  //   };
 
-    handleResize(); // Initial call
-    window.addEventListener("resize", handleResize);
+  //   handleResize(); // Initial call
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -600,8 +600,8 @@ const FilmProduction = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/1.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/1.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -609,8 +609,8 @@ const FilmProduction = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/2.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/2.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -618,8 +618,8 @@ const FilmProduction = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/3.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/3.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -627,8 +627,8 @@ const FilmProduction = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/4.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/4.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -636,8 +636,8 @@ const FilmProduction = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/5.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/5.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -645,8 +645,8 @@ const FilmProduction = () => {
                         data-aos="fade-up"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/6.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/6.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -654,8 +654,8 @@ const FilmProduction = () => {
                         data-aos="fade-left"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/7.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/7.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -663,8 +663,8 @@ const FilmProduction = () => {
                         data-aos="fade-left"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/8.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/8.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -672,8 +672,8 @@ const FilmProduction = () => {
                         data-aos="fade-left"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/9.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/9.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -681,8 +681,8 @@ const FilmProduction = () => {
                         data-aos="fade-left"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/10.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/10.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -690,8 +690,8 @@ const FilmProduction = () => {
                         data-aos="fade-left"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/11.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/11.png"
                       />
                     </div>
                     <div className="col-md-2">
@@ -699,8 +699,8 @@ const FilmProduction = () => {
                         data-aos="fade-left"
                         data-aos-duration="700"
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/12.png"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/12.png"
                       />
                     </div>
                   </div>
@@ -1017,8 +1017,8 @@ const FilmProduction = () => {
                     <div className="PrBlock">
                       <img
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s1.jpg"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s1.jpg"
                       />
                       <div className="PrBlockContent">
                         <div>
@@ -1045,8 +1045,8 @@ const FilmProduction = () => {
                     <div className="PrBlock">
                       <img
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s2.jpg"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s2.jpg"
                       />
                       <div className="PrBlockContent">
                         <div>
@@ -1076,8 +1076,8 @@ const FilmProduction = () => {
                     <div className="PrBlock">
                       <img
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s3.jpg"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s3.jpg"
                       />
                       <div className="PrBlockContent">
                         <div>
@@ -1108,8 +1108,8 @@ const FilmProduction = () => {
                     <div className="PrBlock">
                       <img
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s4.jpg"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s4.jpg"
                       />
                       <div className="PrBlockContent">
                         <div>
@@ -1140,8 +1140,8 @@ const FilmProduction = () => {
                     <div className="PrBlock">
                       <img
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s5.jpg"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s5.jpg"
                       />
                       <div className="PrBlockContent">
                         <div>
@@ -1172,8 +1172,8 @@ const FilmProduction = () => {
                     <div className="PrBlock">
                       <img
                         className="ImageSwitcher"
-                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                        data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s6.jpg"
+                        // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                        src="https://mccollinsmediaweb.github.io/mcc-video-production/images/s6.jpg"
                       />
                       <div className="PrBlockContent">
                         <div>
@@ -1213,8 +1213,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/12.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/12.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1224,8 +1224,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/alllocation.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/alllocation.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1235,8 +1235,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/arms.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/arms.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1246,8 +1246,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/biz.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/biz.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1257,8 +1257,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/doors.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/doors.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1268,8 +1268,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/mapei.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/mapei.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1279,8 +1279,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/thoshib.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/thoshib.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1290,8 +1290,8 @@ const FilmProduction = () => {
               title="Client Name"
             >
               <img
-                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/tips.jpg"
+                // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                src="https://mccollinsmediaweb.github.io/mcc-video-production/images/video-thumb/tips.jpg"
                 className="ImageSwitcher"
               />
             </a>
@@ -1323,8 +1323,8 @@ const FilmProduction = () => {
                   </a>
                 </div>
                 <img
-                  src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
-                  data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/footerlogo.png"
+                  // src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                  src="https://mccollinsmediaweb.github.io/mcc-video-production/images/footerlogo.png"
                   className="FtrLogo ImageSwitcher"
                 />
               </div>
