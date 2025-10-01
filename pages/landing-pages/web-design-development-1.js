@@ -9,7 +9,60 @@ import FooterNav from "../../components/Landing-page-components/FooterNav";
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import BannerBox from "../../components/BanneBox";
+import FAQ1 from "../../components/Landing-page-components/FAQ1";
 const LandingPage1 = () => {
+  const faqsData = [
+  {
+    question: "What is the difference between a website and a web application?",
+    answer:
+      "A website provides information and content, while a web application allows user interaction and performs specific functions.",
+  },
+  {
+    question: "How long does it take to develop a website?",
+    answer:
+      "The timeline depends on complexity, but most business websites take 4–8 weeks to design and develop.",
+  },
+  {
+    question: "Do I need to know coding to maintain my website?",
+    answer:
+      "Not necessarily. We can integrate CMS platforms like WordPress, making it easy to update content without coding.",
+  },
+  {
+    question: "Will my website be mobile-friendly?",
+    answer:
+      "Yes, all modern websites are built responsive to ensure they look great on mobile, tablet, and desktop devices.",
+  },
+  {
+    question: "What technologies do you use for web development?",
+    answer:
+      "We use HTML, CSS, JavaScript, React, Next.js, Node.js, and other modern frameworks based on your project’s needs.",
+  },
+  {
+    question: "How much does it cost to build a website?",
+    answer:
+      "Costs vary depending on design, features, and complexity. A basic site may cost less, while custom solutions cost more.",
+  },
+  {
+    question: "Will my website be SEO-friendly?",
+    answer:
+      "Yes, we implement SEO best practices like clean code, meta tags, and optimized performance to improve search ranking.",
+  },
+  {
+    question: "Do you provide website hosting and domain services?",
+    answer:
+      "Yes, we can guide you in purchasing domains and hosting or manage them for you as part of our service.",
+  },
+  {
+    question: "Can you redesign my existing website?",
+    answer:
+      "Absolutely. We can modernize your website’s design, improve speed, and enhance usability while keeping your content intact.",
+  },
+  {
+    question: "Do you provide ongoing support after the website launch?",
+    answer:
+      "Yes, we offer maintenance packages that include updates, backups, security checks, and technical support.",
+  },
+];
   useEffect(() => {
     document.body.className = "LandingPage";
   });
@@ -108,11 +161,13 @@ const LandingPage1 = () => {
           Banner="/services/web/McC_WDev_Web_10-min.jpg"
           MobileBanner="/services/web/McC_WDev_Mob_10-min.jpg"
         />
+        <FAQ1 faqs={faqsData} />
       <LpGrid />
-
+      
       <WebPortfolio />
 
       <WorkTogether />
+      
       <FooterNav phone={true} />
     </Box>
   );
