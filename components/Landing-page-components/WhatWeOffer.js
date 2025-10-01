@@ -31,7 +31,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                         </div>
                         <div className="OfT2">Digital Strategy Development </div>
                         <div className="OfT3">Unlock your business potential with our cutting-edge digital strategy development. Drive growth, enhance engagement, and achieve your goals effortlessly.</div>
-                        <div className="OfT4">Get a Quote</div>
+                        {/* <div className="OfT4">Get a Quote</div> */}
                     </a>
                 </div>
                 <div className="OfferItem irc3">
@@ -43,7 +43,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                         </div>
                         <div className="OfT2">Social Media Management </div>
                         <div className="OfT3">Boost your brand's online presence with expert social media management. Engage audiences, increase followers, and drive conversions seamlessly.</div>
-                        <div className="OfT4">Get a Quote</div>
+                        {/* <div className="OfT4">Get a Quote</div> */}
                     </a>
                 </div>
                 <div className="OfferItem irc3">
@@ -55,7 +55,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                         </div>
                         <div className="OfT2">Content Creation </div>
                         <div className="OfT3">Captivate your audience with our monthly content creation. Engaging, high-quality content tailored to your brand’s voice and vision. </div>
-                        <div className="OfT4">Get a Quote</div>
+                        {/* <div className="OfT4">Get a Quote</div> */}
                     </a>
                 </div>
                 <div className="OfferItem irc3">
@@ -67,7 +67,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                         </div>
                         <div className="OfT2">Community Management </div>
                         <div className="OfT3">Enhance brand loyalty with expert community management. Engage followers, foster relationships, and create vibrant social media communities effortlessly.</div>
-                        <div className="OfT4">Get a Quote</div>
+                        {/* <div className="OfT4">Get a Quote</div> */}
                     </a>
                 </div>
                 <div className="OfferItem irc3">
@@ -79,7 +79,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                         </div>
                         <div className="OfT2">Influencer Marketing</div>
                         <div className="OfT3">Amplify your brand's reach with influencer marketing. Collaborate with top influencers to boost visibility, engagement, and drive authentic growth.</div>
-                        <div className="OfT4">Get a Quote</div>
+                        {/* <div className="OfT4">Get a Quote</div> */}
                     </a>
                 </div>
                 <div className="OfferItem irc3">
@@ -91,7 +91,7 @@ Team offers tailored strategies and effective solutions to drive traffic and max
                         </div>
                         <div className="OfT2">Performance Marketing </div>
                         <div className="OfT3">Maximize your ROI with data-driven performance marketing. Target the right audience, optimize campaigns, and achieve measurable results efficiently.</div>
-                        <div className="OfT4">Get a Quote</div>
+                        {/* <div className="OfT4">Get a Quote</div> */}
                     </a>
                 </div>
             </div>
