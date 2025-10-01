@@ -29,47 +29,47 @@ const LandingPage1 = () => {
       <WhatWeOffer1 />
       <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_1-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_1-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_1-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_2-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_2-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_2-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_3-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_3-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_3-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_4-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_4-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_4-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_5-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_5-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_6-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_6-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_6-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_7-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_7-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_7-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_9-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_8-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_8-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_10-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_9-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_9-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_11-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_10-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_10-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_3-min.jpg"
               />
               <BannerBox
                 Banner="/services/social/McC_SocMedMark_Web_11-min.jpg"
-                MobileBanner="/services/web/McC_SocMedMark_Mob_11-min.jpg"
+                MobileBanner="/services/social/McC_SocMedMark_Mob_4-min.jpg"
               />
 
       <OurPartners1 />
