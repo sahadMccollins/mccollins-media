@@ -8,6 +8,7 @@ import WorkTogether from "../../components/Landing-page-components/workTogether"
 import FooterNav from "../../components/Landing-page-components/FooterNav";
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
+import BannerBox from "../../components/BanneBox";
 const LandingPage1 = () => {
   useEffect(() => {
     document.body.className = "LandingPage";
@@ -75,6 +76,38 @@ const LandingPage1 = () => {
       <ClientPortFolio />
 
       <TrustedLogos />
+      <BannerBox
+          Banner="/services/web/McC_WDev_Web_2-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_2-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/web/McC_WDev_Web_4-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_3-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/web/McC_WDev_Web_5-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_5-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/web/McC_WDev_Web_6-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_6-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/web/McC_WDev_Web_7-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_7-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/web/McC_WDev_Web_8-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_8-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/web/McC_WDev_Web_9-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_9-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/web/McC_WDev_Web_10-min.jpg"
+          MobileBanner="/services/web/McC_WDev_Mob_10-min.jpg"
+        />
       <LpGrid />
 
       <WebPortfolio />
