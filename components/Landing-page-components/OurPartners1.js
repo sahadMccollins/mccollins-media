@@ -19,55 +19,105 @@ const OurPartners1 = () => {
           <div className="Portfolios">
             <div className="PortfolioItem">
               <div className="imgWrap">
-              <Image
-                alt="McCollins Media"
-                src="/assets/image/o1.jpg"
-                width={"300px"}
-                height={"101px"}
-              />
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_1.png"
+                  width={"268px"}
+                  height={"88px"}
+                />
               </div>
             </div>
             <div className="PortfolioItem">
               <div className="imgWrap">
-              <Image
-                alt="McCollins Media"
-                src="/assets/image/o2.jpg"
-                width={"300px"}
-                height={"101px"}
-              />
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_2.png"
+                  width={"341px"}
+                  height={"69px"}
+                />
               </div>
             </div>
             <div className="PortfolioItem">
               <div className="imgWrap">
-              <Image
-                alt="McCollins Media"
-                src="/assets/image/o3.jpg"
-                width={"300px"}
-                height={"101px"}
-              />
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_3.png"
+                  width={"103px"}
+                  height={"126px"}
+                />
               </div>
             </div>
             <div className="PortfolioItem">
               <div className="imgWrap">
-              <Image
-                alt="McCollins Media"
-                src="/assets/image/o4.jpg"
-                width={"300px"}
-                height={"101px"}
-              />
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_4.png"
+                  width={"376px"}
+                  height={"96px"}
+                />
               </div>
             </div>
             <div className="PortfolioItem">
               <div className="imgWrap">
-              <Image
-                alt="McCollins Media"
-                src="/assets/image/o5.jpg"
-                width={"300px"}
-                height={"101px"}
-              />
-              
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_5.png"
+                  width={"121px"}
+                  height={"121px"}
+                />
               </div>
             </div>
+            <div className="PortfolioItem">
+              <div className="imgWrap">
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_7.png"
+                  width={"281px"}
+                  height={"84px"}
+                />
+              </div>
+            </div>
+            <div className="PortfolioItem">
+              <div className="imgWrap">
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_8.png"
+                  width={"346px"}
+                  height={"96px"}
+                />
+              </div>
+            </div>
+            <div className="PortfolioItem">
+              <div className="imgWrap">
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_9.png"
+                  width={"306px"}
+                  height={"73px"}
+                />
+              </div>
+            </div>
+            <div className="PortfolioItem">
+              <div className="imgWrap">
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_10.png"
+                  width={"309px"}
+                  height={"100px"}
+                />
+              </div>
+            </div>
+            <div className="PortfolioItem">
+              <div className="imgWrap">
+                <Image
+                  alt="McCollins Media"
+                  src="/services/partners/McC_Our Partners_11.png"
+                  width={"391px"}
+                  height={"75px"}
+                />
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

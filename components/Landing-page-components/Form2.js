@@ -231,7 +231,7 @@ const Form2 = () => {
         ref={hiddenInputRef}
         onChange={handleHiddenInputChange}
       />
-      <div className="FormItem ">
+      <div className="FormItem FullWidth">
         <div className="FormLabel">reCAPTCHA</div>
         <ReCAPTCHA
           ref={recaptchaRef}
