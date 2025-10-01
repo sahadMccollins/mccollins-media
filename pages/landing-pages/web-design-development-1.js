@@ -137,10 +137,10 @@ const LandingPage1 = () => {
           Banner="/services/web/McC_WDev_Web_4-min.jpg"
           MobileBanner="/services/web/McC_WDev_Mob_3-min.jpg"
         />
-        <BannerBox
+        {/* <BannerBox
           Banner="/services/web/McC_WDev_Web_5-min.jpg"
           MobileBanner="/services/web/McC_WDev_Mob_5-min.jpg"
-        />
+        /> */}
         <BannerBox
           Banner="/services/web/McC_WDev_Web_6-min.jpg"
           MobileBanner="/services/web/McC_WDev_Mob_6-min.jpg"
