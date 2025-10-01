@@ -20,6 +20,7 @@ import clientPromise from "../../lib/mongodb";
 import Head from "next/head";
 import ReactHtmlParser from "react-html-parser";
 import BrandsBanner from "../../components/Landing-page-components/BrandsBanner";
+import BannerBox from "../../components/BanneBox";
 const DesignAndBrandDevelopment = ({ metaTags }) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
 
@@ -36,7 +37,7 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
         content="Brand identity is everything, and we bring in unimaginable creativity through brand execution, logo creation, website redesign, social media content creation, and more."
         poster="/assets/image/servicePage/designAndBrand.jpg"
       /> */}
-      <BrandsBanner/>
+      <BrandsBanner />
       <Box bg={"#F7F7F7"} style={{ marginTop: "0" }}>
         <Container maxWidth={"7xl"}>
           <Flex direction={{ base: "column", md: "row" }} my={10}>
@@ -112,7 +113,46 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
           }
         />
       </Box>
-
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_1-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_1.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_2-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_2.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_3-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_3-min.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_4-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_4.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_5-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_5.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_6-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_6.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_7-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_7.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_8-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_8.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_9-min.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_9-min.jpg"
+      />
+      <BannerBox
+        Banner="/services/branddevelopment/McC_BrandDev_Web_10.jpg"
+        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_10.jpg"
+      />
       <IntrestedInBox />
       <ClientsLogo />
     </Stack>
