@@ -4,6 +4,7 @@ import InnerLayout from "../components/Layout/InnerLayout";
 
 const Nopage = () => {
   return (
+    
     <Stack bg="#FFDE11" minH={"700px"} mt="-85px">
       <Box
         pb={"50px"}
