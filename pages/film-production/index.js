@@ -9,6 +9,7 @@ import axios from "axios";
 import IntlTelInput from "react-intl-tel-input";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Script from "next/script";
 
 const FilmProduction = () => {
   const [fullName, setFullName] = useState("");
@@ -124,12 +125,28 @@ const FilmProduction = () => {
     }
   };
 
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: true,
+  //   });
+  // }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
     });
-  }, []);
+
+    const handleRouteChange = () => {
+      AOS.refresh(); // 👈 refresh AOS when route changes
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   const options = {
     center: true,
@@ -1640,12 +1657,18 @@ const FilmProduction = () => {
           </div>
         </div>
 
-        <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.js"></script>
+        {/* <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.js"></script>
         <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.fancybox.min.js"></script>
         <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/owl.carousel.min.js"></script>
         <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/main.js"></script>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> */}
+
+        <Script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.js" strategy="beforeInteractive" />
+        <Script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.fancybox.min.js" strategy="afterInteractive" />
+        <Script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/owl.carousel.min.js" strategy="afterInteractive" />
+        <Script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/main.js" strategy="afterInteractive" />
+        <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" strategy="afterInteractive" />
       </div>
     </>
   );
