@@ -720,7 +720,7 @@ const Navbar = (props) => {
                           href="/landing-pages/perfomance-marketing"
                         />
                       </li>
-                      <li
+                      {/* <li
                         onClick={() => {
                           onClose();
                         }}
@@ -729,7 +729,7 @@ const Navbar = (props) => {
                           name="Restaurant Marketing"
                           href="/landing-pages/restaurant-marketing"
                         />
-                      </li>
+                      </li> */}
 
                       {/* <li
                         onClick={() => {
