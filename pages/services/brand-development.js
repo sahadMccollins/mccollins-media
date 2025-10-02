@@ -23,6 +23,7 @@ import BrandsBanner from "../../components/Landing-page-components/BrandsBanner"
 import BannerBox from "../../components/BanneBox";
 import FAQ1 from "../../components/Landing-page-components/FAQ1";
 import LpGrid2 from "../../components/Landing-page-components/lpGrid2";
+import BrandingCaseStudies from "../../components/Landing-page-components/BrandingCaseStudies";
 const DesignAndBrandDevelopment = ({ metaTags }) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
  const faqsData = [
@@ -121,12 +122,16 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
           Banner="/services/branddevelopment/McC_BrandDev_Web_10.jpg"
           MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_10.jpg"
         />
+         <BrandingCaseStudies/>
+        <FAQ1 faqs={faqsData} />
+      
       </div>
       
       
-      <FAQ1 faqs={faqsData} />
+      
       <IntrestedInBox />
       <ClientsLogo />
+      
     </Stack>
   );
 };

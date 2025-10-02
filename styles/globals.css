@@ -3284,8 +3284,18 @@ a.WrkT1:hover {
 }
 .BrBox{
   margin-top: 0 !important;
+  margin-bottom: -10px !important;
+}
+.BrandingCaseStudies .PortFolioBoxItem{
+padding: 15px;
+}
+.BrandingCaseStudies .PortFolioBox {
+    justify-content: center;
 }
 @media (max-width: 1000px) {
+  .BrandingCaseStudies .PortFolioBoxItem{
+padding: 10px;
+}
   .mcol-md-6 {
     flex: 0 0 100%;
     max-width: 100%;
