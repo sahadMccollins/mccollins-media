@@ -39,8 +39,8 @@ const BrandsBanner = () => {
                 </div>
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
-                    <a href="/contact" className="BtnSt1">
-                      Request a Quote
+                    <a href="https://calendly.com/manjeet-0rp5/30min" className="BtnSt1" target="_blank">
+                      Schedule a Meeting Today
                     </a>
                   </div>
                 )}
