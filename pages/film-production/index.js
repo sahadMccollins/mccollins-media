@@ -267,10 +267,12 @@ const FilmProduction = () => {
             <div>
               <div className="HeaderRow">
                 <div className="HeaderLeft ">
-                  <img
+                  <a href="/">
+                    <img
                     src="https://mccollinsmediaweb.github.io/mcc-video-production/images/logo.png"
                     className="LogoImg"
                   />
+                  </a>
                 </div>
                 <div className="HeaderRight">
                   <ul>
