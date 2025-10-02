@@ -96,71 +96,7 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
       /> */}
       <BrandsBanner />
       <Box bg={"#F7F7F7"} style={{ marginTop: "0" }}>
-        <Container maxWidth={"7xl"}>
-          <Flex direction={{ base: "column", md: "row" }} my={10}>
-            <Box width={{ base: "100%", md: "50%" }} mr={"20"}>
-              <Heading fontWeight={"bold"} className="main-h3">
-                Brand Development
-              </Heading>
-              <Box
-                my={8}
-                background="#FFDE11"
-                width={"fit-content"}
-                p={"0px 10% 0px 10px"}
-                fontWeight="bold"
-                fontSize={"1xl"}
-                color={"#000"}
-              >
-                {/* <Text>creating content that tells a story</Text> */}
-              </Box>
-              <Text>
-                Creating a brand from the inception - logo to the entire
-                adaptation of various deliverables are conceptualized in-house
-                by our team of designers and copywriters
-              </Text>
-            </Box>
-            <Box
-              width={{ base: "100%", md: "50%" }}
-              mt={{ base: "10", md: "unset" }}
-            >
-              <Box display={"flex"}>
-                <span
-                  style={{
-                    width: "20px",
-                    marginRight: "10px",
-                    background:
-                      "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                  }}
-                ></span>
-                <Heading className="main-h3">
-                  Brand Identity Development
-                </Heading>
-              </Box>
-              <Text>
-                Logo design, Brand Elements, Brand Positioning, Color Themes to
-                executing the design across all mediums.
-              </Text>
-              <Box display={"flex"}>
-                <span
-                  style={{
-                    width: "20px",
-                    marginRight: "10px",
-                    background:
-                      "linear-gradient(to bottom,#F7F7F7 49%,#ffde11 50%,#ffde11 70%,#F7F7F7 71%,#F7F7F7 100%)",
-                  }}
-                ></span>
-                <Heading fontSize={{ base: "2xl", md: "3xl" }}>
-                  Design Projects
-                </Heading>
-              </Box>
-              <Text>
-                Be it a brochure or a menu or any specific design requirements,
-                we take on branding projects based on the brief provided by the
-                Clients
-              </Text>
-            </Box>
-          </Flex>
-        </Container>
+        
         <ServicePoint
           heading={"BRANDING \n SERVICES"}
           contentHeading="Conceptualizing design solutions for your brand"
