@@ -112,16 +112,18 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
       
      
       
+      <div className="BrBox">
+          <BannerBox
+          Banner="/services/branddevelopment/McC_BrandDev_Web_9-min.jpg"
+          MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_9-min.jpg"
+        />
+        <BannerBox
+          Banner="/services/branddevelopment/McC_BrandDev_Web_10.jpg"
+          MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_10.jpg"
+        />
+      </div>
       
       
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_9-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_9-min.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_10.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_10.jpg"
-      />
       <FAQ1 faqs={faqsData} />
       <IntrestedInBox />
       <ClientsLogo />
