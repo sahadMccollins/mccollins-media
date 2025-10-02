@@ -3245,3 +3245,70 @@ a.WrkT1:hover {
   font-weight: bold;
   cursor: pointer;
 }
+.mcol-md-6{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0px 15px;
+}
+.BrandBox{
+  padding: 35px 0px;
+  margin-top: -7px;
+}
+.AlignCenter{
+  align-items: center;
+}
+.mbg1{
+  background-color: #eeeff3;
+}
+.mbg2{
+  background-color: #152c78;
+  color: #fff;
+}
+.BtTxt1{
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+.BtTxt2{
+  font-size: 22px;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+.BrandBoxTp2 .BtTxt1,
+.BrandBoxTp2 .BtTxt2{
+  padding-left: 15px;
+}
+.mob{
+  display: none;
+}
+@media (max-width: 1000px) {
+  .mcol-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .BtTxt1{
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .BrandBoxTp2 .mrow{
+    flex-direction: row-reverse;
+  }
+  .mob{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+  .BtTxt2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .BrandBox {
+  padding: 20px 0px;
+  }
+  
+}

@@ -22,6 +22,7 @@ import ReactHtmlParser from "react-html-parser";
 import BrandsBanner from "../../components/Landing-page-components/BrandsBanner";
 import BannerBox from "../../components/BanneBox";
 import FAQ1 from "../../components/Landing-page-components/FAQ1";
+import LpGrid2 from "../../components/Landing-page-components/lpGrid2";
 const DesignAndBrandDevelopment = ({ metaTags }) => {
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
  const faqsData = [
@@ -106,38 +107,13 @@ const DesignAndBrandDevelopment = ({ metaTags }) => {
           }
         />
       </Box>
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_1-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_1.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_2-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_2.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_3-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_3-min.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_4-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_4.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_5-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_5.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_6-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_6.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_7-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_7.jpg"
-      />
-      <BannerBox
-        Banner="/services/branddevelopment/McC_BrandDev_Web_8-min.jpg"
-        MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_8.jpg"
-      />
+      <LpGrid2/>
+      
+      
+     
+      
+      
+      
       <BannerBox
         Banner="/services/branddevelopment/McC_BrandDev_Web_9-min.jpg"
         MobileBanner="/services/branddevelopment/McC_BrandDev_Mob_9-min.jpg"
