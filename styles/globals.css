@@ -3292,6 +3292,9 @@ padding: 15px;
 .BrandingCaseStudies .PortFolioBox {
     justify-content: center;
 }
+.d-none{
+  display: none !important;
+}
 @media (max-width: 1000px) {
   .BrandingCaseStudies .PortFolioBoxItem{
 padding: 10px;
