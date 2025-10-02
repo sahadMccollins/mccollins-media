@@ -39,8 +39,8 @@ const SocialMainBanner = () => {
                 </div>
                 {!isSmallerThan1000 && (
                   <div className="BtnWrap1">
-                    <a href="/contact" className="BtnSt1">
-                      Get Estimate Now
+                     <a href="https://calendly.com/manjeet-0rp5/30min" className="BtnSt1" target="_blank">
+                      Schedule a Meeting Today
                     </a>
                   </div>
                 )}
