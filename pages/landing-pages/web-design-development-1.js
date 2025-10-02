@@ -10,6 +10,7 @@ import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import BannerBox from "../../components/BanneBox";
 import FAQ1 from "../../components/Landing-page-components/FAQ1";
+import WebAccordion from "../../components/WebAccordion";
 const LandingPage1 = () => {
   const faqsData = [
   {
@@ -129,6 +130,7 @@ const LandingPage1 = () => {
       <ClientPortFolio />
 
       <TrustedLogos />
+      <WebAccordion/>
       <BannerBox
           Banner="/services/web/McC_WDev_Web_2-min.jpg"
           MobileBanner="/services/web/McC_WDev_Mob_2-min.jpg"
@@ -162,7 +164,7 @@ const LandingPage1 = () => {
           MobileBanner="/services/web/McC_WDev_Mob_10-min.jpg"
         />
         <FAQ1 faqs={faqsData} />
-      <LpGrid />
+      {/* <LpGrid /> */}
       
       <WebPortfolio />
 
