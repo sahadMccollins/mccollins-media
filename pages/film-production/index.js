@@ -302,11 +302,11 @@ const FilmProduction = () => {
                         Our Timeline
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="#ourworks" data-go="ourworks" className="GoLink">
                         Portfolio
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="#whatsee" data-go="whatsee" className="GoLink">
                         What sets us apart
@@ -1559,9 +1559,9 @@ const FilmProduction = () => {
               <a href="#timeline" data-go="timeline" className="GoLink1">
                 Our Timeline
               </a>
-              <a href="#ourworks" data-go="ourworks" className="GoLink1">
+              {/* <a href="#ourworks" data-go="ourworks" className="GoLink1">
                 Portfolio
-              </a>
+              </a> */}
               <a href="#whatsee" data-go="whatsee" className="GoLink1">
                 What sets us apart
               </a>
@@ -1595,7 +1595,7 @@ const FilmProduction = () => {
                 >
                   <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/twitter.png" />
                 </a>
-                <a
+                {/* <a
                   href="https://api.whatsapp.com/send?phone=971559564135&text=I%20would%20like%20to%20know%20more%20about%20McCollins%20Media"
                   target="_blank"
                 >
@@ -1603,7 +1603,7 @@ const FilmProduction = () => {
                     src="https://film.mccollinsmedia.com/wp-content/uploads/2023/08/whatsapp.png"
                     width="27px"
                   />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
