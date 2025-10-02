@@ -83,7 +83,7 @@ const VideoBanner = (props) => {
                   borderRadius="20px"
                   color="#000"
                   mt={"5"}
-                  onClick={() => router.push("/contact")}
+                  onClick={() => router.push("https://calendly.com/manjeet-0rp5/30min")}
                 >
                   <Image
                     alt="McCollins Media"
@@ -92,7 +92,7 @@ const VideoBanner = (props) => {
                     height="25px"
                     priority={true}
                   />
-                  &nbsp;&nbsp;contact us
+                  &nbsp;&nbsp;Schedule a Meeting Today
                 </Button>
               </FadeUp>
               <FadeUp delay={"0.3"}>
