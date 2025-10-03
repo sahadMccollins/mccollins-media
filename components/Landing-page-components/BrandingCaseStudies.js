@@ -9,10 +9,7 @@ const BrandingCaseStudies = () => {
           {/* <div className="Hd1">Businesses we have empowered digitally!</div> */}
           <div className="Hd1">Case Studies</div>
           <div className="Hd2">
-            Over the decade we have worked on some exciting web projects from
-            Dubai Airport Freezone, Costa Coffee, Roads and Transport Authority
-            Dubai to Samsung, LG, Pioneer or Zamil Industries in Saudi Arabia.
-            Have a look at some of our work
+            Over the past decade, we have partnered with a wide range of brands on their brand development journeys—helping them shape identities, build trust, and create meaningful connections with their audiences. From strategy and design to storytelling and positioning, our work has empowered brands to stand out and grow stronger in competitive markets.
           </div>
           <div className="Hd3">
             <span>&nbsp;</span>
