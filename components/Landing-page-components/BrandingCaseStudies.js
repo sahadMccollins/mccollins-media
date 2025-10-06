@@ -16,14 +16,14 @@ const BrandingCaseStudies = () => {
           </div>
         </div>
         <div className="PortfolioBoxWrp BrandingCaseStudies">
-          <Fancybox>
+      
             <div className="PortFolioBox">
              
               <div className="PortFolioBoxItem">
                 <a
                   data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_19.jpg"
+                  
+                  href="/branding-case-study/doors"
                   className="CommonLink1"
                 >
                   <Image
@@ -37,9 +37,8 @@ const BrandingCaseStudies = () => {
               </div>
               <div className="PortFolioBoxItem d-none">
                 <a
-                  data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_21.jpg"
+                 
+                  href="/branding-case-study/bloom"
                   className="CommonLink1"
                 >
                   <Image
@@ -53,9 +52,7 @@ const BrandingCaseStudies = () => {
               </div>
               <div className="PortFolioBoxItem">
                 <a
-                  data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_14.jpg"
+                  href="/branding-case-study/creamio"
                   className="CommonLink1"
                 >
                   <Image
@@ -69,9 +66,8 @@ const BrandingCaseStudies = () => {
               </div>
               <div className="PortFolioBoxItem">
                 <a
-                  data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_12-min.jpg"
+                  
+                  href="/branding-case-study/feras"
                   className="CommonLink1"
                 >
                   <Image
@@ -132,7 +128,6 @@ const BrandingCaseStudies = () => {
                 </a>
               </div>
             </div>
-          </Fancybox>
         </div>
       </div>
     </div>
