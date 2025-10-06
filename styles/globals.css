@@ -3301,6 +3301,10 @@ border-radius: 15px
 .d-none{
   display: none !important;
 }
+.HeaderBoxTp1{
+  height: 250px;
+  background-color: red;
+}
 @media (max-width: 1000px) {
   .BrandingCaseStudies .PortFolioBoxItem{
 padding: 10px;
