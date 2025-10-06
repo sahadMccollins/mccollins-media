@@ -23,6 +23,10 @@ function CaseStudyPage({ metaTags }) {
         Banner="/cases/bloom1.jpg"
         MobileBanner="/cases/mbloom1.jpg"
       />
+       <BannerBox
+        Banner="/cases/bloom2.jpg"
+        MobileBanner="/cases/mbloom2.jpg"
+      />
       </div>
       <BrandingCaseStudies />
     </>
