@@ -18,22 +18,7 @@ const BrandingCaseStudies = () => {
         <div className="PortfolioBoxWrp BrandingCaseStudies">
           <Fancybox>
             <div className="PortFolioBox">
-              <div className="PortFolioBoxItem">
-                <a
-                  data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_22.jpg"
-                  className="CommonLink1"
-                >
-                  <Image
-                    src="/services/pr/1.jpg"
-                    layout="responsive"
-                    width={"650"}
-                    height={"260"}
-                    priority={true}
-                  />
-                </a>
-              </div>
+             
               <div className="PortFolioBoxItem">
                 <a
                   data-fancybox="gallery"
