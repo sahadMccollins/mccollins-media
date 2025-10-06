@@ -20,7 +20,7 @@ function CaseStudyPage({ metaTags }) {
       />
       <div className="MxWidth1200">
         <BannerBox
-        Banner="/cases/cr11.jpg"
+        Banner="/cases/cr1.jpg"
         MobileBanner="/cases/mcr1.jpg"
       />
       <BannerBox
