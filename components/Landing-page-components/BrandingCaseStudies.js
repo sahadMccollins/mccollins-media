@@ -21,8 +21,6 @@ const BrandingCaseStudies = () => {
              
               <div className="PortFolioBoxItem">
                 <a
-                  data-fancybox="gallery"
-                  
                   href="/branding-case-study/doors"
                   className="CommonLink1"
                 >
