@@ -33,24 +33,10 @@ const BrandingCaseStudies = () => {
                   />
                 </a>
               </div>
-              <div className="PortFolioBoxItem d-none">
-                <a
-                 
-                  href="/branding-case-study/bloom"
-                  className="CommonLink1"
-                >
-                  <Image
-                    src="/services/pr/2.jpg"
-                    layout="responsive"
-                    width={"650"}
-                    height={"260"}
-                    priority={true}
-                  />
-                </a>
-              </div>
+             
               <div className="PortFolioBoxItem">
                 <a
-                  href="/branding-case-study/creamio"
+                  href="/branding-case-study/bloom"
                   className="CommonLink1"
                 >
                   <Image
@@ -65,7 +51,7 @@ const BrandingCaseStudies = () => {
               <div className="PortFolioBoxItem">
                 <a
                   
-                  href="/branding-case-study/feras"
+                  href="/branding-case-study/creamio"
                   className="CommonLink1"
                 >
                   <Image
@@ -79,41 +65,8 @@ const BrandingCaseStudies = () => {
               </div>
               <div className="PortFolioBoxItem">
                 <a
-                  data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_16-min.jpg"
-                  className="CommonLink1"
-                >
-                  <Image
-                    src="/services/pr/5.jpg"
-                    layout="responsive"
-                    width={"650"}
-                    height={"260"}
-                    priority={true}
-                  />
-                </a>
-              </div>
-              <div className="PortFolioBoxItem d-none">
-                <a
-                  data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_17.jpg"
-                  className="CommonLink1"
-                >
-                  <Image
-                    src="/services/pr/5.jpg"
-                    layout="responsive"
-                    width={"650"}
-                    height={"260"}
-                    priority={true}
-                  />
-                </a>
-              </div>
-              <div className="PortFolioBoxItem d-none">
-                <a
-                  data-fancybox="gallery"
-                  style={{ position: "relative" }}
-                  href="/services/branddevelopment/McC_BrandDev_Web_18-min.jpg"
+                  
+                  href="/branding-case-study/feras"
                   className="CommonLink1"
                 >
                   <Image
