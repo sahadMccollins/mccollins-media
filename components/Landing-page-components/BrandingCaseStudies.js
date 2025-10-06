@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Fancybox from "../Fancybox";
+import Link from "next/link";
 const BrandingCaseStudies = () => {
   return (
     <div className="WebPortfolio pd-common bg-3">
@@ -20,7 +21,8 @@ const BrandingCaseStudies = () => {
             <div className="PortFolioBox">
              
               <div className="PortFolioBoxItem">
-                <a
+                
+                <Link
                   href="/branding-case-study/doors"
                   className="CommonLink1"
                 >
@@ -31,11 +33,11 @@ const BrandingCaseStudies = () => {
                     height={"260"}
                     priority={true}
                   />
-                </a>
+                </Link>
               </div>
              
               <div className="PortFolioBoxItem">
-                <a
+                <Link
                   href="/branding-case-study/bloom"
                   className="CommonLink1"
                 >
@@ -46,10 +48,10 @@ const BrandingCaseStudies = () => {
                     height={"260"}
                     priority={true}
                   />
-                </a>
+                </Link>
               </div>
               <div className="PortFolioBoxItem">
-                <a
+                <Link
                   
                   href="/branding-case-study/creamio"
                   className="CommonLink1"
@@ -61,10 +63,10 @@ const BrandingCaseStudies = () => {
                     height={"260"}
                     priority={true}
                   />
-                </a>
+                </Link>
               </div>
               <div className="PortFolioBoxItem">
-                <a
+                <Link
                   
                   href="/branding-case-study/feras"
                   className="CommonLink1"
@@ -76,7 +78,7 @@ const BrandingCaseStudies = () => {
                     height={"260"}
                     priority={true}
                   />
-                </a>
+                </Link>
               </div>
             </div>
         </div>
