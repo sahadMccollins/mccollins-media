@@ -15,7 +15,7 @@ function CaseStudyPage({ metaTags }) {
           ReactHtmlParser(metaTags[0].content)}
       </Head>
       <CaseStudyBox
-        h2="Doors"
+        h2="Feras"
         bgcolor="#2d45a5"
       />
       <div className="MxWidth1200">
