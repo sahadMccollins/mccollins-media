@@ -35,6 +35,307 @@ export default async (req, res) => {
   //   }
   // }
 
+  // async function formPost() {
+  //   if (req.body) {
+  //     try {
+  //       const client = await clientPromise;
+  //       const db = client.db("MccollinsMedia");
+
+  //       // Save in MongoDB
+  //       const result = await db.collection("formSubmit").insertOne(req.body);
+  //       console.log("Saved in DB:", result.insertedId);
+
+  //       const {
+  //         firstName,
+  //         email,
+  //         contact,
+  //         services,
+  //         company,
+  //         date,
+  //         page,
+  //         source
+  //       } = req.body;
+
+  //       if (!firstName || !email) {
+  //         return res.status(400).json({
+  //           success: false,
+  //           message: "Name and email are required",
+  //         });
+  //       }
+
+  //       // const apiToken = process.env.PIPEDRIVE_API_TOKEN;
+  //       const apiToken = "e32456b268778b5098d84df214072fbf3af06425";
+  //       const baseUrl = "https://prowork.pipedrive.com/api/v1";
+
+  //       // 1️⃣ Create Person
+  //       const personResponse = await fetch(
+  //         `${baseUrl}/persons?api_token=${apiToken}`,
+  //         {
+  //           method: "POST",
+  //           headers: { "Content-Type": "application/json" },
+  //           body: JSON.stringify({
+  //             name: firstName,
+  //             email,
+  //             phone: contact,
+  //           }),
+  //         }
+  //       );
+
+  //       const personData = await personResponse.json();
+  //       console.log("Person:", personData);
+
+  //       if (!personResponse.ok) {
+  //         return res.status(500).json({
+  //           success: false,
+  //           message: "Failed to create person",
+  //           error: personData.error,
+  //         });
+  //       }
+
+  //       const personId = personData.data.id;
+
+  //       // 2️⃣ Create Lead
+  //       const leadResponse = await fetch(
+  //         `${baseUrl}/leads?api_token=${apiToken}`,
+  //         {
+  //           method: "POST",
+  //           headers: { "Content-Type": "application/json" },
+  //           body: JSON.stringify({
+  //             title: `Lead from Website - ${firstName}`,
+  //             person_id: personId,
+  //           }),
+  //         }
+  //       );
+
+  //       const leadData = await leadResponse.json();
+  //       console.log("Lead:", leadData);
+
+  //       if (!leadResponse.ok) {
+  //         return res.status(500).json({
+  //           success: false,
+  //           message: "Failed to create lead",
+  //           error: leadData.error,
+  //         });
+  //       }
+
+  //       const leadId = leadData.data.id;
+
+  //       // 3️⃣ Create a Note for full details (recommended)
+  //       await fetch(
+  //         `${baseUrl}/notes?api_token=${apiToken}`,
+  //         {
+  //           method: "POST",
+  //           headers: { "Content-Type": "application/json" },
+  //           body: JSON.stringify({
+  //             content: `
+  //             New Lead Details:
+  //             Name: ${firstName}
+  //             Email: ${email}
+  //             Phone: ${contact}
+  //             Services: ${services}
+  //             Company: ${company}
+  //             Source: ${source}
+  //             Date: ${date}
+  //           `,
+  //             lead_id: leadId,
+  //           }),
+  //         }
+  //       );
+
+  //       return res.status(200).json({
+  //         success: true,
+  //         message: "Form saved and Pipedrive lead created",
+  //       });
+
+  //     } catch (error) {
+  //       console.error("❌ Error:", error);
+  //       return res.status(500).json({
+  //         success: false,
+  //         message: "Server error",
+  //         error,
+  //       });
+  //     }
+  //   }
+  // }
+
+
+  //   async function formPost() {
+  //     if (req.body) {
+  //       try {
+  //         const client = await clientPromise;
+  //         const db = client.db("MccollinsMedia");
+
+  //         // Save in MongoDB
+  //         const result = await db.collection("formSubmit").insertOne(req.body);
+  //         console.log("✅ Saved in DB:", result.insertedId);
+
+  //         const {
+  //           firstName,
+  //           email,
+  //           contact,
+  //           services,
+  //           company,
+  //           date,
+  //           page,
+  //           source
+  //         } = req.body;
+
+  //         if (!firstName || !email) {
+  //           return res.status(400).json({
+  //             success: false,
+  //             message: "Name and email are required",
+  //           });
+  //         }
+
+  //         const apiToken = "e32456b268778b5098d84df214072fbf3af06425";
+  //         const baseUrl = "https://prowork.pipedrive.com/api/v1";
+
+  //         // -------------------------------
+  //         // ✅ 1️⃣ Create Organization
+  //         // -------------------------------
+  //         let organizationId = null;
+
+  //         if (company) {
+  //           const orgResponse = await fetch(
+  //             `${baseUrl}/organizations?api_token=${apiToken}`,
+  //             {
+  //               method: "POST",
+  //               headers: { "Content-Type": "application/json" },
+  //               body: JSON.stringify({
+  //                 name: company,
+  //               }),
+  //             }
+  //           );
+
+  //           const orgData = await orgResponse.json();
+  //           console.log("🏢 Organization:", orgData);
+
+  //           if (orgResponse.ok) {
+  //             organizationId = orgData.data.id;
+  //           }
+  //         }
+
+  //         // -------------------------------
+  //         // ✅ 2️⃣ Create Person
+  //         // -------------------------------
+  //         const personResponse = await fetch(
+  //           `${baseUrl}/persons?api_token=${apiToken}`,
+  //           {
+  //             method: "POST",
+  //             headers: { "Content-Type": "application/json" },
+  //             body: JSON.stringify({
+  //               name: firstName,
+  //               email,
+  //               phone: contact,
+  //               org_id: organizationId || null,
+  //             }),
+  //           }
+  //         );
+
+  //         const personData = await personResponse.json();
+  //         console.log("👤 Person:", personData);
+
+  //         if (!personResponse.ok) {
+  //           return res.status(500).json({
+  //             success: false,
+  //             message: "Failed to create person",
+  //             error: personData.error,
+  //           });
+  //         }
+
+  //         const personId = personData.data.id;
+
+  //         // -------------------------------
+  //         // ✅ 3️⃣ Create Lead
+  //         // -------------------------------
+  //         const leadResponse = await fetch(
+  //           `${baseUrl}/leads?api_token=${apiToken}`,
+  //           {
+  //             method: "POST",
+  //             headers: { "Content-Type": "application/json" },
+  //             body: JSON.stringify({
+  //               title: `Lead from Website - ${firstName}`,
+  //               person_id: personId,
+  //               organization_id: organizationId || null,
+  //             }),
+  //           }
+  //         );
+
+  //         const leadData = await leadResponse.json();
+  //         console.log("🚀 Lead:", leadData);
+
+  //         if (!leadResponse.ok) {
+  //           return res.status(500).json({
+  //             success: false,
+  //             message: "Failed to create lead",
+  //             error: leadData.error,
+  //           });
+  //         }
+
+  //         const leadId = leadData.data.id;
+
+  //         // -------------------------------
+  //         // ✅ 4️⃣ Create Deal from Lead
+  //         // -------------------------------
+  //         const dealResponse = await fetch(
+  //           `${baseUrl}/deals?api_token=${apiToken}`,
+  //           {
+  //             method: "POST",
+  //             headers: { "Content-Type": "application/json" },
+  //             body: JSON.stringify({
+  //               title: `Deal - ${firstName}`,
+  //               person_id: personId,
+  //               org_id: organizationId || null,
+  //               lead_id: leadId,
+  //               value: 0, // optional
+  //               currency: "AED",
+  //             }),
+  //           }
+  //         );
+
+  //         const dealData = await dealResponse.json();
+  //         console.log("💼 Deal:", dealData);
+
+  //         // -------------------------------
+  //         // ✅ 5️⃣ Add Note
+  //         // -------------------------------
+  //         await fetch(
+  //           `${baseUrl}/notes?api_token=${apiToken}`,
+  //           {
+  //             method: "POST",
+  //             headers: { "Content-Type": "application/json" },
+  //             body: JSON.stringify({
+  //               content: `
+  // New Lead Details:
+  // Name: ${firstName}
+  // Email: ${email}
+  // Phone: ${contact}
+  // Company: ${company}
+  // Services: ${services}
+  // Source: ${source}
+  // Date: ${date}
+  //             `,
+  //               person_id: personId,
+  //             }),
+  //           }
+  //         );
+
+  //         return res.status(200).json({
+  //           success: true,
+  //           message: "Organization, Person, Lead & Deal created successfully",
+  //         });
+
+  //       } catch (error) {
+  //         console.error("❌ Error:", error);
+  //         return res.status(500).json({
+  //           success: false,
+  //           message: "Server error",
+  //           error,
+  //         });
+  //       }
+  //     }
+  //   }
+
   async function formPost() {
     if (req.body) {
       try {
@@ -43,7 +344,7 @@ export default async (req, res) => {
 
         // Save in MongoDB
         const result = await db.collection("formSubmit").insertOne(req.body);
-        console.log("Saved in DB:", result.insertedId);
+        console.log("✅ Saved in DB:", result.insertedId);
 
         const {
           firstName,
@@ -63,11 +364,37 @@ export default async (req, res) => {
           });
         }
 
-        // const apiToken = process.env.PIPEDRIVE_API_TOKEN;
-        const apiToken = "b245e0398271b9a5bcb8de9d296b5ece6f00b0ab";
+        const apiToken = "e32456b268778b5098d84df214072fbf3af06425";
         const baseUrl = "https://prowork.pipedrive.com/api/v1";
 
-        // 1️⃣ Create Person
+        // -------------------------------
+        // ✅ 1️⃣ Create Organization
+        // -------------------------------
+        let organizationId = null;
+
+        if (company) {
+          const orgResponse = await fetch(
+            `${baseUrl}/organizations?api_token=${apiToken}`,
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                name: company,
+              }),
+            }
+          );
+
+          const orgData = await orgResponse.json();
+          console.log("🏢 Organization:", orgData);
+
+          if (orgResponse.ok) {
+            organizationId = orgData.data.id;
+          }
+        }
+
+        // -------------------------------
+        // ✅ 2️⃣ Create Person
+        // -------------------------------
         const personResponse = await fetch(
           `${baseUrl}/persons?api_token=${apiToken}`,
           {
@@ -77,12 +404,13 @@ export default async (req, res) => {
               name: firstName,
               email,
               phone: contact,
+              org_id: organizationId || null,
             }),
           }
         );
 
         const personData = await personResponse.json();
-        console.log("Person:", personData);
+        console.log("👤 Person:", personData);
 
         if (!personResponse.ok) {
           return res.status(500).json({
@@ -94,33 +422,40 @@ export default async (req, res) => {
 
         const personId = personData.data.id;
 
-        // 2️⃣ Create Lead
-        const leadResponse = await fetch(
-          `${baseUrl}/leads?api_token=${apiToken}`,
+        // -------------------------------
+        // ✅ 3️⃣ Create Deal (Directly)
+        // -------------------------------
+        const dealResponse = await fetch(
+          `${baseUrl}/deals?api_token=${apiToken}`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              title: `Lead from Website - ${firstName}`,
+              title: `Deal - ${firstName}`,
               person_id: personId,
+              org_id: organizationId || null,
+              value: 0,
+              currency: "AED",
             }),
           }
         );
 
-        const leadData = await leadResponse.json();
-        console.log("Lead:", leadData);
+        const dealData = await dealResponse.json();
+        console.log("💼 Deal:", dealData);
 
-        if (!leadResponse.ok) {
+        if (!dealResponse.ok) {
           return res.status(500).json({
             success: false,
-            message: "Failed to create lead",
-            error: leadData.error,
+            message: "Failed to create deal",
+            error: dealData.error,
           });
         }
 
-        const leadId = leadData.data.id;
+        const dealId = dealData.data.id;
 
-        // 3️⃣ Create a Note for full details (recommended)
+        // -------------------------------
+        // ✅ 4️⃣ Add Note to Deal
+        // -------------------------------
         await fetch(
           `${baseUrl}/notes?api_token=${apiToken}`,
           {
@@ -128,23 +463,25 @@ export default async (req, res) => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               content: `
-              New Lead Details:
-              Name: ${firstName}
-              Email: ${email}
-              Phone: ${contact}
-              Services: ${services}
-              Company: ${company}
-              Source: ${source}
-              Date: ${date}
+New Deal Details:
+Name: ${firstName}
+Email: ${email}
+Phone: ${contact}
+Company: ${company}
+Services: ${services}
+Source: ${source}
+Date: ${date}
             `,
-              lead_id: leadId,
+              person_id: personId,
+              deal_id: dealId,
             }),
           }
         );
 
         return res.status(200).json({
           success: true,
-          message: "Form saved and Pipedrive lead created",
+          message: "Organization, Person & Deal created successfully",
+          dealId: dealId,
         });
 
       } catch (error) {
@@ -157,6 +494,7 @@ export default async (req, res) => {
       }
     }
   }
+
 
 
   async function formDelete() {
