@@ -22,6 +22,10 @@ const Blog = ({ blog, recentPost, metaTags }) => {
 
   const router = useRouter();
 
+  const siteUrl = "https://www.mccollinsmedia.com";
+  const canonicalUrl = `${siteUrl}/blog/${blog.blogUrl}`;
+
+
   useEffect(() => {
     loadContent();
     console.log(recentPost);
@@ -34,7 +38,7 @@ const Blog = ({ blog, recentPost, metaTags }) => {
 
   return (
     <Stack>
-      <Head>
+      {/* <Head>
         <title>{blog.SEOtitle}</title>
         <meta name="description" content={blog.description} />
         <meta name="keywords" content={blog.keywords} />
@@ -58,7 +62,25 @@ const Blog = ({ blog, recentPost, metaTags }) => {
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
         /assets/image/design/3.svg 1x, /asset
+      </Head> */}
+
+      <Head>
+        <title>{blog.SEOtitle || blog.title}</title>
+
+        <meta name="description" content={blog.description || blog.title} />
+        <meta name="keywords" content={blog.keywords || ""} />
+
+        {/* ===== CANONICAL (MAIN SEO FIX) ===== */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* OpenGraph */}
+        <meta property="og:title" content={blog.SEOtitle || blog.title} />
+        <meta property="og:description" content={blog.description || blog.title} />
+        <meta property="og:image" content={blog.photo} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="article" />
       </Head>
+
       <Container maxWidth={"7xl"}>
         <Flex
           mt={{ base: "-160px", md: "-100px" }}

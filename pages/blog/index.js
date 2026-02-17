@@ -24,11 +24,26 @@ const Index = ({ blogs, metaTags }) => {
   const router = useRouter();
   return (
     <Stack>
+      {/* <Head>
+        {metaTags.length > 0 &&
+          metaTags[0].content &&
+          ReactHtmlParser(metaTags[0].content)}
+      </Head> */}
+
       <Head>
+        <title>Blog | McCollins Media</title>
+        <link rel="canonical" href="https://www.mccollinsmedia.com/blog" />
+        <meta
+          name="description"
+          content="Latest digital marketing insights, strategies, SEO tips and social media trends from McCollins Media."
+        />
+
         {metaTags.length > 0 &&
           metaTags[0].content &&
           ReactHtmlParser(metaTags[0].content)}
       </Head>
+
+
       {/* <Container maxWidth={"7xl"}>
         <InnerBanner
           name="blog"
