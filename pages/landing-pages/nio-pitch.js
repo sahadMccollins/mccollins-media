@@ -1396,9 +1396,9 @@ export default function NioPitch() {
             {/* Footer — exact text from original */}
             <footer className="footer-strip">
                 <div className="fs-item">Instagram Strategy · <b>Content Pillars Reset</b></div>
-                <div className="fs-item">Community · <b>User Enterprise</b></div>
+                {/* <div className="fs-item">Community · <b>User Enterprise</b></div>
                 <div className="fs-item">Growth · <b>+300% Engagement Target</b></div>
-                <div className="fs-item">NIO House · <b>Always-On Activation</b></div>
+                <div className="fs-item">NIO House · <b>Always-On Activation</b></div> */}
             </footer>
 
             {/* Modals */}
