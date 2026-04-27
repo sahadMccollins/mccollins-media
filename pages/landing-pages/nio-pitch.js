@@ -5,73 +5,73 @@ import { useEffect, useRef, useState } from 'react';
 /* ─── Data (unchanged from original) ───────────────────────────────────────── */
 
 const POSTS = [
-    { id: '1wIxVNtA-WrMoGPNcHnmIN-OKGLsL40Op', name: 'Post 41' },
-    { id: '1G2KFSVpkBh27m9otiPhm9xK7zNFBW-d9', name: 'Post10' },
-    { id: '1h-p7dSCykb5UqJ_po62-wtM11ugBovS7', name: 'Post11' },
-    { id: '1g-EcvbtAe3lH9rJZrVlsa11XcDUwmc2K', name: 'Post12' },
-    { id: '1bD5LC3VNAAlfs_3OQVyz4D0LuHUD2YgU', name: 'Post13' },
-    { id: '1kmKzRbaSljuNxTC0vfyE90PkbV0sBia8', name: 'Post14' },
-    { id: '1oZ0NcPbZZtKwgLcFzxXq6QHjwKVpuaFc', name: 'Post15' },
-    { id: '1Eqv_wn8nns_PNnI27ji15MxoExf9fZkL', name: 'Post 42' },
-    { id: '1a0z1KumptoACNLmQKsDRnC-gagAINB6o', name: 'Post16' },
+  { id: '1wIxVNtA-WrMoGPNcHnmIN-OKGLsL40Op', name: 'Post 41' },
+  { id: '1G2KFSVpkBh27m9otiPhm9xK7zNFBW-d9', name: 'Post10' },
+  { id: '1h-p7dSCykb5UqJ_po62-wtM11ugBovS7', name: 'Post11' },
+  { id: '1g-EcvbtAe3lH9rJZrVlsa11XcDUwmc2K', name: 'Post12' },
+  { id: '1bD5LC3VNAAlfs_3OQVyz4D0LuHUD2YgU', name: 'Post13' },
+  { id: '1kmKzRbaSljuNxTC0vfyE90PkbV0sBia8', name: 'Post14' },
+  { id: '1oZ0NcPbZZtKwgLcFzxXq6QHjwKVpuaFc', name: 'Post15' },
+  { id: '1Eqv_wn8nns_PNnI27ji15MxoExf9fZkL', name: 'Post 42' },
+  { id: '1a0z1KumptoACNLmQKsDRnC-gagAINB6o', name: 'Post16' },
 ];
 
 const POSTS1 = [
-    { id: '13kgJQHqd9uKsjNjNWT9TefXtxcABi3b0', name: 'Post 41' },
-    { id: '1xDoP7yYPbW9N_I4QurLaHOz8pQk7lZqk', name: 'Post10' },
-    { id: '1bJb2ecv4RwvSly_lUjtUskhIK9Mlobm5', name: 'Post11' },
-    { id: '1HcyeRTlA3tt8YdZ8XfFUBAcUjO9TAoW0', name: 'Post12' },
-    { id: '1XcxyTWJFunDyb42sE9o0thMezXfOFaOF', name: 'Post13' },
-    { id: '1Kb-udI7CVYDHcwIlKYp1v7pgC5duc-HN', name: 'Post14' },
-    { id: '1giayqZuZtzWoRs6BWg7QXDP17WjyabnZ', name: 'Post15' },
-    { id: '1SncpvYakFxwOHAJxyXwVCo_WEJ48BiKg', name: 'Post 42' },
-    { id: '1kzWQxEkRVqKCkeqhPEywBMGF7eGm_pNj', name: 'Post16' },
+  { id: '13kgJQHqd9uKsjNjNWT9TefXtxcABi3b0', name: 'Post 41' },
+  { id: '1xDoP7yYPbW9N_I4QurLaHOz8pQk7lZqk', name: 'Post10' },
+  { id: '1bJb2ecv4RwvSly_lUjtUskhIK9Mlobm5', name: 'Post11' },
+  { id: '1HcyeRTlA3tt8YdZ8XfFUBAcUjO9TAoW0', name: 'Post12' },
+  { id: '1XcxyTWJFunDyb42sE9o0thMezXfOFaOF', name: 'Post13' },
+  { id: '1Kb-udI7CVYDHcwIlKYp1v7pgC5duc-HN', name: 'Post14' },
+  { id: '1giayqZuZtzWoRs6BWg7QXDP17WjyabnZ', name: 'Post15' },
+  { id: '1SncpvYakFxwOHAJxyXwVCo_WEJ48BiKg', name: 'Post 42' },
+  { id: '1kzWQxEkRVqKCkeqhPEywBMGF7eGm_pNj', name: 'Post16' },
 ];
 
 const POSTS2 = [
-    { id: '1vfdRtXzwqojMxFZRvUQqix7oQSeDi5ek', name: 'Post03' },
-    { id: '1H4FbzClbTkKRH2jg1jW-wNu52eayZEqX', name: 'Post04' },
-    { id: '1uh5Q7vFdgRxVOComApuukQRK5emkcYyN', name: 'Post06' },
-    { id: '1qDo5AGkBIhxkuG6lJ7mI96To7QNqJeBq', name: 'Post02' },
-    { id: '1jR0uJsRJ2jdFRAw2-0mLwZ_DJV_Y3xJJ', name: 'Post01' },
-    { id: '1P1xCoHgy5Rc5rd-Bx4PGzIw7KwS_K2yq', name: 'Post07' },
-    { id: '17C1u3-_adZzEWv9MZ3ignAt2Hmfv5ToT', name: 'Post9' },
-    { id: '1zIAfA_y4DRY9l0nlKMo1Lfio3xmF-wds', name: 'Post05' },
-    { id: '1Y9Eu-QROT8oBMJJ7-lbRhJvNXjR_wnD0', name: 'Post08' },
+  { id: '1vfdRtXzwqojMxFZRvUQqix7oQSeDi5ek', name: 'Post03' },
+  { id: '1H4FbzClbTkKRH2jg1jW-wNu52eayZEqX', name: 'Post04' },
+  { id: '1uh5Q7vFdgRxVOComApuukQRK5emkcYyN', name: 'Post06' },
+  { id: '1qDo5AGkBIhxkuG6lJ7mI96To7QNqJeBq', name: 'Post02' },
+  { id: '1jR0uJsRJ2jdFRAw2-0mLwZ_DJV_Y3xJJ', name: 'Post01' },
+  { id: '1P1xCoHgy5Rc5rd-Bx4PGzIw7KwS_K2yq', name: 'Post07' },
+  { id: '17C1u3-_adZzEWv9MZ3ignAt2Hmfv5ToT', name: 'Post9' },
+  { id: '1zIAfA_y4DRY9l0nlKMo1Lfio3xmF-wds', name: 'Post05' },
+  { id: '1Y9Eu-QROT8oBMJJ7-lbRhJvNXjR_wnD0', name: 'Post08' },
 ];
 
 const CAPTIONS = [
-    { h: 'The future, fully charged.', b: 'Introducing the NIO EL8 — the smartest SUV in the UAE. AED 359,900. Book your test drive today.', tags: '#NIOUAE #EL8 #BlueSkyComing #ElectricFuture #AbuDhabi' },
-    { h: 'Three minutes. Zero queue.', b: 'While the rest of the world is still plugging in, our Power Swap Stations give you a full battery in 180 seconds.', tags: '#PowerSwap #NIOPower #Innovation #UAE' },
-    { h: 'Luxury, rewired.', b: 'Italian leather, MEMS suspension, a sommelier mode for wine glasses. Yes, really.', tags: '#EL8Interior #Craftsmanship #Design' },
-    { h: 'Built for the long road.', b: '510 km of WLTP-certified range. Abu Dhabi to Ras Al Khaimah and back, without a second thought.', tags: '#NIOEL8 #510km #UAE #Roadtrip' },
-    { h: 'Your NIO is watching out for you.', b: 'Banyan 3.0.0 brings next-gen ADAS — 33 sensors, 1,016 TOPS of compute, zero compromise.', tags: '#Banyan #ADAS #Safety #SmartMobility' },
-    { h: 'Welcome to NIO House.', b: 'The Galleria, Al Maryah Island. Not a showroom. A living room for a new kind of driver.', tags: '#NIOHouse #AbuDhabi #CommunityFirst' },
-    { h: 'NOMI, meet the desert.', b: 'Our AI companion just learned Arabic. And how to recommend the best karak stops on your route.', tags: '#NOMI #AI #UAE #BlueSkyComing' },
-    { h: 'The coupe SUV, recoded.', b: "NIO EC6 arriving in the UAE soon. A design that doesn't whisper — it hums.", tags: '#EC6 #ComingSoon #CoupeSUV' },
-    { h: 'One swap, infinite journeys.', b: 'Rolling out across the Emirates this year. NIO Power — the fastest way to full.', tags: '#PowerSwap #NIOPower #Infrastructure' },
-    { h: 'Abu Dhabi is electric.', b: 'In partnership with CYVN Holdings — building the future of mobility in the Emirates, from the ground up.', tags: '#CYVN #NIOUAE #Partnership' },
-    { h: 'Engineered in silence.', b: 'The EL8 cabin is quieter than a library at midnight. We measured.', tags: '#EL8 #Engineering #Quality' },
-    { h: 'This is what 0–100 feels like.', b: "4 seconds. A push against the seat. A grin that doesn't leave.", tags: '#EL8Performance #EV #Acceleration' },
-    { h: 'NIO ET5 — the smart sedan redefined.', b: 'The sedan that thinks. Coming to the UAE in 2026.', tags: '#ET5 #SmartSedan #Sedan' },
-    { h: 'Meet the Second Lounge.', b: 'Recline, rest, recharge — while the car takes the wheel. The EL8 Executive Edition.', tags: '#EL8Executive #SecondLounge #Luxury' },
-    { h: 'A studio on wheels.', b: '7.1.4 Dolby Atmos. 23 speakers. Every drive becomes a premiere.', tags: '#DolbyAtmos #EL8 #Sound' },
-    { h: 'Design, detailed.', b: 'Every line on the EL8 reduces drag, adds range, and looks beautiful doing it. 0.26 Cd.', tags: '#Design #Aerodynamics #EV' },
-    { h: 'Community is a product feature.', b: 'NIO User Enterprise — we build the car with the people who drive it.', tags: '#UserEnterprise #Community #NIO' },
-    { h: "This is not a launch. It's a chapter.", b: 'NIO entered the UAE in October 2024. What happens next will be written by you.', tags: '#NIOUAE #Launch #BlueSkyComing' },
-    { h: 'Panoramic skylight. Real sky.', b: 'Switchable from transparent to opaque. Because the UAE has some views worth keeping.', tags: '#EL8 #Skylight #Innovation' },
-    { h: 'Powered by 22 years of R&D.', b: 'Over 9,000 engineers. 8,500+ patents. A company built to out-invent the next decade.', tags: '#RnD #NIOGlobal #Innovation' },
-    { h: "The UAE's first Battery Swap Station.", b: 'Live, operational, and yours to use. Location reveal dropping in 48 hours.', tags: '#PowerSwap #UAE #First' },
-    { h: 'Tell us where you want us.', b: "Next NIO House city — Dubai or Sharjah? Drop a comment. We're listening.", tags: '#Poll #CommunityChoice #Dubai #Sharjah' },
-    { h: 'Test drive. Stay for karak.', b: 'Every test drive ends with coffee on us at NIO House. This is how we do it.', tags: '#TestDrive #NIOHouse #HomeOfNIO' },
-    { h: 'Proud partners of the Emirates.', b: "CYVN Holdings × NIO — investing in the UAE's leadership in electric mobility.", tags: '#CYVN #Partnership #UAE' },
-    { h: 'From blueprint to boulevard.', b: 'Months in the making. Minutes to fall in love with.', tags: '#EL8 #UAEDrive #Launch' },
-    { h: 'The screen that becomes invisible.', b: "The 12.8\" AMOLED display in the EL8 isn't the star. The drive is.", tags: '#EL8Interior #Display #Tech' },
-    { h: 'Your next weekend plan.', b: 'Drive the EL8 to Al Ain. Swap in 3 minutes. Keep going. The desert is calling.', tags: '#WeekendDrive #AlAin #EV' },
-    { h: 'Smart is the new luxury.', b: 'When your car learns you faster than your family does.', tags: '#NOMI #SmartEV #Luxury' },
-    { h: '6,700+ cars swapped daily — globally.', b: 'NIO has completed over 67 million battery swaps. The UAE is next on the map.', tags: '#GlobalScale #PowerSwap #NIO' },
-    { h: 'A promise you can drive.', b: 'Zero emissions. Zero anxiety. Zero compromise. Welcome to the blue sky.', tags: '#BlueSkyComing #ZeroEmission #EV' },
-    { h: 'See you at NIO House.', b: 'This Saturday. 4pm. Private test drive event. Link in bio to RSVP.', tags: '#NIOHouse #Event #RSVP' },
+  { h: 'The future, fully charged.', b: 'Introducing the NIO EL8 — the smartest SUV in the UAE. AED 359,900. Book your test drive today.', tags: '#NIOUAE #EL8 #BlueSkyComing #ElectricFuture #AbuDhabi' },
+  { h: 'Three minutes. Zero queue.', b: 'While the rest of the world is still plugging in, our Power Swap Stations give you a full battery in 180 seconds.', tags: '#PowerSwap #NIOPower #Innovation #UAE' },
+  { h: 'Luxury, rewired.', b: 'Italian leather, MEMS suspension, a sommelier mode for wine glasses. Yes, really.', tags: '#EL8Interior #Craftsmanship #Design' },
+  { h: 'Built for the long road.', b: '510 km of WLTP-certified range. Abu Dhabi to Ras Al Khaimah and back, without a second thought.', tags: '#NIOEL8 #510km #UAE #Roadtrip' },
+  { h: 'Your NIO is watching out for you.', b: 'Banyan 3.0.0 brings next-gen ADAS — 33 sensors, 1,016 TOPS of compute, zero compromise.', tags: '#Banyan #ADAS #Safety #SmartMobility' },
+  { h: 'Welcome to NIO House.', b: 'The Galleria, Al Maryah Island. Not a showroom. A living room for a new kind of driver.', tags: '#NIOHouse #AbuDhabi #CommunityFirst' },
+  { h: 'NOMI, meet the desert.', b: 'Our AI companion just learned Arabic. And how to recommend the best karak stops on your route.', tags: '#NOMI #AI #UAE #BlueSkyComing' },
+  { h: 'The coupe SUV, recoded.', b: "NIO EC6 arriving in the UAE soon. A design that doesn't whisper — it hums.", tags: '#EC6 #ComingSoon #CoupeSUV' },
+  { h: 'One swap, infinite journeys.', b: 'Rolling out across the Emirates this year. NIO Power — the fastest way to full.', tags: '#PowerSwap #NIOPower #Infrastructure' },
+  { h: 'Abu Dhabi is electric.', b: 'In partnership with CYVN Holdings — building the future of mobility in the Emirates, from the ground up.', tags: '#CYVN #NIOUAE #Partnership' },
+  { h: 'Engineered in silence.', b: 'The EL8 cabin is quieter than a library at midnight. We measured.', tags: '#EL8 #Engineering #Quality' },
+  { h: 'This is what 0–100 feels like.', b: "4 seconds. A push against the seat. A grin that doesn't leave.", tags: '#EL8Performance #EV #Acceleration' },
+  { h: 'NIO ET5 — the smart sedan redefined.', b: 'The sedan that thinks. Coming to the UAE in 2026.', tags: '#ET5 #SmartSedan #Sedan' },
+  { h: 'Meet the Second Lounge.', b: 'Recline, rest, recharge — while the car takes the wheel. The EL8 Executive Edition.', tags: '#EL8Executive #SecondLounge #Luxury' },
+  { h: 'A studio on wheels.', b: '7.1.4 Dolby Atmos. 23 speakers. Every drive becomes a premiere.', tags: '#DolbyAtmos #EL8 #Sound' },
+  { h: 'Design, detailed.', b: 'Every line on the EL8 reduces drag, adds range, and looks beautiful doing it. 0.26 Cd.', tags: '#Design #Aerodynamics #EV' },
+  { h: 'Community is a product feature.', b: 'NIO User Enterprise — we build the car with the people who drive it.', tags: '#UserEnterprise #Community #NIO' },
+  { h: "This is not a launch. It's a chapter.", b: 'NIO entered the UAE in October 2024. What happens next will be written by you.', tags: '#NIOUAE #Launch #BlueSkyComing' },
+  { h: 'Panoramic skylight. Real sky.', b: 'Switchable from transparent to opaque. Because the UAE has some views worth keeping.', tags: '#EL8 #Skylight #Innovation' },
+  { h: 'Powered by 22 years of R&D.', b: 'Over 9,000 engineers. 8,500+ patents. A company built to out-invent the next decade.', tags: '#RnD #NIOGlobal #Innovation' },
+  { h: "The UAE's first Battery Swap Station.", b: 'Live, operational, and yours to use. Location reveal dropping in 48 hours.', tags: '#PowerSwap #UAE #First' },
+  { h: 'Tell us where you want us.', b: "Next NIO House city — Dubai or Sharjah? Drop a comment. We're listening.", tags: '#Poll #CommunityChoice #Dubai #Sharjah' },
+  { h: 'Test drive. Stay for karak.', b: 'Every test drive ends with coffee on us at NIO House. This is how we do it.', tags: '#TestDrive #NIOHouse #HomeOfNIO' },
+  { h: 'Proud partners of the Emirates.', b: "CYVN Holdings × NIO — investing in the UAE's leadership in electric mobility.", tags: '#CYVN #Partnership #UAE' },
+  { h: 'From blueprint to boulevard.', b: 'Months in the making. Minutes to fall in love with.', tags: '#EL8 #UAEDrive #Launch' },
+  { h: 'The screen that becomes invisible.', b: "The 12.8\" AMOLED display in the EL8 isn't the star. The drive is.", tags: '#EL8Interior #Display #Tech' },
+  { h: 'Your next weekend plan.', b: 'Drive the EL8 to Al Ain. Swap in 3 minutes. Keep going. The desert is calling.', tags: '#WeekendDrive #AlAin #EV' },
+  { h: 'Smart is the new luxury.', b: 'When your car learns you faster than your family does.', tags: '#NOMI #SmartEV #Luxury' },
+  { h: '6,700+ cars swapped daily — globally.', b: 'NIO has completed over 67 million battery swaps. The UAE is next on the map.', tags: '#GlobalScale #PowerSwap #NIO' },
+  { h: 'A promise you can drive.', b: 'Zero emissions. Zero anxiety. Zero compromise. Welcome to the blue sky.', tags: '#BlueSkyComing #ZeroEmission #EV' },
+  { h: 'See you at NIO House.', b: 'This Saturday. 4pm. Private test drive event. Link in bio to RSVP.', tags: '#NIOHouse #Event #RSVP' },
 ];
 
 const TIMEFRAMES = ['2 HOURS AGO', '5 HOURS AGO', '1 DAY AGO', '2 DAYS AGO', '3 DAYS AGO', '4 DAYS AGO', '1 WEEK AGO', '2 WEEKS AGO'];
@@ -83,376 +83,377 @@ const fullSize = (id) => `https://drive.google.com/thumbnail?id=${id}&sz=w2000`;
 /* ─── Verified Badge ────────────────────────────────────────────────────────── */
 
 function VerifiedBadge() {
-    return (
-        <span className="verified">
-            <svg viewBox="0 0 24 24">
-                <path d="M20 12l-2-2 1-3-3-1-1-3-3 1-2-2-2 2-3-1-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3 3-1 2 2 2-2 3 1 1-3 3-1-1-3 2-2zm-9.5 4.5l-4-4 1.4-1.4 2.6 2.6 6.6-6.6L18.5 8.5l-8 8z" />
-            </svg>
-        </span>
-    );
+  return (
+    <span className="verified">
+      <svg viewBox="0 0 24 24">
+        <path d="M20 12l-2-2 1-3-3-1-1-3-3 1-2-2-2 2-3-1-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3 3-1 2 2 2-2 3 1 1-3 3-1-1-3 2-2zm-9.5 4.5l-4-4 1.4-1.4 2.6 2.6 6.6-6.6L18.5 8.5l-8 8z" />
+      </svg>
+    </span>
+  );
 }
 
 /* ─── Grid Item ─────────────────────────────────────────────────────────────── */
 
 function GridItem({ post, index, onOpen }) {
-    const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
-    let badge = null;
-    if (index % 7 === 3) {
-        badge = (
-            <div className="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="6 4 20 12 6 20 6 4" />
-                </svg>
-            </div>
-        );
-    } else if (index % 4 === 1) {
-        badge = (
-            <div className="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="3" width="14" height="14" />
-                    <rect x="7" y="7" width="14" height="14" />
-                </svg>
-            </div>
-        );
-    }
-
-    return (
-        <div className={`grid-item${loaded ? ' loaded' : ''}`} onClick={() => onOpen(index)}>
-            <div className="grid-placeholder">{String(index + 1).padStart(2, '0')}</div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-                loading="lazy"
-                alt={post.name}
-                src={thumb(post.id)}
-                referrerPolicy="no-referrer"
-                onLoad={() => setLoaded(true)}
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-            />
-            {badge}
-        </div>
+  let badge = null;
+  if (index % 7 === 3) {
+    badge = (
+      <div className="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+          <polygon points="6 4 20 12 6 20 6 4" />
+        </svg>
+      </div>
     );
+  } else if (index % 4 === 1) {
+    badge = (
+      <div className="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="3" y="3" width="14" height="14" />
+          <rect x="7" y="7" width="14" height="14" />
+        </svg>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`grid-item${loaded ? ' loaded' : ''}`}>
+      <div className="grid-placeholder">{String(index + 1).padStart(2, '0')}</div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        loading="lazy"
+        alt={post.name}
+        src={thumb(post.id)}
+        referrerPolicy="no-referrer"
+        onLoad={() => setLoaded(true)}
+        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+      />
+      {badge}
+    </div>
+  );
 }
 
 /* ─── Single iPhone mockup with IG profile ──────────────────────────────────── */
 
 function IgPhone({ postsArray, onOpenModal }) {
-    const [clock, setClock] = useState('9:41');
-    const scrollHintRef = useRef(null);
+  const [clock, setClock] = useState('9:41');
+  const scrollHintRef = useRef(null);
 
-    useEffect(() => {
-        const update = () => {
-            const d = new Date();
-            const h = d.getHours() % 12 || 12;
-            const m = d.getMinutes().toString().padStart(2, '0');
-            setClock(`${h}:${m}`);
-        };
-        update();
-        const id = setInterval(update, 30000);
-        return () => clearInterval(id);
-    }, []);
-
-    const handleScroll = (e) => {
-        if (!scrollHintRef?.current) return;
-        const el = e.currentTarget;
-        const pct = el.scrollTop / (el.scrollHeight - el.clientHeight);
-        scrollHintRef.current.classList.toggle('hint-hide', pct > 0.1);
+  useEffect(() => {
+    const update = () => {
+      const d = new Date();
+      const h = d.getHours() % 12 || 12;
+      const m = d.getMinutes().toString().padStart(2, '0');
+      setClock(`${h}:${m}`);
     };
+    update();
+    const id = setInterval(update, 30000);
+    return () => clearInterval(id);
+  }, []);
 
-    return (
-        <div className="iphone">
-            <div className="side-btn side-action"></div>
-            <div className="side-btn side-volume-up"></div>
-            <div className="side-btn side-volume-dn"></div>
-            <div className="side-btn side-power"></div>
+  const handleScroll = (e) => {
+    if (!scrollHintRef?.current) return;
+    const el = e.currentTarget;
+    const pct = el.scrollTop / (el.scrollHeight - el.clientHeight);
+    scrollHintRef.current.classList.toggle('hint-hide', pct > 0.1);
+  };
 
-            <div className="screen">
-                <div className="dynamic-island"></div>
+  return (
+    <div className="iphone">
+      <div className="side-btn side-action"></div>
+      <div className="side-btn side-volume-up"></div>
+      <div className="side-btn side-volume-dn"></div>
+      <div className="side-btn side-power"></div>
 
-                <div className="status-bar">
-                    <div className="status-time" suppressHydrationWarning>{clock}</div>
-                    <div className="status-icons">
-                        <svg width="16" height="10" viewBox="0 0 16 10">
-                            <path d="M1 8h2v2H1zM5 6h2v4H5zM9 3h2v7H9zM13 0h2v10h-2z" fill="white" />
-                        </svg>
-                        <svg width="14" height="10" viewBox="0 0 14 10" fill="white">
-                            <path d="M7 8.5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4zM7 5.2c1.6 0 3.1.6 4.2 1.7l-1.1 1.1a4.4 4.4 0 00-6.2 0L2.8 6.9A6 6 0 017 5.2zM7 1.6A9.6 9.6 0 0113.8 4.4l-1.1 1.1a8 8 0 00-11.4 0L.2 4.4A9.6 9.6 0 017 1.6z" />
-                        </svg>
-                        <svg width="24" height="11" viewBox="0 0 24 11">
-                            <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" fill="none" stroke="#fff" strokeOpacity="0.5" />
-                            <rect x="2" y="2" width="17" height="7" rx="1.2" fill="#fff" />
-                            <rect x="21" y="3.5" width="1.5" height="4" rx="0.5" fill="#fff" fillOpacity="0.5" />
-                        </svg>
-                    </div>
-                </div>
+      <div className="screen">
+        <div className="dynamic-island"></div>
 
-                <div className="ig-app">
-                    <div className="ig-header">
-                        <div className="ig-username">
-                            <span>uae.nio</span>
-                            <VerifiedBadge />
-                        </div>
-                        <div className="ig-header-icons">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <circle cx="5" cy="12" r="1.5" />
-                                <circle cx="12" cy="12" r="1.5" />
-                                <circle cx="19" cy="12" r="1.5" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div className="ig-scroll" onScroll={handleScroll}>
-                        <div className="profile-top">
-                            <div className="avatar-ring">
-                                <div className="avatar-inner">
-                                    <div className="avatar-img">
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img
-                                            style={{ width: '100%' }}
-                                            src="https://res.cloudinary.com/dje8fshak/image/upload/v1777012337/copy_of_screenshot_2026-04-24_at_115818_am_jvp6io_e55117.png"
-                                            alt="NIO UAE"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="profile-stats">
-                                <div className="pstat">
-                                    <div className="pstat-num">209</div>
-                                    <div className="pstat-label">posts</div>
-                                </div>
-                                <div className="pstat">
-                                    <div className="pstat-num">12.3K</div>
-                                    <div className="pstat-label">followers</div>
-                                </div>
-                                <div className="pstat">
-                                    <div className="pstat-num">8</div>
-                                    <div className="pstat-label">following</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="profile-bio">
-                            <div className="profile-name">NIO UAE</div>
-                            <div className="profile-category">Automotive Company</div>
-                            <div className="profile-bio-text">
-                                Welcome to NIO UAE. We build smart EVs, offer premium services, and innovative charging solutions,
-                                shaping a sustainable and brighter future together.
-                            </div>
-                            <div className="followed-by">Followed by <b>cyvn_holdings</b>, <b>nio_global</b> +41 more</div>
-                        </div>
-
-                        <div className="profile-actions">
-                            <button className="ig-btn primary">Follow</button>
-                            <button className="ig-btn">Message</button>
-                            <button className="ig-btn icon-only">▾</button>
-                        </div>
-
-                        <div className="tab-row">
-                            <div className="tab active">
-                                <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
-                                    <rect x="3" y="3" width="7" height="7" />
-                                    <rect x="14" y="3" width="7" height="7" />
-                                    <rect x="3" y="14" width="7" height="7" />
-                                    <rect x="14" y="14" width="7" height="7" />
-                                </svg>
-                            </div>
-                            <div className="tab">
-                                <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
-                                    <polygon points="6 4 20 12 6 20 6 4" />
-                                </svg>
-                            </div>
-                            <div className="tab">
-                                <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div className="grid">
-                            {postsArray.map((post, i) => (
-                                <GridItem key={post.id} post={post} index={i} onOpen={onOpenModal} />
-                            ))}
-                        </div>
-                        <div style={{ height: '12px' }}></div>
-                    </div>
-
-                    <div className="ig-bottom">
-                        <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M3 12L12 3l9 9M5 10v10h14V10" />
-                        </svg>
-                        <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round">
-                            <circle cx="11" cy="11" r="7" />
-                            <path d="M21 21l-4.3-4.3" />
-                        </svg>
-                        <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
-                            <rect x="3" y="3" width="18" height="18" rx="3" />
-                            <polygon points="10 8 16 12 10 16 10 8" fill="#fff" />
-                        </svg>
-                        <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M6 2h12l3 6-9 14L3 8z" />
-                        </svg>
-                        <div className="profile-dot">
-                            <div>N</div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Scroll hint on every phone */}
-                <div className="scroll-hint" ref={scrollHintRef}>
-                    <div className="scroll-hint-track">
-                        <div className="scroll-hint-dot"></div>
-                    </div>
-                    <div className="scroll-hint-label">scroll</div>
-                </div>
-
-                <div className="home-ind"></div>
-            </div>
+        <div className="status-bar">
+          <div className="status-time" suppressHydrationWarning>{clock}</div>
+          <div className="status-icons">
+            <svg width="16" height="10" viewBox="0 0 16 10">
+              <path d="M1 8h2v2H1zM5 6h2v4H5zM9 3h2v7H9zM13 0h2v10h-2z" fill="white" />
+            </svg>
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="white">
+              <path d="M7 8.5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4zM7 5.2c1.6 0 3.1.6 4.2 1.7l-1.1 1.1a4.4 4.4 0 00-6.2 0L2.8 6.9A6 6 0 017 5.2zM7 1.6A9.6 9.6 0 0113.8 4.4l-1.1 1.1a8 8 0 00-11.4 0L.2 4.4A9.6 9.6 0 017 1.6z" />
+            </svg>
+            <svg width="24" height="11" viewBox="0 0 24 11">
+              <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" fill="none" stroke="#fff" strokeOpacity="0.5" />
+              <rect x="2" y="2" width="17" height="7" rx="1.2" fill="#fff" />
+              <rect x="21" y="3.5" width="1.5" height="4" rx="0.5" fill="#fff" fillOpacity="0.5" />
+            </svg>
+          </div>
         </div>
-    );
+
+        <div className="ig-app">
+          <div className="ig-header">
+            <div className="ig-username">
+              <span>uae.nio</span>
+              <VerifiedBadge />
+            </div>
+            <div className="ig-header-icons">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="5" cy="12" r="1.5" />
+                <circle cx="12" cy="12" r="1.5" />
+                <circle cx="19" cy="12" r="1.5" />
+              </svg>
+            </div>
+          </div>
+
+          <div className="ig-scroll" onScroll={handleScroll}>
+            <div className="profile-top">
+              <div className="avatar-ring">
+                <div className="avatar-inner">
+                  <div className="avatar-img">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      style={{ width: '100%' }}
+                      src="https://res.cloudinary.com/dje8fshak/image/upload/v1777012337/copy_of_screenshot_2026-04-24_at_115818_am_jvp6io_e55117.png"
+                      alt="NIO UAE"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="profile-stats">
+                <div className="pstat">
+                  <div className="pstat-num">209</div>
+                  <div className="pstat-label">posts</div>
+                </div>
+                <div className="pstat">
+                  <div className="pstat-num">12.3K</div>
+                  <div className="pstat-label">followers</div>
+                </div>
+                <div className="pstat">
+                  <div className="pstat-num">8</div>
+                  <div className="pstat-label">following</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="profile-bio">
+              <div className="profile-name">NIO UAE</div>
+              <div className="profile-category">Automotive Company</div>
+              <div className="profile-bio-text">
+                Welcome to NIO UAE. We build smart EVs, offer premium services, and innovative charging solutions,
+                shaping a sustainable and brighter future together.
+              </div>
+              <div className="followed-by">Followed by <b>cyvn_holdings</b>, <b>nio_global</b> +41 more</div>
+            </div>
+
+            <div className="profile-actions">
+              <button className="ig-btn primary">Follow</button>
+              <button className="ig-btn">Message</button>
+              <button className="ig-btn icon-only">▾</button>
+            </div>
+
+            <div className="tab-row">
+              <div className="tab active">
+                <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                </svg>
+              </div>
+              <div className="tab">
+                <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
+                  <polygon points="6 4 20 12 6 20 6 4" />
+                </svg>
+              </div>
+              <div className="tab">
+                <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+            </div>
+
+            <div className="grid">
+              {postsArray.map((post, i) => (
+                <GridItem key={post.id} post={post} index={i} />
+              ))}
+            </div>
+            <div style={{ height: '12px' }}></div>
+          </div>
+
+          <div className="ig-bottom">
+            <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 12L12 3l9 9M5 10v10h14V10" />
+            </svg>
+            <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+            <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none">
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <polygon points="10 8 16 12 10 16 10 8" fill="#fff" />
+            </svg>
+            <svg viewBox="0 0 24 24" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 2h12l3 6-9 14L3 8z" />
+            </svg>
+            <div className="profile-dot">
+              <div>N</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Scroll hint on every phone */}
+        <div className="scroll-hint" ref={scrollHintRef}>
+          <div className="scroll-hint-track">
+            <div className="scroll-hint-dot"></div>
+          </div>
+          <div className="scroll-hint-label">scroll</div>
+        </div>
+
+        <div className="home-ind"></div>
+      </div>
+    </div>
+  );
 }
 
 /* ─── Post Modal ────────────────────────────────────────────────────────────── */
 
 function PostModal({ isOpen, onClose, posts, initialIndex }) {
-    const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
-    useEffect(() => { setCurrentIndex(initialIndex); }, [initialIndex]);
+  useEffect(() => { setCurrentIndex(initialIndex); }, [initialIndex]);
 
-    useEffect(() => {
-        if (!isOpen) return;
-        const handler = (e) => {
-            if (e.key === 'Escape') onClose();
-            if (e.key === 'ArrowRight') setCurrentIndex((i) => (i + 1) % posts.length);
-            if (e.key === 'ArrowLeft') setCurrentIndex((i) => (i - 1 + posts.length) % posts.length);
-        };
-        window.addEventListener('keydown', handler);
-        return () => window.removeEventListener('keydown', handler);
-    }, [isOpen, onClose, posts.length]);
+  useEffect(() => {
+    if (!isOpen) return;
+    const handler = (e) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowRight') setCurrentIndex((i) => (i + 1) % posts.length);
+      if (e.key === 'ArrowLeft') setCurrentIndex((i) => (i - 1 + posts.length) % posts.length);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [isOpen, onClose, posts.length]);
 
-    useEffect(() => {
-        document.body.style.overflow = isOpen ? 'hidden' : '';
-        return () => { document.body.style.overflow = ''; };
-    }, [isOpen]);
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
 
-    if (!isOpen) return null;
+  if (!isOpen) return null;
 
-    const p = posts[currentIndex];
-    const cap = CAPTIONS[currentIndex % CAPTIONS.length];
+  const p = posts[currentIndex];
+  const cap = CAPTIONS[currentIndex % CAPTIONS.length];
 
-    return (
-        <div className="modal open" onClick={(e) => { if (e.currentTarget === e.target) onClose(); }}>
-            <div className="modal-card">
-                <div className="modal-media">
-                    <div className="modal-counter">{currentIndex + 1} / {posts.length}</div>
-                    <button className="modal-nav modal-prev" onClick={() => setCurrentIndex((i) => (i - 1 + posts.length) % posts.length)}>‹</button>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={fullSize(p.id)} alt="Post" referrerPolicy="no-referrer" />
-                    <button className="modal-nav modal-next" onClick={() => setCurrentIndex((i) => (i + 1) % posts.length)}>›</button>
-                </div>
-                <div className="modal-side">
-                    <div className="modal-post-header">
-                        <div className="modal-post-avatar"><div>N</div></div>
-                        <div className="modal-post-user">
-                            uae.nio
-                            <span style={{ display: 'inline-flex', width: 12, height: 12, background: '#3797f0', borderRadius: '50%', alignItems: 'center', justifyContent: 'center' }}>
-                                <svg width="8" height="8" viewBox="0 0 24 24" fill="#fff">
-                                    <path d="M20 12l-2-2 1-3-3-1-1-3-3 1-2-2-2 2-3-1-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3 3-1 2 2 2-2 3 1 1-3 3-1-1-3 2-2z" />
-                                </svg>
-                            </span>
-                        </div>
-                        <button className="modal-close" onClick={onClose}>×</button>
-                    </div>
-                    <div className="modal-body">
-                        <div className="modal-caption">
-                            <div><span className="h">uae.nio</span> <b>{cap.h}</b></div>
-                            <div style={{ marginTop: '6px', color: 'rgba(255,255,255,0.88)' }}>{cap.b}</div>
-                            <div className="tags">{cap.tags}</div>
-                        </div>
-                    </div>
-                    <div className="modal-actions-row">
-                        <div className="group">
-                            <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z" />
-                            </svg>
-                            <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z" />
-                            </svg>
-                            <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
-                            </svg>
-                        </div>
-                        <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-                        </svg>
-                    </div>
-                    <div className="modal-likes">{LIKE_COUNTS[currentIndex % LIKE_COUNTS.length].toLocaleString()} likes</div>
-                    <div className="modal-time">{TIMEFRAMES[currentIndex % TIMEFRAMES.length]}</div>
-                </div>
-            </div>
+  return (
+    // <div className="modal open" onClick={(e) => { if (e.currentTarget === e.target) onClose(); }}>
+    <div className="modal open">
+      <div className="modal-card">
+        <div className="modal-media">
+          <div className="modal-counter">{currentIndex + 1} / {posts.length}</div>
+          <button className="modal-nav modal-prev" onClick={() => setCurrentIndex((i) => (i - 1 + posts.length) % posts.length)}>‹</button>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={fullSize(p.id)} alt="Post" referrerPolicy="no-referrer" />
+          <button className="modal-nav modal-next" onClick={() => setCurrentIndex((i) => (i + 1) % posts.length)}>›</button>
         </div>
-    );
+        <div className="modal-side">
+          <div className="modal-post-header">
+            <div className="modal-post-avatar"><div>N</div></div>
+            <div className="modal-post-user">
+              uae.nio
+              <span style={{ display: 'inline-flex', width: 12, height: 12, background: '#3797f0', borderRadius: '50%', alignItems: 'center', justifyContent: 'center' }}>
+                <svg width="8" height="8" viewBox="0 0 24 24" fill="#fff">
+                  <path d="M20 12l-2-2 1-3-3-1-1-3-3 1-2-2-2 2-3-1-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3 3-1 2 2 2-2 3 1 1-3 3-1-1-3 2-2z" />
+                </svg>
+              </span>
+            </div>
+            <button className="modal-close" onClick={onClose}>×</button>
+          </div>
+          <div className="modal-body">
+            <div className="modal-caption">
+              <div><span className="h">uae.nio</span> <b>{cap.h}</b></div>
+              <div style={{ marginTop: '6px', color: 'rgba(255,255,255,0.88)' }}>{cap.b}</div>
+              <div className="tags">{cap.tags}</div>
+            </div>
+          </div>
+          <div className="modal-actions-row">
+            <div className="group">
+              <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z" />
+              </svg>
+              <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z" />
+              </svg>
+              <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </div>
+            <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+          <div className="modal-likes">{LIKE_COUNTS[currentIndex % LIKE_COUNTS.length].toLocaleString()} likes</div>
+          <div className="modal-time">{TIMEFRAMES[currentIndex % TIMEFRAMES.length]}</div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 /* ─── Lightbox ──────────────────────────────────────────────────────────────── */
 
 const GALLERY_IMAGES = [
-    'https://res.cloudinary.com/dje8fshak/image/upload/v1777023549/Untitled_w77h5q.png',
-    'https://res.cloudinary.com/dje8fshak/image/upload/v1777023549/Untitled_1_osra47.png',
+  'https://res.cloudinary.com/dje8fshak/image/upload/v1777023549/Untitled_w77h5q.png',
+  'https://res.cloudinary.com/dje8fshak/image/upload/v1777023549/Untitled_1_osra47.png',
 ];
 
 function Lightbox({ isOpen, index, onClose, onNav }) {
-    useEffect(() => {
-        if (!isOpen) return;
-        const handler = (e) => {
-            if (e.key === 'Escape') onClose();
-            if (e.key === 'ArrowRight') onNav(1);
-            if (e.key === 'ArrowLeft') onNav(-1);
-        };
-        window.addEventListener('keydown', handler);
-        return () => window.removeEventListener('keydown', handler);
-    }, [isOpen, onClose, onNav]);
+  useEffect(() => {
+    if (!isOpen) return;
+    const handler = (e) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowRight') onNav(1);
+      if (e.key === 'ArrowLeft') onNav(-1);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [isOpen, onClose, onNav]);
 
-    if (!isOpen) return null;
+  if (!isOpen) return null;
 
-    return (
-        <div className="lightbox open" onClick={(e) => { if (e.currentTarget === e.target) onClose(); }}>
-            <div className="lightbox-inner">
-                <button className="lightbox-close" onClick={onClose}>×</button>
-                <button className="lightbox-nav lightbox-prev" onClick={() => onNav(-1)}>‹</button>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={GALLERY_IMAGES[index]} alt="" />
-                <button className="lightbox-nav lightbox-next" onClick={() => onNav(1)}>›</button>
-            </div>
-        </div>
-    );
+  return (
+    <div className="lightbox open" onClick={(e) => { if (e.currentTarget === e.target) onClose(); }}>
+      <div className="lightbox-inner">
+        <button className="lightbox-close" onClick={onClose}>×</button>
+        <button className="lightbox-nav lightbox-prev" onClick={() => onNav(-1)}>‹</button>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={GALLERY_IMAGES[index]} alt="" />
+        <button className="lightbox-nav lightbox-next" onClick={() => onNav(1)}>›</button>
+      </div>
+    </div>
+  );
 }
 
 /* ─── Main exported component ───────────────────────────────────────────────── */
 
 export default function NioPitch() {
-    const [modal, setModal] = useState({ open: false, posts: POSTS, index: 0 });
-    const [lightbox, setLightbox] = useState({ open: false, index: 0 });
+  const [modal, setModal] = useState({ open: false, posts: POSTS, index: 0 });
+  const [lightbox, setLightbox] = useState({ open: false, index: 0 });
 
-    const openModal = (posts, index) => setModal({ open: true, posts, index });
-    const closeModal = () => setModal((m) => ({ ...m, open: false }));
-    const openLightbox = (i) => { setLightbox({ open: true, index: i }); document.body.style.overflow = 'hidden'; };
-    const closeLightbox = () => { setLightbox((lb) => ({ ...lb, open: false })); document.body.style.overflow = ''; };
-    const navLightbox = (delta) =>
-        setLightbox((lb) => ({ ...lb, index: (lb.index + delta + GALLERY_IMAGES.length) % GALLERY_IMAGES.length }));
+  const openModal = (posts, index) => setModal({ open: true, posts, index });
+  const closeModal = () => setModal((m) => ({ ...m, open: false }));
+  const openLightbox = (i) => { setLightbox({ open: true, index: i }); document.body.style.overflow = 'hidden'; };
+  const closeLightbox = () => { setLightbox((lb) => ({ ...lb, open: false })); document.body.style.overflow = ''; };
+  const navLightbox = (delta) =>
+    setLightbox((lb) => ({ ...lb, index: (lb.index + delta + GALLERY_IMAGES.length) % GALLERY_IMAGES.length }));
 
-    return (
-        <>
-            {/*
+  return (
+    <>
+      {/*
         =====================================================================
         STYLES — every single rule copied verbatim from the original HTML.
         class → kept as-is (used via className in JSX below).
         =====================================================================
       */}
-            <style dangerouslySetInnerHTML={{
-                __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap');
 
         * {
@@ -1317,108 +1318,108 @@ export default function NioPitch() {
         }
       `}} />
 
-            {/* ─── Page structure — mirrors original HTML exactly ─── */}
+      {/* ─── Page structure — mirrors original HTML exactly ─── */}
 
-            <div className="bg-layer"></div>
-            <div className="bg-grid"></div>
+      <div className="bg-layer"></div>
+      <div className="bg-grid"></div>
 
-            <header className="top-bar">
-                <div className="brand">
-                    <div className="brand-dot"></div>
-                    McCollins Media {'×'} NIO UAE
-                </div>
-                <div className="confidential">Confidential · Pitch 2026</div>
-            </header>
+      <header className="top-bar">
+        <div className="brand">
+          <div className="brand-dot"></div>
+          McCollins Media {'×'} NIO UAE
+        </div>
+        <div className="confidential">Confidential · Pitch 2026</div>
+      </header>
 
-            <section className="hero">
-                <div className="hero-copy">
-                    <div className="eyebrow">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                        </svg>
-                        A proposal for @uae.nio
-                    </div>
-                    <h1>Creating a digital <em>movement</em> to own the premium EV space.</h1>
-                    <p className="lede">
-                        Explore our social media feed to experience a curated collection of designs crafted exclusively for NIO—each
-                        piece built to reflect innovation, precision, and community. From bold visuals to refined storytelling, every
-                        post is designed to embody the spirit of NIO and elevate its digital presence.
-                    </p>
-                    <div className="cta-row">
-                        <button
-                            className="btn btn-primary"
-                            onClick={() => document.querySelector('.iphone')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
-                        >
-                            Explore the feed
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                                <path d="M5 12h14M13 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                        <a
-                            className="btn btn-ghost"
-                            href="https://drive.google.com/drive/folders/1R0Mq1Mi31SQ1uhu6uKMn3DtmzSQA8SGA"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Full asset folder
-                        </a>
-                    </div>
-                    <div className="by-line">Prepared by <span>McCollins Media</span></div>
-                </div>
+      <section className="hero">
+        <div className="hero-copy">
+          <div className="eyebrow">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+            A proposal for @uae.nio
+          </div>
+          <h1>Creating a digital <em>movement</em> to own the premium EV space.</h1>
+          <p className="lede">
+            Explore our social media feed to experience a curated collection of designs crafted exclusively for NIO—each
+            piece built to reflect innovation, precision, and community. From bold visuals to refined storytelling, every
+            post is designed to embody the spirit of NIO and elevate its digital presence.
+          </p>
+          <div className="cta-row">
+            <button
+              className="btn btn-primary"
+              onClick={() => document.querySelector('.iphone')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+            >
+              Explore the feed
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </button>
+            <a
+              className="btn btn-ghost"
+              href="https://drive.google.com/drive/folders/1R0Mq1Mi31SQ1uhu6uKMn3DtmzSQA8SGA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Full asset folder
+            </a>
+          </div>
+          <div className="by-line">Prepared by <span>McCollins Media</span></div>
+        </div>
 
-                {/*
+        {/*
           Three phones in dFlexBox — exact same DOM structure as original.
           Each phone-stage is a separate div, NOT looped, to match original's
           three explicit <div class="phone-stage"> blocks exactly.
         */}
-                <div className="dFlexBox">
-                    <div className="phone-stage">
-                        <IgPhone
-                            postsArray={POSTS}
-                            onOpenModal={(i) => openModal(POSTS, i)}
-                        />
-                    </div>
-                    <div className="phone-stage">
-                        <IgPhone
-                            postsArray={POSTS1}
-                            onOpenModal={(i) => openModal(POSTS1, i)}
-                        />
-                    </div>
-                    <div className="phone-stage">
-                        <IgPhone
-                            postsArray={POSTS2}
-                            onOpenModal={(i) => openModal(POSTS2, i)}
-                        />
-                    </div>
-                </div>
-            </section>
+        <div className="dFlexBox">
+          <div className="phone-stage">
+            <IgPhone
+              postsArray={POSTS}
+            // onOpenModal={(i) => openModal(POSTS, i)}
+            />
+          </div>
+          <div className="phone-stage">
+            <IgPhone
+              postsArray={POSTS1}
+            // onOpenModal={(i) => openModal(POSTS1, i)}
+            />
+          </div>
+          <div className="phone-stage">
+            <IgPhone
+              postsArray={POSTS2}
+            // onOpenModal={(i) => openModal(POSTS2, i)}
+            />
+          </div>
+        </div>
+      </section>
 
-            {/* Footer — exact text from original */}
-            <footer className="footer-strip">
-                <div className="fs-item">Instagram Strategy · <b>Content Pillars Reset</b></div>
-                {/* <div className="fs-item">Community · <b>User Enterprise</b></div>
+      {/* Footer — exact text from original */}
+      <footer className="footer-strip">
+        <div className="fs-item">Instagram Strategy · <b>Content Pillars Reset</b></div>
+        {/* <div className="fs-item">Community · <b>User Enterprise</b></div>
                 <div className="fs-item">Growth · <b>+300% Engagement Target</b></div>
                 <div className="fs-item">NIO House · <b>Always-On Activation</b></div> */}
-            </footer>
+      </footer>
 
-            {/* Modals */}
-            <PostModal
-                isOpen={modal.open}
-                onClose={closeModal}
-                posts={modal.posts}
-                initialIndex={modal.index}
-            />
+      {/* Modals */}
+      <PostModal
+        isOpen={modal.open}
+        onClose={closeModal}
+        posts={modal.posts}
+        initialIndex={modal.index}
+      />
 
-            <Lightbox
-                isOpen={lightbox.open}
-                index={lightbox.index}
-                onClose={closeLightbox}
-                onNav={navLightbox}
-            />
-        </>
-    );
+      <Lightbox
+        isOpen={lightbox.open}
+        index={lightbox.index}
+        onClose={closeLightbox}
+        onNav={navLightbox}
+      />
+    </>
+  );
 }
 
 NioPitch.getLayout = function getLayout(page) {
-    return page;
+  return page;
 };
