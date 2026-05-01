@@ -1,6 +1,17 @@
 import axios from "axios";
 
 export default async (req, res) => {
+
+  // ✅ CORS HEADERS (ADD THIS)
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // ✅ HANDLE PREFLIGHT (VERY IMPORTANT)
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
   try {
     const refreshUrl =
       "https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.b08cb054df8f248fb6d6bf12739d82f6.b03dc43f54c99a2aed5b16093e950261&client_id=1000.BAQO3P3DTMRBTPEP99PKP9VRX9V9SM&client_secret=6a93c8818b92a1b381a6e4de999ef7e9a0c987620c&grant_type=refresh_token";
